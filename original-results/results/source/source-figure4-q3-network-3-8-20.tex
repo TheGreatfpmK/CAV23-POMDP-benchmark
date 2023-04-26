@@ -1,0 +1,67 @@
+\begin{tikzpicture}
+\begin{axis}[
+    title={Network-3-8-20},
+    xlabel={Time [min]},
+    ylabel={Value [Rmin]},
+    xmin=0, xmax=15,
+    ymin=10, ymax=12,
+    xtick={0,2,4,6,8,10,12,14},
+    ytick={10,10.4,10.8,11.2,11.6,12},
+    xtick pos=left,
+    ytick pos=left,
+    restrict y to domain=8:14,
+    ymajorgrids=true,
+    y dir=reverse,
+    grid style=dashed,
+    height=8cm,
+    width=12cm,
+    legend style ={ at={(1.03,1)},
+        anchor=north west, draw=black, 
+        fill=white,align=left},
+]
+
+\addplot[
+    color=blue,
+    every mark/.append style={solid, fill=blue},
+    mark=square*,
+    line width=1.5pt,mark size=2pt,]
+    coordinates {
+(1.31, 10.44086)(3.76, 10.3949)(6.24, 10.22076)(8.78, 10.22076)(11.4, 10.21969)(14.06, 10.1685)(16.76, 10.00067)(19.48, 10.00067)(22.27, 10.00067)(25.07, 10.00067)
+    };
+    \addlegendentry{SAYNT $F_{B}$};
+
+\addplot[
+    color=green,
+    every mark/.append style={solid, fill=green},
+    mark=triangle*,
+    line width=1.5pt,mark size=2pt,]
+    coordinates {
+(0.23, 11.17072)(0.29, 11.14645)(0.34, 11.1429)(0.4, 11.12993)(0.46, 11.12752)(0.52, 11.12073)(0.59, 11.11831)(0.69, 11.10566)(0.75, 11.10325)(0.82, 11.09646)(0.88, 11.09404)(1.0, 11.09291)(2.44, 11.06864)(2.45, 11.06509)(2.5, 11.05212)(2.68, 11.04971)(9.78, 11.04292)(15, 11.04292)
+    };
+    \addlegendentry{SAYNT $F_{I}$};
+
+\addplot[
+    color=violet,
+    every mark/.append style={solid, fill=violet},
+    mark=diamond*,
+    dashed,
+    line width=1.5pt,mark size=2pt,]
+    coordinates {
+(0.02, 11.93271)(0.36, 11.429)(0.92, 11.11544)(1.89, 10.80298)(3.92, 10.26813)
+    };
+    \addlegendentry{Storm};
+
+\addplot[
+    color=orange,
+    every mark/.append style={solid, fill=orange},
+    mark=*,
+    dashed,
+    line width=1.5pt,mark size=2pt,]
+    coordinates {
+(0.23, 11.17072)(0.28, 11.14645)(0.34, 11.1429)(0.4, 11.12993)(0.46, 11.12752)(0.52, 11.12073)(0.58, 11.11831)(0.69, 11.10566)(0.74, 11.10325)(0.81, 11.09646)(0.88, 11.09404)(0.99, 11.09291)(1.06, 11.09049)(1.38, 11.08913)(1.44, 11.08673)(1.5, 11.07994)(1.57, 11.07752)(1.84, 11.07511)(2.22, 11.07074)(2.36, 11.06832)(3.03, 11.0659)(5.42, 11.06487)(5.48, 11.06246)(5.55, 11.05567)(5.62, 11.05325)(5.89, 11.05084)(6.28, 11.04648)(6.42, 11.04406)(7.11, 11.04164)(9.9, 11.0405)(10.58, 11.03808)(15, 11.03808)
+    };
+    \addlegendentry{PAYNT};
+
+\end{axis}
+\end{tikzpicture}
+

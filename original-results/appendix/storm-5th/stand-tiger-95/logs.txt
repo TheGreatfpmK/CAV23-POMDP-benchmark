@@ -1,0 +1,109 @@
+2023-04-25 10:12:20,343 - cli.py - This is Paynt version 0.1.0.
+2023-04-25 10:12:20,348 - sketch.py - loading sketch from /mnt/d/src/PP/synthesis-CAV/experiments/../models/pomdp/storm-integration/stand-tiger-95/sketch.templ ...
+2023-04-25 10:12:20,419 - prism_parser.py - loading properties from /mnt/d/src/PP/synthesis-CAV/experiments/../models/pomdp/storm-integration/stand-tiger-95/sketch.props ...
+2023-04-25 10:12:20,507 - prism_parser.py - found the following specification: constraints: none, optimality objective: R[exp]{"reward"}max=? [F "discount_sink"] 
+2023-04-25 10:12:20,523 - sketch.py - constructed explicit quotient having 14 states and 50 actions
+2023-04-25 10:12:20,523 - sketch.py - found the following specification constraints: none, optimality objective: R[exp]{"reward"}max=? [F "discount_sink"] 
+2023-04-25 10:12:20,535 - quotient_pomdp.py - Constructed POMDP having 7 observations.
+2023-04-25 10:12:20,540 - quotient_pomdp.py - Unfolding POMDP using the following memory allocation vector: [1, 1, 1, 1, 1, 1, 1] ...
+2023-04-25 10:12:20,543 - quotient_pomdp.py - Constructed quotient MDP having 14 states and 50 actions.
+2023-04-25 10:12:20,546 - synthesizer_pomdp.py - Storm pomdp option enabled
+2023-04-25 10:12:20,546 - synthesizer_pomdp.py - Storm settings: iterative - (None, None, None), get_storm_result - 0, storm_options - 20mil, prune_storm - False, unfold_strategy - (True, False), use_storm_cutoffs - False
+2023-04-25 10:12:20,559 - storm_pomdp_control.py - starting Storm POMDP analysis
+Finished exploring Underapproximation MDP.
+ Start analysis...
+2023-04-25 10:12:20,636 - storm_pomdp_control.py - Storm POMDP analysis completed
+-----------Storm-----------                 
+Value = 50.377513618555255 | Time elapsed = 0.0s | FSC size = 58
+FSC (dot) = digraph model {
+	0 [ label = "0: {init, obs_4}" ];
+	1 [ label = "1: {obs_5}" ];
+	2 [ label = "2: {obs_0}" ];
+	3 [ label = "3: {obs_1}" ];
+	4 [ label = "4: {obs_2}" ];
+	5 [ label = "5: {obs_3}" ];
+	6 [ label = "6: {obs_6, target}" ];
+	7 [ label = "7: {obs_0}" ];
+	8 [ label = "8: {obs_1}" ];
+	9 [ label = "9: {obs_0}" ];
+	10 [ label = "10: {obs_1}" ];
+	11 [ label = "11: {obs_2}" ];
+	12 [ label = "12: {obs_3}" ];
+	13 [ label = "13: {obs_2}" ];
+	14 [ label = "14: {obs_3}" ];
+	"0c" [shape = "point"]
+	0 -> "0c" [label= "{(init)}"];
+	"0c" -> 1 [ label= "1" ];
+	"1c" [shape = "point"]
+	1 -> "1c" [label= "{(listen)}"];
+	"1c" -> 2 [ label= "0.2375" ];
+	"1c" -> 3 [ label= "0.2375" ];
+	"1c" -> 4 [ label= "0.2375" ];
+	"1c" -> 5 [ label= "0.2375" ];
+	"1c" -> 6 [ label= "0.05" ];
+	"2c" [shape = "point"]
+	2 -> "2c" [label= "{(listen)}"];
+	"2c" -> 6 [ label= "0.05" ];
+	"2c" -> 8 [ label= "0.304" ];
+	"2c" -> 9 [ label= "0.646" ];
+	"3c" [shape = "point"]
+	3 -> "3c" [label= "{(listen)}"];
+	"3c" -> 6 [ label= "0.05" ];
+	"3c" -> 7 [ label= "0.304" ];
+	"3c" -> 10 [ label= "0.646" ];
+	"4c" [shape = "point"]
+	4 -> "4c" [label= "{(open-left)}"];
+	"4c" -> 6 [ label= "0.05" ];
+	"4c" -> 7 [ label= "0.475" ];
+	"4c" -> 8 [ label= "0.475" ];
+	"5c" [shape = "point"]
+	5 -> "5c" [label= "{(open-left)}"];
+	"5c" -> 6 [ label= "0.05" ];
+	"5c" -> 7 [ label= "0.475" ];
+	"5c" -> 8 [ label= "0.475" ];
+	"6c" [shape = "point"]
+	6 -> "6c" [label= "{loop}"];
+	"6c" -> 6 [ label= "1" ];
+	"7c" [shape = "point"]
+	7 -> "7c" [label= "{(listen)}"];
+	"7c" -> 2 [ label= "0.475" ];
+	"7c" -> 3 [ label= "0.475" ];
+	"7c" -> 6 [ label= "0.05" ];
+	"8c" [shape = "point"]
+	8 -> "8c" [label= "{(listen)}"];
+	"8c" -> 2 [ label= "0.475" ];
+	"8c" -> 3 [ label= "0.475" ];
+	"8c" -> 6 [ label= "0.05" ];
+	"9c" [shape = "point"]
+	9 -> "9c" [label= "{(stand-up)}"];
+	"9c" -> 6 [ label= "0.05" ];
+	"9c" -> 11 [ label= "0.475" ];
+	"9c" -> 12 [ label= "0.475" ];
+	"10c" [shape = "point"]
+	10 -> "10c" [label= "{(stand-up)}"];
+	"10c" -> 6 [ label= "0.05" ];
+	"10c" -> 13 [ label= "0.475" ];
+	"10c" -> 14 [ label= "0.475" ];
+	"11c" [shape = "point"]
+	11 -> "11c" [label= "{(open-right)}"];
+	"11c" -> 6 [ label= "0.05" ];
+	"11c" -> 7 [ label= "0.475" ];
+	"11c" -> 8 [ label= "0.475" ];
+	"12c" [shape = "point"]
+	12 -> "12c" [label= "{(open-right)}"];
+	"12c" -> 6 [ label= "0.05" ];
+	"12c" -> 7 [ label= "0.475" ];
+	"12c" -> 8 [ label= "0.475" ];
+	"13c" [shape = "point"]
+	13 -> "13c" [label= "{(open-left)}"];
+	"13c" -> 6 [ label= "0.05" ];
+	"13c" -> 7 [ label= "0.475" ];
+	"13c" -> 8 [ label= "0.475" ];
+	"14c" [shape = "point"]
+	14 -> "14c" [label= "{(open-left)}"];
+	"14c" -> 6 [ label= "0.05" ];
+	"14c" -> 7 [ label= "0.475" ];
+	"14c" -> 8 [ label= "0.475" ];
+}
+
+

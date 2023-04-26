@@ -1,0 +1,300 @@
+2023-04-26 01:48:01,920 - cli.py - This is Paynt version 0.1.0.
+2023-04-26 01:48:01,923 - sketch.py - loading sketch from /mnt/d/src/PP/synthesis-CAV/experiments/../models/pomdp/storm-integration/4x5x2-95/sketch.templ ...
+2023-04-26 01:48:01,978 - prism_parser.py - loading properties from /mnt/d/src/PP/synthesis-CAV/experiments/../models/pomdp/storm-integration/4x5x2-95/sketch.props ...
+2023-04-26 01:48:01,993 - prism_parser.py - found the following specification: constraints: none, optimality objective: R[exp]{"reward"}max=? [F "discount_sink"] 
+2023-04-26 01:48:02,003 - sketch.py - constructed explicit quotient having 79 states and 310 actions
+2023-04-26 01:48:02,003 - sketch.py - found the following specification constraints: none, optimality objective: R[exp]{"reward"}max=? [F "discount_sink"] 
+2023-04-26 01:48:02,011 - quotient_pomdp.py - Constructed POMDP having 7 observations.
+2023-04-26 01:48:02,015 - quotient_pomdp.py - Unfolding POMDP using the following memory allocation vector: [1, 1, 1, 1, 1, 1, 1] ...
+2023-04-26 01:48:02,018 - quotient_pomdp.py - Constructed quotient MDP having 79 states and 310 actions.
+2023-04-26 01:48:02,021 - synthesizer_pomdp.py - Storm pomdp option enabled
+2023-04-26 01:48:02,021 - synthesizer_pomdp.py - Storm settings: iterative - (None, None, None), get_storm_result - None, storm_options - cutoff, prune_storm - False, unfold_strategy - (True, False), use_storm_cutoffs - False
+2023-04-26 01:48:02,030 - storm_pomdp_control.py - starting Storm POMDP analysis
+Finished exploring Underapproximation MDP.
+ Start analysis...
+2023-04-26 01:48:03,057 - storm_pomdp_control.py - Storm POMDP analysis completed
+-----------Storm-----------               
+Value = 2.0825111995171985 | Time elapsed = 1.0s | FSC size = 102
+FSC (dot) = digraph model {
+	0 [ label = "0: {init, obs_4}" ];
+	1 [ label = "1: {obs_5}" ];
+	2 [ label = "2: {obs_3}" ];
+	3 [ label = "3: {obs_6, target}" ];
+	4 [ label = "4: {obs_0}" ];
+	5 [ label = "5: {obs_1}" ];
+	6 [ label = "6: {obs_2}" ];
+	7 [ label = "7: {obs_0}" ];
+	8 [ label = "8: {obs_0}" ];
+	9 [ label = "9: {obs_0}" ];
+	10 [ label = "10: {obs_0}" ];
+	11 [ label = "11: {obs_0}" ];
+	12 [ label = "12: {obs_0}" ];
+	13 [ label = "13: {obs_0}" ];
+	14 [ label = "14: {obs_0}" ];
+	15 [ label = "15: {obs_0}" ];
+	16 [ label = "16: {obs_0}" ];
+	17 [ label = "17: {obs_0}" ];
+	18 [ label = "18: {obs_0}" ];
+	19 [ label = "19: {obs_0}" ];
+	20 [ label = "20: {obs_0}" ];
+	21 [ label = "21: {obs_0}" ];
+	22 [ label = "22: {obs_0}" ];
+	23 [ label = "23: {obs_0}" ];
+	"0c" [shape = "point"]
+	0 -> "0c" [label= "{(init)}"];
+	"0c" -> 1 [ label= "1" ];
+	"1c" [shape = "point"]
+	1 -> "1c" [label= "{(S0)}"];
+	"1c" -> 2 [ label= "0.0250002" ];
+	"1c" -> 3 [ label= "0.05" ];
+	"1c" -> 4 [ label= "0.824999" ];
+	"1c" -> 5 [ label= "0.0500004" ];
+	"1c" -> 6 [ label= "0.0500004" ];
+	"2c" [shape = "point"]
+	2 -> "2c" [label= "{(W0)}"];
+	"2c" -> 3 [ label= "0.05" ];
+	"2c" -> 5 [ label= "0.0250002" ];
+	"2c" -> 6 [ label= "0.0249993" ];
+	"2c" -> 7 [ label= "0.900001" ];
+	"3c" [shape = "point"]
+	3 -> "3c" [label= "{loop}"];
+	"3c" -> 3 [ label= "1" ];
+	"4c" [shape = "point"]
+	4 -> "4c" [label= "{(S0)}"];
+	"4c" -> 2 [ label= "0.0287881" ];
+	"4c" -> 3 [ label= "0.05" ];
+	"4c" -> 5 [ label= "0.0287881" ];
+	"4c" -> 6 [ label= "0.0287881" ];
+	"4c" -> 8 [ label= "0.863636" ];
+	"5c" [shape = "point"]
+	5 -> "5c" [label= "{(E0)}"];
+	"5c" -> 3 [ label= "0.05" ];
+	"5c" -> 9 [ label= "0.95" ];
+	"6c" [shape = "point"]
+	6 -> "6c" [label= "{(N0)}"];
+	"6c" -> 3 [ label= "0.05" ];
+	"6c" -> 10 [ label= "0.95" ];
+	"7c" [shape = "point"]
+	7 -> "7c" [label= "{(S0)}"];
+	"7c" -> 2 [ label= "0.0263891" ];
+	"7c" -> 3 [ label= "0.05" ];
+	"7c" -> 5 [ label= "0.0263891" ];
+	"7c" -> 6 [ label= "0.0263891" ];
+	"7c" -> 11 [ label= "0.870833" ];
+	"8c" [shape = "point"]
+	8 -> "8c" [label= "{(W0)}"];
+	"8c" -> 3 [ label= "0.05" ];
+	"8c" -> 5 [ label= "0.095001" ];
+	"8c" -> 6 [ label= "0.095001" ];
+	"8c" -> 12 [ label= "0.759998" ];
+	"9c" [shape = "point"]
+	9 -> "9c" [label= "{(E0)}"];
+	"9c" -> 3 [ label= "0.05" ];
+	"9c" -> 13 [ label= "0.95" ];
+	"10c" [shape = "point"]
+	10 -> "10c" [label= "{(N0)}"];
+	"10c" -> 3 [ label= "0.05" ];
+	"10c" -> 14 [ label= "0.95" ];
+	"11c" [shape = "point"]
+	11 -> "11c" [label= "{(S0)}"];
+	"11c" -> 2 [ label= "0.0287881" ];
+	"11c" -> 3 [ label= "0.05" ];
+	"11c" -> 5 [ label= "0.0287881" ];
+	"11c" -> 6 [ label= "0.0287881" ];
+	"11c" -> 15 [ label= "0.863636" ];
+	"12c" [shape = "point"]
+	12 -> "12c" [label= "{(W0)}"];
+	"12c" -> 3 [ label= "0.05" ];
+	"12c" -> 5 [ label= "0.118752" ];
+	"12c" -> 6 [ label= "0.118752" ];
+	"12c" -> 16 [ label= "0.712497" ];
+	"13c" [shape = "point"]
+	13 -> "13c" [label= "{(E0)}"];
+	"13c" -> 3 [ label= "0.05" ];
+	"13c" -> 17 [ label= "0.95" ];
+	"14c" [shape = "point"]
+	14 -> "14c" [label= "{(N0)}"];
+	"14c" -> 2 [ label= "0.95" ];
+	"14c" -> 3 [ label= "0.05" ];
+	"15c" [shape = "point"]
+	15 -> "15c" [label= "{(W0)}"];
+	"15c" -> 3 [ label= "0.05" ];
+	"15c" -> 5 [ label= "0.0949996" ];
+	"15c" -> 6 [ label= "0.0949996" ];
+	"15c" -> 18 [ label= "0.760001" ];
+	"16c" [shape = "point"]
+	16 -> "16c" [label= "{(W0)}"];
+	"16c" -> 3 [ label= "0.05" ];
+	"16c" -> 5 [ label= "0.158336" ];
+	"16c" -> 6 [ label= "0.158336" ];
+	"16c" -> 19 [ label= "0.633328" ];
+	"17c" [shape = "point"]
+	17 -> "17c" [label= "{(E0)}"];
+	"17c" -> 2 [ label= "0.95" ];
+	"17c" -> 3 [ label= "0.05" ];
+	"18c" [shape = "point"]
+	18 -> "18c" [label= "{(W0)}"];
+	"18c" -> 3 [ label= "0.05" ];
+	"18c" -> 5 [ label= "0.118749" ];
+	"18c" -> 6 [ label= "0.118749" ];
+	"18c" -> 20 [ label= "0.712501" ];
+	"19c" [shape = "point"]
+	19 -> "19c" [label= "{(S0)}"];
+	"19c" -> 3 [ label= "0.05" ];
+	"19c" -> 5 [ label= "0.316663" ];
+	"19c" -> 6 [ label= "0.237497" ];
+	"19c" -> 21 [ label= "0.39584" ];
+	"20c" [shape = "point"]
+	20 -> "20c" [label= "{(W0)}"];
+	"20c" -> 3 [ label= "0.05" ];
+	"20c" -> 5 [ label= "0.158332" ];
+	"20c" -> 6 [ label= "0.158332" ];
+	"20c" -> 22 [ label= "0.633335" ];
+	"21c" [shape = "point"]
+	21 -> "21c" [label= "{(W0)}"];
+	"21c" -> 3 [ label= "0.05" ];
+	"21c" -> 5 [ label= "0.189994" ];
+	"21c" -> 6 [ label= "0.760006" ];
+	"22c" [shape = "point"]
+	22 -> "22c" [label= "{(S0)}"];
+	"22c" -> 3 [ label= "0.05" ];
+	"22c" -> 5 [ label= "0.316668" ];
+	"22c" -> 6 [ label= "0.237501" ];
+	"22c" -> 23 [ label= "0.395832" ];
+	"23c" [shape = "point"]
+	23 -> "23c" [label= "{(W0)}"];
+	"23c" -> 3 [ label= "0.05" ];
+	"23c" -> 5 [ label= "0.190001" ];
+	"23c" -> 6 [ label= "0.759999" ];
+}
+
+
+2023-04-26 01:48:03,062 - storm_pomdp_control.py - Main family based on data from Storm: reduced design space from 1024 to 4
+{0: [1, 3, 2, 0], 1: [2], 2: [0], 3: [3], 4: [0], 5: [1]} 
+
+{0: [1, 3, 2, 0], 1: [2], 2: [0], 3: [3], 4: [0], 5: [1]}
+2023-04-26 01:48:03,062 - synthesizer.py - Synthesis initiated.
+-----------PAYNT-----------               
+Value = 0.02885875140038869 | Time elapsed = 0.0s | FSC size = 14
+FSC = A(0,0)={'(W0)'}, A(1,0)={'(E0)'}, A(2,0)={'(N0)'}, A(3,0)={'(W0)'}, A(5,0)={'(S0)'}
+
+-----------PAYNT-----------               
+Value = 0.23228808538170473 | Time elapsed = 0.0s | FSC size = 14
+FSC = A(0,0)={'(E0)'}, A(1,0)={'(E0)'}, A(2,0)={'(N0)'}, A(3,0)={'(W0)'}, A(5,0)={'(S0)'}
+
+2023-04-26 01:48:03,066 - synthesizer_ar_storm.py - Main family synthesis done
+2023-04-26 01:48:03,066 - synthesizer_ar_storm.py - Subfamilies buffer contains: 4 families
+--------------------
+Synthesis summary
+
+optimality objective: R[exp]{"reward"}max=? [F "discount_sink"] 
+
+method: AR, synthesis time: 0.02 s
+number of holes: 5, family size: 1024, super quotient: 79 states / 310 actions
+explored: 100 %
+AR stats: avg MDP size: 79, iterations: 75
+
+optimal: 0.232288
+--------------------
+
+2023-04-26 01:48:03,079 - synthesizer_pomdp.py - Added memory nodes for observation based on Storm data
+{0: 4, 1: 1, 2: 1, 3: 1, 4: 1, 5: 1, 6: 1}
+2023-04-26 01:48:03,079 - quotient_pomdp.py - Unfolding POMDP using the following memory allocation vector: [4, 1, 1, 1, 1, 1, 1] ...
+2023-04-26 01:48:03,080 - quotient_pomdp.py - Constructed quotient MDP having 187 states and 2962 actions.
+2023-04-26 01:48:03,173 - storm_pomdp_control.py - Main family based on data from Storm: reduced design space from 4294967296 to 16777216
+{0: [1, 3, 2, 0], 1: [2], 2: [0], 3: [3], 4: [0], 5: [1]} 
+
+{0: [1, 3, 2, 0], 1: [2], 2: [0], 3: [3], 4: [0], 5: [1]}
+2023-04-26 01:48:03,173 - synthesizer.py - Synthesis initiated.
+-----------PAYNT-----------               
+Value = 0.23675686702915466 | Time elapsed = 0.1s | FSC size = 20
+FSC = A(0,0)={'(W0)'}, A(0,1)={'(W0)'}, A(0,2)={'(W0)'}, A(0,3)={'(E0)'}, M(0,0)=3, M(0,1)=3, M(0,2)=3, M(0,3)=3, A(1,0)={'(E0)'}, M(1,0)=3, A(2,0)={'(N0)'}, M(2,0)=0, A(3,0)={'(W0)'}, M(3,0)=0, A(5,0)={'(S0)'}, M(5,0)=3
+
+-----------PAYNT-----------               
+Value = 0.2532764153130979 | Time elapsed = 0.1s | FSC size = 20
+FSC = A(0,0)={'(W0)'}, A(0,1)={'(W0)'}, A(0,2)={'(W0)'}, A(0,3)={'(E0)'}, M(0,0)=3, M(0,1)=3, M(0,2)=2, M(0,3)=3, A(1,0)={'(E0)'}, M(1,0)=3, A(2,0)={'(N0)'}, M(2,0)=0, A(3,0)={'(W0)'}, M(3,0)=2, A(5,0)={'(S0)'}, M(5,0)=3
+
+-----------PAYNT-----------               
+Value = 0.28282732215557177 | Time elapsed = 0.3s | FSC size = 20
+FSC = A(0,0)={'(W0)'}, A(0,1)={'(W0)'}, A(0,2)={'(W0)'}, A(0,3)={'(N0)'}, M(0,0)=3, M(0,1)=3, M(0,2)=2, M(0,3)=3, A(1,0)={'(E0)'}, M(1,0)=0, A(2,0)={'(N0)'}, M(2,0)=3, A(3,0)={'(W0)'}, M(3,0)=2, A(5,0)={'(S0)'}, M(5,0)=2
+
+-----------PAYNT-----------               
+Value = 0.3447325120854526 | Time elapsed = 0.3s | FSC size = 20
+FSC = A(0,0)={'(W0)'}, A(0,1)={'(W0)'}, A(0,2)={'(W0)'}, A(0,3)={'(N0)'}, M(0,0)=3, M(0,1)=3, M(0,2)=0, M(0,3)=3, A(1,0)={'(E0)'}, M(1,0)=0, A(2,0)={'(N0)'}, M(2,0)=3, A(3,0)={'(W0)'}, M(3,0)=2, A(5,0)={'(S0)'}, M(5,0)=2
+
+-----------PAYNT-----------               
+Value = 0.4892274441975821 | Time elapsed = 0.3s | FSC size = 20
+FSC = A(0,0)={'(W0)'}, A(0,1)={'(W0)'}, A(0,2)={'(W0)'}, A(0,3)={'(N0)'}, M(0,0)=3, M(0,1)=0, M(0,2)=1, M(0,3)=3, A(1,0)={'(E0)'}, M(1,0)=0, A(2,0)={'(N0)'}, M(2,0)=3, A(3,0)={'(W0)'}, M(3,0)=2, A(5,0)={'(S0)'}, M(5,0)=2
+
+-----------PAYNT-----------               
+Value = 0.6576194866823734 | Time elapsed = 0.5s | FSC size = 20
+FSC = A(0,0)={'(W0)'}, A(0,1)={'(W0)'}, A(0,2)={'(W0)'}, A(0,3)={'(N0)'}, M(0,0)=3, M(0,1)=3, M(0,2)=3, M(0,3)=0, A(1,0)={'(E0)'}, M(1,0)=0, A(2,0)={'(N0)'}, M(2,0)=3, A(3,0)={'(W0)'}, M(3,0)=0, A(5,0)={'(S0)'}, M(5,0)=3
+
+-----------PAYNT-----------               
+Value = 0.6617092597549027 | Time elapsed = 0.5s | FSC size = 20
+FSC = A(0,0)={'(W0)'}, A(0,1)={'(W0)'}, A(0,2)={'(W0)'}, A(0,3)={'(N0)'}, M(0,0)=3, M(0,1)=3, M(0,2)=3, M(0,3)=0, A(1,0)={'(E0)'}, M(1,0)=0, A(2,0)={'(N0)'}, M(2,0)=3, A(3,0)={'(W0)'}, M(3,0)=0, A(5,0)={'(S0)'}, M(5,0)=0
+
+-----------PAYNT-----------               
+Value = 0.6843298787505059 | Time elapsed = 1.0s | FSC size = 20
+FSC = A(0,0)={'(W0)'}, A(0,1)={'(W0)'}, A(0,2)={'(E0)'}, A(0,3)={'(N0)'}, M(0,0)=3, M(0,1)=3, M(0,2)=3, M(0,3)=0, A(1,0)={'(E0)'}, M(1,0)=0, A(2,0)={'(N0)'}, M(2,0)=3, A(3,0)={'(W0)'}, M(3,0)=0, A(5,0)={'(S0)'}, M(5,0)=2
+
+-----------PAYNT-----------               
+Value = 0.6899015201573547 | Time elapsed = 1.0s | FSC size = 20
+FSC = A(0,0)={'(W0)'}, A(0,1)={'(W0)'}, A(0,2)={'(E0)'}, A(0,3)={'(N0)'}, M(0,0)=1, M(0,1)=3, M(0,2)=3, M(0,3)=0, A(1,0)={'(E0)'}, M(1,0)=0, A(2,0)={'(N0)'}, M(2,0)=3, A(3,0)={'(W0)'}, M(3,0)=3, A(5,0)={'(S0)'}, M(5,0)=2
+
+-----------PAYNT-----------               
+Value = 0.7759133132539807 | Time elapsed = 1.2s | FSC size = 20
+FSC = A(0,0)={'(W0)'}, A(0,1)={'(W0)'}, A(0,2)={'(E0)'}, A(0,3)={'(N0)'}, M(0,0)=3, M(0,1)=3, M(0,2)=2, M(0,3)=0, A(1,0)={'(E0)'}, M(1,0)=2, A(2,0)={'(N0)'}, M(2,0)=3, A(3,0)={'(W0)'}, M(3,0)=0, A(5,0)={'(S0)'}, M(5,0)=3
+
+-----------PAYNT-----------               
+Value = 0.8501209328423467 | Time elapsed = 1.2s | FSC size = 20
+FSC = A(0,0)={'(W0)'}, A(0,1)={'(W0)'}, A(0,2)={'(E0)'}, A(0,3)={'(N0)'}, M(0,0)=3, M(0,1)=3, M(0,2)=2, M(0,3)=0, A(1,0)={'(E0)'}, M(1,0)=2, A(2,0)={'(N0)'}, M(2,0)=3, A(3,0)={'(W0)'}, M(3,0)=0, A(5,0)={'(S0)'}, M(5,0)=0
+
+-----------PAYNT-----------               
+Value = 0.9398780709153457 | Time elapsed = 1.2s | FSC size = 20
+FSC = A(0,0)={'(W0)'}, A(0,1)={'(W0)'}, A(0,2)={'(E0)'}, A(0,3)={'(N0)'}, M(0,0)=3, M(0,1)=0, M(0,2)=2, M(0,3)=0, A(1,0)={'(E0)'}, M(1,0)=2, A(2,0)={'(N0)'}, M(2,0)=3, A(3,0)={'(W0)'}, M(3,0)=1, A(5,0)={'(S0)'}, M(5,0)=1
+
+-----------PAYNT-----------               
+Value = 1.980231181177418 | Time elapsed = 1.9s | FSC size = 20
+FSC = A(0,0)={'(W0)'}, A(0,1)={'(E0)'}, A(0,2)={'(N0)'}, A(0,3)={'(S0)'}, M(0,0)=3, M(0,1)=1, M(0,2)=2, M(0,3)=0, A(1,0)={'(E0)'}, M(1,0)=1, A(2,0)={'(N0)'}, M(2,0)=2, A(3,0)={'(W0)'}, M(3,0)=0, A(5,0)={'(S0)'}, M(5,0)=3
+
+-----------PAYNT-----------               
+Value = 1.9959291648344961 | Time elapsed = 1.9s | FSC size = 20
+FSC = A(0,0)={'(W0)'}, A(0,1)={'(E0)'}, A(0,2)={'(N0)'}, A(0,3)={'(S0)'}, M(0,0)=3, M(0,1)=1, M(0,2)=2, M(0,3)=0, A(1,0)={'(E0)'}, M(1,0)=1, A(2,0)={'(N0)'}, M(2,0)=2, A(3,0)={'(W0)'}, M(3,0)=0, A(5,0)={'(S0)'}, M(5,0)=0
+
+2023-04-26 01:48:10,041 - synthesizer_ar_storm.py - Main family synthesis done
+2023-04-26 01:48:10,041 - synthesizer_ar_storm.py - Subfamilies buffer contains: 4 families
+-----------PAYNT-----------               
+Value = 2.007357733062532 | Time elapsed = 7.2s | FSC size = 20
+FSC = A(0,0)={'(W0)'}, A(0,1)={'(E0)'}, A(0,2)={'(S0)'}, A(0,3)={'(N0)'}, M(0,0)=2, M(0,1)=1, M(0,2)=0, M(0,3)=3, A(1,0)={'(E0)'}, M(1,0)=1, A(2,0)={'(N0)'}, M(2,0)=3, A(3,0)={'(W0)'}, M(3,0)=0, A(5,0)={'(W0)'}, M(5,0)=2
+
+-----------PAYNT-----------               
+Value = 2.0176603051193345 | Time elapsed = 7.2s | FSC size = 20
+FSC = A(0,0)={'(W0)'}, A(0,1)={'(E0)'}, A(0,2)={'(S0)'}, A(0,3)={'(N0)'}, M(0,0)=2, M(0,1)=1, M(0,2)=0, M(0,3)=3, A(1,0)={'(E0)'}, M(1,0)=1, A(2,0)={'(N0)'}, M(2,0)=3, A(3,0)={'(W0)'}, M(3,0)=0, A(5,0)={'(W0)'}, M(5,0)=0
+
+--------------------
+Synthesis summary
+
+optimality objective: R[exp]{"reward"}max=? [F "discount_sink"] 
+
+method: AR, synthesis time: 34.7 s
+number of holes: 16, family size: 4294967296, super quotient: 187 states / 2962 actions
+explored: 100 %
+AR stats: avg MDP size: 187, iterations: 20695
+
+optimal: 2.01766
+--------------------
+
+2023-04-26 01:48:37,875 - synthesizer_pomdp.py - Added memory nodes for observation based on Storm data
+{0: 5, 1: 2, 2: 2, 3: 2, 4: 2, 5: 2, 6: 1}
+2023-04-26 01:48:37,875 - quotient_pomdp.py - Unfolding POMDP using the following memory allocation vector: [5, 2, 2, 2, 2, 2, 1] ...
+2023-04-26 01:48:37,876 - quotient_pomdp.py - Constructed quotient MDP having 265 states and 5245 actions.
+2023-04-26 01:48:38,218 - storm_pomdp_control.py - Main family based on data from Storm: reduced design space from 327680000000000000 to 5000000000000
+{0: [1, 3, 2, 0], 1: [2], 2: [0], 3: [3], 4: [0], 5: [1]} 
+
+{0: [1, 3, 2, 0], 1: [2], 2: [0], 3: [3], 4: [0], 5: [1]}
+2023-04-26 01:48:38,219 - synthesizer.py - Synthesis initiated.
+-----------PAYNT-----------               
+Value = 2.0310221423271466 | Time elapsed = 38.0s | FSC size = 32
+FSC = A(0,0)={'(W0)'}, A(0,1)={'(W0)'}, A(0,2)={'(E0)'}, A(0,3)={'(N0)'}, A(0,4)={'(S0)'}, M(0,0)=4, M(0,1)=0, M(0,2)=2, M(0,3)=3, M(0,4)=0, A(1,0)={'(E0)'}, A(1,1)={'(E0)'}, M(1,0)=2, M(1,1)=2, A(2,0)={'(N0)'}, A(2,1)={'(N0)'}, M(2,0)=3, M(2,1)=3, A(3,0)={'(W0)'}, A(3,1)={'(W0)'}, M(3,0)=1, M(3,1)=1, M(4,0)=1, M(4,1)=0, A(5,0)={'(S0)'}, A(5,1)={'(S0)'}, M(5,0)=4, M(5,1)=1
+

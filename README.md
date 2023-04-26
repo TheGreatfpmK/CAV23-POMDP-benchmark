@@ -15,6 +15,8 @@ Run the benchmarks using:
 - `-o` with this flag overwriting of already existing logs is allowed (good if you want to rerun all the experiments), overwriting is turned off by default so if you only want to run experiments for certain values remove the logs associated with the values and rerun this script without -o flag
 - `-e` allows export of the FSCs found by SAYNT, THIS OPTION REQUIRES FEW GIGABYTES OF DISK SPACE TO STORE ALL THE FSCs AND MIGHT INFLUENCE THE SPEED OF THE METHODS FOR LARGE MODELS!
 
+YOU HAVE TO RUN THE BENCHMARK SCRIPT FROM THE PAYNT ROOT FOLDER!
+
 The script automatically runs all the experiments and creates PDFs containing tables/graphs. All the PDFs (and the source .tex files) will be located in `experiments/results` folder. If you used the -e flag you can find the exported FSCs alongside the log files.
 
 The logs, from which the tables are created, are saved into corresponding folders e.g. experiments to obtain information about models (table 2 of our paper) will store the logs to models-info folder and so on.
@@ -37,7 +39,7 @@ If you feel like your PC needs more computation time to achieve comparable resul
 The folder `experiments/original-results` contains our log files. The subfolders `models-info`, `q1`, `q2`, `q3`, `appendix` contain the log files generated from the tools. The subfolder `results` contains the PDFs generated from these logs.
 
 ## Experiments list
-We provide a quick overview of the experiments here
+We provide a quick overview of the experiments here:
 
 #### Table 2 - models-info
 This experiment provides the information about all of the considered models like their number of states/actions/observation and computed over-approximation using Storm

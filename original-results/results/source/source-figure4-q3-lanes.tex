@@ -1,0 +1,67 @@
+\begin{tikzpicture}
+\begin{axis}[
+    title={Lanes+},
+    xlabel={Time [min]},
+    ylabel={Value [Rmin]},
+    xmin=0, xmax=15,
+    ymin=4000, ymax=20000,
+    xtick={0,2,4,6,8,10,12,14},
+    ytick={4000,8000,12000,16000,20000},
+    xtick pos=left,
+    ytick pos=left,
+    restrict y to domain=2000:22000,
+    ymajorgrids=true,
+    y dir=reverse,
+    grid style=dashed,
+    height=8cm,
+    width=12cm,
+    legend style ={ at={(1.03,1)},
+        anchor=north west, draw=black, 
+        fill=white,align=left},
+]
+
+\addplot[
+    color=blue,
+    every mark/.append style={solid, fill=blue},
+    mark=square*,
+    line width=1.5pt,mark size=2pt,]
+    coordinates {
+(1.44, 6472.49336)(3.88, 4805.97703)(6.46, 4805.97703)(9.14, 4805.97703)(11.91, 4805.97703)(14.79, 4805.97703)(17.74, 4805.97703)(20.75, 4805.97703)(23.8, 4805.97703)
+    };
+    \addlegendentry{SAYNT $F_{B}$};
+
+\addplot[
+    color=green,
+    every mark/.append style={solid, fill=green},
+    mark=triangle*,
+    line width=1.5pt,mark size=2pt,]
+    coordinates {
+(0.01, 11009.34858)(0.01, 10241.93978)(0.13, 9019.14578)(1.65, 7359.96372)(2.17, 6665.23225)(2.35, 6591.11316)(15, 6591.11316)
+    };
+    \addlegendentry{SAYNT $F_{I}$};
+
+\addplot[
+    color=violet,
+    every mark/.append style={solid, fill=violet},
+    mark=diamond*,
+    dashed,
+    line width=1.5pt,mark size=2pt,]
+    coordinates {
+(0.11, 21286.62547)(0.58, 19936.40517)(1.35, 19230.93944)(2.67, 18870.51119)
+    };
+    \addlegendentry{Storm};
+
+\addplot[
+    color=orange,
+    every mark/.append style={solid, fill=orange},
+    mark=*,
+    dashed,
+    line width=1.5pt,mark size=2pt,]
+    coordinates {
+(0.01, 11009.34858)(0.01, 10241.93978)(0.12, 9019.14578)(1.21, 8325.14001)(1.27, 8260.19657)(1.77, 8223.35307)(15, 8223.35307)
+    };
+    \addlegendentry{PAYNT};
+
+\end{axis}
+\end{tikzpicture}
+

@@ -1,0 +1,175 @@
+2023-04-25 05:48:29,295 - cli.py - This is Paynt version 0.1.0.
+2023-04-25 05:48:29,298 - sketch.py - loading sketch from /mnt/d/src/PP/synthesis-CAV/experiments/../models/pomdp/storm-integration/query-s3/sketch.templ ...
+2023-04-25 05:48:29,366 - prism_parser.py - loading properties from /mnt/d/src/PP/synthesis-CAV/experiments/../models/pomdp/storm-integration/query-s3/sketch.props ...
+2023-04-25 05:48:29,382 - prism_parser.py - found the following specification: constraints: none, optimality objective: R[exp]{"reward"}max=? [F "discount_sink"] 
+2023-04-25 05:48:29,390 - sketch.py - constructed explicit quotient having 108 states and 320 actions
+2023-04-25 05:48:29,391 - sketch.py - found the following specification constraints: none, optimality objective: R[exp]{"reward"}max=? [F "discount_sink"] 
+2023-04-25 05:48:29,397 - quotient_pomdp.py - Constructed POMDP having 6 observations.
+2023-04-25 05:48:29,402 - quotient_pomdp.py - Unfolding POMDP using the following memory allocation vector: [1, 1, 1, 1, 1, 1] ...
+2023-04-25 05:48:29,404 - quotient_pomdp.py - Constructed quotient MDP having 108 states and 320 actions.
+2023-04-25 05:48:29,407 - synthesizer_pomdp.py - Synthesizing optimal k=1 controller ...
+2023-04-25 05:48:29,407 - quotient_pomdp.py - Unfolding POMDP using the following memory allocation vector: [1, 1, 1, 1, 1, 1] ...
+2023-04-25 05:48:29,408 - quotient_pomdp.py - Constructed quotient MDP having 108 states and 320 actions.
+2023-04-25 05:48:29,409 - synthesizer.py - Synthesis initiated.
+-----------PAYNT-----------               
+Value = 333.3268113041915 | Time elapsed = 0.1s | FSC size = 12
+FSC = A(0,0)={'(Query-2)'}, A(1,0)={'(Query-2)'}, A(2,0)={'(Query-2)'}, A(4,0)={'(Query-2)'}
+
+-----------PAYNT-----------               
+Value = 334.39813120972815 | Time elapsed = 0.1s | FSC size = 12
+FSC = A(0,0)={'(Query-2)'}, A(1,0)={'(Query-2)'}, A(2,0)={'(Query-2)'}, A(4,0)={'(Query-1)'}
+
+-----------PAYNT-----------               
+Value = 385.37184753215587 | Time elapsed = 0.1s | FSC size = 12
+FSC = A(0,0)={'(Query-1)'}, A(1,0)={'(Query-2)'}, A(2,0)={'(Query-2)'}, A(4,0)={'(Query-2)'}
+
+-----------PAYNT-----------               
+Value = 387.41602622764486 | Time elapsed = 0.2s | FSC size = 12
+FSC = A(0,0)={'(Query-2)'}, A(1,0)={'(Query-2)'}, A(2,0)={'(Query-1)'}, A(4,0)={'(Query-2)'}
+
+-----------PAYNT-----------               
+Value = 388.02372397922346 | Time elapsed = 0.2s | FSC size = 12
+FSC = A(0,0)={'(Query-2)'}, A(1,0)={'(Query-2)'}, A(2,0)={'(Query-1)'}, A(4,0)={'(Query-0)'}
+
+-----------PAYNT-----------               
+Value = 393.5543332568157 | Time elapsed = 0.3s | FSC size = 12
+FSC = A(0,0)={'(Query-0)'}, A(1,0)={'(Query-2)'}, A(2,0)={'(Query-1)'}, A(4,0)={'(Query-2)'}
+
+--------------------
+Synthesis summary
+
+optimality objective: R[exp]{"reward"}max=? [F "discount_sink"] 
+
+method: AR, synthesis time: 0.65 s
+number of holes: 4, family size: 81, super quotient: 108 states / 320 actions
+explored: 100 %
+AR stats: avg MDP size: 107, iterations: 70
+
+optimal: 393.554333
+--------------------
+
+2023-04-25 05:48:30,099 - synthesizer_pomdp.py - Synthesizing optimal k=2 controller ...
+2023-04-25 05:48:30,100 - quotient_pomdp.py - Unfolding POMDP using the following memory allocation vector: [2, 2, 2, 1, 2, 1] ...
+2023-04-25 05:48:30,101 - quotient_pomdp.py - Constructed quotient MDP having 214 states and 1275 actions.
+2023-04-25 05:48:30,118 - synthesizer.py - Synthesis initiated.
+-----------PAYNT-----------               
+Value = 412.7647083768861 | Time elapsed = 1.3s | FSC size = 20
+FSC = A(0,0)={'(Query-2)'}, A(0,1)={'(Query-1)'}, M(0,0)=1, M(0,1)=0, A(1,0)={'(Query-2)'}, A(1,1)={'(Query-2)'}, M(1,0)=1, M(1,1)=1, A(2,0)={'(Query-2)'}, A(2,1)={'(Query-2)'}, M(2,0)=1, M(2,1)=1, M(3,0)=0, A(4,0)={'(Query-2)'}, A(4,1)={'(Query-2)'}, M(4,0)=1, M(4,1)=1
+
+-----------PAYNT-----------               
+Value = 412.81391639763825 | Time elapsed = 1.5s | FSC size = 20
+FSC = A(0,0)={'(Query-2)'}, A(0,1)={'(Query-1)'}, M(0,0)=1, M(0,1)=0, A(1,0)={'(Query-2)'}, A(1,1)={'(Query-2)'}, M(1,0)=1, M(1,1)=1, A(2,0)={'(Query-2)'}, A(2,1)={'(Query-2)'}, M(2,0)=1, M(2,1)=1, M(3,0)=1, A(4,0)={'(Query-2)'}, A(4,1)={'(Query-1)'}, M(4,0)=0, M(4,1)=0
+
+-----------PAYNT-----------               
+Value = 413.01214438121855 | Time elapsed = 1.5s | FSC size = 20
+FSC = A(0,0)={'(Query-2)'}, A(0,1)={'(Query-1)'}, M(0,0)=1, M(0,1)=0, A(1,0)={'(Query-2)'}, A(1,1)={'(Query-2)'}, M(1,0)=1, M(1,1)=1, A(2,0)={'(Query-2)'}, A(2,1)={'(Query-2)'}, M(2,0)=1, M(2,1)=1, M(3,0)=1, A(4,0)={'(Query-2)'}, A(4,1)={'(Query-0)'}, M(4,0)=0, M(4,1)=1
+
+-----------PAYNT-----------               
+Value = 422.928005043513 | Time elapsed = 6.4s | FSC size = 20
+FSC = A(0,0)={'(Query-1)'}, A(0,1)={'(Query-0)'}, M(0,0)=1, M(0,1)=0, A(1,0)={'(Query-2)'}, A(1,1)={'(Query-2)'}, M(1,0)=1, M(1,1)=1, A(2,0)={'(Query-2)'}, A(2,1)={'(Query-2)'}, M(2,0)=1, M(2,1)=1, M(3,0)=0, A(4,0)={'(Query-2)'}, A(4,1)={'(Query-2)'}, M(4,0)=1, M(4,1)=1
+
+-----------PAYNT-----------               
+Value = 425.16459398698726 | Time elapsed = 7.6s | FSC size = 20
+FSC = A(0,0)={'(Query-1)'}, A(0,1)={'(Query-0)'}, M(0,0)=1, M(0,1)=0, A(1,0)={'(Query-2)'}, A(1,1)={'(Query-2)'}, M(1,0)=1, M(1,1)=0, A(2,0)={'(Query-2)'}, A(2,1)={'(Query-2)'}, M(2,0)=1, M(2,1)=1, M(3,0)=0, A(4,0)={'(Query-2)'}, A(4,1)={'(Query-2)'}, M(4,0)=1, M(4,1)=1
+
+-----------PAYNT-----------               
+Value = 425.2338715064638 | Time elapsed = 7.6s | FSC size = 20
+FSC = A(0,0)={'(Query-1)'}, A(0,1)={'(Query-0)'}, M(0,0)=1, M(0,1)=0, A(1,0)={'(Query-2)'}, A(1,1)={'(Query-2)'}, M(1,0)=1, M(1,1)=0, A(2,0)={'(Query-2)'}, A(2,1)={'(Query-2)'}, M(2,0)=1, M(2,1)=1, M(3,0)=1, A(4,0)={'(Query-2)'}, A(4,1)={'(Query-2)'}, M(4,0)=1, M(4,1)=0
+
+-----------PAYNT-----------               
+Value = 425.3897835701035 | Time elapsed = 10.8s | FSC size = 20
+FSC = A(0,0)={'(Query-1)'}, A(0,1)={'(Query-0)'}, M(0,0)=1, M(0,1)=0, A(1,0)={'(Query-2)'}, A(1,1)={'(Query-2)'}, M(1,0)=1, M(1,1)=1, A(2,0)={'(Query-2)'}, A(2,1)={'(Query-2)'}, M(2,0)=0, M(2,1)=1, M(3,0)=0, A(4,0)={'(Query-2)'}, A(4,1)={'(Query-2)'}, M(4,0)=1, M(4,1)=1
+
+-----------PAYNT-----------               
+Value = 428.32627711806504 | Time elapsed = 11.8s | FSC size = 20
+FSC = A(0,0)={'(Query-1)'}, A(0,1)={'(Query-0)'}, M(0,0)=1, M(0,1)=0, A(1,0)={'(Query-2)'}, A(1,1)={'(Query-2)'}, M(1,0)=1, M(1,1)=0, A(2,0)={'(Query-2)'}, A(2,1)={'(Query-2)'}, M(2,0)=0, M(2,1)=1, M(3,0)=0, A(4,0)={'(Query-2)'}, A(4,1)={'(Query-2)'}, M(4,0)=1, M(4,1)=1
+
+-----------PAYNT-----------               
+Value = 430.8829592595521 | Time elapsed = 17.6s | FSC size = 20
+FSC = A(0,0)={'(Query-0)'}, A(0,1)={'(Query-2)'}, M(0,0)=1, M(0,1)=0, A(1,0)={'(Query-2)'}, A(1,1)={'(Query-2)'}, M(1,0)=1, M(1,1)=1, A(2,0)={'(Query-2)'}, A(2,1)={'(Query-1)'}, M(2,0)=1, M(2,1)=0, M(3,0)=0, A(4,0)={'(Query-2)'}, A(4,1)={'(Query-2)'}, M(4,0)=1, M(4,1)=1
+
+-----------PAYNT-----------               
+Value = 431.1286274390723 | Time elapsed = 17.6s | FSC size = 20
+FSC = A(0,0)={'(Query-0)'}, A(0,1)={'(Query-2)'}, M(0,0)=1, M(0,1)=0, A(1,0)={'(Query-2)'}, A(1,1)={'(Query-2)'}, M(1,0)=1, M(1,1)=1, A(2,0)={'(Query-2)'}, A(2,1)={'(Query-1)'}, M(2,0)=1, M(2,1)=0, M(3,0)=1, A(4,0)={'(Query-2)'}, A(4,1)={'(Query-2)'}, M(4,0)=1, M(4,1)=0
+
+-----------PAYNT-----------               
+Value = 436.5254941530163 | Time elapsed = 19.5s | FSC size = 20
+FSC = A(0,0)={'(Query-0)'}, A(0,1)={'(Query-2)'}, M(0,0)=1, M(0,1)=0, A(1,0)={'(Query-2)'}, A(1,1)={'(Query-2)'}, M(1,0)=1, M(1,1)=0, A(2,0)={'(Query-2)'}, A(2,1)={'(Query-1)'}, M(2,0)=1, M(2,1)=0, M(3,0)=0, A(4,0)={'(Query-2)'}, A(4,1)={'(Query-2)'}, M(4,0)=1, M(4,1)=1
+
+-----------PAYNT-----------               
+Value = 436.8444557269598 | Time elapsed = 19.5s | FSC size = 20
+FSC = A(0,0)={'(Query-0)'}, A(0,1)={'(Query-2)'}, M(0,0)=1, M(0,1)=0, A(1,0)={'(Query-2)'}, A(1,1)={'(Query-2)'}, M(1,0)=1, M(1,1)=0, A(2,0)={'(Query-2)'}, A(2,1)={'(Query-1)'}, M(2,0)=1, M(2,1)=0, M(3,0)=1, A(4,0)={'(Query-2)'}, A(4,1)={'(Query-2)'}, M(4,0)=1, M(4,1)=0
+
+-----------PAYNT-----------               
+Value = 443.34362996708126 | Time elapsed = 21.4s | FSC size = 20
+FSC = A(0,0)={'(Query-2)'}, A(0,1)={'(Query-1)'}, M(0,0)=1, M(0,1)=0, A(1,0)={'(Query-2)'}, A(1,1)={'(Query-2)'}, M(1,0)=1, M(1,1)=1, A(2,0)={'(Query-2)'}, A(2,1)={'(Query-1)'}, M(2,0)=1, M(2,1)=0, M(3,0)=0, A(4,0)={'(Query-2)'}, A(4,1)={'(Query-2)'}, M(4,0)=1, M(4,1)=1
+
+-----------PAYNT-----------               
+Value = 443.35479830883304 | Time elapsed = 21.7s | FSC size = 20
+FSC = A(0,0)={'(Query-2)'}, A(0,1)={'(Query-1)'}, M(0,0)=1, M(0,1)=0, A(1,0)={'(Query-2)'}, A(1,1)={'(Query-2)'}, M(1,0)=1, M(1,1)=1, A(2,0)={'(Query-2)'}, A(2,1)={'(Query-1)'}, M(2,0)=1, M(2,1)=0, M(3,0)=1, A(4,0)={'(Query-2)'}, A(4,1)={'(Query-0)'}, M(4,0)=1, M(4,1)=0
+
+-----------PAYNT-----------               
+Value = 448.11397610227544 | Time elapsed = 23.1s | FSC size = 20
+FSC = A(0,0)={'(Query-0)'}, A(0,1)={'(Query-1)'}, M(0,0)=1, M(0,1)=0, A(1,0)={'(Query-2)'}, A(1,1)={'(Query-2)'}, M(1,0)=1, M(1,1)=1, A(2,0)={'(Query-2)'}, A(2,1)={'(Query-1)'}, M(2,0)=1, M(2,1)=0, M(3,0)=0, A(4,0)={'(Query-2)'}, A(4,1)={'(Query-2)'}, M(4,0)=1, M(4,1)=1
+
+-----------PAYNT-----------               
+Value = 450.22683749356645 | Time elapsed = 24.1s | FSC size = 20
+FSC = A(0,0)={'(Query-0)'}, A(0,1)={'(Query-1)'}, M(0,0)=1, M(0,1)=0, A(1,0)={'(Query-2)'}, A(1,1)={'(Query-2)'}, M(1,0)=1, M(1,1)=0, A(2,0)={'(Query-2)'}, A(2,1)={'(Query-1)'}, M(2,0)=1, M(2,1)=0, M(3,0)=0, A(4,0)={'(Query-2)'}, A(4,1)={'(Query-2)'}, M(4,0)=1, M(4,1)=1
+
+-----------PAYNT-----------               
+Value = 454.998309518083 | Time elapsed = 57.6s | FSC size = 20
+FSC = A(0,0)={'(Query-1)'}, A(0,1)={'(Query-2)'}, M(0,0)=1, M(0,1)=0, A(1,0)={'(Query-2)'}, A(1,1)={'(Query-1)'}, M(1,0)=0, M(1,1)=1, A(2,0)={'(Query-2)'}, A(2,1)={'(Query-2)'}, M(2,0)=0, M(2,1)=0, M(3,0)=0, A(4,0)={'(Query-2)'}, A(4,1)={'(Query-2)'}, M(4,0)=1, M(4,1)=1
+
+-----------PAYNT-----------               
+Value = 456.5719531550049 | Time elapsed = 57.6s | FSC size = 20
+FSC = A(0,0)={'(Query-1)'}, A(0,1)={'(Query-2)'}, M(0,0)=1, M(0,1)=0, A(1,0)={'(Query-2)'}, A(1,1)={'(Query-1)'}, M(1,0)=0, M(1,1)=1, A(2,0)={'(Query-2)'}, A(2,1)={'(Query-2)'}, M(2,0)=0, M(2,1)=0, M(3,0)=1, A(4,0)={'(Query-2)'}, A(4,1)={'(Query-2)'}, M(4,0)=1, M(4,1)=0
+
+-----------PAYNT-----------               
+Value = 457.5512547963055 | Time elapsed = 57.7s | FSC size = 20
+FSC = A(0,0)={'(Query-1)'}, A(0,1)={'(Query-2)'}, M(0,0)=1, M(0,1)=0, A(1,0)={'(Query-2)'}, A(1,1)={'(Query-1)'}, M(1,0)=0, M(1,1)=1, A(2,0)={'(Query-2)'}, A(2,1)={'(Query-2)'}, M(2,0)=0, M(2,1)=0, M(3,0)=1, A(4,0)={'(Query-2)'}, A(4,1)={'(Query-1)'}, M(4,0)=0, M(4,1)=1
+
+-----------PAYNT-----------               
+Value = 464.070871767549 | Time elapsed = 59.1s | FSC size = 20
+FSC = A(0,0)={'(Query-1)'}, A(0,1)={'(Query-0)'}, M(0,0)=1, M(0,1)=0, A(1,0)={'(Query-2)'}, A(1,1)={'(Query-1)'}, M(1,0)=0, M(1,1)=1, A(2,0)={'(Query-2)'}, A(2,1)={'(Query-2)'}, M(2,0)=0, M(2,1)=0, M(3,0)=0, A(4,0)={'(Query-2)'}, A(4,1)={'(Query-2)'}, M(4,0)=1, M(4,1)=1
+
+-----------PAYNT-----------               
+Value = 465.52619599217206 | Time elapsed = 59.1s | FSC size = 20
+FSC = A(0,0)={'(Query-1)'}, A(0,1)={'(Query-0)'}, M(0,0)=1, M(0,1)=0, A(1,0)={'(Query-2)'}, A(1,1)={'(Query-1)'}, M(1,0)=0, M(1,1)=1, A(2,0)={'(Query-2)'}, A(2,1)={'(Query-2)'}, M(2,0)=0, M(2,1)=0, M(3,0)=1, A(4,0)={'(Query-2)'}, A(4,1)={'(Query-2)'}, M(4,0)=1, M(4,1)=0
+
+-----------PAYNT-----------               
+Value = 466.05536459869694 | Time elapsed = 59.2s | FSC size = 20
+FSC = A(0,0)={'(Query-1)'}, A(0,1)={'(Query-0)'}, M(0,0)=1, M(0,1)=0, A(1,0)={'(Query-2)'}, A(1,1)={'(Query-1)'}, M(1,0)=0, M(1,1)=1, A(2,0)={'(Query-2)'}, A(2,1)={'(Query-2)'}, M(2,0)=0, M(2,1)=0, M(3,0)=1, A(4,0)={'(Query-2)'}, A(4,1)={'(Query-1)'}, M(4,0)=0, M(4,1)=1
+
+-----------PAYNT-----------               
+Value = 466.45714862285104 | Time elapsed = 63.9s | FSC size = 20
+FSC = A(0,0)={'(Query-1)'}, A(0,1)={'(Query-2)'}, M(0,0)=1, M(0,1)=0, A(1,0)={'(Query-2)'}, A(1,1)={'(Query-1)'}, M(1,0)=0, M(1,1)=1, A(2,0)={'(Query-2)'}, A(2,1)={'(Query-0)'}, M(2,0)=0, M(2,1)=0, M(3,0)=1, A(4,0)={'(Query-2)'}, A(4,1)={'(Query-1)'}, M(4,0)=0, M(4,1)=1
+
+-----------PAYNT-----------               
+Value = 467.1993064168376 | Time elapsed = 65.5s | FSC size = 20
+FSC = A(0,0)={'(Query-1)'}, A(0,1)={'(Query-0)'}, M(0,0)=1, M(0,1)=0, A(1,0)={'(Query-2)'}, A(1,1)={'(Query-1)'}, M(1,0)=0, M(1,1)=1, A(2,0)={'(Query-2)'}, A(2,1)={'(Query-0)'}, M(2,0)=0, M(2,1)=0, M(3,0)=1, A(4,0)={'(Query-2)'}, A(4,1)={'(Query-2)'}, M(4,0)=1, M(4,1)=0
+
+-----------PAYNT-----------               
+Value = 486.49577441528936 | Time elapsed = 67.9s | FSC size = 20
+FSC = A(0,0)={'(Query-1)'}, A(0,1)={'(Query-2)'}, M(0,0)=1, M(0,1)=0, A(1,0)={'(Query-2)'}, A(1,1)={'(Query-1)'}, M(1,0)=0, M(1,1)=1, A(2,0)={'(Query-1)'}, A(2,1)={'(Query-2)'}, M(2,0)=1, M(2,1)=0, M(3,0)=0, A(4,0)={'(Query-2)'}, A(4,1)={'(Query-2)'}, M(4,0)=0, M(4,1)=0
+
+-----------PAYNT-----------               
+Value = 486.77652407759115 | Time elapsed = 68.9s | FSC size = 20
+FSC = A(0,0)={'(Query-1)'}, A(0,1)={'(Query-0)'}, M(0,0)=1, M(0,1)=0, A(1,0)={'(Query-2)'}, A(1,1)={'(Query-1)'}, M(1,0)=0, M(1,1)=1, A(2,0)={'(Query-1)'}, A(2,1)={'(Query-2)'}, M(2,0)=1, M(2,1)=0, M(3,0)=1, A(4,0)={'(Query-2)'}, A(4,1)={'(Query-2)'}, M(4,0)=1, M(4,1)=0
+
+--------------------
+Synthesis summary
+
+optimality objective: R[exp]{"reward"}max=? [F "discount_sink"] 
+
+method: AR, synthesis time: 148.27 s
+number of holes: 17, family size: 3359232, super quotient: 214 states / 1275 actions
+explored: 100 %
+AR stats: avg MDP size: 211, iterations: 6167
+
+optimal: 486.776524
+--------------------
+
+2023-04-25 05:50:58,400 - synthesizer_pomdp.py - Synthesizing optimal k=3 controller ...
+2023-04-25 05:50:58,400 - quotient_pomdp.py - Unfolding POMDP using the following memory allocation vector: [3, 3, 3, 1, 3, 1] ...
+2023-04-25 05:50:58,403 - quotient_pomdp.py - Constructed quotient MDP having 320 states and 2866 actions.
+2023-04-25 05:50:58,508 - synthesizer.py - Synthesis initiated.

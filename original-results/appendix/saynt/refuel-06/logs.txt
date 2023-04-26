@@ -1,0 +1,332 @@
+2023-04-25 13:32:30,194 - cli.py - This is Paynt version 0.1.0.
+2023-04-25 13:32:30,196 - sketch.py - loading sketch from /mnt/d/src/PP/synthesis-CAV/experiments/../models/pomdp/storm-integration/refuel-06/sketch.templ ...
+2023-04-25 13:32:30,315 - prism_parser.py - PRISM model type: PrismModelType.POMDP
+2023-04-25 13:32:30,315 - prism_parser.py - loading properties from /mnt/d/src/PP/synthesis-CAV/experiments/../models/pomdp/storm-integration/refuel-06/sketch.props ...
+2023-04-25 13:32:30,338 - prism_parser.py - found the following specification: constraints: none, optimality objective: Pmax=? ["notbad" U "goal"] 
+2023-04-25 13:32:30,402 - sketch.py - constructed explicit quotient having 208 states and 565 actions
+2023-04-25 13:32:30,402 - property.py - converting until formula to eventually...
+2023-04-25 13:32:30,402 - sketch.py - found the following specification constraints: none, optimality objective: Pmax=? [F "goal"] 
+2023-04-25 13:32:30,410 - quotient_pomdp.py - Constructed POMDP having 50 observations.
+2023-04-25 13:32:30,416 - quotient_pomdp.py - Unfolding POMDP using the following memory allocation vector: [1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1] ...
+2023-04-25 13:32:30,419 - quotient_pomdp.py - Constructed quotient MDP having 208 states and 565 actions.
+2023-04-25 13:32:30,423 - synthesizer_pomdp.py - Storm pomdp option enabled
+2023-04-25 13:32:30,423 - synthesizer_pomdp.py - Storm settings: iterative - (900, 60, 10), get_storm_result - None, storm_options - cutoff, prune_storm - False, unfold_strategy - (True, False), use_storm_cutoffs - False
+{} 
+
+{}
+2023-04-25 13:32:30,429 - synthesizer.py - Synthesis initiated.
+2023-04-25 13:32:30,429 - synthesizer_pomdp.py - Timeout for PAYNT started
+-----------PAYNT-----------                     
+Value = 0.0 | Time elapsed = 0.0s | FSC size = 100
+FSC = A([start & fuel=2 & cangoeast=1 & cangosouth=1 & cangowest=1],0)={'south'}, A([start & fuel=2 & cangoeast=1 & cangonorth=1 & cangosouth=1],0)={'west'}, A([start & fuel=1 & cangoeast=1 & cangonorth=1],0)={'south'}, A([start & fuel=3 & cangoeast=1 & cangonorth=1 & cangosouth=1 & cangowest=1],0)={'north'}, A([start & fuel=3 & cangoeast=1 & cangonorth=1 & cangosouth=1],0)={'south'}, A([start & fuel=3 & cangonorth=1 & cangosouth=1 & cangowest=1],0)={'east'}, A([start & fuel=1 & cangoeast=1 & cangonorth=1 & cangowest=1],0)={'south'}, A([start & fuel=1 & cangoeast=1 & cangonorth=1 & cangosouth=1 & cangowest=1],0)={'south'}, A([start & fuel=4 & cangoeast=1 & cangonorth=1 & cangosouth=1 & cangowest=1],0)={'north'}, A([start & fuel=4 & cangoeast=1 & cangosouth=1 & cangowest=1],0)={'south'}, A([start & fuel=2 & cangoeast=1 & cangonorth=1 & cangosouth=1 & cangowest=1],0)={'north'}, A([start & fuel=1 & cangoeast=1 & cangosouth=1 & cangowest=1],0)={'south'}, A([start & fuel=3 & cangoeast=1 & cangosouth=1 & cangowest=1],0)={'south'}, A([start & fuel=1 & cangosouth=1 & cangowest=1],0)={'east'}, A([start & fuel=1 & cangoeast=1 & cangonorth=1 & cangosouth=1],0)={'south'}, A([start & fuel=3 & cangoeast=1 & cangonorth=1 & cangowest=1],0)={'south'}, A([start & fuel=2 & cangonorth=1 & cangosouth=1 & cangowest=1],0)={'east'}, A([start & fuel=2 & cangoeast=1 & cangonorth=1 & cangowest=1],0)={'south'}, A([start & fuel=2 & cangoeast=1 & cangonorth=1],0)={'south'}, A([start & fuel=5 & cangoeast=1 & cangonorth=1 & cangosouth=1 & cangowest=1],0)={'north'}, A([start & fuel=4 & cangoeast=1 & cangonorth=1 & cangowest=1],0)={'south'}, A([start & fuel=1 & cangonorth=1 & cangosouth=1 & cangowest=1],0)={'east'}, A([start & fuel=2 & cangosouth=1 & cangowest=1],0)={'east'}, A([start & fuel=4 & cangoeast=1 & cangonorth=1 & cangosouth=1],0)={'south'}, A([start & fuel=5 & cangoeast=1 & cangosouth=1],0)={'south'}, A([start & fuel=4 & cangonorth=1 & cangosouth=1 & cangowest=1],0)={'east'}
+
+-----------PAYNT-----------                     
+Value = 0.023345689581199237 | Time elapsed = 0.0s | FSC size = 100
+FSC = A([start & fuel=2 & cangoeast=1 & cangosouth=1 & cangowest=1],0)={'east'}, A([start & fuel=2 & cangoeast=1 & cangonorth=1 & cangosouth=1],0)={'west'}, A([start & fuel=1 & cangoeast=1 & cangonorth=1],0)={'south'}, A([start & fuel=3 & cangoeast=1 & cangonorth=1 & cangosouth=1 & cangowest=1],0)={'north'}, A([start & fuel=3 & cangoeast=1 & cangonorth=1 & cangosouth=1],0)={'south'}, A([start & fuel=3 & cangonorth=1 & cangosouth=1 & cangowest=1],0)={'east'}, A([start & fuel=1 & cangoeast=1 & cangonorth=1 & cangowest=1],0)={'south'}, A([start & fuel=1 & cangoeast=1 & cangonorth=1 & cangosouth=1 & cangowest=1],0)={'east'}, A([start & fuel=4 & cangoeast=1 & cangonorth=1 & cangosouth=1 & cangowest=1],0)={'north'}, A([start & fuel=4 & cangoeast=1 & cangosouth=1 & cangowest=1],0)={'south'}, A([start & fuel=2 & cangoeast=1 & cangonorth=1 & cangosouth=1 & cangowest=1],0)={'north'}, A([start & fuel=1 & cangoeast=1 & cangosouth=1 & cangowest=1],0)={'south'}, A([start & fuel=3 & cangoeast=1 & cangosouth=1 & cangowest=1],0)={'south'}, A([start & fuel=1 & cangosouth=1 & cangowest=1],0)={'east'}, A([start & fuel=1 & cangoeast=1 & cangonorth=1 & cangosouth=1],0)={'west'}, A([start & fuel=3 & cangoeast=1 & cangonorth=1 & cangowest=1],0)={'south'}, A([start & fuel=2 & cangonorth=1 & cangosouth=1 & cangowest=1],0)={'east'}, A([start & fuel=2 & cangoeast=1 & cangonorth=1 & cangowest=1],0)={'south'}, A([start & fuel=2 & cangoeast=1 & cangonorth=1],0)={'south'}, A([start & fuel=5 & cangoeast=1 & cangonorth=1 & cangosouth=1 & cangowest=1],0)={'south'}, A([start & fuel=4 & cangoeast=1 & cangonorth=1 & cangowest=1],0)={'south'}, A([start & fuel=1 & cangonorth=1 & cangosouth=1 & cangowest=1],0)={'east'}, A([start & fuel=2 & cangosouth=1 & cangowest=1],0)={'east'}, A([start & fuel=4 & cangoeast=1 & cangonorth=1 & cangosouth=1],0)={'south'}, A([start & fuel=5 & cangoeast=1 & cangosouth=1],0)={'south'}, A([start & fuel=4 & cangonorth=1 & cangosouth=1 & cangowest=1],0)={'east'}
+
+-----------PAYNT-----------                     
+Value = 0.20325742416121426 | Time elapsed = 0.1s | FSC size = 100
+FSC = A([start & fuel=2 & cangoeast=1 & cangosouth=1 & cangowest=1],0)={'south'}, A([start & fuel=2 & cangoeast=1 & cangonorth=1 & cangosouth=1],0)={'west'}, A([start & fuel=1 & cangoeast=1 & cangonorth=1],0)={'south'}, A([start & fuel=3 & cangoeast=1 & cangonorth=1 & cangosouth=1 & cangowest=1],0)={'north'}, A([start & fuel=3 & cangoeast=1 & cangonorth=1 & cangosouth=1],0)={'south'}, A([start & fuel=3 & cangonorth=1 & cangosouth=1 & cangowest=1],0)={'east'}, A([start & fuel=1 & cangoeast=1 & cangonorth=1 & cangowest=1],0)={'south'}, A([start & fuel=1 & cangoeast=1 & cangonorth=1 & cangosouth=1 & cangowest=1],0)={'north'}, A([start & fuel=4 & cangoeast=1 & cangonorth=1 & cangosouth=1 & cangowest=1],0)={'south'}, A([start & fuel=4 & cangoeast=1 & cangosouth=1 & cangowest=1],0)={'east'}, A([start & fuel=2 & cangoeast=1 & cangonorth=1 & cangosouth=1 & cangowest=1],0)={'north'}, A([start & fuel=1 & cangoeast=1 & cangosouth=1 & cangowest=1],0)={'south'}, A([start & fuel=3 & cangoeast=1 & cangosouth=1 & cangowest=1],0)={'south'}, A([start & fuel=1 & cangosouth=1 & cangowest=1],0)={'east'}, A([start & fuel=1 & cangoeast=1 & cangonorth=1 & cangosouth=1],0)={'west'}, A([start & fuel=3 & cangoeast=1 & cangonorth=1 & cangowest=1],0)={'south'}, A([start & fuel=2 & cangonorth=1 & cangosouth=1 & cangowest=1],0)={'east'}, A([start & fuel=2 & cangoeast=1 & cangonorth=1 & cangowest=1],0)={'south'}, A([start & fuel=2 & cangoeast=1 & cangonorth=1],0)={'south'}, A([start & fuel=5 & cangoeast=1 & cangonorth=1 & cangosouth=1 & cangowest=1],0)={'south'}, A([start & fuel=4 & cangoeast=1 & cangonorth=1 & cangowest=1],0)={'south'}, A([start & fuel=1 & cangonorth=1 & cangosouth=1 & cangowest=1],0)={'east'}, A([start & fuel=2 & cangosouth=1 & cangowest=1],0)={'east'}, A([start & fuel=4 & cangoeast=1 & cangonorth=1 & cangosouth=1],0)={'south'}, A([start & fuel=5 & cangoeast=1 & cangosouth=1],0)={'south'}, A([start & fuel=4 & cangonorth=1 & cangosouth=1 & cangowest=1],0)={'east'}
+
+-----------PAYNT-----------                     
+Value = 0.26786400451767856 | Time elapsed = 0.5s | FSC size = 100
+FSC = A([start & fuel=2 & cangoeast=1 & cangosouth=1 & cangowest=1],0)={'south'}, A([start & fuel=2 & cangoeast=1 & cangonorth=1 & cangosouth=1],0)={'west'}, A([start & fuel=1 & cangoeast=1 & cangonorth=1],0)={'south'}, A([start & fuel=3 & cangoeast=1 & cangonorth=1 & cangosouth=1 & cangowest=1],0)={'east'}, A([start & fuel=3 & cangoeast=1 & cangonorth=1 & cangosouth=1],0)={'south'}, A([start & fuel=3 & cangonorth=1 & cangosouth=1 & cangowest=1],0)={'east'}, A([start & fuel=1 & cangoeast=1 & cangonorth=1 & cangowest=1],0)={'south'}, A([start & fuel=1 & cangoeast=1 & cangonorth=1 & cangosouth=1 & cangowest=1],0)={'south'}, A([start & fuel=4 & cangoeast=1 & cangonorth=1 & cangosouth=1 & cangowest=1],0)={'south'}, A([start & fuel=4 & cangoeast=1 & cangosouth=1 & cangowest=1],0)={'east'}, A([start & fuel=2 & cangoeast=1 & cangonorth=1 & cangosouth=1 & cangowest=1],0)={'east'}, A([start & fuel=1 & cangoeast=1 & cangosouth=1 & cangowest=1],0)={'south'}, A([start & fuel=3 & cangoeast=1 & cangosouth=1 & cangowest=1],0)={'south'}, A([start & fuel=1 & cangosouth=1 & cangowest=1],0)={'east'}, A([start & fuel=1 & cangoeast=1 & cangonorth=1 & cangosouth=1],0)={'south'}, A([start & fuel=3 & cangoeast=1 & cangonorth=1 & cangowest=1],0)={'south'}, A([start & fuel=2 & cangonorth=1 & cangosouth=1 & cangowest=1],0)={'east'}, A([start & fuel=2 & cangoeast=1 & cangonorth=1 & cangowest=1],0)={'south'}, A([start & fuel=2 & cangoeast=1 & cangonorth=1],0)={'south'}, A([start & fuel=5 & cangoeast=1 & cangonorth=1 & cangosouth=1 & cangowest=1],0)={'south'}, A([start & fuel=4 & cangoeast=1 & cangonorth=1 & cangowest=1],0)={'south'}, A([start & fuel=1 & cangonorth=1 & cangosouth=1 & cangowest=1],0)={'east'}, A([start & fuel=2 & cangosouth=1 & cangowest=1],0)={'east'}, A([start & fuel=4 & cangoeast=1 & cangonorth=1 & cangosouth=1],0)={'west'}, A([start & fuel=5 & cangoeast=1 & cangosouth=1],0)={'east'}, A([start & fuel=4 & cangonorth=1 & cangosouth=1 & cangowest=1],0)={'east'}
+
+-----------PAYNT-----------                     
+Value = 0.35002591509999986 | Time elapsed = 0.6s | FSC size = 100
+FSC = A([start & fuel=2 & cangoeast=1 & cangosouth=1 & cangowest=1],0)={'south'}, A([start & fuel=2 & cangoeast=1 & cangonorth=1 & cangosouth=1],0)={'west'}, A([start & fuel=1 & cangoeast=1 & cangonorth=1],0)={'south'}, A([start & fuel=3 & cangoeast=1 & cangonorth=1 & cangosouth=1 & cangowest=1],0)={'east'}, A([start & fuel=3 & cangoeast=1 & cangonorth=1 & cangosouth=1],0)={'south'}, A([start & fuel=3 & cangonorth=1 & cangosouth=1 & cangowest=1],0)={'east'}, A([start & fuel=1 & cangoeast=1 & cangonorth=1 & cangowest=1],0)={'south'}, A([start & fuel=1 & cangoeast=1 & cangonorth=1 & cangosouth=1 & cangowest=1],0)={'north'}, A([start & fuel=4 & cangoeast=1 & cangonorth=1 & cangosouth=1 & cangowest=1],0)={'south'}, A([start & fuel=4 & cangoeast=1 & cangosouth=1 & cangowest=1],0)={'south'}, A([start & fuel=2 & cangoeast=1 & cangonorth=1 & cangosouth=1 & cangowest=1],0)={'east'}, A([start & fuel=1 & cangoeast=1 & cangosouth=1 & cangowest=1],0)={'south'}, A([start & fuel=3 & cangoeast=1 & cangosouth=1 & cangowest=1],0)={'east'}, A([start & fuel=1 & cangosouth=1 & cangowest=1],0)={'east'}, A([start & fuel=1 & cangoeast=1 & cangonorth=1 & cangosouth=1],0)={'south'}, A([start & fuel=3 & cangoeast=1 & cangonorth=1 & cangowest=1],0)={'south'}, A([start & fuel=2 & cangonorth=1 & cangosouth=1 & cangowest=1],0)={'east'}, A([start & fuel=2 & cangoeast=1 & cangonorth=1 & cangowest=1],0)={'south'}, A([start & fuel=2 & cangoeast=1 & cangonorth=1],0)={'south'}, A([start & fuel=5 & cangoeast=1 & cangonorth=1 & cangosouth=1 & cangowest=1],0)={'south'}, A([start & fuel=4 & cangoeast=1 & cangonorth=1 & cangowest=1],0)={'south'}, A([start & fuel=1 & cangonorth=1 & cangosouth=1 & cangowest=1],0)={'east'}, A([start & fuel=2 & cangosouth=1 & cangowest=1],0)={'east'}, A([start & fuel=4 & cangoeast=1 & cangonorth=1 & cangosouth=1],0)={'south'}, A([start & fuel=5 & cangoeast=1 & cangosouth=1],0)={'south'}, A([start & fuel=4 & cangonorth=1 & cangosouth=1 & cangowest=1],0)={'east'}
+
+--------------------
+Synthesis summary
+
+optimality objective: Pmax=? [F "goal"] 
+
+method: AR, synthesis time: 0.89 s
+number of holes: 26, family size: 1410554953728, super quotient: 208 states / 565 actions
+explored: 100 %
+AR stats: avg MDP size: 170, iterations: 2487
+
+optimal: 0.350026
+--------------------
+
+2023-04-25 13:32:31,349 - synthesizer_pomdp.py - Increase memory in all imperfect observation
+{0: 2, 1: 2, 2: 1, 3: 2, 4: 2, 5: 1, 6: 2, 7: 2, 8: 2, 9: 2, 10: 2, 11: 2, 12: 2, 13: 2, 14: 2, 15: 2, 16: 2, 17: 2, 18: 2, 19: 1, 20: 2, 21: 2, 22: 2, 23: 2, 24: 2, 25: 2, 26: 2, 27: 1, 28: 1, 29: 1, 30: 1, 31: 2, 32: 1, 33: 1, 34: 1, 35: 2, 36: 1, 37: 1, 38: 1, 39: 1, 40: 2, 41: 1, 42: 1, 43: 1, 44: 2, 45: 1, 46: 1, 47: 1, 48: 1, 49: 1}
+2023-04-25 13:32:31,349 - quotient_pomdp.py - Unfolding POMDP using the following memory allocation vector: [2, 2, 1, 2, 2, 1, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 1, 2, 2, 2, 2, 2, 2, 2, 1, 1, 1, 1, 2, 1, 1, 1, 2, 1, 1, 1, 1, 2, 1, 1, 1, 2, 1, 1, 1, 1, 1] ...
+2023-04-25 13:32:31,349 - quotient_pomdp.py - Constructed quotient MDP having 394 states and 2183 actions.
+{} 
+
+{}
+2023-04-25 13:32:31,401 - synthesizer.py - Synthesis initiated.
+2023-04-25 13:33:30,531 - synthesizer_ar_storm.py - Pausing synthesis
+2023-04-25 13:33:30,634 - storm_pomdp_control.py - Interactive Storm started
+2023-04-25 13:33:30,635 - storm_pomdp_control.py - starting Storm POMDP analysis
+2023-04-25 13:33:41,646 - storm_pomdp_control.py - Pausing Storm
+Finished exploring Underapproximation MDP.
+ Start analysis...
+-----------Storm-----------               
+Value = 0.67219 | Time elapsed = 83.1s | FSC size = 84
+
+
+------------------------------------
+
+PAYNT results: 
+0.35002591509999986
+controller size: 100
+
+Storm results: 
+0.67219
+controller size: 84
+
+------------------------------------
+
+2023-04-25 13:33:53,666 - synthesizer_pomdp.py - Timeout for PAYNT started
+2023-04-25 13:33:54,557 - synthesizer_ar_storm.py - Resuming synthesis
+2023-04-25 13:33:54,558 - synthesizer_ar_storm.py - Applying family split according to Storm results
+2023-04-25 13:33:54,558 - storm_pomdp_control.py - Main family based on data from Storm: reduced design space from 31860109519220150328471728740863597084672 to 295147905179352825856
+2023-04-25 13:33:54,559 - storm_pomdp_control.py - Main family based on data from Storm: reduced design space from 7965027379805037582117932185215899271168 to 147573952589676412928
+2023-04-25 13:33:54,560 - storm_pomdp_control.py - Main family based on data from Storm: reduced design space from 1991256844951259395529483046303974817792 to 73786976294838206464
+2023-04-25 13:33:54,561 - storm_pomdp_control.py - Main family based on data from Storm: reduced design space from 497814211237814848882370761575993704448 to 36893488147419103232
+2023-04-25 13:33:54,562 - storm_pomdp_control.py - Main family based on data from Storm: reduced design space from 248907105618907424441185380787996852224 to 36893488147419103232
+2023-04-25 13:33:54,563 - synthesizer_ar_storm.py - State after Storm splitting: Main families - 5, Subfamilies - 135
+-----------PAYNT-----------                     
+Value = 0.3697646924932315 | Time elapsed = 84.0s | FSC size = 156
+FSC = M([start & cangoeast=1 & cangonorth=1 & cangosouth=1 & cangowest=1],0)=0, M([start & cangoeast=1 & cangonorth=1 & cangosouth=1 & cangowest=1],1)=0, A([start & fuel=2 & cangoeast=1 & cangosouth=1 & cangowest=1],0)={'south'}, A([start & fuel=2 & cangoeast=1 & cangosouth=1 & cangowest=1],1)={'south'}, M([start & fuel=2 & cangoeast=1 & cangosouth=1 & cangowest=1],0)=0, M([start & fuel=2 & cangoeast=1 & cangosouth=1 & cangowest=1],1)=0, A([start & fuel=2 & cangoeast=1 & cangonorth=1 & cangosouth=1],0)={'west'}, A([start & fuel=2 & cangoeast=1 & cangonorth=1 & cangosouth=1],1)={'west'}, M([start & fuel=2 & cangoeast=1 & cangonorth=1 & cangosouth=1],0)=0, M([start & fuel=2 & cangoeast=1 & cangonorth=1 & cangosouth=1],1)=0, M([start & cangoeast=1 & cangonorth=1 & cangosouth=1],0)=0, M([start & cangoeast=1 & cangonorth=1 & cangosouth=1],1)=0, A([start & fuel=1 & cangoeast=1 & cangonorth=1],0)={'south'}, M([start & fuel=1 & cangoeast=1 & cangonorth=1],0)=0, A([start & fuel=3 & cangoeast=1 & cangonorth=1 & cangosouth=1 & cangowest=1],0)={'north'}, A([start & fuel=3 & cangoeast=1 & cangonorth=1 & cangosouth=1 & cangowest=1],1)={'south'}, M([start & fuel=3 & cangoeast=1 & cangonorth=1 & cangosouth=1 & cangowest=1],0)=0, M([start & fuel=3 & cangoeast=1 & cangonorth=1 & cangosouth=1 & cangowest=1],1)=1, M([start & fuel=3 & cangoeast=1 & cangonorth=1 & cangosouth=1 & cangowest=1 & refuelAllowed=1],0)=0, M([start & fuel=3 & cangoeast=1 & cangonorth=1 & cangosouth=1 & cangowest=1 & refuelAllowed=1],1)=0, A([start & fuel=3 & cangoeast=1 & cangonorth=1 & cangosouth=1],0)={'south'}, A([start & fuel=3 & cangoeast=1 & cangonorth=1 & cangosouth=1],1)={'south'}, M([start & fuel=3 & cangoeast=1 & cangonorth=1 & cangosouth=1],0)=0, M([start & fuel=3 & cangoeast=1 & cangonorth=1 & cangosouth=1],1)=0, M([start & cangonorth=1 & cangosouth=1 & cangowest=1],0)=0, M([start & cangonorth=1 & cangosouth=1 & cangowest=1],1)=0, A([start & fuel=3 & cangonorth=1 & cangosouth=1 & cangowest=1],0)={'east'}, A([start & fuel=3 & cangonorth=1 & cangosouth=1 & cangowest=1],1)={'east'}, M([start & fuel=3 & cangonorth=1 & cangosouth=1 & cangowest=1],0)=0, M([start & fuel=3 & cangonorth=1 & cangosouth=1 & cangowest=1],1)=0, A([start & fuel=1 & cangoeast=1 & cangonorth=1 & cangowest=1],0)={'south'}, A([start & fuel=1 & cangoeast=1 & cangonorth=1 & cangowest=1],1)={'south'}, M([start & fuel=1 & cangoeast=1 & cangonorth=1 & cangowest=1],0)=0, M([start & fuel=1 & cangoeast=1 & cangonorth=1 & cangowest=1],1)=0, A([start & fuel=1 & cangoeast=1 & cangonorth=1 & cangosouth=1 & cangowest=1],0)={'north'}, A([start & fuel=1 & cangoeast=1 & cangonorth=1 & cangosouth=1 & cangowest=1],1)={'north'}, M([start & fuel=1 & cangoeast=1 & cangonorth=1 & cangosouth=1 & cangowest=1],0)=0, M([start & fuel=1 & cangoeast=1 & cangonorth=1 & cangosouth=1 & cangowest=1],1)=0, A([start & fuel=4 & cangoeast=1 & cangonorth=1 & cangosouth=1 & cangowest=1],0)={'east'}, A([start & fuel=4 & cangoeast=1 & cangonorth=1 & cangosouth=1 & cangowest=1],1)={'east'}, M([start & fuel=4 & cangoeast=1 & cangonorth=1 & cangosouth=1 & cangowest=1],0)=0, M([start & fuel=4 & cangoeast=1 & cangonorth=1 & cangosouth=1 & cangowest=1],1)=1, A([start & fuel=4 & cangoeast=1 & cangosouth=1 & cangowest=1],0)={'east'}, A([start & fuel=4 & cangoeast=1 & cangosouth=1 & cangowest=1],1)={'east'}, M([start & fuel=4 & cangoeast=1 & cangosouth=1 & cangowest=1],0)=0, M([start & fuel=4 & cangoeast=1 & cangosouth=1 & cangowest=1],1)=0, M([start & cangoeast=1 & cangonorth=1 & cangosouth=1 & cangowest=1 & refuelAllowed=1],0)=0, M([start & cangoeast=1 & cangonorth=1 & cangosouth=1 & cangowest=1 & refuelAllowed=1],1)=0, A([start & fuel=2 & cangoeast=1 & cangonorth=1 & cangosouth=1 & cangowest=1],0)={'north'}, A([start & fuel=2 & cangoeast=1 & cangonorth=1 & cangosouth=1 & cangowest=1],1)={'east'}, M([start & fuel=2 & cangoeast=1 & cangonorth=1 & cangosouth=1 & cangowest=1],0)=0, M([start & fuel=2 & cangoeast=1 & cangonorth=1 & cangosouth=1 & cangowest=1],1)=0, A([start & fuel=1 & cangoeast=1 & cangosouth=1 & cangowest=1],0)={'south'}, A([start & fuel=1 & cangoeast=1 & cangosouth=1 & cangowest=1],1)={'south'}, M([start & fuel=1 & cangoeast=1 & cangosouth=1 & cangowest=1],0)=0, M([start & fuel=1 & cangoeast=1 & cangosouth=1 & cangowest=1],1)=0, A([start & fuel=3 & cangoeast=1 & cangosouth=1 & cangowest=1],0)={'south'}, A([start & fuel=3 & cangoeast=1 & cangosouth=1 & cangowest=1],1)={'south'}, M([start & fuel=3 & cangoeast=1 & cangosouth=1 & cangowest=1],0)=0, M([start & fuel=3 & cangoeast=1 & cangosouth=1 & cangowest=1],1)=0, A([start & fuel=1 & cangosouth=1 & cangowest=1],0)={'east'}, M([start & fuel=1 & cangosouth=1 & cangowest=1],0)=0, A([start & fuel=1 & cangoeast=1 & cangonorth=1 & cangosouth=1],0)={'west'}, A([start & fuel=1 & cangoeast=1 & cangonorth=1 & cangosouth=1],1)={'west'}, M([start & fuel=1 & cangoeast=1 & cangonorth=1 & cangosouth=1],0)=0, M([start & fuel=1 & cangoeast=1 & cangonorth=1 & cangosouth=1],1)=0, M([start & cangoeast=1 & cangosouth=1 & cangowest=1],0)=0, M([start & cangoeast=1 & cangosouth=1 & cangowest=1],1)=0, A([start & fuel=3 & cangoeast=1 & cangonorth=1 & cangowest=1],0)={'south'}, A([start & fuel=3 & cangoeast=1 & cangonorth=1 & cangowest=1],1)={'south'}, M([start & fuel=3 & cangoeast=1 & cangonorth=1 & cangowest=1],0)=0, M([start & fuel=3 & cangoeast=1 & cangonorth=1 & cangowest=1],1)=0, A([start & fuel=2 & cangonorth=1 & cangosouth=1 & cangowest=1],0)={'east'}, A([start & fuel=2 & cangonorth=1 & cangosouth=1 & cangowest=1],1)={'east'}, M([start & fuel=2 & cangonorth=1 & cangosouth=1 & cangowest=1],0)=0, M([start & fuel=2 & cangonorth=1 & cangosouth=1 & cangowest=1],1)=0, A([start & fuel=2 & cangoeast=1 & cangonorth=1 & cangowest=1],0)={'south'}, A([start & fuel=2 & cangoeast=1 & cangonorth=1 & cangowest=1],1)={'south'}, M([start & fuel=2 & cangoeast=1 & cangonorth=1 & cangowest=1],0)=0, M([start & fuel=2 & cangoeast=1 & cangonorth=1 & cangowest=1],1)=0, M([start & fuel=2 & cangoeast=1 & cangonorth=1 & cangosouth=1 & cangowest=1 & refuelAllowed=1],0)=0, M([start & fuel=2 & cangoeast=1 & cangonorth=1 & cangosouth=1 & cangowest=1 & refuelAllowed=1],1)=0, M([start & cangoeast=1 & cangonorth=1 & cangowest=1],0)=0, M([start & cangoeast=1 & cangonorth=1 & cangowest=1],1)=0, A([start & fuel=2 & cangoeast=1 & cangonorth=1],0)={'south'}, M([start & fuel=2 & cangoeast=1 & cangonorth=1],0)=0, A([start & fuel=5 & cangoeast=1 & cangonorth=1 & cangosouth=1 & cangowest=1],0)={'south'}, A([start & fuel=5 & cangoeast=1 & cangonorth=1 & cangosouth=1 & cangowest=1],1)={'south'}, M([start & fuel=5 & cangoeast=1 & cangonorth=1 & cangosouth=1 & cangowest=1],0)=1, M([start & fuel=5 & cangoeast=1 & cangonorth=1 & cangosouth=1 & cangowest=1],1)=0, M([start & fuel=1 & cangoeast=1 & cangonorth=1 & cangosouth=1 & cangowest=1 & refuelAllowed=1],0)=0, M([start & fuel=1 & cangoeast=1 & cangonorth=1 & cangosouth=1 & cangowest=1 & refuelAllowed=1],1)=0, A([start & fuel=4 & cangoeast=1 & cangonorth=1 & cangowest=1],0)={'south'}, M([start & fuel=4 & cangoeast=1 & cangonorth=1 & cangowest=1],0)=0, A([start & fuel=1 & cangonorth=1 & cangosouth=1 & cangowest=1],0)={'east'}, A([start & fuel=1 & cangonorth=1 & cangosouth=1 & cangowest=1],1)={'east'}, M([start & fuel=1 & cangonorth=1 & cangosouth=1 & cangowest=1],0)=0, M([start & fuel=1 & cangonorth=1 & cangosouth=1 & cangowest=1],1)=0, A([start & fuel=2 & cangosouth=1 & cangowest=1],0)={'east'}, M([start & fuel=2 & cangosouth=1 & cangowest=1],0)=0, A([start & fuel=4 & cangoeast=1 & cangonorth=1 & cangosouth=1],0)={'south'}, A([start & fuel=4 & cangoeast=1 & cangonorth=1 & cangosouth=1],1)={'south'}, M([start & fuel=4 & cangoeast=1 & cangonorth=1 & cangosouth=1],0)=0, M([start & fuel=4 & cangoeast=1 & cangonorth=1 & cangosouth=1],1)=0, A([start & fuel=5 & cangoeast=1 & cangosouth=1],0)={'south'}, M([start & fuel=5 & cangoeast=1 & cangosouth=1],0)=0, A([start & fuel=4 & cangonorth=1 & cangosouth=1 & cangowest=1],0)={'east'}, M([start & fuel=4 & cangonorth=1 & cangosouth=1 & cangowest=1],0)=0
+
+-----------PAYNT-----------                     
+Value = 0.6686866447340153 | Time elapsed = 84.1s | FSC size = 156
+FSC = M([start & cangoeast=1 & cangonorth=1 & cangosouth=1 & cangowest=1],0)=0, M([start & cangoeast=1 & cangonorth=1 & cangosouth=1 & cangowest=1],1)=0, A([start & fuel=2 & cangoeast=1 & cangosouth=1 & cangowest=1],0)={'south'}, A([start & fuel=2 & cangoeast=1 & cangosouth=1 & cangowest=1],1)={'south'}, M([start & fuel=2 & cangoeast=1 & cangosouth=1 & cangowest=1],0)=0, M([start & fuel=2 & cangoeast=1 & cangosouth=1 & cangowest=1],1)=0, A([start & fuel=2 & cangoeast=1 & cangonorth=1 & cangosouth=1],0)={'west'}, A([start & fuel=2 & cangoeast=1 & cangonorth=1 & cangosouth=1],1)={'west'}, M([start & fuel=2 & cangoeast=1 & cangonorth=1 & cangosouth=1],0)=0, M([start & fuel=2 & cangoeast=1 & cangonorth=1 & cangosouth=1],1)=0, M([start & cangoeast=1 & cangonorth=1 & cangosouth=1],0)=0, M([start & cangoeast=1 & cangonorth=1 & cangosouth=1],1)=0, A([start & fuel=1 & cangoeast=1 & cangonorth=1],0)={'south'}, M([start & fuel=1 & cangoeast=1 & cangonorth=1],0)=0, A([start & fuel=3 & cangoeast=1 & cangonorth=1 & cangosouth=1 & cangowest=1],0)={'north'}, A([start & fuel=3 & cangoeast=1 & cangonorth=1 & cangosouth=1 & cangowest=1],1)={'south'}, M([start & fuel=3 & cangoeast=1 & cangonorth=1 & cangosouth=1 & cangowest=1],0)=0, M([start & fuel=3 & cangoeast=1 & cangonorth=1 & cangosouth=1 & cangowest=1],1)=1, M([start & fuel=3 & cangoeast=1 & cangonorth=1 & cangosouth=1 & cangowest=1 & refuelAllowed=1],0)=1, M([start & fuel=3 & cangoeast=1 & cangonorth=1 & cangosouth=1 & cangowest=1 & refuelAllowed=1],1)=0, A([start & fuel=3 & cangoeast=1 & cangonorth=1 & cangosouth=1],0)={'south'}, A([start & fuel=3 & cangoeast=1 & cangonorth=1 & cangosouth=1],1)={'south'}, M([start & fuel=3 & cangoeast=1 & cangonorth=1 & cangosouth=1],0)=0, M([start & fuel=3 & cangoeast=1 & cangonorth=1 & cangosouth=1],1)=0, M([start & cangonorth=1 & cangosouth=1 & cangowest=1],0)=0, M([start & cangonorth=1 & cangosouth=1 & cangowest=1],1)=0, A([start & fuel=3 & cangonorth=1 & cangosouth=1 & cangowest=1],0)={'east'}, A([start & fuel=3 & cangonorth=1 & cangosouth=1 & cangowest=1],1)={'east'}, M([start & fuel=3 & cangonorth=1 & cangosouth=1 & cangowest=1],0)=0, M([start & fuel=3 & cangonorth=1 & cangosouth=1 & cangowest=1],1)=0, A([start & fuel=1 & cangoeast=1 & cangonorth=1 & cangowest=1],0)={'south'}, A([start & fuel=1 & cangoeast=1 & cangonorth=1 & cangowest=1],1)={'south'}, M([start & fuel=1 & cangoeast=1 & cangonorth=1 & cangowest=1],0)=0, M([start & fuel=1 & cangoeast=1 & cangonorth=1 & cangowest=1],1)=0, A([start & fuel=1 & cangoeast=1 & cangonorth=1 & cangosouth=1 & cangowest=1],0)={'north'}, A([start & fuel=1 & cangoeast=1 & cangonorth=1 & cangosouth=1 & cangowest=1],1)={'north'}, M([start & fuel=1 & cangoeast=1 & cangonorth=1 & cangosouth=1 & cangowest=1],0)=0, M([start & fuel=1 & cangoeast=1 & cangonorth=1 & cangosouth=1 & cangowest=1],1)=0, A([start & fuel=4 & cangoeast=1 & cangonorth=1 & cangosouth=1 & cangowest=1],0)={'east'}, A([start & fuel=4 & cangoeast=1 & cangonorth=1 & cangosouth=1 & cangowest=1],1)={'south'}, M([start & fuel=4 & cangoeast=1 & cangonorth=1 & cangosouth=1 & cangowest=1],0)=1, M([start & fuel=4 & cangoeast=1 & cangonorth=1 & cangosouth=1 & cangowest=1],1)=0, A([start & fuel=4 & cangoeast=1 & cangosouth=1 & cangowest=1],0)={'east'}, A([start & fuel=4 & cangoeast=1 & cangosouth=1 & cangowest=1],1)={'east'}, M([start & fuel=4 & cangoeast=1 & cangosouth=1 & cangowest=1],0)=0, M([start & fuel=4 & cangoeast=1 & cangosouth=1 & cangowest=1],1)=0, M([start & cangoeast=1 & cangonorth=1 & cangosouth=1 & cangowest=1 & refuelAllowed=1],0)=0, M([start & cangoeast=1 & cangonorth=1 & cangosouth=1 & cangowest=1 & refuelAllowed=1],1)=0, A([start & fuel=2 & cangoeast=1 & cangonorth=1 & cangosouth=1 & cangowest=1],0)={'north'}, A([start & fuel=2 & cangoeast=1 & cangonorth=1 & cangosouth=1 & cangowest=1],1)={'east'}, M([start & fuel=2 & cangoeast=1 & cangonorth=1 & cangosouth=1 & cangowest=1],0)=0, M([start & fuel=2 & cangoeast=1 & cangonorth=1 & cangosouth=1 & cangowest=1],1)=0, A([start & fuel=1 & cangoeast=1 & cangosouth=1 & cangowest=1],0)={'south'}, A([start & fuel=1 & cangoeast=1 & cangosouth=1 & cangowest=1],1)={'south'}, M([start & fuel=1 & cangoeast=1 & cangosouth=1 & cangowest=1],0)=0, M([start & fuel=1 & cangoeast=1 & cangosouth=1 & cangowest=1],1)=0, A([start & fuel=3 & cangoeast=1 & cangosouth=1 & cangowest=1],0)={'south'}, A([start & fuel=3 & cangoeast=1 & cangosouth=1 & cangowest=1],1)={'south'}, M([start & fuel=3 & cangoeast=1 & cangosouth=1 & cangowest=1],0)=0, M([start & fuel=3 & cangoeast=1 & cangosouth=1 & cangowest=1],1)=0, A([start & fuel=1 & cangosouth=1 & cangowest=1],0)={'east'}, M([start & fuel=1 & cangosouth=1 & cangowest=1],0)=0, A([start & fuel=1 & cangoeast=1 & cangonorth=1 & cangosouth=1],0)={'west'}, A([start & fuel=1 & cangoeast=1 & cangonorth=1 & cangosouth=1],1)={'west'}, M([start & fuel=1 & cangoeast=1 & cangonorth=1 & cangosouth=1],0)=0, M([start & fuel=1 & cangoeast=1 & cangonorth=1 & cangosouth=1],1)=0, M([start & cangoeast=1 & cangosouth=1 & cangowest=1],0)=0, M([start & cangoeast=1 & cangosouth=1 & cangowest=1],1)=0, A([start & fuel=3 & cangoeast=1 & cangonorth=1 & cangowest=1],0)={'south'}, A([start & fuel=3 & cangoeast=1 & cangonorth=1 & cangowest=1],1)={'south'}, M([start & fuel=3 & cangoeast=1 & cangonorth=1 & cangowest=1],0)=0, M([start & fuel=3 & cangoeast=1 & cangonorth=1 & cangowest=1],1)=0, A([start & fuel=2 & cangonorth=1 & cangosouth=1 & cangowest=1],0)={'east'}, A([start & fuel=2 & cangonorth=1 & cangosouth=1 & cangowest=1],1)={'east'}, M([start & fuel=2 & cangonorth=1 & cangosouth=1 & cangowest=1],0)=0, M([start & fuel=2 & cangonorth=1 & cangosouth=1 & cangowest=1],1)=0, A([start & fuel=2 & cangoeast=1 & cangonorth=1 & cangowest=1],0)={'south'}, A([start & fuel=2 & cangoeast=1 & cangonorth=1 & cangowest=1],1)={'south'}, M([start & fuel=2 & cangoeast=1 & cangonorth=1 & cangowest=1],0)=0, M([start & fuel=2 & cangoeast=1 & cangonorth=1 & cangowest=1],1)=0, M([start & fuel=2 & cangoeast=1 & cangonorth=1 & cangosouth=1 & cangowest=1 & refuelAllowed=1],0)=0, M([start & fuel=2 & cangoeast=1 & cangonorth=1 & cangosouth=1 & cangowest=1 & refuelAllowed=1],1)=0, M([start & cangoeast=1 & cangonorth=1 & cangowest=1],0)=0, M([start & cangoeast=1 & cangonorth=1 & cangowest=1],1)=0, A([start & fuel=2 & cangoeast=1 & cangonorth=1],0)={'south'}, M([start & fuel=2 & cangoeast=1 & cangonorth=1],0)=0, A([start & fuel=5 & cangoeast=1 & cangonorth=1 & cangosouth=1 & cangowest=1],0)={'south'}, A([start & fuel=5 & cangoeast=1 & cangonorth=1 & cangosouth=1 & cangowest=1],1)={'south'}, M([start & fuel=5 & cangoeast=1 & cangonorth=1 & cangosouth=1 & cangowest=1],0)=1, M([start & fuel=5 & cangoeast=1 & cangonorth=1 & cangosouth=1 & cangowest=1],1)=0, M([start & fuel=1 & cangoeast=1 & cangonorth=1 & cangosouth=1 & cangowest=1 & refuelAllowed=1],0)=0, M([start & fuel=1 & cangoeast=1 & cangonorth=1 & cangosouth=1 & cangowest=1 & refuelAllowed=1],1)=0, A([start & fuel=4 & cangoeast=1 & cangonorth=1 & cangowest=1],0)={'south'}, M([start & fuel=4 & cangoeast=1 & cangonorth=1 & cangowest=1],0)=0, A([start & fuel=1 & cangonorth=1 & cangosouth=1 & cangowest=1],0)={'east'}, A([start & fuel=1 & cangonorth=1 & cangosouth=1 & cangowest=1],1)={'east'}, M([start & fuel=1 & cangonorth=1 & cangosouth=1 & cangowest=1],0)=0, M([start & fuel=1 & cangonorth=1 & cangosouth=1 & cangowest=1],1)=0, A([start & fuel=2 & cangosouth=1 & cangowest=1],0)={'east'}, M([start & fuel=2 & cangosouth=1 & cangowest=1],0)=0, A([start & fuel=4 & cangoeast=1 & cangonorth=1 & cangosouth=1],0)={'south'}, A([start & fuel=4 & cangoeast=1 & cangonorth=1 & cangosouth=1],1)={'south'}, M([start & fuel=4 & cangoeast=1 & cangonorth=1 & cangosouth=1],0)=0, M([start & fuel=4 & cangoeast=1 & cangonorth=1 & cangosouth=1],1)=0, A([start & fuel=5 & cangoeast=1 & cangosouth=1],0)={'south'}, M([start & fuel=5 & cangoeast=1 & cangosouth=1],0)=0, A([start & fuel=4 & cangonorth=1 & cangosouth=1 & cangowest=1],0)={'east'}, M([start & fuel=4 & cangonorth=1 & cangosouth=1 & cangowest=1],0)=0
+
+2023-04-25 13:33:54,762 - synthesizer_ar_storm.py - Main family synthesis done
+2023-04-25 13:33:54,762 - synthesizer_ar_storm.py - Subfamilies buffer contains: 135 families
+2023-04-25 13:34:53,735 - synthesizer_ar_storm.py - Pausing synthesis
+2023-04-25 13:34:53,832 - storm_pomdp_control.py - Interactive Storm resumed
+2023-04-25 13:34:53,832 - storm_pomdp_control.py - Updating FSC values in Storm
+2023-04-25 13:35:04,843 - storm_pomdp_control.py - Pausing Storm
+Finished exploring Underapproximation MDP.
+ Start analysis...
+-----------Storm-----------               
+Value = 0.67219 | Time elapsed = 233.5s | FSC size = 84
+
+
+------------------------------------
+
+PAYNT results: 
+0.6686866447340153
+controller size: 156
+
+Storm results: 
+0.67219
+controller size: 84
+
+------------------------------------
+
+2023-04-25 13:35:24,864 - synthesizer_pomdp.py - Timeout for PAYNT started
+2023-04-25 13:35:25,768 - synthesizer_ar_storm.py - Resuming synthesis
+2023-04-25 13:35:25,769 - synthesizer_ar_storm.py - Applying family split according to Storm results
+2023-04-25 13:35:25,773 - synthesizer_ar_storm.py - State after Storm splitting: Main families - 0, Subfamilies - 71
+2023-04-25 13:36:24,933 - synthesizer_ar_storm.py - Pausing synthesis
+2023-04-25 13:36:25,030 - storm_pomdp_control.py - Interactive Storm resumed
+2023-04-25 13:36:25,030 - storm_pomdp_control.py - Updating FSC values in Storm
+2023-04-25 13:36:36,041 - storm_pomdp_control.py - Pausing Storm
+Finished exploring Underapproximation MDP.
+ Start analysis...
+-----------Storm-----------               
+Value = 0.67219 | Time elapsed = 389.8s | FSC size = 84
+
+
+------------------------------------
+
+PAYNT results: 
+0.6686866447340153
+controller size: 156
+
+Storm results: 
+0.67219
+controller size: 84
+
+------------------------------------
+
+2023-04-25 13:37:02,070 - synthesizer_pomdp.py - Timeout for PAYNT started
+2023-04-25 13:37:02,974 - synthesizer_ar_storm.py - Resuming synthesis
+2023-04-25 13:37:02,974 - synthesizer_ar_storm.py - Applying family split according to Storm results
+2023-04-25 13:37:02,976 - synthesizer_ar_storm.py - State after Storm splitting: Main families - 0, Subfamilies - 67
+2023-04-25 13:38:02,138 - synthesizer_ar_storm.py - Pausing synthesis
+2023-04-25 13:38:02,235 - storm_pomdp_control.py - Interactive Storm resumed
+2023-04-25 13:38:02,235 - storm_pomdp_control.py - Updating FSC values in Storm
+2023-04-25 13:38:13,247 - storm_pomdp_control.py - Pausing Storm
+Finished exploring Underapproximation MDP.
+ Start analysis...
+-----------Storm-----------               
+Value = 0.67219 | Time elapsed = 552.1s | FSC size = 84
+
+
+------------------------------------
+
+PAYNT results: 
+0.6686866447340153
+controller size: 156
+
+Storm results: 
+0.67219
+controller size: 84
+
+------------------------------------
+
+2023-04-25 13:38:45,281 - synthesizer_pomdp.py - Timeout for PAYNT started
+2023-04-25 13:38:46,185 - synthesizer_ar_storm.py - Resuming synthesis
+2023-04-25 13:38:46,186 - synthesizer_ar_storm.py - Applying family split according to Storm results
+2023-04-25 13:38:46,188 - synthesizer_ar_storm.py - State after Storm splitting: Main families - 0, Subfamilies - 69
+2023-04-25 13:39:45,348 - synthesizer_ar_storm.py - Pausing synthesis
+2023-04-25 13:39:45,446 - storm_pomdp_control.py - Interactive Storm resumed
+2023-04-25 13:39:45,447 - storm_pomdp_control.py - Updating FSC values in Storm
+2023-04-25 13:39:56,458 - storm_pomdp_control.py - Pausing Storm
+Finished exploring Underapproximation MDP.
+ Start analysis...
+-----------Storm-----------               
+Value = 0.67219 | Time elapsed = 716.4s | FSC size = 84
+
+
+------------------------------------
+
+PAYNT results: 
+0.6686866447340153
+controller size: 156
+
+Storm results: 
+0.67219
+controller size: 84
+
+------------------------------------
+
+2023-04-25 13:40:30,494 - synthesizer_pomdp.py - Timeout for PAYNT started
+2023-04-25 13:40:31,397 - synthesizer_ar_storm.py - Resuming synthesis
+2023-04-25 13:40:31,398 - synthesizer_ar_storm.py - Applying family split according to Storm results
+2023-04-25 13:40:31,400 - synthesizer_ar_storm.py - State after Storm splitting: Main families - 0, Subfamilies - 70
+2023-04-25 13:41:30,563 - synthesizer_ar_storm.py - Pausing synthesis
+2023-04-25 13:41:30,660 - storm_pomdp_control.py - Interactive Storm resumed
+2023-04-25 13:41:30,660 - storm_pomdp_control.py - Updating FSC values in Storm
+2023-04-25 13:41:41,671 - storm_pomdp_control.py - Pausing Storm
+Finished exploring Underapproximation MDP.
+ Start analysis...
+-----------Storm-----------               
+Value = 0.67219 | Time elapsed = 884.8s | FSC size = 84
+
+
+------------------------------------
+
+PAYNT results: 
+0.6686866447340153
+controller size: 156
+
+Storm results: 
+0.67219
+controller size: 84
+
+------------------------------------
+
+2023-04-25 13:42:19,712 - synthesizer_pomdp.py - Timeout for PAYNT started
+2023-04-25 13:42:20,617 - synthesizer_ar_storm.py - Resuming synthesis
+2023-04-25 13:42:20,617 - synthesizer_ar_storm.py - Applying family split according to Storm results
+2023-04-25 13:42:20,619 - synthesizer_ar_storm.py - State after Storm splitting: Main families - 0, Subfamilies - 68
+2023-04-25 13:43:19,779 - synthesizer_ar_storm.py - Pausing synthesis
+2023-04-25 13:43:19,878 - storm_pomdp_control.py - Interactive Storm resumed
+2023-04-25 13:43:19,878 - storm_pomdp_control.py - Updating FSC values in Storm
+2023-04-25 13:43:30,889 - storm_pomdp_control.py - Pausing Storm
+Finished exploring Underapproximation MDP.
+ Start analysis...
+-----------Storm-----------               
+Value = 0.67219 | Time elapsed = 1055.1s | FSC size = 84
+
+
+------------------------------------
+
+PAYNT results: 
+0.6686866447340153
+controller size: 156
+
+Storm results: 
+0.67219
+controller size: 84
+
+------------------------------------
+
+2023-04-25 13:44:10,932 - synthesizer_pomdp.py - Timeout for PAYNT started
+2023-04-25 13:44:11,835 - synthesizer_ar_storm.py - Resuming synthesis
+2023-04-25 13:44:11,835 - synthesizer_ar_storm.py - Applying family split according to Storm results
+2023-04-25 13:44:11,837 - synthesizer_ar_storm.py - State after Storm splitting: Main families - 0, Subfamilies - 70
+2023-04-25 13:45:11,000 - synthesizer_ar_storm.py - Pausing synthesis
+2023-04-25 13:45:11,097 - storm_pomdp_control.py - Interactive Storm resumed
+2023-04-25 13:45:11,098 - storm_pomdp_control.py - Updating FSC values in Storm
+2023-04-25 13:45:22,109 - storm_pomdp_control.py - Pausing Storm
+Finished exploring Underapproximation MDP.
+ Start analysis...
+-----------Storm-----------               
+Value = 0.67219 | Time elapsed = 1231.5s | FSC size = 84
+
+
+------------------------------------
+
+PAYNT results: 
+0.6686866447340153
+controller size: 156
+
+Storm results: 
+0.67219
+controller size: 84
+
+------------------------------------
+
+2023-04-25 13:46:08,158 - synthesizer_pomdp.py - Timeout for PAYNT started
+2023-04-25 13:46:09,062 - synthesizer_ar_storm.py - Resuming synthesis
+2023-04-25 13:46:09,062 - synthesizer_ar_storm.py - Applying family split according to Storm results
+2023-04-25 13:46:09,064 - synthesizer_ar_storm.py - State after Storm splitting: Main families - 0, Subfamilies - 74
+2023-04-25 13:47:08,226 - synthesizer_ar_storm.py - Pausing synthesis
+2023-04-25 13:47:08,323 - storm_pomdp_control.py - Interactive Storm resumed
+2023-04-25 13:47:08,323 - storm_pomdp_control.py - Updating FSC values in Storm
+2023-04-25 13:47:19,335 - storm_pomdp_control.py - Pausing Storm
+Finished exploring Underapproximation MDP.
+ Start analysis...
+-----------Storm-----------               
+Value = 0.67219 | Time elapsed = 1413.8s | FSC size = 84
+
+
+------------------------------------
+
+PAYNT results: 
+0.6686866447340153
+controller size: 156
+
+Storm results: 
+0.67219
+controller size: 84
+
+------------------------------------
+
+2023-04-25 13:48:12,294 - synthesizer_ar_storm.py - Terminating controller synthesis
+--------------------
+Synthesis summary
+
+optimality objective: Pmax=? [F "goal"] 
+
+method: AR, synthesis time: 1005.65 s
+number of holes: 108, family size: 63720219038440300656943457481727194169344, super quotient: 394 states / 2183 actions
+explored: 8 %
+AR stats: avg MDP size: 351, iterations: 305047
+
+optimal: 0.668687
+--------------------
+
+2023-04-25 13:48:12,298 - storm_pomdp_control.py - Storm POMDP analysis completed
+
+------------------------------------
+
+PAYNT results: 
+0.6686866447340153
+controller size: 156
+
+Storm results: 
+0.67219
+controller size: 84
+
+------------------------------------
+

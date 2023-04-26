@@ -1,0 +1,66 @@
+\begin{tikzpicture}
+\begin{axis}[
+    title={4x3-95},
+    xlabel={Time [min]},
+    ylabel={Value [Rmax]},
+    xmin=0, xmax=15,
+    ymin=1.7, ymax=1.9,
+    xtick={0,2,4,6,8,10,12,14},
+    ytick={1.7,1.74,1.78,1.82,1.86,1.9},
+    xtick pos=left,
+    ytick pos=left,
+    restrict y to domain=1.5:2.1,
+    ymajorgrids=true,
+    grid style=dashed,
+    height=8cm,
+    width=12cm,
+    legend style ={ at={(1.03,1)},
+        anchor=north west, draw=black, 
+        fill=white,align=left},
+]
+
+\addplot[
+    color=blue,
+    every mark/.append style={solid, fill=blue},
+    mark=square*,
+    line width=1.5pt,mark size=2pt,]
+    coordinates {
+(1.98, 1.87544)(5.86, 1.8892)(9.93, 1.8892)(14.37, 1.8892)(18.91, 1.8892)(23.35, 1.8892)
+    };
+    \addlegendentry{SAYNT $F_{B}$};
+
+\addplot[
+    color=green,
+    every mark/.append style={solid, fill=green},
+    mark=triangle*,
+    line width=1.5pt,mark size=2pt,]
+    coordinates {
+(0.0, -0.90977)(0.0, -0.86866)(0.0, -0.40762)(0.0, -0.39581)(0.0, -0.25128)(0.0, 0.32563)(0.0, 0.44177)(0.0, 0.66107)(0.0, 0.72888)(0.0, 0.7362)(0.0, 0.81744)(0.0, 0.82523)(0.0, 1.21772)(0.0, 1.28024)(0.0, 1.30033)(0.0, 1.36574)(0.0, 1.42791)(0.0, 1.45469)(0.0, 1.51231)(0.0, 1.51595)(0.01, 1.55423)(0.01, 1.63418)(0.01, 1.64888)(0.02, 1.65831)(2.03, 1.66987)(2.03, 1.7134)(2.03, 1.71953)(2.03, 1.72415)(2.14, 1.79382)(2.18, 1.81173)(2.18, 1.86685)(2.18, 1.8724)(2.18, 1.87421)(15, 1.87421)
+    };
+    \addlegendentry{SAYNT $F_{I}$};
+
+\addplot[
+    color=violet,
+    every mark/.append style={solid, fill=violet},
+    mark=diamond*,
+    dashed,
+    line width=1.5pt,mark size=2pt,]
+    coordinates {
+(0.01, 1.61655)(0.23, 1.83628)(0.96, 1.84113)(2.65, 1.86433)(6.48, 1.86522)
+    };
+    \addlegendentry{Storm};
+
+\addplot[
+    color=orange,
+    every mark/.append style={solid, fill=orange},
+    mark=*,
+    dashed,
+    line width=1.5pt,mark size=2pt,]
+    coordinates {
+(0.0, -0.90977)(0.0, -0.86866)(0.0, -0.40762)(0.0, -0.39581)(0.0, -0.25128)(0.0, 0.32563)(0.0, 0.44177)(0.0, 0.66107)(0.0, 0.72888)(0.0, 0.7362)(0.0, 0.81744)(0.0, 0.82523)(0.0, 0.86837)(0.0, 1.37543)(0.0, 1.46814)(0.01, 1.51829)(0.01, 1.52372)(0.01, 1.52557)(0.09, 1.57406)(0.09, 1.65294)(0.09, 1.65833)(0.14, 1.71809)(0.14, 1.73345)(0.23, 1.74664)(0.23, 1.74841)(7.4, 1.78517)(7.58, 1.78653)(10.91, 1.80651)(15, 1.80651)
+    };
+    \addlegendentry{PAYNT};
+
+\end{axis}
+\end{tikzpicture}
+

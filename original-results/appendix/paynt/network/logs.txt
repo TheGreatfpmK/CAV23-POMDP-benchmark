@@ -1,0 +1,200 @@
+2023-04-25 04:58:29,081 - cli.py - This is Paynt version 0.1.0.
+2023-04-25 04:58:29,083 - sketch.py - loading sketch from /mnt/d/src/PP/synthesis-CAV/experiments/../models/pomdp/storm-integration/network/sketch.templ ...
+2023-04-25 04:58:29,135 - prism_parser.py - loading properties from /mnt/d/src/PP/synthesis-CAV/experiments/../models/pomdp/storm-integration/network/sketch.props ...
+2023-04-25 04:58:29,149 - prism_parser.py - found the following specification: constraints: none, optimality objective: R[exp]{"reward"}max=? [F "discount_sink"] 
+2023-04-25 04:58:29,158 - sketch.py - constructed explicit quotient having 19 states and 70 actions
+2023-04-25 04:58:29,158 - sketch.py - found the following specification constraints: none, optimality objective: R[exp]{"reward"}max=? [F "discount_sink"] 
+2023-04-25 04:58:29,165 - quotient_pomdp.py - Constructed POMDP having 5 observations.
+2023-04-25 04:58:29,169 - quotient_pomdp.py - Unfolding POMDP using the following memory allocation vector: [1, 1, 1, 1, 1] ...
+2023-04-25 04:58:29,171 - quotient_pomdp.py - Constructed quotient MDP having 19 states and 70 actions.
+2023-04-25 04:58:29,173 - synthesizer_pomdp.py - Synthesizing optimal k=1 controller ...
+2023-04-25 04:58:29,173 - quotient_pomdp.py - Unfolding POMDP using the following memory allocation vector: [1, 1, 1, 1, 1] ...
+2023-04-25 04:58:29,173 - quotient_pomdp.py - Constructed quotient MDP having 19 states and 70 actions.
+2023-04-25 04:58:29,173 - synthesizer.py - Synthesis initiated.
+-----------PAYNT-----------               
+Value = -210.00498353277078 | Time elapsed = 0.0s | FSC size = 10
+FSC = A(0,0)={'(restrict)'}, A(1,0)={'(reboot)'}, A(3,0)={'(reboot)'}
+
+-----------PAYNT-----------               
+Value = -113.469889645002 | Time elapsed = 0.0s | FSC size = 10
+FSC = A(0,0)={'(restrict)'}, A(1,0)={'(reboot)'}, A(3,0)={'(restrict)'}
+
+-----------PAYNT-----------               
+Value = -108.9045356014571 | Time elapsed = 0.0s | FSC size = 10
+FSC = A(0,0)={'(restrict)'}, A(1,0)={'(reboot)'}, A(3,0)={'(steady)'}
+
+-----------PAYNT-----------               
+Value = -76.50138860428446 | Time elapsed = 0.0s | FSC size = 10
+FSC = A(0,0)={'(steady)'}, A(1,0)={'(reboot)'}, A(3,0)={'(reboot)'}
+
+-----------PAYNT-----------               
+Value = 20.41231858139304 | Time elapsed = 0.0s | FSC size = 10
+FSC = A(0,0)={'(steady)'}, A(1,0)={'(reboot)'}, A(3,0)={'(restrict)'}
+
+-----------PAYNT-----------               
+Value = 24.569719741730406 | Time elapsed = 0.0s | FSC size = 10
+FSC = A(0,0)={'(steady)'}, A(1,0)={'(reboot)'}, A(3,0)={'(steady)'}
+
+-----------PAYNT-----------               
+Value = 80.87085820539765 | Time elapsed = 0.0s | FSC size = 10
+FSC = A(0,0)={'(unrestrict)'}, A(1,0)={'(reboot)'}, A(3,0)={'(restrict)'}
+
+-----------PAYNT-----------               
+Value = 82.97610620566489 | Time elapsed = 0.0s | FSC size = 10
+FSC = A(0,0)={'(unrestrict)'}, A(1,0)={'(reboot)'}, A(3,0)={'(steady)'}
+
+--------------------
+Synthesis summary
+
+optimality objective: R[exp]{"reward"}max=? [F "discount_sink"] 
+
+method: AR, synthesis time: 0.02 s
+number of holes: 3, family size: 64, super quotient: 19 states / 70 actions
+explored: 100 %
+AR stats: avg MDP size: 19, iterations: 29
+
+optimal: 82.976106
+--------------------
+
+2023-04-25 04:58:29,224 - synthesizer_pomdp.py - Synthesizing optimal k=2 controller ...
+2023-04-25 04:58:29,224 - quotient_pomdp.py - Unfolding POMDP using the following memory allocation vector: [2, 2, 1, 2, 1] ...
+2023-04-25 04:58:29,224 - quotient_pomdp.py - Constructed quotient MDP having 36 states and 275 actions.
+2023-04-25 04:58:29,225 - synthesizer.py - Synthesis initiated.
+-----------PAYNT-----------               
+Value = 84.20791801371142 | Time elapsed = 0.0s | FSC size = 16
+FSC = A(0,0)={'(steady)'}, A(0,1)={'(unrestrict)'}, M(0,0)=1, M(0,1)=1, A(1,0)={'(reboot)'}, A(1,1)={'(reboot)'}, M(1,0)=1, M(1,1)=1, M(2,0)=1, A(3,0)={'(reboot)'}, A(3,1)={'(steady)'}, M(3,0)=0, M(3,1)=0
+
+-----------PAYNT-----------               
+Value = 95.84318948657187 | Time elapsed = 0.2s | FSC size = 16
+FSC = A(0,0)={'(unrestrict)'}, A(0,1)={'(restrict)'}, M(0,0)=1, M(0,1)=0, A(1,0)={'(reboot)'}, A(1,1)={'(restrict)'}, M(1,0)=0, M(1,1)=0, M(2,0)=1, A(3,0)={'(reboot)'}, A(3,1)={'(restrict)'}, M(3,0)=0, M(3,1)=1
+
+-----------PAYNT-----------               
+Value = 102.90775183070235 | Time elapsed = 0.2s | FSC size = 16
+FSC = A(0,0)={'(unrestrict)'}, A(0,1)={'(restrict)'}, M(0,0)=1, M(0,1)=0, A(1,0)={'(reboot)'}, A(1,1)={'(restrict)'}, M(1,0)=0, M(1,1)=0, M(2,0)=1, A(3,0)={'(reboot)'}, A(3,1)={'(steady)'}, M(3,0)=0, M(3,1)=1
+
+-----------PAYNT-----------               
+Value = 156.93706595147523 | Time elapsed = 0.3s | FSC size = 16
+FSC = A(0,0)={'(steady)'}, A(0,1)={'(steady)'}, M(0,0)=1, M(0,1)=1, A(1,0)={'(reboot)'}, A(1,1)={'(restrict)'}, M(1,0)=0, M(1,1)=0, M(2,0)=1, A(3,0)={'(reboot)'}, A(3,1)={'(restrict)'}, M(3,0)=0, M(3,1)=1
+
+-----------PAYNT-----------               
+Value = 166.9094946863329 | Time elapsed = 0.3s | FSC size = 16
+FSC = A(0,0)={'(steady)'}, A(0,1)={'(steady)'}, M(0,0)=1, M(0,1)=1, A(1,0)={'(reboot)'}, A(1,1)={'(restrict)'}, M(1,0)=0, M(1,1)=0, M(2,0)=1, A(3,0)={'(reboot)'}, A(3,1)={'(steady)'}, M(3,0)=0, M(3,1)=1
+
+-----------PAYNT-----------               
+Value = 175.33243547843003 | Time elapsed = 0.3s | FSC size = 16
+FSC = A(0,0)={'(unrestrict)'}, A(0,1)={'(steady)'}, M(0,0)=1, M(0,1)=1, A(1,0)={'(reboot)'}, A(1,1)={'(restrict)'}, M(1,0)=0, M(1,1)=0, M(2,0)=1, A(3,0)={'(reboot)'}, A(3,1)={'(steady)'}, M(3,0)=0, M(3,1)=1
+
+-----------PAYNT-----------               
+Value = 253.07150273410534 | Time elapsed = 0.4s | FSC size = 16
+FSC = A(0,0)={'(restrict)'}, A(0,1)={'(unrestrict)'}, M(0,0)=1, M(0,1)=1, A(1,0)={'(reboot)'}, A(1,1)={'(restrict)'}, M(1,0)=1, M(1,1)=0, M(2,0)=1, A(3,0)={'(reboot)'}, A(3,1)={'(restrict)'}, M(3,0)=0, M(3,1)=1
+
+-----------PAYNT-----------               
+Value = 259.6362123695412 | Time elapsed = 0.4s | FSC size = 16
+FSC = A(0,0)={'(steady)'}, A(0,1)={'(unrestrict)'}, M(0,0)=1, M(0,1)=1, A(1,0)={'(reboot)'}, A(1,1)={'(restrict)'}, M(1,0)=1, M(1,1)=0, M(2,0)=1, A(3,0)={'(reboot)'}, A(3,1)={'(restrict)'}, M(3,0)=0, M(3,1)=1
+
+-----------PAYNT-----------               
+Value = 264.9344450684364 | Time elapsed = 0.4s | FSC size = 16
+FSC = A(0,0)={'(steady)'}, A(0,1)={'(unrestrict)'}, M(0,0)=1, M(0,1)=1, A(1,0)={'(reboot)'}, A(1,1)={'(restrict)'}, M(1,0)=1, M(1,1)=0, M(2,0)=1, A(3,0)={'(reboot)'}, A(3,1)={'(steady)'}, M(3,0)=0, M(3,1)=1
+
+--------------------
+Synthesis summary
+
+optimality objective: R[exp]{"reward"}max=? [F "discount_sink"] 
+
+method: AR, synthesis time: 0.57 s
+number of holes: 13, family size: 524288, super quotient: 36 states / 275 actions
+explored: 100 %
+AR stats: avg MDP size: 36, iterations: 1290
+
+optimal: 264.934445
+--------------------
+
+2023-04-25 04:58:29,794 - synthesizer_pomdp.py - Synthesizing optimal k=3 controller ...
+2023-04-25 04:58:29,794 - quotient_pomdp.py - Unfolding POMDP using the following memory allocation vector: [3, 3, 1, 3, 1] ...
+2023-04-25 04:58:29,794 - quotient_pomdp.py - Constructed quotient MDP having 53 states and 616 actions.
+2023-04-25 04:58:29,800 - synthesizer.py - Synthesis initiated.
+-----------PAYNT-----------               
+Value = 264.9362128049254 | Time elapsed = 0.7s | FSC size = 22
+FSC = A(0,0)={'(steady)'}, A(0,1)={'(unrestrict)'}, A(0,2)={'(unrestrict)'}, M(0,0)=2, M(0,1)=2, M(0,2)=2, A(1,0)={'(reboot)'}, A(1,1)={'(reboot)'}, A(1,2)={'(restrict)'}, M(1,0)=1, M(1,1)=0, M(1,2)=0, M(2,0)=2, A(3,0)={'(reboot)'}, A(3,1)={'(reboot)'}, A(3,2)={'(steady)'}, M(3,0)=0, M(3,1)=0, M(3,2)=2
+
+-----------PAYNT-----------               
+Value = 264.9976214628664 | Time elapsed = 3.5s | FSC size = 22
+FSC = A(0,0)={'(restrict)'}, A(0,1)={'(restrict)'}, A(0,2)={'(unrestrict)'}, M(0,0)=2, M(0,1)=2, M(0,2)=2, A(1,0)={'(reboot)'}, A(1,1)={'(restrict)'}, A(1,2)={'(restrict)'}, M(1,0)=2, M(1,1)=0, M(1,2)=1, M(2,0)=2, A(3,0)={'(reboot)'}, A(3,1)={'(reboot)'}, A(3,2)={'(steady)'}, M(3,0)=0, M(3,1)=0, M(3,2)=2
+
+-----------PAYNT-----------               
+Value = 266.0876286961192 | Time elapsed = 3.5s | FSC size = 22
+FSC = A(0,0)={'(steady)'}, A(0,1)={'(restrict)'}, A(0,2)={'(unrestrict)'}, M(0,0)=2, M(0,1)=2, M(0,2)=2, A(1,0)={'(reboot)'}, A(1,1)={'(restrict)'}, A(1,2)={'(restrict)'}, M(1,0)=2, M(1,1)=0, M(1,2)=1, M(2,0)=2, A(3,0)={'(reboot)'}, A(3,1)={'(reboot)'}, A(3,2)={'(steady)'}, M(3,0)=0, M(3,1)=0, M(3,2)=2
+
+-----------PAYNT-----------               
+Value = 267.39609969627537 | Time elapsed = 14.1s | FSC size = 22
+FSC = A(0,0)={'(steady)'}, A(0,1)={'(steady)'}, A(0,2)={'(unrestrict)'}, M(0,0)=2, M(0,1)=2, M(0,2)=2, A(1,0)={'(reboot)'}, A(1,1)={'(restrict)'}, A(1,2)={'(restrict)'}, M(1,0)=2, M(1,1)=0, M(1,2)=1, M(2,0)=2, A(3,0)={'(reboot)'}, A(3,1)={'(reboot)'}, A(3,2)={'(restrict)'}, M(3,0)=0, M(3,1)=0, M(3,2)=2
+
+-----------PAYNT-----------               
+Value = 268.0208707067238 | Time elapsed = 14.1s | FSC size = 22
+FSC = A(0,0)={'(steady)'}, A(0,1)={'(steady)'}, A(0,2)={'(unrestrict)'}, M(0,0)=1, M(0,1)=2, M(0,2)=2, A(1,0)={'(reboot)'}, A(1,1)={'(restrict)'}, A(1,2)={'(restrict)'}, M(1,0)=2, M(1,1)=0, M(1,2)=1, M(2,0)=2, A(3,0)={'(reboot)'}, A(3,1)={'(reboot)'}, A(3,2)={'(restrict)'}, M(3,0)=0, M(3,1)=0, M(3,2)=2
+
+-----------PAYNT-----------               
+Value = 269.3495769894392 | Time elapsed = 14.1s | FSC size = 22
+FSC = A(0,0)={'(steady)'}, A(0,1)={'(steady)'}, A(0,2)={'(unrestrict)'}, M(0,0)=2, M(0,1)=2, M(0,2)=2, A(1,0)={'(reboot)'}, A(1,1)={'(restrict)'}, A(1,2)={'(restrict)'}, M(1,0)=2, M(1,1)=0, M(1,2)=1, M(2,0)=2, A(3,0)={'(reboot)'}, A(3,1)={'(reboot)'}, A(3,2)={'(restrict)'}, M(3,0)=0, M(3,1)=0, M(3,2)=1
+
+-----------PAYNT-----------               
+Value = 270.11489237058936 | Time elapsed = 14.1s | FSC size = 22
+FSC = A(0,0)={'(steady)'}, A(0,1)={'(steady)'}, A(0,2)={'(unrestrict)'}, M(0,0)=1, M(0,1)=2, M(0,2)=2, A(1,0)={'(reboot)'}, A(1,1)={'(restrict)'}, A(1,2)={'(restrict)'}, M(1,0)=2, M(1,1)=0, M(1,2)=1, M(2,0)=2, A(3,0)={'(reboot)'}, A(3,1)={'(reboot)'}, A(3,2)={'(restrict)'}, M(3,0)=0, M(3,1)=0, M(3,2)=1
+
+-----------PAYNT-----------               
+Value = 271.5470863837396 | Time elapsed = 14.1s | FSC size = 22
+FSC = A(0,0)={'(restrict)'}, A(0,1)={'(steady)'}, A(0,2)={'(unrestrict)'}, M(0,0)=2, M(0,1)=2, M(0,2)=2, A(1,0)={'(reboot)'}, A(1,1)={'(restrict)'}, A(1,2)={'(restrict)'}, M(1,0)=2, M(1,1)=0, M(1,2)=1, M(2,0)=2, A(3,0)={'(reboot)'}, A(3,1)={'(reboot)'}, A(3,2)={'(steady)'}, M(3,0)=0, M(3,1)=0, M(3,2)=2
+
+-----------PAYNT-----------               
+Value = 271.65564441506586 | Time elapsed = 14.1s | FSC size = 22
+FSC = A(0,0)={'(restrict)'}, A(0,1)={'(steady)'}, A(0,2)={'(unrestrict)'}, M(0,0)=1, M(0,1)=2, M(0,2)=2, A(1,0)={'(reboot)'}, A(1,1)={'(restrict)'}, A(1,2)={'(restrict)'}, M(1,0)=2, M(1,1)=0, M(1,2)=1, M(2,0)=2, A(3,0)={'(reboot)'}, A(3,1)={'(reboot)'}, A(3,2)={'(steady)'}, M(3,0)=0, M(3,1)=0, M(3,2)=2
+
+-----------PAYNT-----------               
+Value = 275.0248500969718 | Time elapsed = 14.1s | FSC size = 22
+FSC = A(0,0)={'(restrict)'}, A(0,1)={'(steady)'}, A(0,2)={'(unrestrict)'}, M(0,0)=2, M(0,1)=2, M(0,2)=2, A(1,0)={'(reboot)'}, A(1,1)={'(restrict)'}, A(1,2)={'(restrict)'}, M(1,0)=2, M(1,1)=0, M(1,2)=1, M(2,0)=2, A(3,0)={'(reboot)'}, A(3,1)={'(reboot)'}, A(3,2)={'(steady)'}, M(3,0)=0, M(3,1)=0, M(3,2)=1
+
+-----------PAYNT-----------               
+Value = 275.15662236270225 | Time elapsed = 14.1s | FSC size = 22
+FSC = A(0,0)={'(restrict)'}, A(0,1)={'(steady)'}, A(0,2)={'(unrestrict)'}, M(0,0)=1, M(0,1)=2, M(0,2)=2, A(1,0)={'(reboot)'}, A(1,1)={'(restrict)'}, A(1,2)={'(restrict)'}, M(1,0)=2, M(1,1)=0, M(1,2)=1, M(2,0)=2, A(3,0)={'(reboot)'}, A(3,1)={'(reboot)'}, A(3,2)={'(steady)'}, M(3,0)=0, M(3,1)=0, M(3,2)=1
+
+-----------PAYNT-----------               
+Value = 276.51767050449166 | Time elapsed = 14.1s | FSC size = 22
+FSC = A(0,0)={'(steady)'}, A(0,1)={'(steady)'}, A(0,2)={'(unrestrict)'}, M(0,0)=2, M(0,1)=2, M(0,2)=2, A(1,0)={'(reboot)'}, A(1,1)={'(restrict)'}, A(1,2)={'(restrict)'}, M(1,0)=2, M(1,1)=0, M(1,2)=1, M(2,0)=2, A(3,0)={'(reboot)'}, A(3,1)={'(reboot)'}, A(3,2)={'(steady)'}, M(3,0)=0, M(3,1)=0, M(3,2)=1
+
+-----------PAYNT-----------               
+Value = 277.34207969432913 | Time elapsed = 14.1s | FSC size = 22
+FSC = A(0,0)={'(steady)'}, A(0,1)={'(steady)'}, A(0,2)={'(unrestrict)'}, M(0,0)=1, M(0,1)=2, M(0,2)=2, A(1,0)={'(reboot)'}, A(1,1)={'(restrict)'}, A(1,2)={'(restrict)'}, M(1,0)=2, M(1,1)=0, M(1,2)=1, M(2,0)=2, A(3,0)={'(reboot)'}, A(3,1)={'(reboot)'}, A(3,2)={'(steady)'}, M(3,0)=0, M(3,1)=0, M(3,2)=1
+
+-----------PAYNT-----------               
+Value = 277.75159701795644 | Time elapsed = 38.9s | FSC size = 22
+FSC = A(0,0)={'(restrict)'}, A(0,1)={'(steady)'}, A(0,2)={'(unrestrict)'}, M(0,0)=2, M(0,1)=2, M(0,2)=2, A(1,0)={'(reboot)'}, A(1,1)={'(restrict)'}, A(1,2)={'(steady)'}, M(1,0)=2, M(1,1)=0, M(1,2)=1, M(2,0)=2, A(3,0)={'(reboot)'}, A(3,1)={'(reboot)'}, A(3,2)={'(steady)'}, M(3,0)=0, M(3,1)=0, M(3,2)=1
+
+-----------PAYNT-----------               
+Value = 277.95312800961244 | Time elapsed = 38.9s | FSC size = 22
+FSC = A(0,0)={'(restrict)'}, A(0,1)={'(steady)'}, A(0,2)={'(unrestrict)'}, M(0,0)=1, M(0,1)=2, M(0,2)=2, A(1,0)={'(reboot)'}, A(1,1)={'(restrict)'}, A(1,2)={'(steady)'}, M(1,0)=2, M(1,1)=0, M(1,2)=1, M(2,0)=2, A(3,0)={'(reboot)'}, A(3,1)={'(reboot)'}, A(3,2)={'(steady)'}, M(3,0)=0, M(3,1)=0, M(3,2)=1
+
+-----------PAYNT-----------               
+Value = 279.29567108927256 | Time elapsed = 38.9s | FSC size = 22
+FSC = A(0,0)={'(steady)'}, A(0,1)={'(steady)'}, A(0,2)={'(unrestrict)'}, M(0,0)=2, M(0,1)=2, M(0,2)=2, A(1,0)={'(reboot)'}, A(1,1)={'(restrict)'}, A(1,2)={'(steady)'}, M(1,0)=2, M(1,1)=0, M(1,2)=1, M(2,0)=2, A(3,0)={'(reboot)'}, A(3,1)={'(reboot)'}, A(3,2)={'(steady)'}, M(3,0)=0, M(3,1)=0, M(3,2)=1
+
+-----------PAYNT-----------               
+Value = 280.3315563645335 | Time elapsed = 38.9s | FSC size = 22
+FSC = A(0,0)={'(steady)'}, A(0,1)={'(steady)'}, A(0,2)={'(unrestrict)'}, M(0,0)=1, M(0,1)=2, M(0,2)=2, A(1,0)={'(reboot)'}, A(1,1)={'(restrict)'}, A(1,2)={'(steady)'}, M(1,0)=2, M(1,1)=0, M(1,2)=1, M(2,0)=2, A(3,0)={'(reboot)'}, A(3,1)={'(reboot)'}, A(3,2)={'(steady)'}, M(3,0)=0, M(3,1)=0, M(3,2)=1
+
+--------------------
+Synthesis summary
+
+optimality objective: R[exp]{"reward"}max=? [F "discount_sink"] 
+
+method: AR, synthesis time: 256.26 s
+number of holes: 19, family size: 15479341056, super quotient: 53 states / 616 actions
+explored: 100 %
+AR stats: avg MDP size: 53, iterations: 369398
+
+optimal: 280.331556
+--------------------
+
+2023-04-25 05:02:46,057 - synthesizer_pomdp.py - Synthesizing optimal k=4 controller ...
+2023-04-25 05:02:46,057 - quotient_pomdp.py - Unfolding POMDP using the following memory allocation vector: [4, 4, 1, 4, 1] ...
+2023-04-25 05:02:46,057 - quotient_pomdp.py - Constructed quotient MDP having 70 states and 1093 actions.
+2023-04-25 05:02:46,071 - synthesizer.py - Synthesis initiated.

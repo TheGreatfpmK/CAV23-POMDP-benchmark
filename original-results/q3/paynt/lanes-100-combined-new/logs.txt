@@ -1,0 +1,56 @@
+2023-04-26 02:56:23,185 - cli.py - This is Paynt version 0.1.0.
+2023-04-26 02:56:23,187 - sketch.py - loading sketch from /mnt/d/src/PP/synthesis-CAV/experiments/../models/pomdp/storm-integration/lanes-100-combined-new/sketch.templ ...
+2023-04-26 02:56:23,254 - prism_parser.py - PRISM model type: PrismModelType.POMDP
+2023-04-26 02:56:23,254 - prism_parser.py - loading properties from /mnt/d/src/PP/synthesis-CAV/experiments/../models/pomdp/storm-integration/lanes-100-combined-new/sketch.props ...
+2023-04-26 02:56:23,271 - prism_parser.py - found the following specification: constraints: none, optimality objective: R[exp]{"steps"}min=? [F (z = 5)] 
+2023-04-26 02:56:23,331 - sketch.py - converting state rewards 'steps' to state-action rewards
+2023-04-26 02:56:23,333 - sketch.py - constructed explicit quotient having 2741 states and 5285 actions
+2023-04-26 02:56:23,333 - sketch.py - found the following specification constraints: none, optimality objective: R[exp]{"steps"}min=? [F (z = 5)] 
+2023-04-26 02:56:23,340 - quotient_pomdp.py - Constructed POMDP having 11 observations.
+2023-04-26 02:56:23,398 - quotient_pomdp.py - Unfolding POMDP using the following memory allocation vector: [1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1] ...
+2023-04-26 02:56:23,400 - quotient_pomdp.py - Constructed quotient MDP having 2741 states and 5285 actions.
+2023-04-26 02:56:23,646 - synthesizer_pomdp.py - Synthesizing optimal k=1 controller ...
+2023-04-26 02:56:23,646 - quotient_pomdp.py - Unfolding POMDP using the following memory allocation vector: [1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1] ...
+2023-04-26 02:56:23,646 - quotient_pomdp.py - Constructed quotient MDP having 2741 states and 5285 actions.
+2023-04-26 02:56:23,876 - synthesizer.py - Synthesis initiated.
+-----------PAYNT-----------               
+Value = 11009.348575033993 | Time elapsed = 0.3s | FSC size = 22
+FSC = A([fast=1],0)={'J'}, A([mid=1],0)={'F'}, A([slow=1],0)={'B'}, A([blue=1 & imgoal=1],0)={'B'}, A([o0=1],0)={'r'}, A([imgoal=1 & yell=1],0)={'A'}
+
+-----------PAYNT-----------               
+Value = 10241.939782842126 | Time elapsed = 0.5s | FSC size = 22
+FSC = A([fast=1],0)={'J'}, A([mid=1],0)={'F'}, A([slow=1],0)={'A'}, A([blue=1 & imgoal=1],0)={'B'}, A([o0=1],0)={'r'}, A([imgoal=1 & yell=1],0)={'A'}
+
+--------------------
+Synthesis summary
+
+optimality objective: R[exp]{"steps"}min=? [F (z = 5)] 
+
+method: AR, synthesis time: 1.27 s
+number of holes: 6, family size: 144, super quotient: 2741 states / 5285 actions
+explored: 100 %
+AR stats: avg MDP size: 2690, iterations: 28
+
+optimal: 10241.939783
+--------------------
+
+2023-04-26 02:56:25,272 - synthesizer_pomdp.py - Synthesizing optimal k=2 controller ...
+2023-04-26 02:56:25,273 - quotient_pomdp.py - Unfolding POMDP using the following memory allocation vector: [2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 1] ...
+2023-04-26 02:56:25,274 - quotient_pomdp.py - Constructed quotient MDP having 5481 states and 21138 actions.
+2023-04-26 02:56:29,727 - synthesizer.py - Synthesis initiated.
+-----------PAYNT-----------               
+Value = 9019.145779314704 | Time elapsed = 7.4s | FSC size = 42
+FSC = A([fast=1],0)={'J'}, A([fast=1],1)={'J'}, M([fast=1],0)=0, M([fast=1],1)=0, A([mid=1],0)={'F'}, A([mid=1],1)={'F'}, M([mid=1],0)=0, M([mid=1],1)=1, M([],0)=0, M([],1)=0, A([slow=1],0)={'B'}, A([slow=1],1)={'B'}, M([slow=1],0)=0, M([slow=1],1)=0, M([in=1],0)=0, M([in=1],1)=0, A([blue=1 & imgoal=1],0)={'C'}, A([blue=1 & imgoal=1],1)={'B'}, M([blue=1 & imgoal=1],0)=1, M([blue=1 & imgoal=1],1)=1, A([o0=1],0)={'r'}, A([o0=1],1)={'r'}, M([o0=1],0)=0, M([o0=1],1)=0, A([imgoal=1 & yell=1],0)={'A'}, A([imgoal=1 & yell=1],1)={'B'}, M([imgoal=1 & yell=1],0)=0, M([imgoal=1 & yell=1],1)=1, M([imgoal=1],0)=0, M([imgoal=1],1)=0, M([goal=1 & imgoal=1],0)=0, M([goal=1 & imgoal=1],1)=0, M([ooin=1],0)=0
+
+-----------PAYNT-----------               
+Value = 8325.140009978475 | Time elapsed = 72.6s | FSC size = 42
+FSC = A([fast=1],0)={'J'}, A([fast=1],1)={'J'}, M([fast=1],0)=0, M([fast=1],1)=0, A([mid=1],0)={'F'}, A([mid=1],1)={'F'}, M([mid=1],0)=0, M([mid=1],1)=0, M([],0)=1, M([],1)=0, A([slow=1],0)={'A'}, A([slow=1],1)={'B'}, M([slow=1],0)=0, M([slow=1],1)=0, M([in=1],0)=1, M([in=1],1)=1, A([blue=1 & imgoal=1],0)={'C'}, A([blue=1 & imgoal=1],1)={'B'}, M([blue=1 & imgoal=1],0)=1, M([blue=1 & imgoal=1],1)=1, A([o0=1],0)={'r'}, A([o0=1],1)={'r'}, M([o0=1],0)=0, M([o0=1],1)=0, A([imgoal=1 & yell=1],0)={'A'}, A([imgoal=1 & yell=1],1)={'B'}, M([imgoal=1 & yell=1],0)=0, M([imgoal=1 & yell=1],1)=1, M([imgoal=1],0)=0, M([imgoal=1],1)=0, M([goal=1 & imgoal=1],0)=0, M([goal=1 & imgoal=1],1)=0, M([ooin=1],0)=0
+
+-----------PAYNT-----------               
+Value = 8260.196568540421 | Time elapsed = 76.3s | FSC size = 42
+FSC = A([fast=1],0)={'J'}, A([fast=1],1)={'J'}, M([fast=1],0)=0, M([fast=1],1)=1, A([mid=1],0)={'F'}, A([mid=1],1)={'F'}, M([mid=1],0)=0, M([mid=1],1)=0, M([],0)=1, M([],1)=1, A([slow=1],0)={'A'}, A([slow=1],1)={'B'}, M([slow=1],0)=0, M([slow=1],1)=1, M([in=1],0)=1, M([in=1],1)=0, A([blue=1 & imgoal=1],0)={'C'}, A([blue=1 & imgoal=1],1)={'B'}, M([blue=1 & imgoal=1],0)=1, M([blue=1 & imgoal=1],1)=1, A([o0=1],0)={'r'}, A([o0=1],1)={'r'}, M([o0=1],0)=0, M([o0=1],1)=0, A([imgoal=1 & yell=1],0)={'A'}, A([imgoal=1 & yell=1],1)={'B'}, M([imgoal=1 & yell=1],0)=0, M([imgoal=1 & yell=1],1)=1, M([imgoal=1],0)=0, M([imgoal=1],1)=0, M([goal=1 & imgoal=1],0)=0, M([goal=1 & imgoal=1],1)=0, M([ooin=1],0)=0
+
+-----------PAYNT-----------               
+Value = 8223.353067292326 | Time elapsed = 106.5s | FSC size = 42
+FSC = A([fast=1],0)={'I'}, A([fast=1],1)={'J'}, M([fast=1],0)=0, M([fast=1],1)=0, A([mid=1],0)={'F'}, A([mid=1],1)={'E'}, M([mid=1],0)=1, M([mid=1],1)=0, M([],0)=1, M([],1)=1, A([slow=1],0)={'A'}, A([slow=1],1)={'B'}, M([slow=1],0)=0, M([slow=1],1)=0, M([in=1],0)=1, M([in=1],1)=0, A([blue=1 & imgoal=1],0)={'C'}, A([blue=1 & imgoal=1],1)={'B'}, M([blue=1 & imgoal=1],0)=1, M([blue=1 & imgoal=1],1)=1, A([o0=1],0)={'r'}, A([o0=1],1)={'r'}, M([o0=1],0)=0, M([o0=1],1)=0, A([imgoal=1 & yell=1],0)={'A'}, A([imgoal=1 & yell=1],1)={'B'}, M([imgoal=1 & yell=1],0)=0, M([imgoal=1 & yell=1],1)=1, M([imgoal=1],0)=0, M([imgoal=1],1)=0, M([goal=1 & imgoal=1],0)=0, M([goal=1 & imgoal=1],1)=0, M([ooin=1],0)=0
+

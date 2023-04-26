@@ -1,0 +1,118 @@
+2023-04-25 04:41:48,905 - cli.py - This is Paynt version 0.1.0.
+2023-04-25 04:41:48,907 - sketch.py - loading sketch from /mnt/d/src/PP/synthesis-CAV/experiments/../models/pomdp/storm-integration/milos-aaai97/sketch.templ ...
+2023-04-25 04:41:48,971 - prism_parser.py - loading properties from /mnt/d/src/PP/synthesis-CAV/experiments/../models/pomdp/storm-integration/milos-aaai97/sketch.props ...
+2023-04-25 04:41:48,985 - prism_parser.py - found the following specification: constraints: none, optimality objective: R[exp]{"reward"}max=? [F "discount_sink"] 
+2023-04-25 04:41:48,994 - sketch.py - constructed explicit quotient having 165 states and 980 actions
+2023-04-25 04:41:48,994 - sketch.py - found the following specification constraints: none, optimality objective: R[exp]{"reward"}max=? [F "discount_sink"] 
+2023-04-25 04:41:49,002 - quotient_pomdp.py - Constructed POMDP having 11 observations.
+2023-04-25 04:41:49,006 - quotient_pomdp.py - Unfolding POMDP using the following memory allocation vector: [1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1] ...
+2023-04-25 04:41:49,008 - quotient_pomdp.py - Constructed quotient MDP having 165 states and 980 actions.
+2023-04-25 04:41:49,018 - synthesizer_pomdp.py - Synthesizing optimal k=1 controller ...
+2023-04-25 04:41:49,018 - quotient_pomdp.py - Unfolding POMDP using the following memory allocation vector: [1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1] ...
+2023-04-25 04:41:49,018 - quotient_pomdp.py - Constructed quotient MDP having 165 states and 980 actions.
+2023-04-25 04:41:49,026 - synthesizer.py - Synthesis initiated.
+-----------PAYNT-----------               
+Value = 19.993230396091253 | Time elapsed = 0.0s | FSC size = 22
+FSC = A(0,0)={'(a3)'}, A(1,0)={'(a4)'}, A(2,0)={'(a4)'}, A(3,0)={'(a4)'}, A(4,0)={'(a4)'}, A(5,0)={'(a0)'}, A(6,0)={'(a0)'}, A(7,0)={'(a0)'}, A(9,0)={'(a4)'}
+
+-----------PAYNT-----------               
+Value = 20.02868467753646 | Time elapsed = 0.0s | FSC size = 22
+FSC = A(0,0)={'(a3)'}, A(1,0)={'(a4)'}, A(2,0)={'(a3)'}, A(3,0)={'(a4)'}, A(4,0)={'(a4)'}, A(5,0)={'(a0)'}, A(6,0)={'(a0)'}, A(7,0)={'(a0)'}, A(9,0)={'(a4)'}
+
+-----------PAYNT-----------               
+Value = 20.249478105032864 | Time elapsed = 0.0s | FSC size = 22
+FSC = A(0,0)={'(a3)'}, A(1,0)={'(a4)'}, A(2,0)={'(a5)'}, A(3,0)={'(a4)'}, A(4,0)={'(a4)'}, A(5,0)={'(a3)'}, A(6,0)={'(a4)'}, A(7,0)={'(a4)'}, A(9,0)={'(a4)'}
+
+-----------PAYNT-----------               
+Value = 20.2569876398692 | Time elapsed = 0.0s | FSC size = 22
+FSC = A(0,0)={'(a3)'}, A(1,0)={'(a4)'}, A(2,0)={'(a5)'}, A(3,0)={'(a4)'}, A(4,0)={'(a4)'}, A(5,0)={'(a3)'}, A(6,0)={'(a4)'}, A(7,0)={'(a5)'}, A(9,0)={'(a4)'}
+
+-----------PAYNT-----------               
+Value = 20.29158981118269 | Time elapsed = 0.0s | FSC size = 22
+FSC = A(0,0)={'(a3)'}, A(1,0)={'(a5)'}, A(2,0)={'(a5)'}, A(3,0)={'(a4)'}, A(4,0)={'(a4)'}, A(5,0)={'(a3)'}, A(6,0)={'(a4)'}, A(7,0)={'(a4)'}, A(9,0)={'(a4)'}
+
+-----------PAYNT-----------               
+Value = 20.297295908151337 | Time elapsed = 0.0s | FSC size = 22
+FSC = A(0,0)={'(a3)'}, A(1,0)={'(a5)'}, A(2,0)={'(a5)'}, A(3,0)={'(a4)'}, A(4,0)={'(a4)'}, A(5,0)={'(a3)'}, A(6,0)={'(a4)'}, A(7,0)={'(a5)'}, A(9,0)={'(a4)'}
+
+-----------PAYNT-----------               
+Value = 20.493376694034946 | Time elapsed = 0.0s | FSC size = 22
+FSC = A(0,0)={'(a3)'}, A(1,0)={'(a4)'}, A(2,0)={'(a4)'}, A(3,0)={'(a4)'}, A(4,0)={'(a5)'}, A(5,0)={'(a3)'}, A(6,0)={'(a4)'}, A(7,0)={'(a4)'}, A(9,0)={'(a4)'}
+
+-----------PAYNT-----------               
+Value = 20.49624240739252 | Time elapsed = 0.0s | FSC size = 22
+FSC = A(0,0)={'(a3)'}, A(1,0)={'(a4)'}, A(2,0)={'(a4)'}, A(3,0)={'(a4)'}, A(4,0)={'(a5)'}, A(5,0)={'(a3)'}, A(6,0)={'(a4)'}, A(7,0)={'(a5)'}, A(9,0)={'(a4)'}
+
+-----------PAYNT-----------               
+Value = 20.500484791692376 | Time elapsed = 0.1s | FSC size = 22
+FSC = A(0,0)={'(a3)'}, A(1,0)={'(a4)'}, A(2,0)={'(a5)'}, A(3,0)={'(a4)'}, A(4,0)={'(a5)'}, A(5,0)={'(a3)'}, A(6,0)={'(a4)'}, A(7,0)={'(a4)'}, A(9,0)={'(a4)'}
+
+-----------PAYNT-----------               
+Value = 20.502934427851855 | Time elapsed = 0.1s | FSC size = 22
+FSC = A(0,0)={'(a3)'}, A(1,0)={'(a4)'}, A(2,0)={'(a5)'}, A(3,0)={'(a4)'}, A(4,0)={'(a5)'}, A(5,0)={'(a3)'}, A(6,0)={'(a4)'}, A(7,0)={'(a5)'}, A(9,0)={'(a4)'}
+
+-----------PAYNT-----------               
+Value = 20.51529247706688 | Time elapsed = 0.2s | FSC size = 22
+FSC = A(0,0)={'(a3)'}, A(1,0)={'(a4)'}, A(2,0)={'(a5)'}, A(3,0)={'(a4)'}, A(4,0)={'(a4)'}, A(5,0)={'(a3)'}, A(6,0)={'(a4)'}, A(7,0)={'(a5)'}, A(9,0)={'(a5)'}
+
+-----------PAYNT-----------               
+Value = 20.538203900004454 | Time elapsed = 0.2s | FSC size = 22
+FSC = A(0,0)={'(a3)'}, A(1,0)={'(a4)'}, A(2,0)={'(a4)'}, A(3,0)={'(a4)'}, A(4,0)={'(a5)'}, A(5,0)={'(a3)'}, A(6,0)={'(a4)'}, A(7,0)={'(a4)'}, A(9,0)={'(a5)'}
+
+-----------PAYNT-----------               
+Value = 20.540204908909047 | Time elapsed = 0.2s | FSC size = 22
+FSC = A(0,0)={'(a3)'}, A(1,0)={'(a4)'}, A(2,0)={'(a4)'}, A(3,0)={'(a4)'}, A(4,0)={'(a5)'}, A(5,0)={'(a3)'}, A(6,0)={'(a4)'}, A(7,0)={'(a5)'}, A(9,0)={'(a5)'}
+
+-----------PAYNT-----------               
+Value = 22.436257433454898 | Time elapsed = 0.4s | FSC size = 22
+FSC = A(0,0)={'(a5)'}, A(1,0)={'(a3)'}, A(2,0)={'(a3)'}, A(3,0)={'(a0)'}, A(4,0)={'(a0)'}, A(5,0)={'(a2)'}, A(6,0)={'(a2)'}, A(7,0)={'(a2)'}, A(9,0)={'(a3)'}
+
+-----------PAYNT-----------               
+Value = 23.251473059291257 | Time elapsed = 0.4s | FSC size = 22
+FSC = A(0,0)={'(a4)'}, A(1,0)={'(a3)'}, A(2,0)={'(a3)'}, A(3,0)={'(a2)'}, A(4,0)={'(a3)'}, A(5,0)={'(a2)'}, A(6,0)={'(a2)'}, A(7,0)={'(a2)'}, A(9,0)={'(a3)'}
+
+-----------PAYNT-----------               
+Value = 24.05305201412368 | Time elapsed = 0.4s | FSC size = 22
+FSC = A(0,0)={'(a5)'}, A(1,0)={'(a3)'}, A(2,0)={'(a3)'}, A(3,0)={'(a0)'}, A(4,0)={'(a0)'}, A(5,0)={'(a1)'}, A(6,0)={'(a2)'}, A(7,0)={'(a2)'}, A(9,0)={'(a3)'}
+
+-----------PAYNT-----------               
+Value = 24.455654460302892 | Time elapsed = 0.4s | FSC size = 22
+FSC = A(0,0)={'(a5)'}, A(1,0)={'(a3)'}, A(2,0)={'(a3)'}, A(3,0)={'(a0)'}, A(4,0)={'(a0)'}, A(5,0)={'(a5)'}, A(6,0)={'(a2)'}, A(7,0)={'(a2)'}, A(9,0)={'(a3)'}
+
+-----------PAYNT-----------               
+Value = 25.37479653313044 | Time elapsed = 0.4s | FSC size = 22
+FSC = A(0,0)={'(a5)'}, A(1,0)={'(a3)'}, A(2,0)={'(a3)'}, A(3,0)={'(a3)'}, A(4,0)={'(a3)'}, A(5,0)={'(a4)'}, A(6,0)={'(a2)'}, A(7,0)={'(a2)'}, A(9,0)={'(a3)'}
+
+-----------PAYNT-----------               
+Value = 25.80752932614489 | Time elapsed = 0.4s | FSC size = 22
+FSC = A(0,0)={'(a5)'}, A(1,0)={'(a3)'}, A(2,0)={'(a3)'}, A(3,0)={'(a0)'}, A(4,0)={'(a0)'}, A(5,0)={'(a3)'}, A(6,0)={'(a2)'}, A(7,0)={'(a2)'}, A(9,0)={'(a3)'}
+
+-----------PAYNT-----------               
+Value = 27.522618796440018 | Time elapsed = 0.4s | FSC size = 22
+FSC = A(0,0)={'(a5)'}, A(1,0)={'(a3)'}, A(2,0)={'(a3)'}, A(3,0)={'(a0)'}, A(4,0)={'(a0)'}, A(5,0)={'(a3)'}, A(6,0)={'(a2)'}, A(7,0)={'(a1)'}, A(9,0)={'(a3)'}
+
+-----------PAYNT-----------               
+Value = 27.61915841923631 | Time elapsed = 0.5s | FSC size = 22
+FSC = A(0,0)={'(a4)'}, A(1,0)={'(a1)'}, A(2,0)={'(a3)'}, A(3,0)={'(a0)'}, A(4,0)={'(a3)'}, A(5,0)={'(a0)'}, A(6,0)={'(a0)'}, A(7,0)={'(a0)'}, A(9,0)={'(a3)'}
+
+-----------PAYNT-----------               
+Value = 29.45856489035425 | Time elapsed = 0.9s | FSC size = 22
+FSC = A(0,0)={'(a4)'}, A(1,0)={'(a1)'}, A(2,0)={'(a1)'}, A(3,0)={'(a0)'}, A(4,0)={'(a3)'}, A(5,0)={'(a3)'}, A(6,0)={'(a3)'}, A(7,0)={'(a0)'}, A(9,0)={'(a3)'}
+
+--------------------
+Synthesis summary
+
+optimality objective: R[exp]{"reward"}max=? [F "discount_sink"] 
+
+method: AR, synthesis time: 3.28 s
+number of holes: 9, family size: 10077696, super quotient: 165 states / 980 actions
+explored: 100 %
+AR stats: avg MDP size: 132, iterations: 5569
+
+optimal: 29.458565
+--------------------
+
+2023-04-25 04:41:52,340 - synthesizer_pomdp.py - Synthesizing optimal k=2 controller ...
+2023-04-25 04:41:52,340 - quotient_pomdp.py - Unfolding POMDP using the following memory allocation vector: [2, 2, 2, 2, 2, 2, 2, 2, 1, 2, 1] ...
+2023-04-25 04:41:52,341 - quotient_pomdp.py - Constructed quotient MDP having 328 states and 3915 actions.
+2023-04-25 04:41:52,497 - synthesizer.py - Synthesis initiated.

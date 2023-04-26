@@ -1,0 +1,443 @@
+2023-04-26 00:57:59,947 - cli.py - This is Paynt version 0.1.0.
+2023-04-26 00:57:59,950 - sketch.py - loading sketch from /mnt/d/src/PP/synthesis-CAV/experiments/../models/pomdp/storm-integration/milos-aaai97/sketch.templ ...
+2023-04-26 00:58:00,030 - prism_parser.py - loading properties from /mnt/d/src/PP/synthesis-CAV/experiments/../models/pomdp/storm-integration/milos-aaai97/sketch.props ...
+2023-04-26 00:58:00,047 - prism_parser.py - found the following specification: constraints: none, optimality objective: R[exp]{"reward"}max=? [F "discount_sink"] 
+2023-04-26 00:58:00,057 - sketch.py - constructed explicit quotient having 165 states and 980 actions
+2023-04-26 00:58:00,057 - sketch.py - found the following specification constraints: none, optimality objective: R[exp]{"reward"}max=? [F "discount_sink"] 
+2023-04-26 00:58:00,065 - quotient_pomdp.py - Constructed POMDP having 11 observations.
+2023-04-26 00:58:00,071 - quotient_pomdp.py - Unfolding POMDP using the following memory allocation vector: [1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1] ...
+2023-04-26 00:58:00,073 - quotient_pomdp.py - Constructed quotient MDP having 165 states and 980 actions.
+2023-04-26 00:58:00,088 - synthesizer_pomdp.py - Storm pomdp option enabled
+2023-04-26 00:58:00,088 - synthesizer_pomdp.py - Storm settings: iterative - (None, None, None), get_storm_result - 10, storm_options - 5mil, prune_storm - False, unfold_strategy - (True, False), use_storm_cutoffs - False
+2023-04-26 00:58:00,088 - synthesizer_pomdp.py - Synthesizing optimal k=1 controller ...
+2023-04-26 00:58:00,089 - quotient_pomdp.py - Unfolding POMDP using the following memory allocation vector: [1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1] ...
+2023-04-26 00:58:00,089 - quotient_pomdp.py - Constructed quotient MDP having 165 states and 980 actions.
+{} 
+
+{}
+2023-04-26 00:58:00,101 - synthesizer.py - Synthesis initiated.
+-----------PAYNT-----------               
+Value = 19.993230396091253 | Time elapsed = 0.0s | FSC size = 22
+FSC = A(0,0)={'(a3)'}, A(1,0)={'(a4)'}, A(2,0)={'(a4)'}, A(3,0)={'(a4)'}, A(4,0)={'(a4)'}, A(5,0)={'(a0)'}, A(6,0)={'(a0)'}, A(7,0)={'(a0)'}, A(9,0)={'(a4)'}
+
+-----------PAYNT-----------               
+Value = 20.02868467753646 | Time elapsed = 0.0s | FSC size = 22
+FSC = A(0,0)={'(a3)'}, A(1,0)={'(a4)'}, A(2,0)={'(a3)'}, A(3,0)={'(a4)'}, A(4,0)={'(a4)'}, A(5,0)={'(a0)'}, A(6,0)={'(a0)'}, A(7,0)={'(a0)'}, A(9,0)={'(a4)'}
+
+-----------PAYNT-----------               
+Value = 20.249478105032864 | Time elapsed = 0.0s | FSC size = 22
+FSC = A(0,0)={'(a3)'}, A(1,0)={'(a4)'}, A(2,0)={'(a5)'}, A(3,0)={'(a4)'}, A(4,0)={'(a4)'}, A(5,0)={'(a3)'}, A(6,0)={'(a4)'}, A(7,0)={'(a4)'}, A(9,0)={'(a4)'}
+
+-----------PAYNT-----------               
+Value = 20.2569876398692 | Time elapsed = 0.0s | FSC size = 22
+FSC = A(0,0)={'(a3)'}, A(1,0)={'(a4)'}, A(2,0)={'(a5)'}, A(3,0)={'(a4)'}, A(4,0)={'(a4)'}, A(5,0)={'(a3)'}, A(6,0)={'(a4)'}, A(7,0)={'(a5)'}, A(9,0)={'(a4)'}
+
+-----------PAYNT-----------               
+Value = 20.29158981118269 | Time elapsed = 0.0s | FSC size = 22
+FSC = A(0,0)={'(a3)'}, A(1,0)={'(a5)'}, A(2,0)={'(a5)'}, A(3,0)={'(a4)'}, A(4,0)={'(a4)'}, A(5,0)={'(a3)'}, A(6,0)={'(a4)'}, A(7,0)={'(a4)'}, A(9,0)={'(a4)'}
+
+-----------PAYNT-----------               
+Value = 20.297295908151337 | Time elapsed = 0.0s | FSC size = 22
+FSC = A(0,0)={'(a3)'}, A(1,0)={'(a5)'}, A(2,0)={'(a5)'}, A(3,0)={'(a4)'}, A(4,0)={'(a4)'}, A(5,0)={'(a3)'}, A(6,0)={'(a4)'}, A(7,0)={'(a5)'}, A(9,0)={'(a4)'}
+
+-----------PAYNT-----------               
+Value = 20.493376694034946 | Time elapsed = 0.1s | FSC size = 22
+FSC = A(0,0)={'(a3)'}, A(1,0)={'(a4)'}, A(2,0)={'(a4)'}, A(3,0)={'(a4)'}, A(4,0)={'(a5)'}, A(5,0)={'(a3)'}, A(6,0)={'(a4)'}, A(7,0)={'(a4)'}, A(9,0)={'(a4)'}
+
+-----------PAYNT-----------               
+Value = 20.49624240739252 | Time elapsed = 0.1s | FSC size = 22
+FSC = A(0,0)={'(a3)'}, A(1,0)={'(a4)'}, A(2,0)={'(a4)'}, A(3,0)={'(a4)'}, A(4,0)={'(a5)'}, A(5,0)={'(a3)'}, A(6,0)={'(a4)'}, A(7,0)={'(a5)'}, A(9,0)={'(a4)'}
+
+-----------PAYNT-----------               
+Value = 20.500484791692376 | Time elapsed = 0.1s | FSC size = 22
+FSC = A(0,0)={'(a3)'}, A(1,0)={'(a4)'}, A(2,0)={'(a5)'}, A(3,0)={'(a4)'}, A(4,0)={'(a5)'}, A(5,0)={'(a3)'}, A(6,0)={'(a4)'}, A(7,0)={'(a4)'}, A(9,0)={'(a4)'}
+
+-----------PAYNT-----------               
+Value = 20.502934427851855 | Time elapsed = 0.1s | FSC size = 22
+FSC = A(0,0)={'(a3)'}, A(1,0)={'(a4)'}, A(2,0)={'(a5)'}, A(3,0)={'(a4)'}, A(4,0)={'(a5)'}, A(5,0)={'(a3)'}, A(6,0)={'(a4)'}, A(7,0)={'(a5)'}, A(9,0)={'(a4)'}
+
+-----------PAYNT-----------               
+Value = 20.51529247706688 | Time elapsed = 0.2s | FSC size = 22
+FSC = A(0,0)={'(a3)'}, A(1,0)={'(a4)'}, A(2,0)={'(a5)'}, A(3,0)={'(a4)'}, A(4,0)={'(a4)'}, A(5,0)={'(a3)'}, A(6,0)={'(a4)'}, A(7,0)={'(a5)'}, A(9,0)={'(a5)'}
+
+-----------PAYNT-----------               
+Value = 20.538203900004454 | Time elapsed = 0.2s | FSC size = 22
+FSC = A(0,0)={'(a3)'}, A(1,0)={'(a4)'}, A(2,0)={'(a4)'}, A(3,0)={'(a4)'}, A(4,0)={'(a5)'}, A(5,0)={'(a3)'}, A(6,0)={'(a4)'}, A(7,0)={'(a4)'}, A(9,0)={'(a5)'}
+
+-----------PAYNT-----------               
+Value = 20.540204908909047 | Time elapsed = 0.2s | FSC size = 22
+FSC = A(0,0)={'(a3)'}, A(1,0)={'(a4)'}, A(2,0)={'(a4)'}, A(3,0)={'(a4)'}, A(4,0)={'(a5)'}, A(5,0)={'(a3)'}, A(6,0)={'(a4)'}, A(7,0)={'(a5)'}, A(9,0)={'(a5)'}
+
+-----------PAYNT-----------               
+Value = 22.436257433454898 | Time elapsed = 0.4s | FSC size = 22
+FSC = A(0,0)={'(a5)'}, A(1,0)={'(a3)'}, A(2,0)={'(a3)'}, A(3,0)={'(a0)'}, A(4,0)={'(a0)'}, A(5,0)={'(a2)'}, A(6,0)={'(a2)'}, A(7,0)={'(a2)'}, A(9,0)={'(a3)'}
+
+-----------PAYNT-----------               
+Value = 23.251473059291257 | Time elapsed = 0.4s | FSC size = 22
+FSC = A(0,0)={'(a4)'}, A(1,0)={'(a3)'}, A(2,0)={'(a3)'}, A(3,0)={'(a2)'}, A(4,0)={'(a3)'}, A(5,0)={'(a2)'}, A(6,0)={'(a2)'}, A(7,0)={'(a2)'}, A(9,0)={'(a3)'}
+
+-----------PAYNT-----------               
+Value = 24.05305201412368 | Time elapsed = 0.4s | FSC size = 22
+FSC = A(0,0)={'(a5)'}, A(1,0)={'(a3)'}, A(2,0)={'(a3)'}, A(3,0)={'(a0)'}, A(4,0)={'(a0)'}, A(5,0)={'(a1)'}, A(6,0)={'(a2)'}, A(7,0)={'(a2)'}, A(9,0)={'(a3)'}
+
+-----------PAYNT-----------               
+Value = 24.455654460302892 | Time elapsed = 0.4s | FSC size = 22
+FSC = A(0,0)={'(a5)'}, A(1,0)={'(a3)'}, A(2,0)={'(a3)'}, A(3,0)={'(a0)'}, A(4,0)={'(a0)'}, A(5,0)={'(a5)'}, A(6,0)={'(a2)'}, A(7,0)={'(a2)'}, A(9,0)={'(a3)'}
+
+-----------PAYNT-----------               
+Value = 25.37479653313044 | Time elapsed = 0.4s | FSC size = 22
+FSC = A(0,0)={'(a5)'}, A(1,0)={'(a3)'}, A(2,0)={'(a3)'}, A(3,0)={'(a3)'}, A(4,0)={'(a3)'}, A(5,0)={'(a4)'}, A(6,0)={'(a2)'}, A(7,0)={'(a2)'}, A(9,0)={'(a3)'}
+
+-----------PAYNT-----------               
+Value = 25.80752932614489 | Time elapsed = 0.4s | FSC size = 22
+FSC = A(0,0)={'(a5)'}, A(1,0)={'(a3)'}, A(2,0)={'(a3)'}, A(3,0)={'(a0)'}, A(4,0)={'(a0)'}, A(5,0)={'(a3)'}, A(6,0)={'(a2)'}, A(7,0)={'(a2)'}, A(9,0)={'(a3)'}
+
+-----------PAYNT-----------               
+Value = 27.522618796440018 | Time elapsed = 0.4s | FSC size = 22
+FSC = A(0,0)={'(a5)'}, A(1,0)={'(a3)'}, A(2,0)={'(a3)'}, A(3,0)={'(a0)'}, A(4,0)={'(a0)'}, A(5,0)={'(a3)'}, A(6,0)={'(a2)'}, A(7,0)={'(a1)'}, A(9,0)={'(a3)'}
+
+-----------PAYNT-----------               
+Value = 27.61915841923631 | Time elapsed = 0.5s | FSC size = 22
+FSC = A(0,0)={'(a4)'}, A(1,0)={'(a1)'}, A(2,0)={'(a3)'}, A(3,0)={'(a0)'}, A(4,0)={'(a3)'}, A(5,0)={'(a0)'}, A(6,0)={'(a0)'}, A(7,0)={'(a0)'}, A(9,0)={'(a3)'}
+
+-----------PAYNT-----------               
+Value = 29.45856489035425 | Time elapsed = 0.8s | FSC size = 22
+FSC = A(0,0)={'(a4)'}, A(1,0)={'(a1)'}, A(2,0)={'(a1)'}, A(3,0)={'(a0)'}, A(4,0)={'(a3)'}, A(5,0)={'(a3)'}, A(6,0)={'(a3)'}, A(7,0)={'(a0)'}, A(9,0)={'(a3)'}
+
+--------------------
+Synthesis summary
+
+optimality objective: R[exp]{"reward"}max=? [F "discount_sink"] 
+
+method: AR, synthesis time: 3.24 s
+number of holes: 9, family size: 10077696, super quotient: 165 states / 980 actions
+explored: 100 %
+AR stats: avg MDP size: 132, iterations: 5569
+
+optimal: 29.458565
+--------------------
+
+2023-04-26 00:58:03,379 - synthesizer_pomdp.py - Synthesizing optimal k=2 controller ...
+2023-04-26 00:58:03,379 - quotient_pomdp.py - Unfolding POMDP using the following memory allocation vector: [2, 2, 2, 2, 2, 2, 2, 2, 1, 2, 1] ...
+2023-04-26 00:58:03,379 - quotient_pomdp.py - Constructed quotient MDP having 328 states and 3915 actions.
+{} 
+
+{}
+2023-04-26 00:58:03,542 - synthesizer.py - Synthesis initiated.
+-----------PAYNT-----------               
+Value = 31.562357639160666 | Time elapsed = 3.4s | FSC size = 40
+FSC = A(0,0)={'(a3)'}, A(0,1)={'(a2)'}, M(0,0)=1, M(0,1)=0, A(1,0)={'(a0)'}, A(1,1)={'(a0)'}, M(1,0)=0, M(1,1)=0, A(2,0)={'(a0)'}, A(2,1)={'(a0)'}, M(2,0)=0, M(2,1)=0, A(3,0)={'(a0)'}, A(3,1)={'(a0)'}, M(3,0)=0, M(3,1)=0, A(4,0)={'(a0)'}, A(4,1)={'(a0)'}, M(4,0)=0, M(4,1)=0, A(5,0)={'(a0)'}, A(5,1)={'(a0)'}, M(5,0)=0, M(5,1)=0, A(6,0)={'(a0)'}, A(6,1)={'(a0)'}, M(6,0)=0, M(6,1)=0, A(7,0)={'(a0)'}, A(7,1)={'(a0)'}, M(7,0)=0, M(7,1)=0, M(8,0)=1, A(9,0)={'(a3)'}, A(9,1)={'(a3)'}, M(9,0)=1, M(9,1)=0
+
+2023-04-26 00:58:10,155 - synthesizer_ar_storm.py - Pausing synthesis
+2023-04-26 00:58:10,155 - synthesizer_ar_storm.py - Terminating controller synthesis
+--------------------
+Synthesis summary
+
+optimality objective: R[exp]{"reward"}max=? [F "discount_sink"] 
+
+method: AR, synthesis time: 6.61 s
+number of holes: 37, family size: 53246666561770487808, super quotient: 328 states / 3915 actions
+explored: 3 %
+AR stats: avg MDP size: 86, iterations: 3188
+
+optimal: 31.562358
+--------------------
+
+2023-04-26 00:58:10,161 - storm_pomdp_control.py - starting Storm POMDP analysis
+Finished exploring Underapproximation MDP.
+ Start analysis...
+2023-04-26 00:58:51,434 - storm_pomdp_control.py - Storm POMDP analysis completed
+{0: [0, 1, 2, 3, 4, 5], 1: [0, 1, 2, 3, 4, 5], 2: [0, 1, 2, 3, 4, 5], 3: [0, 1, 2, 3, 4, 5], 4: [0, 1, 2, 3, 4, 5], 5: [0, 1, 2, 3, 4, 5], 6: [0, 1, 2, 3, 4, 5], 7: [0, 1, 2, 3, 4, 5], 8: [0], 9: [0, 2, 3, 4, 5], 10: [0]}
+{0: [0, 1, 2, 3, 4, 5], 1: [0, 1, 2, 3, 4, 5], 2: [0, 1, 2, 3, 4, 5], 3: [0, 1, 2, 3, 4, 5], 4: [0, 1, 2, 3, 4, 5], 5: [0, 1, 2, 3, 4, 5], 6: [0, 1, 2, 3, 4, 5], 7: [0, 1, 2, 3, 4, 5], 8: [0], 9: [0, 2, 3, 4, 5], 10: [0]}
+-----------Storm-----------                 
+Value = 40.641218246276274 | Time elapsed = 41.2s | FSC size = 524
+FSC (dot) = digraph model {
+	0 [ label = "0: {__extra, target}" ];
+	1 [ label = "1: {init, obs_8}" ];
+	2 [ label = "2: {obs_9}" ];
+	3 [ label = "3: {obs_10, target}" ];
+	4 [ label = "4: {obs_0}" ];
+	5 [ label = "5: {obs_1}" ];
+	6 [ label = "6: {obs_2}" ];
+	7 [ label = "7: {obs_3}" ];
+	8 [ label = "8: {obs_4}" ];
+	9 [ label = "9: {obs_1}" ];
+	10 [ label = "10: {obs_2}" ];
+	11 [ label = "11: {obs_3}" ];
+	12 [ label = "12: {obs_4}" ];
+	13 [ label = "13: {obs_0}" ];
+	14 [ label = "14: {obs_0}" ];
+	15 [ label = "15: {obs_0}" ];
+	16 [ label = "16: {obs_1}" ];
+	17 [ label = "17: {obs_2}" ];
+	18 [ label = "18: {obs_3}" ];
+	19 [ label = "19: {obs_4}" ];
+	20 [ label = "20: {obs_0}" ];
+	21 [ label = "21: {obs_0}" ];
+	22 [ label = "22: {obs_0}" ];
+	23 [ label = "23: {obs_0}" ];
+	24 [ label = "24: {obs_0}" ];
+	25 [ label = "25: {obs_0}" ];
+	26 [ label = "26: {obs_0}" ];
+	27 [ label = "27: {obs_0}" ];
+	28 [ label = "28: {obs_0}" ];
+	29 [ label = "29: {obs_1}" ];
+	30 [ label = "30: {obs_2}" ];
+	31 [ label = "31: {obs_3}" ];
+	32 [ label = "32: {obs_4}" ];
+	33 [ label = "33: {obs_0}" ];
+	34 [ label = "34: {obs_0}" ];
+	35 [ label = "35: {obs_1}" ];
+	36 [ label = "36: {obs_2}" ];
+	37 [ label = "37: {obs_3}" ];
+	38 [ label = "38: {obs_4}" ];
+	39 [ label = "39: {obs_0}" ];
+	40 [ label = "40: {obs_0}" ];
+	41 [ label = "41: {obs_0}" ];
+	42 [ label = "42: {cutoff, finite_mem, obs_0}" ];
+	43 [ label = "43: {cutoff, finite_mem, obs_0}" ];
+	44 [ label = "44: {cutoff, obs_0, sched_1}" ];
+	45 [ label = "45: {cutoff, obs_0, sched_1}" ];
+	46 [ label = "46: {cutoff, finite_mem, obs_0}" ];
+	47 [ label = "47: {cutoff, finite_mem, obs_0}" ];
+	48 [ label = "48: {cutoff, finite_mem, obs_0}" ];
+	49 [ label = "49: {cutoff, obs_0, sched_3}" ];
+	50 [ label = "50: {cutoff, finite_mem, obs_0}" ];
+	51 [ label = "51: {cutoff, finite_mem, obs_0}" ];
+	52 [ label = "52: {cutoff, obs_0, sched_1}" ];
+	53 [ label = "53: {cutoff, finite_mem, obs_0}" ];
+	54 [ label = "54: {cutoff, finite_mem, obs_0}" ];
+	55 [ label = "55: {cutoff, finite_mem, obs_0}" ];
+	56 [ label = "56: {cutoff, finite_mem, obs_0}" ];
+	57 [ label = "57: {cutoff, finite_mem, obs_0}" ];
+	"0c" [shape = "point"]
+	0 -> "0c" [label= "{loop}"];
+	"0c" -> 0 [ label= "1" ];
+	"1c" [shape = "point"]
+	1 -> "1c" [label= "{(init)}"];
+	"1c" -> 2 [ label= "1" ];
+	"2c" [shape = "point"]
+	2 -> "2c" [label= "{(a3)}"];
+	"2c" -> 3 [ label= "0.1" ];
+	"2c" -> 4 [ label= "0.9" ];
+	"3c" [shape = "point"]
+	3 -> "3c" [label= "{loop}"];
+	"3c" -> 3 [ label= "1" ];
+	"4c" [shape = "point"]
+	4 -> "4c" [label= "{(a4)}"];
+	"4c" -> 3 [ label= "0.1" ];
+	"4c" -> 5 [ label= "0.139365" ];
+	"4c" -> 6 [ label= "0.22671" ];
+	"4c" -> 7 [ label= "0.358245" ];
+	"4c" -> 8 [ label= "0.17568" ];
+	"5c" [shape = "point"]
+	5 -> "5c" [label= "{(a4)}"];
+	"5c" -> 3 [ label= "0.1" ];
+	"5c" -> 9 [ label= "0.295088" ];
+	"5c" -> 10 [ label= "0.203792" ];
+	"5c" -> 11 [ label= "0.322713" ];
+	"5c" -> 12 [ label= "0.0784078" ];
+	"6c" [shape = "point"]
+	6 -> "6c" [label= "{(a3)}"];
+	"6c" -> 3 [ label= "0.1" ];
+	"6c" -> 13 [ label= "0.9" ];
+	"7c" [shape = "point"]
+	7 -> "7c" [label= "{(a0)}"];
+	"7c" -> 3 [ label= "0.1" ];
+	"7c" -> 14 [ label= "0.9" ];
+	"8c" [shape = "point"]
+	8 -> "8c" [label= "{(a3)}"];
+	"8c" -> 3 [ label= "0.1" ];
+	"8c" -> 15 [ label= "0.9" ];
+	"9c" [shape = "point"]
+	9 -> "9c" [label= "{(a4)}"];
+	"9c" -> 3 [ label= "0.1" ];
+	"9c" -> 16 [ label= "0.599051" ];
+	"9c" -> 17 [ label= "0.111965" ];
+	"9c" -> 18 [ label= "0.162743" ];
+	"9c" -> 19 [ label= "0.0262404" ];
+	"10c" [shape = "point"]
+	10 -> "10c" [label= "{(a3)}"];
+	"10c" -> 3 [ label= "0.1" ];
+	"10c" -> 20 [ label= "0.9" ];
+	"11c" [shape = "point"]
+	11 -> "11c" [label= "{(a0)}"];
+	"11c" -> 3 [ label= "0.1" ];
+	"11c" -> 21 [ label= "0.9" ];
+	"12c" [shape = "point"]
+	12 -> "12c" [label= "{(a3)}"];
+	"12c" -> 3 [ label= "0.1" ];
+	"12c" -> 22 [ label= "0.9" ];
+	"13c" [shape = "point"]
+	13 -> "13c" [label= "{(a1)}"];
+	"13c" -> 3 [ label= "0.1" ];
+	"13c" -> 23 [ label= "0.9" ];
+	"14c" [shape = "point"]
+	14 -> "14c" [label= "{(a2)}"];
+	"14c" -> 3 [ label= "0.1" ];
+	"14c" -> 24 [ label= "0.9" ];
+	"15c" [shape = "point"]
+	15 -> "15c" [label= "{(a3)}"];
+	"15c" -> 3 [ label= "0.1" ];
+	"15c" -> 25 [ label= "0.9" ];
+	"16c" [shape = "point"]
+	16 -> "16c" [label= "{(a0)}"];
+	"16c" -> 3 [ label= "0.1" ];
+	"16c" -> 26 [ label= "0.9" ];
+	"17c" [shape = "point"]
+	17 -> "17c" [label= "{(a3)}"];
+	"17c" -> 3 [ label= "0.1" ];
+	"17c" -> 27 [ label= "0.9" ];
+	"18c" [shape = "point"]
+	18 -> "18c" [label= "{(a0)}"];
+	"18c" -> 3 [ label= "0.1" ];
+	"18c" -> 28 [ label= "0.9" ];
+	"19c" [shape = "point"]
+	19 -> "19c" [label= "{(a4)}"];
+	"19c" -> 3 [ label= "0.1" ];
+	"19c" -> 29 [ label= "0.26699" ];
+	"19c" -> 30 [ label= "0.171011" ];
+	"19c" -> 31 [ label= "0.258091" ];
+	"19c" -> 32 [ label= "0.203908" ];
+	"20c" [shape = "point"]
+	20 -> "20c" [label= "{(a1)}"];
+	"20c" -> 3 [ label= "0.1" ];
+	"20c" -> 33 [ label= "0.9" ];
+	"21c" [shape = "point"]
+	21 -> "21c" [label= "{(a2)}"];
+	"21c" -> 3 [ label= "0.1" ];
+	"21c" -> 34 [ label= "0.9" ];
+	"22c" [shape = "point"]
+	22 -> "22c" [label= "{(a4)}"];
+	"22c" -> 3 [ label= "0.1" ];
+	"22c" -> 35 [ label= "0.136067" ];
+	"22c" -> 36 [ label= "0.296429" ];
+	"22c" -> 37 [ label= "0.265746" ];
+	"22c" -> 38 [ label= "0.201759" ];
+	"23c" [shape = "point"]
+	23 -> "23c" [label= "{(a1)}"];
+	"23c" -> 3 [ label= "0.1" ];
+	"23c" -> 39 [ label= "0.9" ];
+	"24c" [shape = "point"]
+	24 -> "24c" [label= "{(a0)}"];
+	"24c" -> 3 [ label= "0.1" ];
+	"24c" -> 40 [ label= "0.9" ];
+	"25c" [shape = "point"]
+	25 -> "25c" [label= "{(a1)}"];
+	"25c" -> 3 [ label= "0.1" ];
+	"25c" -> 41 [ label= "0.9" ];
+	"26c" [shape = "point"]
+	26 -> "26c" [label= "{(a0)}"];
+	"26c" -> 3 [ label= "0.1" ];
+	"26c" -> 42 [ label= "0.9" ];
+	"27c" [shape = "point"]
+	27 -> "27c" [label= "{(a1)}"];
+	"27c" -> 3 [ label= "0.1" ];
+	"27c" -> 44 [ label= "0.9" ];
+	"28c" [shape = "point"]
+	28 -> "28c" [label= "{(a2)}"];
+	"28c" -> 3 [ label= "0.1" ];
+	"28c" -> 46 [ label= "0.9" ];
+	"29c" [shape = "point"]
+	29 -> "29c" [label= "{(a0)}"];
+	"29c" -> 3 [ label= "0.1" ];
+	"29c" -> 43 [ label= "0.9" ];
+	"30c" [shape = "point"]
+	30 -> "30c" [label= "{(a3)}"];
+	"30c" -> 3 [ label= "0.1" ];
+	"30c" -> 45 [ label= "0.9" ];
+	"31c" [shape = "point"]
+	31 -> "31c" [label= "{(a0)}"];
+	"31c" -> 3 [ label= "0.1" ];
+	"31c" -> 47 [ label= "0.9" ];
+	"32c" [shape = "point"]
+	32 -> "32c" [label= "{(a3)}"];
+	"32c" -> 3 [ label= "0.1" ];
+	"32c" -> 48 [ label= "0.9" ];
+	"33c" [shape = "point"]
+	33 -> "33c" [label= "{(a1)}"];
+	"33c" -> 3 [ label= "0.1" ];
+	"33c" -> 49 [ label= "0.9" ];
+	"34c" [shape = "point"]
+	34 -> "34c" [label= "{(a0)}"];
+	"34c" -> 3 [ label= "0.1" ];
+	"34c" -> 50 [ label= "0.9" ];
+	"35c" [shape = "point"]
+	35 -> "35c" [label= "{(a3)}"];
+	"35c" -> 3 [ label= "0.1" ];
+	"35c" -> 51 [ label= "0.9" ];
+	"36c" [shape = "point"]
+	36 -> "36c" [label= "{(a3)}"];
+	"36c" -> 3 [ label= "0.1" ];
+	"36c" -> 52 [ label= "0.9" ];
+	"37c" [shape = "point"]
+	37 -> "37c" [label= "{(a0)}"];
+	"37c" -> 3 [ label= "0.1" ];
+	"37c" -> 53 [ label= "0.9" ];
+	"38c" [shape = "point"]
+	38 -> "38c" [label= "{(a3)}"];
+	"38c" -> 3 [ label= "0.1" ];
+	"38c" -> 54 [ label= "0.9" ];
+	"39c" [shape = "point"]
+	39 -> "39c" [label= "{(a1)}"];
+	"39c" -> 3 [ label= "0.1" ];
+	"39c" -> 55 [ label= "0.9" ];
+	"40c" [shape = "point"]
+	40 -> "40c" [label= "{(a3)}"];
+	"40c" -> 3 [ label= "0.1" ];
+	"40c" -> 56 [ label= "0.9" ];
+	"41c" [shape = "point"]
+	41 -> "41c" [label= "{(a1)}"];
+	"41c" -> 3 [ label= "0.1" ];
+	"41c" -> 57 [ label= "0.9" ];
+	"42c" [shape = "point"]
+	42 -> "42c" [label= "{mem_node_1}"];
+	"42c" -> 0 [ label= "1" ];
+	"43c" [shape = "point"]
+	43 -> "43c" [label= "{mem_node_1}"];
+	"43c" -> 0 [ label= "1" ];
+	"44c" [shape = "point"]
+	44 -> "44c" [label= "{sched_1}"];
+	"44c" -> 0 [ label= "1" ];
+	"45c" [shape = "point"]
+	45 -> "45c" [label= "{sched_1}"];
+	"45c" -> 0 [ label= "1" ];
+	"46c" [shape = "point"]
+	46 -> "46c" [label= "{mem_node_0}"];
+	"46c" -> 0 [ label= "1" ];
+	"47c" [shape = "point"]
+	47 -> "47c" [label= "{mem_node_1}"];
+	"47c" -> 0 [ label= "1" ];
+	"48c" [shape = "point"]
+	48 -> "48c" [label= "{mem_node_0}"];
+	"48c" -> 0 [ label= "1" ];
+	"49c" [shape = "point"]
+	49 -> "49c" [label= "{sched_3}"];
+	"49c" -> 0 [ label= "1" ];
+	"50c" [shape = "point"]
+	50 -> "50c" [label= "{mem_node_0}"];
+	"50c" -> 0 [ label= "1" ];
+	"51c" [shape = "point"]
+	51 -> "51c" [label= "{mem_node_1}"];
+	"51c" -> 0 [ label= "1" ];
+	"52c" [shape = "point"]
+	52 -> "52c" [label= "{sched_1}"];
+	"52c" -> 0 [ label= "1" ];
+	"53c" [shape = "point"]
+	53 -> "53c" [label= "{mem_node_1}"];
+	"53c" -> 0 [ label= "1" ];
+	"54c" [shape = "point"]
+	54 -> "54c" [label= "{mem_node_0}"];
+	"54c" -> 0 [ label= "1" ];
+	"55c" [shape = "point"]
+	55 -> "55c" [label= "{mem_node_1}"];
+	"55c" -> 0 [ label= "1" ];
+	"56c" [shape = "point"]
+	56 -> "56c" [label= "{mem_node_1}"];
+	"56c" -> 0 [ label= "1" ];
+	"57c" [shape = "point"]
+	57 -> "57c" [label= "{mem_node_1}"];
+	"57c" -> 0 [ label= "1" ];
+}
+
+

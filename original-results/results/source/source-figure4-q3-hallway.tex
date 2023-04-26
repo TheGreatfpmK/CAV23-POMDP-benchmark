@@ -1,0 +1,67 @@
+\begin{tikzpicture}
+\begin{axis}[
+    title={Hallway},
+    xlabel={Time [min]},
+    ylabel={Value [Rmin]},
+    xmin=0, xmax=15,
+    ymin=12, ymax=17,
+    xtick={0,2,4,6,8,10,12,14},
+    ytick={12,13,14,15,16,17},
+    xtick pos=left,
+    ytick pos=left,
+    restrict y to domain=10:20,
+    ymajorgrids=true,
+    y dir=reverse,
+    grid style=dashed,
+    height=8cm,
+    width=12cm,
+    legend style ={ at={(1.03,1)},
+        anchor=north west, draw=black, 
+        fill=white,align=left},
+]
+
+\addplot[
+    color=blue,
+    every mark/.append style={solid, fill=blue},
+    mark=square*,
+    line width=1.5pt,mark size=2pt,]
+    coordinates {
+(1.73, 12.54746)(5.88, 12.54746)(10.21, 12.54528)(15.52, 12.54527)(21.13, 12.54527)
+    };
+    \addlegendentry{SAYNT $F_{B}$};
+
+\addplot[
+    color=green,
+    every mark/.append style={solid, fill=green},
+    mark=triangle*,
+    line width=1.5pt,mark size=2pt,]
+    coordinates {
+(0.0, 889.106)(0.0, 385.18795)(0.0, 141.11335)(0.0, 109.5052)(0.0, 18.50646)(0.0, 17.94864)(0.0, 17.49525)(0.0, 17.19934)(0.01, 16.91996)(0.01, 16.81848)(0.01, 16.61281)(0.04, 16.55449)(0.05, 16.49186)(0.06, 16.28926)(0.13, 16.21156)(0.13, 16.19499)(0.13, 16.19034)(0.13, 16.18598)(0.16, 16.05117)(0.18, 16.00938)(0.24, 16.00642)(0.24, 15.98193)(0.24, 15.96619)(0.34, 15.90598)(0.34, 15.86337)(0.34, 15.86171)(0.4, 15.80769)(0.4, 15.70548)(0.4, 15.53578)(6.56, 15.51757)(6.56, 15.48952)(6.56, 15.48545)(6.56, 15.47881)(6.56, 15.46362)(15, 15.46362)
+    };
+    \addlegendentry{SAYNT $F_{I}$};
+
+\addplot[
+    color=violet,
+    every mark/.append style={solid, fill=violet},
+    mark=diamond*,
+    dashed,
+    line width=1.5pt,mark size=2pt,]
+    coordinates {
+(0.02, 13.07497)(0.56, 12.55379)(2.59, 12.54531)(14.72, 12.54531)
+    };
+    \addlegendentry{Storm};
+
+\addplot[
+    color=orange,
+    every mark/.append style={solid, fill=orange},
+    mark=*,
+    dashed,
+    line width=1.5pt,mark size=2pt,]
+    coordinates {
+(0.0, 889.106)(0.0, 385.18795)(0.0, 141.11335)(0.0, 109.5052)(0.0, 18.50646)(0.0, 17.94864)(0.0, 17.49525)(0.0, 17.19934)(0.01, 16.91996)(0.01, 16.81848)(0.01, 16.61281)(0.04, 16.55449)(0.05, 16.49186)(0.06, 16.28926)(0.12, 16.21156)(0.12, 16.19499)(0.12, 16.19034)(0.12, 16.18598)(0.15, 16.05117)(0.17, 16.00938)(0.22, 16.00642)(0.22, 15.98193)(0.22, 15.96619)(0.31, 15.90598)(0.31, 15.86337)(0.31, 15.86171)(0.37, 15.80769)(0.37, 15.70548)(0.37, 15.53578)(15, 15.53578)
+    };
+    \addlegendentry{PAYNT};
+
+\end{axis}
+\end{tikzpicture}
+

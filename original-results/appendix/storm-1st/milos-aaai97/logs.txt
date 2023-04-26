@@ -1,0 +1,171 @@
+2023-04-25 07:12:47,988 - cli.py - This is Paynt version 0.1.0.
+2023-04-25 07:12:47,990 - sketch.py - loading sketch from /mnt/d/src/PP/synthesis-CAV/experiments/../models/pomdp/storm-integration/milos-aaai97/sketch.templ ...
+2023-04-25 07:12:48,061 - prism_parser.py - loading properties from /mnt/d/src/PP/synthesis-CAV/experiments/../models/pomdp/storm-integration/milos-aaai97/sketch.props ...
+2023-04-25 07:12:48,075 - prism_parser.py - found the following specification: constraints: none, optimality objective: R[exp]{"reward"}max=? [F "discount_sink"] 
+2023-04-25 07:12:48,084 - sketch.py - constructed explicit quotient having 165 states and 980 actions
+2023-04-25 07:12:48,084 - sketch.py - found the following specification constraints: none, optimality objective: R[exp]{"reward"}max=? [F "discount_sink"] 
+2023-04-25 07:12:48,091 - quotient_pomdp.py - Constructed POMDP having 11 observations.
+2023-04-25 07:12:48,095 - quotient_pomdp.py - Unfolding POMDP using the following memory allocation vector: [1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1] ...
+2023-04-25 07:12:48,097 - quotient_pomdp.py - Constructed quotient MDP having 165 states and 980 actions.
+2023-04-25 07:12:48,107 - synthesizer_pomdp.py - Storm pomdp option enabled
+2023-04-25 07:12:48,107 - synthesizer_pomdp.py - Storm settings: iterative - (None, None, None), get_storm_result - 0, storm_options - cutoff, prune_storm - False, unfold_strategy - (True, False), use_storm_cutoffs - False
+2023-04-25 07:12:48,115 - storm_pomdp_control.py - starting Storm POMDP analysis
+Finished exploring Underapproximation MDP.
+ Start analysis...
+2023-04-25 07:12:48,838 - storm_pomdp_control.py - Storm POMDP analysis completed
+{0: [0, 1, 2, 3, 4, 5], 1: [0, 1, 2, 3, 4, 5], 2: [0, 1, 2, 3, 4, 5], 3: [0, 1, 2, 3, 4, 5], 4: [0, 1, 2, 3, 4, 5], 5: [0, 1, 2, 3, 4, 5], 6: [0, 1, 2, 3, 4, 5], 7: [0, 1, 2, 3, 4, 5], 8: [0], 9: [0, 2, 3, 4, 5], 10: [0]}
+{0: [0, 1, 2, 3, 4, 5], 1: [0, 1, 2, 3, 4, 5], 2: [0, 1, 2, 3, 4, 5], 3: [0, 1, 2, 3, 4, 5], 4: [0, 1, 2, 3, 4, 5], 5: [0, 1, 2, 3, 4, 5], 6: [0, 1, 2, 3, 4, 5], 7: [0, 1, 2, 3, 4, 5], 8: [0], 9: [0, 2, 3, 4, 5], 10: [0]}
+{0: [0, 1, 2, 3], 1: [0, 1, 2, 3], 2: [0, 1, 2, 3], 3: [0, 1, 2, 3], 4: [0, 1, 2, 3], 5: [0, 1, 2, 3], 6: [0, 1, 2, 3], 7: [0, 1, 2, 3], 8: [0], 9: [0, 3], 10: [0]}
+{0: [0, 1, 2, 3, 4, 5], 1: [0, 1, 2, 3, 4, 5], 2: [0, 1, 2, 3, 4, 5], 3: [0, 1, 2, 3, 4, 5], 4: [0, 1, 2, 3, 4, 5], 5: [0, 1, 2, 3, 4, 5], 6: [0, 1, 2, 3, 4, 5], 7: [0, 1, 2, 3, 4, 5], 8: [0], 9: [0, 2, 3], 10: [0]}
+-----------Storm-----------                 
+Value = 37.15222472243275 | Time elapsed = 0.7s | FSC size = 676
+FSC (dot) = digraph model {
+	0 [ label = "0: {__extra, target}" ];
+	1 [ label = "1: {init, obs_8}" ];
+	2 [ label = "2: {obs_9}" ];
+	3 [ label = "3: {obs_10, target}" ];
+	4 [ label = "4: {obs_0}" ];
+	5 [ label = "5: {obs_1}" ];
+	6 [ label = "6: {obs_2}" ];
+	7 [ label = "7: {obs_3}" ];
+	8 [ label = "8: {obs_4}" ];
+	9 [ label = "9: {obs_1}" ];
+	10 [ label = "10: {obs_2}" ];
+	11 [ label = "11: {obs_3}" ];
+	12 [ label = "12: {obs_4}" ];
+	13 [ label = "13: {obs_0}" ];
+	14 [ label = "14: {obs_0}" ];
+	15 [ label = "15: {obs_0}" ];
+	16 [ label = "16: {obs_0}" ];
+	17 [ label = "17: {obs_0}" ];
+	18 [ label = "18: {obs_0}" ];
+	19 [ label = "19: {obs_0}" ];
+	20 [ label = "20: {obs_0}" ];
+	21 [ label = "21: {obs_0}" ];
+	22 [ label = "22: {obs_0}" ];
+	23 [ label = "23: {cutoff, obs_0, sched_3}" ];
+	24 [ label = "24: {cutoff, obs_0, sched_1}" ];
+	25 [ label = "25: {cutoff, obs_0, sched_0}" ];
+	26 [ label = "26: {cutoff, obs_0, sched_1}" ];
+	27 [ label = "27: {cutoff, obs_0, sched_3}" ];
+	28 [ label = "28: {cutoff, obs_0, sched_2}" ];
+	29 [ label = "29: {cutoff, obs_0, sched_1}" ];
+	"0c" [shape = "point"]
+	0 -> "0c" [label= "{loop}"];
+	"0c" -> 0 [ label= "1" ];
+	"1c" [shape = "point"]
+	1 -> "1c" [label= "{(init)}"];
+	"1c" -> 2 [ label= "1" ];
+	"2c" [shape = "point"]
+	2 -> "2c" [label= "{(a3)}"];
+	"2c" -> 3 [ label= "0.1" ];
+	"2c" -> 4 [ label= "0.9" ];
+	"3c" [shape = "point"]
+	3 -> "3c" [label= "{loop}"];
+	"3c" -> 3 [ label= "1" ];
+	"4c" [shape = "point"]
+	4 -> "4c" [label= "{(a4)}"];
+	"4c" -> 3 [ label= "0.1" ];
+	"4c" -> 5 [ label= "0.139365" ];
+	"4c" -> 6 [ label= "0.22671" ];
+	"4c" -> 7 [ label= "0.358245" ];
+	"4c" -> 8 [ label= "0.17568" ];
+	"5c" [shape = "point"]
+	5 -> "5c" [label= "{(a4)}"];
+	"5c" -> 3 [ label= "0.1" ];
+	"5c" -> 9 [ label= "0.295088" ];
+	"5c" -> 10 [ label= "0.203792" ];
+	"5c" -> 11 [ label= "0.322713" ];
+	"5c" -> 12 [ label= "0.0784078" ];
+	"6c" [shape = "point"]
+	6 -> "6c" [label= "{(a3)}"];
+	"6c" -> 3 [ label= "0.1" ];
+	"6c" -> 13 [ label= "0.9" ];
+	"7c" [shape = "point"]
+	7 -> "7c" [label= "{(a0)}"];
+	"7c" -> 3 [ label= "0.1" ];
+	"7c" -> 14 [ label= "0.9" ];
+	"8c" [shape = "point"]
+	8 -> "8c" [label= "{(a3)}"];
+	"8c" -> 3 [ label= "0.1" ];
+	"8c" -> 15 [ label= "0.9" ];
+	"9c" [shape = "point"]
+	9 -> "9c" [label= "{(a0)}"];
+	"9c" -> 3 [ label= "0.1" ];
+	"9c" -> 16 [ label= "0.9" ];
+	"10c" [shape = "point"]
+	10 -> "10c" [label= "{(a3)}"];
+	"10c" -> 3 [ label= "0.1" ];
+	"10c" -> 17 [ label= "0.9" ];
+	"11c" [shape = "point"]
+	11 -> "11c" [label= "{(a0)}"];
+	"11c" -> 3 [ label= "0.1" ];
+	"11c" -> 18 [ label= "0.9" ];
+	"12c" [shape = "point"]
+	12 -> "12c" [label= "{(a3)}"];
+	"12c" -> 3 [ label= "0.1" ];
+	"12c" -> 19 [ label= "0.9" ];
+	"13c" [shape = "point"]
+	13 -> "13c" [label= "{(a1)}"];
+	"13c" -> 3 [ label= "0.1" ];
+	"13c" -> 20 [ label= "0.9" ];
+	"14c" [shape = "point"]
+	14 -> "14c" [label= "{(a2)}"];
+	"14c" -> 3 [ label= "0.1" ];
+	"14c" -> 21 [ label= "0.9" ];
+	"15c" [shape = "point"]
+	15 -> "15c" [label= "{(a3)}"];
+	"15c" -> 3 [ label= "0.1" ];
+	"15c" -> 22 [ label= "0.9" ];
+	"16c" [shape = "point"]
+	16 -> "16c" [label= "{(a0)}"];
+	"16c" -> 3 [ label= "0.1" ];
+	"16c" -> 23 [ label= "0.9" ];
+	"17c" [shape = "point"]
+	17 -> "17c" [label= "{(a1)}"];
+	"17c" -> 3 [ label= "0.1" ];
+	"17c" -> 24 [ label= "0.9" ];
+	"18c" [shape = "point"]
+	18 -> "18c" [label= "{(a2)}"];
+	"18c" -> 3 [ label= "0.1" ];
+	"18c" -> 25 [ label= "0.9" ];
+	"19c" [shape = "point"]
+	19 -> "19c" [label= "{(a3)}"];
+	"19c" -> 3 [ label= "0.1" ];
+	"19c" -> 26 [ label= "0.9" ];
+	"20c" [shape = "point"]
+	20 -> "20c" [label= "{(a1)}"];
+	"20c" -> 3 [ label= "0.1" ];
+	"20c" -> 27 [ label= "0.9" ];
+	"21c" [shape = "point"]
+	21 -> "21c" [label= "{(a3)}"];
+	"21c" -> 3 [ label= "0.1" ];
+	"21c" -> 28 [ label= "0.9" ];
+	"22c" [shape = "point"]
+	22 -> "22c" [label= "{(a1)}"];
+	"22c" -> 3 [ label= "0.1" ];
+	"22c" -> 29 [ label= "0.9" ];
+	"23c" [shape = "point"]
+	23 -> "23c" [label= "{sched_3}"];
+	"23c" -> 0 [ label= "1" ];
+	"24c" [shape = "point"]
+	24 -> "24c" [label= "{sched_1}"];
+	"24c" -> 0 [ label= "1" ];
+	"25c" [shape = "point"]
+	25 -> "25c" [label= "{sched_0}"];
+	"25c" -> 0 [ label= "1" ];
+	"26c" [shape = "point"]
+	26 -> "26c" [label= "{sched_1}"];
+	"26c" -> 0 [ label= "1" ];
+	"27c" [shape = "point"]
+	27 -> "27c" [label= "{sched_3}"];
+	"27c" -> 0 [ label= "1" ];
+	"28c" [shape = "point"]
+	28 -> "28c" [label= "{sched_2}"];
+	"28c" -> 0 [ label= "1" ];
+	"29c" [shape = "point"]
+	29 -> "29c" [label= "{sched_1}"];
+	"29c" -> 0 [ label= "1" ];
+}
+
+
