@@ -319,7 +319,8 @@ if __name__ == '__main__':
         logs_string = "appendix/saynt"
         timeout = 1200
         special = {"4x3-95": "--storm-pomdp --iterative-storm 900 60 10 --posterior-aware", "milos-aaai97": "--storm-pomdp --iterative-storm 900 90 10",
-                   "query-s3": "--storm-pomdp --iterative-storm 900 90 10", "drone-4-1": "--storm-pomdp --iterative-storm 900 60 10 --posterior-aware"}
+                   "query-s3": "--storm-pomdp --iterative-storm 900 90 10", "drone-4-1": "--storm-pomdp --iterative-storm 900 60 10 --posterior-aware",
+                   "refuel-20": "--storm-pomdp --iterative-storm 900 60 5"}
         run_experiment(options, logs_string, experiment_models, timeout, special)
 
     else:

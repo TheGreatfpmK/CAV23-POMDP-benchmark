@@ -12,6 +12,10 @@ Run the benchmarks using:
 
 - `-a` use this flag to run experiments both from the paper and the appendix (without this flag only the main experiments run)
 - `-x` use this flag to only run experiments from the appendix
+- `-1` run only model information experiment (table2)
+- `-2` run only Q1 experiments (table3(a))
+- `-3` run only Q2 experiments (table3(b))
+- `-4` run only Q3 experiments (figure4 + table4)
 - `-o` with this flag overwriting of already existing logs is allowed (good if you want to rerun all the experiments), overwriting is turned off by default so if you only want to run experiments for certain values remove the logs associated with the values and rerun this script without -o flag
 - `-e` allows export of the FSCs found by SAYNT, THIS OPTION REQUIRES FEW GIGABYTES OF DISK SPACE TO STORE ALL THE FSCs AND MIGHT INFLUENCE THE SPEED OF THE METHODS FOR LARGE MODELS!
 
@@ -27,6 +31,10 @@ The script is pretty fail-safe meaning that it will finish and generate all the 
 
 ## Expected runtime
 - the main experiments take 8-12 hours to run
+    - model information experiment (flag `-1`) takes 5 minutes
+    - Q1 experiment (flag `-2`) takes 30-40 minutes
+    - Q2 experiment (flag `-3`) takes 70-90 minutes
+    - Q3 experiment (flag `-4`) takes 6-9 hours
 - the appendix experiments on their own take 12-16 hours to run
 
 If you feel like your PC needs more computation time to achieve comparable results to what we present in our paper you can adjust the `timeout_multiplier` variable on top of the `experiments/experiments.py` file.

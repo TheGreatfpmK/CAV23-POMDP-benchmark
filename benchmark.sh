@@ -1,23 +1,36 @@
 #!/bin/bash
 
-main=true
 appendix=false
 overwrite=false
 export=false
 
-while getopts amxoe flag
+models=true
+q1=true
+q2=true
+q3=true
+
+while getopts amxoe1234 flag
 do
     case "${flag}" in
         x) 
-            main=false
+            models=false
+            q1=false
+            q2=false
+            q3=false
             appendix=true
             ;;
         m) 
-            main=true
+            models=true
+            q1=true
+            q2=true
+            q3=true
             appendix=false
             ;;
         a) 
-            main=true
+            models=true
+            q1=true
+            q2=true
+            q3=true
             appendix=true
             ;;
         o)
@@ -26,111 +39,174 @@ do
         e)
             export=true
             ;;
+        1)
+            appendix=false
+            models=true
+            q1=false
+            q2=false
+            q3=false
+            ;;
+        2)
+            appendix=false
+            models=false
+            q1=true
+            q2=false
+            q3=false
+            ;;
+        3)
+            appendix=false
+            models=false
+            q1=false
+            q2=true
+            q3=false
+            ;;
+        4)
+            appendix=false
+            models=false
+            q1=false
+            q2=false
+            q3=true
+            ;;
     esac
 done
 
-if [ "$main" = true ]
+if [ "$overwrite" = true ]
 then
-    if [ "$overwrite" = true ]
+    if [ "$export" = true ]
     then
-        if [ "$export" = true ]
+        if [ "$models" = true ]
         then
             python3 experiments/experiments.py models True export
-        else
-            python3 experiments/experiments.py models True
+            python3 experiments/get-tables.py models
+            python3 experiments/generate-pdf.py models
         fi
-        python3 experiments/get-tables.py models
-        python3 experiments/generate-pdf.py models
-
-        if [ "$export" = true ]
+        if [ "$q1" = true ]
         then
             python3 experiments/experiments.py q1 True export
-        else
-            python3 experiments/experiments.py q1 True
+            python3 experiments/get-tables.py q1
+            python3 experiments/generate-pdf.py q1
         fi
-        python3 experiments/get-tables.py q1
-        python3 experiments/generate-pdf.py q1
-
-        if [ "$export" = true ]
+        if [ "$q2" = true ]
         then
             python3 experiments/experiments.py q2 True export
-        else
-            python3 experiments/experiments.py q2 True
+            python3 experiments/get-tables.py q2
+            python3 experiments/generate-pdf.py q2
         fi
-        python3 experiments/get-tables.py q2
-        python3 experiments/generate-pdf.py q2
-
-        if [ "$export" = true ]
+        if [ "$q3" = true ]
         then
             python3 experiments/experiments.py q3 True export
-        else
-            python3 experiments/experiments.py q3 True
+            python3 experiments/get-tables.py memory
+            python3 experiments/get-graphs.py
+            python3 experiments/generate-pdf.py memory
+            python3 experiments/generate-pdf.py q3-figure
         fi
-        python3 experiments/get-tables.py memory
-        python3 experiments/get-graphs.py
-        python3 experiments/generate-pdf.py memory
-        python3 experiments/generate-pdf.py q3-figure
-    else
-        if [ "$export" = true ]
-        then
-            python3 experiments/experiments.py models False export
-        else
-            python3 experiments/experiments.py models False
-        fi
-        python3 experiments/get-tables.py models
-        python3 experiments/generate-pdf.py models
-
-        if [ "$export" = true ]
-        then
-            python3 experiments/experiments.py q1 False export
-        else
-            python3 experiments/experiments.py q1 False
-        fi
-        python3 experiments/get-tables.py q1
-        python3 experiments/generate-pdf.py q1
-
-        if [ "$export" = true ]
-        then
-            python3 experiments/experiments.py q2 False export
-        else
-            python3 experiments/experiments.py q2 False
-        fi
-        python3 experiments/get-tables.py q2
-        python3 experiments/generate-pdf.py q2
-
-        if [ "$export" = true ]
-        then
-            python3 experiments/experiments.py q3 False export
-        else
-            python3 experiments/experiments.py q3 False
-        fi
-        python3 experiments/get-tables.py memory
-        python3 experiments/get-graphs.py
-        python3 experiments/generate-pdf.py memory
-        python3 experiments/generate-pdf.py q3-figure
-    fi
-fi
-
-if [ "$appendix" = true ]
-then
-    if [ "$overwrite" = true ]
-    then
-        if [ "$export" = true ]
+        if [ "$appendix" = true ]
         then
             python3 experiments/experiments.py appendix True export
-        else
-            python3 experiments/experiments.py appendix True
+            python3 experiments/get-tables.py appendix
+            python3 experiments/generate-pdf.py appendix
         fi
-        python3 experiments/get-tables.py appendix
-        python3 experiments/generate-pdf.py appendix
     else
-        if [ "$export" = true ]
+        if [ "$models" = true ]
+        then
+            python3 experiments/experiments.py models True
+            python3 experiments/get-tables.py models
+            python3 experiments/generate-pdf.py models
+        fi
+        if [ "$q1" = true ]
+        then
+            python3 experiments/experiments.py q1 True
+            python3 experiments/get-tables.py q1
+            python3 experiments/generate-pdf.py q1
+        fi
+        if [ "$q2" = true ]
+        then
+            python3 experiments/experiments.py q2 True
+            python3 experiments/get-tables.py q2
+            python3 experiments/generate-pdf.py q2
+        fi
+        if [ "$q3" = true ]
+        then
+            python3 experiments/experiments.py q3 True
+            python3 experiments/get-tables.py memory
+            python3 experiments/get-graphs.py
+            python3 experiments/generate-pdf.py memory
+            python3 experiments/generate-pdf.py q3-figure
+        fi
+        if [ "$appendix" = true ]
+        then
+            python3 experiments/experiments.py appendix True
+            python3 experiments/get-tables.py appendix
+            python3 experiments/generate-pdf.py appendix
+        fi
+    fi
+else
+    if [ "$export" = true ]
+    then
+        if [ "$models" = true ]
+        then
+            python3 experiments/experiments.py models False export
+            python3 experiments/get-tables.py models
+            python3 experiments/generate-pdf.py models
+        fi
+        if [ "$q1" = true ]
+        then
+            python3 experiments/experiments.py q1 False export
+            python3 experiments/get-tables.py q1
+            python3 experiments/generate-pdf.py q1
+        fi
+        if [ "$q2" = true ]
+        then
+            python3 experiments/experiments.py q2 False export
+            python3 experiments/get-tables.py q2
+            python3 experiments/generate-pdf.py q2
+        fi
+        if [ "$q3" = true ]
+        then
+            python3 experiments/experiments.py q3 False export
+            python3 experiments/get-tables.py memory
+            python3 experiments/get-graphs.py
+            python3 experiments/generate-pdf.py memory
+            python3 experiments/generate-pdf.py q3-figure
+        fi
+        if [ "$appendix" = true ]
         then
             python3 experiments/experiments.py appendix False export
-        else
-            python3 experiments/experiments.py appendix False
+            python3 experiments/get-tables.py appendix
+            python3 experiments/generate-pdf.py appendix
         fi
-        python3 experiments/get-tables.py appendix
-        python3 experiments/generate-pdf.py appendix
+    else
+        if [ "$models" = true ]
+        then
+            python3 experiments/experiments.py models False
+            python3 experiments/get-tables.py models
+            python3 experiments/generate-pdf.py models
+        fi
+        if [ "$q1" = true ]
+        then
+            python3 experiments/experiments.py q1 False
+            python3 experiments/get-tables.py q1
+            python3 experiments/generate-pdf.py q1
+        fi
+        if [ "$q2" = true ]
+        then
+            python3 experiments/experiments.py q2 False
+            python3 experiments/get-tables.py q2
+            python3 experiments/generate-pdf.py q2
+        fi
+        if [ "$q3" = true ]
+        then
+            python3 experiments/experiments.py q3 False
+            python3 experiments/get-tables.py memory
+            python3 experiments/get-graphs.py
+            python3 experiments/generate-pdf.py memory
+            python3 experiments/generate-pdf.py q3-figure
+        fi
+        if [ "$appendix" = true ]
+        then
+            python3 experiments/experiments.py appendix False
+            python3 experiments/get-tables.py appendix
+            python3 experiments/generate-pdf.py appendix
+        fi
     fi
 fi
