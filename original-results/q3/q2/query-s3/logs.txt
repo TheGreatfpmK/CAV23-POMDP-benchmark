@@ -1,0 +1,2986 @@
+2023-04-26 16:28:37,301 - cli.py - This is Paynt version 0.1.0.
+2023-04-26 16:28:37,304 - sketch.py - loading sketch from /mnt/d/src/PP/synthesis-CAV/experiments/../models/pomdp/storm-integration/query-s3/sketch.templ ...
+2023-04-26 16:28:37,372 - prism_parser.py - loading properties from /mnt/d/src/PP/synthesis-CAV/experiments/../models/pomdp/storm-integration/query-s3/sketch.props ...
+2023-04-26 16:28:37,386 - prism_parser.py - found the following specification: constraints: none, optimality objective: R[exp]{"reward"}max=? [F "discount_sink"] 
+2023-04-26 16:28:37,395 - sketch.py - constructed explicit quotient having 108 states and 320 actions
+2023-04-26 16:28:37,396 - sketch.py - found the following specification constraints: none, optimality objective: R[exp]{"reward"}max=? [F "discount_sink"] 
+2023-04-26 16:28:37,402 - quotient_pomdp.py - Constructed POMDP having 6 observations.
+2023-04-26 16:28:37,407 - quotient_pomdp.py - Unfolding POMDP using the following memory allocation vector: [1, 1, 1, 1, 1, 1] ...
+2023-04-26 16:28:37,409 - quotient_pomdp.py - Constructed quotient MDP having 108 states and 320 actions.
+2023-04-26 16:28:37,413 - synthesizer_pomdp.py - Storm pomdp option enabled
+2023-04-26 16:28:37,413 - synthesizer_pomdp.py - Storm settings: iterative - (None, None, None), get_storm_result - None, storm_options - cutoff, prune_storm - False, unfold_strategy - (True, False), use_storm_cutoffs - False
+2023-04-26 16:28:37,421 - storm_pomdp_control.py - starting Storm POMDP analysis
+Finished exploring Underapproximation MDP.
+ Start analysis...
+2023-04-26 16:28:39,338 - storm_pomdp_control.py - Storm POMDP analysis completed
+{0: [0, 1, 2], 1: [0, 1, 2], 2: [0, 1, 2], 3: [0], 4: [0, 1, 2], 5: [0]}
+{0: [0, 1, 2], 1: [0, 1, 2], 2: [0, 1, 2], 3: [0], 4: [0, 1, 2], 5: [0]}
+{0: [0, 1, 2], 1: [0, 1, 2], 2: [0, 1, 2], 3: [0], 4: [0, 1, 2], 5: [0]}
+-----------Storm-----------               
+Value = 417.35557610300685 | Time elapsed = 1.9s | FSC size = 1358
+FSC (dot) = digraph model {
+	0 [ label = "0: {__extra, target}" ];
+	1 [ label = "1: {init, obs_3}" ];
+	2 [ label = "2: {obs_4}" ];
+	3 [ label = "3: {obs_0}" ];
+	4 [ label = "4: {obs_1}" ];
+	5 [ label = "5: {obs_2}" ];
+	6 [ label = "6: {obs_5, target}" ];
+	7 [ label = "7: {obs_0}" ];
+	8 [ label = "8: {obs_1}" ];
+	9 [ label = "9: {obs_2}" ];
+	10 [ label = "10: {obs_0}" ];
+	11 [ label = "11: {obs_1}" ];
+	12 [ label = "12: {obs_2}" ];
+	13 [ label = "13: {obs_0}" ];
+	14 [ label = "14: {obs_1}" ];
+	15 [ label = "15: {obs_2}" ];
+	16 [ label = "16: {obs_0}" ];
+	17 [ label = "17: {obs_1}" ];
+	18 [ label = "18: {obs_2}" ];
+	19 [ label = "19: {obs_0}" ];
+	20 [ label = "20: {obs_1}" ];
+	21 [ label = "21: {obs_2}" ];
+	22 [ label = "22: {obs_0}" ];
+	23 [ label = "23: {obs_1}" ];
+	24 [ label = "24: {obs_2}" ];
+	25 [ label = "25: {obs_0}" ];
+	26 [ label = "26: {obs_1}" ];
+	27 [ label = "27: {obs_2}" ];
+	28 [ label = "28: {obs_0}" ];
+	29 [ label = "29: {obs_1}" ];
+	30 [ label = "30: {obs_2}" ];
+	31 [ label = "31: {obs_0}" ];
+	32 [ label = "32: {obs_1}" ];
+	33 [ label = "33: {obs_2}" ];
+	34 [ label = "34: {obs_0}" ];
+	35 [ label = "35: {obs_1}" ];
+	36 [ label = "36: {obs_2}" ];
+	37 [ label = "37: {obs_0}" ];
+	38 [ label = "38: {obs_1}" ];
+	39 [ label = "39: {obs_2}" ];
+	40 [ label = "40: {obs_0}" ];
+	41 [ label = "41: {obs_1}" ];
+	42 [ label = "42: {obs_2}" ];
+	43 [ label = "43: {obs_0}" ];
+	44 [ label = "44: {obs_1}" ];
+	45 [ label = "45: {obs_2}" ];
+	46 [ label = "46: {obs_0}" ];
+	47 [ label = "47: {obs_1}" ];
+	48 [ label = "48: {obs_2}" ];
+	49 [ label = "49: {obs_0}" ];
+	50 [ label = "50: {obs_1}" ];
+	51 [ label = "51: {obs_2}" ];
+	52 [ label = "52: {obs_0}" ];
+	53 [ label = "53: {obs_1}" ];
+	54 [ label = "54: {obs_2}" ];
+	55 [ label = "55: {obs_0}" ];
+	56 [ label = "56: {obs_1}" ];
+	57 [ label = "57: {obs_2}" ];
+	58 [ label = "58: {obs_0}" ];
+	59 [ label = "59: {obs_1}" ];
+	60 [ label = "60: {obs_2}" ];
+	61 [ label = "61: {obs_0}" ];
+	62 [ label = "62: {obs_1}" ];
+	63 [ label = "63: {obs_2}" ];
+	64 [ label = "64: {obs_0}" ];
+	65 [ label = "65: {obs_1}" ];
+	66 [ label = "66: {obs_2}" ];
+	67 [ label = "67: {obs_0}" ];
+	68 [ label = "68: {obs_1}" ];
+	69 [ label = "69: {obs_2}" ];
+	70 [ label = "70: {obs_0}" ];
+	71 [ label = "71: {obs_1}" ];
+	72 [ label = "72: {obs_2}" ];
+	73 [ label = "73: {obs_0}" ];
+	74 [ label = "74: {obs_1}" ];
+	75 [ label = "75: {obs_2}" ];
+	76 [ label = "76: {obs_0}" ];
+	77 [ label = "77: {obs_1}" ];
+	78 [ label = "78: {obs_2}" ];
+	79 [ label = "79: {obs_0}" ];
+	80 [ label = "80: {obs_1}" ];
+	81 [ label = "81: {obs_2}" ];
+	82 [ label = "82: {obs_0}" ];
+	83 [ label = "83: {obs_1}" ];
+	84 [ label = "84: {obs_2}" ];
+	85 [ label = "85: {obs_0}" ];
+	86 [ label = "86: {obs_1}" ];
+	87 [ label = "87: {obs_2}" ];
+	88 [ label = "88: {obs_0}" ];
+	89 [ label = "89: {obs_1}" ];
+	90 [ label = "90: {obs_2}" ];
+	91 [ label = "91: {obs_0}" ];
+	92 [ label = "92: {obs_1}" ];
+	93 [ label = "93: {obs_2}" ];
+	94 [ label = "94: {obs_0}" ];
+	95 [ label = "95: {obs_1}" ];
+	96 [ label = "96: {obs_2}" ];
+	97 [ label = "97: {obs_0}" ];
+	98 [ label = "98: {obs_1}" ];
+	99 [ label = "99: {obs_2}" ];
+	100 [ label = "100: {obs_0}" ];
+	101 [ label = "101: {obs_1}" ];
+	102 [ label = "102: {obs_2}" ];
+	103 [ label = "103: {obs_0}" ];
+	104 [ label = "104: {obs_1}" ];
+	105 [ label = "105: {obs_2}" ];
+	106 [ label = "106: {obs_0}" ];
+	107 [ label = "107: {obs_1}" ];
+	108 [ label = "108: {obs_2}" ];
+	109 [ label = "109: {obs_0}" ];
+	110 [ label = "110: {obs_1}" ];
+	111 [ label = "111: {obs_2}" ];
+	112 [ label = "112: {obs_0}" ];
+	113 [ label = "113: {obs_1}" ];
+	114 [ label = "114: {obs_2}" ];
+	115 [ label = "115: {obs_0}" ];
+	116 [ label = "116: {obs_1}" ];
+	117 [ label = "117: {obs_2}" ];
+	118 [ label = "118: {obs_0}" ];
+	119 [ label = "119: {obs_1}" ];
+	120 [ label = "120: {obs_2}" ];
+	121 [ label = "121: {obs_0}" ];
+	122 [ label = "122: {obs_1}" ];
+	123 [ label = "123: {obs_2}" ];
+	124 [ label = "124: {obs_0}" ];
+	125 [ label = "125: {obs_1}" ];
+	126 [ label = "126: {obs_2}" ];
+	127 [ label = "127: {obs_0}" ];
+	128 [ label = "128: {obs_1}" ];
+	129 [ label = "129: {obs_2}" ];
+	130 [ label = "130: {obs_0}" ];
+	131 [ label = "131: {obs_1}" ];
+	132 [ label = "132: {obs_2}" ];
+	133 [ label = "133: {obs_0}" ];
+	134 [ label = "134: {obs_1}" ];
+	135 [ label = "135: {obs_2}" ];
+	136 [ label = "136: {obs_0}" ];
+	137 [ label = "137: {obs_1}" ];
+	138 [ label = "138: {obs_2}" ];
+	139 [ label = "139: {obs_0}" ];
+	140 [ label = "140: {obs_1}" ];
+	141 [ label = "141: {obs_2}" ];
+	142 [ label = "142: {obs_0}" ];
+	143 [ label = "143: {obs_1}" ];
+	144 [ label = "144: {obs_2}" ];
+	145 [ label = "145: {obs_0}" ];
+	146 [ label = "146: {obs_1}" ];
+	147 [ label = "147: {obs_2}" ];
+	148 [ label = "148: {obs_0}" ];
+	149 [ label = "149: {obs_1}" ];
+	150 [ label = "150: {obs_2}" ];
+	151 [ label = "151: {obs_0}" ];
+	152 [ label = "152: {obs_1}" ];
+	153 [ label = "153: {obs_2}" ];
+	154 [ label = "154: {obs_0}" ];
+	155 [ label = "155: {obs_1}" ];
+	156 [ label = "156: {obs_2}" ];
+	157 [ label = "157: {obs_0}" ];
+	158 [ label = "158: {obs_1}" ];
+	159 [ label = "159: {obs_2}" ];
+	160 [ label = "160: {obs_0}" ];
+	161 [ label = "161: {obs_1}" ];
+	162 [ label = "162: {obs_2}" ];
+	163 [ label = "163: {obs_0}" ];
+	164 [ label = "164: {obs_1}" ];
+	165 [ label = "165: {obs_2}" ];
+	166 [ label = "166: {obs_0}" ];
+	167 [ label = "167: {obs_1}" ];
+	168 [ label = "168: {obs_2}" ];
+	169 [ label = "169: {obs_0}" ];
+	170 [ label = "170: {obs_1}" ];
+	171 [ label = "171: {obs_2}" ];
+	172 [ label = "172: {obs_0}" ];
+	173 [ label = "173: {obs_1}" ];
+	174 [ label = "174: {obs_2}" ];
+	175 [ label = "175: {obs_0}" ];
+	176 [ label = "176: {obs_1}" ];
+	177 [ label = "177: {obs_2}" ];
+	178 [ label = "178: {cutoff, obs_0, sched_0}" ];
+	179 [ label = "179: {cutoff, obs_1, sched_2}" ];
+	180 [ label = "180: {cutoff, obs_2, sched_3}" ];
+	181 [ label = "181: {cutoff, obs_0, sched_3}" ];
+	182 [ label = "182: {cutoff, obs_1, sched_0}" ];
+	183 [ label = "183: {cutoff, obs_2, sched_2}" ];
+	184 [ label = "184: {cutoff, obs_0, sched_2}" ];
+	185 [ label = "185: {cutoff, obs_1, sched_2}" ];
+	186 [ label = "186: {cutoff, obs_2, sched_0}" ];
+	187 [ label = "187: {cutoff, obs_0, sched_2}" ];
+	188 [ label = "188: {cutoff, obs_1, sched_3}" ];
+	189 [ label = "189: {cutoff, obs_2, sched_0}" ];
+	190 [ label = "190: {cutoff, obs_0, sched_0}" ];
+	191 [ label = "191: {cutoff, obs_1, sched_2}" ];
+	192 [ label = "192: {cutoff, obs_2, sched_0}" ];
+	193 [ label = "193: {cutoff, obs_0, sched_0}" ];
+	194 [ label = "194: {cutoff, obs_1, sched_3}" ];
+	195 [ label = "195: {cutoff, obs_2, sched_0}" ];
+	196 [ label = "196: {cutoff, obs_0, sched_0}" ];
+	197 [ label = "197: {cutoff, obs_1, sched_2}" ];
+	198 [ label = "198: {cutoff, obs_2, sched_3}" ];
+	199 [ label = "199: {cutoff, obs_0, sched_0}" ];
+	200 [ label = "200: {cutoff, obs_1, sched_0}" ];
+	201 [ label = "201: {cutoff, obs_2, sched_2}" ];
+	202 [ label = "202: {cutoff, obs_0, sched_2}" ];
+	203 [ label = "203: {cutoff, obs_1, sched_2}" ];
+	204 [ label = "204: {cutoff, obs_2, sched_0}" ];
+	205 [ label = "205: {cutoff, obs_0, sched_0}" ];
+	206 [ label = "206: {cutoff, obs_1, sched_0}" ];
+	207 [ label = "207: {cutoff, obs_2, sched_2}" ];
+	208 [ label = "208: {cutoff, obs_0, sched_2}" ];
+	209 [ label = "209: {cutoff, obs_1, sched_2}" ];
+	210 [ label = "210: {cutoff, obs_2, sched_0}" ];
+	211 [ label = "211: {cutoff, obs_0, sched_0}" ];
+	212 [ label = "212: {cutoff, obs_1, sched_0}" ];
+	213 [ label = "213: {cutoff, obs_2, sched_2}" ];
+	214 [ label = "214: {cutoff, obs_0, sched_2}" ];
+	215 [ label = "215: {cutoff, obs_1, sched_2}" ];
+	216 [ label = "216: {cutoff, obs_2, sched_0}" ];
+	217 [ label = "217: {cutoff, obs_0, sched_2}" ];
+	218 [ label = "218: {cutoff, obs_1, sched_2}" ];
+	219 [ label = "219: {cutoff, obs_2, sched_3}" ];
+	220 [ label = "220: {cutoff, obs_0, sched_0}" ];
+	221 [ label = "221: {cutoff, obs_1, sched_2}" ];
+	222 [ label = "222: {cutoff, obs_2, sched_0}" ];
+	223 [ label = "223: {cutoff, obs_0, sched_0}" ];
+	224 [ label = "224: {cutoff, obs_1, sched_0}" ];
+	225 [ label = "225: {cutoff, obs_2, sched_2}" ];
+	226 [ label = "226: {cutoff, obs_0, sched_0}" ];
+	227 [ label = "227: {cutoff, obs_1, sched_2}" ];
+	228 [ label = "228: {cutoff, obs_2, sched_0}" ];
+	229 [ label = "229: {cutoff, obs_0, sched_0}" ];
+	230 [ label = "230: {cutoff, obs_1, sched_0}" ];
+	231 [ label = "231: {cutoff, obs_2, sched_2}" ];
+	232 [ label = "232: {cutoff, obs_0, sched_2}" ];
+	233 [ label = "233: {cutoff, obs_1, sched_2}" ];
+	234 [ label = "234: {cutoff, obs_2, sched_0}" ];
+	235 [ label = "235: {cutoff, obs_0, sched_2}" ];
+	236 [ label = "236: {cutoff, obs_1, sched_2}" ];
+	237 [ label = "237: {cutoff, obs_2, sched_2}" ];
+	238 [ label = "238: {cutoff, obs_0, sched_0}" ];
+	239 [ label = "239: {cutoff, obs_1, sched_2}" ];
+	240 [ label = "240: {cutoff, obs_2, sched_0}" ];
+	241 [ label = "241: {cutoff, obs_0, sched_0}" ];
+	242 [ label = "242: {cutoff, obs_1, sched_2}" ];
+	243 [ label = "243: {cutoff, obs_2, sched_0}" ];
+	244 [ label = "244: {cutoff, obs_0, sched_3}" ];
+	245 [ label = "245: {cutoff, obs_1, sched_0}" ];
+	246 [ label = "246: {cutoff, obs_2, sched_2}" ];
+	247 [ label = "247: {cutoff, obs_0, sched_2}" ];
+	248 [ label = "248: {cutoff, obs_1, sched_2}" ];
+	249 [ label = "249: {cutoff, obs_2, sched_0}" ];
+	250 [ label = "250: {cutoff, obs_0, sched_2}" ];
+	251 [ label = "251: {cutoff, obs_1, sched_2}" ];
+	252 [ label = "252: {cutoff, obs_2, sched_0}" ];
+	253 [ label = "253: {cutoff, obs_0, sched_2}" ];
+	254 [ label = "254: {cutoff, obs_1, sched_2}" ];
+	255 [ label = "255: {cutoff, obs_2, sched_0}" ];
+	256 [ label = "256: {cutoff, obs_0, sched_2}" ];
+	257 [ label = "257: {cutoff, obs_1, sched_2}" ];
+	258 [ label = "258: {cutoff, obs_2, sched_0}" ];
+	259 [ label = "259: {cutoff, obs_0, sched_3}" ];
+	260 [ label = "260: {cutoff, obs_1, sched_0}" ];
+	261 [ label = "261: {cutoff, obs_2, sched_2}" ];
+	262 [ label = "262: {cutoff, obs_0, sched_2}" ];
+	263 [ label = "263: {cutoff, obs_1, sched_2}" ];
+	264 [ label = "264: {cutoff, obs_2, sched_0}" ];
+	265 [ label = "265: {cutoff, obs_0, sched_3}" ];
+	266 [ label = "266: {cutoff, obs_1, sched_0}" ];
+	267 [ label = "267: {cutoff, obs_2, sched_2}" ];
+	268 [ label = "268: {cutoff, obs_0, sched_2}" ];
+	269 [ label = "269: {cutoff, obs_1, sched_2}" ];
+	270 [ label = "270: {cutoff, obs_2, sched_0}" ];
+	271 [ label = "271: {cutoff, obs_0, sched_2}" ];
+	272 [ label = "272: {cutoff, obs_1, sched_2}" ];
+	273 [ label = "273: {cutoff, obs_2, sched_0}" ];
+	274 [ label = "274: {cutoff, obs_0, sched_2}" ];
+	275 [ label = "275: {cutoff, obs_1, sched_2}" ];
+	276 [ label = "276: {cutoff, obs_2, sched_0}" ];
+	277 [ label = "277: {cutoff, obs_0, sched_3}" ];
+	278 [ label = "278: {cutoff, obs_1, sched_0}" ];
+	279 [ label = "279: {cutoff, obs_2, sched_2}" ];
+	280 [ label = "280: {cutoff, obs_0, sched_0}" ];
+	281 [ label = "281: {cutoff, obs_1, sched_2}" ];
+	282 [ label = "282: {cutoff, obs_2, sched_0}" ];
+	283 [ label = "283: {cutoff, obs_0, sched_0}" ];
+	284 [ label = "284: {cutoff, obs_1, sched_0}" ];
+	285 [ label = "285: {cutoff, obs_2, sched_2}" ];
+	286 [ label = "286: {cutoff, obs_0, sched_2}" ];
+	287 [ label = "287: {cutoff, obs_1, sched_2}" ];
+	288 [ label = "288: {cutoff, obs_2, sched_2}" ];
+	289 [ label = "289: {cutoff, obs_0, sched_3}" ];
+	290 [ label = "290: {cutoff, obs_1, sched_0}" ];
+	291 [ label = "291: {cutoff, obs_2, sched_2}" ];
+	292 [ label = "292: {cutoff, obs_0, sched_2}" ];
+	293 [ label = "293: {cutoff, obs_1, sched_2}" ];
+	294 [ label = "294: {cutoff, obs_2, sched_2}" ];
+	295 [ label = "295: {cutoff, obs_0, sched_3}" ];
+	296 [ label = "296: {cutoff, obs_1, sched_0}" ];
+	297 [ label = "297: {cutoff, obs_2, sched_2}" ];
+	298 [ label = "298: {cutoff, obs_0, sched_2}" ];
+	299 [ label = "299: {cutoff, obs_1, sched_2}" ];
+	300 [ label = "300: {cutoff, obs_2, sched_0}" ];
+	301 [ label = "301: {cutoff, obs_0, sched_3}" ];
+	302 [ label = "302: {cutoff, obs_1, sched_0}" ];
+	303 [ label = "303: {cutoff, obs_2, sched_2}" ];
+	304 [ label = "304: {cutoff, obs_0, sched_0}" ];
+	305 [ label = "305: {cutoff, obs_1, sched_2}" ];
+	306 [ label = "306: {cutoff, obs_2, sched_0}" ];
+	307 [ label = "307: {cutoff, obs_0, sched_3}" ];
+	308 [ label = "308: {cutoff, obs_1, sched_0}" ];
+	309 [ label = "309: {cutoff, obs_2, sched_2}" ];
+	310 [ label = "310: {cutoff, obs_0, sched_2}" ];
+	311 [ label = "311: {cutoff, obs_1, sched_2}" ];
+	312 [ label = "312: {cutoff, obs_2, sched_0}" ];
+	313 [ label = "313: {cutoff, obs_0, sched_3}" ];
+	314 [ label = "314: {cutoff, obs_1, sched_0}" ];
+	315 [ label = "315: {cutoff, obs_2, sched_2}" ];
+	316 [ label = "316: {cutoff, obs_0, sched_2}" ];
+	317 [ label = "317: {cutoff, obs_1, sched_2}" ];
+	318 [ label = "318: {cutoff, obs_2, sched_0}" ];
+	319 [ label = "319: {cutoff, obs_0, sched_0}" ];
+	320 [ label = "320: {cutoff, obs_1, sched_0}" ];
+	321 [ label = "321: {cutoff, obs_2, sched_2}" ];
+	322 [ label = "322: {cutoff, obs_0, sched_2}" ];
+	323 [ label = "323: {cutoff, obs_1, sched_2}" ];
+	324 [ label = "324: {cutoff, obs_2, sched_0}" ];
+	325 [ label = "325: {cutoff, obs_0, sched_2}" ];
+	326 [ label = "326: {cutoff, obs_1, sched_2}" ];
+	327 [ label = "327: {cutoff, obs_2, sched_2}" ];
+	328 [ label = "328: {cutoff, obs_0, sched_2}" ];
+	329 [ label = "329: {cutoff, obs_1, sched_2}" ];
+	330 [ label = "330: {cutoff, obs_2, sched_0}" ];
+	331 [ label = "331: {cutoff, obs_0, sched_3}" ];
+	332 [ label = "332: {cutoff, obs_1, sched_0}" ];
+	333 [ label = "333: {cutoff, obs_2, sched_2}" ];
+	334 [ label = "334: {cutoff, obs_0, sched_0}" ];
+	335 [ label = "335: {cutoff, obs_1, sched_2}" ];
+	336 [ label = "336: {cutoff, obs_2, sched_0}" ];
+	337 [ label = "337: {cutoff, obs_0, sched_0}" ];
+	338 [ label = "338: {cutoff, obs_1, sched_0}" ];
+	339 [ label = "339: {cutoff, obs_2, sched_2}" ];
+	340 [ label = "340: {cutoff, obs_0, sched_2}" ];
+	341 [ label = "341: {cutoff, obs_1, sched_2}" ];
+	342 [ label = "342: {cutoff, obs_2, sched_3}" ];
+	343 [ label = "343: {cutoff, obs_0, sched_3}" ];
+	344 [ label = "344: {cutoff, obs_1, sched_0}" ];
+	345 [ label = "345: {cutoff, obs_2, sched_2}" ];
+	346 [ label = "346: {cutoff, obs_0, sched_2}" ];
+	347 [ label = "347: {cutoff, obs_1, sched_2}" ];
+	348 [ label = "348: {cutoff, obs_2, sched_2}" ];
+	349 [ label = "349: {cutoff, obs_0, sched_3}" ];
+	350 [ label = "350: {cutoff, obs_1, sched_0}" ];
+	351 [ label = "351: {cutoff, obs_2, sched_2}" ];
+	352 [ label = "352: {cutoff, obs_0, sched_2}" ];
+	353 [ label = "353: {cutoff, obs_1, sched_2}" ];
+	354 [ label = "354: {cutoff, obs_2, sched_0}" ];
+	355 [ label = "355: {cutoff, obs_0, sched_3}" ];
+	356 [ label = "356: {cutoff, obs_1, sched_0}" ];
+	357 [ label = "357: {cutoff, obs_2, sched_2}" ];
+	358 [ label = "358: {cutoff, obs_0, sched_0}" ];
+	359 [ label = "359: {cutoff, obs_1, sched_2}" ];
+	360 [ label = "360: {cutoff, obs_2, sched_3}" ];
+	361 [ label = "361: {cutoff, obs_0, sched_3}" ];
+	362 [ label = "362: {cutoff, obs_1, sched_0}" ];
+	363 [ label = "363: {cutoff, obs_2, sched_2}" ];
+	364 [ label = "364: {cutoff, obs_0, sched_2}" ];
+	365 [ label = "365: {cutoff, obs_1, sched_2}" ];
+	366 [ label = "366: {cutoff, obs_2, sched_2}" ];
+	367 [ label = "367: {cutoff, obs_0, sched_2}" ];
+	368 [ label = "368: {cutoff, obs_1, sched_2}" ];
+	369 [ label = "369: {cutoff, obs_2, sched_0}" ];
+	370 [ label = "370: {cutoff, obs_0, sched_0}" ];
+	371 [ label = "371: {cutoff, obs_1, sched_2}" ];
+	372 [ label = "372: {cutoff, obs_2, sched_3}" ];
+	373 [ label = "373: {cutoff, obs_0, sched_0}" ];
+	374 [ label = "374: {cutoff, obs_1, sched_2}" ];
+	375 [ label = "375: {cutoff, obs_2, sched_0}" ];
+	376 [ label = "376: {cutoff, obs_0, sched_2}" ];
+	377 [ label = "377: {cutoff, obs_1, sched_2}" ];
+	378 [ label = "378: {cutoff, obs_2, sched_3}" ];
+	379 [ label = "379: {cutoff, obs_0, sched_3}" ];
+	380 [ label = "380: {cutoff, obs_1, sched_0}" ];
+	381 [ label = "381: {cutoff, obs_2, sched_2}" ];
+	382 [ label = "382: {cutoff, obs_0, sched_3}" ];
+	383 [ label = "383: {cutoff, obs_1, sched_0}" ];
+	384 [ label = "384: {cutoff, obs_2, sched_2}" ];
+	385 [ label = "385: {cutoff, obs_0, sched_3}" ];
+	386 [ label = "386: {cutoff, obs_1, sched_0}" ];
+	387 [ label = "387: {cutoff, obs_2, sched_2}" ];
+	388 [ label = "388: {cutoff, obs_0, sched_2}" ];
+	389 [ label = "389: {cutoff, obs_1, sched_2}" ];
+	390 [ label = "390: {cutoff, obs_2, sched_2}" ];
+	391 [ label = "391: {cutoff, obs_0, sched_3}" ];
+	392 [ label = "392: {cutoff, obs_1, sched_0}" ];
+	393 [ label = "393: {cutoff, obs_2, sched_2}" ];
+	394 [ label = "394: {cutoff, obs_0, sched_0}" ];
+	395 [ label = "395: {cutoff, obs_1, sched_2}" ];
+	396 [ label = "396: {cutoff, obs_2, sched_3}" ];
+	397 [ label = "397: {cutoff, obs_0, sched_3}" ];
+	398 [ label = "398: {cutoff, obs_1, sched_0}" ];
+	399 [ label = "399: {cutoff, obs_2, sched_2}" ];
+	400 [ label = "400: {cutoff, obs_0, sched_2}" ];
+	401 [ label = "401: {cutoff, obs_1, sched_2}" ];
+	402 [ label = "402: {cutoff, obs_2, sched_2}" ];
+	403 [ label = "403: {cutoff, obs_0, sched_0}" ];
+	404 [ label = "404: {cutoff, obs_1, sched_0}" ];
+	405 [ label = "405: {cutoff, obs_2, sched_2}" ];
+	406 [ label = "406: {cutoff, obs_0, sched_0}" ];
+	407 [ label = "407: {cutoff, obs_1, sched_2}" ];
+	408 [ label = "408: {cutoff, obs_2, sched_0}" ];
+	409 [ label = "409: {cutoff, obs_0, sched_0}" ];
+	410 [ label = "410: {cutoff, obs_1, sched_2}" ];
+	411 [ label = "411: {cutoff, obs_2, sched_0}" ];
+	412 [ label = "412: {cutoff, obs_0, sched_0}" ];
+	413 [ label = "413: {cutoff, obs_1, sched_2}" ];
+	414 [ label = "414: {cutoff, obs_2, sched_3}" ];
+	415 [ label = "415: {cutoff, obs_0, sched_3}" ];
+	416 [ label = "416: {cutoff, obs_1, sched_0}" ];
+	417 [ label = "417: {cutoff, obs_2, sched_2}" ];
+	418 [ label = "418: {cutoff, obs_0, sched_2}" ];
+	419 [ label = "419: {cutoff, obs_1, sched_2}" ];
+	420 [ label = "420: {cutoff, obs_2, sched_0}" ];
+	421 [ label = "421: {cutoff, obs_0, sched_0}" ];
+	422 [ label = "422: {cutoff, obs_1, sched_2}" ];
+	423 [ label = "423: {cutoff, obs_2, sched_0}" ];
+	424 [ label = "424: {cutoff, obs_0, sched_0}" ];
+	425 [ label = "425: {cutoff, obs_1, sched_2}" ];
+	426 [ label = "426: {cutoff, obs_2, sched_3}" ];
+	427 [ label = "427: {cutoff, obs_0, sched_0}" ];
+	428 [ label = "428: {cutoff, obs_1, sched_2}" ];
+	429 [ label = "429: {cutoff, obs_2, sched_0}" ];
+	430 [ label = "430: {cutoff, obs_0, sched_0}" ];
+	431 [ label = "431: {cutoff, obs_1, sched_2}" ];
+	432 [ label = "432: {cutoff, obs_2, sched_0}" ];
+	433 [ label = "433: {cutoff, obs_0, sched_3}" ];
+	434 [ label = "434: {cutoff, obs_1, sched_0}" ];
+	435 [ label = "435: {cutoff, obs_2, sched_2}" ];
+	436 [ label = "436: {cutoff, obs_0, sched_2}" ];
+	437 [ label = "437: {cutoff, obs_1, sched_2}" ];
+	438 [ label = "438: {cutoff, obs_2, sched_0}" ];
+	439 [ label = "439: {cutoff, obs_0, sched_2}" ];
+	440 [ label = "440: {cutoff, obs_1, sched_2}" ];
+	441 [ label = "441: {cutoff, obs_2, sched_0}" ];
+	442 [ label = "442: {cutoff, obs_0, sched_2}" ];
+	443 [ label = "443: {cutoff, obs_1, sched_2}" ];
+	444 [ label = "444: {cutoff, obs_2, sched_2}" ];
+	445 [ label = "445: {cutoff, obs_0, sched_2}" ];
+	446 [ label = "446: {cutoff, obs_1, sched_2}" ];
+	447 [ label = "447: {cutoff, obs_2, sched_0}" ];
+	448 [ label = "448: {cutoff, obs_0, sched_0}" ];
+	449 [ label = "449: {cutoff, obs_1, sched_2}" ];
+	450 [ label = "450: {cutoff, obs_2, sched_3}" ];
+	451 [ label = "451: {cutoff, obs_0, sched_3}" ];
+	452 [ label = "452: {cutoff, obs_1, sched_0}" ];
+	453 [ label = "453: {cutoff, obs_2, sched_2}" ];
+	454 [ label = "454: {cutoff, obs_0, sched_2}" ];
+	455 [ label = "455: {cutoff, obs_1, sched_2}" ];
+	456 [ label = "456: {cutoff, obs_2, sched_0}" ];
+	457 [ label = "457: {cutoff, obs_0, sched_0}" ];
+	458 [ label = "458: {cutoff, obs_1, sched_0}" ];
+	459 [ label = "459: {cutoff, obs_2, sched_2}" ];
+	460 [ label = "460: {cutoff, obs_0, sched_0}" ];
+	461 [ label = "461: {cutoff, obs_1, sched_2}" ];
+	462 [ label = "462: {cutoff, obs_2, sched_0}" ];
+	463 [ label = "463: {cutoff, obs_0, sched_0}" ];
+	464 [ label = "464: {cutoff, obs_1, sched_0}" ];
+	465 [ label = "465: {cutoff, obs_2, sched_2}" ];
+	466 [ label = "466: {cutoff, obs_0, sched_0}" ];
+	467 [ label = "467: {cutoff, obs_1, sched_2}" ];
+	468 [ label = "468: {cutoff, obs_2, sched_3}" ];
+	469 [ label = "469: {cutoff, obs_0, sched_3}" ];
+	470 [ label = "470: {cutoff, obs_1, sched_0}" ];
+	471 [ label = "471: {cutoff, obs_2, sched_2}" ];
+	472 [ label = "472: {cutoff, obs_0, sched_2}" ];
+	473 [ label = "473: {cutoff, obs_1, sched_2}" ];
+	474 [ label = "474: {cutoff, obs_2, sched_2}" ];
+	475 [ label = "475: {cutoff, obs_0, sched_0}" ];
+	476 [ label = "476: {cutoff, obs_1, sched_0}" ];
+	477 [ label = "477: {cutoff, obs_2, sched_2}" ];
+	478 [ label = "478: {cutoff, obs_0, sched_0}" ];
+	479 [ label = "479: {cutoff, obs_1, sched_2}" ];
+	480 [ label = "480: {cutoff, obs_2, sched_0}" ];
+	481 [ label = "481: {cutoff, obs_0, sched_0}" ];
+	482 [ label = "482: {cutoff, obs_1, sched_0}" ];
+	483 [ label = "483: {cutoff, obs_2, sched_2}" ];
+	484 [ label = "484: {cutoff, obs_0, sched_2}" ];
+	485 [ label = "485: {cutoff, obs_1, sched_2}" ];
+	486 [ label = "486: {cutoff, obs_2, sched_0}" ];
+	487 [ label = "487: {cutoff, obs_0, sched_0}" ];
+	488 [ label = "488: {cutoff, obs_1, sched_2}" ];
+	489 [ label = "489: {cutoff, obs_2, sched_0}" ];
+	490 [ label = "490: {cutoff, obs_0, sched_0}" ];
+	491 [ label = "491: {cutoff, obs_1, sched_2}" ];
+	492 [ label = "492: {cutoff, obs_2, sched_0}" ];
+	493 [ label = "493: {cutoff, obs_0, sched_2}" ];
+	494 [ label = "494: {cutoff, obs_1, sched_3}" ];
+	495 [ label = "495: {cutoff, obs_2, sched_0}" ];
+	496 [ label = "496: {cutoff, obs_0, sched_0}" ];
+	497 [ label = "497: {cutoff, obs_1, sched_2}" ];
+	498 [ label = "498: {cutoff, obs_2, sched_0}" ];
+	499 [ label = "499: {cutoff, obs_0, sched_0}" ];
+	500 [ label = "500: {cutoff, obs_1, sched_3}" ];
+	501 [ label = "501: {cutoff, obs_2, sched_0}" ];
+	502 [ label = "502: {cutoff, obs_0, sched_0}" ];
+	503 [ label = "503: {cutoff, obs_1, sched_0}" ];
+	504 [ label = "504: {cutoff, obs_2, sched_2}" ];
+	505 [ label = "505: {cutoff, obs_0, sched_2}" ];
+	506 [ label = "506: {cutoff, obs_1, sched_3}" ];
+	507 [ label = "507: {cutoff, obs_2, sched_0}" ];
+	508 [ label = "508: {cutoff, obs_0, sched_0}" ];
+	509 [ label = "509: {cutoff, obs_1, sched_0}" ];
+	510 [ label = "510: {cutoff, obs_2, sched_2}" ];
+	511 [ label = "511: {cutoff, obs_0, sched_2}" ];
+	512 [ label = "512: {cutoff, obs_1, sched_3}" ];
+	513 [ label = "513: {cutoff, obs_2, sched_0}" ];
+	514 [ label = "514: {cutoff, obs_0, sched_0}" ];
+	515 [ label = "515: {cutoff, obs_1, sched_2}" ];
+	516 [ label = "516: {cutoff, obs_2, sched_0}" ];
+	517 [ label = "517: {cutoff, obs_0, sched_0}" ];
+	518 [ label = "518: {cutoff, obs_1, sched_3}" ];
+	519 [ label = "519: {cutoff, obs_2, sched_0}" ];
+	520 [ label = "520: {cutoff, obs_0, sched_0}" ];
+	521 [ label = "521: {cutoff, obs_1, sched_0}" ];
+	522 [ label = "522: {cutoff, obs_2, sched_2}" ];
+	523 [ label = "523: {cutoff, obs_0, sched_0}" ];
+	524 [ label = "524: {cutoff, obs_1, sched_3}" ];
+	525 [ label = "525: {cutoff, obs_2, sched_0}" ];
+	526 [ label = "526: {cutoff, obs_0, sched_0}" ];
+	527 [ label = "527: {cutoff, obs_1, sched_0}" ];
+	528 [ label = "528: {cutoff, obs_2, sched_2}" ];
+	"0c" [shape = "point"]
+	0 -> "0c" [label= "{loop}"];
+	"0c" -> 0 [ label= "1" ];
+	"1c" [shape = "point"]
+	1 -> "1c" [label= "{(init)}"];
+	"1c" -> 2 [ label= "1" ];
+	"2c" [shape = "point"]
+	2 -> "2c" [label= "{(Query-0)}"];
+	"2c" -> 3 [ label= "0.39534" ];
+	"2c" -> 4 [ label= "0.286275" ];
+	"2c" -> 5 [ label= "0.308385" ];
+	"2c" -> 6 [ label= "0.01" ];
+	"3c" [shape = "point"]
+	3 -> "3c" [label= "{(Query-1)}"];
+	"3c" -> 6 [ label= "0.01" ];
+	"3c" -> 7 [ label= "0.371679" ];
+	"3c" -> 8 [ label= "0.305745" ];
+	"3c" -> 9 [ label= "0.312576" ];
+	"4c" [shape = "point"]
+	4 -> "4c" [label= "{(Query-0)}"];
+	"4c" -> 6 [ label= "0.01" ];
+	"4c" -> 10 [ label= "0.114843" ];
+	"4c" -> 11 [ label= "0.638942" ];
+	"4c" -> 12 [ label= "0.236215" ];
+	"5c" [shape = "point"]
+	5 -> "5c" [label= "{(Query-1)}"];
+	"5c" -> 6 [ label= "0.01" ];
+	"5c" -> 13 [ label= "0.371679" ];
+	"5c" -> 14 [ label= "0.305745" ];
+	"5c" -> 15 [ label= "0.312576" ];
+	"6c" [shape = "point"]
+	6 -> "6c" [label= "{loop}"];
+	"6c" -> 6 [ label= "1" ];
+	"7c" [shape = "point"]
+	7 -> "7c" [label= "{(Query-2)}"];
+	"7c" -> 6 [ label= "0.01" ];
+	"7c" -> 16 [ label= "0.354481" ];
+	"7c" -> 17 [ label= "0.318376" ];
+	"7c" -> 18 [ label= "0.317143" ];
+	"8c" [shape = "point"]
+	8 -> "8c" [label= "{(Query-1)}"];
+	"8c" -> 6 [ label= "0.01" ];
+	"8c" -> 19 [ label= "0.114238" ];
+	"8c" -> 20 [ label= "0.64112" ];
+	"8c" -> 21 [ label= "0.234642" ];
+	"9c" [shape = "point"]
+	9 -> "9c" [label= "{(Query-2)}"];
+	"9c" -> 6 [ label= "0.01" ];
+	"9c" -> 22 [ label= "0.354481" ];
+	"9c" -> 23 [ label= "0.318376" ];
+	"9c" -> 24 [ label= "0.317143" ];
+	"10c" [shape = "point"]
+	10 -> "10c" [label= "{(Query-1)}"];
+	"10c" -> 6 [ label= "0.01" ];
+	"10c" -> 25 [ label= "0.354481" ];
+	"10c" -> 26 [ label= "0.318376" ];
+	"10c" -> 27 [ label= "0.317143" ];
+	"11c" [shape = "point"]
+	11 -> "11c" [label= "{(Query-0)}"];
+	"11c" -> 6 [ label= "0.01" ];
+	"11c" -> 28 [ label= "0.107045" ];
+	"11c" -> 29 [ label= "0.66701" ];
+	"11c" -> 30 [ label= "0.215945" ];
+	"12c" [shape = "point"]
+	12 -> "12c" [label= "{(Query-1)}"];
+	"12c" -> 6 [ label= "0.01" ];
+	"12c" -> 31 [ label= "0.354481" ];
+	"12c" -> 32 [ label= "0.318376" ];
+	"12c" -> 33 [ label= "0.317143" ];
+	"13c" [shape = "point"]
+	13 -> "13c" [label= "{(Query-2)}"];
+	"13c" -> 6 [ label= "0.01" ];
+	"13c" -> 34 [ label= "0.354481" ];
+	"13c" -> 35 [ label= "0.318376" ];
+	"13c" -> 36 [ label= "0.317143" ];
+	"14c" [shape = "point"]
+	14 -> "14c" [label= "{(Query-1)}"];
+	"14c" -> 6 [ label= "0.01" ];
+	"14c" -> 37 [ label= "0.114238" ];
+	"14c" -> 38 [ label= "0.64112" ];
+	"14c" -> 39 [ label= "0.234642" ];
+	"15c" [shape = "point"]
+	15 -> "15c" [label= "{(Query-2)}"];
+	"15c" -> 6 [ label= "0.01" ];
+	"15c" -> 40 [ label= "0.354481" ];
+	"15c" -> 41 [ label= "0.318376" ];
+	"15c" -> 42 [ label= "0.317143" ];
+	"16c" [shape = "point"]
+	16 -> "16c" [label= "{(Query-0)}"];
+	"16c" -> 6 [ label= "0.01" ];
+	"16c" -> 43 [ label= "0.517622" ];
+	"16c" -> 44 [ label= "0.240744" ];
+	"16c" -> 45 [ label= "0.231634" ];
+	"17c" [shape = "point"]
+	17 -> "17c" [label= "{(Query-2)}"];
+	"17c" -> 6 [ label= "0.01" ];
+	"17c" -> 46 [ label= "0.113949" ];
+	"17c" -> 47 [ label= "0.64216" ];
+	"17c" -> 48 [ label= "0.233891" ];
+	"18c" [shape = "point"]
+	18 -> "18c" [label= "{(Query-0)}"];
+	"18c" -> 6 [ label= "0.01" ];
+	"18c" -> 49 [ label= "0.517622" ];
+	"18c" -> 50 [ label= "0.240744" ];
+	"18c" -> 51 [ label= "0.231634" ];
+	"19c" [shape = "point"]
+	19 -> "19c" [label= "{(Query-2)}"];
+	"19c" -> 6 [ label= "0.01" ];
+	"19c" -> 52 [ label= "0.341939" ];
+	"19c" -> 53 [ label= "0.326567" ];
+	"19c" -> 54 [ label= "0.321494" ];
+	"20c" [shape = "point"]
+	20 -> "20c" [label= "{(Query-1)}"];
+	"20c" -> 6 [ label= "0.01" ];
+	"20c" -> 55 [ label= "0.107004" ];
+	"20c" -> 56 [ label= "0.667157" ];
+	"20c" -> 57 [ label= "0.215839" ];
+	"21c" [shape = "point"]
+	21 -> "21c" [label= "{(Query-2)}"];
+	"21c" -> 6 [ label= "0.01" ];
+	"21c" -> 58 [ label= "0.341939" ];
+	"21c" -> 59 [ label= "0.326567" ];
+	"21c" -> 60 [ label= "0.321494" ];
+	"22c" [shape = "point"]
+	22 -> "22c" [label= "{(Query-0)}"];
+	"22c" -> 6 [ label= "0.01" ];
+	"22c" -> 61 [ label= "0.517622" ];
+	"22c" -> 62 [ label= "0.240744" ];
+	"22c" -> 63 [ label= "0.231634" ];
+	"23c" [shape = "point"]
+	23 -> "23c" [label= "{(Query-2)}"];
+	"23c" -> 6 [ label= "0.01" ];
+	"23c" -> 64 [ label= "0.113949" ];
+	"23c" -> 65 [ label= "0.64216" ];
+	"23c" -> 66 [ label= "0.233891" ];
+	"24c" [shape = "point"]
+	24 -> "24c" [label= "{(Query-0)}"];
+	"24c" -> 6 [ label= "0.01" ];
+	"24c" -> 67 [ label= "0.517622" ];
+	"24c" -> 68 [ label= "0.240744" ];
+	"24c" -> 69 [ label= "0.231634" ];
+	"25c" [shape = "point"]
+	25 -> "25c" [label= "{(Query-2)}"];
+	"25c" -> 6 [ label= "0.01" ];
+	"25c" -> 70 [ label= "0.341939" ];
+	"25c" -> 71 [ label= "0.326567" ];
+	"25c" -> 72 [ label= "0.321494" ];
+	"26c" [shape = "point"]
+	26 -> "26c" [label= "{(Query-1)}"];
+	"26c" -> 6 [ label= "0.01" ];
+	"26c" -> 73 [ label= "0.113949" ];
+	"26c" -> 74 [ label= "0.64216" ];
+	"26c" -> 75 [ label= "0.233891" ];
+	"27c" [shape = "point"]
+	27 -> "27c" [label= "{(Query-2)}"];
+	"27c" -> 6 [ label= "0.01" ];
+	"27c" -> 76 [ label= "0.341939" ];
+	"27c" -> 77 [ label= "0.326567" ];
+	"27c" -> 78 [ label= "0.321494" ];
+	"28c" [shape = "point"]
+	28 -> "28c" [label= "{(Query-1)}"];
+	"28c" -> 6 [ label= "0.01" ];
+	"28c" -> 79 [ label= "0.341939" ];
+	"28c" -> 80 [ label= "0.326567" ];
+	"28c" -> 81 [ label= "0.321494" ];
+	"29c" [shape = "point"]
+	29 -> "29c" [label= "{(Query-0)}"];
+	"29c" -> 6 [ label= "0.01" ];
+	"29c" -> 82 [ label= "0.106538" ];
+	"29c" -> 83 [ label= "0.668833" ];
+	"29c" -> 84 [ label= "0.214628" ];
+	"30c" [shape = "point"]
+	30 -> "30c" [label= "{(Query-1)}"];
+	"30c" -> 6 [ label= "0.01" ];
+	"30c" -> 85 [ label= "0.341939" ];
+	"30c" -> 86 [ label= "0.326567" ];
+	"30c" -> 87 [ label= "0.321494" ];
+	"31c" [shape = "point"]
+	31 -> "31c" [label= "{(Query-2)}"];
+	"31c" -> 6 [ label= "0.01" ];
+	"31c" -> 88 [ label= "0.341939" ];
+	"31c" -> 89 [ label= "0.326567" ];
+	"31c" -> 90 [ label= "0.321494" ];
+	"32c" [shape = "point"]
+	32 -> "32c" [label= "{(Query-1)}"];
+	"32c" -> 6 [ label= "0.01" ];
+	"32c" -> 91 [ label= "0.113949" ];
+	"32c" -> 92 [ label= "0.64216" ];
+	"32c" -> 93 [ label= "0.233891" ];
+	"33c" [shape = "point"]
+	33 -> "33c" [label= "{(Query-2)}"];
+	"33c" -> 6 [ label= "0.01" ];
+	"33c" -> 94 [ label= "0.341939" ];
+	"33c" -> 95 [ label= "0.326567" ];
+	"33c" -> 96 [ label= "0.321494" ];
+	"34c" [shape = "point"]
+	34 -> "34c" [label= "{(Query-0)}"];
+	"34c" -> 6 [ label= "0.01" ];
+	"34c" -> 97 [ label= "0.269997" ];
+	"34c" -> 98 [ label= "0.252933" ];
+	"34c" -> 99 [ label= "0.467071" ];
+	"35c" [shape = "point"]
+	35 -> "35c" [label= "{(Query-2)}"];
+	"35c" -> 6 [ label= "0.01" ];
+	"35c" -> 100 [ label= "0.113949" ];
+	"35c" -> 101 [ label= "0.64216" ];
+	"35c" -> 102 [ label= "0.233891" ];
+	"36c" [shape = "point"]
+	36 -> "36c" [label= "{(Query-0)}"];
+	"36c" -> 6 [ label= "0.01" ];
+	"36c" -> 103 [ label= "0.269997" ];
+	"36c" -> 104 [ label= "0.252933" ];
+	"36c" -> 105 [ label= "0.467071" ];
+	"37c" [shape = "point"]
+	37 -> "37c" [label= "{(Query-2)}"];
+	"37c" -> 6 [ label= "0.01" ];
+	"37c" -> 106 [ label= "0.341939" ];
+	"37c" -> 107 [ label= "0.326567" ];
+	"37c" -> 108 [ label= "0.321494" ];
+	"38c" [shape = "point"]
+	38 -> "38c" [label= "{(Query-1)}"];
+	"38c" -> 6 [ label= "0.01" ];
+	"38c" -> 109 [ label= "0.107004" ];
+	"38c" -> 110 [ label= "0.667157" ];
+	"38c" -> 111 [ label= "0.215839" ];
+	"39c" [shape = "point"]
+	39 -> "39c" [label= "{(Query-2)}"];
+	"39c" -> 6 [ label= "0.01" ];
+	"39c" -> 112 [ label= "0.341939" ];
+	"39c" -> 113 [ label= "0.326567" ];
+	"39c" -> 114 [ label= "0.321494" ];
+	"40c" [shape = "point"]
+	40 -> "40c" [label= "{(Query-0)}"];
+	"40c" -> 6 [ label= "0.01" ];
+	"40c" -> 115 [ label= "0.269997" ];
+	"40c" -> 116 [ label= "0.252933" ];
+	"40c" -> 117 [ label= "0.467071" ];
+	"41c" [shape = "point"]
+	41 -> "41c" [label= "{(Query-2)}"];
+	"41c" -> 6 [ label= "0.01" ];
+	"41c" -> 118 [ label= "0.113949" ];
+	"41c" -> 119 [ label= "0.64216" ];
+	"41c" -> 120 [ label= "0.233891" ];
+	"42c" [shape = "point"]
+	42 -> "42c" [label= "{(Query-0)}"];
+	"42c" -> 6 [ label= "0.01" ];
+	"42c" -> 121 [ label= "0.269997" ];
+	"42c" -> 122 [ label= "0.252933" ];
+	"42c" -> 123 [ label= "0.467071" ];
+	"43c" [shape = "point"]
+	43 -> "43c" [label= "{(Query-1)}"];
+	"43c" -> 6 [ label= "0.01" ];
+	"43c" -> 124 [ label= "0.512533" ];
+	"43c" -> 125 [ label= "0.241204" ];
+	"43c" -> 126 [ label= "0.236263" ];
+	"44c" [shape = "point"]
+	44 -> "44c" [label= "{(Query-0)}"];
+	"44c" -> 6 [ label= "0.01" ];
+	"44c" -> 127 [ label= "0.113575" ];
+	"44c" -> 128 [ label= "0.643507" ];
+	"44c" -> 129 [ label= "0.232918" ];
+	"45c" [shape = "point"]
+	45 -> "45c" [label= "{(Query-1)}"];
+	"45c" -> 6 [ label= "0.01" ];
+	"45c" -> 130 [ label= "0.512533" ];
+	"45c" -> 131 [ label= "0.241204" ];
+	"45c" -> 132 [ label= "0.236263" ];
+	"46c" [shape = "point"]
+	46 -> "46c" [label= "{(Query-0)}"];
+	"46c" -> 6 [ label= "0.01" ];
+	"46c" -> 133 [ label= "0.462084" ];
+	"46c" -> 134 [ label= "0.276299" ];
+	"46c" -> 135 [ label= "0.251617" ];
+	"47c" [shape = "point"]
+	47 -> "47c" [label= "{(Query-2)}"];
+	"47c" -> 6 [ label= "0.01" ];
+	"47c" -> 136 [ label= "0.106985" ];
+	"47c" -> 137 [ label= "0.667227" ];
+	"47c" -> 138 [ label= "0.215788" ];
+	"48c" [shape = "point"]
+	48 -> "48c" [label= "{(Query-0)}"];
+	"48c" -> 6 [ label= "0.01" ];
+	"48c" -> 139 [ label= "0.462084" ];
+	"48c" -> 140 [ label= "0.276299" ];
+	"48c" -> 141 [ label= "0.251617" ];
+	"49c" [shape = "point"]
+	49 -> "49c" [label= "{(Query-1)}"];
+	"49c" -> 6 [ label= "0.01" ];
+	"49c" -> 142 [ label= "0.512533" ];
+	"49c" -> 143 [ label= "0.241204" ];
+	"49c" -> 144 [ label= "0.236263" ];
+	"50c" [shape = "point"]
+	50 -> "50c" [label= "{(Query-0)}"];
+	"50c" -> 6 [ label= "0.01" ];
+	"50c" -> 145 [ label= "0.113575" ];
+	"50c" -> 146 [ label= "0.643507" ];
+	"50c" -> 147 [ label= "0.232918" ];
+	"51c" [shape = "point"]
+	51 -> "51c" [label= "{(Query-1)}"];
+	"51c" -> 6 [ label= "0.01" ];
+	"51c" -> 148 [ label= "0.512533" ];
+	"51c" -> 149 [ label= "0.241204" ];
+	"51c" -> 150 [ label= "0.236263" ];
+	"52c" [shape = "point"]
+	52 -> "52c" [label= "{(Query-0)}"];
+	"52c" -> 6 [ label= "0.01" ];
+	"52c" -> 151 [ label= "0.462084" ];
+	"52c" -> 152 [ label= "0.276299" ];
+	"52c" -> 153 [ label= "0.251617" ];
+	"53c" [shape = "point"]
+	53 -> "53c" [label= "{(Query-2)}"];
+	"53c" -> 6 [ label= "0.01" ];
+	"53c" -> 154 [ label= "0.11382" ];
+	"53c" -> 155 [ label= "0.642622" ];
+	"53c" -> 156 [ label= "0.233557" ];
+	"54c" [shape = "point"]
+	54 -> "54c" [label= "{(Query-0)}"];
+	"54c" -> 6 [ label= "0.01" ];
+	"54c" -> 157 [ label= "0.462084" ];
+	"54c" -> 158 [ label= "0.276299" ];
+	"54c" -> 159 [ label= "0.251617" ];
+	"55c" [shape = "point"]
+	55 -> "55c" [label= "{(Query-2)}"];
+	"55c" -> 6 [ label= "0.01" ];
+	"55c" -> 160 [ label= "0.332763" ];
+	"55c" -> 161 [ label= "0.331878" ];
+	"55c" -> 162 [ label= "0.325359" ];
+	"56c" [shape = "point"]
+	56 -> "56c" [label= "{(Query-1)}"];
+	"56c" -> 6 [ label= "0.01" ];
+	"56c" -> 163 [ label= "0.106536" ];
+	"56c" -> 164 [ label= "0.668842" ];
+	"56c" -> 165 [ label= "0.214622" ];
+	"57c" [shape = "point"]
+	57 -> "57c" [label= "{(Query-2)}"];
+	"57c" -> 6 [ label= "0.01" ];
+	"57c" -> 166 [ label= "0.332763" ];
+	"57c" -> 167 [ label= "0.331878" ];
+	"57c" -> 168 [ label= "0.325359" ];
+	"58c" [shape = "point"]
+	58 -> "58c" [label= "{(Query-1)}"];
+	"58c" -> 6 [ label= "0.01" ];
+	"58c" -> 169 [ label= "0.245452" ];
+	"58c" -> 170 [ label= "0.267372" ];
+	"58c" -> 171 [ label= "0.477176" ];
+	"59c" [shape = "point"]
+	59 -> "59c" [label= "{(Query-2)}"];
+	"59c" -> 6 [ label= "0.01" ];
+	"59c" -> 172 [ label= "0.11382" ];
+	"59c" -> 173 [ label= "0.642622" ];
+	"59c" -> 174 [ label= "0.233557" ];
+	"60c" [shape = "point"]
+	60 -> "60c" [label= "{(Query-1)}"];
+	"60c" -> 6 [ label= "0.01" ];
+	"60c" -> 175 [ label= "0.245452" ];
+	"60c" -> 176 [ label= "0.267372" ];
+	"60c" -> 177 [ label= "0.477176" ];
+	"61c" [shape = "point"]
+	61 -> "61c" [label= "{(Query-1)}"];
+	"61c" -> 6 [ label= "0.01" ];
+	"61c" -> 178 [ label= "0.269687" ];
+	"61c" -> 179 [ label= "0.254046" ];
+	"61c" -> 180 [ label= "0.466266" ];
+	"62c" [shape = "point"]
+	62 -> "62c" [label= "{(Query-0)}"];
+	"62c" -> 6 [ label= "0.01" ];
+	"62c" -> 181 [ label= "0.113575" ];
+	"62c" -> 182 [ label= "0.643507" ];
+	"62c" -> 183 [ label= "0.232918" ];
+	"63c" [shape = "point"]
+	63 -> "63c" [label= "{(Query-1)}"];
+	"63c" -> 6 [ label= "0.01" ];
+	"63c" -> 184 [ label= "0.269687" ];
+	"63c" -> 185 [ label= "0.254046" ];
+	"63c" -> 186 [ label= "0.466266" ];
+	"64c" [shape = "point"]
+	64 -> "64c" [label= "{(Query-1)}"];
+	"64c" -> 6 [ label= "0.01" ];
+	"64c" -> 187 [ label= "0.269687" ];
+	"64c" -> 188 [ label= "0.254046" ];
+	"64c" -> 189 [ label= "0.466266" ];
+	"65c" [shape = "point"]
+	65 -> "65c" [label= "{(Query-2)}"];
+	"65c" -> 6 [ label= "0.01" ];
+	"65c" -> 190 [ label= "0.106985" ];
+	"65c" -> 191 [ label= "0.667227" ];
+	"65c" -> 192 [ label= "0.215788" ];
+	"66c" [shape = "point"]
+	66 -> "66c" [label= "{(Query-1)}"];
+	"66c" -> 6 [ label= "0.01" ];
+	"66c" -> 193 [ label= "0.269687" ];
+	"66c" -> 194 [ label= "0.254046" ];
+	"66c" -> 195 [ label= "0.466266" ];
+	"67c" [shape = "point"]
+	67 -> "67c" [label= "{(Query-1)}"];
+	"67c" -> 6 [ label= "0.01" ];
+	"67c" -> 196 [ label= "0.269687" ];
+	"67c" -> 197 [ label= "0.254046" ];
+	"67c" -> 198 [ label= "0.466266" ];
+	"68c" [shape = "point"]
+	68 -> "68c" [label= "{(Query-0)}"];
+	"68c" -> 6 [ label= "0.01" ];
+	"68c" -> 199 [ label= "0.113575" ];
+	"68c" -> 200 [ label= "0.643507" ];
+	"68c" -> 201 [ label= "0.232918" ];
+	"69c" [shape = "point"]
+	69 -> "69c" [label= "{(Query-1)}"];
+	"69c" -> 6 [ label= "0.01" ];
+	"69c" -> 202 [ label= "0.269687" ];
+	"69c" -> 203 [ label= "0.254046" ];
+	"69c" -> 204 [ label= "0.466266" ];
+	"70c" [shape = "point"]
+	70 -> "70c" [label= "{(Query-0)}"];
+	"70c" -> 6 [ label= "0.01" ];
+	"70c" -> 205 [ label= "0.407944" ];
+	"70c" -> 206 [ label= "0.265914" ];
+	"70c" -> 207 [ label= "0.316142" ];
+	"71c" [shape = "point"]
+	71 -> "71c" [label= "{(Query-2)}"];
+	"71c" -> 6 [ label= "0.01" ];
+	"71c" -> 208 [ label= "0.11382" ];
+	"71c" -> 209 [ label= "0.642622" ];
+	"71c" -> 210 [ label= "0.233557" ];
+	"72c" [shape = "point"]
+	72 -> "72c" [label= "{(Query-0)}"];
+	"72c" -> 6 [ label= "0.01" ];
+	"72c" -> 211 [ label= "0.407944" ];
+	"72c" -> 212 [ label= "0.265914" ];
+	"72c" -> 213 [ label= "0.316142" ];
+	"73c" [shape = "point"]
+	73 -> "73c" [label= "{(Query-2)}"];
+	"73c" -> 6 [ label= "0.01" ];
+	"73c" -> 214 [ label= "0.332763" ];
+	"73c" -> 215 [ label= "0.331878" ];
+	"73c" -> 216 [ label= "0.325359" ];
+	"74c" [shape = "point"]
+	74 -> "74c" [label= "{(Query-1)}"];
+	"74c" -> 6 [ label= "0.01" ];
+	"74c" -> 217 [ label= "0.106985" ];
+	"74c" -> 218 [ label= "0.667227" ];
+	"74c" -> 219 [ label= "0.215788" ];
+	"75c" [shape = "point"]
+	75 -> "75c" [label= "{(Query-2)}"];
+	"75c" -> 6 [ label= "0.01" ];
+	"75c" -> 220 [ label= "0.332763" ];
+	"75c" -> 221 [ label= "0.331878" ];
+	"75c" -> 222 [ label= "0.325359" ];
+	"76c" [shape = "point"]
+	76 -> "76c" [label= "{(Query-0)}"];
+	"76c" -> 6 [ label= "0.01" ];
+	"76c" -> 223 [ label= "0.407944" ];
+	"76c" -> 224 [ label= "0.265914" ];
+	"76c" -> 225 [ label= "0.316142" ];
+	"77c" [shape = "point"]
+	77 -> "77c" [label= "{(Query-2)}"];
+	"77c" -> 6 [ label= "0.01" ];
+	"77c" -> 226 [ label= "0.11382" ];
+	"77c" -> 227 [ label= "0.642622" ];
+	"77c" -> 228 [ label= "0.233557" ];
+	"78c" [shape = "point"]
+	78 -> "78c" [label= "{(Query-0)}"];
+	"78c" -> 6 [ label= "0.01" ];
+	"78c" -> 229 [ label= "0.407944" ];
+	"78c" -> 230 [ label= "0.265914" ];
+	"78c" -> 231 [ label= "0.316142" ];
+	"79c" [shape = "point"]
+	79 -> "79c" [label= "{(Query-2)}"];
+	"79c" -> 6 [ label= "0.01" ];
+	"79c" -> 232 [ label= "0.332763" ];
+	"79c" -> 233 [ label= "0.331878" ];
+	"79c" -> 234 [ label= "0.325359" ];
+	"80c" [shape = "point"]
+	80 -> "80c" [label= "{(Query-1)}"];
+	"80c" -> 6 [ label= "0.01" ];
+	"80c" -> 235 [ label= "0.11382" ];
+	"80c" -> 236 [ label= "0.642622" ];
+	"80c" -> 237 [ label= "0.233557" ];
+	"81c" [shape = "point"]
+	81 -> "81c" [label= "{(Query-2)}"];
+	"81c" -> 6 [ label= "0.01" ];
+	"81c" -> 238 [ label= "0.332763" ];
+	"81c" -> 239 [ label= "0.331878" ];
+	"81c" -> 240 [ label= "0.325359" ];
+	"82c" [shape = "point"]
+	82 -> "82c" [label= "{(Query-2)}"];
+	"82c" -> 6 [ label= "0.01" ];
+	"82c" -> 241 [ label= "0.332763" ];
+	"82c" -> 242 [ label= "0.331878" ];
+	"82c" -> 243 [ label= "0.325359" ];
+	"83c" [shape = "point"]
+	83 -> "83c" [label= "{(Query-0)}"];
+	"83c" -> 6 [ label= "0.01" ];
+	"83c" -> 244 [ label= "0.106507" ];
+	"83c" -> 245 [ label= "0.668946" ];
+	"83c" -> 246 [ label= "0.214547" ];
+	"84c" [shape = "point"]
+	84 -> "84c" [label= "{(Query-2)}"];
+	"84c" -> 6 [ label= "0.01" ];
+	"84c" -> 247 [ label= "0.332763" ];
+	"84c" -> 248 [ label= "0.331878" ];
+	"84c" -> 249 [ label= "0.325359" ];
+	"85c" [shape = "point"]
+	85 -> "85c" [label= "{(Query-2)}"];
+	"85c" -> 6 [ label= "0.01" ];
+	"85c" -> 250 [ label= "0.332763" ];
+	"85c" -> 251 [ label= "0.331878" ];
+	"85c" -> 252 [ label= "0.325359" ];
+	"86c" [shape = "point"]
+	86 -> "86c" [label= "{(Query-1)}"];
+	"86c" -> 6 [ label= "0.01" ];
+	"86c" -> 253 [ label= "0.11382" ];
+	"86c" -> 254 [ label= "0.642622" ];
+	"86c" -> 255 [ label= "0.233557" ];
+	"87c" [shape = "point"]
+	87 -> "87c" [label= "{(Query-2)}"];
+	"87c" -> 6 [ label= "0.01" ];
+	"87c" -> 256 [ label= "0.332763" ];
+	"87c" -> 257 [ label= "0.331878" ];
+	"87c" -> 258 [ label= "0.325359" ];
+	"88c" [shape = "point"]
+	88 -> "88c" [label= "{(Query-0)}"];
+	"88c" -> 6 [ label= "0.01" ];
+	"88c" -> 259 [ label= "0.258966" ];
+	"88c" -> 260 [ label= "0.292635" ];
+	"88c" -> 261 [ label= "0.438398" ];
+	"89c" [shape = "point"]
+	89 -> "89c" [label= "{(Query-2)}"];
+	"89c" -> 6 [ label= "0.01" ];
+	"89c" -> 262 [ label= "0.11382" ];
+	"89c" -> 263 [ label= "0.642622" ];
+	"89c" -> 264 [ label= "0.233557" ];
+	"90c" [shape = "point"]
+	90 -> "90c" [label= "{(Query-0)}"];
+	"90c" -> 6 [ label= "0.01" ];
+	"90c" -> 265 [ label= "0.258966" ];
+	"90c" -> 266 [ label= "0.292635" ];
+	"90c" -> 267 [ label= "0.438398" ];
+	"91c" [shape = "point"]
+	91 -> "91c" [label= "{(Query-2)}"];
+	"91c" -> 6 [ label= "0.01" ];
+	"91c" -> 268 [ label= "0.332763" ];
+	"91c" -> 269 [ label= "0.331878" ];
+	"91c" -> 270 [ label= "0.325359" ];
+	"92c" [shape = "point"]
+	92 -> "92c" [label= "{(Query-1)}"];
+	"92c" -> 6 [ label= "0.01" ];
+	"92c" -> 271 [ label= "0.106985" ];
+	"92c" -> 272 [ label= "0.667227" ];
+	"92c" -> 273 [ label= "0.215788" ];
+	"93c" [shape = "point"]
+	93 -> "93c" [label= "{(Query-2)}"];
+	"93c" -> 6 [ label= "0.01" ];
+	"93c" -> 274 [ label= "0.332763" ];
+	"93c" -> 275 [ label= "0.331878" ];
+	"93c" -> 276 [ label= "0.325359" ];
+	"94c" [shape = "point"]
+	94 -> "94c" [label= "{(Query-0)}"];
+	"94c" -> 6 [ label= "0.01" ];
+	"94c" -> 277 [ label= "0.258966" ];
+	"94c" -> 278 [ label= "0.292635" ];
+	"94c" -> 279 [ label= "0.438398" ];
+	"95c" [shape = "point"]
+	95 -> "95c" [label= "{(Query-2)}"];
+	"95c" -> 6 [ label= "0.01" ];
+	"95c" -> 280 [ label= "0.11382" ];
+	"95c" -> 281 [ label= "0.642622" ];
+	"95c" -> 282 [ label= "0.233557" ];
+	"96c" [shape = "point"]
+	96 -> "96c" [label= "{(Query-0)}"];
+	"96c" -> 6 [ label= "0.01" ];
+	"96c" -> 283 [ label= "0.258966" ];
+	"96c" -> 284 [ label= "0.292635" ];
+	"96c" -> 285 [ label= "0.438398" ];
+	"97c" [shape = "point"]
+	97 -> "97c" [label= "{(Query-1)}"];
+	"97c" -> 6 [ label= "0.01" ];
+	"97c" -> 286 [ label= "0.512533" ];
+	"97c" -> 287 [ label= "0.241204" ];
+	"97c" -> 288 [ label= "0.236263" ];
+	"98c" [shape = "point"]
+	98 -> "98c" [label= "{(Query-0)}"];
+	"98c" -> 6 [ label= "0.01" ];
+	"98c" -> 289 [ label= "0.123323" ];
+	"98c" -> 290 [ label= "0.608421" ];
+	"98c" -> 291 [ label= "0.258257" ];
+	"99c" [shape = "point"]
+	99 -> "99c" [label= "{(Query-1)}"];
+	"99c" -> 6 [ label= "0.01" ];
+	"99c" -> 292 [ label= "0.512533" ];
+	"99c" -> 293 [ label= "0.241204" ];
+	"99c" -> 294 [ label= "0.236263" ];
+	"100c" [shape = "point"]
+	100 -> "100c" [label= "{(Query-0)}"];
+	"100c" -> 6 [ label= "0.01" ];
+	"100c" -> 295 [ label= "0.276796" ];
+	"100c" -> 296 [ label= "0.28389" ];
+	"100c" -> 297 [ label= "0.429314" ];
+	"101c" [shape = "point"]
+	101 -> "101c" [label= "{(Query-2)}"];
+	"101c" -> 6 [ label= "0.01" ];
+	"101c" -> 298 [ label= "0.106985" ];
+	"101c" -> 299 [ label= "0.667227" ];
+	"101c" -> 300 [ label= "0.215788" ];
+	"102c" [shape = "point"]
+	102 -> "102c" [label= "{(Query-0)}"];
+	"102c" -> 6 [ label= "0.01" ];
+	"102c" -> 301 [ label= "0.276796" ];
+	"102c" -> 302 [ label= "0.28389" ];
+	"102c" -> 303 [ label= "0.429314" ];
+	"103c" [shape = "point"]
+	103 -> "103c" [label= "{(Query-2)}"];
+	"103c" -> 6 [ label= "0.01" ];
+	"103c" -> 304 [ label= "0.261961" ];
+	"103c" -> 305 [ label= "0.207947" ];
+	"103c" -> 306 [ label= "0.520091" ];
+	"104c" [shape = "point"]
+	104 -> "104c" [label= "{(Query-0)}"];
+	"104c" -> 6 [ label= "0.01" ];
+	"104c" -> 307 [ label= "0.123323" ];
+	"104c" -> 308 [ label= "0.608421" ];
+	"104c" -> 309 [ label= "0.258257" ];
+	"105c" [shape = "point"]
+	105 -> "105c" [label= "{(Query-2)}"];
+	"105c" -> 6 [ label= "0.01" ];
+	"105c" -> 310 [ label= "0.261961" ];
+	"105c" -> 311 [ label= "0.207947" ];
+	"105c" -> 312 [ label= "0.520091" ];
+	"106c" [shape = "point"]
+	106 -> "106c" [label= "{(Query-0)}"];
+	"106c" -> 6 [ label= "0.01" ];
+	"106c" -> 313 [ label= "0.276796" ];
+	"106c" -> 314 [ label= "0.28389" ];
+	"106c" -> 315 [ label= "0.429314" ];
+	"107c" [shape = "point"]
+	107 -> "107c" [label= "{(Query-2)}"];
+	"107c" -> 6 [ label= "0.01" ];
+	"107c" -> 316 [ label= "0.11382" ];
+	"107c" -> 317 [ label= "0.642622" ];
+	"107c" -> 318 [ label= "0.233557" ];
+	"108c" [shape = "point"]
+	108 -> "108c" [label= "{(Query-0)}"];
+	"108c" -> 6 [ label= "0.01" ];
+	"108c" -> 319 [ label= "0.276796" ];
+	"108c" -> 320 [ label= "0.28389" ];
+	"108c" -> 321 [ label= "0.429314" ];
+	"109c" [shape = "point"]
+	109 -> "109c" [label= "{(Query-2)}"];
+	"109c" -> 6 [ label= "0.01" ];
+	"109c" -> 322 [ label= "0.332763" ];
+	"109c" -> 323 [ label= "0.331878" ];
+	"109c" -> 324 [ label= "0.325359" ];
+	"110c" [shape = "point"]
+	110 -> "110c" [label= "{(Query-1)}"];
+	"110c" -> 6 [ label= "0.01" ];
+	"110c" -> 325 [ label= "0.106536" ];
+	"110c" -> 326 [ label= "0.668842" ];
+	"110c" -> 327 [ label= "0.214622" ];
+	"111c" [shape = "point"]
+	111 -> "111c" [label= "{(Query-2)}"];
+	"111c" -> 6 [ label= "0.01" ];
+	"111c" -> 328 [ label= "0.332763" ];
+	"111c" -> 329 [ label= "0.331878" ];
+	"111c" -> 330 [ label= "0.325359" ];
+	"112c" [shape = "point"]
+	112 -> "112c" [label= "{(Query-0)}"];
+	"112c" -> 6 [ label= "0.01" ];
+	"112c" -> 331 [ label= "0.276796" ];
+	"112c" -> 332 [ label= "0.28389" ];
+	"112c" -> 333 [ label= "0.429314" ];
+	"113c" [shape = "point"]
+	113 -> "113c" [label= "{(Query-2)}"];
+	"113c" -> 6 [ label= "0.01" ];
+	"113c" -> 334 [ label= "0.11382" ];
+	"113c" -> 335 [ label= "0.642622" ];
+	"113c" -> 336 [ label= "0.233557" ];
+	"114c" [shape = "point"]
+	114 -> "114c" [label= "{(Query-0)}"];
+	"114c" -> 6 [ label= "0.01" ];
+	"114c" -> 337 [ label= "0.276796" ];
+	"114c" -> 338 [ label= "0.28389" ];
+	"114c" -> 339 [ label= "0.429314" ];
+	"115c" [shape = "point"]
+	115 -> "115c" [label= "{(Query-1)}"];
+	"115c" -> 6 [ label= "0.01" ];
+	"115c" -> 340 [ label= "0.269687" ];
+	"115c" -> 341 [ label= "0.254046" ];
+	"115c" -> 342 [ label= "0.466266" ];
+	"116c" [shape = "point"]
+	116 -> "116c" [label= "{(Query-0)}"];
+	"116c" -> 6 [ label= "0.01" ];
+	"116c" -> 343 [ label= "0.123323" ];
+	"116c" -> 344 [ label= "0.608421" ];
+	"116c" -> 345 [ label= "0.258257" ];
+	"117c" [shape = "point"]
+	117 -> "117c" [label= "{(Query-1)}"];
+	"117c" -> 6 [ label= "0.01" ];
+	"117c" -> 346 [ label= "0.269687" ];
+	"117c" -> 347 [ label= "0.254046" ];
+	"117c" -> 348 [ label= "0.466266" ];
+	"118c" [shape = "point"]
+	118 -> "118c" [label= "{(Query-0)}"];
+	"118c" -> 6 [ label= "0.01" ];
+	"118c" -> 349 [ label= "0.276796" ];
+	"118c" -> 350 [ label= "0.28389" ];
+	"118c" -> 351 [ label= "0.429314" ];
+	"119c" [shape = "point"]
+	119 -> "119c" [label= "{(Query-2)}"];
+	"119c" -> 6 [ label= "0.01" ];
+	"119c" -> 352 [ label= "0.106985" ];
+	"119c" -> 353 [ label= "0.667227" ];
+	"119c" -> 354 [ label= "0.215788" ];
+	"120c" [shape = "point"]
+	120 -> "120c" [label= "{(Query-0)}"];
+	"120c" -> 6 [ label= "0.01" ];
+	"120c" -> 355 [ label= "0.276796" ];
+	"120c" -> 356 [ label= "0.28389" ];
+	"120c" -> 357 [ label= "0.429314" ];
+	"121c" [shape = "point"]
+	121 -> "121c" [label= "{(Query-1)}"];
+	"121c" -> 6 [ label= "0.01" ];
+	"121c" -> 358 [ label= "0.269687" ];
+	"121c" -> 359 [ label= "0.254046" ];
+	"121c" -> 360 [ label= "0.466266" ];
+	"122c" [shape = "point"]
+	122 -> "122c" [label= "{(Query-0)}"];
+	"122c" -> 6 [ label= "0.01" ];
+	"122c" -> 361 [ label= "0.123323" ];
+	"122c" -> 362 [ label= "0.608421" ];
+	"122c" -> 363 [ label= "0.258257" ];
+	"123c" [shape = "point"]
+	123 -> "123c" [label= "{(Query-1)}"];
+	"123c" -> 6 [ label= "0.01" ];
+	"123c" -> 364 [ label= "0.269687" ];
+	"123c" -> 365 [ label= "0.254046" ];
+	"123c" -> 366 [ label= "0.466266" ];
+	"124c" [shape = "point"]
+	124 -> "124c" [label= "{(Query-2)}"];
+	"124c" -> 6 [ label= "0.01" ];
+	"124c" -> 367 [ label= "0.508061" ];
+	"124c" -> 368 [ label= "0.241547" ];
+	"124c" -> 369 [ label= "0.240392" ];
+	"125c" [shape = "point"]
+	125 -> "125c" [label= "{(Query-1)}"];
+	"125c" -> 6 [ label= "0.01" ];
+	"125c" -> 370 [ label= "0.113766" ];
+	"125c" -> 371 [ label= "0.642819" ];
+	"125c" -> 372 [ label= "0.233415" ];
+	"126c" [shape = "point"]
+	126 -> "126c" [label= "{(Query-2)}"];
+	"126c" -> 6 [ label= "0.01" ];
+	"126c" -> 373 [ label= "0.508061" ];
+	"126c" -> 374 [ label= "0.241547" ];
+	"126c" -> 375 [ label= "0.240392" ];
+	"127c" [shape = "point"]
+	127 -> "127c" [label= "{(Query-1)}"];
+	"127c" -> 6 [ label= "0.01" ];
+	"127c" -> 376 [ label= "0.458282" ];
+	"127c" -> 377 [ label= "0.276591" ];
+	"127c" -> 378 [ label= "0.255127" ];
+	"128c" [shape = "point"]
+	128 -> "128c" [label= "{(Query-0)}"];
+	"128c" -> 6 [ label= "0.01" ];
+	"128c" -> 379 [ label= "0.10696" ];
+	"128c" -> 380 [ label= "0.667318" ];
+	"128c" -> 381 [ label= "0.215723" ];
+	"129c" [shape = "point"]
+	129 -> "129c" [label= "{(Query-0)}"];
+	"129c" -> 6 [ label= "0.01" ];
+	"129c" -> 382 [ label= "0.22867" ];
+	"129c" -> 383 [ label= "0.229233" ];
+	"129c" -> 384 [ label= "0.532097" ];
+	"130c" [shape = "point"]
+	130 -> "130c" [label= "{(Query-0)}"];
+	"130c" -> 6 [ label= "0.01" ];
+	"130c" -> 385 [ label= "0.261623" ];
+	"130c" -> 386 [ label= "0.209166" ];
+	"130c" -> 387 [ label= "0.519211" ];
+	"131c" [shape = "point"]
+	131 -> "131c" [label= "{(Query-1)}"];
+	"131c" -> 6 [ label= "0.01" ];
+	"131c" -> 388 [ label= "0.113766" ];
+	"131c" -> 389 [ label= "0.642819" ];
+	"131c" -> 390 [ label= "0.233415" ];
+	"132c" [shape = "point"]
+	132 -> "132c" [label= "{(Query-0)}"];
+	"132c" -> 6 [ label= "0.01" ];
+	"132c" -> 391 [ label= "0.261623" ];
+	"132c" -> 392 [ label= "0.209166" ];
+	"132c" -> 393 [ label= "0.519211" ];
+	"133c" [shape = "point"]
+	133 -> "133c" [label= "{(Query-1)}"];
+	"133c" -> 6 [ label= "0.01" ];
+	"133c" -> 394 [ label= "0.458282" ];
+	"133c" -> 395 [ label= "0.276591" ];
+	"133c" -> 396 [ label= "0.255127" ];
+	"134c" [shape = "point"]
+	134 -> "134c" [label= "{(Query-0)}"];
+	"134c" -> 6 [ label= "0.01" ];
+	"134c" -> 397 [ label= "0.113007" ];
+	"134c" -> 398 [ label= "0.64555" ];
+	"134c" -> 399 [ label= "0.231443" ];
+	"135c" [shape = "point"]
+	135 -> "135c" [label= "{(Query-1)}"];
+	"135c" -> 6 [ label= "0.01" ];
+	"135c" -> 400 [ label= "0.458282" ];
+	"135c" -> 401 [ label= "0.276591" ];
+	"135c" -> 402 [ label= "0.255127" ];
+	"136c" [shape = "point"]
+	136 -> "136c" [label= "{(Query-0)}"];
+	"136c" -> 6 [ label= "0.01" ];
+	"136c" -> 403 [ label= "0.421436" ];
+	"136c" -> 404 [ label= "0.299347" ];
+	"136c" -> 405 [ label= "0.269217" ];
+	"137c" [shape = "point"]
+	137 -> "137c" [label= "{(Query-2)}"];
+	"137c" -> 6 [ label= "0.01" ];
+	"137c" -> 406 [ label= "0.106535" ];
+	"137c" -> 407 [ label= "0.668847" ];
+	"137c" -> 408 [ label= "0.214619" ];
+	"138c" [shape = "point"]
+	138 -> "138c" [label= "{(Query-2)}"];
+	"138c" -> 6 [ label= "0.01" ];
+	"138c" -> 409 [ label= "0.223832" ];
+	"138c" -> 410 [ label= "0.246648" ];
+	"138c" -> 411 [ label= "0.51952" ];
+	"139c" [shape = "point"]
+	139 -> "139c" [label= "{(Query-2)}"];
+	"139c" -> 6 [ label= "0.01" ];
+	"139c" -> 412 [ label= "0.245325" ];
+	"139c" -> 413 [ label= "0.267827" ];
+	"139c" -> 414 [ label= "0.476848" ];
+	"140c" [shape = "point"]
+	140 -> "140c" [label= "{(Query-0)}"];
+	"140c" -> 6 [ label= "0.01" ];
+	"140c" -> 415 [ label= "0.113007" ];
+	"140c" -> 416 [ label= "0.64555" ];
+	"140c" -> 417 [ label= "0.231443" ];
+	"141c" [shape = "point"]
+	141 -> "141c" [label= "{(Query-2)}"];
+	"141c" -> 6 [ label= "0.01" ];
+	"141c" -> 418 [ label= "0.245325" ];
+	"141c" -> 419 [ label= "0.267827" ];
+	"141c" -> 420 [ label= "0.476848" ];
+	"142c" [shape = "point"]
+	142 -> "142c" [label= "{(Query-2)}"];
+	"142c" -> 6 [ label= "0.01" ];
+	"142c" -> 421 [ label= "0.269527" ];
+	"142c" -> 422 [ label= "0.254622" ];
+	"142c" -> 423 [ label= "0.465851" ];
+	"143c" [shape = "point"]
+	143 -> "143c" [label= "{(Query-1)}"];
+	"143c" -> 6 [ label= "0.01" ];
+	"143c" -> 424 [ label= "0.113766" ];
+	"143c" -> 425 [ label= "0.642819" ];
+	"143c" -> 426 [ label= "0.233415" ];
+	"144c" [shape = "point"]
+	144 -> "144c" [label= "{(Query-2)}"];
+	"144c" -> 6 [ label= "0.01" ];
+	"144c" -> 427 [ label= "0.269527" ];
+	"144c" -> 428 [ label= "0.254622" ];
+	"144c" -> 429 [ label= "0.465851" ];
+	"145c" [shape = "point"]
+	145 -> "145c" [label= "{(Query-2)}"];
+	"145c" -> 6 [ label= "0.01" ];
+	"145c" -> 430 [ label= "0.269527" ];
+	"145c" -> 431 [ label= "0.254622" ];
+	"145c" -> 432 [ label= "0.465851" ];
+	"146c" [shape = "point"]
+	146 -> "146c" [label= "{(Query-0)}"];
+	"146c" -> 6 [ label= "0.01" ];
+	"146c" -> 433 [ label= "0.10696" ];
+	"146c" -> 434 [ label= "0.667318" ];
+	"146c" -> 435 [ label= "0.215723" ];
+	"147c" [shape = "point"]
+	147 -> "147c" [label= "{(Query-2)}"];
+	"147c" -> 6 [ label= "0.01" ];
+	"147c" -> 436 [ label= "0.269527" ];
+	"147c" -> 437 [ label= "0.254622" ];
+	"147c" -> 438 [ label= "0.465851" ];
+	"148c" [shape = "point"]
+	148 -> "148c" [label= "{(Query-2)}"];
+	"148c" -> 6 [ label= "0.01" ];
+	"148c" -> 439 [ label= "0.269527" ];
+	"148c" -> 440 [ label= "0.254622" ];
+	"148c" -> 441 [ label= "0.465851" ];
+	"149c" [shape = "point"]
+	149 -> "149c" [label= "{(Query-1)}"];
+	"149c" -> 6 [ label= "0.01" ];
+	"149c" -> 442 [ label= "0.113766" ];
+	"149c" -> 443 [ label= "0.642819" ];
+	"149c" -> 444 [ label= "0.233415" ];
+	"150c" [shape = "point"]
+	150 -> "150c" [label= "{(Query-2)}"];
+	"150c" -> 6 [ label= "0.01" ];
+	"150c" -> 445 [ label= "0.269527" ];
+	"150c" -> 446 [ label= "0.254622" ];
+	"150c" -> 447 [ label= "0.465851" ];
+	"151c" [shape = "point"]
+	151 -> "151c" [label= "{(Query-1)}"];
+	"151c" -> 6 [ label= "0.01" ];
+	"151c" -> 448 [ label= "0.408126" ];
+	"151c" -> 449 [ label= "0.266189" ];
+	"151c" -> 450 [ label= "0.315685" ];
+	"152c" [shape = "point"]
+	152 -> "152c" [label= "{(Query-0)}"];
+	"152c" -> 6 [ label= "0.01" ];
+	"152c" -> 451 [ label= "0.113007" ];
+	"152c" -> 452 [ label= "0.64555" ];
+	"152c" -> 453 [ label= "0.231443" ];
+	"153c" [shape = "point"]
+	153 -> "153c" [label= "{(Query-1)}"];
+	"153c" -> 6 [ label= "0.01" ];
+	"153c" -> 454 [ label= "0.408126" ];
+	"153c" -> 455 [ label= "0.266189" ];
+	"153c" -> 456 [ label= "0.315685" ];
+	"154c" [shape = "point"]
+	154 -> "154c" [label= "{(Query-0)}"];
+	"154c" -> 6 [ label= "0.01" ];
+	"154c" -> 457 [ label= "0.421436" ];
+	"154c" -> 458 [ label= "0.299347" ];
+	"154c" -> 459 [ label= "0.269217" ];
+	"155c" [shape = "point"]
+	155 -> "155c" [label= "{(Query-2)}"];
+	"155c" -> 6 [ label= "0.01" ];
+	"155c" -> 460 [ label= "0.106976" ];
+	"155c" -> 461 [ label= "0.667258" ];
+	"155c" -> 462 [ label= "0.215766" ];
+	"156c" [shape = "point"]
+	156 -> "156c" [label= "{(Query-0)}"];
+	"156c" -> 6 [ label= "0.01" ];
+	"156c" -> 463 [ label= "0.421436" ];
+	"156c" -> 464 [ label= "0.299347" ];
+	"156c" -> 465 [ label= "0.269217" ];
+	"157c" [shape = "point"]
+	157 -> "157c" [label= "{(Query-1)}"];
+	"157c" -> 6 [ label= "0.01" ];
+	"157c" -> 466 [ label= "0.408126" ];
+	"157c" -> 467 [ label= "0.266189" ];
+	"157c" -> 468 [ label= "0.315685" ];
+	"158c" [shape = "point"]
+	158 -> "158c" [label= "{(Query-0)}"];
+	"158c" -> 6 [ label= "0.01" ];
+	"158c" -> 469 [ label= "0.113007" ];
+	"158c" -> 470 [ label= "0.64555" ];
+	"158c" -> 471 [ label= "0.231443" ];
+	"159c" [shape = "point"]
+	159 -> "159c" [label= "{(Query-1)}"];
+	"159c" -> 6 [ label= "0.01" ];
+	"159c" -> 472 [ label= "0.408126" ];
+	"159c" -> 473 [ label= "0.266189" ];
+	"159c" -> 474 [ label= "0.315685" ];
+	"160c" [shape = "point"]
+	160 -> "160c" [label= "{(Query-0)}"];
+	"160c" -> 6 [ label= "0.01" ];
+	"160c" -> 475 [ label= "0.421436" ];
+	"160c" -> 476 [ label= "0.299347" ];
+	"160c" -> 477 [ label= "0.269217" ];
+	"161c" [shape = "point"]
+	161 -> "161c" [label= "{(Query-2)}"];
+	"161c" -> 6 [ label= "0.01" ];
+	"161c" -> 478 [ label= "0.113775" ];
+	"161c" -> 479 [ label= "0.642785" ];
+	"161c" -> 480 [ label= "0.23344" ];
+	"162c" [shape = "point"]
+	162 -> "162c" [label= "{(Query-0)}"];
+	"162c" -> 6 [ label= "0.01" ];
+	"162c" -> 481 [ label= "0.421436" ];
+	"162c" -> 482 [ label= "0.299347" ];
+	"162c" -> 483 [ label= "0.269217" ];
+	"163c" [shape = "point"]
+	163 -> "163c" [label= "{(Query-2)}"];
+	"163c" -> 6 [ label= "0.01" ];
+	"163c" -> 484 [ label= "0.326032" ];
+	"163c" -> 485 [ label= "0.335319" ];
+	"163c" -> 486 [ label= "0.328649" ];
+	"164c" [shape = "point"]
+	164 -> "164c" [label= "{(Query-1)}"];
+	"164c" -> 6 [ label= "0.01" ];
+	"164c" -> 487 [ label= "0.106507" ];
+	"164c" -> 488 [ label= "0.668947" ];
+	"164c" -> 489 [ label= "0.214546" ];
+	"165c" [shape = "point"]
+	165 -> "165c" [label= "{(Query-2)}"];
+	"165c" -> 6 [ label= "0.01" ];
+	"165c" -> 490 [ label= "0.326032" ];
+	"165c" -> 491 [ label= "0.335319" ];
+	"165c" -> 492 [ label= "0.328649" ];
+	"166c" [shape = "point"]
+	166 -> "166c" [label= "{(Query-1)}"];
+	"166c" -> 6 [ label= "0.01" ];
+	"166c" -> 493 [ label= "0.242026" ];
+	"166c" -> 494 [ label= "0.279704" ];
+	"166c" -> 495 [ label= "0.46827" ];
+	"167c" [shape = "point"]
+	167 -> "167c" [label= "{(Query-2)}"];
+	"167c" -> 6 [ label= "0.01" ];
+	"167c" -> 496 [ label= "0.113775" ];
+	"167c" -> 497 [ label= "0.642785" ];
+	"167c" -> 498 [ label= "0.23344" ];
+	"168c" [shape = "point"]
+	168 -> "168c" [label= "{(Query-1)}"];
+	"168c" -> 6 [ label= "0.01" ];
+	"168c" -> 499 [ label= "0.242026" ];
+	"168c" -> 500 [ label= "0.279704" ];
+	"168c" -> 501 [ label= "0.46827" ];
+	"169c" [shape = "point"]
+	169 -> "169c" [label= "{(Query-0)}"];
+	"169c" -> 6 [ label= "0.01" ];
+	"169c" -> 502 [ label= "0.421436" ];
+	"169c" -> 503 [ label= "0.299347" ];
+	"169c" -> 504 [ label= "0.269217" ];
+	"170c" [shape = "point"]
+	170 -> "170c" [label= "{(Query-1)}"];
+	"170c" -> 6 [ label= "0.01" ];
+	"170c" -> 505 [ label= "0.12264" ];
+	"170c" -> 506 [ label= "0.610878" ];
+	"170c" -> 507 [ label= "0.256483" ];
+	"171c" [shape = "point"]
+	171 -> "171c" [label= "{(Query-0)}"];
+	"171c" -> 6 [ label= "0.01" ];
+	"171c" -> 508 [ label= "0.421436" ];
+	"171c" -> 509 [ label= "0.299347" ];
+	"171c" -> 510 [ label= "0.269217" ];
+	"172c" [shape = "point"]
+	172 -> "172c" [label= "{(Query-1)}"];
+	"172c" -> 6 [ label= "0.01" ];
+	"172c" -> 511 [ label= "0.258796" ];
+	"172c" -> 512 [ label= "0.293248" ];
+	"172c" -> 513 [ label= "0.437956" ];
+	"173c" [shape = "point"]
+	173 -> "173c" [label= "{(Query-2)}"];
+	"173c" -> 6 [ label= "0.01" ];
+	"173c" -> 514 [ label= "0.106976" ];
+	"173c" -> 515 [ label= "0.667258" ];
+	"173c" -> 516 [ label= "0.215766" ];
+	"174c" [shape = "point"]
+	174 -> "174c" [label= "{(Query-1)}"];
+	"174c" -> 6 [ label= "0.01" ];
+	"174c" -> 517 [ label= "0.258796" ];
+	"174c" -> 518 [ label= "0.293248" ];
+	"174c" -> 519 [ label= "0.437956" ];
+	"175c" [shape = "point"]
+	175 -> "175c" [label= "{(Query-0)}"];
+	"175c" -> 6 [ label= "0.01" ];
+	"175c" -> 520 [ label= "0.421436" ];
+	"175c" -> 521 [ label= "0.299347" ];
+	"175c" -> 522 [ label= "0.269217" ];
+	"176c" [shape = "point"]
+	176 -> "176c" [label= "{(Query-1)}"];
+	"176c" -> 6 [ label= "0.01" ];
+	"176c" -> 523 [ label= "0.12264" ];
+	"176c" -> 524 [ label= "0.610878" ];
+	"176c" -> 525 [ label= "0.256483" ];
+	"177c" [shape = "point"]
+	177 -> "177c" [label= "{(Query-0)}"];
+	"177c" -> 6 [ label= "0.01" ];
+	"177c" -> 526 [ label= "0.421436" ];
+	"177c" -> 527 [ label= "0.299347" ];
+	"177c" -> 528 [ label= "0.269217" ];
+	"178c" [shape = "point"]
+	178 -> "178c" [label= "{sched_0}"];
+	"178c" -> 0 [ label= "1" ];
+	"179c" [shape = "point"]
+	179 -> "179c" [label= "{sched_2}"];
+	"179c" -> 0 [ label= "1" ];
+	"180c" [shape = "point"]
+	180 -> "180c" [label= "{sched_3}"];
+	"180c" -> 0 [ label= "1" ];
+	"181c" [shape = "point"]
+	181 -> "181c" [label= "{sched_3}"];
+	"181c" -> 0 [ label= "1" ];
+	"182c" [shape = "point"]
+	182 -> "182c" [label= "{sched_0}"];
+	"182c" -> 0 [ label= "1" ];
+	"183c" [shape = "point"]
+	183 -> "183c" [label= "{sched_2}"];
+	"183c" -> 0 [ label= "1" ];
+	"184c" [shape = "point"]
+	184 -> "184c" [label= "{sched_2}"];
+	"184c" -> 0 [ label= "1" ];
+	"185c" [shape = "point"]
+	185 -> "185c" [label= "{sched_2}"];
+	"185c" -> 0 [ label= "1" ];
+	"186c" [shape = "point"]
+	186 -> "186c" [label= "{sched_0}"];
+	"186c" -> 0 [ label= "1" ];
+	"187c" [shape = "point"]
+	187 -> "187c" [label= "{sched_2}"];
+	"187c" -> 0 [ label= "1" ];
+	"188c" [shape = "point"]
+	188 -> "188c" [label= "{sched_3}"];
+	"188c" -> 0 [ label= "1" ];
+	"189c" [shape = "point"]
+	189 -> "189c" [label= "{sched_0}"];
+	"189c" -> 0 [ label= "1" ];
+	"190c" [shape = "point"]
+	190 -> "190c" [label= "{sched_0}"];
+	"190c" -> 0 [ label= "1" ];
+	"191c" [shape = "point"]
+	191 -> "191c" [label= "{sched_2}"];
+	"191c" -> 0 [ label= "1" ];
+	"192c" [shape = "point"]
+	192 -> "192c" [label= "{sched_0}"];
+	"192c" -> 0 [ label= "1" ];
+	"193c" [shape = "point"]
+	193 -> "193c" [label= "{sched_0}"];
+	"193c" -> 0 [ label= "1" ];
+	"194c" [shape = "point"]
+	194 -> "194c" [label= "{sched_3}"];
+	"194c" -> 0 [ label= "1" ];
+	"195c" [shape = "point"]
+	195 -> "195c" [label= "{sched_0}"];
+	"195c" -> 0 [ label= "1" ];
+	"196c" [shape = "point"]
+	196 -> "196c" [label= "{sched_0}"];
+	"196c" -> 0 [ label= "1" ];
+	"197c" [shape = "point"]
+	197 -> "197c" [label= "{sched_2}"];
+	"197c" -> 0 [ label= "1" ];
+	"198c" [shape = "point"]
+	198 -> "198c" [label= "{sched_3}"];
+	"198c" -> 0 [ label= "1" ];
+	"199c" [shape = "point"]
+	199 -> "199c" [label= "{sched_0}"];
+	"199c" -> 0 [ label= "1" ];
+	"200c" [shape = "point"]
+	200 -> "200c" [label= "{sched_0}"];
+	"200c" -> 0 [ label= "1" ];
+	"201c" [shape = "point"]
+	201 -> "201c" [label= "{sched_2}"];
+	"201c" -> 0 [ label= "1" ];
+	"202c" [shape = "point"]
+	202 -> "202c" [label= "{sched_2}"];
+	"202c" -> 0 [ label= "1" ];
+	"203c" [shape = "point"]
+	203 -> "203c" [label= "{sched_2}"];
+	"203c" -> 0 [ label= "1" ];
+	"204c" [shape = "point"]
+	204 -> "204c" [label= "{sched_0}"];
+	"204c" -> 0 [ label= "1" ];
+	"205c" [shape = "point"]
+	205 -> "205c" [label= "{sched_0}"];
+	"205c" -> 0 [ label= "1" ];
+	"206c" [shape = "point"]
+	206 -> "206c" [label= "{sched_0}"];
+	"206c" -> 0 [ label= "1" ];
+	"207c" [shape = "point"]
+	207 -> "207c" [label= "{sched_2}"];
+	"207c" -> 0 [ label= "1" ];
+	"208c" [shape = "point"]
+	208 -> "208c" [label= "{sched_2}"];
+	"208c" -> 0 [ label= "1" ];
+	"209c" [shape = "point"]
+	209 -> "209c" [label= "{sched_2}"];
+	"209c" -> 0 [ label= "1" ];
+	"210c" [shape = "point"]
+	210 -> "210c" [label= "{sched_0}"];
+	"210c" -> 0 [ label= "1" ];
+	"211c" [shape = "point"]
+	211 -> "211c" [label= "{sched_0}"];
+	"211c" -> 0 [ label= "1" ];
+	"212c" [shape = "point"]
+	212 -> "212c" [label= "{sched_0}"];
+	"212c" -> 0 [ label= "1" ];
+	"213c" [shape = "point"]
+	213 -> "213c" [label= "{sched_2}"];
+	"213c" -> 0 [ label= "1" ];
+	"214c" [shape = "point"]
+	214 -> "214c" [label= "{sched_2}"];
+	"214c" -> 0 [ label= "1" ];
+	"215c" [shape = "point"]
+	215 -> "215c" [label= "{sched_2}"];
+	"215c" -> 0 [ label= "1" ];
+	"216c" [shape = "point"]
+	216 -> "216c" [label= "{sched_0}"];
+	"216c" -> 0 [ label= "1" ];
+	"217c" [shape = "point"]
+	217 -> "217c" [label= "{sched_2}"];
+	"217c" -> 0 [ label= "1" ];
+	"218c" [shape = "point"]
+	218 -> "218c" [label= "{sched_2}"];
+	"218c" -> 0 [ label= "1" ];
+	"219c" [shape = "point"]
+	219 -> "219c" [label= "{sched_3}"];
+	"219c" -> 0 [ label= "1" ];
+	"220c" [shape = "point"]
+	220 -> "220c" [label= "{sched_0}"];
+	"220c" -> 0 [ label= "1" ];
+	"221c" [shape = "point"]
+	221 -> "221c" [label= "{sched_2}"];
+	"221c" -> 0 [ label= "1" ];
+	"222c" [shape = "point"]
+	222 -> "222c" [label= "{sched_0}"];
+	"222c" -> 0 [ label= "1" ];
+	"223c" [shape = "point"]
+	223 -> "223c" [label= "{sched_0}"];
+	"223c" -> 0 [ label= "1" ];
+	"224c" [shape = "point"]
+	224 -> "224c" [label= "{sched_0}"];
+	"224c" -> 0 [ label= "1" ];
+	"225c" [shape = "point"]
+	225 -> "225c" [label= "{sched_2}"];
+	"225c" -> 0 [ label= "1" ];
+	"226c" [shape = "point"]
+	226 -> "226c" [label= "{sched_0}"];
+	"226c" -> 0 [ label= "1" ];
+	"227c" [shape = "point"]
+	227 -> "227c" [label= "{sched_2}"];
+	"227c" -> 0 [ label= "1" ];
+	"228c" [shape = "point"]
+	228 -> "228c" [label= "{sched_0}"];
+	"228c" -> 0 [ label= "1" ];
+	"229c" [shape = "point"]
+	229 -> "229c" [label= "{sched_0}"];
+	"229c" -> 0 [ label= "1" ];
+	"230c" [shape = "point"]
+	230 -> "230c" [label= "{sched_0}"];
+	"230c" -> 0 [ label= "1" ];
+	"231c" [shape = "point"]
+	231 -> "231c" [label= "{sched_2}"];
+	"231c" -> 0 [ label= "1" ];
+	"232c" [shape = "point"]
+	232 -> "232c" [label= "{sched_2}"];
+	"232c" -> 0 [ label= "1" ];
+	"233c" [shape = "point"]
+	233 -> "233c" [label= "{sched_2}"];
+	"233c" -> 0 [ label= "1" ];
+	"234c" [shape = "point"]
+	234 -> "234c" [label= "{sched_0}"];
+	"234c" -> 0 [ label= "1" ];
+	"235c" [shape = "point"]
+	235 -> "235c" [label= "{sched_2}"];
+	"235c" -> 0 [ label= "1" ];
+	"236c" [shape = "point"]
+	236 -> "236c" [label= "{sched_2}"];
+	"236c" -> 0 [ label= "1" ];
+	"237c" [shape = "point"]
+	237 -> "237c" [label= "{sched_2}"];
+	"237c" -> 0 [ label= "1" ];
+	"238c" [shape = "point"]
+	238 -> "238c" [label= "{sched_0}"];
+	"238c" -> 0 [ label= "1" ];
+	"239c" [shape = "point"]
+	239 -> "239c" [label= "{sched_2}"];
+	"239c" -> 0 [ label= "1" ];
+	"240c" [shape = "point"]
+	240 -> "240c" [label= "{sched_0}"];
+	"240c" -> 0 [ label= "1" ];
+	"241c" [shape = "point"]
+	241 -> "241c" [label= "{sched_0}"];
+	"241c" -> 0 [ label= "1" ];
+	"242c" [shape = "point"]
+	242 -> "242c" [label= "{sched_2}"];
+	"242c" -> 0 [ label= "1" ];
+	"243c" [shape = "point"]
+	243 -> "243c" [label= "{sched_0}"];
+	"243c" -> 0 [ label= "1" ];
+	"244c" [shape = "point"]
+	244 -> "244c" [label= "{sched_3}"];
+	"244c" -> 0 [ label= "1" ];
+	"245c" [shape = "point"]
+	245 -> "245c" [label= "{sched_0}"];
+	"245c" -> 0 [ label= "1" ];
+	"246c" [shape = "point"]
+	246 -> "246c" [label= "{sched_2}"];
+	"246c" -> 0 [ label= "1" ];
+	"247c" [shape = "point"]
+	247 -> "247c" [label= "{sched_2}"];
+	"247c" -> 0 [ label= "1" ];
+	"248c" [shape = "point"]
+	248 -> "248c" [label= "{sched_2}"];
+	"248c" -> 0 [ label= "1" ];
+	"249c" [shape = "point"]
+	249 -> "249c" [label= "{sched_0}"];
+	"249c" -> 0 [ label= "1" ];
+	"250c" [shape = "point"]
+	250 -> "250c" [label= "{sched_2}"];
+	"250c" -> 0 [ label= "1" ];
+	"251c" [shape = "point"]
+	251 -> "251c" [label= "{sched_2}"];
+	"251c" -> 0 [ label= "1" ];
+	"252c" [shape = "point"]
+	252 -> "252c" [label= "{sched_0}"];
+	"252c" -> 0 [ label= "1" ];
+	"253c" [shape = "point"]
+	253 -> "253c" [label= "{sched_2}"];
+	"253c" -> 0 [ label= "1" ];
+	"254c" [shape = "point"]
+	254 -> "254c" [label= "{sched_2}"];
+	"254c" -> 0 [ label= "1" ];
+	"255c" [shape = "point"]
+	255 -> "255c" [label= "{sched_0}"];
+	"255c" -> 0 [ label= "1" ];
+	"256c" [shape = "point"]
+	256 -> "256c" [label= "{sched_2}"];
+	"256c" -> 0 [ label= "1" ];
+	"257c" [shape = "point"]
+	257 -> "257c" [label= "{sched_2}"];
+	"257c" -> 0 [ label= "1" ];
+	"258c" [shape = "point"]
+	258 -> "258c" [label= "{sched_0}"];
+	"258c" -> 0 [ label= "1" ];
+	"259c" [shape = "point"]
+	259 -> "259c" [label= "{sched_3}"];
+	"259c" -> 0 [ label= "1" ];
+	"260c" [shape = "point"]
+	260 -> "260c" [label= "{sched_0}"];
+	"260c" -> 0 [ label= "1" ];
+	"261c" [shape = "point"]
+	261 -> "261c" [label= "{sched_2}"];
+	"261c" -> 0 [ label= "1" ];
+	"262c" [shape = "point"]
+	262 -> "262c" [label= "{sched_2}"];
+	"262c" -> 0 [ label= "1" ];
+	"263c" [shape = "point"]
+	263 -> "263c" [label= "{sched_2}"];
+	"263c" -> 0 [ label= "1" ];
+	"264c" [shape = "point"]
+	264 -> "264c" [label= "{sched_0}"];
+	"264c" -> 0 [ label= "1" ];
+	"265c" [shape = "point"]
+	265 -> "265c" [label= "{sched_3}"];
+	"265c" -> 0 [ label= "1" ];
+	"266c" [shape = "point"]
+	266 -> "266c" [label= "{sched_0}"];
+	"266c" -> 0 [ label= "1" ];
+	"267c" [shape = "point"]
+	267 -> "267c" [label= "{sched_2}"];
+	"267c" -> 0 [ label= "1" ];
+	"268c" [shape = "point"]
+	268 -> "268c" [label= "{sched_2}"];
+	"268c" -> 0 [ label= "1" ];
+	"269c" [shape = "point"]
+	269 -> "269c" [label= "{sched_2}"];
+	"269c" -> 0 [ label= "1" ];
+	"270c" [shape = "point"]
+	270 -> "270c" [label= "{sched_0}"];
+	"270c" -> 0 [ label= "1" ];
+	"271c" [shape = "point"]
+	271 -> "271c" [label= "{sched_2}"];
+	"271c" -> 0 [ label= "1" ];
+	"272c" [shape = "point"]
+	272 -> "272c" [label= "{sched_2}"];
+	"272c" -> 0 [ label= "1" ];
+	"273c" [shape = "point"]
+	273 -> "273c" [label= "{sched_0}"];
+	"273c" -> 0 [ label= "1" ];
+	"274c" [shape = "point"]
+	274 -> "274c" [label= "{sched_2}"];
+	"274c" -> 0 [ label= "1" ];
+	"275c" [shape = "point"]
+	275 -> "275c" [label= "{sched_2}"];
+	"275c" -> 0 [ label= "1" ];
+	"276c" [shape = "point"]
+	276 -> "276c" [label= "{sched_0}"];
+	"276c" -> 0 [ label= "1" ];
+	"277c" [shape = "point"]
+	277 -> "277c" [label= "{sched_3}"];
+	"277c" -> 0 [ label= "1" ];
+	"278c" [shape = "point"]
+	278 -> "278c" [label= "{sched_0}"];
+	"278c" -> 0 [ label= "1" ];
+	"279c" [shape = "point"]
+	279 -> "279c" [label= "{sched_2}"];
+	"279c" -> 0 [ label= "1" ];
+	"280c" [shape = "point"]
+	280 -> "280c" [label= "{sched_0}"];
+	"280c" -> 0 [ label= "1" ];
+	"281c" [shape = "point"]
+	281 -> "281c" [label= "{sched_2}"];
+	"281c" -> 0 [ label= "1" ];
+	"282c" [shape = "point"]
+	282 -> "282c" [label= "{sched_0}"];
+	"282c" -> 0 [ label= "1" ];
+	"283c" [shape = "point"]
+	283 -> "283c" [label= "{sched_0}"];
+	"283c" -> 0 [ label= "1" ];
+	"284c" [shape = "point"]
+	284 -> "284c" [label= "{sched_0}"];
+	"284c" -> 0 [ label= "1" ];
+	"285c" [shape = "point"]
+	285 -> "285c" [label= "{sched_2}"];
+	"285c" -> 0 [ label= "1" ];
+	"286c" [shape = "point"]
+	286 -> "286c" [label= "{sched_2}"];
+	"286c" -> 0 [ label= "1" ];
+	"287c" [shape = "point"]
+	287 -> "287c" [label= "{sched_2}"];
+	"287c" -> 0 [ label= "1" ];
+	"288c" [shape = "point"]
+	288 -> "288c" [label= "{sched_2}"];
+	"288c" -> 0 [ label= "1" ];
+	"289c" [shape = "point"]
+	289 -> "289c" [label= "{sched_3}"];
+	"289c" -> 0 [ label= "1" ];
+	"290c" [shape = "point"]
+	290 -> "290c" [label= "{sched_0}"];
+	"290c" -> 0 [ label= "1" ];
+	"291c" [shape = "point"]
+	291 -> "291c" [label= "{sched_2}"];
+	"291c" -> 0 [ label= "1" ];
+	"292c" [shape = "point"]
+	292 -> "292c" [label= "{sched_2}"];
+	"292c" -> 0 [ label= "1" ];
+	"293c" [shape = "point"]
+	293 -> "293c" [label= "{sched_2}"];
+	"293c" -> 0 [ label= "1" ];
+	"294c" [shape = "point"]
+	294 -> "294c" [label= "{sched_2}"];
+	"294c" -> 0 [ label= "1" ];
+	"295c" [shape = "point"]
+	295 -> "295c" [label= "{sched_3}"];
+	"295c" -> 0 [ label= "1" ];
+	"296c" [shape = "point"]
+	296 -> "296c" [label= "{sched_0}"];
+	"296c" -> 0 [ label= "1" ];
+	"297c" [shape = "point"]
+	297 -> "297c" [label= "{sched_2}"];
+	"297c" -> 0 [ label= "1" ];
+	"298c" [shape = "point"]
+	298 -> "298c" [label= "{sched_2}"];
+	"298c" -> 0 [ label= "1" ];
+	"299c" [shape = "point"]
+	299 -> "299c" [label= "{sched_2}"];
+	"299c" -> 0 [ label= "1" ];
+	"300c" [shape = "point"]
+	300 -> "300c" [label= "{sched_0}"];
+	"300c" -> 0 [ label= "1" ];
+	"301c" [shape = "point"]
+	301 -> "301c" [label= "{sched_3}"];
+	"301c" -> 0 [ label= "1" ];
+	"302c" [shape = "point"]
+	302 -> "302c" [label= "{sched_0}"];
+	"302c" -> 0 [ label= "1" ];
+	"303c" [shape = "point"]
+	303 -> "303c" [label= "{sched_2}"];
+	"303c" -> 0 [ label= "1" ];
+	"304c" [shape = "point"]
+	304 -> "304c" [label= "{sched_0}"];
+	"304c" -> 0 [ label= "1" ];
+	"305c" [shape = "point"]
+	305 -> "305c" [label= "{sched_2}"];
+	"305c" -> 0 [ label= "1" ];
+	"306c" [shape = "point"]
+	306 -> "306c" [label= "{sched_0}"];
+	"306c" -> 0 [ label= "1" ];
+	"307c" [shape = "point"]
+	307 -> "307c" [label= "{sched_3}"];
+	"307c" -> 0 [ label= "1" ];
+	"308c" [shape = "point"]
+	308 -> "308c" [label= "{sched_0}"];
+	"308c" -> 0 [ label= "1" ];
+	"309c" [shape = "point"]
+	309 -> "309c" [label= "{sched_2}"];
+	"309c" -> 0 [ label= "1" ];
+	"310c" [shape = "point"]
+	310 -> "310c" [label= "{sched_2}"];
+	"310c" -> 0 [ label= "1" ];
+	"311c" [shape = "point"]
+	311 -> "311c" [label= "{sched_2}"];
+	"311c" -> 0 [ label= "1" ];
+	"312c" [shape = "point"]
+	312 -> "312c" [label= "{sched_0}"];
+	"312c" -> 0 [ label= "1" ];
+	"313c" [shape = "point"]
+	313 -> "313c" [label= "{sched_3}"];
+	"313c" -> 0 [ label= "1" ];
+	"314c" [shape = "point"]
+	314 -> "314c" [label= "{sched_0}"];
+	"314c" -> 0 [ label= "1" ];
+	"315c" [shape = "point"]
+	315 -> "315c" [label= "{sched_2}"];
+	"315c" -> 0 [ label= "1" ];
+	"316c" [shape = "point"]
+	316 -> "316c" [label= "{sched_2}"];
+	"316c" -> 0 [ label= "1" ];
+	"317c" [shape = "point"]
+	317 -> "317c" [label= "{sched_2}"];
+	"317c" -> 0 [ label= "1" ];
+	"318c" [shape = "point"]
+	318 -> "318c" [label= "{sched_0}"];
+	"318c" -> 0 [ label= "1" ];
+	"319c" [shape = "point"]
+	319 -> "319c" [label= "{sched_0}"];
+	"319c" -> 0 [ label= "1" ];
+	"320c" [shape = "point"]
+	320 -> "320c" [label= "{sched_0}"];
+	"320c" -> 0 [ label= "1" ];
+	"321c" [shape = "point"]
+	321 -> "321c" [label= "{sched_2}"];
+	"321c" -> 0 [ label= "1" ];
+	"322c" [shape = "point"]
+	322 -> "322c" [label= "{sched_2}"];
+	"322c" -> 0 [ label= "1" ];
+	"323c" [shape = "point"]
+	323 -> "323c" [label= "{sched_2}"];
+	"323c" -> 0 [ label= "1" ];
+	"324c" [shape = "point"]
+	324 -> "324c" [label= "{sched_0}"];
+	"324c" -> 0 [ label= "1" ];
+	"325c" [shape = "point"]
+	325 -> "325c" [label= "{sched_2}"];
+	"325c" -> 0 [ label= "1" ];
+	"326c" [shape = "point"]
+	326 -> "326c" [label= "{sched_2}"];
+	"326c" -> 0 [ label= "1" ];
+	"327c" [shape = "point"]
+	327 -> "327c" [label= "{sched_2}"];
+	"327c" -> 0 [ label= "1" ];
+	"328c" [shape = "point"]
+	328 -> "328c" [label= "{sched_2}"];
+	"328c" -> 0 [ label= "1" ];
+	"329c" [shape = "point"]
+	329 -> "329c" [label= "{sched_2}"];
+	"329c" -> 0 [ label= "1" ];
+	"330c" [shape = "point"]
+	330 -> "330c" [label= "{sched_0}"];
+	"330c" -> 0 [ label= "1" ];
+	"331c" [shape = "point"]
+	331 -> "331c" [label= "{sched_3}"];
+	"331c" -> 0 [ label= "1" ];
+	"332c" [shape = "point"]
+	332 -> "332c" [label= "{sched_0}"];
+	"332c" -> 0 [ label= "1" ];
+	"333c" [shape = "point"]
+	333 -> "333c" [label= "{sched_2}"];
+	"333c" -> 0 [ label= "1" ];
+	"334c" [shape = "point"]
+	334 -> "334c" [label= "{sched_0}"];
+	"334c" -> 0 [ label= "1" ];
+	"335c" [shape = "point"]
+	335 -> "335c" [label= "{sched_2}"];
+	"335c" -> 0 [ label= "1" ];
+	"336c" [shape = "point"]
+	336 -> "336c" [label= "{sched_0}"];
+	"336c" -> 0 [ label= "1" ];
+	"337c" [shape = "point"]
+	337 -> "337c" [label= "{sched_0}"];
+	"337c" -> 0 [ label= "1" ];
+	"338c" [shape = "point"]
+	338 -> "338c" [label= "{sched_0}"];
+	"338c" -> 0 [ label= "1" ];
+	"339c" [shape = "point"]
+	339 -> "339c" [label= "{sched_2}"];
+	"339c" -> 0 [ label= "1" ];
+	"340c" [shape = "point"]
+	340 -> "340c" [label= "{sched_2}"];
+	"340c" -> 0 [ label= "1" ];
+	"341c" [shape = "point"]
+	341 -> "341c" [label= "{sched_2}"];
+	"341c" -> 0 [ label= "1" ];
+	"342c" [shape = "point"]
+	342 -> "342c" [label= "{sched_3}"];
+	"342c" -> 0 [ label= "1" ];
+	"343c" [shape = "point"]
+	343 -> "343c" [label= "{sched_3}"];
+	"343c" -> 0 [ label= "1" ];
+	"344c" [shape = "point"]
+	344 -> "344c" [label= "{sched_0}"];
+	"344c" -> 0 [ label= "1" ];
+	"345c" [shape = "point"]
+	345 -> "345c" [label= "{sched_2}"];
+	"345c" -> 0 [ label= "1" ];
+	"346c" [shape = "point"]
+	346 -> "346c" [label= "{sched_2}"];
+	"346c" -> 0 [ label= "1" ];
+	"347c" [shape = "point"]
+	347 -> "347c" [label= "{sched_2}"];
+	"347c" -> 0 [ label= "1" ];
+	"348c" [shape = "point"]
+	348 -> "348c" [label= "{sched_2}"];
+	"348c" -> 0 [ label= "1" ];
+	"349c" [shape = "point"]
+	349 -> "349c" [label= "{sched_3}"];
+	"349c" -> 0 [ label= "1" ];
+	"350c" [shape = "point"]
+	350 -> "350c" [label= "{sched_0}"];
+	"350c" -> 0 [ label= "1" ];
+	"351c" [shape = "point"]
+	351 -> "351c" [label= "{sched_2}"];
+	"351c" -> 0 [ label= "1" ];
+	"352c" [shape = "point"]
+	352 -> "352c" [label= "{sched_2}"];
+	"352c" -> 0 [ label= "1" ];
+	"353c" [shape = "point"]
+	353 -> "353c" [label= "{sched_2}"];
+	"353c" -> 0 [ label= "1" ];
+	"354c" [shape = "point"]
+	354 -> "354c" [label= "{sched_0}"];
+	"354c" -> 0 [ label= "1" ];
+	"355c" [shape = "point"]
+	355 -> "355c" [label= "{sched_3}"];
+	"355c" -> 0 [ label= "1" ];
+	"356c" [shape = "point"]
+	356 -> "356c" [label= "{sched_0}"];
+	"356c" -> 0 [ label= "1" ];
+	"357c" [shape = "point"]
+	357 -> "357c" [label= "{sched_2}"];
+	"357c" -> 0 [ label= "1" ];
+	"358c" [shape = "point"]
+	358 -> "358c" [label= "{sched_0}"];
+	"358c" -> 0 [ label= "1" ];
+	"359c" [shape = "point"]
+	359 -> "359c" [label= "{sched_2}"];
+	"359c" -> 0 [ label= "1" ];
+	"360c" [shape = "point"]
+	360 -> "360c" [label= "{sched_3}"];
+	"360c" -> 0 [ label= "1" ];
+	"361c" [shape = "point"]
+	361 -> "361c" [label= "{sched_3}"];
+	"361c" -> 0 [ label= "1" ];
+	"362c" [shape = "point"]
+	362 -> "362c" [label= "{sched_0}"];
+	"362c" -> 0 [ label= "1" ];
+	"363c" [shape = "point"]
+	363 -> "363c" [label= "{sched_2}"];
+	"363c" -> 0 [ label= "1" ];
+	"364c" [shape = "point"]
+	364 -> "364c" [label= "{sched_2}"];
+	"364c" -> 0 [ label= "1" ];
+	"365c" [shape = "point"]
+	365 -> "365c" [label= "{sched_2}"];
+	"365c" -> 0 [ label= "1" ];
+	"366c" [shape = "point"]
+	366 -> "366c" [label= "{sched_2}"];
+	"366c" -> 0 [ label= "1" ];
+	"367c" [shape = "point"]
+	367 -> "367c" [label= "{sched_2}"];
+	"367c" -> 0 [ label= "1" ];
+	"368c" [shape = "point"]
+	368 -> "368c" [label= "{sched_2}"];
+	"368c" -> 0 [ label= "1" ];
+	"369c" [shape = "point"]
+	369 -> "369c" [label= "{sched_0}"];
+	"369c" -> 0 [ label= "1" ];
+	"370c" [shape = "point"]
+	370 -> "370c" [label= "{sched_0}"];
+	"370c" -> 0 [ label= "1" ];
+	"371c" [shape = "point"]
+	371 -> "371c" [label= "{sched_2}"];
+	"371c" -> 0 [ label= "1" ];
+	"372c" [shape = "point"]
+	372 -> "372c" [label= "{sched_3}"];
+	"372c" -> 0 [ label= "1" ];
+	"373c" [shape = "point"]
+	373 -> "373c" [label= "{sched_0}"];
+	"373c" -> 0 [ label= "1" ];
+	"374c" [shape = "point"]
+	374 -> "374c" [label= "{sched_2}"];
+	"374c" -> 0 [ label= "1" ];
+	"375c" [shape = "point"]
+	375 -> "375c" [label= "{sched_0}"];
+	"375c" -> 0 [ label= "1" ];
+	"376c" [shape = "point"]
+	376 -> "376c" [label= "{sched_2}"];
+	"376c" -> 0 [ label= "1" ];
+	"377c" [shape = "point"]
+	377 -> "377c" [label= "{sched_2}"];
+	"377c" -> 0 [ label= "1" ];
+	"378c" [shape = "point"]
+	378 -> "378c" [label= "{sched_3}"];
+	"378c" -> 0 [ label= "1" ];
+	"379c" [shape = "point"]
+	379 -> "379c" [label= "{sched_3}"];
+	"379c" -> 0 [ label= "1" ];
+	"380c" [shape = "point"]
+	380 -> "380c" [label= "{sched_0}"];
+	"380c" -> 0 [ label= "1" ];
+	"381c" [shape = "point"]
+	381 -> "381c" [label= "{sched_2}"];
+	"381c" -> 0 [ label= "1" ];
+	"382c" [shape = "point"]
+	382 -> "382c" [label= "{sched_3}"];
+	"382c" -> 0 [ label= "1" ];
+	"383c" [shape = "point"]
+	383 -> "383c" [label= "{sched_0}"];
+	"383c" -> 0 [ label= "1" ];
+	"384c" [shape = "point"]
+	384 -> "384c" [label= "{sched_2}"];
+	"384c" -> 0 [ label= "1" ];
+	"385c" [shape = "point"]
+	385 -> "385c" [label= "{sched_3}"];
+	"385c" -> 0 [ label= "1" ];
+	"386c" [shape = "point"]
+	386 -> "386c" [label= "{sched_0}"];
+	"386c" -> 0 [ label= "1" ];
+	"387c" [shape = "point"]
+	387 -> "387c" [label= "{sched_2}"];
+	"387c" -> 0 [ label= "1" ];
+	"388c" [shape = "point"]
+	388 -> "388c" [label= "{sched_2}"];
+	"388c" -> 0 [ label= "1" ];
+	"389c" [shape = "point"]
+	389 -> "389c" [label= "{sched_2}"];
+	"389c" -> 0 [ label= "1" ];
+	"390c" [shape = "point"]
+	390 -> "390c" [label= "{sched_2}"];
+	"390c" -> 0 [ label= "1" ];
+	"391c" [shape = "point"]
+	391 -> "391c" [label= "{sched_3}"];
+	"391c" -> 0 [ label= "1" ];
+	"392c" [shape = "point"]
+	392 -> "392c" [label= "{sched_0}"];
+	"392c" -> 0 [ label= "1" ];
+	"393c" [shape = "point"]
+	393 -> "393c" [label= "{sched_2}"];
+	"393c" -> 0 [ label= "1" ];
+	"394c" [shape = "point"]
+	394 -> "394c" [label= "{sched_0}"];
+	"394c" -> 0 [ label= "1" ];
+	"395c" [shape = "point"]
+	395 -> "395c" [label= "{sched_2}"];
+	"395c" -> 0 [ label= "1" ];
+	"396c" [shape = "point"]
+	396 -> "396c" [label= "{sched_3}"];
+	"396c" -> 0 [ label= "1" ];
+	"397c" [shape = "point"]
+	397 -> "397c" [label= "{sched_3}"];
+	"397c" -> 0 [ label= "1" ];
+	"398c" [shape = "point"]
+	398 -> "398c" [label= "{sched_0}"];
+	"398c" -> 0 [ label= "1" ];
+	"399c" [shape = "point"]
+	399 -> "399c" [label= "{sched_2}"];
+	"399c" -> 0 [ label= "1" ];
+	"400c" [shape = "point"]
+	400 -> "400c" [label= "{sched_2}"];
+	"400c" -> 0 [ label= "1" ];
+	"401c" [shape = "point"]
+	401 -> "401c" [label= "{sched_2}"];
+	"401c" -> 0 [ label= "1" ];
+	"402c" [shape = "point"]
+	402 -> "402c" [label= "{sched_2}"];
+	"402c" -> 0 [ label= "1" ];
+	"403c" [shape = "point"]
+	403 -> "403c" [label= "{sched_0}"];
+	"403c" -> 0 [ label= "1" ];
+	"404c" [shape = "point"]
+	404 -> "404c" [label= "{sched_0}"];
+	"404c" -> 0 [ label= "1" ];
+	"405c" [shape = "point"]
+	405 -> "405c" [label= "{sched_2}"];
+	"405c" -> 0 [ label= "1" ];
+	"406c" [shape = "point"]
+	406 -> "406c" [label= "{sched_0}"];
+	"406c" -> 0 [ label= "1" ];
+	"407c" [shape = "point"]
+	407 -> "407c" [label= "{sched_2}"];
+	"407c" -> 0 [ label= "1" ];
+	"408c" [shape = "point"]
+	408 -> "408c" [label= "{sched_0}"];
+	"408c" -> 0 [ label= "1" ];
+	"409c" [shape = "point"]
+	409 -> "409c" [label= "{sched_0}"];
+	"409c" -> 0 [ label= "1" ];
+	"410c" [shape = "point"]
+	410 -> "410c" [label= "{sched_2}"];
+	"410c" -> 0 [ label= "1" ];
+	"411c" [shape = "point"]
+	411 -> "411c" [label= "{sched_0}"];
+	"411c" -> 0 [ label= "1" ];
+	"412c" [shape = "point"]
+	412 -> "412c" [label= "{sched_0}"];
+	"412c" -> 0 [ label= "1" ];
+	"413c" [shape = "point"]
+	413 -> "413c" [label= "{sched_2}"];
+	"413c" -> 0 [ label= "1" ];
+	"414c" [shape = "point"]
+	414 -> "414c" [label= "{sched_3}"];
+	"414c" -> 0 [ label= "1" ];
+	"415c" [shape = "point"]
+	415 -> "415c" [label= "{sched_3}"];
+	"415c" -> 0 [ label= "1" ];
+	"416c" [shape = "point"]
+	416 -> "416c" [label= "{sched_0}"];
+	"416c" -> 0 [ label= "1" ];
+	"417c" [shape = "point"]
+	417 -> "417c" [label= "{sched_2}"];
+	"417c" -> 0 [ label= "1" ];
+	"418c" [shape = "point"]
+	418 -> "418c" [label= "{sched_2}"];
+	"418c" -> 0 [ label= "1" ];
+	"419c" [shape = "point"]
+	419 -> "419c" [label= "{sched_2}"];
+	"419c" -> 0 [ label= "1" ];
+	"420c" [shape = "point"]
+	420 -> "420c" [label= "{sched_0}"];
+	"420c" -> 0 [ label= "1" ];
+	"421c" [shape = "point"]
+	421 -> "421c" [label= "{sched_0}"];
+	"421c" -> 0 [ label= "1" ];
+	"422c" [shape = "point"]
+	422 -> "422c" [label= "{sched_2}"];
+	"422c" -> 0 [ label= "1" ];
+	"423c" [shape = "point"]
+	423 -> "423c" [label= "{sched_0}"];
+	"423c" -> 0 [ label= "1" ];
+	"424c" [shape = "point"]
+	424 -> "424c" [label= "{sched_0}"];
+	"424c" -> 0 [ label= "1" ];
+	"425c" [shape = "point"]
+	425 -> "425c" [label= "{sched_2}"];
+	"425c" -> 0 [ label= "1" ];
+	"426c" [shape = "point"]
+	426 -> "426c" [label= "{sched_3}"];
+	"426c" -> 0 [ label= "1" ];
+	"427c" [shape = "point"]
+	427 -> "427c" [label= "{sched_0}"];
+	"427c" -> 0 [ label= "1" ];
+	"428c" [shape = "point"]
+	428 -> "428c" [label= "{sched_2}"];
+	"428c" -> 0 [ label= "1" ];
+	"429c" [shape = "point"]
+	429 -> "429c" [label= "{sched_0}"];
+	"429c" -> 0 [ label= "1" ];
+	"430c" [shape = "point"]
+	430 -> "430c" [label= "{sched_0}"];
+	"430c" -> 0 [ label= "1" ];
+	"431c" [shape = "point"]
+	431 -> "431c" [label= "{sched_2}"];
+	"431c" -> 0 [ label= "1" ];
+	"432c" [shape = "point"]
+	432 -> "432c" [label= "{sched_0}"];
+	"432c" -> 0 [ label= "1" ];
+	"433c" [shape = "point"]
+	433 -> "433c" [label= "{sched_3}"];
+	"433c" -> 0 [ label= "1" ];
+	"434c" [shape = "point"]
+	434 -> "434c" [label= "{sched_0}"];
+	"434c" -> 0 [ label= "1" ];
+	"435c" [shape = "point"]
+	435 -> "435c" [label= "{sched_2}"];
+	"435c" -> 0 [ label= "1" ];
+	"436c" [shape = "point"]
+	436 -> "436c" [label= "{sched_2}"];
+	"436c" -> 0 [ label= "1" ];
+	"437c" [shape = "point"]
+	437 -> "437c" [label= "{sched_2}"];
+	"437c" -> 0 [ label= "1" ];
+	"438c" [shape = "point"]
+	438 -> "438c" [label= "{sched_0}"];
+	"438c" -> 0 [ label= "1" ];
+	"439c" [shape = "point"]
+	439 -> "439c" [label= "{sched_2}"];
+	"439c" -> 0 [ label= "1" ];
+	"440c" [shape = "point"]
+	440 -> "440c" [label= "{sched_2}"];
+	"440c" -> 0 [ label= "1" ];
+	"441c" [shape = "point"]
+	441 -> "441c" [label= "{sched_0}"];
+	"441c" -> 0 [ label= "1" ];
+	"442c" [shape = "point"]
+	442 -> "442c" [label= "{sched_2}"];
+	"442c" -> 0 [ label= "1" ];
+	"443c" [shape = "point"]
+	443 -> "443c" [label= "{sched_2}"];
+	"443c" -> 0 [ label= "1" ];
+	"444c" [shape = "point"]
+	444 -> "444c" [label= "{sched_2}"];
+	"444c" -> 0 [ label= "1" ];
+	"445c" [shape = "point"]
+	445 -> "445c" [label= "{sched_2}"];
+	"445c" -> 0 [ label= "1" ];
+	"446c" [shape = "point"]
+	446 -> "446c" [label= "{sched_2}"];
+	"446c" -> 0 [ label= "1" ];
+	"447c" [shape = "point"]
+	447 -> "447c" [label= "{sched_0}"];
+	"447c" -> 0 [ label= "1" ];
+	"448c" [shape = "point"]
+	448 -> "448c" [label= "{sched_0}"];
+	"448c" -> 0 [ label= "1" ];
+	"449c" [shape = "point"]
+	449 -> "449c" [label= "{sched_2}"];
+	"449c" -> 0 [ label= "1" ];
+	"450c" [shape = "point"]
+	450 -> "450c" [label= "{sched_3}"];
+	"450c" -> 0 [ label= "1" ];
+	"451c" [shape = "point"]
+	451 -> "451c" [label= "{sched_3}"];
+	"451c" -> 0 [ label= "1" ];
+	"452c" [shape = "point"]
+	452 -> "452c" [label= "{sched_0}"];
+	"452c" -> 0 [ label= "1" ];
+	"453c" [shape = "point"]
+	453 -> "453c" [label= "{sched_2}"];
+	"453c" -> 0 [ label= "1" ];
+	"454c" [shape = "point"]
+	454 -> "454c" [label= "{sched_2}"];
+	"454c" -> 0 [ label= "1" ];
+	"455c" [shape = "point"]
+	455 -> "455c" [label= "{sched_2}"];
+	"455c" -> 0 [ label= "1" ];
+	"456c" [shape = "point"]
+	456 -> "456c" [label= "{sched_0}"];
+	"456c" -> 0 [ label= "1" ];
+	"457c" [shape = "point"]
+	457 -> "457c" [label= "{sched_0}"];
+	"457c" -> 0 [ label= "1" ];
+	"458c" [shape = "point"]
+	458 -> "458c" [label= "{sched_0}"];
+	"458c" -> 0 [ label= "1" ];
+	"459c" [shape = "point"]
+	459 -> "459c" [label= "{sched_2}"];
+	"459c" -> 0 [ label= "1" ];
+	"460c" [shape = "point"]
+	460 -> "460c" [label= "{sched_0}"];
+	"460c" -> 0 [ label= "1" ];
+	"461c" [shape = "point"]
+	461 -> "461c" [label= "{sched_2}"];
+	"461c" -> 0 [ label= "1" ];
+	"462c" [shape = "point"]
+	462 -> "462c" [label= "{sched_0}"];
+	"462c" -> 0 [ label= "1" ];
+	"463c" [shape = "point"]
+	463 -> "463c" [label= "{sched_0}"];
+	"463c" -> 0 [ label= "1" ];
+	"464c" [shape = "point"]
+	464 -> "464c" [label= "{sched_0}"];
+	"464c" -> 0 [ label= "1" ];
+	"465c" [shape = "point"]
+	465 -> "465c" [label= "{sched_2}"];
+	"465c" -> 0 [ label= "1" ];
+	"466c" [shape = "point"]
+	466 -> "466c" [label= "{sched_0}"];
+	"466c" -> 0 [ label= "1" ];
+	"467c" [shape = "point"]
+	467 -> "467c" [label= "{sched_2}"];
+	"467c" -> 0 [ label= "1" ];
+	"468c" [shape = "point"]
+	468 -> "468c" [label= "{sched_3}"];
+	"468c" -> 0 [ label= "1" ];
+	"469c" [shape = "point"]
+	469 -> "469c" [label= "{sched_3}"];
+	"469c" -> 0 [ label= "1" ];
+	"470c" [shape = "point"]
+	470 -> "470c" [label= "{sched_0}"];
+	"470c" -> 0 [ label= "1" ];
+	"471c" [shape = "point"]
+	471 -> "471c" [label= "{sched_2}"];
+	"471c" -> 0 [ label= "1" ];
+	"472c" [shape = "point"]
+	472 -> "472c" [label= "{sched_2}"];
+	"472c" -> 0 [ label= "1" ];
+	"473c" [shape = "point"]
+	473 -> "473c" [label= "{sched_2}"];
+	"473c" -> 0 [ label= "1" ];
+	"474c" [shape = "point"]
+	474 -> "474c" [label= "{sched_2}"];
+	"474c" -> 0 [ label= "1" ];
+	"475c" [shape = "point"]
+	475 -> "475c" [label= "{sched_0}"];
+	"475c" -> 0 [ label= "1" ];
+	"476c" [shape = "point"]
+	476 -> "476c" [label= "{sched_0}"];
+	"476c" -> 0 [ label= "1" ];
+	"477c" [shape = "point"]
+	477 -> "477c" [label= "{sched_2}"];
+	"477c" -> 0 [ label= "1" ];
+	"478c" [shape = "point"]
+	478 -> "478c" [label= "{sched_0}"];
+	"478c" -> 0 [ label= "1" ];
+	"479c" [shape = "point"]
+	479 -> "479c" [label= "{sched_2}"];
+	"479c" -> 0 [ label= "1" ];
+	"480c" [shape = "point"]
+	480 -> "480c" [label= "{sched_0}"];
+	"480c" -> 0 [ label= "1" ];
+	"481c" [shape = "point"]
+	481 -> "481c" [label= "{sched_0}"];
+	"481c" -> 0 [ label= "1" ];
+	"482c" [shape = "point"]
+	482 -> "482c" [label= "{sched_0}"];
+	"482c" -> 0 [ label= "1" ];
+	"483c" [shape = "point"]
+	483 -> "483c" [label= "{sched_2}"];
+	"483c" -> 0 [ label= "1" ];
+	"484c" [shape = "point"]
+	484 -> "484c" [label= "{sched_2}"];
+	"484c" -> 0 [ label= "1" ];
+	"485c" [shape = "point"]
+	485 -> "485c" [label= "{sched_2}"];
+	"485c" -> 0 [ label= "1" ];
+	"486c" [shape = "point"]
+	486 -> "486c" [label= "{sched_0}"];
+	"486c" -> 0 [ label= "1" ];
+	"487c" [shape = "point"]
+	487 -> "487c" [label= "{sched_0}"];
+	"487c" -> 0 [ label= "1" ];
+	"488c" [shape = "point"]
+	488 -> "488c" [label= "{sched_2}"];
+	"488c" -> 0 [ label= "1" ];
+	"489c" [shape = "point"]
+	489 -> "489c" [label= "{sched_0}"];
+	"489c" -> 0 [ label= "1" ];
+	"490c" [shape = "point"]
+	490 -> "490c" [label= "{sched_0}"];
+	"490c" -> 0 [ label= "1" ];
+	"491c" [shape = "point"]
+	491 -> "491c" [label= "{sched_2}"];
+	"491c" -> 0 [ label= "1" ];
+	"492c" [shape = "point"]
+	492 -> "492c" [label= "{sched_0}"];
+	"492c" -> 0 [ label= "1" ];
+	"493c" [shape = "point"]
+	493 -> "493c" [label= "{sched_2}"];
+	"493c" -> 0 [ label= "1" ];
+	"494c" [shape = "point"]
+	494 -> "494c" [label= "{sched_3}"];
+	"494c" -> 0 [ label= "1" ];
+	"495c" [shape = "point"]
+	495 -> "495c" [label= "{sched_0}"];
+	"495c" -> 0 [ label= "1" ];
+	"496c" [shape = "point"]
+	496 -> "496c" [label= "{sched_0}"];
+	"496c" -> 0 [ label= "1" ];
+	"497c" [shape = "point"]
+	497 -> "497c" [label= "{sched_2}"];
+	"497c" -> 0 [ label= "1" ];
+	"498c" [shape = "point"]
+	498 -> "498c" [label= "{sched_0}"];
+	"498c" -> 0 [ label= "1" ];
+	"499c" [shape = "point"]
+	499 -> "499c" [label= "{sched_0}"];
+	"499c" -> 0 [ label= "1" ];
+	"500c" [shape = "point"]
+	500 -> "500c" [label= "{sched_3}"];
+	"500c" -> 0 [ label= "1" ];
+	"501c" [shape = "point"]
+	501 -> "501c" [label= "{sched_0}"];
+	"501c" -> 0 [ label= "1" ];
+	"502c" [shape = "point"]
+	502 -> "502c" [label= "{sched_0}"];
+	"502c" -> 0 [ label= "1" ];
+	"503c" [shape = "point"]
+	503 -> "503c" [label= "{sched_0}"];
+	"503c" -> 0 [ label= "1" ];
+	"504c" [shape = "point"]
+	504 -> "504c" [label= "{sched_2}"];
+	"504c" -> 0 [ label= "1" ];
+	"505c" [shape = "point"]
+	505 -> "505c" [label= "{sched_2}"];
+	"505c" -> 0 [ label= "1" ];
+	"506c" [shape = "point"]
+	506 -> "506c" [label= "{sched_3}"];
+	"506c" -> 0 [ label= "1" ];
+	"507c" [shape = "point"]
+	507 -> "507c" [label= "{sched_0}"];
+	"507c" -> 0 [ label= "1" ];
+	"508c" [shape = "point"]
+	508 -> "508c" [label= "{sched_0}"];
+	"508c" -> 0 [ label= "1" ];
+	"509c" [shape = "point"]
+	509 -> "509c" [label= "{sched_0}"];
+	"509c" -> 0 [ label= "1" ];
+	"510c" [shape = "point"]
+	510 -> "510c" [label= "{sched_2}"];
+	"510c" -> 0 [ label= "1" ];
+	"511c" [shape = "point"]
+	511 -> "511c" [label= "{sched_2}"];
+	"511c" -> 0 [ label= "1" ];
+	"512c" [shape = "point"]
+	512 -> "512c" [label= "{sched_3}"];
+	"512c" -> 0 [ label= "1" ];
+	"513c" [shape = "point"]
+	513 -> "513c" [label= "{sched_0}"];
+	"513c" -> 0 [ label= "1" ];
+	"514c" [shape = "point"]
+	514 -> "514c" [label= "{sched_0}"];
+	"514c" -> 0 [ label= "1" ];
+	"515c" [shape = "point"]
+	515 -> "515c" [label= "{sched_2}"];
+	"515c" -> 0 [ label= "1" ];
+	"516c" [shape = "point"]
+	516 -> "516c" [label= "{sched_0}"];
+	"516c" -> 0 [ label= "1" ];
+	"517c" [shape = "point"]
+	517 -> "517c" [label= "{sched_0}"];
+	"517c" -> 0 [ label= "1" ];
+	"518c" [shape = "point"]
+	518 -> "518c" [label= "{sched_3}"];
+	"518c" -> 0 [ label= "1" ];
+	"519c" [shape = "point"]
+	519 -> "519c" [label= "{sched_0}"];
+	"519c" -> 0 [ label= "1" ];
+	"520c" [shape = "point"]
+	520 -> "520c" [label= "{sched_0}"];
+	"520c" -> 0 [ label= "1" ];
+	"521c" [shape = "point"]
+	521 -> "521c" [label= "{sched_0}"];
+	"521c" -> 0 [ label= "1" ];
+	"522c" [shape = "point"]
+	522 -> "522c" [label= "{sched_2}"];
+	"522c" -> 0 [ label= "1" ];
+	"523c" [shape = "point"]
+	523 -> "523c" [label= "{sched_0}"];
+	"523c" -> 0 [ label= "1" ];
+	"524c" [shape = "point"]
+	524 -> "524c" [label= "{sched_3}"];
+	"524c" -> 0 [ label= "1" ];
+	"525c" [shape = "point"]
+	525 -> "525c" [label= "{sched_0}"];
+	"525c" -> 0 [ label= "1" ];
+	"526c" [shape = "point"]
+	526 -> "526c" [label= "{sched_0}"];
+	"526c" -> 0 [ label= "1" ];
+	"527c" [shape = "point"]
+	527 -> "527c" [label= "{sched_0}"];
+	"527c" -> 0 [ label= "1" ];
+	"528c" [shape = "point"]
+	528 -> "528c" [label= "{sched_2}"];
+	"528c" -> 0 [ label= "1" ];
+}
+
+
+2023-04-26 16:28:39,349 - storm_pomdp_control.py - Main family based on data from Storm: reduced design space from 81 to 27
+{0: [1, 2, 0], 1: [0, 1, 2], 2: [1, 2, 0], 3: [0], 4: [0, 1, 2], 5: [0]} 
+
+{0: [1, 2, 0], 1: [0, 1, 2], 2: [1, 2, 0], 3: [0], 4: [0]}
+2023-04-26 16:28:39,349 - synthesizer.py - Synthesis initiated.
+-----------PAYNT-----------               
+Value = 334.39813120972815 | Time elapsed = 0.1s | FSC size = 12
+FSC = A(0,0)={'(Query-2)'}, A(1,0)={'(Query-2)'}, A(2,0)={'(Query-2)'}, A(4,0)={'(Query-0)'}
+
+-----------PAYNT-----------               
+Value = 385.1422577529205 | Time elapsed = 0.1s | FSC size = 12
+FSC = A(0,0)={'(Query-1)'}, A(1,0)={'(Query-2)'}, A(2,0)={'(Query-2)'}, A(4,0)={'(Query-0)'}
+
+-----------PAYNT-----------               
+Value = 388.02372397922346 | Time elapsed = 0.1s | FSC size = 12
+FSC = A(0,0)={'(Query-2)'}, A(1,0)={'(Query-2)'}, A(2,0)={'(Query-1)'}, A(4,0)={'(Query-0)'}
+
+-----------PAYNT-----------               
+Value = 390.0914277181103 | Time elapsed = 0.1s | FSC size = 12
+FSC = A(0,0)={'(Query-0)'}, A(1,0)={'(Query-2)'}, A(2,0)={'(Query-1)'}, A(4,0)={'(Query-0)'}
+
+-----------PAYNT-----------               
+Value = 391.3973811075717 | Time elapsed = 0.1s | FSC size = 12
+FSC = A(0,0)={'(Query-1)'}, A(1,0)={'(Query-2)'}, A(2,0)={'(Query-0)'}, A(4,0)={'(Query-0)'}
+
+-----------PAYNT-----------               
+Value = 393.5543332568159 | Time elapsed = 0.3s | FSC size = 12
+FSC = A(0,0)={'(Query-1)'}, A(1,0)={'(Query-0)'}, A(2,0)={'(Query-2)'}, A(4,0)={'(Query-0)'}
+
+2023-04-26 16:28:39,676 - synthesizer_ar_storm.py - Main family synthesis done
+2023-04-26 16:28:39,676 - synthesizer_ar_storm.py - Subfamilies buffer contains: 1 families
+--------------------
+Synthesis summary
+
+optimality objective: R[exp]{"reward"}max=? [F "discount_sink"] 
+
+method: AR, synthesis time: 0.73 s
+number of holes: 4, family size: 81, super quotient: 108 states / 320 actions
+explored: 100 %
+AR stats: avg MDP size: 107, iterations: 88
+
+optimal: 393.554333
+--------------------
+
+2023-04-26 16:28:40,090 - synthesizer_pomdp.py - Added memory nodes for observation based on Storm data
+{0: 3, 1: 3, 2: 3, 3: 1, 4: 1, 5: 1}
+2023-04-26 16:28:40,090 - quotient_pomdp.py - Unfolding POMDP using the following memory allocation vector: [3, 3, 3, 1, 1, 1] ...
+2023-04-26 16:28:40,092 - quotient_pomdp.py - Constructed quotient MDP having 266 states and 2378 actions.
+2023-04-26 16:28:40,165 - storm_pomdp_control.py - Main family based on data from Storm: reduced design space from 3486784401 to 1162261467
+{0: [1, 2, 0], 1: [0, 1, 2], 2: [1, 2, 0], 3: [0], 4: [0, 1, 2], 5: [0]} 
+
+{0: [1, 2, 0], 1: [0, 1, 2], 2: [1, 2, 0], 3: [0], 4: [0]}
+2023-04-26 16:28:40,165 - synthesizer.py - Synthesis initiated.
+-----------PAYNT-----------               
+Value = 413.01214438121855 | Time elapsed = 1.7s | FSC size = 24
+FSC = A(0,0)={'(Query-2)'}, A(0,1)={'(Query-2)'}, A(0,2)={'(Query-1)'}, M(0,0)=2, M(0,1)=0, M(0,2)=0, A(1,0)={'(Query-2)'}, A(1,1)={'(Query-2)'}, A(1,2)={'(Query-2)'}, M(1,0)=2, M(1,1)=0, M(1,2)=2, A(2,0)={'(Query-2)'}, A(2,1)={'(Query-2)'}, A(2,2)={'(Query-2)'}, M(2,0)=2, M(2,1)=0, M(2,2)=2, A(4,0)={'(Query-0)'}, M(4,0)=2
+
+-----------PAYNT-----------               
+Value = 422.59182329042056 | Time elapsed = 56.4s | FSC size = 24
+FSC = A(0,0)={'(Query-2)'}, A(0,1)={'(Query-1)'}, A(0,2)={'(Query-0)'}, M(0,0)=0, M(0,1)=2, M(0,2)=1, A(1,0)={'(Query-2)'}, A(1,1)={'(Query-2)'}, A(1,2)={'(Query-2)'}, M(1,0)=2, M(1,1)=2, M(1,2)=2, A(2,0)={'(Query-2)'}, A(2,1)={'(Query-2)'}, A(2,2)={'(Query-2)'}, M(2,0)=0, M(2,1)=2, M(2,2)=2, A(4,0)={'(Query-0)'}, M(4,0)=1
+
+-----------PAYNT-----------               
+Value = 422.8843724512113 | Time elapsed = 56.5s | FSC size = 24
+FSC = A(0,0)={'(Query-2)'}, A(0,1)={'(Query-1)'}, A(0,2)={'(Query-0)'}, M(0,0)=2, M(0,1)=2, M(0,2)=1, A(1,0)={'(Query-2)'}, A(1,1)={'(Query-2)'}, A(1,2)={'(Query-2)'}, M(1,0)=2, M(1,1)=2, M(1,2)=2, A(2,0)={'(Query-2)'}, A(2,1)={'(Query-2)'}, A(2,2)={'(Query-2)'}, M(2,0)=2, M(2,1)=2, M(2,2)=2, A(4,0)={'(Query-0)'}, M(4,0)=0
+
+-----------PAYNT-----------               
+Value = 423.0222298092899 | Time elapsed = 56.5s | FSC size = 24
+FSC = A(0,0)={'(Query-2)'}, A(0,1)={'(Query-1)'}, A(0,2)={'(Query-0)'}, M(0,0)=1, M(0,1)=2, M(0,2)=1, A(1,0)={'(Query-2)'}, A(1,1)={'(Query-2)'}, A(1,2)={'(Query-2)'}, M(1,0)=2, M(1,1)=2, M(1,2)=2, A(2,0)={'(Query-2)'}, A(2,1)={'(Query-2)'}, A(2,2)={'(Query-2)'}, M(2,0)=2, M(2,1)=2, M(2,2)=2, A(4,0)={'(Query-0)'}, M(4,0)=0
+
+-----------PAYNT-----------               
+Value = 423.0903703412313 | Time elapsed = 56.6s | FSC size = 24
+FSC = A(0,0)={'(Query-2)'}, A(0,1)={'(Query-1)'}, A(0,2)={'(Query-0)'}, M(0,0)=1, M(0,1)=2, M(0,2)=1, A(1,0)={'(Query-2)'}, A(1,1)={'(Query-2)'}, A(1,2)={'(Query-2)'}, M(1,0)=2, M(1,1)=2, M(1,2)=2, A(2,0)={'(Query-2)'}, A(2,1)={'(Query-2)'}, A(2,2)={'(Query-2)'}, M(2,0)=1, M(2,1)=2, M(2,2)=2, A(4,0)={'(Query-0)'}, M(4,0)=0
+
+-----------PAYNT-----------               
+Value = 426.32735816280683 | Time elapsed = 56.8s | FSC size = 24
+FSC = A(0,0)={'(Query-2)'}, A(0,1)={'(Query-1)'}, A(0,2)={'(Query-0)'}, M(0,0)=2, M(0,1)=0, M(0,2)=1, A(1,0)={'(Query-2)'}, A(1,1)={'(Query-2)'}, A(1,2)={'(Query-2)'}, M(1,0)=2, M(1,1)=2, M(1,2)=2, A(2,0)={'(Query-2)'}, A(2,1)={'(Query-2)'}, A(2,2)={'(Query-2)'}, M(2,0)=2, M(2,1)=2, M(2,2)=2, A(4,0)={'(Query-0)'}, M(4,0)=1
+
+-----------PAYNT-----------               
+Value = 426.49858589221685 | Time elapsed = 58.9s | FSC size = 24
+FSC = A(0,0)={'(Query-2)'}, A(0,1)={'(Query-1)'}, A(0,2)={'(Query-0)'}, M(0,0)=1, M(0,1)=2, M(0,2)=0, A(1,0)={'(Query-2)'}, A(1,1)={'(Query-2)'}, A(1,2)={'(Query-2)'}, M(1,0)=2, M(1,1)=1, M(1,2)=1, A(2,0)={'(Query-2)'}, A(2,1)={'(Query-2)'}, A(2,2)={'(Query-2)'}, M(2,0)=1, M(2,1)=2, M(2,2)=2, A(4,0)={'(Query-0)'}, M(4,0)=0
+
+-----------PAYNT-----------               
+Value = 427.5078955914744 | Time elapsed = 59.7s | FSC size = 24
+FSC = A(0,0)={'(Query-2)'}, A(0,1)={'(Query-1)'}, A(0,2)={'(Query-0)'}, M(0,0)=2, M(0,1)=0, M(0,2)=1, A(1,0)={'(Query-2)'}, A(1,1)={'(Query-2)'}, A(1,2)={'(Query-2)'}, M(1,0)=1, M(1,1)=2, M(1,2)=2, A(2,0)={'(Query-2)'}, A(2,1)={'(Query-2)'}, A(2,2)={'(Query-2)'}, M(2,0)=2, M(2,1)=2, M(2,2)=2, A(4,0)={'(Query-0)'}, M(4,0)=2
+
+-----------PAYNT-----------               
+Value = 428.38444702133154 | Time elapsed = 59.7s | FSC size = 24
+FSC = A(0,0)={'(Query-2)'}, A(0,1)={'(Query-1)'}, A(0,2)={'(Query-0)'}, M(0,0)=2, M(0,1)=0, M(0,2)=1, A(1,0)={'(Query-2)'}, A(1,1)={'(Query-2)'}, A(1,2)={'(Query-2)'}, M(1,0)=1, M(1,1)=2, M(1,2)=2, A(2,0)={'(Query-2)'}, A(2,1)={'(Query-2)'}, A(2,2)={'(Query-2)'}, M(2,0)=2, M(2,1)=2, M(2,2)=2, A(4,0)={'(Query-0)'}, M(4,0)=1
+
+-----------PAYNT-----------               
+Value = 428.41925662654404 | Time elapsed = 64.6s | FSC size = 24
+FSC = A(0,0)={'(Query-2)'}, A(0,1)={'(Query-1)'}, A(0,2)={'(Query-0)'}, M(0,0)=1, M(0,1)=2, M(0,2)=1, A(1,0)={'(Query-2)'}, A(1,1)={'(Query-2)'}, A(1,2)={'(Query-2)'}, M(1,0)=2, M(1,1)=2, M(1,2)=1, A(2,0)={'(Query-2)'}, A(2,1)={'(Query-2)'}, A(2,2)={'(Query-2)'}, M(2,0)=2, M(2,1)=1, M(2,2)=2, A(4,0)={'(Query-0)'}, M(4,0)=0
+
+-----------PAYNT-----------               
+Value = 428.49564717772904 | Time elapsed = 64.7s | FSC size = 24
+FSC = A(0,0)={'(Query-2)'}, A(0,1)={'(Query-1)'}, A(0,2)={'(Query-0)'}, M(0,0)=1, M(0,1)=2, M(0,2)=1, A(1,0)={'(Query-2)'}, A(1,1)={'(Query-2)'}, A(1,2)={'(Query-2)'}, M(1,0)=2, M(1,1)=2, M(1,2)=1, A(2,0)={'(Query-2)'}, A(2,1)={'(Query-2)'}, A(2,2)={'(Query-2)'}, M(2,0)=1, M(2,1)=1, M(2,2)=2, A(4,0)={'(Query-0)'}, M(4,0)=0
+
+-----------PAYNT-----------               
+Value = 428.60113155399983 | Time elapsed = 65.0s | FSC size = 24
+FSC = A(0,0)={'(Query-2)'}, A(0,1)={'(Query-1)'}, A(0,2)={'(Query-0)'}, M(0,0)=1, M(0,1)=2, M(0,2)=0, A(1,0)={'(Query-2)'}, A(1,1)={'(Query-2)'}, A(1,2)={'(Query-2)'}, M(1,0)=2, M(1,1)=2, M(1,2)=1, A(2,0)={'(Query-2)'}, A(2,1)={'(Query-2)'}, A(2,2)={'(Query-2)'}, M(2,0)=1, M(2,1)=1, M(2,2)=2, A(4,0)={'(Query-0)'}, M(4,0)=0
+
+-----------PAYNT-----------               
+Value = 430.11797183311546 | Time elapsed = 65.7s | FSC size = 24
+FSC = A(0,0)={'(Query-2)'}, A(0,1)={'(Query-1)'}, A(0,2)={'(Query-0)'}, M(0,0)=1, M(0,1)=2, M(0,2)=0, A(1,0)={'(Query-2)'}, A(1,1)={'(Query-2)'}, A(1,2)={'(Query-2)'}, M(1,0)=2, M(1,1)=1, M(1,2)=1, A(2,0)={'(Query-2)'}, A(2,1)={'(Query-2)'}, A(2,2)={'(Query-2)'}, M(2,0)=1, M(2,1)=1, M(2,2)=2, A(4,0)={'(Query-0)'}, M(4,0)=1
+
+-----------PAYNT-----------               
+Value = 430.44192711494543 | Time elapsed = 65.8s | FSC size = 24
+FSC = A(0,0)={'(Query-2)'}, A(0,1)={'(Query-1)'}, A(0,2)={'(Query-0)'}, M(0,0)=1, M(0,1)=2, M(0,2)=0, A(1,0)={'(Query-2)'}, A(1,1)={'(Query-2)'}, A(1,2)={'(Query-2)'}, M(1,0)=2, M(1,1)=1, M(1,2)=1, A(2,0)={'(Query-2)'}, A(2,1)={'(Query-2)'}, A(2,2)={'(Query-2)'}, M(2,0)=1, M(2,1)=1, M(2,2)=2, A(4,0)={'(Query-0)'}, M(4,0)=0
+
+-----------PAYNT-----------               
+Value = 430.44501509143464 | Time elapsed = 66.6s | FSC size = 24
+FSC = A(0,0)={'(Query-2)'}, A(0,1)={'(Query-1)'}, A(0,2)={'(Query-0)'}, M(0,0)=2, M(0,1)=0, M(0,2)=1, A(1,0)={'(Query-2)'}, A(1,1)={'(Query-2)'}, A(1,2)={'(Query-2)'}, M(1,0)=1, M(1,1)=2, M(1,2)=2, A(2,0)={'(Query-2)'}, A(2,1)={'(Query-2)'}, A(2,2)={'(Query-2)'}, M(2,0)=2, M(2,1)=1, M(2,2)=2, A(4,0)={'(Query-0)'}, M(4,0)=1
+
+-----------PAYNT-----------               
+Value = 430.746520715347 | Time elapsed = 165.9s | FSC size = 24
+FSC = A(0,0)={'(Query-2)'}, A(0,1)={'(Query-0)'}, A(0,2)={'(Query-2)'}, M(0,0)=0, M(0,1)=2, M(0,2)=1, A(1,0)={'(Query-2)'}, A(1,1)={'(Query-2)'}, A(1,2)={'(Query-2)'}, M(1,0)=2, M(1,1)=2, M(1,2)=2, A(2,0)={'(Query-2)'}, A(2,1)={'(Query-2)'}, A(2,2)={'(Query-1)'}, M(2,0)=0, M(2,1)=2, M(2,2)=1, A(4,0)={'(Query-0)'}, M(4,0)=2
+
+-----------PAYNT-----------               
+Value = 430.9399805153117 | Time elapsed = 166.0s | FSC size = 24
+FSC = A(0,0)={'(Query-2)'}, A(0,1)={'(Query-0)'}, A(0,2)={'(Query-2)'}, M(0,0)=2, M(0,1)=2, M(0,2)=1, A(1,0)={'(Query-2)'}, A(1,1)={'(Query-2)'}, A(1,2)={'(Query-2)'}, M(1,0)=2, M(1,1)=2, M(1,2)=2, A(2,0)={'(Query-2)'}, A(2,1)={'(Query-2)'}, A(2,2)={'(Query-1)'}, M(2,0)=2, M(2,1)=2, M(2,2)=1, A(4,0)={'(Query-0)'}, M(4,0)=0
+
+-----------PAYNT-----------               
+Value = 430.99556864675935 | Time elapsed = 166.1s | FSC size = 24
+FSC = A(0,0)={'(Query-2)'}, A(0,1)={'(Query-0)'}, A(0,2)={'(Query-2)'}, M(0,0)=2, M(0,1)=2, M(0,2)=1, A(1,0)={'(Query-2)'}, A(1,1)={'(Query-2)'}, A(1,2)={'(Query-2)'}, M(1,0)=2, M(1,1)=2, M(1,2)=2, A(2,0)={'(Query-2)'}, A(2,1)={'(Query-2)'}, A(2,2)={'(Query-1)'}, M(2,0)=1, M(2,1)=2, M(2,2)=1, A(4,0)={'(Query-0)'}, M(4,0)=0
+
+-----------PAYNT-----------               
+Value = 431.1101465972807 | Time elapsed = 167.1s | FSC size = 24
+FSC = A(0,0)={'(Query-2)'}, A(0,1)={'(Query-0)'}, A(0,2)={'(Query-2)'}, M(0,0)=2, M(0,1)=2, M(0,2)=1, A(1,0)={'(Query-2)'}, A(1,1)={'(Query-2)'}, A(1,2)={'(Query-2)'}, M(1,0)=1, M(1,1)=2, M(1,2)=2, A(2,0)={'(Query-2)'}, A(2,1)={'(Query-2)'}, A(2,2)={'(Query-1)'}, M(2,0)=2, M(2,1)=2, M(2,2)=1, A(4,0)={'(Query-0)'}, M(4,0)=0
+
+-----------PAYNT-----------               
+Value = 431.1657347287283 | Time elapsed = 167.2s | FSC size = 24
+FSC = A(0,0)={'(Query-2)'}, A(0,1)={'(Query-0)'}, A(0,2)={'(Query-2)'}, M(0,0)=2, M(0,1)=2, M(0,2)=1, A(1,0)={'(Query-2)'}, A(1,1)={'(Query-2)'}, A(1,2)={'(Query-2)'}, M(1,0)=1, M(1,1)=2, M(1,2)=2, A(2,0)={'(Query-2)'}, A(2,1)={'(Query-2)'}, A(2,2)={'(Query-1)'}, M(2,0)=1, M(2,1)=2, M(2,2)=1, A(4,0)={'(Query-0)'}, M(4,0)=0
+
+-----------PAYNT-----------               
+Value = 432.9700554680164 | Time elapsed = 167.4s | FSC size = 24
+FSC = A(0,0)={'(Query-2)'}, A(0,1)={'(Query-0)'}, A(0,2)={'(Query-2)'}, M(0,0)=2, M(0,1)=0, M(0,2)=1, A(1,0)={'(Query-2)'}, A(1,1)={'(Query-2)'}, A(1,2)={'(Query-2)'}, M(1,0)=1, M(1,1)=2, M(1,2)=2, A(2,0)={'(Query-2)'}, A(2,1)={'(Query-2)'}, A(2,2)={'(Query-1)'}, M(2,0)=2, M(2,1)=2, M(2,2)=1, A(4,0)={'(Query-0)'}, M(4,0)=2
+
+-----------PAYNT-----------               
+Value = 433.20596620109654 | Time elapsed = 167.5s | FSC size = 24
+FSC = A(0,0)={'(Query-2)'}, A(0,1)={'(Query-0)'}, A(0,2)={'(Query-2)'}, M(0,0)=2, M(0,1)=0, M(0,2)=1, A(1,0)={'(Query-2)'}, A(1,1)={'(Query-2)'}, A(1,2)={'(Query-2)'}, M(1,0)=1, M(1,1)=2, M(1,2)=2, A(2,0)={'(Query-2)'}, A(2,1)={'(Query-2)'}, A(2,2)={'(Query-1)'}, M(2,0)=2, M(2,1)=2, M(2,2)=1, A(4,0)={'(Query-0)'}, M(4,0)=0
+
+-----------PAYNT-----------               
+Value = 433.2105412843439 | Time elapsed = 167.5s | FSC size = 24
+FSC = A(0,0)={'(Query-2)'}, A(0,1)={'(Query-0)'}, A(0,2)={'(Query-2)'}, M(0,0)=1, M(0,1)=0, M(0,2)=1, A(1,0)={'(Query-2)'}, A(1,1)={'(Query-2)'}, A(1,2)={'(Query-2)'}, M(1,0)=1, M(1,1)=2, M(1,2)=2, A(2,0)={'(Query-2)'}, A(2,1)={'(Query-2)'}, A(2,2)={'(Query-1)'}, M(2,0)=2, M(2,1)=2, M(2,2)=1, A(4,0)={'(Query-0)'}, M(4,0)=2
+
+-----------PAYNT-----------               
+Value = 433.37661564683634 | Time elapsed = 167.6s | FSC size = 24
+FSC = A(0,0)={'(Query-2)'}, A(0,1)={'(Query-0)'}, A(0,2)={'(Query-2)'}, M(0,0)=1, M(0,1)=0, M(0,2)=1, A(1,0)={'(Query-2)'}, A(1,1)={'(Query-2)'}, A(1,2)={'(Query-2)'}, M(1,0)=1, M(1,1)=2, M(1,2)=2, A(2,0)={'(Query-2)'}, A(2,1)={'(Query-2)'}, A(2,2)={'(Query-1)'}, M(2,0)=2, M(2,1)=2, M(2,2)=1, A(4,0)={'(Query-0)'}, M(4,0)=0
+
+-----------PAYNT-----------               
+Value = 434.65703307198424 | Time elapsed = 167.7s | FSC size = 24
+FSC = A(0,0)={'(Query-2)'}, A(0,1)={'(Query-0)'}, A(0,2)={'(Query-2)'}, M(0,0)=2, M(0,1)=0, M(0,2)=1, A(1,0)={'(Query-2)'}, A(1,1)={'(Query-2)'}, A(1,2)={'(Query-2)'}, M(1,0)=1, M(1,1)=2, M(1,2)=2, A(2,0)={'(Query-2)'}, A(2,1)={'(Query-2)'}, A(2,2)={'(Query-1)'}, M(2,0)=1, M(2,1)=2, M(2,2)=1, A(4,0)={'(Query-0)'}, M(4,0)=2
+
+-----------PAYNT-----------               
+Value = 434.9079440266516 | Time elapsed = 167.7s | FSC size = 24
+FSC = A(0,0)={'(Query-2)'}, A(0,1)={'(Query-0)'}, A(0,2)={'(Query-2)'}, M(0,0)=2, M(0,1)=0, M(0,2)=1, A(1,0)={'(Query-2)'}, A(1,1)={'(Query-2)'}, A(1,2)={'(Query-2)'}, M(1,0)=1, M(1,1)=2, M(1,2)=2, A(2,0)={'(Query-2)'}, A(2,1)={'(Query-2)'}, A(2,2)={'(Query-1)'}, M(2,0)=1, M(2,1)=2, M(2,2)=1, A(4,0)={'(Query-0)'}, M(4,0)=0
+
+-----------PAYNT-----------               
+Value = 435.1017961183963 | Time elapsed = 167.8s | FSC size = 24
+FSC = A(0,0)={'(Query-2)'}, A(0,1)={'(Query-0)'}, A(0,2)={'(Query-2)'}, M(0,0)=1, M(0,1)=0, M(0,2)=1, A(1,0)={'(Query-2)'}, A(1,1)={'(Query-2)'}, A(1,2)={'(Query-2)'}, M(1,0)=1, M(1,1)=2, M(1,2)=2, A(2,0)={'(Query-2)'}, A(2,1)={'(Query-2)'}, A(2,2)={'(Query-1)'}, M(2,0)=1, M(2,1)=2, M(2,2)=1, A(4,0)={'(Query-0)'}, M(4,0)=2
+
+-----------PAYNT-----------               
+Value = 435.29137743784753 | Time elapsed = 167.8s | FSC size = 24
+FSC = A(0,0)={'(Query-2)'}, A(0,1)={'(Query-0)'}, A(0,2)={'(Query-2)'}, M(0,0)=1, M(0,1)=0, M(0,2)=1, A(1,0)={'(Query-2)'}, A(1,1)={'(Query-2)'}, A(1,2)={'(Query-2)'}, M(1,0)=1, M(1,1)=2, M(1,2)=2, A(2,0)={'(Query-2)'}, A(2,1)={'(Query-2)'}, A(2,2)={'(Query-1)'}, M(2,0)=1, M(2,1)=2, M(2,2)=1, A(4,0)={'(Query-0)'}, M(4,0)=0
+
+-----------PAYNT-----------               
+Value = 436.51270565194994 | Time elapsed = 170.9s | FSC size = 24
+FSC = A(0,0)={'(Query-2)'}, A(0,1)={'(Query-0)'}, A(0,2)={'(Query-2)'}, M(0,0)=0, M(0,1)=2, M(0,2)=1, A(1,0)={'(Query-2)'}, A(1,1)={'(Query-2)'}, A(1,2)={'(Query-2)'}, M(1,0)=2, M(1,1)=2, M(1,2)=1, A(2,0)={'(Query-2)'}, A(2,1)={'(Query-2)'}, A(2,2)={'(Query-1)'}, M(2,0)=0, M(2,1)=2, M(2,2)=1, A(4,0)={'(Query-0)'}, M(4,0)=2
+
+-----------PAYNT-----------               
+Value = 436.55642253615315 | Time elapsed = 171.1s | FSC size = 24
+FSC = A(0,0)={'(Query-2)'}, A(0,1)={'(Query-0)'}, A(0,2)={'(Query-2)'}, M(0,0)=2, M(0,1)=2, M(0,2)=1, A(1,0)={'(Query-2)'}, A(1,1)={'(Query-2)'}, A(1,2)={'(Query-2)'}, M(1,0)=2, M(1,1)=2, M(1,2)=1, A(2,0)={'(Query-2)'}, A(2,1)={'(Query-2)'}, A(2,2)={'(Query-1)'}, M(2,0)=1, M(2,1)=2, M(2,2)=1, A(4,0)={'(Query-0)'}, M(4,0)=0
+
+-----------PAYNT-----------               
+Value = 436.6988270724914 | Time elapsed = 171.4s | FSC size = 24
+FSC = A(0,0)={'(Query-2)'}, A(0,1)={'(Query-0)'}, A(0,2)={'(Query-2)'}, M(0,0)=2, M(0,1)=2, M(0,2)=1, A(1,0)={'(Query-2)'}, A(1,1)={'(Query-2)'}, A(1,2)={'(Query-2)'}, M(1,0)=1, M(1,1)=2, M(1,2)=1, A(2,0)={'(Query-2)'}, A(2,1)={'(Query-2)'}, A(2,2)={'(Query-1)'}, M(2,0)=2, M(2,1)=2, M(2,2)=1, A(4,0)={'(Query-0)'}, M(4,0)=0
+
+-----------PAYNT-----------               
+Value = 436.7623070472281 | Time elapsed = 171.5s | FSC size = 24
+FSC = A(0,0)={'(Query-2)'}, A(0,1)={'(Query-0)'}, A(0,2)={'(Query-2)'}, M(0,0)=2, M(0,1)=2, M(0,2)=1, A(1,0)={'(Query-2)'}, A(1,1)={'(Query-2)'}, A(1,2)={'(Query-2)'}, M(1,0)=1, M(1,1)=2, M(1,2)=1, A(2,0)={'(Query-2)'}, A(2,1)={'(Query-2)'}, A(2,2)={'(Query-1)'}, M(2,0)=1, M(2,1)=2, M(2,2)=1, A(4,0)={'(Query-0)'}, M(4,0)=0
+
+-----------PAYNT-----------               
+Value = 437.1635726158346 | Time elapsed = 179.6s | FSC size = 24
+FSC = A(0,0)={'(Query-1)'}, A(0,1)={'(Query-0)'}, A(0,2)={'(Query-2)'}, M(0,0)=2, M(0,1)=0, M(0,2)=1, A(1,0)={'(Query-2)'}, A(1,1)={'(Query-2)'}, A(1,2)={'(Query-2)'}, M(1,0)=1, M(1,1)=2, M(1,2)=2, A(2,0)={'(Query-2)'}, A(2,1)={'(Query-2)'}, A(2,2)={'(Query-1)'}, M(2,0)=2, M(2,1)=2, M(2,2)=1, A(4,0)={'(Query-0)'}, M(4,0)=2
+
+-----------PAYNT-----------               
+Value = 437.3376273558783 | Time elapsed = 179.6s | FSC size = 24
+FSC = A(0,0)={'(Query-1)'}, A(0,1)={'(Query-0)'}, A(0,2)={'(Query-2)'}, M(0,0)=2, M(0,1)=0, M(0,2)=1, A(1,0)={'(Query-2)'}, A(1,1)={'(Query-2)'}, A(1,2)={'(Query-2)'}, M(1,0)=1, M(1,1)=2, M(1,2)=2, A(2,0)={'(Query-2)'}, A(2,1)={'(Query-2)'}, A(2,2)={'(Query-1)'}, M(2,0)=2, M(2,1)=2, M(2,2)=1, A(4,0)={'(Query-0)'}, M(4,0)=0
+
+-----------PAYNT-----------               
+Value = 439.5070554424066 | Time elapsed = 179.8s | FSC size = 24
+FSC = A(0,0)={'(Query-1)'}, A(0,1)={'(Query-0)'}, A(0,2)={'(Query-2)'}, M(0,0)=2, M(0,1)=0, M(0,2)=1, A(1,0)={'(Query-2)'}, A(1,1)={'(Query-2)'}, A(1,2)={'(Query-2)'}, M(1,0)=1, M(1,1)=2, M(1,2)=2, A(2,0)={'(Query-2)'}, A(2,1)={'(Query-2)'}, A(2,2)={'(Query-1)'}, M(2,0)=1, M(2,1)=2, M(2,2)=1, A(4,0)={'(Query-0)'}, M(4,0)=2
+
+-----------PAYNT-----------               
+Value = 439.7269363374922 | Time elapsed = 179.8s | FSC size = 24
+FSC = A(0,0)={'(Query-1)'}, A(0,1)={'(Query-0)'}, A(0,2)={'(Query-2)'}, M(0,0)=2, M(0,1)=0, M(0,2)=1, A(1,0)={'(Query-2)'}, A(1,1)={'(Query-2)'}, A(1,2)={'(Query-2)'}, M(1,0)=1, M(1,1)=2, M(1,2)=2, A(2,0)={'(Query-2)'}, A(2,1)={'(Query-2)'}, A(2,2)={'(Query-1)'}, M(2,0)=1, M(2,1)=2, M(2,2)=1, A(4,0)={'(Query-0)'}, M(4,0)=0
+
+-----------PAYNT-----------               
+Value = 439.7393117988771 | Time elapsed = 191.5s | FSC size = 24
+FSC = A(0,0)={'(Query-1)'}, A(0,1)={'(Query-0)'}, A(0,2)={'(Query-2)'}, M(0,0)=2, M(0,1)=0, M(0,2)=1, A(1,0)={'(Query-2)'}, A(1,1)={'(Query-2)'}, A(1,2)={'(Query-2)'}, M(1,0)=1, M(1,1)=2, M(1,2)=1, A(2,0)={'(Query-2)'}, A(2,1)={'(Query-2)'}, A(2,2)={'(Query-1)'}, M(2,0)=1, M(2,1)=2, M(2,2)=1, A(4,0)={'(Query-0)'}, M(4,0)=2
+
+-----------PAYNT-----------               
+Value = 443.14503672559385 | Time elapsed = 286.5s | FSC size = 24
+FSC = A(0,0)={'(Query-2)'}, A(0,1)={'(Query-2)'}, A(0,2)={'(Query-1)'}, M(0,0)=2, M(0,1)=2, M(0,2)=1, A(1,0)={'(Query-2)'}, A(1,1)={'(Query-2)'}, A(1,2)={'(Query-2)'}, M(1,0)=2, M(1,1)=2, M(1,2)=2, A(2,0)={'(Query-2)'}, A(2,1)={'(Query-2)'}, A(2,2)={'(Query-1)'}, M(2,0)=2, M(2,1)=2, M(2,2)=0, A(4,0)={'(Query-0)'}, M(4,0)=2
+
+-----------PAYNT-----------               
+Value = 443.35479830883304 | Time elapsed = 286.5s | FSC size = 24
+FSC = A(0,0)={'(Query-2)'}, A(0,1)={'(Query-2)'}, A(0,2)={'(Query-1)'}, M(0,0)=2, M(0,1)=2, M(0,2)=1, A(1,0)={'(Query-2)'}, A(1,1)={'(Query-2)'}, A(1,2)={'(Query-2)'}, M(1,0)=2, M(1,1)=2, M(1,2)=2, A(2,0)={'(Query-2)'}, A(2,1)={'(Query-2)'}, A(2,2)={'(Query-1)'}, M(2,0)=2, M(2,1)=2, M(2,2)=0, A(4,0)={'(Query-0)'}, M(4,0)=0
+
+-----------PAYNT-----------               
+Value = 447.0831538324915 | Time elapsed = 298.5s | FSC size = 24
+FSC = A(0,0)={'(Query-2)'}, A(0,1)={'(Query-0)'}, A(0,2)={'(Query-1)'}, M(0,0)=0, M(0,1)=2, M(0,2)=1, A(1,0)={'(Query-2)'}, A(1,1)={'(Query-2)'}, A(1,2)={'(Query-2)'}, M(1,0)=2, M(1,1)=2, M(1,2)=2, A(2,0)={'(Query-2)'}, A(2,1)={'(Query-2)'}, A(2,2)={'(Query-1)'}, M(2,0)=0, M(2,1)=2, M(2,2)=1, A(4,0)={'(Query-0)'}, M(4,0)=2
+
+-----------PAYNT-----------               
+Value = 448.03117727580036 | Time elapsed = 298.6s | FSC size = 24
+FSC = A(0,0)={'(Query-2)'}, A(0,1)={'(Query-0)'}, A(0,2)={'(Query-1)'}, M(0,0)=2, M(0,1)=2, M(0,2)=1, A(1,0)={'(Query-2)'}, A(1,1)={'(Query-2)'}, A(1,2)={'(Query-2)'}, M(1,0)=2, M(1,1)=2, M(1,2)=2, A(2,0)={'(Query-2)'}, A(2,1)={'(Query-2)'}, A(2,2)={'(Query-1)'}, M(2,0)=2, M(2,1)=2, M(2,2)=1, A(4,0)={'(Query-0)'}, M(4,0)=0
+
+-----------PAYNT-----------               
+Value = 461.2682115461449 | Time elapsed = 299.0s | FSC size = 24
+FSC = A(0,0)={'(Query-2)'}, A(0,1)={'(Query-0)'}, A(0,2)={'(Query-1)'}, M(0,0)=2, M(0,1)=0, M(0,2)=1, A(1,0)={'(Query-2)'}, A(1,1)={'(Query-2)'}, A(1,2)={'(Query-2)'}, M(1,0)=2, M(1,1)=2, M(1,2)=2, A(2,0)={'(Query-2)'}, A(2,1)={'(Query-2)'}, A(2,2)={'(Query-1)'}, M(2,0)=2, M(2,1)=2, M(2,2)=1, A(4,0)={'(Query-0)'}, M(4,0)=2
+
+-----------PAYNT-----------               
+Value = 461.71887602076646 | Time elapsed = 299.0s | FSC size = 24
+FSC = A(0,0)={'(Query-2)'}, A(0,1)={'(Query-0)'}, A(0,2)={'(Query-1)'}, M(0,0)=2, M(0,1)=0, M(0,2)=1, A(1,0)={'(Query-2)'}, A(1,1)={'(Query-2)'}, A(1,2)={'(Query-2)'}, M(1,0)=2, M(1,1)=2, M(1,2)=2, A(2,0)={'(Query-2)'}, A(2,1)={'(Query-2)'}, A(2,2)={'(Query-1)'}, M(2,0)=2, M(2,1)=2, M(2,2)=1, A(4,0)={'(Query-0)'}, M(4,0)=0
+
+-----------PAYNT-----------               
+Value = 462.56224463256905 | Time elapsed = 299.5s | FSC size = 24
+FSC = A(0,0)={'(Query-2)'}, A(0,1)={'(Query-0)'}, A(0,2)={'(Query-1)'}, M(0,0)=2, M(0,1)=0, M(0,2)=1, A(1,0)={'(Query-2)'}, A(1,1)={'(Query-2)'}, A(1,2)={'(Query-2)'}, M(1,0)=1, M(1,1)=2, M(1,2)=2, A(2,0)={'(Query-2)'}, A(2,1)={'(Query-2)'}, A(2,2)={'(Query-1)'}, M(2,0)=2, M(2,1)=2, M(2,2)=1, A(4,0)={'(Query-0)'}, M(4,0)=2
+
+-----------PAYNT-----------               
+Value = 463.0048120293999 | Time elapsed = 299.6s | FSC size = 24
+FSC = A(0,0)={'(Query-2)'}, A(0,1)={'(Query-0)'}, A(0,2)={'(Query-1)'}, M(0,0)=2, M(0,1)=0, M(0,2)=1, A(1,0)={'(Query-2)'}, A(1,1)={'(Query-2)'}, A(1,2)={'(Query-2)'}, M(1,0)=1, M(1,1)=2, M(1,2)=2, A(2,0)={'(Query-2)'}, A(2,1)={'(Query-2)'}, A(2,2)={'(Query-1)'}, M(2,0)=2, M(2,1)=2, M(2,2)=1, A(4,0)={'(Query-0)'}, M(4,0)=0
+
+-----------PAYNT-----------               
+Value = 463.341771708883 | Time elapsed = 398.5s | FSC size = 24
+FSC = A(0,0)={'(Query-2)'}, A(0,1)={'(Query-1)'}, A(0,2)={'(Query-0)'}, M(0,0)=2, M(0,1)=0, M(0,2)=1, A(1,0)={'(Query-2)'}, A(1,1)={'(Query-2)'}, A(1,2)={'(Query-2)'}, M(1,0)=1, M(1,1)=2, M(1,2)=2, A(2,0)={'(Query-2)'}, A(2,1)={'(Query-1)'}, A(2,2)={'(Query-1)'}, M(2,0)=2, M(2,1)=0, M(2,2)=0, A(4,0)={'(Query-0)'}, M(4,0)=1
+
+-----------PAYNT-----------               
+Value = 471.1461013905245 | Time elapsed = 520.7s | FSC size = 24
+FSC = A(0,0)={'(Query-2)'}, A(0,1)={'(Query-1)'}, A(0,2)={'(Query-0)'}, M(0,0)=2, M(0,1)=0, M(0,2)=1, A(1,0)={'(Query-2)'}, A(1,1)={'(Query-2)'}, A(1,2)={'(Query-2)'}, M(1,0)=2, M(1,1)=2, M(1,2)=2, A(2,0)={'(Query-2)'}, A(2,1)={'(Query-1)'}, A(2,2)={'(Query-0)'}, M(2,0)=2, M(2,1)=0, M(2,2)=1, A(4,0)={'(Query-0)'}, M(4,0)=2
+
+-----------PAYNT-----------               
+Value = 472.3893772756397 | Time elapsed = 520.7s | FSC size = 24
+FSC = A(0,0)={'(Query-2)'}, A(0,1)={'(Query-1)'}, A(0,2)={'(Query-0)'}, M(0,0)=2, M(0,1)=0, M(0,2)=1, A(1,0)={'(Query-2)'}, A(1,1)={'(Query-2)'}, A(1,2)={'(Query-2)'}, M(1,0)=2, M(1,1)=2, M(1,2)=2, A(2,0)={'(Query-2)'}, A(2,1)={'(Query-1)'}, A(2,2)={'(Query-0)'}, M(2,0)=2, M(2,1)=0, M(2,2)=1, A(4,0)={'(Query-0)'}, M(4,0)=1
+
+-----------PAYNT-----------               
+Value = 476.8237581883732 | Time elapsed = 521.8s | FSC size = 24
+FSC = A(0,0)={'(Query-2)'}, A(0,1)={'(Query-1)'}, A(0,2)={'(Query-0)'}, M(0,0)=2, M(0,1)=0, M(0,2)=1, A(1,0)={'(Query-2)'}, A(1,1)={'(Query-2)'}, A(1,2)={'(Query-2)'}, M(1,0)=1, M(1,1)=2, M(1,2)=2, A(2,0)={'(Query-2)'}, A(2,1)={'(Query-1)'}, A(2,2)={'(Query-0)'}, M(2,0)=2, M(2,1)=0, M(2,2)=1, A(4,0)={'(Query-0)'}, M(4,0)=2
+
+-----------PAYNT-----------               
+Value = 478.16357741925464 | Time elapsed = 521.8s | FSC size = 24
+FSC = A(0,0)={'(Query-2)'}, A(0,1)={'(Query-1)'}, A(0,2)={'(Query-0)'}, M(0,0)=2, M(0,1)=0, M(0,2)=1, A(1,0)={'(Query-2)'}, A(1,1)={'(Query-2)'}, A(1,2)={'(Query-2)'}, M(1,0)=1, M(1,1)=2, M(1,2)=2, A(2,0)={'(Query-2)'}, A(2,1)={'(Query-1)'}, A(2,2)={'(Query-0)'}, M(2,0)=2, M(2,1)=0, M(2,2)=1, A(4,0)={'(Query-0)'}, M(4,0)=1
+
+-----------PAYNT-----------               
+Value = 478.2724341054378 | Time elapsed = 526.9s | FSC size = 24
+FSC = A(0,0)={'(Query-2)'}, A(0,1)={'(Query-1)'}, A(0,2)={'(Query-0)'}, M(0,0)=1, M(0,1)=2, M(0,2)=0, A(1,0)={'(Query-2)'}, A(1,1)={'(Query-2)'}, A(1,2)={'(Query-2)'}, M(1,0)=2, M(1,1)=1, M(1,2)=1, A(2,0)={'(Query-2)'}, A(2,1)={'(Query-1)'}, A(2,2)={'(Query-0)'}, M(2,0)=1, M(2,1)=2, M(2,2)=0, A(4,0)={'(Query-0)'}, M(4,0)=0
+
+-----------PAYNT-----------               
+Value = 486.09188171390934 | Time elapsed = 838.5s | FSC size = 24
+FSC = A(0,0)={'(Query-2)'}, A(0,1)={'(Query-1)'}, A(0,2)={'(Query-2)'}, M(0,0)=0, M(0,1)=2, M(0,2)=1, A(1,0)={'(Query-2)'}, A(1,1)={'(Query-2)'}, A(1,2)={'(Query-1)'}, M(1,0)=0, M(1,1)=1, M(1,2)=2, A(2,0)={'(Query-2)'}, A(2,1)={'(Query-1)'}, A(2,2)={'(Query-2)'}, M(2,0)=0, M(2,1)=2, M(2,2)=1, A(4,0)={'(Query-0)'}, M(4,0)=2
+
+-----------PAYNT-----------               
+Value = 488.38792857654823 | Time elapsed = 841.7s | FSC size = 24
+FSC = A(0,0)={'(Query-0)'}, A(0,1)={'(Query-1)'}, A(0,2)={'(Query-2)'}, M(0,0)=2, M(0,1)=2, M(0,2)=0, A(1,0)={'(Query-2)'}, A(1,1)={'(Query-2)'}, A(1,2)={'(Query-1)'}, M(1,0)=1, M(1,1)=1, M(1,2)=2, A(2,0)={'(Query-2)'}, A(2,1)={'(Query-1)'}, A(2,2)={'(Query-2)'}, M(2,0)=1, M(2,1)=2, M(2,2)=1, A(4,0)={'(Query-0)'}, M(4,0)=2
+
+-----------PAYNT-----------               
+Value = 489.05108671162674 | Time elapsed = 841.7s | FSC size = 24
+FSC = A(0,0)={'(Query-0)'}, A(0,1)={'(Query-1)'}, A(0,2)={'(Query-2)'}, M(0,0)=2, M(0,1)=2, M(0,2)=0, A(1,0)={'(Query-2)'}, A(1,1)={'(Query-2)'}, A(1,2)={'(Query-1)'}, M(1,0)=1, M(1,1)=1, M(1,2)=2, A(2,0)={'(Query-2)'}, A(2,1)={'(Query-1)'}, A(2,2)={'(Query-2)'}, M(2,0)=1, M(2,1)=2, M(2,2)=1, A(4,0)={'(Query-0)'}, M(4,0)=1
+
+-----------PAYNT-----------               
+Value = 491.587389877396 | Time elapsed = 841.8s | FSC size = 24
+FSC = A(0,0)={'(Query-0)'}, A(0,1)={'(Query-1)'}, A(0,2)={'(Query-2)'}, M(0,0)=1, M(0,1)=2, M(0,2)=0, A(1,0)={'(Query-2)'}, A(1,1)={'(Query-2)'}, A(1,2)={'(Query-1)'}, M(1,0)=1, M(1,1)=1, M(1,2)=2, A(2,0)={'(Query-2)'}, A(2,1)={'(Query-1)'}, A(2,2)={'(Query-2)'}, M(2,0)=1, M(2,1)=2, M(2,2)=1, A(4,0)={'(Query-0)'}, M(4,0)=2
+
+-----------PAYNT-----------               
+Value = 491.94153071215464 | Time elapsed = 841.8s | FSC size = 24
+FSC = A(0,0)={'(Query-0)'}, A(0,1)={'(Query-1)'}, A(0,2)={'(Query-2)'}, M(0,0)=1, M(0,1)=2, M(0,2)=0, A(1,0)={'(Query-2)'}, A(1,1)={'(Query-2)'}, A(1,2)={'(Query-1)'}, M(1,0)=1, M(1,1)=1, M(1,2)=2, A(2,0)={'(Query-2)'}, A(2,1)={'(Query-1)'}, A(2,2)={'(Query-2)'}, M(2,0)=1, M(2,1)=2, M(2,2)=1, A(4,0)={'(Query-0)'}, M(4,0)=1
+
+-----------PAYNT-----------               
+Value = 491.9515306243092 | Time elapsed = 842.0s | FSC size = 24
+FSC = A(0,0)={'(Query-0)'}, A(0,1)={'(Query-1)'}, A(0,2)={'(Query-2)'}, M(0,0)=1, M(0,1)=2, M(0,2)=0, A(1,0)={'(Query-2)'}, A(1,1)={'(Query-2)'}, A(1,2)={'(Query-1)'}, M(1,0)=0, M(1,1)=1, M(1,2)=2, A(2,0)={'(Query-2)'}, A(2,1)={'(Query-1)'}, A(2,2)={'(Query-2)'}, M(2,0)=1, M(2,1)=2, M(2,2)=1, A(4,0)={'(Query-0)'}, M(4,0)=1
+
+-----------PAYNT-----------               
+Value = 492.2348610098033 | Time elapsed = 842.2s | FSC size = 24
+FSC = A(0,0)={'(Query-0)'}, A(0,1)={'(Query-1)'}, A(0,2)={'(Query-2)'}, M(0,0)=1, M(0,1)=2, M(0,2)=0, A(1,0)={'(Query-2)'}, A(1,1)={'(Query-2)'}, A(1,2)={'(Query-1)'}, M(1,0)=1, M(1,1)=0, M(1,2)=2, A(2,0)={'(Query-2)'}, A(2,1)={'(Query-1)'}, A(2,2)={'(Query-2)'}, M(2,0)=1, M(2,1)=2, M(2,2)=1, A(4,0)={'(Query-0)'}, M(4,0)=1
+
+-----------PAYNT-----------               
+Value = 492.4020499518558 | Time elapsed = 845.6s | FSC size = 24
+FSC = A(0,0)={'(Query-1)'}, A(0,1)={'(Query-0)'}, A(0,2)={'(Query-2)'}, M(0,0)=2, M(0,1)=0, M(0,2)=1, A(1,0)={'(Query-2)'}, A(1,1)={'(Query-2)'}, A(1,2)={'(Query-1)'}, M(1,0)=1, M(1,1)=1, M(1,2)=2, A(2,0)={'(Query-2)'}, A(2,1)={'(Query-1)'}, A(2,2)={'(Query-2)'}, M(2,0)=1, M(2,1)=2, M(2,2)=1, A(4,0)={'(Query-0)'}, M(4,0)=0
+
+-----------PAYNT-----------               
+Value = 496.13318728456414 | Time elapsed = 852.7s | FSC size = 24
+FSC = A(0,0)={'(Query-2)'}, A(0,1)={'(Query-1)'}, A(0,2)={'(Query-0)'}, M(0,0)=1, M(0,1)=2, M(0,2)=0, A(1,0)={'(Query-2)'}, A(1,1)={'(Query-2)'}, A(1,2)={'(Query-1)'}, M(1,0)=2, M(1,1)=1, M(1,2)=2, A(2,0)={'(Query-2)'}, A(2,1)={'(Query-1)'}, A(2,2)={'(Query-2)'}, M(2,0)=1, M(2,1)=2, M(2,2)=1, A(4,0)={'(Query-0)'}, M(4,0)=2
+
+-----------PAYNT-----------               
+Value = 496.94081706149865 | Time elapsed = 852.7s | FSC size = 24
+FSC = A(0,0)={'(Query-2)'}, A(0,1)={'(Query-1)'}, A(0,2)={'(Query-0)'}, M(0,0)=1, M(0,1)=2, M(0,2)=0, A(1,0)={'(Query-2)'}, A(1,1)={'(Query-2)'}, A(1,2)={'(Query-1)'}, M(1,0)=2, M(1,1)=1, M(1,2)=2, A(2,0)={'(Query-2)'}, A(2,1)={'(Query-1)'}, A(2,2)={'(Query-2)'}, M(2,0)=1, M(2,1)=2, M(2,2)=1, A(4,0)={'(Query-0)'}, M(4,0)=1
+
+-----------PAYNT-----------               
+Value = 500.62109155504146 | Time elapsed = 853.4s | FSC size = 24
+FSC = A(0,0)={'(Query-2)'}, A(0,1)={'(Query-1)'}, A(0,2)={'(Query-0)'}, M(0,0)=1, M(0,1)=2, M(0,2)=0, A(1,0)={'(Query-2)'}, A(1,1)={'(Query-2)'}, A(1,2)={'(Query-1)'}, M(1,0)=1, M(1,1)=1, M(1,2)=2, A(2,0)={'(Query-2)'}, A(2,1)={'(Query-1)'}, A(2,2)={'(Query-2)'}, M(2,0)=1, M(2,1)=2, M(2,2)=1, A(4,0)={'(Query-0)'}, M(4,0)=2
+
+-----------PAYNT-----------               
+Value = 501.3620841876003 | Time elapsed = 853.4s | FSC size = 24
+FSC = A(0,0)={'(Query-2)'}, A(0,1)={'(Query-1)'}, A(0,2)={'(Query-0)'}, M(0,0)=1, M(0,1)=2, M(0,2)=0, A(1,0)={'(Query-2)'}, A(1,1)={'(Query-2)'}, A(1,2)={'(Query-1)'}, M(1,0)=1, M(1,1)=1, M(1,2)=2, A(2,0)={'(Query-2)'}, A(2,1)={'(Query-1)'}, A(2,2)={'(Query-2)'}, M(2,0)=1, M(2,1)=2, M(2,2)=1, A(4,0)={'(Query-0)'}, M(4,0)=1
+
+-----------PAYNT-----------               
+Value = 501.6589076393728 | Time elapsed = 853.4s | FSC size = 24
+FSC = A(0,0)={'(Query-2)'}, A(0,1)={'(Query-1)'}, A(0,2)={'(Query-0)'}, M(0,0)=1, M(0,1)=2, M(0,2)=0, A(1,0)={'(Query-2)'}, A(1,1)={'(Query-2)'}, A(1,2)={'(Query-1)'}, M(1,0)=1, M(1,1)=1, M(1,2)=2, A(2,0)={'(Query-2)'}, A(2,1)={'(Query-1)'}, A(2,2)={'(Query-2)'}, M(2,0)=1, M(2,1)=2, M(2,2)=1, A(4,0)={'(Query-0)'}, M(4,0)=0
+
+-----------PAYNT-----------               
+Value = 507.2745662402106 | Time elapsed = 883.8s | FSC size = 24
+FSC = A(0,0)={'(Query-2)'}, A(0,1)={'(Query-1)'}, A(0,2)={'(Query-0)'}, M(0,0)=1, M(0,1)=2, M(0,2)=0, A(1,0)={'(Query-2)'}, A(1,1)={'(Query-2)'}, A(1,2)={'(Query-1)'}, M(1,0)=1, M(1,1)=1, M(1,2)=2, A(2,0)={'(Query-2)'}, A(2,1)={'(Query-1)'}, A(2,2)={'(Query-0)'}, M(2,0)=1, M(2,1)=2, M(2,2)=0, A(4,0)={'(Query-0)'}, M(4,0)=2
+
+-----------PAYNT-----------               
+Value = 508.08710067634763 | Time elapsed = 883.9s | FSC size = 24
+FSC = A(0,0)={'(Query-2)'}, A(0,1)={'(Query-1)'}, A(0,2)={'(Query-0)'}, M(0,0)=1, M(0,1)=2, M(0,2)=0, A(1,0)={'(Query-2)'}, A(1,1)={'(Query-2)'}, A(1,2)={'(Query-1)'}, M(1,0)=1, M(1,1)=1, M(1,2)=2, A(2,0)={'(Query-2)'}, A(2,1)={'(Query-1)'}, A(2,2)={'(Query-0)'}, M(2,0)=1, M(2,1)=2, M(2,2)=0, A(4,0)={'(Query-0)'}, M(4,0)=1
+
+-----------PAYNT-----------               
+Value = 508.74215144763224 | Time elapsed = 883.9s | FSC size = 24
+FSC = A(0,0)={'(Query-2)'}, A(0,1)={'(Query-1)'}, A(0,2)={'(Query-0)'}, M(0,0)=1, M(0,1)=2, M(0,2)=0, A(1,0)={'(Query-2)'}, A(1,1)={'(Query-2)'}, A(1,2)={'(Query-1)'}, M(1,0)=1, M(1,1)=1, M(1,2)=2, A(2,0)={'(Query-2)'}, A(2,1)={'(Query-1)'}, A(2,2)={'(Query-0)'}, M(2,0)=1, M(2,1)=2, M(2,2)=0, A(4,0)={'(Query-0)'}, M(4,0)=0
+

@@ -1,0 +1,1406 @@
+2023-04-26 15:07:21,148 - cli.py - This is Paynt version 0.1.0.
+2023-04-26 15:07:21,152 - sketch.py - loading sketch from /mnt/d/src/PP/synthesis-CAV/experiments/../models/pomdp/storm-integration/4x3-95/sketch.templ ...
+2023-04-26 15:07:21,208 - prism_parser.py - loading properties from /mnt/d/src/PP/synthesis-CAV/experiments/../models/pomdp/storm-integration/4x3-95/sketch.props ...
+2023-04-26 15:07:21,225 - prism_parser.py - found the following specification: constraints: none, optimality objective: R[exp]{"reward"}max=? [F "discount_sink"] 
+2023-04-26 15:07:21,235 - sketch.py - constructed explicit quotient having 22 states and 82 actions
+2023-04-26 15:07:21,235 - sketch.py - found the following specification constraints: none, optimality objective: R[exp]{"reward"}max=? [F "discount_sink"] 
+2023-04-26 15:07:21,243 - quotient_pomdp.py - Constructed POMDP having 9 observations.
+2023-04-26 15:07:21,247 - quotient_pomdp.py - Unfolding POMDP using the following memory allocation vector: [1, 1, 1, 1, 1, 1, 1, 1, 1] ...
+2023-04-26 15:07:21,249 - quotient_pomdp.py - Constructed quotient MDP having 22 states and 82 actions.
+2023-04-26 15:07:21,253 - synthesizer_pomdp.py - Storm pomdp option enabled
+2023-04-26 15:07:21,253 - synthesizer_pomdp.py - Storm settings: iterative - (None, None, None), get_storm_result - 10, storm_options - 10mil, prune_storm - False, unfold_strategy - (True, False), use_storm_cutoffs - False
+2023-04-26 15:07:21,253 - synthesizer_pomdp.py - Synthesizing optimal k=1 controller ...
+2023-04-26 15:07:21,253 - quotient_pomdp.py - Unfolding POMDP using the following memory allocation vector: [1, 1, 1, 1, 1, 1, 1, 1, 1] ...
+2023-04-26 15:07:21,253 - quotient_pomdp.py - Constructed quotient MDP having 22 states and 82 actions.
+{} 
+
+{}
+2023-04-26 15:07:21,253 - synthesizer.py - Synthesis initiated.
+-----------PAYNT-----------               
+Value = -0.9097672837142294 | Time elapsed = 0.1s | FSC size = 18
+FSC = A(0,0)={'(e)'}, A(1,0)={'(s)'}, A(2,0)={'(w)'}, A(3,0)={'(e)'}, A(4,0)={'(n)'}, A(5,0)={'(n)'}, A(7,0)={'(w)'}
+
+-----------PAYNT-----------               
+Value = -0.8686599675278818 | Time elapsed = 0.1s | FSC size = 18
+FSC = A(0,0)={'(e)'}, A(1,0)={'(s)'}, A(2,0)={'(w)'}, A(3,0)={'(e)'}, A(4,0)={'(n)'}, A(5,0)={'(n)'}, A(7,0)={'(e)'}
+
+-----------PAYNT-----------               
+Value = -0.40761788722743514 | Time elapsed = 0.1s | FSC size = 18
+FSC = A(0,0)={'(e)'}, A(1,0)={'(s)'}, A(2,0)={'(e)'}, A(3,0)={'(n)'}, A(4,0)={'(n)'}, A(5,0)={'(n)'}, A(7,0)={'(w)'}
+
+-----------PAYNT-----------               
+Value = -0.3958092794894377 | Time elapsed = 0.1s | FSC size = 18
+FSC = A(0,0)={'(e)'}, A(1,0)={'(s)'}, A(2,0)={'(e)'}, A(3,0)={'(n)'}, A(4,0)={'(n)'}, A(5,0)={'(n)'}, A(7,0)={'(e)'}
+
+-----------PAYNT-----------               
+Value = -0.25128453587513117 | Time elapsed = 0.1s | FSC size = 18
+FSC = A(0,0)={'(e)'}, A(1,0)={'(s)'}, A(2,0)={'(e)'}, A(3,0)={'(n)'}, A(4,0)={'(n)'}, A(5,0)={'(n)'}, A(7,0)={'(n)'}
+
+-----------PAYNT-----------               
+Value = 0.32562887393853235 | Time elapsed = 0.1s | FSC size = 18
+FSC = A(0,0)={'(n)'}, A(1,0)={'(w)'}, A(2,0)={'(e)'}, A(3,0)={'(n)'}, A(4,0)={'(n)'}, A(5,0)={'(n)'}, A(7,0)={'(w)'}
+
+-----------PAYNT-----------               
+Value = 0.44176908305750945 | Time elapsed = 0.1s | FSC size = 18
+FSC = A(0,0)={'(n)'}, A(1,0)={'(w)'}, A(2,0)={'(e)'}, A(3,0)={'(n)'}, A(4,0)={'(n)'}, A(5,0)={'(n)'}, A(7,0)={'(n)'}
+
+--------------------
+Synthesis summary
+
+optimality objective: R[exp]{"reward"}max=? [F "discount_sink"] 
+
+method: AR, synthesis time: 0.06 s
+number of holes: 7, family size: 16384, super quotient: 22 states / 82 actions
+explored: 100 %
+AR stats: avg MDP size: 22, iterations: 24
+
+optimal: 0.441769
+--------------------
+
+2023-04-26 15:07:21,309 - synthesizer_pomdp.py - Synthesizing optimal k=2 controller ...
+2023-04-26 15:07:21,309 - quotient_pomdp.py - Unfolding POMDP using the following memory allocation vector: [2, 1, 2, 1, 1, 1, 1, 2, 1] ...
+2023-04-26 15:07:21,309 - quotient_pomdp.py - Constructed quotient MDP having 38 states and 291 actions.
+{} 
+
+{}
+2023-04-26 15:07:21,311 - synthesizer.py - Synthesis initiated.
+-----------PAYNT-----------               
+Value = 0.6610746739835868 | Time elapsed = 0.1s | FSC size = 24
+FSC = A(0,0)={'(e)'}, A(0,1)={'(n)'}, M(0,0)=0, M(0,1)=1, A(1,0)={'(w)'}, M(1,0)=0, A(2,0)={'(e)'}, A(2,1)={'(e)'}, M(2,0)=1, M(2,1)=1, A(3,0)={'(n)'}, M(3,0)=0, A(4,0)={'(n)'}, M(4,0)=1, A(5,0)={'(n)'}, M(5,0)=1, M(6,0)=0, A(7,0)={'(w)'}, A(7,1)={'(w)'}, M(7,0)=1, M(7,1)=1
+
+-----------PAYNT-----------               
+Value = 0.7288788196786052 | Time elapsed = 0.1s | FSC size = 24
+FSC = A(0,0)={'(e)'}, A(0,1)={'(n)'}, M(0,0)=0, M(0,1)=1, A(1,0)={'(w)'}, M(1,0)=0, A(2,0)={'(e)'}, A(2,1)={'(e)'}, M(2,0)=1, M(2,1)=1, A(3,0)={'(n)'}, M(3,0)=0, A(4,0)={'(n)'}, M(4,0)=1, A(5,0)={'(n)'}, M(5,0)=1, M(6,0)=1, A(7,0)={'(w)'}, A(7,1)={'(n)'}, M(7,0)=1, M(7,1)=1
+
+-----------PAYNT-----------               
+Value = 0.7361988615171265 | Time elapsed = 0.1s | FSC size = 24
+FSC = A(0,0)={'(e)'}, A(0,1)={'(n)'}, M(0,0)=0, M(0,1)=0, A(1,0)={'(w)'}, M(1,0)=0, A(2,0)={'(e)'}, A(2,1)={'(e)'}, M(2,0)=1, M(2,1)=1, A(3,0)={'(n)'}, M(3,0)=0, A(4,0)={'(n)'}, M(4,0)=1, A(5,0)={'(n)'}, M(5,0)=1, M(6,0)=0, A(7,0)={'(w)'}, A(7,1)={'(w)'}, M(7,0)=1, M(7,1)=1
+
+-----------PAYNT-----------               
+Value = 0.8174378257349435 | Time elapsed = 0.1s | FSC size = 24
+FSC = A(0,0)={'(e)'}, A(0,1)={'(n)'}, M(0,0)=1, M(0,1)=0, A(1,0)={'(w)'}, M(1,0)=0, A(2,0)={'(e)'}, A(2,1)={'(e)'}, M(2,0)=1, M(2,1)=1, A(3,0)={'(n)'}, M(3,0)=0, A(4,0)={'(n)'}, M(4,0)=1, A(5,0)={'(n)'}, M(5,0)=1, M(6,0)=1, A(7,0)={'(w)'}, A(7,1)={'(n)'}, M(7,0)=0, M(7,1)=1
+
+-----------PAYNT-----------               
+Value = 0.8252283068971517 | Time elapsed = 0.1s | FSC size = 24
+FSC = A(0,0)={'(e)'}, A(0,1)={'(n)'}, M(0,0)=0, M(0,1)=0, A(1,0)={'(w)'}, M(1,0)=0, A(2,0)={'(e)'}, A(2,1)={'(e)'}, M(2,0)=1, M(2,1)=1, A(3,0)={'(n)'}, M(3,0)=0, A(4,0)={'(n)'}, M(4,0)=1, A(5,0)={'(n)'}, M(5,0)=1, M(6,0)=1, A(7,0)={'(w)'}, A(7,1)={'(n)'}, M(7,0)=0, M(7,1)=1
+
+-----------PAYNT-----------               
+Value = 0.8683670033002527 | Time elapsed = 0.2s | FSC size = 24
+FSC = A(0,0)={'(e)'}, A(0,1)={'(n)'}, M(0,0)=0, M(0,1)=0, A(1,0)={'(w)'}, M(1,0)=1, A(2,0)={'(e)'}, A(2,1)={'(w)'}, M(2,0)=0, M(2,1)=1, A(3,0)={'(n)'}, M(3,0)=0, A(4,0)={'(n)'}, M(4,0)=1, A(5,0)={'(n)'}, M(5,0)=1, M(6,0)=0, A(7,0)={'(w)'}, A(7,1)={'(w)'}, M(7,0)=1, M(7,1)=1
+
+-----------PAYNT-----------               
+Value = 1.3754338972603506 | Time elapsed = 0.2s | FSC size = 24
+FSC = A(0,0)={'(e)'}, A(0,1)={'(n)'}, M(0,0)=1, M(0,1)=1, A(1,0)={'(w)'}, M(1,0)=0, A(2,0)={'(n)'}, A(2,1)={'(e)'}, M(2,0)=1, M(2,1)=1, A(3,0)={'(n)'}, M(3,0)=0, A(4,0)={'(n)'}, M(4,0)=1, A(5,0)={'(n)'}, M(5,0)=1, M(6,0)=0, A(7,0)={'(w)'}, A(7,1)={'(w)'}, M(7,0)=1, M(7,1)=1
+
+-----------PAYNT-----------               
+Value = 1.4681428605850353 | Time elapsed = 0.2s | FSC size = 24
+FSC = A(0,0)={'(e)'}, A(0,1)={'(n)'}, M(0,0)=1, M(0,1)=1, A(1,0)={'(w)'}, M(1,0)=0, A(2,0)={'(n)'}, A(2,1)={'(e)'}, M(2,0)=1, M(2,1)=1, A(3,0)={'(n)'}, M(3,0)=0, A(4,0)={'(n)'}, M(4,0)=1, A(5,0)={'(n)'}, M(5,0)=1, M(6,0)=1, A(7,0)={'(w)'}, A(7,1)={'(e)'}, M(7,0)=1, M(7,1)=1
+
+--------------------
+Synthesis summary
+
+optimality objective: R[exp]{"reward"}max=? [F "discount_sink"] 
+
+method: AR, synthesis time: 0.4 s
+number of holes: 21, family size: 2147483648, super quotient: 38 states / 291 actions
+explored: 100 %
+AR stats: avg MDP size: 38, iterations: 828
+
+optimal: 1.468143
+--------------------
+
+2023-04-26 15:07:21,714 - synthesizer_pomdp.py - Synthesizing optimal k=3 controller ...
+2023-04-26 15:07:21,715 - quotient_pomdp.py - Unfolding POMDP using the following memory allocation vector: [3, 1, 3, 1, 1, 1, 1, 3, 1] ...
+2023-04-26 15:07:21,715 - quotient_pomdp.py - Constructed quotient MDP having 54 states and 628 actions.
+{} 
+
+{}
+2023-04-26 15:07:21,720 - synthesizer.py - Synthesis initiated.
+-----------PAYNT-----------               
+Value = 1.5182880891209338 | Time elapsed = 0.6s | FSC size = 30
+FSC = A(0,0)={'(e)'}, A(0,1)={'(e)'}, A(0,2)={'(n)'}, M(0,0)=2, M(0,1)=0, M(0,2)=2, A(1,0)={'(w)'}, M(1,0)=1, A(2,0)={'(e)'}, A(2,1)={'(n)'}, A(2,2)={'(e)'}, M(2,0)=2, M(2,1)=2, M(2,2)=2, A(3,0)={'(n)'}, M(3,0)=1, A(4,0)={'(n)'}, M(4,0)=2, A(5,0)={'(n)'}, M(5,0)=2, M(6,0)=2, A(7,0)={'(w)'}, A(7,1)={'(w)'}, A(7,2)={'(e)'}, M(7,0)=2, M(7,1)=2, M(7,2)=2
+
+-----------PAYNT-----------               
+Value = 1.5237202739501625 | Time elapsed = 0.6s | FSC size = 30
+FSC = A(0,0)={'(e)'}, A(0,1)={'(e)'}, A(0,2)={'(n)'}, M(0,0)=0, M(0,1)=0, M(0,2)=2, A(1,0)={'(w)'}, M(1,0)=1, A(2,0)={'(e)'}, A(2,1)={'(n)'}, A(2,2)={'(e)'}, M(2,0)=2, M(2,1)=2, M(2,2)=2, A(3,0)={'(n)'}, M(3,0)=0, A(4,0)={'(n)'}, M(4,0)=2, A(5,0)={'(n)'}, M(5,0)=2, M(6,0)=2, A(7,0)={'(w)'}, A(7,1)={'(w)'}, A(7,2)={'(e)'}, M(7,0)=2, M(7,1)=2, M(7,2)=2
+
+-----------PAYNT-----------               
+Value = 1.5255690107070157 | Time elapsed = 0.7s | FSC size = 30
+FSC = A(0,0)={'(e)'}, A(0,1)={'(e)'}, A(0,2)={'(n)'}, M(0,0)=0, M(0,1)=0, M(0,2)=2, A(1,0)={'(w)'}, M(1,0)=1, A(2,0)={'(e)'}, A(2,1)={'(n)'}, A(2,2)={'(e)'}, M(2,0)=2, M(2,1)=2, M(2,2)=2, A(3,0)={'(n)'}, M(3,0)=0, A(4,0)={'(n)'}, M(4,0)=2, A(5,0)={'(n)'}, M(5,0)=2, M(6,0)=2, A(7,0)={'(w)'}, A(7,1)={'(w)'}, A(7,2)={'(n)'}, M(7,0)=2, M(7,1)=2, M(7,2)=0
+
+-----------PAYNT-----------               
+Value = 1.574057948441746 | Time elapsed = 6.4s | FSC size = 30
+FSC = A(0,0)={'(e)'}, A(0,1)={'(e)'}, A(0,2)={'(n)'}, M(0,0)=2, M(0,1)=0, M(0,2)=0, A(1,0)={'(w)'}, M(1,0)=1, A(2,0)={'(e)'}, A(2,1)={'(n)'}, A(2,2)={'(e)'}, M(2,0)=2, M(2,1)=2, M(2,2)=2, A(3,0)={'(n)'}, M(3,0)=1, A(4,0)={'(n)'}, M(4,0)=2, A(5,0)={'(n)'}, M(5,0)=2, M(6,0)=0, A(7,0)={'(w)'}, A(7,1)={'(w)'}, A(7,2)={'(w)'}, M(7,0)=2, M(7,1)=2, M(7,2)=2
+
+-----------PAYNT-----------               
+Value = 1.6529422928931599 | Time elapsed = 6.5s | FSC size = 30
+FSC = A(0,0)={'(e)'}, A(0,1)={'(e)'}, A(0,2)={'(n)'}, M(0,0)=2, M(0,1)=0, M(0,2)=0, A(1,0)={'(w)'}, M(1,0)=1, A(2,0)={'(e)'}, A(2,1)={'(n)'}, A(2,2)={'(e)'}, M(2,0)=2, M(2,1)=2, M(2,2)=2, A(3,0)={'(n)'}, M(3,0)=1, A(4,0)={'(n)'}, M(4,0)=2, A(5,0)={'(n)'}, M(5,0)=2, M(6,0)=2, A(7,0)={'(w)'}, A(7,1)={'(w)'}, A(7,2)={'(n)'}, M(7,0)=0, M(7,1)=0, M(7,2)=2
+
+-----------PAYNT-----------               
+Value = 1.6583341177864457 | Time elapsed = 6.8s | FSC size = 30
+FSC = A(0,0)={'(e)'}, A(0,1)={'(e)'}, A(0,2)={'(n)'}, M(0,0)=0, M(0,1)=0, M(0,2)=0, A(1,0)={'(w)'}, M(1,0)=1, A(2,0)={'(e)'}, A(2,1)={'(n)'}, A(2,2)={'(e)'}, M(2,0)=2, M(2,1)=2, M(2,2)=2, A(3,0)={'(n)'}, M(3,0)=0, A(4,0)={'(n)'}, M(4,0)=2, A(5,0)={'(n)'}, M(5,0)=2, M(6,0)=2, A(7,0)={'(w)'}, A(7,1)={'(w)'}, A(7,2)={'(n)'}, M(7,0)=0, M(7,1)=0, M(7,2)=2
+
+-----------PAYNT-----------               
+Value = 1.7180880352015115 | Time elapsed = 9.7s | FSC size = 30
+FSC = A(0,0)={'(e)'}, A(0,1)={'(n)'}, A(0,2)={'(n)'}, M(0,0)=1, M(0,1)=0, M(0,2)=1, A(1,0)={'(w)'}, M(1,0)=2, A(2,0)={'(e)'}, A(2,1)={'(e)'}, A(2,2)={'(n)'}, M(2,0)=1, M(2,1)=1, M(2,2)=2, A(3,0)={'(n)'}, M(3,0)=0, A(4,0)={'(n)'}, M(4,0)=1, A(5,0)={'(n)'}, M(5,0)=1, M(6,0)=2, A(7,0)={'(w)'}, A(7,1)={'(w)'}, A(7,2)={'(n)'}, M(7,0)=0, M(7,1)=0, M(7,2)=1
+
+-----------PAYNT-----------               
+Value = 1.7334504897109713 | Time elapsed = 9.7s | FSC size = 30
+FSC = A(0,0)={'(e)'}, A(0,1)={'(n)'}, A(0,2)={'(n)'}, M(0,0)=0, M(0,1)=0, M(0,2)=1, A(1,0)={'(w)'}, M(1,0)=2, A(2,0)={'(e)'}, A(2,1)={'(e)'}, A(2,2)={'(n)'}, M(2,0)=1, M(2,1)=1, M(2,2)=2, A(3,0)={'(n)'}, M(3,0)=0, A(4,0)={'(n)'}, M(4,0)=1, A(5,0)={'(n)'}, M(5,0)=1, M(6,0)=2, A(7,0)={'(w)'}, A(7,1)={'(w)'}, A(7,2)={'(n)'}, M(7,0)=0, M(7,1)=0, M(7,2)=1
+
+2023-04-26 15:07:31,316 - synthesizer_ar_storm.py - Pausing synthesis
+2023-04-26 15:07:31,316 - synthesizer_ar_storm.py - Terminating controller synthesis
+--------------------
+Synthesis summary
+
+optimality objective: R[exp]{"reward"}max=? [F "discount_sink"] 
+
+method: AR, synthesis time: 9.6 s
+number of holes: 27, family size: 320979616137216, super quotient: 54 states / 628 actions
+explored: 6 %
+AR stats: avg MDP size: 54, iterations: 14060
+
+optimal: 1.73345
+--------------------
+
+2023-04-26 15:07:31,321 - storm_pomdp_control.py - starting Storm POMDP analysis
+Finished exploring Underapproximation MDP.
+ Start analysis...
+2023-04-26 15:11:34,960 - storm_pomdp_control.py - Storm POMDP analysis completed
+-----------Storm-----------                 
+Value = 1.8845532469868829 | Time elapsed = 243.6s | FSC size = 865
+FSC (dot) = digraph model {
+	0 [ label = "0: {__extra, target}" ];
+	1 [ label = "1: {init, obs_6}" ];
+	2 [ label = "2: {obs_7}" ];
+	3 [ label = "3: {obs_0}" ];
+	4 [ label = "4: {obs_1}" ];
+	5 [ label = "5: {obs_2}" ];
+	6 [ label = "6: {obs_3}" ];
+	7 [ label = "7: {obs_4}" ];
+	8 [ label = "8: {obs_5}" ];
+	9 [ label = "9: {obs_8, target}" ];
+	10 [ label = "10: {obs_0}" ];
+	11 [ label = "11: {obs_2}" ];
+	12 [ label = "12: {obs_2}" ];
+	13 [ label = "13: {obs_0}" ];
+	14 [ label = "14: {obs_2}" ];
+	15 [ label = "15: {obs_0}" ];
+	16 [ label = "16: {obs_0}" ];
+	17 [ label = "17: {obs_2}" ];
+	18 [ label = "18: {obs_0}" ];
+	19 [ label = "19: {obs_2}" ];
+	20 [ label = "20: {obs_2}" ];
+	21 [ label = "21: {obs_2}" ];
+	22 [ label = "22: {obs_2}" ];
+	23 [ label = "23: {obs_0}" ];
+	24 [ label = "24: {obs_2}" ];
+	25 [ label = "25: {obs_2}" ];
+	26 [ label = "26: {obs_0}" ];
+	27 [ label = "27: {obs_2}" ];
+	28 [ label = "28: {obs_2}" ];
+	29 [ label = "29: {obs_0}" ];
+	30 [ label = "30: {obs_2}" ];
+	31 [ label = "31: {obs_2}" ];
+	32 [ label = "32: {obs_2}" ];
+	33 [ label = "33: {obs_2}" ];
+	34 [ label = "34: {obs_0}" ];
+	35 [ label = "35: {obs_2}" ];
+	36 [ label = "36: {obs_2}" ];
+	37 [ label = "37: {obs_2}" ];
+	38 [ label = "38: {obs_0}" ];
+	39 [ label = "39: {obs_2}" ];
+	40 [ label = "40: {obs_2}" ];
+	41 [ label = "41: {obs_2}" ];
+	42 [ label = "42: {obs_0}" ];
+	43 [ label = "43: {obs_2}" ];
+	44 [ label = "44: {obs_2}" ];
+	45 [ label = "45: {obs_2}" ];
+	46 [ label = "46: {obs_2}" ];
+	47 [ label = "47: {obs_0}" ];
+	48 [ label = "48: {obs_2}" ];
+	49 [ label = "49: {obs_0}" ];
+	50 [ label = "50: {obs_2}" ];
+	51 [ label = "51: {obs_2}" ];
+	52 [ label = "52: {obs_0}" ];
+	53 [ label = "53: {obs_2}" ];
+	54 [ label = "54: {obs_2}" ];
+	55 [ label = "55: {obs_0}" ];
+	56 [ label = "56: {obs_2}" ];
+	57 [ label = "57: {obs_2}" ];
+	58 [ label = "58: {obs_0}" ];
+	59 [ label = "59: {obs_2}" ];
+	60 [ label = "60: {obs_2}" ];
+	61 [ label = "61: {obs_0}" ];
+	62 [ label = "62: {obs_2}" ];
+	63 [ label = "63: {obs_2}" ];
+	64 [ label = "64: {obs_2}" ];
+	65 [ label = "65: {obs_2}" ];
+	66 [ label = "66: {obs_2}" ];
+	67 [ label = "67: {obs_2}" ];
+	68 [ label = "68: {obs_2}" ];
+	69 [ label = "69: {obs_0}" ];
+	70 [ label = "70: {obs_2}" ];
+	71 [ label = "71: {obs_2}" ];
+	72 [ label = "72: {obs_2}" ];
+	73 [ label = "73: {obs_0}" ];
+	74 [ label = "74: {obs_2}" ];
+	75 [ label = "75: {obs_2}" ];
+	76 [ label = "76: {obs_2}" ];
+	77 [ label = "77: {obs_2}" ];
+	78 [ label = "78: {obs_2}" ];
+	79 [ label = "79: {obs_2}" ];
+	80 [ label = "80: {obs_2}" ];
+	81 [ label = "81: {obs_0}" ];
+	82 [ label = "82: {obs_2}" ];
+	83 [ label = "83: {obs_0}" ];
+	84 [ label = "84: {obs_2}" ];
+	85 [ label = "85: {obs_2}" ];
+	86 [ label = "86: {obs_2}" ];
+	87 [ label = "87: {obs_2}" ];
+	88 [ label = "88: {obs_2}" ];
+	89 [ label = "89: {obs_2}" ];
+	90 [ label = "90: {obs_2}" ];
+	91 [ label = "91: {obs_0}" ];
+	92 [ label = "92: {obs_2}" ];
+	93 [ label = "93: {obs_0}" ];
+	94 [ label = "94: {obs_2}" ];
+	95 [ label = "95: {obs_2}" ];
+	96 [ label = "96: {obs_2}" ];
+	97 [ label = "97: {obs_2}" ];
+	98 [ label = "98: {obs_0}" ];
+	99 [ label = "99: {obs_2}" ];
+	100 [ label = "100: {obs_2}" ];
+	101 [ label = "101: {obs_2}" ];
+	102 [ label = "102: {obs_2}" ];
+	103 [ label = "103: {obs_2}" ];
+	104 [ label = "104: {obs_2}" ];
+	105 [ label = "105: {obs_2}" ];
+	106 [ label = "106: {obs_0}" ];
+	107 [ label = "107: {obs_2}" ];
+	108 [ label = "108: {obs_0}" ];
+	109 [ label = "109: {obs_2}" ];
+	110 [ label = "110: {obs_2}" ];
+	111 [ label = "111: {obs_0}" ];
+	112 [ label = "112: {obs_2}" ];
+	113 [ label = "113: {obs_2}" ];
+	114 [ label = "114: {obs_2}" ];
+	115 [ label = "115: {obs_2}" ];
+	116 [ label = "116: {obs_2}" ];
+	117 [ label = "117: {obs_2}" ];
+	118 [ label = "118: {obs_2}" ];
+	119 [ label = "119: {obs_2}" ];
+	120 [ label = "120: {obs_2}" ];
+	121 [ label = "121: {obs_0}" ];
+	122 [ label = "122: {obs_2}" ];
+	123 [ label = "123: {obs_2}" ];
+	124 [ label = "124: {obs_2}" ];
+	125 [ label = "125: {obs_2}" ];
+	126 [ label = "126: {obs_2}" ];
+	127 [ label = "127: {obs_2}" ];
+	128 [ label = "128: {obs_0}" ];
+	129 [ label = "129: {obs_2}" ];
+	130 [ label = "130: {obs_2}" ];
+	131 [ label = "131: {obs_2}" ];
+	132 [ label = "132: {obs_2}" ];
+	133 [ label = "133: {obs_2}" ];
+	134 [ label = "134: {obs_2}" ];
+	135 [ label = "135: {obs_2}" ];
+	136 [ label = "136: {obs_0}" ];
+	137 [ label = "137: {obs_2}" ];
+	138 [ label = "138: {obs_2}" ];
+	139 [ label = "139: {obs_2}" ];
+	140 [ label = "140: {obs_0}" ];
+	141 [ label = "141: {obs_2}" ];
+	142 [ label = "142: {obs_2}" ];
+	143 [ label = "143: {obs_2}" ];
+	144 [ label = "144: {cutoff, finite_mem, obs_2}" ];
+	145 [ label = "145: {cutoff, finite_mem, obs_2}" ];
+	146 [ label = "146: {cutoff, finite_mem, obs_2}" ];
+	147 [ label = "147: {cutoff, finite_mem, obs_2}" ];
+	148 [ label = "148: {cutoff, finite_mem, obs_2}" ];
+	149 [ label = "149: {cutoff, finite_mem, obs_2}" ];
+	150 [ label = "150: {cutoff, finite_mem, obs_2}" ];
+	151 [ label = "151: {cutoff, finite_mem, obs_2}" ];
+	152 [ label = "152: {cutoff, finite_mem, obs_2}" ];
+	153 [ label = "153: {cutoff, finite_mem, obs_2}" ];
+	154 [ label = "154: {cutoff, finite_mem, obs_2}" ];
+	155 [ label = "155: {cutoff, finite_mem, obs_2}" ];
+	156 [ label = "156: {cutoff, finite_mem, obs_2}" ];
+	157 [ label = "157: {cutoff, finite_mem, obs_2}" ];
+	158 [ label = "158: {cutoff, finite_mem, obs_2}" ];
+	159 [ label = "159: {cutoff, finite_mem, obs_2}" ];
+	160 [ label = "160: {cutoff, finite_mem, obs_2}" ];
+	161 [ label = "161: {cutoff, finite_mem, obs_0}" ];
+	162 [ label = "162: {cutoff, finite_mem, obs_2}" ];
+	163 [ label = "163: {cutoff, finite_mem, obs_2}" ];
+	164 [ label = "164: {cutoff, finite_mem, obs_2}" ];
+	165 [ label = "165: {cutoff, finite_mem, obs_2}" ];
+	166 [ label = "166: {cutoff, finite_mem, obs_2}" ];
+	167 [ label = "167: {cutoff, finite_mem, obs_2}" ];
+	168 [ label = "168: {cutoff, finite_mem, obs_2}" ];
+	169 [ label = "169: {cutoff, finite_mem, obs_2}" ];
+	170 [ label = "170: {cutoff, finite_mem, obs_0}" ];
+	171 [ label = "171: {cutoff, finite_mem, obs_2}" ];
+	172 [ label = "172: {cutoff, finite_mem, obs_2}" ];
+	173 [ label = "173: {cutoff, finite_mem, obs_2}" ];
+	174 [ label = "174: {cutoff, finite_mem, obs_2}" ];
+	175 [ label = "175: {cutoff, finite_mem, obs_0}" ];
+	176 [ label = "176: {cutoff, finite_mem, obs_2}" ];
+	177 [ label = "177: {cutoff, finite_mem, obs_2}" ];
+	178 [ label = "178: {cutoff, finite_mem, obs_2}" ];
+	179 [ label = "179: {cutoff, finite_mem, obs_2}" ];
+	"0c" [shape = "point"]
+	0 -> "0c" [label= "{loop}"];
+	"0c" -> 0 [ label= "1" ];
+	"1c" [shape = "point"]
+	1 -> "1c" [label= "{(init)}"];
+	"1c" -> 2 [ label= "1" ];
+	"2c" [shape = "point"]
+	2 -> "2c" [label= "{(n)}"];
+	"2c" -> 3 [ label= "0.306111" ];
+	"2c" -> 4 [ label= "0.0211111" ];
+	"2c" -> 5 [ label= "0.411666" ];
+	"2c" -> 6 [ label= "0.105556" ];
+	"2c" -> 7 [ label= "0.0105555" ];
+	"2c" -> 8 [ label= "0.0949999" ];
+	"2c" -> 9 [ label= "0.05" ];
+	"3c" [shape = "point"]
+	3 -> "3c" [label= "{(n)}"];
+	"3c" -> 6 [ label= "0.052414" ];
+	"3c" -> 8 [ label= "0.0294827" ];
+	"3c" -> 9 [ label= "0.05" ];
+	"3c" -> 10 [ label= "0.566724" ];
+	"3c" -> 11 [ label= "0.301379" ];
+	"4c" [shape = "point"]
+	4 -> "4c" [label= "{(w)}"];
+	"4c" -> 4 [ label= "0.095" ];
+	"4c" -> 8 [ label= "0.095" ];
+	"4c" -> 9 [ label= "0.05" ];
+	"4c" -> 12 [ label= "0.76" ];
+	"5c" [shape = "point"]
+	5 -> "5c" [label= "{(e)}"];
+	"5c" -> 4 [ label= "0.0389743" ];
+	"5c" -> 7 [ label= "0.331282" ];
+	"5c" -> 9 [ label= "0.05" ];
+	"5c" -> 13 [ label= "0.046282" ];
+	"5c" -> 14 [ label= "0.533462" ];
+	"6c" [shape = "point"]
+	6 -> "6c" [label= "{(n)}"];
+	"6c" -> 6 [ label= "0.19" ];
+	"6c" -> 9 [ label= "0.05" ];
+	"6c" -> 15 [ label= "0.76" ];
+	"7c" [shape = "point"]
+	7 -> "7c" [label= "{(n)}"];
+	"7c" -> 4 [ label= "0.105555" ];
+	"7c" -> 6 [ label= "0.105555" ];
+	"7c" -> 9 [ label= "0.05" ];
+	"7c" -> 16 [ label= "0.316667" ];
+	"7c" -> 17 [ label= "0.422222" ];
+	"8c" [shape = "point"]
+	8 -> "8c" [label= "{(n)}"];
+	"8c" -> 4 [ label= "0.105555" ];
+	"8c" -> 6 [ label= "0.105555" ];
+	"8c" -> 9 [ label= "0.05" ];
+	"8c" -> 16 [ label= "0.316667" ];
+	"8c" -> 17 [ label= "0.422222" ];
+	"9c" [shape = "point"]
+	9 -> "9c" [label= "{loop}"];
+	"9c" -> 9 [ label= "1" ];
+	"10c" [shape = "point"]
+	10 -> "10c" [label= "{(e)}"];
+	"10c" -> 6 [ label= "0.0900578" ];
+	"10c" -> 8 [ label= "0.0395376" ];
+	"10c" -> 9 [ label= "0.05" ];
+	"10c" -> 18 [ label= "0.0900578" ];
+	"10c" -> 19 [ label= "0.730347" ];
+	"11c" [shape = "point"]
+	11 -> "11c" [label= "{(e)}"];
+	"11c" -> 7 [ label= "0.594783" ];
+	"11c" -> 9 [ label= "0.05" ];
+	"11c" -> 13 [ label= "0.0743478" ];
+	"11c" -> 20 [ label= "0.28087" ];
+	"12c" [shape = "point"]
+	12 -> "12c" [label= "{(n)}"];
+	"12c" -> 4 [ label= "0.095" ];
+	"12c" -> 9 [ label= "0.05" ];
+	"12c" -> 13 [ label= "0.76" ];
+	"12c" -> 21 [ label= "0.095" ];
+	"13c" [shape = "point"]
+	13 -> "13c" [label= "{(n)}"];
+	"13c" -> 8 [ label= "0.095" ];
+	"13c" -> 9 [ label= "0.05" ];
+	"13c" -> 13 [ label= "0.095" ];
+	"13c" -> 22 [ label= "0.76" ];
+	"14c" [shape = "point"]
+	14 -> "14c" [label= "{(n)}"];
+	"14c" -> 4 [ label= "0.0347032" ];
+	"14c" -> 7 [ label= "0.0420776" ];
+	"14c" -> 9 [ label= "0.05" ];
+	"14c" -> 23 [ label= "0.295845" ];
+	"14c" -> 24 [ label= "0.577374" ];
+	"15c" [shape = "point"]
+	15 -> "15c" [label= "{(e)}"];
+	"15c" -> 6 [ label= "0.095" ];
+	"15c" -> 9 [ label= "0.05" ];
+	"15c" -> 15 [ label= "0.095" ];
+	"15c" -> 25 [ label= "0.76" ];
+	"16c" [shape = "point"]
+	16 -> "16c" [label= "{(n)}"];
+	"16c" -> 6 [ label= "0.253335" ];
+	"16c" -> 8 [ label= "0.0316666" ];
+	"16c" -> 9 [ label= "0.05" ];
+	"16c" -> 26 [ label= "0.348333" ];
+	"16c" -> 27 [ label= "0.316666" ];
+	"17c" [shape = "point"]
+	17 -> "17c" [label= "{(e)}"];
+	"17c" -> 4 [ label= "0.19" ];
+	"17c" -> 7 [ label= "0.19" ];
+	"17c" -> 9 [ label= "0.05" ];
+	"17c" -> 13 [ label= "0.0475" ];
+	"17c" -> 28 [ label= "0.5225" ];
+	"18c" [shape = "point"]
+	18 -> "18c" [label= "{(e)}"];
+	"18c" -> 6 [ label= "0.095" ];
+	"18c" -> 9 [ label= "0.05" ];
+	"18c" -> 18 [ label= "0.095" ];
+	"18c" -> 30 [ label= "0.76" ];
+	"19c" [shape = "point"]
+	19 -> "19c" [label= "{(e)}"];
+	"19c" -> 4 [ label= "0.00514286" ];
+	"19c" -> 7 [ label= "0.00514286" ];
+	"19c" -> 9 [ label= "0.05" ];
+	"19c" -> 13 [ label= "0.00128571" ];
+	"19c" -> 31 [ label= "0.938429" ];
+	"20c" [shape = "point"]
+	20 -> "20c" [label= "{(e)}"];
+	"20c" -> 4 [ label= "0.0447061" ];
+	"20c" -> 7 [ label= "0.603529" ];
+	"20c" -> 9 [ label= "0.05" ];
+	"20c" -> 13 [ label= "0.0810294" ];
+	"20c" -> 32 [ label= "0.220735" ];
+	"21c" [shape = "point"]
+	21 -> "21c" [label= "{(e)}"];
+	"21c" -> 9 [ label= "0.05" ];
+	"21c" -> 33 [ label= "0.95" ];
+	"22c" [shape = "point"]
+	22 -> "22c" [label= "{(e)}"];
+	"22c" -> 7 [ label= "0.76" ];
+	"22c" -> 9 [ label= "0.05" ];
+	"22c" -> 13 [ label= "0.095" ];
+	"22c" -> 22 [ label= "0.095" ];
+	"23c" [shape = "point"]
+	23 -> "23c" [label= "{(n)}"];
+	"23c" -> 6 [ label= "0.0245161" ];
+	"23c" -> 8 [ label= "0.0891496" ];
+	"23c" -> 9 [ label= "0.05" ];
+	"23c" -> 34 [ label= "0.117287" ];
+	"23c" -> 35 [ label= "0.719047" ];
+	"24c" [shape = "point"]
+	24 -> "24c" [label= "{(e)}"];
+	"24c" -> 4 [ label= "0.012562" ];
+	"24c" -> 7 [ label= "0.454515" ];
+	"24c" -> 9 [ label= "0.05" ];
+	"24c" -> 13 [ label= "0.0583847" ];
+	"24c" -> 36 [ label= "0.424538" ];
+	"25c" [shape = "point"]
+	25 -> "25c" [label= "{(e)}"];
+	"25c" -> 9 [ label= "0.05" ];
+	"25c" -> 37 [ label= "0.95" ];
+	"26c" [shape = "point"]
+	26 -> "26c" [label= "{(n)}"];
+	"26c" -> 6 [ label= "0.0690915" ];
+	"26c" -> 8 [ label= "0.00863636" ];
+	"26c" -> 9 [ label= "0.05" ];
+	"26c" -> 38 [ label= "0.716818" ];
+	"26c" -> 39 [ label= "0.155454" ];
+	"27c" [shape = "point"]
+	27 -> "27c" [label= "{(e)}"];
+	"27c" -> 7 [ label= "0.607999" ];
+	"27c" -> 9 [ label= "0.05" ];
+	"27c" -> 13 [ label= "0.0759999" ];
+	"27c" -> 40 [ label= "0.266001" ];
+	"28c" [shape = "point"]
+	28 -> "28c" [label= "{(n)}"];
+	"28c" -> 4 [ label= "0.0345455" ];
+	"28c" -> 7 [ label= "0.0388636" ];
+	"28c" -> 9 [ label= "0.05" ];
+	"28c" -> 29 [ label= "0.297955" ];
+	"28c" -> 41 [ label= "0.578636" ];
+	"29c" [shape = "point"]
+	29 -> "29c" [label= "{(n)}"];
+	"29c" -> 6 [ label= "0.0330435" ];
+	"29c" -> 8 [ label= "0.0881159" ];
+	"29c" -> 9 [ label= "0.05" ];
+	"29c" -> 42 [ label= "0.117029" ];
+	"29c" -> 43 [ label= "0.711812" ];
+	"30c" [shape = "point"]
+	30 -> "30c" [label= "{(e)}"];
+	"30c" -> 9 [ label= "0.05" ];
+	"30c" -> 44 [ label= "0.95" ];
+	"31c" [shape = "point"]
+	31 -> "31c" [label= "{(e)}"];
+	"31c" -> 4 [ label= "0.00740451" ];
+	"31c" -> 7 [ label= "0.600283" ];
+	"31c" -> 9 [ label= "0.05" ];
+	"31c" -> 13 [ label= "0.075961" ];
+	"31c" -> 45 [ label= "0.266351" ];
+	"32c" [shape = "point"]
+	32 -> "32c" [label= "{(e)}"];
+	"32c" -> 4 [ label= "0.0384812" ];
+	"32c" -> 7 [ label= "0.606076" ];
+	"32c" -> 9 [ label= "0.05" ];
+	"32c" -> 13 [ label= "0.0805696" ];
+	"32c" -> 46 [ label= "0.224874" ];
+	"33c" [shape = "point"]
+	33 -> "33c" [label= "{(n)}"];
+	"33c" -> 4 [ label= "0.076" ];
+	"33c" -> 9 [ label= "0.05" ];
+	"33c" -> 47 [ label= "0.627" ];
+	"33c" -> 48 [ label= "0.247" ];
+	"34c" [shape = "point"]
+	34 -> "34c" [label= "{(n)}"];
+	"34c" -> 6 [ label= "0.0198575" ];
+	"34c" -> 8 [ label= "0.072209" ];
+	"34c" -> 9 [ label= "0.05" ];
+	"34c" -> 49 [ label= "0.25747" ];
+	"34c" -> 50 [ label= "0.600463" ];
+	"35c" [shape = "point"]
+	35 -> "35c" [label= "{(e)}"];
+	"35c" -> 7 [ label= "0.753816" ];
+	"35c" -> 9 [ label= "0.05" ];
+	"35c" -> 13 [ label= "0.094227" ];
+	"35c" -> 51 [ label= "0.101957" ];
+	"36c" [shape = "point"]
+	36 -> "36c" [label= "{(n)}"];
+	"36c" -> 4 [ label= "0.0327102" ];
+	"36c" -> 7 [ label= "0.0455514" ];
+	"36c" -> 9 [ label= "0.05" ];
+	"36c" -> 52 [ label= "0.27842" ];
+	"36c" -> 53 [ label= "0.593319" ];
+	"37c" [shape = "point"]
+	37 -> "37c" [label= "{(e)}"];
+	"37c" -> 7 [ label= "0.608" ];
+	"37c" -> 9 [ label= "0.05" ];
+	"37c" -> 13 [ label= "0.076" ];
+	"37c" -> 54 [ label= "0.266" ];
+	"38c" [shape = "point"]
+	38 -> "38c" [label= "{(e)}"];
+	"38c" -> 6 [ label= "0.0938554" ];
+	"38c" -> 8 [ label= "0.00915663" ];
+	"38c" -> 9 [ label= "0.05" ];
+	"38c" -> 55 [ label= "0.0938554" ];
+	"38c" -> 56 [ label= "0.753133" ];
+	"39c" [shape = "point"]
+	39 -> "39c" [label= "{(e)}"];
+	"39c" -> 7 [ label= "0.337778" ];
+	"39c" -> 9 [ label= "0.05" ];
+	"39c" -> 13 [ label= "0.0422222" ];
+	"39c" -> 57 [ label= "0.57" ];
+	"40c" [shape = "point"]
+	40 -> "40c" [label= "{(e)}"];
+	"40c" -> 4 [ label= "0.217144" ];
+	"40c" -> 7 [ label= "0.434284" ];
+	"40c" -> 9 [ label= "0.05" ];
+	"40c" -> 13 [ label= "0.0814286" ];
+	"40c" -> 59 [ label= "0.217143" ];
+	"41c" [shape = "point"]
+	41 -> "41c" [label= "{(e)}"];
+	"41c" -> 4 [ label= "0.0170149" ];
+	"41c" -> 7 [ label= "0.419701" ];
+	"41c" -> 9 [ label= "0.05" ];
+	"41c" -> 13 [ label= "0.0545896" ];
+	"41c" -> 60 [ label= "0.458694" ];
+	"42c" [shape = "point"]
+	42 -> "42c" [label= "{(n)}"];
+	"42c" -> 6 [ label= "0.0268235" ];
+	"42c" -> 8 [ label= "0.0715294" ];
+	"42c" -> 9 [ label= "0.05" ];
+	"42c" -> 61 [ label= "0.255941" ];
+	"42c" -> 62 [ label= "0.595706" ];
+	"43c" [shape = "point"]
+	43 -> "43c" [label= "{(e)}"];
+	"43c" -> 7 [ label= "0.75265" ];
+	"43c" -> 9 [ label= "0.05" ];
+	"43c" -> 13 [ label= "0.0940812" ];
+	"43c" -> 63 [ label= "0.103269" ];
+	"44c" [shape = "point"]
+	44 -> "44c" [label= "{(e)}"];
+	"44c" -> 4 [ label= "0.00741467" ];
+	"44c" -> 7 [ label= "0.600585" ];
+	"44c" -> 9 [ label= "0.05" ];
+	"44c" -> 13 [ label= "0.076" ];
+	"44c" -> 64 [ label= "0.266" ];
+	"45c" [shape = "point"]
+	45 -> "45c" [label= "{(e)}"];
+	"45c" -> 4 [ label= "0.0067675" ];
+	"45c" -> 7 [ label= "0.641941" ];
+	"45c" -> 9 [ label= "0.05" ];
+	"45c" -> 13 [ label= "0.0810885" ];
+	"45c" -> 65 [ label= "0.220203" ];
+	"46c" [shape = "point"]
+	46 -> "46c" [label= "{(e)}"];
+	"46c" -> 4 [ label= "0.0975405" ];
+	"46c" -> 7 [ label= "0.548663" ];
+	"46c" -> 9 [ label= "0.05" ];
+	"46c" -> 13 [ label= "0.0807754" ];
+	"46c" -> 66 [ label= "0.223021" ];
+	"47c" [shape = "point"]
+	47 -> "47c" [label= "{(n)}"];
+	"47c" -> 6 [ label= "0.0230303" ];
+	"47c" -> 8 [ label= "0.0921212" ];
+	"47c" -> 9 [ label= "0.05" ];
+	"47c" -> 47 [ label= "0.095" ];
+	"47c" -> 67 [ label= "0.739848" ];
+	"48c" [shape = "point"]
+	48 -> "48c" [label= "{(e)}"];
+	"48c" -> 4 [ label= "0.0584615" ];
+	"48c" -> 9 [ label= "0.05" ];
+	"48c" -> 13 [ label= "0.00730769" ];
+	"48c" -> 68 [ label= "0.884231" ];
+	"49c" [shape = "point"]
+	49 -> "49c" [label= "{(n)}"];
+	"49c" -> 6 [ label= "0.00732691" ];
+	"49c" -> 8 [ label= "0.0266433" ];
+	"49c" -> 9 [ label= "0.05" ];
+	"49c" -> 69 [ label= "0.634527" ];
+	"49c" -> 70 [ label= "0.281503" ];
+	"50c" [shape = "point"]
+	50 -> "50c" [label= "{(e)}"];
+	"50c" -> 7 [ label= "0.731154" ];
+	"50c" -> 9 [ label= "0.05" ];
+	"50c" -> 13 [ label= "0.0913942" ];
+	"50c" -> 71 [ label= "0.127452" ];
+	"51c" [shape = "point"]
+	51 -> "51c" [label= "{(e)}"];
+	"51c" -> 4 [ label= "0.0241444" ];
+	"51c" -> 7 [ label= "0.724332" ];
+	"51c" -> 9 [ label= "0.05" ];
+	"51c" -> 13 [ label= "0.0935596" ];
+	"51c" -> 72 [ label= "0.107964" ];
+	"52c" [shape = "point"]
+	52 -> "52c" [label= "{(n)}"];
+	"52c" -> 6 [ label= "0.0232813" ];
+	"52c" -> 8 [ label= "0.0892887" ];
+	"52c" -> 9 [ label= "0.05" ];
+	"52c" -> 73 [ label= "0.117409" ];
+	"52c" -> 74 [ label= "0.720021" ];
+	"53c" [shape = "point"]
+	53 -> "53c" [label= "{(e)}"];
+	"53c" -> 4 [ label= "0.010925" ];
+	"53c" -> 7 [ label= "0.477302" ];
+	"53c" -> 9 [ label= "0.05" ];
+	"53c" -> 13 [ label= "0.0610283" ];
+	"53c" -> 75 [ label= "0.400745" ];
+	"54c" [shape = "point"]
+	54 -> "54c" [label= "{(e)}"];
+	"54c" -> 7 [ label= "0.651429" ];
+	"54c" -> 9 [ label= "0.05" ];
+	"54c" -> 13 [ label= "0.0814286" ];
+	"54c" -> 76 [ label= "0.217143" ];
+	"55c" [shape = "point"]
+	55 -> "55c" [label= "{(e)}"];
+	"55c" -> 6 [ label= "0.095" ];
+	"55c" -> 9 [ label= "0.05" ];
+	"55c" -> 58 [ label= "0.095" ];
+	"55c" -> 77 [ label= "0.76" ];
+	"56c" [shape = "point"]
+	56 -> "56c" [label= "{(e)}"];
+	"56c" -> 4 [ label= "0.00115502" ];
+	"56c" -> 7 [ label= "0.00115502" ];
+	"56c" -> 9 [ label= "0.05" ];
+	"56c" -> 13 [ label= "0.000288754" ];
+	"56c" -> 78 [ label= "0.947401" ];
+	"57c" [shape = "point"]
+	57 -> "57c" [label= "{(e)}"];
+	"57c" -> 4 [ label= "0.0562968" ];
+	"57c" -> 7 [ label= "0.562962" ];
+	"57c" -> 9 [ label= "0.05" ];
+	"57c" -> 13 [ label= "0.0774074" ];
+	"57c" -> 79 [ label= "0.253333" ];
+	"58c" [shape = "point"]
+	58 -> "58c" [label= "{(e)}"];
+	"58c" -> 6 [ label= "0.095" ];
+	"58c" -> 9 [ label= "0.05" ];
+	"58c" -> 58 [ label= "0.095" ];
+	"58c" -> 77 [ label= "0.76" ];
+	"59c" [shape = "point"]
+	59 -> "59c" [label= "{(e)}"];
+	"59c" -> 4 [ label= "0.190001" ];
+	"59c" -> 7 [ label= "0.379999" ];
+	"59c" -> 9 [ label= "0.05" ];
+	"59c" -> 13 [ label= "0.0712499" ];
+	"59c" -> 80 [ label= "0.308751" ];
+	"60c" [shape = "point"]
+	60 -> "60c" [label= "{(n)}"];
+	"60c" -> 4 [ label= "0.0375889" ];
+	"60c" -> 7 [ label= "0.0402318" ];
+	"60c" -> 9 [ label= "0.05" ];
+	"60c" -> 81 [ label= "0.31789" ];
+	"60c" -> 82 [ label= "0.554289" ];
+	"61c" [shape = "point"]
+	61 -> "61c" [label= "{(n)}"];
+	"61c" -> 6 [ label= "0.00995633" ];
+	"61c" -> 8 [ label= "0.0265502" ];
+	"61c" -> 9 [ label= "0.05" ];
+	"61c" -> 83 [ label= "0.632642" ];
+	"61c" -> 84 [ label= "0.280852" ];
+	"62c" [shape = "point"]
+	62 -> "62c" [label= "{(e)}"];
+	"62c" -> 7 [ label= "0.730056" ];
+	"62c" -> 9 [ label= "0.05" ];
+	"62c" -> 13 [ label= "0.091257" ];
+	"62c" -> 85 [ label= "0.128687" ];
+	"63c" [shape = "point"]
+	63 -> "63c" [label= "{(e)}"];
+	"63c" -> 4 [ label= "0.0324555" ];
+	"63c" -> 7 [ label= "0.714021" ];
+	"63c" -> 9 [ label= "0.05" ];
+	"63c" -> 13 [ label= "0.0933096" ];
+	"63c" -> 86 [ label= "0.110214" ];
+	"64c" [shape = "point"]
+	64 -> "64c" [label= "{(e)}"];
+	"64c" -> 4 [ label= "0.00529619" ];
+	"64c" -> 7 [ label= "0.643484" ];
+	"64c" -> 9 [ label= "0.05" ];
+	"64c" -> 13 [ label= "0.0810976" ];
+	"64c" -> 87 [ label= "0.220122" ];
+	"65c" [shape = "point"]
+	65 -> "65c" [label= "{(e)}"];
+	"65c" -> 4 [ label= "0.0149542" ];
+	"65c" -> 7 [ label= "0.646099" ];
+	"65c" -> 9 [ label= "0.05" ];
+	"65c" -> 13 [ label= "0.0826317" ];
+	"65c" -> 88 [ label= "0.206315" ];
+	"66c" [shape = "point"]
+	66 -> "66c" [label= "{(e)}"];
+	"66c" -> 4 [ label= "0.138497" ];
+	"66c" -> 7 [ label= "0.483006" ];
+	"66c" -> 9 [ label= "0.05" ];
+	"66c" -> 13 [ label= "0.0776879" ];
+	"66c" -> 89 [ label= "0.250809" ];
+	"67c" [shape = "point"]
+	67 -> "67c" [label= "{(e)}"];
+	"67c" -> 7 [ label= "0.757043" ];
+	"67c" -> 9 [ label= "0.05" ];
+	"67c" -> 13 [ label= "0.0946304" ];
+	"67c" -> 90 [ label= "0.0983268" ];
+	"68c" [shape = "point"]
+	68 -> "68c" [label= "{(n)}"];
+	"68c" -> 4 [ label= "0.0753719" ];
+	"68c" -> 9 [ label= "0.05" ];
+	"68c" -> 91 [ label= "0.622603" ];
+	"68c" -> 92 [ label= "0.252025" ];
+	"69c" [shape = "point"]
+	69 -> "69c" [label= "{(e)}"];
+	"69c" -> 6 [ label= "0.091011" ];
+	"69c" -> 8 [ label= "0.0319119" ];
+	"69c" -> 9 [ label= "0.05" ];
+	"69c" -> 93 [ label= "0.091011" ];
+	"69c" -> 94 [ label= "0.736066" ];
+	"70c" [shape = "point"]
+	70 -> "70c" [label= "{(e)}"];
+	"70c" -> 7 [ label= "0.575451" ];
+	"70c" -> 9 [ label= "0.05" ];
+	"70c" -> 13 [ label= "0.0719314" ];
+	"70c" -> 95 [ label= "0.302617" ];
+	"71c" [shape = "point"]
+	71 -> "71c" [label= "{(e)}"];
+	"71c" -> 4 [ label= "0.0187339" ];
+	"71c" -> 7 [ label= "0.698263" ];
+	"71c" -> 9 [ label= "0.05" ];
+	"71c" -> 13 [ label= "0.0896247" ];
+	"71c" -> 96 [ label= "0.143378" ];
+	"72c" [shape = "point"]
+	72 -> "72c" [label= "{(e)}"];
+	"72c" -> 4 [ label= "0.0424905" ];
+	"72c" -> 7 [ label= "0.675985" ];
+	"72c" -> 9 [ label= "0.05" ];
+	"72c" -> 13 [ label= "0.0898094" ];
+	"72c" -> 97 [ label= "0.141715" ];
+	"73c" [shape = "point"]
+	73 -> "73c" [label= "{(n)}"];
+	"73c" -> 6 [ label= "0.0188377" ];
+	"73c" -> 8 [ label= "0.0722466" ];
+	"73c" -> 9 [ label= "0.05" ];
+	"73c" -> 98 [ label= "0.25819" ];
+	"73c" -> 99 [ label= "0.600726" ];
+	"74c" [shape = "point"]
+	74 -> "74c" [label= "{(e)}"];
+	"74c" -> 7 [ label= "0.753972" ];
+	"74c" -> 9 [ label= "0.05" ];
+	"74c" -> 13 [ label= "0.0942464" ];
+	"74c" -> 100 [ label= "0.101782" ];
+	"75c" [shape = "point"]
+	75 -> "75c" [label= "{(e)}"];
+	"75c" -> 4 [ label= "0.245211" ];
+	"75c" -> 7 [ label= "0.383346" ];
+	"75c" -> 9 [ label= "0.05" ];
+	"75c" -> 13 [ label= "0.0785697" ];
+	"75c" -> 101 [ label= "0.242872" ];
+	"76c" [shape = "point"]
+	76 -> "76c" [label= "{(e)}"];
+	"76c" -> 7 [ label= "0.665" ];
+	"76c" -> 9 [ label= "0.05" ];
+	"76c" -> 13 [ label= "0.083125" ];
+	"76c" -> 102 [ label= "0.201875" ];
+	"77c" [shape = "point"]
+	77 -> "77c" [label= "{(e)}"];
+	"77c" -> 9 [ label= "0.05" ];
+	"77c" -> 103 [ label= "0.95" ];
+	"78c" [shape = "point"]
+	78 -> "78c" [label= "{(e)}"];
+	"78c" -> 4 [ label= "0.00741244" ];
+	"78c" -> 7 [ label= "0.600518" ];
+	"78c" -> 9 [ label= "0.05" ];
+	"78c" -> 13 [ label= "0.0759913" ];
+	"78c" -> 104 [ label= "0.266078" ];
+	"79c" [shape = "point"]
+	79 -> "79c" [label= "{(e)}"];
+	"79c" -> 4 [ label= "0.0422226" ];
+	"79c" -> 7 [ label= "0.591111" ];
+	"79c" -> 9 [ label= "0.05" ];
+	"79c" -> 13 [ label= "0.0791666" ];
+	"79c" -> 105 [ label= "0.2375" ];
+	"80c" [shape = "point"]
+	80 -> "80c" [label= "{(n)}"];
+	"80c" -> 4 [ label= "0.0438463" ];
+	"80c" -> 7 [ label= "0.0292306" ];
+	"80c" -> 9 [ label= "0.05" ];
+	"80c" -> 106 [ label= "0.372693" ];
+	"80c" -> 107 [ label= "0.50423" ];
+	"81c" [shape = "point"]
+	81 -> "81c" [label= "{(n)}"];
+	"81c" -> 6 [ label= "0.0235196" ];
+	"81c" -> 8 [ label= "0.0898661" ];
+	"81c" -> 9 [ label= "0.05" ];
+	"81c" -> 108 [ label= "0.112552" ];
+	"81c" -> 109 [ label= "0.724062" ];
+	"82c" [shape = "point"]
+	82 -> "82c" [label= "{(e)}"];
+	"82c" -> 4 [ label= "0.0134887" ];
+	"82c" -> 7 [ label= "0.45137" ];
+	"82c" -> 9 [ label= "0.05" ];
+	"82c" -> 13 [ label= "0.0581073" ];
+	"82c" -> 110 [ label= "0.427034" ];
+	"83c" [shape = "point"]
+	83 -> "83c" [label= "{(e)}"];
+	"83c" -> 6 [ label= "0.0910131" ];
+	"83c" -> 8 [ label= "0.0318951" ];
+	"83c" -> 9 [ label= "0.05" ];
+	"83c" -> 111 [ label= "0.0910131" ];
+	"83c" -> 112 [ label= "0.736079" ];
+	"84c" [shape = "point"]
+	84 -> "84c" [label= "{(e)}"];
+	"84c" -> 7 [ label= "0.574771" ];
+	"84c" -> 9 [ label= "0.05" ];
+	"84c" -> 13 [ label= "0.0718464" ];
+	"84c" -> 113 [ label= "0.303383" ];
+	"85c" [shape = "point"]
+	85 -> "85c" [label= "{(e)}"];
+	"85c" -> 4 [ label= "0.0252632" ];
+	"85c" -> 7 [ label= "0.690526" ];
+	"85c" -> 9 [ label= "0.05" ];
+	"85c" -> 13 [ label= "0.0894737" ];
+	"85c" -> 114 [ label= "0.144737" ];
+	"86c" [shape = "point"]
+	86 -> "86c" [label= "{(e)}"];
+	"86c" -> 4 [ label= "0.0559509" ];
+	"86c" -> 7 [ label= "0.652761" ];
+	"86c" -> 9 [ label= "0.05" ];
+	"86c" -> 13 [ label= "0.088589" ];
+	"86c" -> 115 [ label= "0.152699" ];
+	"87c" [shape = "point"]
+	87 -> "87c" [label= "{(e)}"];
+	"87c" -> 4 [ label= "0.0137143" ];
+	"87c" -> 7 [ label= "0.648" ];
+	"87c" -> 9 [ label= "0.05" ];
+	"87c" -> 13 [ label= "0.0827143" ];
+	"87c" -> 116 [ label= "0.205571" ];
+	"88c" [shape = "point"]
+	88 -> "88c" [label= "{(e)}"];
+	"88c" -> 4 [ label= "0.0245267" ];
+	"88c" -> 7 [ label= "0.637465" ];
+	"88c" -> 9 [ label= "0.05" ];
+	"88c" -> 13 [ label= "0.082749" ];
+	"88c" -> 117 [ label= "0.205259" ];
+	"89c" [shape = "point"]
+	89 -> "89c" [label= "{(e)}"];
+	"89c" -> 4 [ label= "0.23082" ];
+	"89c" -> 7 [ label= "0.371803" ];
+	"89c" -> 9 [ label= "0.05" ];
+	"89c" -> 13 [ label= "0.0753278" ];
+	"89c" -> 118 [ label= "0.272049" ];
+	"90c" [shape = "point"]
+	90 -> "90c" [label= "{(e)}"];
+	"90c" -> 4 [ label= "0.0228571" ];
+	"90c" -> 7 [ label= "0.731429" ];
+	"90c" -> 9 [ label= "0.05" ];
+	"90c" -> 13 [ label= "0.0942857" ];
+	"90c" -> 119 [ label= "0.101429" ];
+	"91c" [shape = "point"]
+	91 -> "91c" [label= "{(n)}"];
+	"91c" -> 6 [ label= "0.0239596" ];
+	"91c" -> 8 [ label= "0.092005" ];
+	"91c" -> 9 [ label= "0.05" ];
+	"91c" -> 91 [ label= "0.095" ];
+	"91c" -> 120 [ label= "0.739035" ];
+	"92c" [shape = "point"]
+	92 -> "92c" [label= "{(w)}"];
+	"92c" -> 9 [ label= "0.05" ];
+	"92c" -> 121 [ label= "0.708209" ];
+	"92c" -> 122 [ label= "0.241791" ];
+	"93c" [shape = "point"]
+	93 -> "93c" [label= "{(e)}"];
+	"93c" -> 6 [ label= "0.095" ];
+	"93c" -> 9 [ label= "0.05" ];
+	"93c" -> 93 [ label= "0.095" ];
+	"93c" -> 123 [ label= "0.76" ];
+	"94c" [shape = "point"]
+	94 -> "94c" [label= "{(e)}"];
+	"94c" -> 4 [ label= "0.00411869" ];
+	"94c" -> 7 [ label= "0.00411869" ];
+	"94c" -> 9 [ label= "0.05" ];
+	"94c" -> 13 [ label= "0.00102967" ];
+	"94c" -> 124 [ label= "0.940733" ];
+	"95c" [shape = "point"]
+	95 -> "95c" [label= "{(e)}"];
+	"95c" -> 4 [ label= "0.00620985" ];
+	"95c" -> 7 [ label= "0.63792" ];
+	"95c" -> 9 [ label= "0.05" ];
+	"95c" -> 13 [ label= "0.0805163" ];
+	"95c" -> 125 [ label= "0.225354" ];
+	"96c" [shape = "point"]
+	96 -> "96c" [label= "{(e)}"];
+	"96c" -> 4 [ label= "0.0248255" ];
+	"96c" -> 7 [ label= "0.665776" ];
+	"96c" -> 9 [ label= "0.05" ];
+	"96c" -> 13 [ label= "0.0863252" ];
+	"96c" -> 126 [ label= "0.173073" ];
+	"97c" [shape = "point"]
+	97 -> "97c" [label= "{(e)}"];
+	"97c" -> 4 [ label= "0.170903" ];
+	"97c" -> 7 [ label= "0.50494" ];
+	"97c" -> 9 [ label= "0.05" ];
+	"97c" -> 13 [ label= "0.0844804" ];
+	"97c" -> 127 [ label= "0.189676" ];
+	"98c" [shape = "point"]
+	98 -> "98c" [label= "{(n)}"];
+	"98c" -> 6 [ label= "0.00693128" ];
+	"98c" -> 8 [ label= "0.0265829" ];
+	"98c" -> 9 [ label= "0.05" ];
+	"98c" -> 128 [ label= "0.635406" ];
+	"98c" -> 129 [ label= "0.28108" ];
+	"99c" [shape = "point"]
+	99 -> "99c" [label= "{(e)}"];
+	"99c" -> 7 [ label= "0.731214" ];
+	"99c" -> 9 [ label= "0.05" ];
+	"99c" -> 13 [ label= "0.0914017" ];
+	"99c" -> 130 [ label= "0.127384" ];
+	"100c" [shape = "point"]
+	100 -> "100c" [label= "{(e)}"];
+	"100c" -> 4 [ label= "0.0229366" ];
+	"100c" -> 7 [ label= "0.72581" ];
+	"100c" -> 9 [ label= "0.05" ];
+	"100c" -> 13 [ label= "0.0935933" ];
+	"100c" -> 131 [ label= "0.10766" ];
+	"101c" [shape = "point"]
+	101 -> "101c" [label= "{(e)}"];
+	"101c" -> 4 [ label= "0.199934" ];
+	"101c" -> 7 [ label= "0.361323" ];
+	"101c" -> 9 [ label= "0.05" ];
+	"101c" -> 13 [ label= "0.0701572" ];
+	"101c" -> 132 [ label= "0.318585" ];
+	"102c" [shape = "point"]
+	102 -> "102c" [label= "{(e)}"];
+	"102c" -> 7 [ label= "0.670588" ];
+	"102c" -> 9 [ label= "0.05" ];
+	"102c" -> 13 [ label= "0.0838235" ];
+	"102c" -> 133 [ label= "0.195588" ];
+	"103c" [shape = "point"]
+	103 -> "103c" [label= "{(e)}"];
+	"103c" -> 4 [ label= "0.0074147" ];
+	"103c" -> 7 [ label= "0.600585" ];
+	"103c" -> 9 [ label= "0.05" ];
+	"103c" -> 13 [ label= "0.076" ];
+	"103c" -> 134 [ label= "0.266" ];
+	"104c" [shape = "point"]
+	104 -> "104c" [label= "{(e)}"];
+	"104c" -> 4 [ label= "0.00562386" ];
+	"104c" -> 7 [ label= "0.64314" ];
+	"104c" -> 9 [ label= "0.05" ];
+	"104c" -> 13 [ label= "0.0810955" ];
+	"104c" -> 135 [ label= "0.22014" ];
+	"105c" [shape = "point"]
+	105 -> "105c" [label= "{(e)}"];
+	"105c" -> 4 [ label= "0.101334" ];
+	"105c" -> 7 [ label= "0.540444" ];
+	"105c" -> 9 [ label= "0.05" ];
+	"105c" -> 13 [ label= "0.0802222" ];
+	"105c" -> 137 [ label= "0.228" ];
+	"106c" [shape = "point"]
+	106 -> "106c" [label= "{(n)}"];
+	"106c" -> 6 [ label= "0.0372549" ];
+	"106c" -> 8 [ label= "0.0894118" ];
+	"106c" -> 9 [ label= "0.05" ];
+	"106c" -> 136 [ label= "0.102451" ];
+	"106c" -> 138 [ label= "0.720882" ];
+	"107c" [shape = "point"]
+	107 -> "107c" [label= "{(e)}"];
+	"107c" -> 4 [ label= "0.0275364" ];
+	"107c" -> 7 [ label= "0.35797" ];
+	"107c" -> 9 [ label= "0.05" ];
+	"107c" -> 13 [ label= "0.0481883" ];
+	"107c" -> 139 [ label= "0.516306" ];
+	"108c" [shape = "point"]
+	108 -> "108c" [label= "{(n)}"];
+	"108c" -> 6 [ label= "0.0198519" ];
+	"108c" -> 8 [ label= "0.0758519" ];
+	"108c" -> 9 [ label= "0.05" ];
+	"108c" -> 140 [ label= "0.228333" ];
+	"108c" -> 141 [ label= "0.625963" ];
+	"109c" [shape = "point"]
+	109 -> "109c" [label= "{(e)}"];
+	"109c" -> 7 [ label= "0.754611" ];
+	"109c" -> 9 [ label= "0.05" ];
+	"109c" -> 13 [ label= "0.0943264" ];
+	"109c" -> 142 [ label= "0.101062" ];
+	"110c" [shape = "point"]
+	110 -> "110c" [label= "{(e)}"];
+	"110c" -> 4 [ label= "0.283774" ];
+	"110c" -> 7 [ label= "0.341908" ];
+	"110c" -> 9 [ label= "0.05" ];
+	"110c" -> 13 [ label= "0.0782103" ];
+	"110c" -> 143 [ label= "0.246108" ];
+	"111c" [shape = "point"]
+	111 -> "111c" [label= "{(e)}"];
+	"111c" -> 6 [ label= "0.095" ];
+	"111c" -> 9 [ label= "0.05" ];
+	"111c" -> 111 [ label= "0.095" ];
+	"111c" -> 144 [ label= "0.76" ];
+	"112c" [shape = "point"]
+	112 -> "112c" [label= "{(e)}"];
+	"112c" -> 4 [ label= "0.00411645" ];
+	"112c" -> 7 [ label= "0.00411645" ];
+	"112c" -> 9 [ label= "0.05" ];
+	"112c" -> 13 [ label= "0.00102911" ];
+	"112c" -> 145 [ label= "0.940738" ];
+	"113c" [shape = "point"]
+	113 -> "113c" [label= "{(e)}"];
+	"113c" -> 4 [ label= "0.00843663" ];
+	"113c" -> 7 [ label= "0.63556" ];
+	"113c" -> 9 [ label= "0.05" ];
+	"113c" -> 13 [ label= "0.0804995" ];
+	"113c" -> 146 [ label= "0.225504" ];
+	"114c" [shape = "point"]
+	114 -> "114c" [label= "{(e)}"];
+	"114c" -> 4 [ label= "0.0331636" ];
+	"114c" -> 7 [ label= "0.652218" ];
+	"114c" -> 9 [ label= "0.05" ];
+	"114c" -> 13 [ label= "0.0856727" ];
+	"114c" -> 147 [ label= "0.178945" ];
+	"115c" [shape = "point"]
+	115 -> "115c" [label= "{(e)}"];
+	"115c" -> 4 [ label= "0.208855" ];
+	"115c" -> 7 [ label= "0.452519" ];
+	"115c" -> 9 [ label= "0.05" ];
+	"115c" -> 13 [ label= "0.0826718" ];
+	"115c" -> 148 [ label= "0.205954" ];
+	"116c" [shape = "point"]
+	116 -> "116c" [label= "{(e)}"];
+	"116c" -> 4 [ label= "0.0211259" ];
+	"116c" -> 7 [ label= "0.641695" ];
+	"116c" -> 9 [ label= "0.05" ];
+	"116c" -> 13 [ label= "0.0828527" ];
+	"116c" -> 149 [ label= "0.204326" ];
+	"117c" [shape = "point"]
+	117 -> "117c" [label= "{(e)}"];
+	"117c" -> 4 [ label= "0.0481991" ];
+	"117c" -> 7 [ label= "0.609727" ];
+	"117c" -> 9 [ label= "0.05" ];
+	"117c" -> 13 [ label= "0.0822408" ];
+	"117c" -> 150 [ label= "0.209833" ];
+	"118c" [shape = "point"]
+	118 -> "118c" [label= "{(e)}"];
+	"118c" -> 4 [ label= "0.307756" ];
+	"118c" -> 7 [ label= "0.261729" ];
+	"118c" -> 9 [ label= "0.05" ];
+	"118c" -> 13 [ label= "0.0711856" ];
+	"118c" -> 151 [ label= "0.30933" ];
+	"119c" [shape = "point"]
+	119 -> "119c" [label= "{(e)}"];
+	"119c" -> 4 [ label= "0.0428169" ];
+	"119c" -> 7 [ label= "0.68507" ];
+	"119c" -> 9 [ label= "0.05" ];
+	"119c" -> 13 [ label= "0.0909859" ];
+	"119c" -> 152 [ label= "0.131127" ];
+	"120c" [shape = "point"]
+	120 -> "120c" [label= "{(e)}"];
+	"120c" -> 7 [ label= "0.75692" ];
+	"120c" -> 9 [ label= "0.05" ];
+	"120c" -> 13 [ label= "0.094615" ];
+	"120c" -> 153 [ label= "0.0984649" ];
+	"121c" [shape = "point"]
+	121 -> "121c" [label= "{(n)}"];
+	"121c" -> 6 [ label= "0.75206" ];
+	"121c" -> 8 [ label= "0.000992478" ];
+	"121c" -> 9 [ label= "0.05" ];
+	"121c" -> 121 [ label= "0.095" ];
+	"121c" -> 154 [ label= "0.101947" ];
+	"122c" [shape = "point"]
+	122 -> "122c" [label= "{(e)}"];
+	"122c" -> 4 [ label= "0.0232558" ];
+	"122c" -> 9 [ label= "0.05" ];
+	"122c" -> 13 [ label= "0.00290698" ];
+	"122c" -> 155 [ label= "0.923837" ];
+	"123c" [shape = "point"]
+	123 -> "123c" [label= "{(e)}"];
+	"123c" -> 9 [ label= "0.05" ];
+	"123c" -> 156 [ label= "0.95" ];
+	"124c" [shape = "point"]
+	124 -> "124c" [label= "{(e)}"];
+	"124c" -> 4 [ label= "0.000915037" ];
+	"124c" -> 7 [ label= "0.606835" ];
+	"124c" -> 9 [ label= "0.05" ];
+	"124c" -> 13 [ label= "0.0759688" ];
+	"124c" -> 157 [ label= "0.266281" ];
+	"125c" [shape = "point"]
+	125 -> "125c" [label= "{(e)}"];
+	"125c" -> 4 [ label= "0.00523564" ];
+	"125c" -> 7 [ label= "0.654454" ];
+	"125c" -> 9 [ label= "0.05" ];
+	"125c" -> 13 [ label= "0.0824613" ];
+	"125c" -> 158 [ label= "0.207849" ];
+	"126c" [shape = "point"]
+	126 -> "126c" [label= "{(e)}"];
+	"126c" -> 4 [ label= "0.0817604" ];
+	"126c" -> 7 [ label= "0.588427" ];
+	"126c" -> 9 [ label= "0.05" ];
+	"126c" -> 13 [ label= "0.0837734" ];
+	"126c" -> 159 [ label= "0.196039" ];
+	"127c" [shape = "point"]
+	127 -> "127c" [label= "{(e)}"];
+	"127c" -> 4 [ label= "0.285324" ];
+	"127c" -> 7 [ label= "0.304778" ];
+	"127c" -> 9 [ label= "0.05" ];
+	"127c" -> 13 [ label= "0.0737628" ];
+	"127c" -> 160 [ label= "0.286135" ];
+	"128c" [shape = "point"]
+	128 -> "128c" [label= "{(e)}"];
+	"128c" -> 6 [ label= "0.0910256" ];
+	"128c" -> 8 [ label= "0.0317954" ];
+	"128c" -> 9 [ label= "0.05" ];
+	"128c" -> 161 [ label= "0.0910256" ];
+	"128c" -> 162 [ label= "0.736153" ];
+	"129c" [shape = "point"]
+	129 -> "129c" [label= "{(e)}"];
+	"129c" -> 7 [ label= "0.57501" ];
+	"129c" -> 9 [ label= "0.05" ];
+	"129c" -> 13 [ label= "0.0718763" ];
+	"129c" -> 163 [ label= "0.303114" ];
+	"130c" [shape = "point"]
+	130 -> "130c" [label= "{(e)}"];
+	"130c" -> 4 [ label= "0.0177735" ];
+	"130c" -> 7 [ label= "0.699291" ];
+	"130c" -> 9 [ label= "0.05" ];
+	"130c" -> 13 [ label= "0.089633" ];
+	"130c" -> 164 [ label= "0.143303" ];
+	"131c" [shape = "point"]
+	131 -> "131c" [label= "{(e)}"];
+	"131c" -> 4 [ label= "0.0404788" ];
+	"131c" -> 7 [ label= "0.679422" ];
+	"131c" -> 9 [ label= "0.05" ];
+	"131c" -> 13 [ label= "0.0899875" ];
+	"131c" -> 165 [ label= "0.140112" ];
+	"132c" [shape = "point"]
+	132 -> "132c" [label= "{(e)}"];
+	"132c" -> 4 [ label= "0.348047" ];
+	"132c" -> 7 [ label= "0.233806" ];
+	"132c" -> 9 [ label= "0.05" ];
+	"132c" -> 13 [ label= "0.0727317" ];
+	"132c" -> 166 [ label= "0.295415" ];
+	"133c" [shape = "point"]
+	133 -> "133c" [label= "{(e)}"];
+	"133c" -> 7 [ label= "0.673143" ];
+	"133c" -> 9 [ label= "0.05" ];
+	"133c" -> 13 [ label= "0.0841429" ];
+	"133c" -> 167 [ label= "0.192714" ];
+	"134c" [shape = "point"]
+	134 -> "134c" [label= "{(e)}"];
+	"134c" -> 4 [ label= "0.00529621" ];
+	"134c" -> 7 [ label= "0.643484" ];
+	"134c" -> 9 [ label= "0.05" ];
+	"134c" -> 13 [ label= "0.0810976" ];
+	"134c" -> 168 [ label= "0.220122" ];
+	"135c" [shape = "point"]
+	135 -> "135c" [label= "{(e)}"];
+	"135c" -> 4 [ label= "0.0139906" ];
+	"135c" -> 7 [ label= "0.647576" ];
+	"135c" -> 9 [ label= "0.05" ];
+	"135c" -> 13 [ label= "0.0826959" ];
+	"135c" -> 169 [ label= "0.205737" ];
+	"136c" [shape = "point"]
+	136 -> "136c" [label= "{(n)}"];
+	"136c" -> 6 [ label= "0.0345455" ];
+	"136c" -> 8 [ label= "0.0829092" ];
+	"136c" -> 9 [ label= "0.05" ];
+	"136c" -> 170 [ label= "0.157181" ];
+	"136c" -> 171 [ label= "0.675364" ];
+	"137c" [shape = "point"]
+	137 -> "137c" [label= "{(e)}"];
+	"137c" -> 4 [ label= "0.140742" ];
+	"137c" -> 7 [ label= "0.478517" ];
+	"137c" -> 9 [ label= "0.05" ];
+	"137c" -> 13 [ label= "0.0774074" ];
+	"137c" -> 172 [ label= "0.253334" ];
+	"138c" [shape = "point"]
+	138 -> "138c" [label= "{(e)}"];
+	"138c" -> 7 [ label= "0.754109" ];
+	"138c" -> 9 [ label= "0.05" ];
+	"138c" -> 13 [ label= "0.0942636" ];
+	"138c" -> 173 [ label= "0.101628" ];
+	"139c" [shape = "point"]
+	139 -> "139c" [label= "{(e)}"];
+	"139c" -> 4 [ label= "0.421548" ];
+	"139c" -> 7 [ label= "0.195572" ];
+	"139c" -> 9 [ label= "0.05" ];
+	"139c" -> 13 [ label= "0.07714" ];
+	"139c" -> 174 [ label= "0.25574" ];
+	"140c" [shape = "point"]
+	140 -> "140c" [label= "{(n)}"];
+	"140c" -> 6 [ label= "0.00825953" ];
+	"140c" -> 8 [ label= "0.0315588" ];
+	"140c" -> 9 [ label= "0.05" ];
+	"140c" -> 175 [ label= "0.59427" ];
+	"140c" -> 176 [ label= "0.315912" ];
+	"141c" [shape = "point"]
+	141 -> "141c" [label= "{(e)}"];
+	"141c" -> 7 [ label= "0.736752" ];
+	"141c" -> 9 [ label= "0.05" ];
+	"141c" -> 13 [ label= "0.092094" ];
+	"141c" -> 177 [ label= "0.121154" ];
+	"142c" [shape = "point"]
+	142 -> "142c" [label= "{(e)}"];
+	"142c" -> 4 [ label= "0.0232061" ];
+	"142c" -> 7 [ label= "0.726663" ];
+	"142c" -> 9 [ label= "0.05" ];
+	"142c" -> 13 [ label= "0.0937336" ];
+	"142c" -> 178 [ label= "0.106397" ];
+	"143c" [shape = "point"]
+	143 -> "143c" [label= "{(e)}"];
+	"143c" -> 4 [ label= "0.228346" ];
+	"143c" -> 7 [ label= "0.318419" ];
+	"143c" -> 9 [ label= "0.05" ];
+	"143c" -> 13 [ label= "0.0683455" ];
+	"143c" -> 179 [ label= "0.33489" ];
+	"144c" [shape = "point"]
+	144 -> "144c" [label= "{mem_node_1}"];
+	"144c" -> 0 [ label= "1" ];
+	"145c" [shape = "point"]
+	145 -> "145c" [label= "{mem_node_1}"];
+	"145c" -> 0 [ label= "1" ];
+	"146c" [shape = "point"]
+	146 -> "146c" [label= "{mem_node_1}"];
+	"146c" -> 0 [ label= "1" ];
+	"147c" [shape = "point"]
+	147 -> "147c" [label= "{mem_node_1}"];
+	"147c" -> 0 [ label= "1" ];
+	"148c" [shape = "point"]
+	148 -> "148c" [label= "{mem_node_1}"];
+	"148c" -> 0 [ label= "1" ];
+	"149c" [shape = "point"]
+	149 -> "149c" [label= "{mem_node_1}"];
+	"149c" -> 0 [ label= "1" ];
+	"150c" [shape = "point"]
+	150 -> "150c" [label= "{mem_node_1}"];
+	"150c" -> 0 [ label= "1" ];
+	"151c" [shape = "point"]
+	151 -> "151c" [label= "{mem_node_1}"];
+	"151c" -> 0 [ label= "1" ];
+	"152c" [shape = "point"]
+	152 -> "152c" [label= "{mem_node_1}"];
+	"152c" -> 0 [ label= "1" ];
+	"153c" [shape = "point"]
+	153 -> "153c" [label= "{mem_node_1}"];
+	"153c" -> 0 [ label= "1" ];
+	"154c" [shape = "point"]
+	154 -> "154c" [label= "{mem_node_1}"];
+	"154c" -> 0 [ label= "1" ];
+	"155c" [shape = "point"]
+	155 -> "155c" [label= "{mem_node_2}"];
+	"155c" -> 0 [ label= "1" ];
+	"156c" [shape = "point"]
+	156 -> "156c" [label= "{mem_node_1}"];
+	"156c" -> 0 [ label= "1" ];
+	"157c" [shape = "point"]
+	157 -> "157c" [label= "{mem_node_1}"];
+	"157c" -> 0 [ label= "1" ];
+	"158c" [shape = "point"]
+	158 -> "158c" [label= "{mem_node_1}"];
+	"158c" -> 0 [ label= "1" ];
+	"159c" [shape = "point"]
+	159 -> "159c" [label= "{mem_node_1}"];
+	"159c" -> 0 [ label= "1" ];
+	"160c" [shape = "point"]
+	160 -> "160c" [label= "{mem_node_1}"];
+	"160c" -> 0 [ label= "1" ];
+	"161c" [shape = "point"]
+	161 -> "161c" [label= "{mem_node_0}"];
+	"161c" -> 0 [ label= "1" ];
+	"162c" [shape = "point"]
+	162 -> "162c" [label= "{mem_node_1}"];
+	"162c" -> 0 [ label= "1" ];
+	"163c" [shape = "point"]
+	163 -> "163c" [label= "{mem_node_1}"];
+	"163c" -> 0 [ label= "1" ];
+	"164c" [shape = "point"]
+	164 -> "164c" [label= "{mem_node_1}"];
+	"164c" -> 0 [ label= "1" ];
+	"165c" [shape = "point"]
+	165 -> "165c" [label= "{mem_node_1}"];
+	"165c" -> 0 [ label= "1" ];
+	"166c" [shape = "point"]
+	166 -> "166c" [label= "{mem_node_1}"];
+	"166c" -> 0 [ label= "1" ];
+	"167c" [shape = "point"]
+	167 -> "167c" [label= "{mem_node_1}"];
+	"167c" -> 0 [ label= "1" ];
+	"168c" [shape = "point"]
+	168 -> "168c" [label= "{mem_node_1}"];
+	"168c" -> 0 [ label= "1" ];
+	"169c" [shape = "point"]
+	169 -> "169c" [label= "{mem_node_1}"];
+	"169c" -> 0 [ label= "1" ];
+	"170c" [shape = "point"]
+	170 -> "170c" [label= "{mem_node_1}"];
+	"170c" -> 0 [ label= "1" ];
+	"171c" [shape = "point"]
+	171 -> "171c" [label= "{mem_node_1}"];
+	"171c" -> 0 [ label= "1" ];
+	"172c" [shape = "point"]
+	172 -> "172c" [label= "{mem_node_1}"];
+	"172c" -> 0 [ label= "1" ];
+	"173c" [shape = "point"]
+	173 -> "173c" [label= "{mem_node_1}"];
+	"173c" -> 0 [ label= "1" ];
+	"174c" [shape = "point"]
+	174 -> "174c" [label= "{mem_node_1}"];
+	"174c" -> 0 [ label= "1" ];
+	"175c" [shape = "point"]
+	175 -> "175c" [label= "{mem_node_0}"];
+	"175c" -> 0 [ label= "1" ];
+	"176c" [shape = "point"]
+	176 -> "176c" [label= "{mem_node_1}"];
+	"176c" -> 0 [ label= "1" ];
+	"177c" [shape = "point"]
+	177 -> "177c" [label= "{mem_node_1}"];
+	"177c" -> 0 [ label= "1" ];
+	"178c" [shape = "point"]
+	178 -> "178c" [label= "{mem_node_1}"];
+	"178c" -> 0 [ label= "1" ];
+	"179c" [shape = "point"]
+	179 -> "179c" [label= "{mem_node_1}"];
+	"179c" -> 0 [ label= "1" ];
+}
+
+

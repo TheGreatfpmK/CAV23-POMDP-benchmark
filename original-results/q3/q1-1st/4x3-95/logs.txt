@@ -1,0 +1,722 @@
+2023-04-26 14:58:51,808 - cli.py - This is Paynt version 0.1.0.
+2023-04-26 14:58:51,810 - sketch.py - loading sketch from /mnt/d/src/PP/synthesis-CAV/experiments/../models/pomdp/storm-integration/4x3-95/sketch.templ ...
+2023-04-26 14:58:51,869 - prism_parser.py - loading properties from /mnt/d/src/PP/synthesis-CAV/experiments/../models/pomdp/storm-integration/4x3-95/sketch.props ...
+2023-04-26 14:58:51,887 - prism_parser.py - found the following specification: constraints: none, optimality objective: R[exp]{"reward"}max=? [F "discount_sink"] 
+2023-04-26 14:58:51,895 - sketch.py - constructed explicit quotient having 22 states and 82 actions
+2023-04-26 14:58:51,896 - sketch.py - found the following specification constraints: none, optimality objective: R[exp]{"reward"}max=? [F "discount_sink"] 
+2023-04-26 14:58:51,903 - quotient_pomdp.py - Constructed POMDP having 9 observations.
+2023-04-26 14:58:51,907 - quotient_pomdp.py - Unfolding POMDP using the following memory allocation vector: [1, 1, 1, 1, 1, 1, 1, 1, 1] ...
+2023-04-26 14:58:51,909 - quotient_pomdp.py - Constructed quotient MDP having 22 states and 82 actions.
+2023-04-26 14:58:51,912 - synthesizer_pomdp.py - Storm pomdp option enabled
+2023-04-26 14:58:51,912 - synthesizer_pomdp.py - Storm settings: iterative - (None, None, None), get_storm_result - 10, storm_options - cutoff, prune_storm - False, unfold_strategy - (True, False), use_storm_cutoffs - False
+2023-04-26 14:58:51,912 - synthesizer_pomdp.py - Synthesizing optimal k=1 controller ...
+2023-04-26 14:58:51,912 - quotient_pomdp.py - Unfolding POMDP using the following memory allocation vector: [1, 1, 1, 1, 1, 1, 1, 1, 1] ...
+2023-04-26 14:58:51,912 - quotient_pomdp.py - Constructed quotient MDP having 22 states and 82 actions.
+{} 
+
+{}
+2023-04-26 14:58:51,912 - synthesizer.py - Synthesis initiated.
+-----------PAYNT-----------               
+Value = -0.9097672837142294 | Time elapsed = 0.1s | FSC size = 18
+FSC = A(0,0)={'(e)'}, A(1,0)={'(s)'}, A(2,0)={'(w)'}, A(3,0)={'(e)'}, A(4,0)={'(n)'}, A(5,0)={'(n)'}, A(7,0)={'(w)'}
+
+-----------PAYNT-----------               
+Value = -0.8686599675278818 | Time elapsed = 0.1s | FSC size = 18
+FSC = A(0,0)={'(e)'}, A(1,0)={'(s)'}, A(2,0)={'(w)'}, A(3,0)={'(e)'}, A(4,0)={'(n)'}, A(5,0)={'(n)'}, A(7,0)={'(e)'}
+
+-----------PAYNT-----------               
+Value = -0.40761788722743514 | Time elapsed = 0.1s | FSC size = 18
+FSC = A(0,0)={'(e)'}, A(1,0)={'(s)'}, A(2,0)={'(e)'}, A(3,0)={'(n)'}, A(4,0)={'(n)'}, A(5,0)={'(n)'}, A(7,0)={'(w)'}
+
+-----------PAYNT-----------               
+Value = -0.3958092794894377 | Time elapsed = 0.1s | FSC size = 18
+FSC = A(0,0)={'(e)'}, A(1,0)={'(s)'}, A(2,0)={'(e)'}, A(3,0)={'(n)'}, A(4,0)={'(n)'}, A(5,0)={'(n)'}, A(7,0)={'(e)'}
+
+-----------PAYNT-----------               
+Value = -0.25128453587513117 | Time elapsed = 0.1s | FSC size = 18
+FSC = A(0,0)={'(e)'}, A(1,0)={'(s)'}, A(2,0)={'(e)'}, A(3,0)={'(n)'}, A(4,0)={'(n)'}, A(5,0)={'(n)'}, A(7,0)={'(n)'}
+
+-----------PAYNT-----------               
+Value = 0.32562887393853235 | Time elapsed = 0.1s | FSC size = 18
+FSC = A(0,0)={'(n)'}, A(1,0)={'(w)'}, A(2,0)={'(e)'}, A(3,0)={'(n)'}, A(4,0)={'(n)'}, A(5,0)={'(n)'}, A(7,0)={'(w)'}
+
+-----------PAYNT-----------               
+Value = 0.44176908305750945 | Time elapsed = 0.1s | FSC size = 18
+FSC = A(0,0)={'(n)'}, A(1,0)={'(w)'}, A(2,0)={'(e)'}, A(3,0)={'(n)'}, A(4,0)={'(n)'}, A(5,0)={'(n)'}, A(7,0)={'(n)'}
+
+--------------------
+Synthesis summary
+
+optimality objective: R[exp]{"reward"}max=? [F "discount_sink"] 
+
+method: AR, synthesis time: 0.06 s
+number of holes: 7, family size: 16384, super quotient: 22 states / 82 actions
+explored: 100 %
+AR stats: avg MDP size: 22, iterations: 24
+
+optimal: 0.441769
+--------------------
+
+2023-04-26 14:58:51,972 - synthesizer_pomdp.py - Synthesizing optimal k=2 controller ...
+2023-04-26 14:58:51,972 - quotient_pomdp.py - Unfolding POMDP using the following memory allocation vector: [2, 1, 2, 1, 1, 1, 1, 2, 1] ...
+2023-04-26 14:58:51,972 - quotient_pomdp.py - Constructed quotient MDP having 38 states and 291 actions.
+{} 
+
+{}
+2023-04-26 14:58:51,974 - synthesizer.py - Synthesis initiated.
+-----------PAYNT-----------               
+Value = 0.6610746739835868 | Time elapsed = 0.1s | FSC size = 24
+FSC = A(0,0)={'(e)'}, A(0,1)={'(n)'}, M(0,0)=0, M(0,1)=1, A(1,0)={'(w)'}, M(1,0)=0, A(2,0)={'(e)'}, A(2,1)={'(e)'}, M(2,0)=1, M(2,1)=1, A(3,0)={'(n)'}, M(3,0)=0, A(4,0)={'(n)'}, M(4,0)=1, A(5,0)={'(n)'}, M(5,0)=1, M(6,0)=0, A(7,0)={'(w)'}, A(7,1)={'(w)'}, M(7,0)=1, M(7,1)=1
+
+-----------PAYNT-----------               
+Value = 0.7288788196786052 | Time elapsed = 0.1s | FSC size = 24
+FSC = A(0,0)={'(e)'}, A(0,1)={'(n)'}, M(0,0)=0, M(0,1)=1, A(1,0)={'(w)'}, M(1,0)=0, A(2,0)={'(e)'}, A(2,1)={'(e)'}, M(2,0)=1, M(2,1)=1, A(3,0)={'(n)'}, M(3,0)=0, A(4,0)={'(n)'}, M(4,0)=1, A(5,0)={'(n)'}, M(5,0)=1, M(6,0)=1, A(7,0)={'(w)'}, A(7,1)={'(n)'}, M(7,0)=1, M(7,1)=1
+
+-----------PAYNT-----------               
+Value = 0.7361988615171265 | Time elapsed = 0.1s | FSC size = 24
+FSC = A(0,0)={'(e)'}, A(0,1)={'(n)'}, M(0,0)=0, M(0,1)=0, A(1,0)={'(w)'}, M(1,0)=0, A(2,0)={'(e)'}, A(2,1)={'(e)'}, M(2,0)=1, M(2,1)=1, A(3,0)={'(n)'}, M(3,0)=0, A(4,0)={'(n)'}, M(4,0)=1, A(5,0)={'(n)'}, M(5,0)=1, M(6,0)=0, A(7,0)={'(w)'}, A(7,1)={'(w)'}, M(7,0)=1, M(7,1)=1
+
+-----------PAYNT-----------               
+Value = 0.8174378257349435 | Time elapsed = 0.1s | FSC size = 24
+FSC = A(0,0)={'(e)'}, A(0,1)={'(n)'}, M(0,0)=1, M(0,1)=0, A(1,0)={'(w)'}, M(1,0)=0, A(2,0)={'(e)'}, A(2,1)={'(e)'}, M(2,0)=1, M(2,1)=1, A(3,0)={'(n)'}, M(3,0)=0, A(4,0)={'(n)'}, M(4,0)=1, A(5,0)={'(n)'}, M(5,0)=1, M(6,0)=1, A(7,0)={'(w)'}, A(7,1)={'(n)'}, M(7,0)=0, M(7,1)=1
+
+-----------PAYNT-----------               
+Value = 0.8252283068971517 | Time elapsed = 0.1s | FSC size = 24
+FSC = A(0,0)={'(e)'}, A(0,1)={'(n)'}, M(0,0)=0, M(0,1)=0, A(1,0)={'(w)'}, M(1,0)=0, A(2,0)={'(e)'}, A(2,1)={'(e)'}, M(2,0)=1, M(2,1)=1, A(3,0)={'(n)'}, M(3,0)=0, A(4,0)={'(n)'}, M(4,0)=1, A(5,0)={'(n)'}, M(5,0)=1, M(6,0)=1, A(7,0)={'(w)'}, A(7,1)={'(n)'}, M(7,0)=0, M(7,1)=1
+
+-----------PAYNT-----------               
+Value = 0.8683670033002527 | Time elapsed = 0.2s | FSC size = 24
+FSC = A(0,0)={'(e)'}, A(0,1)={'(n)'}, M(0,0)=0, M(0,1)=0, A(1,0)={'(w)'}, M(1,0)=1, A(2,0)={'(e)'}, A(2,1)={'(w)'}, M(2,0)=0, M(2,1)=1, A(3,0)={'(n)'}, M(3,0)=0, A(4,0)={'(n)'}, M(4,0)=1, A(5,0)={'(n)'}, M(5,0)=1, M(6,0)=0, A(7,0)={'(w)'}, A(7,1)={'(w)'}, M(7,0)=1, M(7,1)=1
+
+-----------PAYNT-----------               
+Value = 1.3754338972603506 | Time elapsed = 0.2s | FSC size = 24
+FSC = A(0,0)={'(e)'}, A(0,1)={'(n)'}, M(0,0)=1, M(0,1)=1, A(1,0)={'(w)'}, M(1,0)=0, A(2,0)={'(n)'}, A(2,1)={'(e)'}, M(2,0)=1, M(2,1)=1, A(3,0)={'(n)'}, M(3,0)=0, A(4,0)={'(n)'}, M(4,0)=1, A(5,0)={'(n)'}, M(5,0)=1, M(6,0)=0, A(7,0)={'(w)'}, A(7,1)={'(w)'}, M(7,0)=1, M(7,1)=1
+
+-----------PAYNT-----------               
+Value = 1.4681428605850353 | Time elapsed = 0.2s | FSC size = 24
+FSC = A(0,0)={'(e)'}, A(0,1)={'(n)'}, M(0,0)=1, M(0,1)=1, A(1,0)={'(w)'}, M(1,0)=0, A(2,0)={'(n)'}, A(2,1)={'(e)'}, M(2,0)=1, M(2,1)=1, A(3,0)={'(n)'}, M(3,0)=0, A(4,0)={'(n)'}, M(4,0)=1, A(5,0)={'(n)'}, M(5,0)=1, M(6,0)=1, A(7,0)={'(w)'}, A(7,1)={'(e)'}, M(7,0)=1, M(7,1)=1
+
+--------------------
+Synthesis summary
+
+optimality objective: R[exp]{"reward"}max=? [F "discount_sink"] 
+
+method: AR, synthesis time: 0.4 s
+number of holes: 21, family size: 2147483648, super quotient: 38 states / 291 actions
+explored: 100 %
+AR stats: avg MDP size: 38, iterations: 828
+
+optimal: 1.468143
+--------------------
+
+2023-04-26 14:58:52,370 - synthesizer_pomdp.py - Synthesizing optimal k=3 controller ...
+2023-04-26 14:58:52,371 - quotient_pomdp.py - Unfolding POMDP using the following memory allocation vector: [3, 1, 3, 1, 1, 1, 1, 3, 1] ...
+2023-04-26 14:58:52,371 - quotient_pomdp.py - Constructed quotient MDP having 54 states and 628 actions.
+{} 
+
+{}
+2023-04-26 14:58:52,375 - synthesizer.py - Synthesis initiated.
+-----------PAYNT-----------               
+Value = 1.5182880891209338 | Time elapsed = 0.6s | FSC size = 30
+FSC = A(0,0)={'(e)'}, A(0,1)={'(e)'}, A(0,2)={'(n)'}, M(0,0)=2, M(0,1)=0, M(0,2)=2, A(1,0)={'(w)'}, M(1,0)=1, A(2,0)={'(e)'}, A(2,1)={'(n)'}, A(2,2)={'(e)'}, M(2,0)=2, M(2,1)=2, M(2,2)=2, A(3,0)={'(n)'}, M(3,0)=1, A(4,0)={'(n)'}, M(4,0)=2, A(5,0)={'(n)'}, M(5,0)=2, M(6,0)=2, A(7,0)={'(w)'}, A(7,1)={'(w)'}, A(7,2)={'(e)'}, M(7,0)=2, M(7,1)=2, M(7,2)=2
+
+-----------PAYNT-----------               
+Value = 1.5237202739501625 | Time elapsed = 0.6s | FSC size = 30
+FSC = A(0,0)={'(e)'}, A(0,1)={'(e)'}, A(0,2)={'(n)'}, M(0,0)=0, M(0,1)=0, M(0,2)=2, A(1,0)={'(w)'}, M(1,0)=1, A(2,0)={'(e)'}, A(2,1)={'(n)'}, A(2,2)={'(e)'}, M(2,0)=2, M(2,1)=2, M(2,2)=2, A(3,0)={'(n)'}, M(3,0)=0, A(4,0)={'(n)'}, M(4,0)=2, A(5,0)={'(n)'}, M(5,0)=2, M(6,0)=2, A(7,0)={'(w)'}, A(7,1)={'(w)'}, A(7,2)={'(e)'}, M(7,0)=2, M(7,1)=2, M(7,2)=2
+
+-----------PAYNT-----------               
+Value = 1.5255690107070157 | Time elapsed = 0.7s | FSC size = 30
+FSC = A(0,0)={'(e)'}, A(0,1)={'(e)'}, A(0,2)={'(n)'}, M(0,0)=0, M(0,1)=0, M(0,2)=2, A(1,0)={'(w)'}, M(1,0)=1, A(2,0)={'(e)'}, A(2,1)={'(n)'}, A(2,2)={'(e)'}, M(2,0)=2, M(2,1)=2, M(2,2)=2, A(3,0)={'(n)'}, M(3,0)=0, A(4,0)={'(n)'}, M(4,0)=2, A(5,0)={'(n)'}, M(5,0)=2, M(6,0)=2, A(7,0)={'(w)'}, A(7,1)={'(w)'}, A(7,2)={'(n)'}, M(7,0)=2, M(7,1)=2, M(7,2)=0
+
+-----------PAYNT-----------               
+Value = 1.574057948441746 | Time elapsed = 5.8s | FSC size = 30
+FSC = A(0,0)={'(e)'}, A(0,1)={'(e)'}, A(0,2)={'(n)'}, M(0,0)=2, M(0,1)=0, M(0,2)=0, A(1,0)={'(w)'}, M(1,0)=1, A(2,0)={'(e)'}, A(2,1)={'(n)'}, A(2,2)={'(e)'}, M(2,0)=2, M(2,1)=2, M(2,2)=2, A(3,0)={'(n)'}, M(3,0)=1, A(4,0)={'(n)'}, M(4,0)=2, A(5,0)={'(n)'}, M(5,0)=2, M(6,0)=0, A(7,0)={'(w)'}, A(7,1)={'(w)'}, A(7,2)={'(w)'}, M(7,0)=2, M(7,1)=2, M(7,2)=2
+
+-----------PAYNT-----------               
+Value = 1.6529422928931599 | Time elapsed = 5.9s | FSC size = 30
+FSC = A(0,0)={'(e)'}, A(0,1)={'(e)'}, A(0,2)={'(n)'}, M(0,0)=2, M(0,1)=0, M(0,2)=0, A(1,0)={'(w)'}, M(1,0)=1, A(2,0)={'(e)'}, A(2,1)={'(n)'}, A(2,2)={'(e)'}, M(2,0)=2, M(2,1)=2, M(2,2)=2, A(3,0)={'(n)'}, M(3,0)=1, A(4,0)={'(n)'}, M(4,0)=2, A(5,0)={'(n)'}, M(5,0)=2, M(6,0)=2, A(7,0)={'(w)'}, A(7,1)={'(w)'}, A(7,2)={'(n)'}, M(7,0)=0, M(7,1)=0, M(7,2)=2
+
+-----------PAYNT-----------               
+Value = 1.6583341177864457 | Time elapsed = 6.2s | FSC size = 30
+FSC = A(0,0)={'(e)'}, A(0,1)={'(e)'}, A(0,2)={'(n)'}, M(0,0)=0, M(0,1)=0, M(0,2)=0, A(1,0)={'(w)'}, M(1,0)=1, A(2,0)={'(e)'}, A(2,1)={'(n)'}, A(2,2)={'(e)'}, M(2,0)=2, M(2,1)=2, M(2,2)=2, A(3,0)={'(n)'}, M(3,0)=0, A(4,0)={'(n)'}, M(4,0)=2, A(5,0)={'(n)'}, M(5,0)=2, M(6,0)=2, A(7,0)={'(w)'}, A(7,1)={'(w)'}, A(7,2)={'(n)'}, M(7,0)=0, M(7,1)=0, M(7,2)=2
+
+-----------PAYNT-----------               
+Value = 1.7180880352015115 | Time elapsed = 9.1s | FSC size = 30
+FSC = A(0,0)={'(e)'}, A(0,1)={'(n)'}, A(0,2)={'(n)'}, M(0,0)=1, M(0,1)=0, M(0,2)=1, A(1,0)={'(w)'}, M(1,0)=2, A(2,0)={'(e)'}, A(2,1)={'(e)'}, A(2,2)={'(n)'}, M(2,0)=1, M(2,1)=1, M(2,2)=2, A(3,0)={'(n)'}, M(3,0)=0, A(4,0)={'(n)'}, M(4,0)=1, A(5,0)={'(n)'}, M(5,0)=1, M(6,0)=2, A(7,0)={'(w)'}, A(7,1)={'(w)'}, A(7,2)={'(n)'}, M(7,0)=0, M(7,1)=0, M(7,2)=1
+
+-----------PAYNT-----------               
+Value = 1.7334504897109713 | Time elapsed = 9.1s | FSC size = 30
+FSC = A(0,0)={'(e)'}, A(0,1)={'(n)'}, A(0,2)={'(n)'}, M(0,0)=0, M(0,1)=0, M(0,2)=1, A(1,0)={'(w)'}, M(1,0)=2, A(2,0)={'(e)'}, A(2,1)={'(e)'}, A(2,2)={'(n)'}, M(2,0)=1, M(2,1)=1, M(2,2)=2, A(3,0)={'(n)'}, M(3,0)=0, A(4,0)={'(n)'}, M(4,0)=1, A(5,0)={'(n)'}, M(5,0)=1, M(6,0)=2, A(7,0)={'(w)'}, A(7,1)={'(w)'}, A(7,2)={'(n)'}, M(7,0)=0, M(7,1)=0, M(7,2)=1
+
+2023-04-26 14:59:01,975 - synthesizer_ar_storm.py - Pausing synthesis
+2023-04-26 14:59:01,975 - synthesizer_ar_storm.py - Terminating controller synthesis
+--------------------
+Synthesis summary
+
+optimality objective: R[exp]{"reward"}max=? [F "discount_sink"] 
+
+method: AR, synthesis time: 9.6 s
+number of holes: 27, family size: 320979616137216, super quotient: 54 states / 628 actions
+explored: 6 %
+AR stats: avg MDP size: 54, iterations: 14868
+
+optimal: 1.73345
+--------------------
+
+2023-04-26 14:59:01,978 - storm_pomdp_control.py - starting Storm POMDP analysis
+Finished exploring Underapproximation MDP.
+ Start analysis...
+2023-04-26 14:59:02,576 - storm_pomdp_control.py - Storm POMDP analysis completed
+-----------Storm-----------                 
+Value = 1.8381015799925855 | Time elapsed = 0.6s | FSC size = 392
+FSC (dot) = digraph model {
+	0 [ label = "0: {__extra, target}" ];
+	1 [ label = "1: {init, obs_6}" ];
+	2 [ label = "2: {obs_7}" ];
+	3 [ label = "3: {obs_0}" ];
+	4 [ label = "4: {obs_1}" ];
+	5 [ label = "5: {obs_2}" ];
+	6 [ label = "6: {obs_3}" ];
+	7 [ label = "7: {obs_4}" ];
+	8 [ label = "8: {obs_5}" ];
+	9 [ label = "9: {obs_8, target}" ];
+	10 [ label = "10: {obs_0}" ];
+	11 [ label = "11: {obs_2}" ];
+	12 [ label = "12: {obs_2}" ];
+	13 [ label = "13: {obs_0}" ];
+	14 [ label = "14: {obs_2}" ];
+	15 [ label = "15: {obs_0}" ];
+	16 [ label = "16: {obs_0}" ];
+	17 [ label = "17: {obs_2}" ];
+	18 [ label = "18: {obs_0}" ];
+	19 [ label = "19: {obs_2}" ];
+	20 [ label = "20: {obs_2}" ];
+	21 [ label = "21: {obs_2}" ];
+	22 [ label = "22: {obs_2}" ];
+	23 [ label = "23: {obs_0}" ];
+	24 [ label = "24: {obs_2}" ];
+	25 [ label = "25: {obs_2}" ];
+	26 [ label = "26: {obs_0}" ];
+	27 [ label = "27: {obs_2}" ];
+	28 [ label = "28: {obs_2}" ];
+	29 [ label = "29: {obs_0}" ];
+	30 [ label = "30: {obs_2}" ];
+	31 [ label = "31: {obs_2}" ];
+	32 [ label = "32: {obs_2}" ];
+	33 [ label = "33: {obs_2}" ];
+	34 [ label = "34: {obs_0}" ];
+	35 [ label = "35: {obs_2}" ];
+	36 [ label = "36: {obs_2}" ];
+	37 [ label = "37: {obs_2}" ];
+	38 [ label = "38: {obs_0}" ];
+	39 [ label = "39: {obs_2}" ];
+	40 [ label = "40: {obs_2}" ];
+	41 [ label = "41: {obs_2}" ];
+	42 [ label = "42: {obs_0}" ];
+	43 [ label = "43: {obs_2}" ];
+	44 [ label = "44: {obs_2}" ];
+	45 [ label = "45: {obs_2}" ];
+	46 [ label = "46: {obs_2}" ];
+	47 [ label = "47: {obs_0}" ];
+	48 [ label = "48: {obs_2}" ];
+	49 [ label = "49: {obs_0}" ];
+	50 [ label = "50: {obs_2}" ];
+	51 [ label = "51: {obs_2}" ];
+	52 [ label = "52: {obs_2}" ];
+	53 [ label = "53: {obs_2}" ];
+	54 [ label = "54: {obs_2}" ];
+	55 [ label = "55: {obs_2}" ];
+	56 [ label = "56: {obs_2}" ];
+	57 [ label = "57: {obs_2}" ];
+	58 [ label = "58: {obs_0}" ];
+	59 [ label = "59: {obs_2}" ];
+	60 [ label = "60: {obs_2}" ];
+	61 [ label = "61: {obs_2}" ];
+	62 [ label = "62: {obs_2}" ];
+	63 [ label = "63: {obs_2}" ];
+	64 [ label = "64: {cutoff, finite_mem, obs_2}" ];
+	65 [ label = "65: {cutoff, finite_mem, obs_2}" ];
+	66 [ label = "66: {cutoff, finite_mem, obs_0}" ];
+	67 [ label = "67: {cutoff, finite_mem, obs_2}" ];
+	68 [ label = "68: {cutoff, finite_mem, obs_2}" ];
+	69 [ label = "69: {cutoff, finite_mem, obs_2}" ];
+	70 [ label = "70: {cutoff, finite_mem, obs_2}" ];
+	71 [ label = "71: {cutoff, finite_mem, obs_2}" ];
+	72 [ label = "72: {cutoff, finite_mem, obs_2}" ];
+	73 [ label = "73: {cutoff, finite_mem, obs_2}" ];
+	74 [ label = "74: {cutoff, finite_mem, obs_2}" ];
+	75 [ label = "75: {cutoff, finite_mem, obs_2}" ];
+	76 [ label = "76: {cutoff, finite_mem, obs_0}" ];
+	77 [ label = "77: {cutoff, finite_mem, obs_2}" ];
+	78 [ label = "78: {cutoff, finite_mem, obs_2}" ];
+	79 [ label = "79: {cutoff, finite_mem, obs_2}" ];
+	80 [ label = "80: {cutoff, finite_mem, obs_2}" ];
+	81 [ label = "81: {cutoff, finite_mem, obs_2}" ];
+	82 [ label = "82: {cutoff, finite_mem, obs_2}" ];
+	"0c" [shape = "point"]
+	0 -> "0c" [label= "{loop}"];
+	"0c" -> 0 [ label= "1" ];
+	"1c" [shape = "point"]
+	1 -> "1c" [label= "{(init)}"];
+	"1c" -> 2 [ label= "1" ];
+	"2c" [shape = "point"]
+	2 -> "2c" [label= "{(n)}"];
+	"2c" -> 3 [ label= "0.306111" ];
+	"2c" -> 4 [ label= "0.0211111" ];
+	"2c" -> 5 [ label= "0.411666" ];
+	"2c" -> 6 [ label= "0.105556" ];
+	"2c" -> 7 [ label= "0.0105555" ];
+	"2c" -> 8 [ label= "0.0949999" ];
+	"2c" -> 9 [ label= "0.05" ];
+	"3c" [shape = "point"]
+	3 -> "3c" [label= "{(n)}"];
+	"3c" -> 6 [ label= "0.052414" ];
+	"3c" -> 8 [ label= "0.0294827" ];
+	"3c" -> 9 [ label= "0.05" ];
+	"3c" -> 10 [ label= "0.566724" ];
+	"3c" -> 11 [ label= "0.301379" ];
+	"4c" [shape = "point"]
+	4 -> "4c" [label= "{(w)}"];
+	"4c" -> 4 [ label= "0.095" ];
+	"4c" -> 8 [ label= "0.095" ];
+	"4c" -> 9 [ label= "0.05" ];
+	"4c" -> 12 [ label= "0.76" ];
+	"5c" [shape = "point"]
+	5 -> "5c" [label= "{(e)}"];
+	"5c" -> 4 [ label= "0.0389743" ];
+	"5c" -> 7 [ label= "0.331282" ];
+	"5c" -> 9 [ label= "0.05" ];
+	"5c" -> 13 [ label= "0.046282" ];
+	"5c" -> 14 [ label= "0.533462" ];
+	"6c" [shape = "point"]
+	6 -> "6c" [label= "{(n)}"];
+	"6c" -> 6 [ label= "0.19" ];
+	"6c" -> 9 [ label= "0.05" ];
+	"6c" -> 15 [ label= "0.76" ];
+	"7c" [shape = "point"]
+	7 -> "7c" [label= "{(n)}"];
+	"7c" -> 4 [ label= "0.105555" ];
+	"7c" -> 6 [ label= "0.105555" ];
+	"7c" -> 9 [ label= "0.05" ];
+	"7c" -> 16 [ label= "0.316667" ];
+	"7c" -> 17 [ label= "0.422222" ];
+	"8c" [shape = "point"]
+	8 -> "8c" [label= "{(n)}"];
+	"8c" -> 4 [ label= "0.105555" ];
+	"8c" -> 6 [ label= "0.105555" ];
+	"8c" -> 9 [ label= "0.05" ];
+	"8c" -> 16 [ label= "0.316667" ];
+	"8c" -> 17 [ label= "0.422222" ];
+	"9c" [shape = "point"]
+	9 -> "9c" [label= "{loop}"];
+	"9c" -> 9 [ label= "1" ];
+	"10c" [shape = "point"]
+	10 -> "10c" [label= "{(e)}"];
+	"10c" -> 6 [ label= "0.0900578" ];
+	"10c" -> 8 [ label= "0.0395376" ];
+	"10c" -> 9 [ label= "0.05" ];
+	"10c" -> 18 [ label= "0.0900578" ];
+	"10c" -> 19 [ label= "0.730347" ];
+	"11c" [shape = "point"]
+	11 -> "11c" [label= "{(e)}"];
+	"11c" -> 7 [ label= "0.594783" ];
+	"11c" -> 9 [ label= "0.05" ];
+	"11c" -> 13 [ label= "0.0743478" ];
+	"11c" -> 20 [ label= "0.28087" ];
+	"12c" [shape = "point"]
+	12 -> "12c" [label= "{(n)}"];
+	"12c" -> 4 [ label= "0.095" ];
+	"12c" -> 9 [ label= "0.05" ];
+	"12c" -> 13 [ label= "0.76" ];
+	"12c" -> 21 [ label= "0.095" ];
+	"13c" [shape = "point"]
+	13 -> "13c" [label= "{(n)}"];
+	"13c" -> 8 [ label= "0.095" ];
+	"13c" -> 9 [ label= "0.05" ];
+	"13c" -> 13 [ label= "0.095" ];
+	"13c" -> 22 [ label= "0.76" ];
+	"14c" [shape = "point"]
+	14 -> "14c" [label= "{(n)}"];
+	"14c" -> 4 [ label= "0.0347032" ];
+	"14c" -> 7 [ label= "0.0420776" ];
+	"14c" -> 9 [ label= "0.05" ];
+	"14c" -> 23 [ label= "0.295845" ];
+	"14c" -> 24 [ label= "0.577374" ];
+	"15c" [shape = "point"]
+	15 -> "15c" [label= "{(e)}"];
+	"15c" -> 6 [ label= "0.095" ];
+	"15c" -> 9 [ label= "0.05" ];
+	"15c" -> 15 [ label= "0.095" ];
+	"15c" -> 25 [ label= "0.76" ];
+	"16c" [shape = "point"]
+	16 -> "16c" [label= "{(n)}"];
+	"16c" -> 6 [ label= "0.253335" ];
+	"16c" -> 8 [ label= "0.0316666" ];
+	"16c" -> 9 [ label= "0.05" ];
+	"16c" -> 26 [ label= "0.348333" ];
+	"16c" -> 27 [ label= "0.316666" ];
+	"17c" [shape = "point"]
+	17 -> "17c" [label= "{(e)}"];
+	"17c" -> 4 [ label= "0.19" ];
+	"17c" -> 7 [ label= "0.19" ];
+	"17c" -> 9 [ label= "0.05" ];
+	"17c" -> 13 [ label= "0.0475" ];
+	"17c" -> 28 [ label= "0.5225" ];
+	"18c" [shape = "point"]
+	18 -> "18c" [label= "{(e)}"];
+	"18c" -> 6 [ label= "0.095" ];
+	"18c" -> 9 [ label= "0.05" ];
+	"18c" -> 18 [ label= "0.095" ];
+	"18c" -> 30 [ label= "0.76" ];
+	"19c" [shape = "point"]
+	19 -> "19c" [label= "{(e)}"];
+	"19c" -> 4 [ label= "0.00514286" ];
+	"19c" -> 7 [ label= "0.00514286" ];
+	"19c" -> 9 [ label= "0.05" ];
+	"19c" -> 13 [ label= "0.00128571" ];
+	"19c" -> 31 [ label= "0.938429" ];
+	"20c" [shape = "point"]
+	20 -> "20c" [label= "{(e)}"];
+	"20c" -> 4 [ label= "0.0447061" ];
+	"20c" -> 7 [ label= "0.603529" ];
+	"20c" -> 9 [ label= "0.05" ];
+	"20c" -> 13 [ label= "0.0810294" ];
+	"20c" -> 32 [ label= "0.220735" ];
+	"21c" [shape = "point"]
+	21 -> "21c" [label= "{(e)}"];
+	"21c" -> 9 [ label= "0.05" ];
+	"21c" -> 33 [ label= "0.95" ];
+	"22c" [shape = "point"]
+	22 -> "22c" [label= "{(e)}"];
+	"22c" -> 7 [ label= "0.76" ];
+	"22c" -> 9 [ label= "0.05" ];
+	"22c" -> 13 [ label= "0.095" ];
+	"22c" -> 22 [ label= "0.095" ];
+	"23c" [shape = "point"]
+	23 -> "23c" [label= "{(n)}"];
+	"23c" -> 6 [ label= "0.0245161" ];
+	"23c" -> 8 [ label= "0.0891496" ];
+	"23c" -> 9 [ label= "0.05" ];
+	"23c" -> 34 [ label= "0.117287" ];
+	"23c" -> 35 [ label= "0.719047" ];
+	"24c" [shape = "point"]
+	24 -> "24c" [label= "{(e)}"];
+	"24c" -> 4 [ label= "0.012562" ];
+	"24c" -> 7 [ label= "0.454515" ];
+	"24c" -> 9 [ label= "0.05" ];
+	"24c" -> 13 [ label= "0.0583847" ];
+	"24c" -> 36 [ label= "0.424538" ];
+	"25c" [shape = "point"]
+	25 -> "25c" [label= "{(e)}"];
+	"25c" -> 9 [ label= "0.05" ];
+	"25c" -> 37 [ label= "0.95" ];
+	"26c" [shape = "point"]
+	26 -> "26c" [label= "{(e)}"];
+	"26c" -> 6 [ label= "0.0863636" ];
+	"26c" -> 8 [ label= "0.0690909" ];
+	"26c" -> 9 [ label= "0.05" ];
+	"26c" -> 38 [ label= "0.0863636" ];
+	"26c" -> 39 [ label= "0.708182" ];
+	"27c" [shape = "point"]
+	27 -> "27c" [label= "{(e)}"];
+	"27c" -> 7 [ label= "0.607999" ];
+	"27c" -> 9 [ label= "0.05" ];
+	"27c" -> 13 [ label= "0.0759999" ];
+	"27c" -> 40 [ label= "0.266001" ];
+	"28c" [shape = "point"]
+	28 -> "28c" [label= "{(n)}"];
+	"28c" -> 4 [ label= "0.0345455" ];
+	"28c" -> 7 [ label= "0.0388636" ];
+	"28c" -> 9 [ label= "0.05" ];
+	"28c" -> 29 [ label= "0.297955" ];
+	"28c" -> 41 [ label= "0.578636" ];
+	"29c" [shape = "point"]
+	29 -> "29c" [label= "{(n)}"];
+	"29c" -> 6 [ label= "0.0330435" ];
+	"29c" -> 8 [ label= "0.0881159" ];
+	"29c" -> 9 [ label= "0.05" ];
+	"29c" -> 42 [ label= "0.117029" ];
+	"29c" -> 43 [ label= "0.711812" ];
+	"30c" [shape = "point"]
+	30 -> "30c" [label= "{(e)}"];
+	"30c" -> 9 [ label= "0.05" ];
+	"30c" -> 44 [ label= "0.95" ];
+	"31c" [shape = "point"]
+	31 -> "31c" [label= "{(e)}"];
+	"31c" -> 4 [ label= "0.00740451" ];
+	"31c" -> 7 [ label= "0.600283" ];
+	"31c" -> 9 [ label= "0.05" ];
+	"31c" -> 13 [ label= "0.075961" ];
+	"31c" -> 45 [ label= "0.266351" ];
+	"32c" [shape = "point"]
+	32 -> "32c" [label= "{(e)}"];
+	"32c" -> 4 [ label= "0.0384812" ];
+	"32c" -> 7 [ label= "0.606076" ];
+	"32c" -> 9 [ label= "0.05" ];
+	"32c" -> 13 [ label= "0.0805696" ];
+	"32c" -> 46 [ label= "0.224874" ];
+	"33c" [shape = "point"]
+	33 -> "33c" [label= "{(n)}"];
+	"33c" -> 4 [ label= "0.076" ];
+	"33c" -> 9 [ label= "0.05" ];
+	"33c" -> 47 [ label= "0.627" ];
+	"33c" -> 48 [ label= "0.247" ];
+	"34c" [shape = "point"]
+	34 -> "34c" [label= "{(n)}"];
+	"34c" -> 6 [ label= "0.0198575" ];
+	"34c" -> 8 [ label= "0.072209" ];
+	"34c" -> 9 [ label= "0.05" ];
+	"34c" -> 49 [ label= "0.25747" ];
+	"34c" -> 50 [ label= "0.600463" ];
+	"35c" [shape = "point"]
+	35 -> "35c" [label= "{(e)}"];
+	"35c" -> 7 [ label= "0.753816" ];
+	"35c" -> 9 [ label= "0.05" ];
+	"35c" -> 13 [ label= "0.094227" ];
+	"35c" -> 51 [ label= "0.101957" ];
+	"36c" [shape = "point"]
+	36 -> "36c" [label= "{(e)}"];
+	"36c" -> 4 [ label= "0.261681" ];
+	"36c" -> 7 [ label= "0.364411" ];
+	"36c" -> 9 [ label= "0.05" ];
+	"36c" -> 13 [ label= "0.0782616" ];
+	"36c" -> 52 [ label= "0.245646" ];
+	"37c" [shape = "point"]
+	37 -> "37c" [label= "{(e)}"];
+	"37c" -> 7 [ label= "0.608" ];
+	"37c" -> 9 [ label= "0.05" ];
+	"37c" -> 13 [ label= "0.076" ];
+	"37c" -> 53 [ label= "0.266" ];
+	"38c" [shape = "point"]
+	38 -> "38c" [label= "{(e)}"];
+	"38c" -> 6 [ label= "0.095" ];
+	"38c" -> 9 [ label= "0.05" ];
+	"38c" -> 38 [ label= "0.095" ];
+	"38c" -> 54 [ label= "0.76" ];
+	"39c" [shape = "point"]
+	39 -> "39c" [label= "{(e)}"];
+	"39c" -> 4 [ label= "0.00926828" ];
+	"39c" -> 7 [ label= "0.00926828" ];
+	"39c" -> 9 [ label= "0.05" ];
+	"39c" -> 13 [ label= "0.00231707" ];
+	"39c" -> 55 [ label= "0.929146" ];
+	"40c" [shape = "point"]
+	40 -> "40c" [label= "{(e)}"];
+	"40c" -> 4 [ label= "0.217144" ];
+	"40c" -> 7 [ label= "0.434284" ];
+	"40c" -> 9 [ label= "0.05" ];
+	"40c" -> 13 [ label= "0.0814286" ];
+	"40c" -> 56 [ label= "0.217143" ];
+	"41c" [shape = "point"]
+	41 -> "41c" [label= "{(e)}"];
+	"41c" -> 4 [ label= "0.0170149" ];
+	"41c" -> 7 [ label= "0.419701" ];
+	"41c" -> 9 [ label= "0.05" ];
+	"41c" -> 13 [ label= "0.0545896" ];
+	"41c" -> 57 [ label= "0.458694" ];
+	"42c" [shape = "point"]
+	42 -> "42c" [label= "{(n)}"];
+	"42c" -> 6 [ label= "0.0268235" ];
+	"42c" -> 8 [ label= "0.0715294" ];
+	"42c" -> 9 [ label= "0.05" ];
+	"42c" -> 58 [ label= "0.255941" ];
+	"42c" -> 59 [ label= "0.595706" ];
+	"43c" [shape = "point"]
+	43 -> "43c" [label= "{(e)}"];
+	"43c" -> 7 [ label= "0.75265" ];
+	"43c" -> 9 [ label= "0.05" ];
+	"43c" -> 13 [ label= "0.0940812" ];
+	"43c" -> 60 [ label= "0.103269" ];
+	"44c" [shape = "point"]
+	44 -> "44c" [label= "{(e)}"];
+	"44c" -> 4 [ label= "0.00741467" ];
+	"44c" -> 7 [ label= "0.600585" ];
+	"44c" -> 9 [ label= "0.05" ];
+	"44c" -> 13 [ label= "0.076" ];
+	"44c" -> 61 [ label= "0.266" ];
+	"45c" [shape = "point"]
+	45 -> "45c" [label= "{(e)}"];
+	"45c" -> 4 [ label= "0.0067675" ];
+	"45c" -> 7 [ label= "0.641941" ];
+	"45c" -> 9 [ label= "0.05" ];
+	"45c" -> 13 [ label= "0.0810885" ];
+	"45c" -> 62 [ label= "0.220203" ];
+	"46c" [shape = "point"]
+	46 -> "46c" [label= "{(e)}"];
+	"46c" -> 4 [ label= "0.0975405" ];
+	"46c" -> 7 [ label= "0.548663" ];
+	"46c" -> 9 [ label= "0.05" ];
+	"46c" -> 13 [ label= "0.0807754" ];
+	"46c" -> 63 [ label= "0.223021" ];
+	"47c" [shape = "point"]
+	47 -> "47c" [label= "{(n)}"];
+	"47c" -> 6 [ label= "0.0230303" ];
+	"47c" -> 8 [ label= "0.0921212" ];
+	"47c" -> 9 [ label= "0.05" ];
+	"47c" -> 47 [ label= "0.095" ];
+	"47c" -> 64 [ label= "0.739848" ];
+	"48c" [shape = "point"]
+	48 -> "48c" [label= "{(e)}"];
+	"48c" -> 4 [ label= "0.0584615" ];
+	"48c" -> 9 [ label= "0.05" ];
+	"48c" -> 13 [ label= "0.00730769" ];
+	"48c" -> 65 [ label= "0.884231" ];
+	"49c" [shape = "point"]
+	49 -> "49c" [label= "{(n)}"];
+	"49c" -> 6 [ label= "0.00732691" ];
+	"49c" -> 8 [ label= "0.0266433" ];
+	"49c" -> 9 [ label= "0.05" ];
+	"49c" -> 66 [ label= "0.634527" ];
+	"49c" -> 67 [ label= "0.281503" ];
+	"50c" [shape = "point"]
+	50 -> "50c" [label= "{(e)}"];
+	"50c" -> 7 [ label= "0.731154" ];
+	"50c" -> 9 [ label= "0.05" ];
+	"50c" -> 13 [ label= "0.0913942" ];
+	"50c" -> 68 [ label= "0.127452" ];
+	"51c" [shape = "point"]
+	51 -> "51c" [label= "{(e)}"];
+	"51c" -> 4 [ label= "0.0241444" ];
+	"51c" -> 7 [ label= "0.724332" ];
+	"51c" -> 9 [ label= "0.05" ];
+	"51c" -> 13 [ label= "0.0935596" ];
+	"51c" -> 69 [ label= "0.107964" ];
+	"52c" [shape = "point"]
+	52 -> "52c" [label= "{(e)}"];
+	"52c" -> 4 [ label= "0.2111" ];
+	"52c" -> 7 [ label= "0.344125" ];
+	"52c" -> 9 [ label= "0.05" ];
+	"52c" -> 13 [ label= "0.0694031" ];
+	"52c" -> 70 [ label= "0.325372" ];
+	"53c" [shape = "point"]
+	53 -> "53c" [label= "{(e)}"];
+	"53c" -> 7 [ label= "0.651429" ];
+	"53c" -> 9 [ label= "0.05" ];
+	"53c" -> 13 [ label= "0.0814286" ];
+	"53c" -> 71 [ label= "0.217143" ];
+	"54c" [shape = "point"]
+	54 -> "54c" [label= "{(e)}"];
+	"54c" -> 9 [ label= "0.05" ];
+	"54c" -> 72 [ label= "0.95" ];
+	"55c" [shape = "point"]
+	55 -> "55c" [label= "{(e)}"];
+	"55c" -> 4 [ label= "0.0606489" ];
+	"55c" -> 7 [ label= "0.546783" ];
+	"55c" -> 9 [ label= "0.05" ];
+	"55c" -> 13 [ label= "0.0759289" ];
+	"55c" -> 73 [ label= "0.26664" ];
+	"56c" [shape = "point"]
+	56 -> "56c" [label= "{(e)}"];
+	"56c" -> 4 [ label= "0.190001" ];
+	"56c" -> 7 [ label= "0.379999" ];
+	"56c" -> 9 [ label= "0.05" ];
+	"56c" -> 13 [ label= "0.0712499" ];
+	"56c" -> 74 [ label= "0.308751" ];
+	"57c" [shape = "point"]
+	57 -> "57c" [label= "{(e)}"];
+	"57c" -> 4 [ label= "0.300711" ];
+	"57c" -> 7 [ label= "0.321855" ];
+	"57c" -> 9 [ label= "0.05" ];
+	"57c" -> 13 [ label= "0.0778207" ];
+	"57c" -> 75 [ label= "0.249614" ];
+	"58c" [shape = "point"]
+	58 -> "58c" [label= "{(n)}"];
+	"58c" -> 6 [ label= "0.00995633" ];
+	"58c" -> 8 [ label= "0.0265502" ];
+	"58c" -> 9 [ label= "0.05" ];
+	"58c" -> 76 [ label= "0.632642" ];
+	"58c" -> 77 [ label= "0.280852" ];
+	"59c" [shape = "point"]
+	59 -> "59c" [label= "{(e)}"];
+	"59c" -> 7 [ label= "0.730056" ];
+	"59c" -> 9 [ label= "0.05" ];
+	"59c" -> 13 [ label= "0.091257" ];
+	"59c" -> 78 [ label= "0.128687" ];
+	"60c" [shape = "point"]
+	60 -> "60c" [label= "{(e)}"];
+	"60c" -> 4 [ label= "0.0324555" ];
+	"60c" -> 7 [ label= "0.714021" ];
+	"60c" -> 9 [ label= "0.05" ];
+	"60c" -> 13 [ label= "0.0933096" ];
+	"60c" -> 79 [ label= "0.110214" ];
+	"61c" [shape = "point"]
+	61 -> "61c" [label= "{(e)}"];
+	"61c" -> 4 [ label= "0.00529619" ];
+	"61c" -> 7 [ label= "0.643484" ];
+	"61c" -> 9 [ label= "0.05" ];
+	"61c" -> 13 [ label= "0.0810976" ];
+	"61c" -> 80 [ label= "0.220122" ];
+	"62c" [shape = "point"]
+	62 -> "62c" [label= "{(e)}"];
+	"62c" -> 4 [ label= "0.0149542" ];
+	"62c" -> 7 [ label= "0.646099" ];
+	"62c" -> 9 [ label= "0.05" ];
+	"62c" -> 13 [ label= "0.0826317" ];
+	"62c" -> 81 [ label= "0.206315" ];
+	"63c" [shape = "point"]
+	63 -> "63c" [label= "{(e)}"];
+	"63c" -> 4 [ label= "0.138497" ];
+	"63c" -> 7 [ label= "0.483006" ];
+	"63c" -> 9 [ label= "0.05" ];
+	"63c" -> 13 [ label= "0.0776879" ];
+	"63c" -> 82 [ label= "0.250809" ];
+	"64c" [shape = "point"]
+	64 -> "64c" [label= "{mem_node_1}"];
+	"64c" -> 0 [ label= "1" ];
+	"65c" [shape = "point"]
+	65 -> "65c" [label= "{mem_node_2}"];
+	"65c" -> 0 [ label= "1" ];
+	"66c" [shape = "point"]
+	66 -> "66c" [label= "{mem_node_0}"];
+	"66c" -> 0 [ label= "1" ];
+	"67c" [shape = "point"]
+	67 -> "67c" [label= "{mem_node_1}"];
+	"67c" -> 0 [ label= "1" ];
+	"68c" [shape = "point"]
+	68 -> "68c" [label= "{mem_node_1}"];
+	"68c" -> 0 [ label= "1" ];
+	"69c" [shape = "point"]
+	69 -> "69c" [label= "{mem_node_1}"];
+	"69c" -> 0 [ label= "1" ];
+	"70c" [shape = "point"]
+	70 -> "70c" [label= "{mem_node_1}"];
+	"70c" -> 0 [ label= "1" ];
+	"71c" [shape = "point"]
+	71 -> "71c" [label= "{mem_node_1}"];
+	"71c" -> 0 [ label= "1" ];
+	"72c" [shape = "point"]
+	72 -> "72c" [label= "{mem_node_1}"];
+	"72c" -> 0 [ label= "1" ];
+	"73c" [shape = "point"]
+	73 -> "73c" [label= "{mem_node_1}"];
+	"73c" -> 0 [ label= "1" ];
+	"74c" [shape = "point"]
+	74 -> "74c" [label= "{mem_node_1}"];
+	"74c" -> 0 [ label= "1" ];
+	"75c" [shape = "point"]
+	75 -> "75c" [label= "{mem_node_1}"];
+	"75c" -> 0 [ label= "1" ];
+	"76c" [shape = "point"]
+	76 -> "76c" [label= "{mem_node_0}"];
+	"76c" -> 0 [ label= "1" ];
+	"77c" [shape = "point"]
+	77 -> "77c" [label= "{mem_node_1}"];
+	"77c" -> 0 [ label= "1" ];
+	"78c" [shape = "point"]
+	78 -> "78c" [label= "{mem_node_1}"];
+	"78c" -> 0 [ label= "1" ];
+	"79c" [shape = "point"]
+	79 -> "79c" [label= "{mem_node_1}"];
+	"79c" -> 0 [ label= "1" ];
+	"80c" [shape = "point"]
+	80 -> "80c" [label= "{mem_node_1}"];
+	"80c" -> 0 [ label= "1" ];
+	"81c" [shape = "point"]
+	81 -> "81c" [label= "{mem_node_1}"];
+	"81c" -> 0 [ label= "1" ];
+	"82c" [shape = "point"]
+	82 -> "82c" [label= "{mem_node_1}"];
+	"82c" -> 0 [ label= "1" ];
+}
+
+

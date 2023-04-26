@@ -1,0 +1,72 @@
+2023-04-26 15:28:40,673 - cli.py - This is Paynt version 0.1.0.
+2023-04-26 15:28:40,675 - sketch.py - loading sketch from /mnt/d/src/PP/synthesis-CAV/experiments/../models/pomdp/storm-integration/lanes-100-combined-new/sketch.templ ...
+2023-04-26 15:28:40,761 - prism_parser.py - PRISM model type: PrismModelType.POMDP
+2023-04-26 15:28:40,761 - prism_parser.py - loading properties from /mnt/d/src/PP/synthesis-CAV/experiments/../models/pomdp/storm-integration/lanes-100-combined-new/sketch.props ...
+2023-04-26 15:28:40,778 - prism_parser.py - found the following specification: constraints: none, optimality objective: R[exp]{"steps"}min=? [F (z = 5)] 
+2023-04-26 15:28:40,844 - sketch.py - converting state rewards 'steps' to state-action rewards
+2023-04-26 15:28:40,847 - sketch.py - constructed explicit quotient having 2741 states and 5285 actions
+2023-04-26 15:28:40,847 - sketch.py - found the following specification constraints: none, optimality objective: R[exp]{"steps"}min=? [F (z = 5)] 
+2023-04-26 15:28:40,855 - quotient_pomdp.py - Constructed POMDP having 11 observations.
+2023-04-26 15:28:40,914 - quotient_pomdp.py - Unfolding POMDP using the following memory allocation vector: [1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1] ...
+2023-04-26 15:28:40,918 - quotient_pomdp.py - Constructed quotient MDP having 2741 states and 5285 actions.
+2023-04-26 15:28:41,180 - synthesizer_pomdp.py - Storm pomdp option enabled
+2023-04-26 15:28:41,180 - synthesizer_pomdp.py - Storm settings: iterative - (None, None, None), get_storm_result - 10, storm_options - 20mil, prune_storm - False, unfold_strategy - (True, False), use_storm_cutoffs - False
+2023-04-26 15:28:41,180 - synthesizer_pomdp.py - Synthesizing optimal k=1 controller ...
+2023-04-26 15:28:41,181 - quotient_pomdp.py - Unfolding POMDP using the following memory allocation vector: [1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1] ...
+2023-04-26 15:28:41,181 - quotient_pomdp.py - Constructed quotient MDP having 2741 states and 5285 actions.
+{} 
+
+{}
+2023-04-26 15:28:41,441 - synthesizer.py - Synthesis initiated.
+-----------PAYNT-----------               
+Value = 11009.348575033993 | Time elapsed = 0.4s | FSC size = 22
+FSC = A([fast=1],0)={'J'}, A([mid=1],0)={'F'}, A([slow=1],0)={'B'}, A([blue=1 & imgoal=1],0)={'B'}, A([o0=1],0)={'r'}, A([imgoal=1 & yell=1],0)={'A'}
+
+-----------PAYNT-----------               
+Value = 10241.939782842126 | Time elapsed = 0.6s | FSC size = 22
+FSC = A([fast=1],0)={'J'}, A([mid=1],0)={'F'}, A([slow=1],0)={'A'}, A([blue=1 & imgoal=1],0)={'B'}, A([o0=1],0)={'r'}, A([imgoal=1 & yell=1],0)={'A'}
+
+--------------------
+Synthesis summary
+
+optimality objective: R[exp]{"steps"}min=? [F (z = 5)] 
+
+method: AR, synthesis time: 1.46 s
+number of holes: 6, family size: 144, super quotient: 2741 states / 5285 actions
+explored: 100 %
+AR stats: avg MDP size: 2690, iterations: 28
+
+optimal: 10241.939783
+--------------------
+
+2023-04-26 15:28:43,131 - synthesizer_pomdp.py - Synthesizing optimal k=2 controller ...
+2023-04-26 15:28:43,131 - quotient_pomdp.py - Unfolding POMDP using the following memory allocation vector: [2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 1] ...
+2023-04-26 15:28:43,132 - quotient_pomdp.py - Constructed quotient MDP having 5481 states and 21138 actions.
+{} 
+
+{}
+2023-04-26 15:28:48,056 - synthesizer.py - Synthesis initiated.
+-----------PAYNT-----------               
+Value = 9019.145779314704 | Time elapsed = 8.5s | FSC size = 42
+FSC = A([fast=1],0)={'J'}, A([fast=1],1)={'J'}, M([fast=1],0)=0, M([fast=1],1)=0, A([mid=1],0)={'F'}, A([mid=1],1)={'F'}, M([mid=1],0)=0, M([mid=1],1)=1, M([],0)=0, M([],1)=0, A([slow=1],0)={'B'}, A([slow=1],1)={'B'}, M([slow=1],0)=0, M([slow=1],1)=0, M([in=1],0)=0, M([in=1],1)=0, A([blue=1 & imgoal=1],0)={'C'}, A([blue=1 & imgoal=1],1)={'B'}, M([blue=1 & imgoal=1],0)=1, M([blue=1 & imgoal=1],1)=1, A([o0=1],0)={'r'}, A([o0=1],1)={'r'}, M([o0=1],0)=0, M([o0=1],1)=0, A([imgoal=1 & yell=1],0)={'A'}, A([imgoal=1 & yell=1],1)={'B'}, M([imgoal=1 & yell=1],0)=0, M([imgoal=1 & yell=1],1)=1, M([imgoal=1],0)=0, M([imgoal=1],1)=0, M([goal=1 & imgoal=1],0)=0, M([goal=1 & imgoal=1],1)=0, M([ooin=1],0)=0
+
+2023-04-26 15:28:51,709 - synthesizer_ar_storm.py - Pausing synthesis
+2023-04-26 15:28:51,709 - synthesizer_ar_storm.py - Terminating controller synthesis
+--------------------
+Synthesis summary
+
+optimality objective: R[exp]{"steps"}min=? [F (z = 5)] 
+
+method: AR, synthesis time: 3.65 s
+number of holes: 33, family size: 43486543872, super quotient: 5481 states / 21138 actions
+explored: 0 %
+AR stats: avg MDP size: 5222, iterations: 41
+
+optimal: 9019.145779
+--------------------
+
+2023-04-26 15:28:52,146 - storm_pomdp_control.py - starting Storm POMDP analysis
+### 6521831 beliefs in underapproximation MDP ##### 3187492 beliefs queued
+### 12511060 beliefs in underapproximation MDP ##### 6131684 beliefs queued
+### 18555362 beliefs in underapproximation MDP ##### 9085015 beliefs queued
+### 20000001 beliefs in underapproximation MDP ##### 7172803 beliefs queued
