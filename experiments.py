@@ -201,6 +201,7 @@ if __name__ == '__main__':
     elif experiment == 'q3':
         experiment_models = ["hallway", "refuel-20", "query-s3", "4x3-95", "lanes-100-combined-new", "milos-aaai97", "network-3-8-20"]
         saynt_experiment_models = ["hallway", "refuel-20", "query-s3", "4x3-95", "lanes-100-combined-new", "milos-aaai97", "network-3-8-20", "refuel-06", "drone-8-2"]
+        q_models = ["4x3-95", "query-s3", "lanes-100-combined-new"]
 
         # PAYNT
         options = ""
@@ -241,6 +242,38 @@ if __name__ == '__main__':
         special = {"4x3-95": "--storm-pomdp --iterative-storm 900 60 10 --posterior-aware", "milos-aaai97": "--storm-pomdp --iterative-storm 900 90 10",
                    "query-s3": "--storm-pomdp --iterative-storm 900 90 10", "refuel-20": "--storm-pomdp --iterative-storm 900 60 5"}
         run_experiment(options, logs_string, saynt_experiment_models, timeout, special)
+
+        # Q1
+        options = "--storm-pomdp --get-storm-result 10"
+        logs_string = "q3/q1-1st"
+        timeout = 1000
+        run_experiment(options, logs_string, q_models, timeout)
+
+        options = "--storm-pomdp --get-storm-result 10 --storm-options 2mil"
+        logs_string = "q3/q1-2nd"
+        timeout = 1000
+        run_experiment(options, logs_string, q_models, timeout)
+
+        options = "--storm-pomdp --get-storm-result 10 --storm-options 5mil"
+        logs_string = "q3/q1-3rd"
+        timeout = 1000
+        run_experiment(options, logs_string, q_models, timeout)
+
+        options = "--storm-pomdp --get-storm-result 10 --storm-options 10mil"
+        logs_string = "q3/q1-4th"
+        timeout = 1000
+        run_experiment(options, logs_string, q_models, timeout)
+
+        options = "--storm-pomdp --get-storm-result 10 --storm-options 20mil"
+        logs_string = "q3/q1-5th"
+        timeout = 1000
+        run_experiment(options, logs_string, q_models, timeout)
+
+        # Q2
+        options = "--storm-pomdp"
+        logs_string = "q3/q2"
+        timeout = 1000
+        run_experiment(options, logs_string, q_models, timeout)
 
         print("\nQ3 EXPERIMENT COMPLETE\n")
 

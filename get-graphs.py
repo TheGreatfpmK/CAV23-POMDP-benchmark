@@ -264,9 +264,169 @@ def get_plots(output_file, paynt_file, saynt_file, s1_file, s2_file, s3_file, s4
     };\n\
     \\addlegendentry{PAYNT};\n", file=output_file)
 
-    
 
 
+def get_plots_q(output_file, paynt_file, saynt_file, s1_file, s2_file, s3_file, s4_file, s5_file, q2_file, q11_file, q12_file, q13_file, q14_file, q15_file):
+
+    # SAYNT
+    saynt_log = saynt_file.read()
+    saynt_storm_coordinates = ""
+    saynt_paynt_coordinates = ""
+
+    split1 = saynt_log.split("-----------Storm-----------")
+    for i in range(len(split1)):
+        if i > 0:
+            split2 = split1[i].split()
+            val = round(float(split2[2]),5)
+            time = float(split2[7][:-1])
+            time = round(time/60,2)
+            saynt_storm_coordinates = saynt_storm_coordinates + f"({time}, {val})"
+
+    print("\\addplot[\n\
+    color=blue,\n\
+    every mark/.append style={solid, fill=blue},\n\
+    mark=square*,\n\
+    line width=1.5pt,mark size=2pt,]\n\
+    coordinates {\n" + saynt_storm_coordinates + "\n\
+    };\n\
+    \\addlegendentry{SAYNT $F_{B}$};\n", file=output_file)
+
+    split1 = saynt_log.split("-----------PAYNT-----------")
+    for i in range(len(split1)):
+        if i > 0:
+            split2 = split1[i].split()
+            val = round(float(split2[2]),5)
+            time = float(split2[7][:-1])
+            time = round(time/60,2)
+            saynt_paynt_coordinates = saynt_paynt_coordinates + f"({time}, {val})"
+    if time < 15.0:
+        saynt_paynt_coordinates = saynt_paynt_coordinates + f"(15, {val})"
+
+    print("\\addplot[\n\
+    color=green,\n\
+    every mark/.append style={solid, fill=green},\n\
+    mark=triangle*,\n\
+    line width=1.5pt,mark size=2pt,]\n\
+    coordinates {\n" + saynt_paynt_coordinates + "\n\
+    };\n\
+    \\addlegendentry{SAYNT $F_{I}$};\n", file=output_file)
+
+
+
+    #Storm
+    s1_log = s1_file.read()
+    s2_log = s2_file.read()
+    s3_log = s3_file.read()
+    s4_log = s4_file.read()
+    s5_log = s5_file.read()
+
+    s_logs = [s1_log, s2_log, s3_log, s4_log, s5_log]
+
+    storm_coordinates = ""
+
+    for log in s_logs:
+        split1 = log.split("-----------Storm-----------")
+        for i in range(len(split1)):
+            if i > 0:
+                split2 = split1[i].split()
+                val = round(float(split2[2]),5)
+                time = float(split2[7][:-1])
+                time = round(time/60,2)
+                storm_coordinates = storm_coordinates + f"({time}, {val})"
+
+    print("\\addplot[\n\
+    color=violet,\n\
+    every mark/.append style={solid, fill=violet},\n\
+    mark=diamond*,\n\
+    dashed,\n\
+    line width=1.5pt,mark size=2pt,]\n\
+    coordinates {\n" + storm_coordinates + "\n\
+    };\n\
+    \\addlegendentry{Storm};\n", file=output_file)
+
+
+    #PAYNT
+    paynt_log = paynt_file.read()
+    paynt_coordinates = ""
+
+    split1 = paynt_log.split("-----------PAYNT-----------")
+    for i in range(len(split1)):
+        if i > 0:
+            split2 = split1[i].split()
+            val = round(float(split2[2]),5)
+            time = float(split2[7][:-1])
+            time = round(time/60,2)
+            paynt_coordinates = paynt_coordinates + f"({time}, {val})"
+    if time < 15.0:
+        paynt_coordinates = paynt_coordinates + f"(15, {val})"
+
+    print("\\addplot[\n\
+    color=orange,\n\
+    every mark/.append style={solid, fill=orange},\n\
+    mark=*,\n\
+    dashed,\n\
+    line width=1.5pt,mark size=2pt,]\n\
+    coordinates {\n" + paynt_coordinates + "\n\
+    };\n\
+    \\addlegendentry{PAYNT};\n", file=output_file)
+
+
+    # Q1
+    s1_log = q11_file.read()
+    s2_log = q12_file.read()
+    s3_log = q13_file.read()
+    s4_log = q14_file.read()
+    s5_log = q15_file.read()
+
+    s_logs = [s1_log, s2_log, s3_log, s4_log, s5_log]
+
+    q1_coordinates = ""
+
+    for log in s_logs:
+        split1 = log.split("-----------Storm-----------")
+        for i in range(len(split1)):
+            if i > 0:
+                split2 = split1[i].split()
+                val = round(float(split2[2]),5)
+                time = float(split2[7][:-1])
+                time = round(time/60,2)
+                q1_coordinates = q1_coordinates + f"({time}, {val})"
+
+    print("\\addplot[\n\
+    color=pink,\n\
+    every mark/.append style={solid, fill=pink},\n\
+    mark=otimes*,\n\
+    dashdotdotted,\n\
+    line width=1.5pt,mark size=2pt,]\n\
+    coordinates {\n" + q1_coordinates + "\n\
+    };\n\
+    \\addlegendentry{Q1 Storm};\n", file=output_file)
+
+
+    # Q2
+    q2_log = q2_file.read()
+    q2_coordinates = ""
+
+    split1 = q2_log.split("-----------PAYNT-----------")
+    for i in range(len(split1)):
+        if i > 0:
+            split2 = split1[i].split()
+            val = round(float(split2[2]),5)
+            time = float(split2[7][:-1])
+            time = round(time/60,2)
+            q2_coordinates = q2_coordinates + f"({time}, {val})"
+    if time < 15.0:
+        q2_coordinates = q2_coordinates + f"(15, {val})"
+
+    print("\\addplot[\n\
+    color=yellow,\n\
+    every mark/.append style={solid, fill=yellow},\n\
+    mark=star,\n\
+    dashdotdotted,\n\
+    line width=1.5pt,mark size=2pt,]\n\
+    coordinates {\n" + q2_coordinates + "\n\
+    };\n\
+    \\addlegendentry{Q2 PAYNT};\n", file=output_file)
 
 
 def get_graphs():
@@ -277,6 +437,12 @@ def get_graphs():
     s3_path = os.fsencode(dir_path + '/q3/storm-3rd')
     s2_path = os.fsencode(dir_path + '/q3/storm-2nd')
     s1_path = os.fsencode(dir_path + '/q3/storm-1st')
+    q15_path = os.fsencode(dir_path + '/q3/q1-5th')
+    q14_path = os.fsencode(dir_path + '/q3/q1-4th')
+    q13_path = os.fsencode(dir_path + '/q3/q1-3rd')
+    q12_path = os.fsencode(dir_path + '/q3/q1-2nd')
+    q11_path = os.fsencode(dir_path + '/q3/q1-1st')
+    q2_path = os.fsencode(dir_path + '/q3/q2')
 
     models = [ f.path for f in os.scandir(paynt_path) if f.is_dir() ]
 
@@ -294,6 +460,14 @@ def get_graphs():
             s3_file = open(s3_path.decode("utf-8") + "/" + model_name + "/logs.txt", mode='r')
             s4_file = open(s4_path.decode("utf-8") + "/" + model_name + "/logs.txt", mode='r')
             s5_file = open(s5_path.decode("utf-8") + "/" + model_name + "/logs.txt", mode='r')
+
+            if model_name in ["4x3-95", "query-s3", "lanes-100-combined-new"]:
+                q2_file = open(q2_path.decode("utf-8") + "/" + model_name + "/logs.txt", mode='r')
+                q11_file = open(q11_path.decode("utf-8") + "/" + model_name + "/logs.txt", mode='r')
+                q12_file = open(q12_path.decode("utf-8") + "/" + model_name + "/logs.txt", mode='r')
+                q13_file = open(q13_path.decode("utf-8") + "/" + model_name + "/logs.txt", mode='r')
+                q14_file = open(q14_path.decode("utf-8") + "/" + model_name + "/logs.txt", mode='r')
+                q15_file = open(q15_path.decode("utf-8") + "/" + model_name + "/logs.txt", mode='r')
 
             header = ""
             output_file_name = ""
@@ -323,7 +497,10 @@ def get_graphs():
 
             with open(result_folder.decode("utf-8") + "/" + output_file_name, "w") as text_file:
                 print(header, file=text_file)
-                get_plots(text_file, paynt_file, saynt_file, s1_file, s2_file, s3_file, s4_file, s5_file)
+                if model_name in ["4x3-95", "query-s3", "lanes-100-combined-new"]:
+                    get_plots_q(text_file, paynt_file, saynt_file, s1_file, s2_file, s3_file, s4_file, s5_file, q2_file, q11_file, q12_file, q13_file, q14_file, q15_file)
+                else:
+                    get_plots(text_file, paynt_file, saynt_file, s1_file, s2_file, s3_file, s4_file, s5_file)
                 get_end(text_file)
 
                 paynt_file.close()
@@ -333,6 +510,15 @@ def get_graphs():
                 s3_file.close()
                 s4_file.close()
                 s5_file.close()
+
+                if model_name in ["4x3-95", "query-s3", "lanes-100-combined-new"]:
+                    q2_file.close()
+                    q11_file.close()
+                    q12_file.close()
+                    q13_file.close()
+                    q14_file.close()
+                    q15_file.close()
+
                 text_file.close()
 
         except:

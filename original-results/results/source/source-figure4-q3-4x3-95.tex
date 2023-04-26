@@ -61,6 +61,28 @@
     };
     \addlegendentry{PAYNT};
 
+\addplot[
+    color=pink,
+    every mark/.append style={solid, fill=pink},
+    mark=otimes*,
+    dashdotdotted,
+    line width=1.5pt,mark size=2pt,]
+    coordinates {
+(0.01, 1.8381)(0.3, 1.87803)(1.38, 1.87955)(4.06, 1.88455)(9.61, 1.88492)
+    };
+    \addlegendentry{Q1 Storm};
+
+\addplot[
+    color=yellow,
+    every mark/.append style={solid, fill=yellow},
+    mark=star,
+    dashdotdotted,
+    line width=1.5pt,mark size=2pt,]
+    coordinates {
+(0.0, -0.99536)(0.0, -0.52273)(0.0, 0.44177)(0.0, 0.72888)(0.0, 0.82368)(0.0, 0.82523)(0.01, 1.49561)(0.01, 1.50617)(0.01, 1.52557)(0.01, 1.65294)(0.01, 1.65833)(0.01, 1.6912)(0.01, 1.71809)(0.01, 1.73345)(0.01, 1.74664)(0.01, 1.74841)(0.47, 1.78517)(0.48, 1.78653)(0.63, 1.80651)(4.61, 1.80788)(4.62, 1.82049)(4.63, 1.83651)(4.67, 1.83764)(7.98, 1.8465)(7.98, 1.8519)(7.98, 1.85236)(15, 1.85236)
+    };
+    \addlegendentry{Q2 PAYNT};
+
 \end{axis}
 \end{tikzpicture}
 
