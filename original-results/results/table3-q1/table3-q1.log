@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/Debian) (preloaded format=pdflatex 2022.2.19)  26 APR 2023 01:02
+This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/Debian) (preloaded format=pdflatex 2022.2.19)  26 APR 2023 10:17
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -454,7 +454,7 @@ File: l3backend-pdfmode.def 2020-02-03 L3 backend support: PDF mode
 \l__kernel_color_stack_int=\count269
 \l__pdf_internal_box=\box57
 )
-No file table3-q1.aux.
+(/mnt/d/src/PP/synthesis-CAV/experiments/results/table3-q1/table3-q1.aux)
 \openout1 = `table3-q1.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 8.
@@ -471,6 +471,7 @@ LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 8.
 LaTeX Font Info:    ... okay on input line 8.
 LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 8.
 LaTeX Font Info:    ... okay on input line 8.
+
 ABD: EveryShipout initializing macros
 (/usr/share/texlive/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
@@ -512,9 +513,9 @@ Overfull \hbox (78.28838pt too wide) in paragraph at lines 11--41
 [1{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}]
 (/mnt/d/src/PP/synthesis-CAV/experiments/results/table3-q1/table3-q1.aux) ) 
 Here is how much of TeX's memory you used:
- 21196 strings out of 483183
- 567005 string characters out of 5966292
- 939701 words of memory out of 5000000
+ 21198 strings out of 483183
+ 567147 string characters out of 5966292
+ 939702 words of memory out of 5000000
  35909 multiletter control sequences out of 15000+600000
  532338 words of font info for 24 fonts, out of 8000000 for 9000
  14 hyphenation exceptions out of 8191
