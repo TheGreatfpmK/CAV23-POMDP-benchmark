@@ -30,11 +30,11 @@ We also provide our logs in the `experiments/original-results`, in case somethin
 The script is pretty fail-safe meaning that it will finish and generate all the output even if some experiment fails (it will notify you with ERROR message on stdout). So if some of the generated tables are missing rows, check the output of the benchmark script to see what experiments failed, remove their log files and rerun the script if you want to.
 
 ## Expected runtime
-- the main experiments take 8-12 hours to run
+- the main experiments take 9-12 hours to run
     - model information experiment (flag `-1`) takes 5 minutes
     - Q1 experiment (flag `-2`) takes 30-40 minutes
     - Q2 experiment (flag `-3`) takes 70-90 minutes
-    - Q3 experiment (flag `-4`) takes 6-9 hours
+    - Q3 experiment (flag `-4`) takes 8-10 hours
 - the appendix experiments on their own take 12-16 hours to run
 
 If you feel like your PC needs more computation time to achieve comparable results to what we present in our paper you can adjust the `timeout_multiplier` variable on top of the `experiments/experiments.py` file.
