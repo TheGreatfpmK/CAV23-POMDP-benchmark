@@ -152,10 +152,10 @@ if __name__ == '__main__':
         run_experiment(options, logs_string, experiment_models, timeout)
 
         # Short Storm + Fi
-        options = "--storm-pomdp --get-storm-result 10"
+        options = f"--storm-pomdp --get-storm-result {10*timeout_multiplier}"
         logs_string = "q1/improved-short-storm"
         timeout = 100
-        special = {"drone-8-2": "--storm-pomdp --get-storm-result 60", "rocks-12": "--storm-pomdp --get-storm-result 60"}
+        special = {"drone-8-2": f"--storm-pomdp --get-storm-result {60*timeout_multiplier}", "rocks-12": f"--storm-pomdp --get-storm-result {60*timeout_multiplier}"}
         run_experiment(options, logs_string, experiment_models, timeout, special)
 
         # Long Storm
@@ -166,10 +166,10 @@ if __name__ == '__main__':
         run_experiment(options, logs_string, experiment_models, timeout, special)
 
         # Long Storm + Fi
-        options = "--storm-pomdp --get-storm-result 10 --storm-options 5mil"
+        options = f"--storm-pomdp --get-storm-result {10*timeout_multiplier} --storm-options 5mil"
         logs_string = "q1/improved-long-storm"
         timeout = 300
-        special = {"drone-8-2": "--storm-pomdp --get-storm-result 60 --storm-options 5mil", "rocks-12": "--storm-pomdp --get-storm-result 60 --storm-options clip4"}
+        special = {"drone-8-2": f"--storm-pomdp --get-storm-result {60*timeout_multiplier} --storm-options 5mil", "rocks-12": f"--storm-pomdp --get-storm-result {60*timeout_multiplier} --storm-options clip4"}
         run_experiment(options, logs_string, experiment_models, timeout, special)
 
         print("\nQ1 EXPERIMENT COMPLETE\n")
@@ -236,35 +236,35 @@ if __name__ == '__main__':
         run_experiment(options, logs_string, experiment_models, timeout)
 
         # SAYNT
-        options = "--storm-pomdp --iterative-storm 900 60 10"
+        options = f"--storm-pomdp --iterative-storm {900*timeout_multiplier} {60*timeout_multiplier} {10*timeout_multiplier}"
         logs_string = "q3/saynt"
         timeout = 1200
-        special = {"4x3-95": "--storm-pomdp --iterative-storm 900 60 10 --posterior-aware", "milos-aaai97": "--storm-pomdp --iterative-storm 900 90 10",
-                   "query-s3": "--storm-pomdp --iterative-storm 900 90 10", "refuel-20": "--storm-pomdp --iterative-storm 900 60 5"}
+        special = {"4x3-95": f"--storm-pomdp --iterative-storm {900*timeout_multiplier} {60*timeout_multiplier} {10*timeout_multiplier} --posterior-aware", "milos-aaai97": f"--storm-pomdp --iterative-storm {900*timeout_multiplier} {90*timeout_multiplier} {10*timeout_multiplier}",
+                   "query-s3": f"--storm-pomdp --iterative-storm {900*timeout_multiplier} {90*timeout_multiplier} {10*timeout_multiplier}", "refuel-20": f"--storm-pomdp --iterative-storm {900*timeout_multiplier} {60*timeout_multiplier} {5*timeout_multiplier}"}
         run_experiment(options, logs_string, saynt_experiment_models, timeout, special)
 
         # Q1
-        options = "--storm-pomdp --get-storm-result 10"
+        options = f"--storm-pomdp --get-storm-result {10*timeout_multiplier}"
         logs_string = "q3/q1-1st"
         timeout = 1000
         run_experiment(options, logs_string, q_models, timeout)
 
-        options = "--storm-pomdp --get-storm-result 10 --storm-options 2mil"
+        options = f"--storm-pomdp --get-storm-result {10*timeout_multiplier} --storm-options 2mil"
         logs_string = "q3/q1-2nd"
         timeout = 1000
         run_experiment(options, logs_string, q_models, timeout)
 
-        options = "--storm-pomdp --get-storm-result 10 --storm-options 5mil"
+        options = f"--storm-pomdp --get-storm-result {10*timeout_multiplier} --storm-options 5mil"
         logs_string = "q3/q1-3rd"
         timeout = 1000
         run_experiment(options, logs_string, q_models, timeout)
 
-        options = "--storm-pomdp --get-storm-result 10 --storm-options 10mil"
+        options = f"--storm-pomdp --get-storm-result {10*timeout_multiplier} --storm-options 10mil"
         logs_string = "q3/q1-4th"
         timeout = 1000
         run_experiment(options, logs_string, q_models, timeout)
 
-        options = "--storm-pomdp --get-storm-result 10 --storm-options 20mil"
+        options = f"--storm-pomdp --get-storm-result {10*timeout_multiplier} --storm-options 20mil"
         logs_string = "q3/q1-5th"
         timeout = 1000
         run_experiment(options, logs_string, q_models, timeout)
@@ -315,12 +315,12 @@ if __name__ == '__main__':
         run_experiment(options, logs_string, experiment_models, timeout)
 
         # SAYNT
-        options = "--storm-pomdp --iterative-storm 900 60 10"
+        options = f"--storm-pomdp --iterative-storm {900*timeout_multiplier} {60*timeout_multiplier} {10*timeout_multiplier}"
         logs_string = "appendix/saynt"
         timeout = 1200
-        special = {"4x3-95": "--storm-pomdp --iterative-storm 900 60 10 --posterior-aware", "milos-aaai97": "--storm-pomdp --iterative-storm 900 90 10",
-                   "query-s3": "--storm-pomdp --iterative-storm 900 90 10", "drone-4-1": "--storm-pomdp --iterative-storm 900 60 10 --posterior-aware",
-                   "refuel-20": "--storm-pomdp --iterative-storm 900 60 5"}
+        special = {"4x3-95": f"--storm-pomdp --iterative-storm {900*timeout_multiplier} {60*timeout_multiplier} {10*timeout_multiplier} --posterior-aware", "milos-aaai97": f"--storm-pomdp --iterative-storm {900*timeout_multiplier} {90*timeout_multiplier} {10*timeout_multiplier}",
+                   "query-s3": f"--storm-pomdp --iterative-storm {900*timeout_multiplier} {90*timeout_multiplier} {10*timeout_multiplier}", "drone-4-1": f"--storm-pomdp --iterative-storm {900*timeout_multiplier} {60*timeout_multiplier} {10*timeout_multiplier} --posterior-aware",
+                   "refuel-20": f"--storm-pomdp --iterative-storm {900*timeout_multiplier} {60*timeout_multiplier} {5*timeout_multiplier}"}
         run_experiment(options, logs_string, experiment_models, timeout, special)
 
     else:

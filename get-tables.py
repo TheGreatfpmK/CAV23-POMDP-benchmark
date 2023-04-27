@@ -169,19 +169,31 @@ def get_q2_table():
                 im_paynt_log = im_paynt_file.read()
 
                 split1 = im_paynt_log.split("-----------Storm-----------")
-                split2 = split1[-1].split()
-                s_val = round(float(split2[2]),2)
-                s_time = split2[7]
+                if len(split1) == 1:
+                    s_val = "TO/MO"
+                    s_time = ""
+                else:
+                    split2 = split1[-1].split()
+                    s_val = round(float(split2[2]),2)
+                    s_time = split2[7]
 
                 split1 = paynt_log.split("-----------PAYNT-----------")
-                split2 = split1[-1].split()
-                paynt_val = round(float(split2[2]),2)
-                paynt_time = split2[7]
+                if len(split1) == 1:
+                    paynt_val = "TO/MO"
+                    paynt_time = ""
+                else:
+                    split2 = split1[-1].split()
+                    paynt_val = round(float(split2[2]),2)
+                    paynt_time = split2[7]
 
                 split1 = im_paynt_log.split("-----------PAYNT-----------")
-                split2 = split1[-1].split()
-                im_paynt_val = round(float(split2[2]),2)
-                im_paynt_time = split2[7]
+                if len(split1) == 1:
+                    im_paynt_val = "TO/MO"
+                    im_paynt_time = ""
+                else:
+                    split2 = split1[-1].split()
+                    im_paynt_val = round(float(split2[2]),2)
+                    im_paynt_time = split2[7]
 
                 print(f'{model_name} & {s_val} & {paynt_val} & {im_paynt_val} \\\\', file=text_file)
                 print(f' & {s_time} & {paynt_time} & {im_paynt_time} \\\\', file=text_file)
@@ -314,14 +326,22 @@ def get_memory_table():
                 saynt_log = saynt_file.read()
 
                 split1 = saynt_log.split("-----------Storm-----------")
-                split2 = split1[-1].split()
-                s_val = round(float(split2[2]),2)
-                s_size = split2[12]
+                if len(split1) == 1:
+                    s_val = "TO"
+                    s_size = "MO"
+                else:
+                    split2 = split1[-1].split()
+                    s_val = round(float(split2[2]),2)
+                    s_size = split2[12]
 
                 split1 = saynt_log.split("-----------PAYNT-----------")
-                split2 = split1[-1].split()
-                paynt_val = round(float(split2[2]),2)
-                paynt_size = split2[12]
+                if len(split1) == 1:
+                    paynt_val = "TO"
+                    paynt_size = "MO"
+                else:
+                    split2 = split1[-1].split()
+                    paynt_val = round(float(split2[2]),2)
+                    paynt_size = split2[12]
 
                 print(f'{model_name} & {s_val}/{s_size} & {paynt_val}/{paynt_size} \\\\', file=text_file)
                 print("\\hline", file=text_file)
@@ -390,50 +410,70 @@ def get_appendix_table():
                                 s_log = s_file.read()
 
                 split1 = paynt_log.split("-----------PAYNT-----------")
-                split2 = split1[-1].split()
-                paynt_val = round(float(split2[2]),2)
-                paynt_time = split2[7]
-                paynt_size = split2[12]
+                if len(split1) == 1:
+                    paynt_val = "TO/MO"
+                    paynt_time = ""
+                    paynt_size = ""
+                else:
+                    split2 = split1[-1].split()
+                    paynt_val = round(float(split2[2]),2)
+                    paynt_time = split2[7]
+                    paynt_size = split2[12]
 
                 split1 = s_log.split("-----------Storm-----------")
-                split2 = split1[-1].split()
-                s_val = round(float(split2[2]),2)
-                s_time = split2[7]
-                s_size = split2[12]
+                if len(split1) == 1:
+                    s_val = "TO/MO"
+                    s_time = ""
+                    s_size = ""
+                else:
+                    split2 = split1[-1].split()
+                    s_val = round(float(split2[2]),2)
+                    s_time = split2[7]
+                    s_size = split2[12]
 
                 split1 = saynt_log.split("-----------PAYNT-----------")
-                if len(split1) > 2:
-                    for i in range(len(split1)-2):
-                        split2 = split1[-i-1].split()
-                        saynt_p_val = round(float(split2[2]),2)
-                        split3 = split1[-i-2].split()
-                        saynt_p_val2 = round(float(split3[2]),2)
-                        if saynt_p_val != saynt_p_val2:
-                            break
-                    saynt_p_time = split2[7]
-                    saynt_p_size = split2[12]
+                if len(split1) == 1:
+                    saynt_p_val = "TO/MO"
+                    saynt_p_time = ""
+                    saynt_p_size = ""
                 else:
-                    split2 = split1[-1].split()
-                    saynt_p_val = round(float(split2[2]),2)
-                    saynt_p_time = split2[7]
-                    saynt_p_size = split2[12]
+                    if len(split1) > 2:
+                        for i in range(len(split1)-2):
+                            split2 = split1[-i-1].split()
+                            saynt_p_val = round(float(split2[2]),2)
+                            split3 = split1[-i-2].split()
+                            saynt_p_val2 = round(float(split3[2]),2)
+                            if saynt_p_val != saynt_p_val2:
+                                break
+                        saynt_p_time = split2[7]
+                        saynt_p_size = split2[12]
+                    else:
+                        split2 = split1[-1].split()
+                        saynt_p_val = round(float(split2[2]),2)
+                        saynt_p_time = split2[7]
+                        saynt_p_size = split2[12]
 
                 split1 = saynt_log.split("-----------Storm-----------")
-                if len(split1) > 2:
-                    for i in range(len(split1)-2):
-                        split2 = split1[-i-1].split()
-                        saynt_s_val = round(float(split2[2]),2)
-                        split3 = split1[-i-2].split()
-                        saynt_s_val2 = round(float(split3[2]),2)
-                        if saynt_s_val != saynt_s_val2:
-                            break
-                    saynt_s_time = split2[7]
-                    saynt_s_size = split2[12]
+                if len(split1) == 1:
+                    saynt_s_val = "TO/MO"
+                    saynt_s_time = ""
+                    saynt_s_size = ""
                 else:
-                    split2 = split1[-1].split()
-                    saynt_s_val = round(float(split2[2]),2)
-                    saynt_s_time = split2[7]
-                    saynt_s_size = split2[12]
+                    if len(split1) > 2:
+                        for i in range(len(split1)-2):
+                            split2 = split1[-i-1].split()
+                            saynt_s_val = round(float(split2[2]),2)
+                            split3 = split1[-i-2].split()
+                            saynt_s_val2 = round(float(split3[2]),2)
+                            if saynt_s_val != saynt_s_val2:
+                                break
+                        saynt_s_time = split2[7]
+                        saynt_s_size = split2[12]
+                    else:
+                        split2 = split1[-1].split()
+                        saynt_s_val = round(float(split2[2]),2)
+                        saynt_s_time = split2[7]
+                        saynt_s_size = split2[12]
 
                 print(f'{model_name} & {paynt_val} & {paynt_size} & {s_val} & {s_size} & {saynt_s_val} & {saynt_s_size} & {saynt_p_val} & {saynt_p_size} \\\\', file=text_file)
                 print(f' & {paynt_time} & & {s_time} & & {saynt_s_time} & & {saynt_p_time} & \\\\', file=text_file)
