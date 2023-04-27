@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/Debian) (preloaded format=pdflatex 2022.2.19)  27 APR 2023 11:04
+This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/Debian) (preloaded format=pdflatex 2022.2.19)  27 APR 2023 12:24
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -581,7 +581,7 @@ Overfull \hbox (98.72046pt too wide) in paragraph at lines 539--540
 Here is how much of TeX's memory you used:
  22102 strings out of 483183
  589835 string characters out of 5966292
- 1006190 words of memory out of 5000000
+ 1006193 words of memory out of 5000000
  36813 multiletter control sequences out of 15000+600000
  532338 words of font info for 24 fonts, out of 8000000 for 9000
  14 hyphenation exceptions out of 8191
@@ -593,7 +593,7 @@ texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb></usr/share/texlive/texmf-di
 st/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/share/texlive/texmf-dist/fon
 ts/type1/public/amsfonts/cm/cmsy7.pfb>
 Output written on /mnt/d/src/PP/synthesis-CAV/experiments/results/figure4/figur
-e4.pdf (4 pages, 87100 bytes).
+e4.pdf (4 pages, 87021 bytes).
 PDF statistics:
  44 PDF objects out of 1000 (max. 8388607)
  31 compressed objects within 1 object stream

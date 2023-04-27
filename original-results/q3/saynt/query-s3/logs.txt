@@ -1,30 +1,33 @@
-2023-04-26 10:33:47,205 - cli.py - This is Paynt version 0.1.0.
-2023-04-26 10:33:47,208 - sketch.py - loading sketch from /mnt/d/src/PP/synthesis-CAV/experiments/../models/pomdp/storm-integration/query-s3/sketch.templ ...
-2023-04-26 10:33:47,300 - prism_parser.py - loading properties from /mnt/d/src/PP/synthesis-CAV/experiments/../models/pomdp/storm-integration/query-s3/sketch.props ...
-2023-04-26 10:33:47,318 - prism_parser.py - found the following specification: constraints: none, optimality objective: R[exp]{"reward"}max=? [F "discount_sink"] 
-2023-04-26 10:33:47,327 - sketch.py - constructed explicit quotient having 108 states and 320 actions
-2023-04-26 10:33:47,328 - sketch.py - found the following specification constraints: none, optimality objective: R[exp]{"reward"}max=? [F "discount_sink"] 
-2023-04-26 10:33:47,335 - quotient_pomdp.py - Constructed POMDP having 6 observations.
-2023-04-26 10:33:47,340 - quotient_pomdp.py - Unfolding POMDP using the following memory allocation vector: [1, 1, 1, 1, 1, 1] ...
-2023-04-26 10:33:47,343 - quotient_pomdp.py - Constructed quotient MDP having 108 states and 320 actions.
-2023-04-26 10:33:47,346 - synthesizer_pomdp.py - Storm pomdp option enabled
-2023-04-26 10:33:47,346 - synthesizer_pomdp.py - Storm settings: iterative - (900, 90, 10), get_storm_result - None, storm_options - cutoff, prune_storm - False, unfold_strategy - (True, False), use_storm_cutoffs - False
+It seems that graph_tool is not installed, you will not be able to use the treealgo.
+milp.py: gurobipy is not installed. Please install it if you intend to use it.
+note: switss is installed without tree-algo support.
+2023-04-27 11:53:07,325 - cli.py - This is Paynt version 0.1.0.
+2023-04-27 11:53:07,330 - sketch.py - loading sketch from /mnt/d/src/PP/synthesis-CAV/experiments/../models/pomdp/storm-integration/query-s3/sketch.templ ...
+2023-04-27 11:53:07,468 - prism_parser.py - loading properties from /mnt/d/src/PP/synthesis-CAV/experiments/../models/pomdp/storm-integration/query-s3/sketch.props ...
+2023-04-27 11:53:07,495 - prism_parser.py - found the following specification: constraints: none, optimality objective: R[exp]{"reward"}max=? [F "discount_sink"] 
+2023-04-27 11:53:07,511 - sketch.py - constructed explicit quotient having 108 states and 320 actions
+2023-04-27 11:53:07,512 - sketch.py - found the following specification constraints: none, optimality objective: R[exp]{"reward"}max=? [F "discount_sink"] 
+2023-04-27 11:53:07,528 - quotient_pomdp.py - Constructed POMDP having 6 observations.
+2023-04-27 11:53:07,536 - quotient_pomdp.py - Unfolding POMDP using the following memory allocation vector: [1, 1, 1, 1, 1, 1] ...
+2023-04-27 11:53:07,541 - quotient_pomdp.py - Constructed quotient MDP having 108 states and 320 actions.
+2023-04-27 11:53:07,547 - synthesizer_pomdp.py - Storm pomdp option enabled
+2023-04-27 11:53:07,547 - synthesizer_pomdp.py - Storm settings: iterative - (900, 90, 10), get_storm_result - None, storm_options - cutoff, prune_storm - False, unfold_strategy - (True, False), use_storm_cutoffs - False
 {} 
 
 {}
-2023-04-26 10:33:47,354 - synthesizer.py - Synthesis initiated.
-2023-04-26 10:33:47,355 - synthesizer_pomdp.py - Timeout for PAYNT started
+2023-04-27 11:53:07,566 - synthesizer.py - Synthesis initiated.
+2023-04-27 11:53:07,566 - synthesizer_pomdp.py - Timeout for PAYNT started
 -----------PAYNT-----------                     
-Value = 333.3268113041915 | Time elapsed = 0.1s | FSC size = 12
+Value = 333.3268113041915 | Time elapsed = 0.2s | FSC size = 12
 
 -----------PAYNT-----------                     
-Value = 334.39813120972815 | Time elapsed = 0.1s | FSC size = 12
+Value = 334.39813120972815 | Time elapsed = 0.2s | FSC size = 12
 
 -----------PAYNT-----------                     
-Value = 385.37184753215587 | Time elapsed = 0.1s | FSC size = 12
+Value = 385.37184753215587 | Time elapsed = 0.2s | FSC size = 12
 
 -----------PAYNT-----------                     
-Value = 387.41602622764486 | Time elapsed = 0.2s | FSC size = 12
+Value = 387.41602622764486 | Time elapsed = 0.3s | FSC size = 12
 
 -----------PAYNT-----------                     
 Value = 388.02372397922346 | Time elapsed = 0.3s | FSC size = 12
@@ -45,14 +48,14 @@ AR stats: avg MDP size: 107, iterations: 70
 optimal: 393.554333
 --------------------
 
-2023-04-26 10:33:48,074 - synthesizer_pomdp.py - Increase memory in all imperfect observation
+2023-04-27 11:53:08,288 - synthesizer_pomdp.py - Increase memory in all imperfect observation
 {0: 2, 1: 2, 2: 2, 3: 1, 4: 2, 5: 1}
-2023-04-26 10:33:48,074 - quotient_pomdp.py - Unfolding POMDP using the following memory allocation vector: [2, 2, 2, 1, 2, 1] ...
-2023-04-26 10:33:48,075 - quotient_pomdp.py - Constructed quotient MDP having 214 states and 1275 actions.
+2023-04-27 11:53:08,288 - quotient_pomdp.py - Unfolding POMDP using the following memory allocation vector: [2, 2, 2, 1, 2, 1] ...
+2023-04-27 11:53:08,289 - quotient_pomdp.py - Constructed quotient MDP having 214 states and 1275 actions.
 {} 
 
 {}
-2023-04-26 10:33:48,093 - synthesizer.py - Synthesis initiated.
+2023-04-27 11:53:08,308 - synthesizer.py - Synthesis initiated.
 -----------PAYNT-----------                     
 Value = 412.7647083768861 | Time elapsed = 1.3s | FSC size = 20
 
@@ -63,82 +66,82 @@ Value = 412.81391639763825 | Time elapsed = 1.5s | FSC size = 20
 Value = 413.01214438121855 | Time elapsed = 1.6s | FSC size = 20
 
 -----------PAYNT-----------                     
-Value = 422.928005043513 | Time elapsed = 7.0s | FSC size = 20
+Value = 422.928005043513 | Time elapsed = 6.5s | FSC size = 20
 
 -----------PAYNT-----------                     
-Value = 425.16459398698726 | Time elapsed = 8.2s | FSC size = 20
+Value = 425.16459398698726 | Time elapsed = 7.6s | FSC size = 20
 
 -----------PAYNT-----------                     
-Value = 425.2338715064638 | Time elapsed = 8.2s | FSC size = 20
+Value = 425.2338715064638 | Time elapsed = 7.6s | FSC size = 20
 
 -----------PAYNT-----------                     
-Value = 425.3897835701035 | Time elapsed = 11.5s | FSC size = 20
+Value = 425.3897835701035 | Time elapsed = 10.7s | FSC size = 20
 
 -----------PAYNT-----------                     
-Value = 428.32627711806504 | Time elapsed = 12.5s | FSC size = 20
+Value = 428.32627711806504 | Time elapsed = 11.6s | FSC size = 20
 
 -----------PAYNT-----------                     
-Value = 430.8829592595521 | Time elapsed = 18.8s | FSC size = 20
+Value = 430.8829592595521 | Time elapsed = 17.5s | FSC size = 20
 
 -----------PAYNT-----------                     
-Value = 431.1286274390723 | Time elapsed = 18.8s | FSC size = 20
+Value = 431.1286274390723 | Time elapsed = 17.5s | FSC size = 20
 
 -----------PAYNT-----------                     
-Value = 436.5254941530163 | Time elapsed = 20.9s | FSC size = 20
+Value = 436.5254941530163 | Time elapsed = 19.5s | FSC size = 20
 
 -----------PAYNT-----------                     
-Value = 436.8444557269598 | Time elapsed = 20.9s | FSC size = 20
+Value = 436.8444557269598 | Time elapsed = 19.5s | FSC size = 20
 
 -----------PAYNT-----------                     
-Value = 443.34362996708126 | Time elapsed = 22.9s | FSC size = 20
+Value = 443.34362996708126 | Time elapsed = 21.4s | FSC size = 20
 
 -----------PAYNT-----------                     
-Value = 443.35479830883304 | Time elapsed = 23.1s | FSC size = 20
+Value = 443.35479830883304 | Time elapsed = 21.6s | FSC size = 20
 
 -----------PAYNT-----------                     
-Value = 448.11397610227544 | Time elapsed = 24.6s | FSC size = 20
+Value = 448.11397610227544 | Time elapsed = 23.0s | FSC size = 20
 
 -----------PAYNT-----------                     
-Value = 450.22683749356645 | Time elapsed = 25.6s | FSC size = 20
+Value = 450.22683749356645 | Time elapsed = 24.1s | FSC size = 20
 
 -----------PAYNT-----------                     
-Value = 454.998309518083 | Time elapsed = 60.3s | FSC size = 20
+Value = 454.998309518083 | Time elapsed = 57.5s | FSC size = 20
 
 -----------PAYNT-----------                     
-Value = 456.5719531550049 | Time elapsed = 60.3s | FSC size = 20
+Value = 456.5719531550049 | Time elapsed = 57.5s | FSC size = 20
 
 -----------PAYNT-----------                     
-Value = 457.5512547963055 | Time elapsed = 60.4s | FSC size = 20
+Value = 457.5512547963055 | Time elapsed = 57.5s | FSC size = 20
 
 -----------PAYNT-----------                     
-Value = 464.070871767549 | Time elapsed = 61.8s | FSC size = 20
+Value = 464.070871767549 | Time elapsed = 58.9s | FSC size = 20
 
 -----------PAYNT-----------                     
-Value = 465.52619599217206 | Time elapsed = 61.8s | FSC size = 20
+Value = 465.52619599217206 | Time elapsed = 58.9s | FSC size = 20
 
 -----------PAYNT-----------                     
-Value = 466.05536459869694 | Time elapsed = 61.9s | FSC size = 20
+Value = 466.05536459869694 | Time elapsed = 59.0s | FSC size = 20
 
 -----------PAYNT-----------                     
-Value = 466.45714862285104 | Time elapsed = 66.9s | FSC size = 20
+Value = 466.45714862285104 | Time elapsed = 63.8s | FSC size = 20
 
 -----------PAYNT-----------                     
-Value = 467.1993064168376 | Time elapsed = 68.5s | FSC size = 20
+Value = 467.1993064168376 | Time elapsed = 65.4s | FSC size = 20
 
 -----------PAYNT-----------                     
-Value = 486.49577441528936 | Time elapsed = 70.9s | FSC size = 20
+Value = 486.49577441528936 | Time elapsed = 67.7s | FSC size = 20
 
 -----------PAYNT-----------                     
-Value = 486.77652407759115 | Time elapsed = 71.9s | FSC size = 20
+Value = 486.77652407759115 | Time elapsed = 68.7s | FSC size = 20
 
-2023-04-26 10:35:17,524 - synthesizer_ar_storm.py - Pausing synthesis
-2023-04-26 10:35:17,613 - storm_pomdp_control.py - Interactive Storm started
-2023-04-26 10:35:17,613 - storm_pomdp_control.py - starting Storm POMDP analysis
-2023-04-26 10:35:28,625 - storm_pomdp_control.py - Pausing Storm
+2023-04-27 11:54:37,669 - synthesizer_ar_storm.py - Pausing synthesis
+2023-04-27 11:54:37,729 - storm_pomdp_control.py - Interactive Storm started
+2023-04-27 11:54:37,729 - storm_pomdp_control.py - starting Storm POMDP analysis
+2023-04-27 11:54:48,735 - storm_pomdp_control.py - Pausing Storm
 Finished exploring Underapproximation MDP.
  Start analysis...
 -----------Storm-----------               
-Value = 489.3875266505155 | Time elapsed = 105.3s | FSC size = 2575
+Value = 489.3875266505155 | Time elapsed = 105.2s | FSC size = 2575
 
 
 ------------------------------------
@@ -153,39 +156,39 @@ controller size: 2575
 
 ------------------------------------
 
-2023-04-26 10:35:32,645 - synthesizer_pomdp.py - Timeout for PAYNT started
-2023-04-26 10:35:33,541 - synthesizer_ar_storm.py - Resuming synthesis
-2023-04-26 10:35:33,541 - synthesizer_ar_storm.py - Additional memory needed
+2023-04-27 11:54:52,756 - synthesizer_pomdp.py - Timeout for PAYNT started
+2023-04-27 11:54:53,686 - synthesizer_ar_storm.py - Resuming synthesis
+2023-04-27 11:54:53,686 - synthesizer_ar_storm.py - Additional memory needed
 --------------------
 Synthesis summary
 
 optimality objective: R[exp]{"reward"}max=? [F "discount_sink"] 
 
-method: AR, synthesis time: 89.43 s
+method: AR, synthesis time: 89.36 s
 number of holes: 17, family size: 3359232, super quotient: 214 states / 1275 actions
-explored: 30 %
-AR stats: avg MDP size: 211, iterations: 3869
+explored: 32 %
+AR stats: avg MDP size: 211, iterations: 4020
 
 optimal: 486.776524
 --------------------
 
-2023-04-26 10:35:33,562 - synthesizer_pomdp.py - Added memory nodes for observation based on Storm data
+2023-04-27 11:54:53,707 - synthesizer_pomdp.py - Added memory nodes for observation based on Storm data
 {0: 3, 1: 3, 2: 3, 3: 1, 4: 2, 5: 1}
-2023-04-26 10:35:33,562 - quotient_pomdp.py - Unfolding POMDP using the following memory allocation vector: [3, 3, 3, 1, 2, 1] ...
-2023-04-26 10:35:33,564 - quotient_pomdp.py - Constructed quotient MDP having 293 states and 2622 actions.
-2023-04-26 10:35:33,654 - storm_pomdp_control.py - Main family based on data from Storm: reduced design space from 62762119218 to 27894275208
+2023-04-27 11:54:53,708 - quotient_pomdp.py - Unfolding POMDP using the following memory allocation vector: [3, 3, 3, 1, 2, 1] ...
+2023-04-27 11:54:53,710 - quotient_pomdp.py - Constructed quotient MDP having 293 states and 2622 actions.
+2023-04-27 11:54:53,798 - storm_pomdp_control.py - Main family based on data from Storm: reduced design space from 62762119218 to 27894275208
 {0: [0, 2, 1], 1: [1, 0, 2], 2: [0, 2, 1], 3: [0], 4: [1, 2]} 
 
 {0: [0, 2, 1], 1: [1, 0, 2], 2: [0, 2, 1], 3: [0], 4: [1, 2]}
-2023-04-26 10:35:33,654 - synthesizer.py - Synthesis initiated.
-2023-04-26 10:37:02,758 - synthesizer_ar_storm.py - Pausing synthesis
-2023-04-26 10:37:02,858 - storm_pomdp_control.py - Interactive Storm resumed
-2023-04-26 10:37:02,858 - storm_pomdp_control.py - Updating FSC values in Storm
-2023-04-26 10:37:13,869 - storm_pomdp_control.py - Pausing Storm
+2023-04-27 11:54:53,798 - synthesizer.py - Synthesis initiated.
+2023-04-27 11:56:22,851 - synthesizer_ar_storm.py - Pausing synthesis
+2023-04-27 11:56:22,952 - storm_pomdp_control.py - Interactive Storm resumed
+2023-04-27 11:56:22,952 - storm_pomdp_control.py - Updating FSC values in Storm
+2023-04-27 11:56:33,963 - storm_pomdp_control.py - Pausing Storm
 Finished exploring Underapproximation MDP.
  Start analysis...
 -----------Storm-----------               
-Value = 489.7803780020585 | Time elapsed = 214.5s | FSC size = 5977
+Value = 489.7803780020585 | Time elapsed = 214.4s | FSC size = 5977
 
 
 ------------------------------------
@@ -200,56 +203,49 @@ controller size: 5977
 
 ------------------------------------
 
-2023-04-26 10:37:21,898 - synthesizer_pomdp.py - Timeout for PAYNT started
-2023-04-26 10:37:22,780 - synthesizer_ar_storm.py - Resuming synthesis
-2023-04-26 10:37:22,780 - synthesizer_ar_storm.py - Applying family split according to Storm results
-2023-04-26 10:37:22,780 - storm_pomdp_control.py - Main family based on data from Storm: reduced design space from 9298091736 to 2324522934
-2023-04-26 10:37:22,780 - storm_pomdp_control.py - Main family based on data from Storm: reduced design space from 9298091736 to 2324522934
-2023-04-26 10:37:22,780 - storm_pomdp_control.py - Main family based on data from Storm: reduced design space from 3099363912 to 774840978
-2023-04-26 10:37:22,780 - storm_pomdp_control.py - Main family based on data from Storm: reduced design space from 3099363912 to 774840978
-2023-04-26 10:37:22,780 - storm_pomdp_control.py - Main family based on data from Storm: reduced design space from 1033121304 to 258280326
-2023-04-26 10:37:22,780 - storm_pomdp_control.py - Main family based on data from Storm: reduced design space from 344373768 to 86093442
-2023-04-26 10:37:22,780 - storm_pomdp_control.py - Main family based on data from Storm: reduced design space from 344373768 to 86093442
-2023-04-26 10:37:22,781 - storm_pomdp_control.py - Main family based on data from Storm: reduced design space from 114791256 to 28697814
-2023-04-26 10:37:22,781 - storm_pomdp_control.py - Main family based on data from Storm: reduced design space from 114791256 to 28697814
-2023-04-26 10:37:22,781 - storm_pomdp_control.py - Main family based on data from Storm: reduced design space from 38263752 to 9565938
-2023-04-26 10:37:22,781 - storm_pomdp_control.py - Main family based on data from Storm: reduced design space from 12754584 to 3188646
-2023-04-26 10:37:22,781 - storm_pomdp_control.py - Main family based on data from Storm: reduced design space from 12754584 to 3188646
-2023-04-26 10:37:22,781 - storm_pomdp_control.py - Main family based on data from Storm: reduced design space from 1417176 to 354294
-2023-04-26 10:37:22,781 - storm_pomdp_control.py - Main family based on data from Storm: reduced design space from 1417176 to 354294
-2023-04-26 10:37:22,781 - storm_pomdp_control.py - Main family based on data from Storm: reduced design space from 472392 to 118098
-2023-04-26 10:37:22,781 - storm_pomdp_control.py - Main family based on data from Storm: reduced design space from 472392 to 118098
-2023-04-26 10:37:22,781 - storm_pomdp_control.py - Main family based on data from Storm: reduced design space from 157464 to 39366
-2023-04-26 10:37:22,781 - storm_pomdp_control.py - Main family based on data from Storm: reduced design space from 157464 to 39366
-2023-04-26 10:37:22,781 - storm_pomdp_control.py - Main family based on data from Storm: reduced design space from 52488 to 13122
-2023-04-26 10:37:22,781 - storm_pomdp_control.py - Main family based on data from Storm: reduced design space from 52488 to 13122
-2023-04-26 10:37:22,782 - synthesizer_ar_storm.py - State after Storm splitting: Main families - 20, Subfamilies - 40
+2023-04-27 11:56:41,990 - synthesizer_pomdp.py - Timeout for PAYNT started
+2023-04-27 11:56:42,873 - synthesizer_ar_storm.py - Resuming synthesis
+2023-04-27 11:56:42,873 - synthesizer_ar_storm.py - Applying family split according to Storm results
+2023-04-27 11:56:42,873 - storm_pomdp_control.py - Main family based on data from Storm: reduced design space from 9298091736 to 2324522934
+2023-04-27 11:56:42,873 - storm_pomdp_control.py - Main family based on data from Storm: reduced design space from 9298091736 to 2324522934
+2023-04-27 11:56:42,873 - storm_pomdp_control.py - Main family based on data from Storm: reduced design space from 3099363912 to 774840978
+2023-04-27 11:56:42,873 - storm_pomdp_control.py - Main family based on data from Storm: reduced design space from 3099363912 to 774840978
+2023-04-27 11:56:42,874 - storm_pomdp_control.py - Main family based on data from Storm: reduced design space from 1033121304 to 258280326
+2023-04-27 11:56:42,874 - storm_pomdp_control.py - Main family based on data from Storm: reduced design space from 344373768 to 86093442
+2023-04-27 11:56:42,874 - storm_pomdp_control.py - Main family based on data from Storm: reduced design space from 344373768 to 86093442
+2023-04-27 11:56:42,874 - storm_pomdp_control.py - Main family based on data from Storm: reduced design space from 114791256 to 28697814
+2023-04-27 11:56:42,874 - storm_pomdp_control.py - Main family based on data from Storm: reduced design space from 114791256 to 28697814
+2023-04-27 11:56:42,874 - storm_pomdp_control.py - Main family based on data from Storm: reduced design space from 38263752 to 9565938
+2023-04-27 11:56:42,874 - storm_pomdp_control.py - Main family based on data from Storm: reduced design space from 12754584 to 3188646
+2023-04-27 11:56:42,874 - storm_pomdp_control.py - Main family based on data from Storm: reduced design space from 12754584 to 3188646
+2023-04-27 11:56:42,874 - storm_pomdp_control.py - Main family based on data from Storm: reduced design space from 157464 to 39366
+2023-04-27 11:56:42,874 - synthesizer_ar_storm.py - State after Storm splitting: Main families - 13, Subfamilies - 26
 -----------PAYNT-----------                     
-Value = 489.524794061156 | Time elapsed = 295.2s | FSC size = 26
+Value = 489.524794061156 | Time elapsed = 292.1s | FSC size = 26
 
 -----------PAYNT-----------                     
-Value = 492.41040260393675 | Time elapsed = 295.5s | FSC size = 26
+Value = 492.41040260393675 | Time elapsed = 292.4s | FSC size = 26
 
 -----------PAYNT-----------                     
-Value = 492.4239758152281 | Time elapsed = 295.9s | FSC size = 26
+Value = 492.4239758152281 | Time elapsed = 292.7s | FSC size = 26
 
 -----------PAYNT-----------                     
-Value = 492.59020673376034 | Time elapsed = 296.4s | FSC size = 26
+Value = 492.59020673376034 | Time elapsed = 293.2s | FSC size = 26
 
 -----------PAYNT-----------                     
-Value = 492.6240571374829 | Time elapsed = 298.1s | FSC size = 26
+Value = 492.6240571374829 | Time elapsed = 294.9s | FSC size = 26
 
 -----------PAYNT-----------                     
-Value = 492.6867888142491 | Time elapsed = 301.2s | FSC size = 26
+Value = 492.6867888142491 | Time elapsed = 298.0s | FSC size = 26
 
-2023-04-26 10:38:52,037 - synthesizer_ar_storm.py - Pausing synthesis
-2023-04-26 10:38:52,107 - storm_pomdp_control.py - Interactive Storm resumed
-2023-04-26 10:38:52,107 - storm_pomdp_control.py - Updating FSC values in Storm
-2023-04-26 10:39:03,118 - storm_pomdp_control.py - Pausing Storm
+2023-04-27 11:58:12,103 - synthesizer_ar_storm.py - Pausing synthesis
+2023-04-27 11:58:12,188 - storm_pomdp_control.py - Interactive Storm resumed
+2023-04-27 11:58:12,188 - storm_pomdp_control.py - Updating FSC values in Storm
+2023-04-27 11:58:23,199 - storm_pomdp_control.py - Pausing Storm
 Finished exploring Underapproximation MDP.
  Start analysis...
 -----------Storm-----------               
-Value = 496.029881829998 | Time elapsed = 327.8s | FSC size = 7684
+Value = 496.029881829998 | Time elapsed = 327.7s | FSC size = 7684
 
 
 ------------------------------------
@@ -264,59 +260,54 @@ controller size: 7684
 
 ------------------------------------
 
-2023-04-26 10:39:15,154 - synthesizer_pomdp.py - Timeout for PAYNT started
-2023-04-26 10:39:16,062 - synthesizer_ar_storm.py - Resuming synthesis
-2023-04-26 10:39:16,062 - synthesizer_ar_storm.py - Applying family split according to Storm results
-2023-04-26 10:39:16,063 - storm_pomdp_control.py - Main family based on data from Storm: reduced design space from 2324522934 to 2324522934
-2023-04-26 10:39:16,063 - storm_pomdp_control.py - Main family based on data from Storm: reduced design space from 2324522934 to 2324522934
-2023-04-26 10:39:16,063 - storm_pomdp_control.py - Main family based on data from Storm: reduced design space from 774840978 to 774840978
-2023-04-26 10:39:16,063 - storm_pomdp_control.py - Main family based on data from Storm: reduced design space from 774840978 to 774840978
-2023-04-26 10:39:16,063 - storm_pomdp_control.py - Main family based on data from Storm: reduced design space from 258280326 to 258280326
-2023-04-26 10:39:16,063 - storm_pomdp_control.py - Main family based on data from Storm: reduced design space from 86093442 to 86093442
-2023-04-26 10:39:16,063 - storm_pomdp_control.py - Main family based on data from Storm: reduced design space from 86093442 to 86093442
-2023-04-26 10:39:16,063 - storm_pomdp_control.py - Main family based on data from Storm: reduced design space from 28697814 to 28697814
-2023-04-26 10:39:16,063 - storm_pomdp_control.py - Main family based on data from Storm: reduced design space from 9565938 to 9565938
-2023-04-26 10:39:16,063 - storm_pomdp_control.py - Main family based on data from Storm: reduced design space from 9565938 to 9565938
-2023-04-26 10:39:16,063 - storm_pomdp_control.py - Main family based on data from Storm: reduced design space from 3188646 to 3188646
-2023-04-26 10:39:16,063 - storm_pomdp_control.py - Main family based on data from Storm: reduced design space from 3188646 to 3188646
-2023-04-26 10:39:16,063 - storm_pomdp_control.py - Main family based on data from Storm: reduced design space from 1062882 to 1062882
-2023-04-26 10:39:16,063 - storm_pomdp_control.py - Main family based on data from Storm: reduced design space from 118098 to 118098
-2023-04-26 10:39:16,064 - storm_pomdp_control.py - Main family based on data from Storm: reduced design space from 118098 to 118098
-2023-04-26 10:39:16,064 - storm_pomdp_control.py - Main family based on data from Storm: reduced design space from 39366 to 39366
-2023-04-26 10:39:16,064 - storm_pomdp_control.py - Main family based on data from Storm: reduced design space from 13122 to 13122
-2023-04-26 10:39:16,064 - storm_pomdp_control.py - Main family based on data from Storm: reduced design space from 13122 to 13122
-2023-04-26 10:39:16,064 - storm_pomdp_control.py - Main family based on data from Storm: reduced design space from 4374 to 4374
-2023-04-26 10:39:16,064 - storm_pomdp_control.py - Main family based on data from Storm: reduced design space from 4374 to 4374
-2023-04-26 10:39:16,064 - storm_pomdp_control.py - Main family based on data from Storm: reduced design space from 1458 to 1458
-2023-04-26 10:39:16,064 - storm_pomdp_control.py - Main family based on data from Storm: reduced design space from 1458 to 1458
-2023-04-26 10:39:16,064 - storm_pomdp_control.py - Main family based on data from Storm: reduced design space from 1458 to 1458
-2023-04-26 10:39:16,064 - synthesizer_ar_storm.py - State after Storm splitting: Main families - 23, Subfamilies - 0
+2023-04-27 11:58:35,236 - synthesizer_pomdp.py - Timeout for PAYNT started
+2023-04-27 11:58:36,128 - synthesizer_ar_storm.py - Resuming synthesis
+2023-04-27 11:58:36,129 - synthesizer_ar_storm.py - Applying family split according to Storm results
+2023-04-27 11:58:36,129 - storm_pomdp_control.py - Main family based on data from Storm: reduced design space from 2324522934 to 2324522934
+2023-04-27 11:58:36,129 - storm_pomdp_control.py - Main family based on data from Storm: reduced design space from 2324522934 to 2324522934
+2023-04-27 11:58:36,129 - storm_pomdp_control.py - Main family based on data from Storm: reduced design space from 774840978 to 774840978
+2023-04-27 11:58:36,129 - storm_pomdp_control.py - Main family based on data from Storm: reduced design space from 774840978 to 774840978
+2023-04-27 11:58:36,129 - storm_pomdp_control.py - Main family based on data from Storm: reduced design space from 258280326 to 258280326
+2023-04-27 11:58:36,129 - storm_pomdp_control.py - Main family based on data from Storm: reduced design space from 86093442 to 86093442
+2023-04-27 11:58:36,129 - storm_pomdp_control.py - Main family based on data from Storm: reduced design space from 86093442 to 86093442
+2023-04-27 11:58:36,129 - storm_pomdp_control.py - Main family based on data from Storm: reduced design space from 28697814 to 28697814
+2023-04-27 11:58:36,129 - storm_pomdp_control.py - Main family based on data from Storm: reduced design space from 9565938 to 9565938
+2023-04-27 11:58:36,129 - storm_pomdp_control.py - Main family based on data from Storm: reduced design space from 9565938 to 9565938
+2023-04-27 11:58:36,129 - storm_pomdp_control.py - Main family based on data from Storm: reduced design space from 3188646 to 3188646
+2023-04-27 11:58:36,129 - storm_pomdp_control.py - Main family based on data from Storm: reduced design space from 3188646 to 3188646
+2023-04-27 11:58:36,129 - storm_pomdp_control.py - Main family based on data from Storm: reduced design space from 354294 to 354294
+2023-04-27 11:58:36,129 - storm_pomdp_control.py - Main family based on data from Storm: reduced design space from 354294 to 354294
+2023-04-27 11:58:36,130 - storm_pomdp_control.py - Main family based on data from Storm: reduced design space from 118098 to 118098
+2023-04-27 11:58:36,130 - storm_pomdp_control.py - Main family based on data from Storm: reduced design space from 39366 to 39366
+2023-04-27 11:58:36,130 - storm_pomdp_control.py - Main family based on data from Storm: reduced design space from 4374 to 4374
+2023-04-27 11:58:36,130 - storm_pomdp_control.py - Main family based on data from Storm: reduced design space from 1458 to 1458
+2023-04-27 11:58:36,130 - synthesizer_ar_storm.py - State after Storm splitting: Main families - 18, Subfamilies - 0
 -----------PAYNT-----------                     
-Value = 495.7444435545591 | Time elapsed = 333.7s | FSC size = 26
+Value = 495.7444435545591 | Time elapsed = 330.4s | FSC size = 26
 
 -----------PAYNT-----------                     
-Value = 497.8244619332001 | Time elapsed = 333.8s | FSC size = 26
+Value = 497.8244619332001 | Time elapsed = 330.4s | FSC size = 26
 
 -----------PAYNT-----------                     
-Value = 500.3204316742071 | Time elapsed = 334.6s | FSC size = 26
+Value = 500.3204316742071 | Time elapsed = 331.3s | FSC size = 26
 
 -----------PAYNT-----------                     
-Value = 502.3017470631008 | Time elapsed = 334.6s | FSC size = 26
+Value = 502.3017470631008 | Time elapsed = 331.3s | FSC size = 26
 
 -----------PAYNT-----------                     
-Value = 507.2419493338712 | Time elapsed = 367.9s | FSC size = 26
+Value = 507.2419493338712 | Time elapsed = 364.4s | FSC size = 26
 
 -----------PAYNT-----------                     
-Value = 509.4867029250781 | Time elapsed = 367.9s | FSC size = 26
+Value = 509.4867029250781 | Time elapsed = 364.5s | FSC size = 26
 
-2023-04-26 10:40:45,244 - synthesizer_ar_storm.py - Pausing synthesis
-2023-04-26 10:40:45,315 - storm_pomdp_control.py - Interactive Storm resumed
-2023-04-26 10:40:45,316 - storm_pomdp_control.py - Updating FSC values in Storm
-2023-04-26 10:40:56,324 - storm_pomdp_control.py - Pausing Storm
+2023-04-27 12:00:05,303 - synthesizer_ar_storm.py - Pausing synthesis
+2023-04-27 12:00:05,375 - storm_pomdp_control.py - Interactive Storm resumed
+2023-04-27 12:00:05,376 - storm_pomdp_control.py - Updating FSC values in Storm
+2023-04-27 12:00:16,382 - storm_pomdp_control.py - Pausing Storm
 Finished exploring Underapproximation MDP.
  Start analysis...
 -----------Storm-----------               
-Value = 511.2999010525403 | Time elapsed = 445.0s | FSC size = 7684
+Value = 511.2999010525403 | Time elapsed = 442.8s | FSC size = 7684
 
 
 ------------------------------------
@@ -331,33 +322,32 @@ controller size: 7684
 
 ------------------------------------
 
-2023-04-26 10:41:12,367 - synthesizer_pomdp.py - Timeout for PAYNT started
-2023-04-26 10:41:13,274 - synthesizer_ar_storm.py - Resuming synthesis
-2023-04-26 10:41:13,274 - synthesizer_ar_storm.py - Applying family split according to Storm results
-2023-04-26 10:41:13,274 - storm_pomdp_control.py - Main family based on data from Storm: reduced design space from 2324522934 to 2324522934
-2023-04-26 10:41:13,274 - storm_pomdp_control.py - Main family based on data from Storm: reduced design space from 2324522934 to 2324522934
-2023-04-26 10:41:13,274 - storm_pomdp_control.py - Main family based on data from Storm: reduced design space from 774840978 to 774840978
-2023-04-26 10:41:13,275 - storm_pomdp_control.py - Main family based on data from Storm: reduced design space from 774840978 to 774840978
-2023-04-26 10:41:13,275 - storm_pomdp_control.py - Main family based on data from Storm: reduced design space from 258280326 to 258280326
-2023-04-26 10:41:13,275 - storm_pomdp_control.py - Main family based on data from Storm: reduced design space from 86093442 to 86093442
-2023-04-26 10:41:13,275 - storm_pomdp_control.py - Main family based on data from Storm: reduced design space from 28697814 to 28697814
-2023-04-26 10:41:13,275 - storm_pomdp_control.py - Main family based on data from Storm: reduced design space from 28697814 to 28697814
-2023-04-26 10:41:13,275 - storm_pomdp_control.py - Main family based on data from Storm: reduced design space from 9565938 to 9565938
-2023-04-26 10:41:13,275 - storm_pomdp_control.py - Main family based on data from Storm: reduced design space from 9565938 to 9565938
-2023-04-26 10:41:13,275 - storm_pomdp_control.py - Main family based on data from Storm: reduced design space from 3188646 to 3188646
-2023-04-26 10:41:13,275 - storm_pomdp_control.py - Main family based on data from Storm: reduced design space from 3188646 to 3188646
-2023-04-26 10:41:13,275 - storm_pomdp_control.py - Main family based on data from Storm: reduced design space from 1062882 to 1062882
-2023-04-26 10:41:13,275 - storm_pomdp_control.py - Main family based on data from Storm: reduced design space from 1062882 to 1062882
-2023-04-26 10:41:13,275 - storm_pomdp_control.py - Main family based on data from Storm: reduced design space from 1062882 to 1062882
-2023-04-26 10:41:13,275 - synthesizer_ar_storm.py - State after Storm splitting: Main families - 15, Subfamilies - 0
-2023-04-26 10:42:42,508 - synthesizer_ar_storm.py - Pausing synthesis
-2023-04-26 10:42:42,579 - storm_pomdp_control.py - Interactive Storm resumed
-2023-04-26 10:42:42,579 - storm_pomdp_control.py - Updating FSC values in Storm
-2023-04-26 10:42:53,590 - storm_pomdp_control.py - Pausing Storm
+2023-04-27 12:00:30,423 - synthesizer_pomdp.py - Timeout for PAYNT started
+2023-04-27 12:00:31,330 - synthesizer_ar_storm.py - Resuming synthesis
+2023-04-27 12:00:31,330 - synthesizer_ar_storm.py - Applying family split according to Storm results
+2023-04-27 12:00:31,330 - storm_pomdp_control.py - Main family based on data from Storm: reduced design space from 2324522934 to 2324522934
+2023-04-27 12:00:31,331 - storm_pomdp_control.py - Main family based on data from Storm: reduced design space from 2324522934 to 2324522934
+2023-04-27 12:00:31,331 - storm_pomdp_control.py - Main family based on data from Storm: reduced design space from 774840978 to 774840978
+2023-04-27 12:00:31,331 - storm_pomdp_control.py - Main family based on data from Storm: reduced design space from 774840978 to 774840978
+2023-04-27 12:00:31,331 - storm_pomdp_control.py - Main family based on data from Storm: reduced design space from 258280326 to 258280326
+2023-04-27 12:00:31,331 - storm_pomdp_control.py - Main family based on data from Storm: reduced design space from 86093442 to 86093442
+2023-04-27 12:00:31,331 - storm_pomdp_control.py - Main family based on data from Storm: reduced design space from 28697814 to 28697814
+2023-04-27 12:00:31,331 - storm_pomdp_control.py - Main family based on data from Storm: reduced design space from 28697814 to 28697814
+2023-04-27 12:00:31,331 - storm_pomdp_control.py - Main family based on data from Storm: reduced design space from 9565938 to 9565938
+2023-04-27 12:00:31,332 - storm_pomdp_control.py - Main family based on data from Storm: reduced design space from 3188646 to 3188646
+2023-04-27 12:00:31,332 - storm_pomdp_control.py - Main family based on data from Storm: reduced design space from 3188646 to 3188646
+2023-04-27 12:00:31,332 - storm_pomdp_control.py - Main family based on data from Storm: reduced design space from 1062882 to 1062882
+2023-04-27 12:00:31,332 - storm_pomdp_control.py - Main family based on data from Storm: reduced design space from 1062882 to 1062882
+2023-04-27 12:00:31,332 - storm_pomdp_control.py - Main family based on data from Storm: reduced design space from 1062882 to 1062882
+2023-04-27 12:00:31,332 - synthesizer_ar_storm.py - State after Storm splitting: Main families - 14, Subfamilies - 0
+2023-04-27 12:02:00,586 - synthesizer_ar_storm.py - Pausing synthesis
+2023-04-27 12:02:00,619 - storm_pomdp_control.py - Interactive Storm resumed
+2023-04-27 12:02:00,620 - storm_pomdp_control.py - Updating FSC values in Storm
+2023-04-27 12:02:11,631 - storm_pomdp_control.py - Pausing Storm
 Finished exploring Underapproximation MDP.
  Start analysis...
 -----------Storm-----------               
-Value = 511.2999010525403 | Time elapsed = 564.3s | FSC size = 7684
+Value = 511.2999010525403 | Time elapsed = 562.1s | FSC size = 7684
 
 
 ------------------------------------
@@ -372,35 +362,35 @@ controller size: 7684
 
 ------------------------------------
 
-2023-04-26 10:43:11,633 - synthesizer_pomdp.py - Timeout for PAYNT started
-2023-04-26 10:43:12,540 - synthesizer_ar_storm.py - Resuming synthesis
-2023-04-26 10:43:12,540 - synthesizer_ar_storm.py - Applying family split according to Storm results
-2023-04-26 10:43:12,540 - storm_pomdp_control.py - Main family based on data from Storm: reduced design space from 2324522934 to 2324522934
-2023-04-26 10:43:12,540 - storm_pomdp_control.py - Main family based on data from Storm: reduced design space from 2324522934 to 2324522934
-2023-04-26 10:43:12,540 - storm_pomdp_control.py - Main family based on data from Storm: reduced design space from 774840978 to 774840978
-2023-04-26 10:43:12,540 - storm_pomdp_control.py - Main family based on data from Storm: reduced design space from 774840978 to 774840978
-2023-04-26 10:43:12,541 - storm_pomdp_control.py - Main family based on data from Storm: reduced design space from 258280326 to 258280326
-2023-04-26 10:43:12,541 - storm_pomdp_control.py - Main family based on data from Storm: reduced design space from 28697814 to 28697814
-2023-04-26 10:43:12,541 - storm_pomdp_control.py - Main family based on data from Storm: reduced design space from 28697814 to 28697814
-2023-04-26 10:43:12,541 - storm_pomdp_control.py - Main family based on data from Storm: reduced design space from 9565938 to 9565938
-2023-04-26 10:43:12,541 - storm_pomdp_control.py - Main family based on data from Storm: reduced design space from 3188646 to 3188646
-2023-04-26 10:43:12,541 - storm_pomdp_control.py - Main family based on data from Storm: reduced design space from 3188646 to 3188646
-2023-04-26 10:43:12,541 - storm_pomdp_control.py - Main family based on data from Storm: reduced design space from 354294 to 354294
-2023-04-26 10:43:12,541 - storm_pomdp_control.py - Main family based on data from Storm: reduced design space from 354294 to 354294
-2023-04-26 10:43:12,541 - storm_pomdp_control.py - Main family based on data from Storm: reduced design space from 118098 to 118098
-2023-04-26 10:43:12,541 - storm_pomdp_control.py - Main family based on data from Storm: reduced design space from 118098 to 118098
-2023-04-26 10:43:12,541 - storm_pomdp_control.py - Main family based on data from Storm: reduced design space from 39366 to 39366
-2023-04-26 10:43:12,541 - storm_pomdp_control.py - Main family based on data from Storm: reduced design space from 39366 to 39366
-2023-04-26 10:43:12,541 - storm_pomdp_control.py - Main family based on data from Storm: reduced design space from 39366 to 39366
-2023-04-26 10:43:12,541 - synthesizer_ar_storm.py - State after Storm splitting: Main families - 17, Subfamilies - 0
-2023-04-26 10:44:41,736 - synthesizer_ar_storm.py - Pausing synthesis
-2023-04-26 10:44:41,821 - storm_pomdp_control.py - Interactive Storm resumed
-2023-04-26 10:44:41,821 - storm_pomdp_control.py - Updating FSC values in Storm
-2023-04-26 10:44:52,832 - storm_pomdp_control.py - Pausing Storm
+2023-04-27 12:02:29,674 - synthesizer_pomdp.py - Timeout for PAYNT started
+2023-04-27 12:02:30,617 - synthesizer_ar_storm.py - Resuming synthesis
+2023-04-27 12:02:30,617 - synthesizer_ar_storm.py - Applying family split according to Storm results
+2023-04-27 12:02:30,617 - storm_pomdp_control.py - Main family based on data from Storm: reduced design space from 2324522934 to 2324522934
+2023-04-27 12:02:30,617 - storm_pomdp_control.py - Main family based on data from Storm: reduced design space from 2324522934 to 2324522934
+2023-04-27 12:02:30,618 - storm_pomdp_control.py - Main family based on data from Storm: reduced design space from 774840978 to 774840978
+2023-04-27 12:02:30,618 - storm_pomdp_control.py - Main family based on data from Storm: reduced design space from 774840978 to 774840978
+2023-04-27 12:02:30,618 - storm_pomdp_control.py - Main family based on data from Storm: reduced design space from 258280326 to 258280326
+2023-04-27 12:02:30,618 - storm_pomdp_control.py - Main family based on data from Storm: reduced design space from 28697814 to 28697814
+2023-04-27 12:02:30,618 - storm_pomdp_control.py - Main family based on data from Storm: reduced design space from 28697814 to 28697814
+2023-04-27 12:02:30,618 - storm_pomdp_control.py - Main family based on data from Storm: reduced design space from 9565938 to 9565938
+2023-04-27 12:02:30,618 - storm_pomdp_control.py - Main family based on data from Storm: reduced design space from 3188646 to 3188646
+2023-04-27 12:02:30,618 - storm_pomdp_control.py - Main family based on data from Storm: reduced design space from 3188646 to 3188646
+2023-04-27 12:02:30,618 - storm_pomdp_control.py - Main family based on data from Storm: reduced design space from 354294 to 354294
+2023-04-27 12:02:30,618 - storm_pomdp_control.py - Main family based on data from Storm: reduced design space from 118098 to 118098
+2023-04-27 12:02:30,618 - storm_pomdp_control.py - Main family based on data from Storm: reduced design space from 39366 to 39366
+2023-04-27 12:02:30,618 - storm_pomdp_control.py - Main family based on data from Storm: reduced design space from 39366 to 39366
+2023-04-27 12:02:30,618 - storm_pomdp_control.py - Main family based on data from Storm: reduced design space from 13122 to 13122
+2023-04-27 12:02:30,618 - storm_pomdp_control.py - Main family based on data from Storm: reduced design space from 13122 to 13122
+2023-04-27 12:02:30,618 - storm_pomdp_control.py - Main family based on data from Storm: reduced design space from 13122 to 13122
+2023-04-27 12:02:30,619 - synthesizer_ar_storm.py - State after Storm splitting: Main families - 17, Subfamilies - 0
+2023-04-27 12:03:59,793 - synthesizer_ar_storm.py - Pausing synthesis
+2023-04-27 12:03:59,870 - storm_pomdp_control.py - Interactive Storm resumed
+2023-04-27 12:03:59,870 - storm_pomdp_control.py - Updating FSC values in Storm
+2023-04-27 12:04:10,881 - storm_pomdp_control.py - Pausing Storm
 Finished exploring Underapproximation MDP.
  Start analysis...
 -----------Storm-----------               
-Value = 511.3190315613853 | Time elapsed = 689.5s | FSC size = 7684
+Value = 511.3190315613853 | Time elapsed = 685.3s | FSC size = 7684
 
 
 ------------------------------------
@@ -415,32 +405,35 @@ controller size: 7684
 
 ------------------------------------
 
-2023-04-26 10:45:16,881 - synthesizer_pomdp.py - Timeout for PAYNT started
-2023-04-26 10:45:17,774 - synthesizer_ar_storm.py - Resuming synthesis
-2023-04-26 10:45:17,774 - synthesizer_ar_storm.py - Applying family split according to Storm results
-2023-04-26 10:45:17,775 - storm_pomdp_control.py - Main family based on data from Storm: reduced design space from 2324522934 to 2324522934
-2023-04-26 10:45:17,775 - storm_pomdp_control.py - Main family based on data from Storm: reduced design space from 2324522934 to 2324522934
-2023-04-26 10:45:17,775 - storm_pomdp_control.py - Main family based on data from Storm: reduced design space from 774840978 to 774840978
-2023-04-26 10:45:17,775 - storm_pomdp_control.py - Main family based on data from Storm: reduced design space from 774840978 to 774840978
-2023-04-26 10:45:17,775 - storm_pomdp_control.py - Main family based on data from Storm: reduced design space from 86093442 to 86093442
-2023-04-26 10:45:17,775 - storm_pomdp_control.py - Main family based on data from Storm: reduced design space from 86093442 to 86093442
-2023-04-26 10:45:17,775 - storm_pomdp_control.py - Main family based on data from Storm: reduced design space from 28697814 to 28697814
-2023-04-26 10:45:17,775 - storm_pomdp_control.py - Main family based on data from Storm: reduced design space from 28697814 to 28697814
-2023-04-26 10:45:17,775 - storm_pomdp_control.py - Main family based on data from Storm: reduced design space from 3188646 to 3188646
-2023-04-26 10:45:17,776 - storm_pomdp_control.py - Main family based on data from Storm: reduced design space from 1062882 to 1062882
-2023-04-26 10:45:17,776 - storm_pomdp_control.py - Main family based on data from Storm: reduced design space from 1062882 to 1062882
-2023-04-26 10:45:17,776 - storm_pomdp_control.py - Main family based on data from Storm: reduced design space from 354294 to 354294
-2023-04-26 10:45:17,776 - storm_pomdp_control.py - Main family based on data from Storm: reduced design space from 354294 to 354294
-2023-04-26 10:45:17,776 - storm_pomdp_control.py - Main family based on data from Storm: reduced design space from 39366 to 39366
-2023-04-26 10:45:17,776 - synthesizer_ar_storm.py - State after Storm splitting: Main families - 14, Subfamilies - 0
-2023-04-26 10:46:47,018 - synthesizer_ar_storm.py - Pausing synthesis
-2023-04-26 10:46:47,089 - storm_pomdp_control.py - Interactive Storm resumed
-2023-04-26 10:46:47,090 - storm_pomdp_control.py - Updating FSC values in Storm
-2023-04-26 10:46:58,101 - storm_pomdp_control.py - Pausing Storm
+2023-04-27 12:04:32,928 - synthesizer_pomdp.py - Timeout for PAYNT started
+2023-04-27 12:04:33,828 - synthesizer_ar_storm.py - Resuming synthesis
+2023-04-27 12:04:33,828 - synthesizer_ar_storm.py - Applying family split according to Storm results
+2023-04-27 12:04:33,828 - storm_pomdp_control.py - Main family based on data from Storm: reduced design space from 2324522934 to 2324522934
+2023-04-27 12:04:33,828 - storm_pomdp_control.py - Main family based on data from Storm: reduced design space from 2324522934 to 2324522934
+2023-04-27 12:04:33,828 - storm_pomdp_control.py - Main family based on data from Storm: reduced design space from 774840978 to 774840978
+2023-04-27 12:04:33,828 - storm_pomdp_control.py - Main family based on data from Storm: reduced design space from 774840978 to 774840978
+2023-04-27 12:04:33,829 - storm_pomdp_control.py - Main family based on data from Storm: reduced design space from 86093442 to 86093442
+2023-04-27 12:04:33,829 - storm_pomdp_control.py - Main family based on data from Storm: reduced design space from 86093442 to 86093442
+2023-04-27 12:04:33,829 - storm_pomdp_control.py - Main family based on data from Storm: reduced design space from 28697814 to 28697814
+2023-04-27 12:04:33,829 - storm_pomdp_control.py - Main family based on data from Storm: reduced design space from 28697814 to 28697814
+2023-04-27 12:04:33,829 - storm_pomdp_control.py - Main family based on data from Storm: reduced design space from 1062882 to 1062882
+2023-04-27 12:04:33,829 - storm_pomdp_control.py - Main family based on data from Storm: reduced design space from 1062882 to 1062882
+2023-04-27 12:04:33,829 - storm_pomdp_control.py - Main family based on data from Storm: reduced design space from 354294 to 354294
+2023-04-27 12:04:33,829 - storm_pomdp_control.py - Main family based on data from Storm: reduced design space from 118098 to 118098
+2023-04-27 12:04:33,829 - storm_pomdp_control.py - Main family based on data from Storm: reduced design space from 39366 to 39366
+2023-04-27 12:04:33,829 - storm_pomdp_control.py - Main family based on data from Storm: reduced design space from 39366 to 39366
+2023-04-27 12:04:33,829 - storm_pomdp_control.py - Main family based on data from Storm: reduced design space from 13122 to 13122
+2023-04-27 12:04:33,829 - storm_pomdp_control.py - Main family based on data from Storm: reduced design space from 13122 to 13122
+2023-04-27 12:04:33,829 - storm_pomdp_control.py - Main family based on data from Storm: reduced design space from 13122 to 13122
+2023-04-27 12:04:33,829 - synthesizer_ar_storm.py - State after Storm splitting: Main families - 17, Subfamilies - 0
+2023-04-27 12:06:03,061 - synthesizer_ar_storm.py - Pausing synthesis
+2023-04-27 12:06:03,133 - storm_pomdp_control.py - Interactive Storm resumed
+2023-04-27 12:06:03,134 - storm_pomdp_control.py - Updating FSC values in Storm
+2023-04-27 12:06:14,145 - storm_pomdp_control.py - Pausing Storm
 Finished exploring Underapproximation MDP.
  Start analysis...
 -----------Storm-----------               
-Value = 511.3190315613853 | Time elapsed = 816.8s | FSC size = 7684
+Value = 511.3190315613853 | Time elapsed = 810.6s | FSC size = 7684
 
 
 ------------------------------------
@@ -455,33 +448,33 @@ controller size: 7684
 
 ------------------------------------
 
-2023-04-26 10:47:24,154 - synthesizer_pomdp.py - Timeout for PAYNT started
-2023-04-26 10:47:25,059 - synthesizer_ar_storm.py - Resuming synthesis
-2023-04-26 10:47:25,059 - synthesizer_ar_storm.py - Applying family split according to Storm results
-2023-04-26 10:47:25,059 - storm_pomdp_control.py - Main family based on data from Storm: reduced design space from 2324522934 to 2324522934
-2023-04-26 10:47:25,059 - storm_pomdp_control.py - Main family based on data from Storm: reduced design space from 2324522934 to 2324522934
-2023-04-26 10:47:25,059 - storm_pomdp_control.py - Main family based on data from Storm: reduced design space from 774840978 to 774840978
-2023-04-26 10:47:25,059 - storm_pomdp_control.py - Main family based on data from Storm: reduced design space from 774840978 to 774840978
-2023-04-26 10:47:25,059 - storm_pomdp_control.py - Main family based on data from Storm: reduced design space from 86093442 to 86093442
-2023-04-26 10:47:25,059 - storm_pomdp_control.py - Main family based on data from Storm: reduced design space from 28697814 to 28697814
-2023-04-26 10:47:25,059 - storm_pomdp_control.py - Main family based on data from Storm: reduced design space from 28697814 to 28697814
-2023-04-26 10:47:25,059 - storm_pomdp_control.py - Main family based on data from Storm: reduced design space from 9565938 to 9565938
-2023-04-26 10:47:25,059 - storm_pomdp_control.py - Main family based on data from Storm: reduced design space from 3188646 to 3188646
-2023-04-26 10:47:25,059 - storm_pomdp_control.py - Main family based on data from Storm: reduced design space from 3188646 to 3188646
-2023-04-26 10:47:25,060 - storm_pomdp_control.py - Main family based on data from Storm: reduced design space from 39366 to 39366
-2023-04-26 10:47:25,060 - storm_pomdp_control.py - Main family based on data from Storm: reduced design space from 39366 to 39366
-2023-04-26 10:47:25,060 - storm_pomdp_control.py - Main family based on data from Storm: reduced design space from 13122 to 13122
-2023-04-26 10:47:25,060 - storm_pomdp_control.py - Main family based on data from Storm: reduced design space from 13122 to 13122
-2023-04-26 10:47:25,060 - storm_pomdp_control.py - Main family based on data from Storm: reduced design space from 13122 to 13122
-2023-04-26 10:47:25,060 - synthesizer_ar_storm.py - State after Storm splitting: Main families - 15, Subfamilies - 0
-2023-04-26 10:48:54,267 - synthesizer_ar_storm.py - Pausing synthesis
-2023-04-26 10:48:54,352 - storm_pomdp_control.py - Interactive Storm resumed
-2023-04-26 10:48:54,353 - storm_pomdp_control.py - Updating FSC values in Storm
-2023-04-26 10:49:05,364 - storm_pomdp_control.py - Pausing Storm
+2023-04-27 12:06:38,193 - synthesizer_pomdp.py - Timeout for PAYNT started
+2023-04-27 12:06:39,099 - synthesizer_ar_storm.py - Resuming synthesis
+2023-04-27 12:06:39,099 - synthesizer_ar_storm.py - Applying family split according to Storm results
+2023-04-27 12:06:39,099 - storm_pomdp_control.py - Main family based on data from Storm: reduced design space from 2324522934 to 2324522934
+2023-04-27 12:06:39,100 - storm_pomdp_control.py - Main family based on data from Storm: reduced design space from 2324522934 to 2324522934
+2023-04-27 12:06:39,100 - storm_pomdp_control.py - Main family based on data from Storm: reduced design space from 774840978 to 774840978
+2023-04-27 12:06:39,100 - storm_pomdp_control.py - Main family based on data from Storm: reduced design space from 774840978 to 774840978
+2023-04-27 12:06:39,100 - storm_pomdp_control.py - Main family based on data from Storm: reduced design space from 86093442 to 86093442
+2023-04-27 12:06:39,100 - storm_pomdp_control.py - Main family based on data from Storm: reduced design space from 28697814 to 28697814
+2023-04-27 12:06:39,100 - storm_pomdp_control.py - Main family based on data from Storm: reduced design space from 28697814 to 28697814
+2023-04-27 12:06:39,100 - storm_pomdp_control.py - Main family based on data from Storm: reduced design space from 3188646 to 3188646
+2023-04-27 12:06:39,100 - storm_pomdp_control.py - Main family based on data from Storm: reduced design space from 3188646 to 3188646
+2023-04-27 12:06:39,100 - storm_pomdp_control.py - Main family based on data from Storm: reduced design space from 1062882 to 1062882
+2023-04-27 12:06:39,100 - storm_pomdp_control.py - Main family based on data from Storm: reduced design space from 1062882 to 1062882
+2023-04-27 12:06:39,101 - storm_pomdp_control.py - Main family based on data from Storm: reduced design space from 354294 to 354294
+2023-04-27 12:06:39,101 - storm_pomdp_control.py - Main family based on data from Storm: reduced design space from 39366 to 39366
+2023-04-27 12:06:39,101 - storm_pomdp_control.py - Main family based on data from Storm: reduced design space from 39366 to 39366
+2023-04-27 12:06:39,101 - storm_pomdp_control.py - Main family based on data from Storm: reduced design space from 39366 to 39366
+2023-04-27 12:06:39,101 - synthesizer_ar_storm.py - State after Storm splitting: Main families - 15, Subfamilies - 0
+2023-04-27 12:08:08,326 - synthesizer_ar_storm.py - Pausing synthesis
+2023-04-27 12:08:08,388 - storm_pomdp_control.py - Interactive Storm resumed
+2023-04-27 12:08:08,388 - storm_pomdp_control.py - Updating FSC values in Storm
+2023-04-27 12:08:19,400 - storm_pomdp_control.py - Pausing Storm
 Finished exploring Underapproximation MDP.
  Start analysis...
 -----------Storm-----------               
-Value = 511.3190315613853 | Time elapsed = 946.0s | FSC size = 7684
+Value = 511.3190315613853 | Time elapsed = 939.9s | FSC size = 7684
 
 
 ------------------------------------
@@ -496,21 +489,21 @@ controller size: 7684
 
 ------------------------------------
 
-2023-04-26 10:49:34,310 - synthesizer_ar_storm.py - Terminating controller synthesis
+2023-04-27 12:08:48,368 - synthesizer_ar_storm.py - Terminating controller synthesis
 --------------------
 Synthesis summary
 
 optimality objective: R[exp]{"reward"}max=? [F "discount_sink"] 
 
-method: AR, synthesis time: 624.42 s
+method: AR, synthesis time: 624.34 s
 number of holes: 23, family size: 62762119218, super quotient: 293 states / 2622 actions
 explored: 2 %
-AR stats: avg MDP size: 291, iterations: 16412
+AR stats: avg MDP size: 291, iterations: 16565
 
 optimal: 509.486703
 --------------------
 
-2023-04-26 10:49:34,339 - storm_pomdp_control.py - Storm POMDP analysis completed
+2023-04-27 12:08:48,397 - storm_pomdp_control.py - Storm POMDP analysis completed
 
 ------------------------------------
 
