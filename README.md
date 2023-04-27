@@ -10,7 +10,7 @@ As a reference, we provide our logs in the `original-results`, in case something
 
 ### Requirements
 - Python3.8 or higher
-- pdflatex (`sudo apt-get install texlive-full`) - we use this to generate the PDFs for the convinience, if you want to use different way we also provide the .tex source files so you can convert the tables/graphs yourself
+- pdflatex (`sudo apt-get install texlive-pictures`) - we use this to generate the PDFs for the convinience, if you want to use different way we also provide the .tex source files so you can convert the tables/graphs yourself
 
 ### Setup
 Place all of the files of this repository to folder called `experiments` in the root folder of PAYNT, i.e.,
