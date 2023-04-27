@@ -55,6 +55,31 @@ If you feel like your PC needs more computation time to achieve comparable resul
 
 The folder `experiments/original-results` contains our log files. The subfolders `models-info`, `q1`, `q2`, `q3`, `appendix` contain the log files generated from the tools. The subfolder `results` contains the PDFs generated from these logs.
 
+## Tools
+
+In the artifact we consider tools Storm and PAYNT, both are open source tools:
+
+- Storm
+    - source: https://github.com/moves-rwth/storm
+    - documentation: https://www.stormchecker.org/
+    - Used version: *make realese on github*
+    - StormPy (Storm Python API): https://moves-rwth.github.io/stormpy/
+- PAYNT
+    - source: https://github.com/randriu/synthesis
+    - Used version: *make realese on github*
+
+The links contain installation process for both of the tools, if you want to run them outside of this artifact. PAYNT requires correct version of Storm and StormPy to work and provides installation guide for all of them. The used version of PAYNT is able to run Storm and contains the proposed SAYNT algorithm as well.
+
+## Models
+
+The POMDPs considered in our experiments are located in `PAYNT_ROOT/models/pomdp/storm-integration`. We consider models from various sources:
+
+- POMDPs from Tony Cassandra's webpage https://pomdp.org/ we converted to explicit .drn format
+- POMDPs from the paper "Gethin Norman, David Parker and Xueyi Zou. Verification and Control of Partially Observable Probabilistic Systems" available at http://www.prismmodelchecker.org/files/rts-poptas/ in PRISM format
+- our problem examples explained in the paper and the Lanes+ model explained in the appendix, also in the PRISM format
+
+To learn more about the PRISM format for creating stochastic models and their specifications visit: https://www.prismmodelchecker.org/manual/ThePRISMLanguage/Introduction
+
 
 ## Details on the experiments
 We provide a quick overview of the experiments here:
