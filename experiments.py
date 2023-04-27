@@ -53,7 +53,7 @@ models = [ f.path for f in os.scandir(directory) if f.is_dir() ]
 
 def run_experiment(options, logs_string, experiment_models, timeout, special={}):
     
-    logs_dir = os.fsencode(dir_path + "/{}/".format(logs_string))
+    logs_dir = os.fsencode(dir_path + "/output/{}/".format(logs_string))
 
     print(f'\nRunning experiment {logs_string}. The logs will be saved in folder {logs_dir.decode("utf-8")}')
     print(f'The options used: "{options}"\n')

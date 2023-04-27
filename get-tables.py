@@ -2,10 +2,10 @@ import sys
 import os
 
 dir_path = os.path.dirname(os.path.realpath(__file__))
-result_folder = os.fsencode(dir_path + '/results/source')
+result_folder = os.fsencode(dir_path + '/output/results/source')
 
 def get_models_info_table():
-    models_info_path = os.fsencode(dir_path + '/models-info')
+    models_info_path = os.fsencode(dir_path + '/output/models-info')
     models = [ f.path for f in os.scandir(models_info_path) if f.is_dir() ]
 
     with open(result_folder.decode("utf-8") + "/" + "source-table2-models-info.tex", "w") as text_file:    
@@ -52,10 +52,10 @@ def get_models_info_table():
 
 
 def get_q1_table():
-    short_s_path = os.fsencode(dir_path + '/q1/short-storm')
-    long_s_path = os.fsencode(dir_path + '/q1/long-storm')
-    im_short_s_path = os.fsencode(dir_path + '/q1/improved-short-storm')
-    im_long_s_path = os.fsencode(dir_path + '/q1/improved-long-storm')
+    short_s_path = os.fsencode(dir_path + '/output/q1/short-storm')
+    long_s_path = os.fsencode(dir_path + '/output/q1/long-storm')
+    im_short_s_path = os.fsencode(dir_path + '/output/q1/improved-short-storm')
+    im_long_s_path = os.fsencode(dir_path + '/output/q1/improved-long-storm')
 
     models = [ f.path for f in os.scandir(short_s_path) if f.is_dir() ]
 
@@ -127,8 +127,8 @@ def get_q1_table():
 
 
 def get_q2_table():
-    paynt_path = os.fsencode(dir_path + '/q2/paynt')
-    im_paynt_path = os.fsencode(dir_path + '/q2/improved-paynt')
+    paynt_path = os.fsencode(dir_path + '/output/q2/paynt')
+    im_paynt_path = os.fsencode(dir_path + '/output/q2/improved-paynt')
 
     models = [ f.path for f in os.scandir(paynt_path) if f.is_dir() ]
 
@@ -180,13 +180,13 @@ def get_q2_table():
         text_file.close()
 
 def get_q3_table():
-    saynt_path = os.fsencode(dir_path + '/q3/saynt')
-    paynt_path = os.fsencode(dir_path + '/q3/paynt')
-    s1_path = os.fsencode(dir_path + '/q3/storm-5th')
-    s2_path = os.fsencode(dir_path + '/q3/storm-4th')
-    s3_path = os.fsencode(dir_path + '/q3/storm-3rd')
-    s4_path = os.fsencode(dir_path + '/q3/storm-2nd')
-    s5_path = os.fsencode(dir_path + '/q3/storm-1st')
+    saynt_path = os.fsencode(dir_path + '/output/q3/saynt')
+    paynt_path = os.fsencode(dir_path + '/output/q3/paynt')
+    s1_path = os.fsencode(dir_path + '/output/q3/storm-5th')
+    s2_path = os.fsencode(dir_path + '/output/q3/storm-4th')
+    s3_path = os.fsencode(dir_path + '/output/q3/storm-3rd')
+    s4_path = os.fsencode(dir_path + '/output/q3/storm-2nd')
+    s5_path = os.fsencode(dir_path + '/output/q3/storm-1st')
 
     models = [ f.path for f in os.scandir(paynt_path) if f.is_dir() ]
 
@@ -273,7 +273,7 @@ def get_q3_table():
 
 
 def get_memory_table():
-    saynt_path = os.fsencode(dir_path + '/q3/saynt')
+    saynt_path = os.fsencode(dir_path + '/output/q3/saynt')
 
     models = [ f.path for f in os.scandir(saynt_path) if f.is_dir() ]
 
@@ -319,13 +319,13 @@ def get_memory_table():
 
 
 def get_appendix_table():
-    saynt_path = os.fsencode(dir_path + '/appendix/saynt')
-    paynt_path = os.fsencode(dir_path + '/appendix/paynt')
-    s1_path = os.fsencode(dir_path + '/appendix/storm-5th')
-    s2_path = os.fsencode(dir_path + '/appendix/storm-4th')
-    s3_path = os.fsencode(dir_path + '/appendix/storm-3rd')
-    s4_path = os.fsencode(dir_path + '/appendix/storm-2nd')
-    s5_path = os.fsencode(dir_path + '/appendix/storm-1st')
+    saynt_path = os.fsencode(dir_path + '/output/appendix/saynt')
+    paynt_path = os.fsencode(dir_path + '/output/appendix/paynt')
+    s1_path = os.fsencode(dir_path + '/output/appendix/storm-5th')
+    s2_path = os.fsencode(dir_path + '/output/appendix/storm-4th')
+    s3_path = os.fsencode(dir_path + '/output/appendix/storm-3rd')
+    s4_path = os.fsencode(dir_path + '/output/appendix/storm-2nd')
+    s5_path = os.fsencode(dir_path + '/output/appendix/storm-1st')
 
     models = [ f.path for f in os.scandir(paynt_path) if f.is_dir() ]
 
@@ -437,11 +437,11 @@ def get_appendix_table():
 if __name__ == '__main__':
     table = sys.argv[1]
 
-    if not os.path.isdir(dir_path + "/results"):
-        os.mkdir(dir_path + "/results")
+    if not os.path.isdir(dir_path + "/output/results"):
+        os.mkdir(dir_path + "/output/results")
 
-    if not os.path.isdir(dir_path + "/results/source"):
-        os.mkdir(dir_path + "/results/source")
+    if not os.path.isdir(dir_path + "/output/results/source"):
+        os.mkdir(dir_path + "/output/results/source")
 
     if table == "models":
         get_models_info_table()

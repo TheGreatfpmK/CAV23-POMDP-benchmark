@@ -3,8 +3,8 @@ import os
 from subprocess import DEVNULL, STDOUT, check_call
 
 dir_path = os.path.dirname(os.path.realpath(__file__))
-result_folder = os.fsencode(dir_path + '/results')
-source_folder = os.fsencode(dir_path + '/results/source')
+result_folder = os.fsencode(dir_path + '/output/results')
+source_folder = os.fsencode(dir_path + '/output/results/source')
 
 
 def get_start():

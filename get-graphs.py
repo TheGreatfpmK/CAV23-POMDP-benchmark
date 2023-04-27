@@ -2,7 +2,7 @@ import sys
 import os
 
 dir_path = os.path.dirname(os.path.realpath(__file__))
-result_folder = os.fsencode(dir_path + '/results/source')
+result_folder = os.fsencode(dir_path + '/output/results/source')
 
 
 
@@ -430,19 +430,19 @@ def get_plots_q(output_file, paynt_file, saynt_file, s1_file, s2_file, s3_file, 
 
 
 def get_graphs():
-    saynt_path = os.fsencode(dir_path + '/q3/saynt')
-    paynt_path = os.fsencode(dir_path + '/q3/paynt')
-    s5_path = os.fsencode(dir_path + '/q3/storm-5th')
-    s4_path = os.fsencode(dir_path + '/q3/storm-4th')
-    s3_path = os.fsencode(dir_path + '/q3/storm-3rd')
-    s2_path = os.fsencode(dir_path + '/q3/storm-2nd')
-    s1_path = os.fsencode(dir_path + '/q3/storm-1st')
-    q15_path = os.fsencode(dir_path + '/q3/q1-5th')
-    q14_path = os.fsencode(dir_path + '/q3/q1-4th')
-    q13_path = os.fsencode(dir_path + '/q3/q1-3rd')
-    q12_path = os.fsencode(dir_path + '/q3/q1-2nd')
-    q11_path = os.fsencode(dir_path + '/q3/q1-1st')
-    q2_path = os.fsencode(dir_path + '/q3/q2')
+    saynt_path = os.fsencode(dir_path + '/output/q3/saynt')
+    paynt_path = os.fsencode(dir_path + '/output/q3/paynt')
+    s5_path = os.fsencode(dir_path + '/output/q3/storm-5th')
+    s4_path = os.fsencode(dir_path + '/output/q3/storm-4th')
+    s3_path = os.fsencode(dir_path + '/output/q3/storm-3rd')
+    s2_path = os.fsencode(dir_path + '/output/q3/storm-2nd')
+    s1_path = os.fsencode(dir_path + '/output/q3/storm-1st')
+    q15_path = os.fsencode(dir_path + '/output/q3/q1-5th')
+    q14_path = os.fsencode(dir_path + '/output/q3/q1-4th')
+    q13_path = os.fsencode(dir_path + '/output/q3/q1-3rd')
+    q12_path = os.fsencode(dir_path + '/output/q3/q1-2nd')
+    q11_path = os.fsencode(dir_path + '/output/q3/q1-1st')
+    q2_path = os.fsencode(dir_path + '/output/q3/q2')
 
     models = [ f.path for f in os.scandir(paynt_path) if f.is_dir() ]
 
@@ -528,10 +528,10 @@ def get_graphs():
 
 if __name__ == '__main__':
 
-    if not os.path.isdir(dir_path + "/results"):
-        os.mkdir(dir_path + "/results")
+    if not os.path.isdir(dir_path + "/output/results"):
+        os.mkdir(dir_path + "/output/results")
 
-    if not os.path.isdir(dir_path + "/results/source"):
-        os.mkdir(dir_path + "/results/source")
+    if not os.path.isdir(dir_path + "/output/results/source"):
+        os.mkdir(dir_path + "/output/results/source")
 
     get_graphs()
