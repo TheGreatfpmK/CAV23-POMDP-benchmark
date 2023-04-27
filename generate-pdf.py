@@ -108,17 +108,26 @@ def get_table4():
     print(f"PDF for table4 generated to {result_table_folder}")
 
 
+def get_string_if_file_exists(path):
+    try:
+        source_file = open(path, mode='r')
+        source_string = source_file.read()
+        source_file.close()
+        return source_string
+    except:
+        return ""
+
 
 def get_figure4():
-    file_4x3 = open(source_folder.decode("utf-8") + "/source-figure4-q3-4x3-95.tex", mode='r')
-    file_lanes = open(source_folder.decode("utf-8") + "/source-figure4-q3-lanes.tex", mode='r')
-    file_milos = open(source_folder.decode("utf-8") + "/source-figure4-q3-milos-97.tex", mode='r')
-    file_hallway = open(source_folder.decode("utf-8") + "/source-figure4-q3-hallway.tex", mode='r')
-    file_network = open(source_folder.decode("utf-8") + "/source-figure4-q3-network-3-8-20.tex", mode='r')
-    file_query = open(source_folder.decode("utf-8") + "/source-figure4-q3-query-s3.tex", mode='r')
-    file_refuel = open(source_folder.decode("utf-8") + "/source-figure4-q3-refuel-20.tex", mode='r')
+    string_4x3 = get_string_if_file_exists(source_folder.decode("utf-8") + "/source-figure4-q3-4x3-95.tex")
+    string_lanes = get_string_if_file_exists(source_folder.decode("utf-8") + "/source-figure4-q3-lanes.tex")
+    string_milos = get_string_if_file_exists(source_folder.decode("utf-8") + "/source-figure4-q3-milos-97.tex")
+    string_hallway = get_string_if_file_exists(source_folder.decode("utf-8") + "/source-figure4-q3-hallway.tex")
+    string_network = get_string_if_file_exists(source_folder.decode("utf-8") + "/source-figure4-q3-network-3-8-20.tex")
+    string_query = get_string_if_file_exists(source_folder.decode("utf-8") + "/source-figure4-q3-query-s3.tex")
+    string_refuel = get_string_if_file_exists(source_folder.decode("utf-8") + "/source-figure4-q3-refuel-20.tex")
 
-    figure_contents = file_4x3.read() + file_lanes.read() + file_milos.read() + file_hallway.read() + file_network.read() + file_query.read() + file_refuel.read()
+    figure_contents = string_4x3 + string_lanes + string_milos + string_hallway + string_network + string_query + string_refuel
 
     with open(source_folder.decode("utf-8") + "/figure4.tex", "w") as text_file:
         print(get_start(), file=text_file)
@@ -126,14 +135,6 @@ def get_figure4():
         print(get_end(), file=text_file)
 
         text_file.close()
-
-    file_4x3.close()
-    file_lanes.close()
-    file_milos.close()
-    file_hallway.close()
-    file_network.close()
-    file_query.close()
-    file_refuel.close()
 
     source_file = source_folder.decode("utf-8") + "/figure4.tex"
     result_table_folder = result_folder.decode("utf-8") + "/figure4"
