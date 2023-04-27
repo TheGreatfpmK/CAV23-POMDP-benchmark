@@ -10,7 +10,7 @@ As a reference, we provide our logs in the `original-results`, in case something
 
 ### Requirements
 - Python3.8 or higher
-- pdflatex (`sudo apt-get install texlive`) - we use this to generate the PDFs for the convinience, if you want to use different way we also provide the .tex source files so you can convert the tables/graphs yourself
+- pdflatex (`sudo apt-get install texlive-full`) - we use this to generate the PDFs for the convinience, if you want to use different way we also provide the .tex source files so you can convert the tables/graphs yourself
 
 ### Setup
 Place all of the files of this repository to folder called `experiments` in the root folder of PAYNT, i.e.,
@@ -72,11 +72,41 @@ The links contain installation process for both of the tools, if you want to run
 
 ## Using the tools
 
+We provide a small overview of how to use the tools outside of the benchmark script. For full information please visit the linked documentation.
+
 ### PAYNT
+
+PAYNT is a tool written Python3. To run PAYNT for the FSC synthesis for POMDPs use:
+
+```
+python3 paynt.py --project path/to/model/folder --fsc-synthesis
+```
+
+This assumes the model folder contains both the model description and a specification. Each time FSC is time we output it's value, size and the time it took to find it. You can use `--export-fsc-paynt "filepath"` to store the best found FSC to specified file. For more information about the settings of PAYNT visit https://github.com/randriu/synthesis.
 
 ### Storm
 
+With the integration we propose in this paper we allow to run Storm from PAYNT. This usage doesn't provide all the possible Storm settings, but it is enough for the purposes of synthetising good FSCs for POMDPs. To use Storm through PAYNT use:
+
+```
+python3 paynt.py --project path/to/model/folder --fsc-synthesis --storm-pomdp --get-storm-result 0
+```
+
+You can adjust the main setting of Storm with `--storm-options` (for example `--storm-options 2mil` to explore 2 million states and apply cut-offs, `--storm-options 10mil` to explore 10 million states and apply cut-offs, `--storm-options clip4` to allow clipping with grid resolution 4).
+
+#### Storm as a standalone tool
+
+If you want to run Storm as a standalone tool visit: https://www.stormchecker.org/getting-started.html. To use Storm for POMDP analysis you need to build the `storm-pomdp` executable.
+
 ### SAYNT
+
+SAYNT algorithm we propose in this work uses the implementation of PAYNT and Storm. It can be run from PAYNT using:
+
+```
+python3 paynt.py --project path/to/model/folder --fsc-synthesis --storm-pomdp --iterative-storm 'timeout' 'paynt_timeout' 'storm_timeout'
+```
+
+The default values proposed in our paper for 15minute timeout (900s) is `--iterative-storm 900 60 10` this means in each iteration of SAYNT we will run the inductive search for 60 seconds and belief exploration for 10 seconds. If you want to observe how the result depends on each part you can try changing the paynt and storm timeouts. SAYNT also introduces some new settings we don't consider in this paper. For more information visit https://github.com/randriu/synthesis.
 
 ## Models
 
