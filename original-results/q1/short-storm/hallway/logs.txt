@@ -1,22 +1,22 @@
-2023-04-26 00:33:27,515 - cli.py - This is Paynt version 0.1.0.
-2023-04-26 00:33:27,517 - sketch.py - loading sketch from /mnt/d/src/PP/synthesis-CAV/experiments/../models/pomdp/storm-integration/hallway/sketch.templ ...
-2023-04-26 00:33:27,565 - prism_parser.py - loading properties from /mnt/d/src/PP/synthesis-CAV/experiments/../models/pomdp/storm-integration/hallway/sketch.props ...
-2023-04-26 00:33:27,579 - prism_parser.py - found the following specification: constraints: none, optimality objective: R[exp]{"rew0"}min=? [F "target"] 
-2023-04-26 00:33:27,587 - sketch.py - constructed explicit quotient having 61 states and 301 actions
-2023-04-26 00:33:27,587 - sketch.py - found the following specification constraints: none, optimality objective: R[exp]{"rew0"}min=? [F "target"] 
-2023-04-26 00:33:27,594 - quotient_pomdp.py - Constructed POMDP having 23 observations.
-2023-04-26 00:33:27,597 - quotient_pomdp.py - Unfolding POMDP using the following memory allocation vector: [1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1] ...
-2023-04-26 00:33:27,599 - quotient_pomdp.py - Constructed quotient MDP having 61 states and 301 actions.
-2023-04-26 00:33:27,602 - synthesizer_pomdp.py - Storm pomdp option enabled
-2023-04-26 00:33:27,602 - synthesizer_pomdp.py - Storm settings: iterative - (None, None, None), get_storm_result - 0, storm_options - cutoff, prune_storm - False, unfold_strategy - (True, False), use_storm_cutoffs - False
-2023-04-26 00:33:27,610 - storm_pomdp_control.py - starting Storm POMDP analysis
+2023-04-27 00:31:28,075 - cli.py - This is Paynt version 0.1.0.
+2023-04-27 00:31:28,078 - sketch.py - loading sketch from /mnt/d/src/PP/synthesis-CAV/experiments/../models/pomdp/storm-integration/hallway/sketch.templ ...
+2023-04-27 00:31:28,134 - prism_parser.py - loading properties from /mnt/d/src/PP/synthesis-CAV/experiments/../models/pomdp/storm-integration/hallway/sketch.props ...
+2023-04-27 00:31:28,150 - prism_parser.py - found the following specification: constraints: none, optimality objective: R[exp]{"rew0"}min=? [F "target"] 
+2023-04-27 00:31:28,160 - sketch.py - constructed explicit quotient having 61 states and 301 actions
+2023-04-27 00:31:28,160 - sketch.py - found the following specification constraints: none, optimality objective: R[exp]{"rew0"}min=? [F "target"] 
+2023-04-27 00:31:28,169 - quotient_pomdp.py - Constructed POMDP having 23 observations.
+2023-04-27 00:31:28,173 - quotient_pomdp.py - Unfolding POMDP using the following memory allocation vector: [1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1] ...
+2023-04-27 00:31:28,176 - quotient_pomdp.py - Constructed quotient MDP having 61 states and 301 actions.
+2023-04-27 00:31:28,179 - synthesizer_pomdp.py - Storm pomdp option enabled
+2023-04-27 00:31:28,179 - synthesizer_pomdp.py - Storm settings: iterative - (None, None, None), get_storm_result - 0, storm_options - cutoff, prune_storm - False, unfold_strategy - (True, False), use_storm_cutoffs - False
+2023-04-27 00:31:28,188 - storm_pomdp_control.py - starting Storm POMDP analysis
 Finished exploring Underapproximation MDP.
  Start analysis...
-2023-04-26 00:33:28,582 - storm_pomdp_control.py - Storm POMDP analysis completed
+2023-04-27 00:31:29,207 - storm_pomdp_control.py - Storm POMDP analysis completed
 {0: [], 1: [1, 2, 3, 4], 2: [], 3: [], 4: [3, 4], 5: [1, 2, 3, 4], 6: [], 7: [1], 8: [2, 3, 4], 9: [], 10: [2, 4], 11: [2], 12: [], 13: [3], 14: [4], 15: [], 16: [4], 17: [4], 18: [4], 19: [1], 20: [0, 1, 2, 3, 4], 21: [], 22: [0]}
 {0: [], 1: [1, 2], 2: [], 3: [], 4: [3, 4], 5: [1, 3], 6: [], 7: [1], 8: [2, 3], 9: [], 10: [2, 4], 11: [2], 12: [], 13: [3], 14: [4], 15: [], 16: [4], 17: [4], 18: [4], 19: [1], 20: [0, 1, 2, 3, 4], 21: [], 22: [0]}
 -----------Storm-----------                 
-Value = 13.07497134488972 | Time elapsed = 0.9s | FSC size = 988
+Value = 13.07497134488972 | Time elapsed = 1.0s | FSC size = 988
 FSC (dot) = digraph model {
 	0 [ label = "0: {__extra, target}" ];
 	1 [ label = "1: {init, obs_22}" ];

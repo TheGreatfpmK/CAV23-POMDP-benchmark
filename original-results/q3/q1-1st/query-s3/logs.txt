@@ -1,21 +1,21 @@
-2023-04-26 14:59:26,889 - cli.py - This is Paynt version 0.1.0.
-2023-04-26 14:59:26,892 - sketch.py - loading sketch from /mnt/d/src/PP/synthesis-CAV/experiments/../models/pomdp/storm-integration/query-s3/sketch.templ ...
-2023-04-26 14:59:26,955 - prism_parser.py - loading properties from /mnt/d/src/PP/synthesis-CAV/experiments/../models/pomdp/storm-integration/query-s3/sketch.props ...
-2023-04-26 14:59:26,969 - prism_parser.py - found the following specification: constraints: none, optimality objective: R[exp]{"reward"}max=? [F "discount_sink"] 
-2023-04-26 14:59:26,977 - sketch.py - constructed explicit quotient having 108 states and 320 actions
-2023-04-26 14:59:26,977 - sketch.py - found the following specification constraints: none, optimality objective: R[exp]{"reward"}max=? [F "discount_sink"] 
-2023-04-26 14:59:26,983 - quotient_pomdp.py - Constructed POMDP having 6 observations.
-2023-04-26 14:59:26,987 - quotient_pomdp.py - Unfolding POMDP using the following memory allocation vector: [1, 1, 1, 1, 1, 1] ...
-2023-04-26 14:59:26,989 - quotient_pomdp.py - Constructed quotient MDP having 108 states and 320 actions.
-2023-04-26 14:59:26,992 - synthesizer_pomdp.py - Storm pomdp option enabled
-2023-04-26 14:59:26,992 - synthesizer_pomdp.py - Storm settings: iterative - (None, None, None), get_storm_result - 10, storm_options - cutoff, prune_storm - False, unfold_strategy - (True, False), use_storm_cutoffs - False
-2023-04-26 14:59:26,992 - synthesizer_pomdp.py - Synthesizing optimal k=1 controller ...
-2023-04-26 14:59:26,992 - quotient_pomdp.py - Unfolding POMDP using the following memory allocation vector: [1, 1, 1, 1, 1, 1] ...
-2023-04-26 14:59:26,993 - quotient_pomdp.py - Constructed quotient MDP having 108 states and 320 actions.
+2023-04-27 08:50:17,536 - cli.py - This is Paynt version 0.1.0.
+2023-04-27 08:50:17,539 - sketch.py - loading sketch from /mnt/d/src/PP/synthesis-CAV/experiments/../models/pomdp/storm-integration/query-s3/sketch.templ ...
+2023-04-27 08:50:17,603 - prism_parser.py - loading properties from /mnt/d/src/PP/synthesis-CAV/experiments/../models/pomdp/storm-integration/query-s3/sketch.props ...
+2023-04-27 08:50:17,618 - prism_parser.py - found the following specification: constraints: none, optimality objective: R[exp]{"reward"}max=? [F "discount_sink"] 
+2023-04-27 08:50:17,626 - sketch.py - constructed explicit quotient having 108 states and 320 actions
+2023-04-27 08:50:17,626 - sketch.py - found the following specification constraints: none, optimality objective: R[exp]{"reward"}max=? [F "discount_sink"] 
+2023-04-27 08:50:17,633 - quotient_pomdp.py - Constructed POMDP having 6 observations.
+2023-04-27 08:50:17,637 - quotient_pomdp.py - Unfolding POMDP using the following memory allocation vector: [1, 1, 1, 1, 1, 1] ...
+2023-04-27 08:50:17,639 - quotient_pomdp.py - Constructed quotient MDP having 108 states and 320 actions.
+2023-04-27 08:50:17,643 - synthesizer_pomdp.py - Storm pomdp option enabled
+2023-04-27 08:50:17,643 - synthesizer_pomdp.py - Storm settings: iterative - (None, None, None), get_storm_result - 10, storm_options - cutoff, prune_storm - False, unfold_strategy - (True, False), use_storm_cutoffs - False
+2023-04-27 08:50:17,643 - synthesizer_pomdp.py - Synthesizing optimal k=1 controller ...
+2023-04-27 08:50:17,643 - quotient_pomdp.py - Unfolding POMDP using the following memory allocation vector: [1, 1, 1, 1, 1, 1] ...
+2023-04-27 08:50:17,643 - quotient_pomdp.py - Constructed quotient MDP having 108 states and 320 actions.
 {} 
 
 {}
-2023-04-26 14:59:26,994 - synthesizer.py - Synthesis initiated.
+2023-04-27 08:50:17,645 - synthesizer.py - Synthesis initiated.
 -----------PAYNT-----------               
 Value = 333.3268113041915 | Time elapsed = 0.1s | FSC size = 12
 FSC = A(0,0)={'(Query-2)'}, A(1,0)={'(Query-2)'}, A(2,0)={'(Query-2)'}, A(4,0)={'(Query-2)'}
@@ -33,7 +33,7 @@ Value = 387.41602622764486 | Time elapsed = 0.2s | FSC size = 12
 FSC = A(0,0)={'(Query-2)'}, A(1,0)={'(Query-2)'}, A(2,0)={'(Query-1)'}, A(4,0)={'(Query-2)'}
 
 -----------PAYNT-----------               
-Value = 388.02372397922346 | Time elapsed = 0.3s | FSC size = 12
+Value = 388.02372397922346 | Time elapsed = 0.2s | FSC size = 12
 FSC = A(0,0)={'(Query-2)'}, A(1,0)={'(Query-2)'}, A(2,0)={'(Query-1)'}, A(4,0)={'(Query-0)'}
 
 -----------PAYNT-----------               
@@ -45,7 +45,7 @@ Synthesis summary
 
 optimality objective: R[exp]{"reward"}max=? [F "discount_sink"] 
 
-method: AR, synthesis time: 0.69 s
+method: AR, synthesis time: 0.64 s
 number of holes: 4, family size: 81, super quotient: 108 states / 320 actions
 explored: 100 %
 AR stats: avg MDP size: 107, iterations: 70
@@ -53,58 +53,58 @@ AR stats: avg MDP size: 107, iterations: 70
 optimal: 393.554333
 --------------------
 
-2023-04-26 14:59:27,698 - synthesizer_pomdp.py - Synthesizing optimal k=2 controller ...
-2023-04-26 14:59:27,698 - quotient_pomdp.py - Unfolding POMDP using the following memory allocation vector: [2, 2, 2, 1, 2, 1] ...
-2023-04-26 14:59:27,699 - quotient_pomdp.py - Constructed quotient MDP having 214 states and 1275 actions.
+2023-04-27 08:50:18,295 - synthesizer_pomdp.py - Synthesizing optimal k=2 controller ...
+2023-04-27 08:50:18,295 - quotient_pomdp.py - Unfolding POMDP using the following memory allocation vector: [2, 2, 2, 1, 2, 1] ...
+2023-04-27 08:50:18,297 - quotient_pomdp.py - Constructed quotient MDP having 214 states and 1275 actions.
 {} 
 
 {}
-2023-04-26 14:59:27,719 - synthesizer.py - Synthesis initiated.
+2023-04-27 08:50:18,313 - synthesizer.py - Synthesis initiated.
 -----------PAYNT-----------               
-Value = 412.7647083768861 | Time elapsed = 1.3s | FSC size = 20
+Value = 412.7647083768861 | Time elapsed = 1.2s | FSC size = 20
 FSC = A(0,0)={'(Query-2)'}, A(0,1)={'(Query-1)'}, M(0,0)=1, M(0,1)=0, A(1,0)={'(Query-2)'}, A(1,1)={'(Query-2)'}, M(1,0)=1, M(1,1)=1, A(2,0)={'(Query-2)'}, A(2,1)={'(Query-2)'}, M(2,0)=1, M(2,1)=1, M(3,0)=0, A(4,0)={'(Query-2)'}, A(4,1)={'(Query-2)'}, M(4,0)=1, M(4,1)=1
 
 -----------PAYNT-----------               
-Value = 412.81391639763825 | Time elapsed = 1.5s | FSC size = 20
+Value = 412.81391639763825 | Time elapsed = 1.4s | FSC size = 20
 FSC = A(0,0)={'(Query-2)'}, A(0,1)={'(Query-1)'}, M(0,0)=1, M(0,1)=0, A(1,0)={'(Query-2)'}, A(1,1)={'(Query-2)'}, M(1,0)=1, M(1,1)=1, A(2,0)={'(Query-2)'}, A(2,1)={'(Query-2)'}, M(2,0)=1, M(2,1)=1, M(3,0)=1, A(4,0)={'(Query-2)'}, A(4,1)={'(Query-1)'}, M(4,0)=0, M(4,1)=0
 
 -----------PAYNT-----------               
-Value = 413.01214438121855 | Time elapsed = 1.6s | FSC size = 20
+Value = 413.01214438121855 | Time elapsed = 1.5s | FSC size = 20
 FSC = A(0,0)={'(Query-2)'}, A(0,1)={'(Query-1)'}, M(0,0)=1, M(0,1)=0, A(1,0)={'(Query-2)'}, A(1,1)={'(Query-2)'}, M(1,0)=1, M(1,1)=1, A(2,0)={'(Query-2)'}, A(2,1)={'(Query-2)'}, M(2,0)=1, M(2,1)=1, M(3,0)=1, A(4,0)={'(Query-2)'}, A(4,1)={'(Query-0)'}, M(4,0)=0, M(4,1)=1
 
 -----------PAYNT-----------               
-Value = 422.928005043513 | Time elapsed = 6.7s | FSC size = 20
+Value = 422.928005043513 | Time elapsed = 6.5s | FSC size = 20
 FSC = A(0,0)={'(Query-1)'}, A(0,1)={'(Query-0)'}, M(0,0)=1, M(0,1)=0, A(1,0)={'(Query-2)'}, A(1,1)={'(Query-2)'}, M(1,0)=1, M(1,1)=1, A(2,0)={'(Query-2)'}, A(2,1)={'(Query-2)'}, M(2,0)=1, M(2,1)=1, M(3,0)=0, A(4,0)={'(Query-2)'}, A(4,1)={'(Query-2)'}, M(4,0)=1, M(4,1)=1
 
 -----------PAYNT-----------               
-Value = 425.16459398698726 | Time elapsed = 8.0s | FSC size = 20
+Value = 425.16459398698726 | Time elapsed = 7.7s | FSC size = 20
 FSC = A(0,0)={'(Query-1)'}, A(0,1)={'(Query-0)'}, M(0,0)=1, M(0,1)=0, A(1,0)={'(Query-2)'}, A(1,1)={'(Query-2)'}, M(1,0)=1, M(1,1)=0, A(2,0)={'(Query-2)'}, A(2,1)={'(Query-2)'}, M(2,0)=1, M(2,1)=1, M(3,0)=0, A(4,0)={'(Query-2)'}, A(4,1)={'(Query-2)'}, M(4,0)=1, M(4,1)=1
 
 -----------PAYNT-----------               
-Value = 425.2338715064638 | Time elapsed = 8.0s | FSC size = 20
+Value = 425.2338715064638 | Time elapsed = 7.7s | FSC size = 20
 FSC = A(0,0)={'(Query-1)'}, A(0,1)={'(Query-0)'}, M(0,0)=1, M(0,1)=0, A(1,0)={'(Query-2)'}, A(1,1)={'(Query-2)'}, M(1,0)=1, M(1,1)=0, A(2,0)={'(Query-2)'}, A(2,1)={'(Query-2)'}, M(2,0)=1, M(2,1)=1, M(3,0)=1, A(4,0)={'(Query-2)'}, A(4,1)={'(Query-2)'}, M(4,0)=1, M(4,1)=0
 
-2023-04-26 14:59:37,095 - synthesizer_ar_storm.py - Pausing synthesis
-2023-04-26 14:59:37,095 - synthesizer_ar_storm.py - Terminating controller synthesis
+2023-04-27 08:50:27,763 - synthesizer_ar_storm.py - Pausing synthesis
+2023-04-27 08:50:27,763 - synthesizer_ar_storm.py - Terminating controller synthesis
 --------------------
 Synthesis summary
 
 optimality objective: R[exp]{"reward"}max=? [F "discount_sink"] 
 
-method: AR, synthesis time: 9.38 s
+method: AR, synthesis time: 9.45 s
 number of holes: 17, family size: 3359232, super quotient: 214 states / 1275 actions
 explored: 0 %
-AR stats: avg MDP size: 207, iterations: 462
+AR stats: avg MDP size: 208, iterations: 494
 
 optimal: 425.233872
 --------------------
 
-2023-04-26 14:59:37,121 - storm_pomdp_control.py - starting Storm POMDP analysis
+2023-04-27 08:50:27,786 - storm_pomdp_control.py - starting Storm POMDP analysis
 Finished exploring Underapproximation MDP.
  Start analysis...
-2023-04-26 14:59:39,337 - storm_pomdp_control.py - Storm POMDP analysis completed
+2023-04-27 08:50:29,629 - storm_pomdp_control.py - Storm POMDP analysis completed
 -----------Storm-----------                 
-Value = 429.9763051871349 | Time elapsed = 2.2s | FSC size = 1252
+Value = 429.9763051871349 | Time elapsed = 1.8s | FSC size = 1252
 FSC (dot) = digraph model {
 	0 [ label = "0: {__extra, target}" ];
 	1 [ label = "1: {init, obs_3}" ];

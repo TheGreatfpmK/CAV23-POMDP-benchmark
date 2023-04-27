@@ -1,18 +1,18 @@
-2023-04-26 01:48:01,920 - cli.py - This is Paynt version 0.1.0.
-2023-04-26 01:48:01,923 - sketch.py - loading sketch from /mnt/d/src/PP/synthesis-CAV/experiments/../models/pomdp/storm-integration/4x5x2-95/sketch.templ ...
-2023-04-26 01:48:01,978 - prism_parser.py - loading properties from /mnt/d/src/PP/synthesis-CAV/experiments/../models/pomdp/storm-integration/4x5x2-95/sketch.props ...
-2023-04-26 01:48:01,993 - prism_parser.py - found the following specification: constraints: none, optimality objective: R[exp]{"reward"}max=? [F "discount_sink"] 
-2023-04-26 01:48:02,003 - sketch.py - constructed explicit quotient having 79 states and 310 actions
-2023-04-26 01:48:02,003 - sketch.py - found the following specification constraints: none, optimality objective: R[exp]{"reward"}max=? [F "discount_sink"] 
-2023-04-26 01:48:02,011 - quotient_pomdp.py - Constructed POMDP having 7 observations.
-2023-04-26 01:48:02,015 - quotient_pomdp.py - Unfolding POMDP using the following memory allocation vector: [1, 1, 1, 1, 1, 1, 1] ...
-2023-04-26 01:48:02,018 - quotient_pomdp.py - Constructed quotient MDP having 79 states and 310 actions.
-2023-04-26 01:48:02,021 - synthesizer_pomdp.py - Storm pomdp option enabled
-2023-04-26 01:48:02,021 - synthesizer_pomdp.py - Storm settings: iterative - (None, None, None), get_storm_result - None, storm_options - cutoff, prune_storm - False, unfold_strategy - (True, False), use_storm_cutoffs - False
-2023-04-26 01:48:02,030 - storm_pomdp_control.py - starting Storm POMDP analysis
+2023-04-27 01:46:14,039 - cli.py - This is Paynt version 0.1.0.
+2023-04-27 01:46:14,041 - sketch.py - loading sketch from /mnt/d/src/PP/synthesis-CAV/experiments/../models/pomdp/storm-integration/4x5x2-95/sketch.templ ...
+2023-04-27 01:46:14,094 - prism_parser.py - loading properties from /mnt/d/src/PP/synthesis-CAV/experiments/../models/pomdp/storm-integration/4x5x2-95/sketch.props ...
+2023-04-27 01:46:14,108 - prism_parser.py - found the following specification: constraints: none, optimality objective: R[exp]{"reward"}max=? [F "discount_sink"] 
+2023-04-27 01:46:14,116 - sketch.py - constructed explicit quotient having 79 states and 310 actions
+2023-04-27 01:46:14,116 - sketch.py - found the following specification constraints: none, optimality objective: R[exp]{"reward"}max=? [F "discount_sink"] 
+2023-04-27 01:46:14,122 - quotient_pomdp.py - Constructed POMDP having 7 observations.
+2023-04-27 01:46:14,126 - quotient_pomdp.py - Unfolding POMDP using the following memory allocation vector: [1, 1, 1, 1, 1, 1, 1] ...
+2023-04-27 01:46:14,128 - quotient_pomdp.py - Constructed quotient MDP having 79 states and 310 actions.
+2023-04-27 01:46:14,132 - synthesizer_pomdp.py - Storm pomdp option enabled
+2023-04-27 01:46:14,132 - synthesizer_pomdp.py - Storm settings: iterative - (None, None, None), get_storm_result - None, storm_options - cutoff, prune_storm - False, unfold_strategy - (True, False), use_storm_cutoffs - False
+2023-04-27 01:46:14,139 - storm_pomdp_control.py - starting Storm POMDP analysis
 Finished exploring Underapproximation MDP.
  Start analysis...
-2023-04-26 01:48:03,057 - storm_pomdp_control.py - Storm POMDP analysis completed
+2023-04-27 01:46:15,155 - storm_pomdp_control.py - Storm POMDP analysis completed
 -----------Storm-----------               
 Value = 2.0825111995171985 | Time elapsed = 1.0s | FSC size = 102
 FSC (dot) = digraph model {
@@ -169,11 +169,11 @@ FSC (dot) = digraph model {
 }
 
 
-2023-04-26 01:48:03,062 - storm_pomdp_control.py - Main family based on data from Storm: reduced design space from 1024 to 4
+2023-04-27 01:46:15,160 - storm_pomdp_control.py - Main family based on data from Storm: reduced design space from 1024 to 4
 {0: [1, 3, 2, 0], 1: [2], 2: [0], 3: [3], 4: [0], 5: [1]} 
 
 {0: [1, 3, 2, 0], 1: [2], 2: [0], 3: [3], 4: [0], 5: [1]}
-2023-04-26 01:48:03,062 - synthesizer.py - Synthesis initiated.
+2023-04-27 01:46:15,160 - synthesizer.py - Synthesis initiated.
 -----------PAYNT-----------               
 Value = 0.02885875140038869 | Time elapsed = 0.0s | FSC size = 14
 FSC = A(0,0)={'(W0)'}, A(1,0)={'(E0)'}, A(2,0)={'(N0)'}, A(3,0)={'(W0)'}, A(5,0)={'(S0)'}
@@ -182,8 +182,8 @@ FSC = A(0,0)={'(W0)'}, A(1,0)={'(E0)'}, A(2,0)={'(N0)'}, A(3,0)={'(W0)'}, A(5,0)
 Value = 0.23228808538170473 | Time elapsed = 0.0s | FSC size = 14
 FSC = A(0,0)={'(E0)'}, A(1,0)={'(E0)'}, A(2,0)={'(N0)'}, A(3,0)={'(W0)'}, A(5,0)={'(S0)'}
 
-2023-04-26 01:48:03,066 - synthesizer_ar_storm.py - Main family synthesis done
-2023-04-26 01:48:03,066 - synthesizer_ar_storm.py - Subfamilies buffer contains: 4 families
+2023-04-27 01:46:15,166 - synthesizer_ar_storm.py - Main family synthesis done
+2023-04-27 01:46:15,166 - synthesizer_ar_storm.py - Subfamilies buffer contains: 4 families
 --------------------
 Synthesis summary
 
@@ -197,15 +197,15 @@ AR stats: avg MDP size: 79, iterations: 75
 optimal: 0.232288
 --------------------
 
-2023-04-26 01:48:03,079 - synthesizer_pomdp.py - Added memory nodes for observation based on Storm data
+2023-04-27 01:46:15,178 - synthesizer_pomdp.py - Added memory nodes for observation based on Storm data
 {0: 4, 1: 1, 2: 1, 3: 1, 4: 1, 5: 1, 6: 1}
-2023-04-26 01:48:03,079 - quotient_pomdp.py - Unfolding POMDP using the following memory allocation vector: [4, 1, 1, 1, 1, 1, 1] ...
-2023-04-26 01:48:03,080 - quotient_pomdp.py - Constructed quotient MDP having 187 states and 2962 actions.
-2023-04-26 01:48:03,173 - storm_pomdp_control.py - Main family based on data from Storm: reduced design space from 4294967296 to 16777216
+2023-04-27 01:46:15,178 - quotient_pomdp.py - Unfolding POMDP using the following memory allocation vector: [4, 1, 1, 1, 1, 1, 1] ...
+2023-04-27 01:46:15,178 - quotient_pomdp.py - Constructed quotient MDP having 187 states and 2962 actions.
+2023-04-27 01:46:15,271 - storm_pomdp_control.py - Main family based on data from Storm: reduced design space from 4294967296 to 16777216
 {0: [1, 3, 2, 0], 1: [2], 2: [0], 3: [3], 4: [0], 5: [1]} 
 
 {0: [1, 3, 2, 0], 1: [2], 2: [0], 3: [3], 4: [0], 5: [1]}
-2023-04-26 01:48:03,173 - synthesizer.py - Synthesis initiated.
+2023-04-27 01:46:15,271 - synthesizer.py - Synthesis initiated.
 -----------PAYNT-----------               
 Value = 0.23675686702915466 | Time elapsed = 0.1s | FSC size = 20
 FSC = A(0,0)={'(W0)'}, A(0,1)={'(W0)'}, A(0,2)={'(W0)'}, A(0,3)={'(E0)'}, M(0,0)=3, M(0,1)=3, M(0,2)=3, M(0,3)=3, A(1,0)={'(E0)'}, M(1,0)=3, A(2,0)={'(N0)'}, M(2,0)=0, A(3,0)={'(W0)'}, M(3,0)=0, A(5,0)={'(S0)'}, M(5,0)=3
@@ -243,11 +243,11 @@ Value = 0.6899015201573547 | Time elapsed = 1.0s | FSC size = 20
 FSC = A(0,0)={'(W0)'}, A(0,1)={'(W0)'}, A(0,2)={'(E0)'}, A(0,3)={'(N0)'}, M(0,0)=1, M(0,1)=3, M(0,2)=3, M(0,3)=0, A(1,0)={'(E0)'}, M(1,0)=0, A(2,0)={'(N0)'}, M(2,0)=3, A(3,0)={'(W0)'}, M(3,0)=3, A(5,0)={'(S0)'}, M(5,0)=2
 
 -----------PAYNT-----------               
-Value = 0.7759133132539807 | Time elapsed = 1.2s | FSC size = 20
+Value = 0.7759133132539807 | Time elapsed = 1.1s | FSC size = 20
 FSC = A(0,0)={'(W0)'}, A(0,1)={'(W0)'}, A(0,2)={'(E0)'}, A(0,3)={'(N0)'}, M(0,0)=3, M(0,1)=3, M(0,2)=2, M(0,3)=0, A(1,0)={'(E0)'}, M(1,0)=2, A(2,0)={'(N0)'}, M(2,0)=3, A(3,0)={'(W0)'}, M(3,0)=0, A(5,0)={'(S0)'}, M(5,0)=3
 
 -----------PAYNT-----------               
-Value = 0.8501209328423467 | Time elapsed = 1.2s | FSC size = 20
+Value = 0.8501209328423467 | Time elapsed = 1.1s | FSC size = 20
 FSC = A(0,0)={'(W0)'}, A(0,1)={'(W0)'}, A(0,2)={'(E0)'}, A(0,3)={'(N0)'}, M(0,0)=3, M(0,1)=3, M(0,2)=2, M(0,3)=0, A(1,0)={'(E0)'}, M(1,0)=2, A(2,0)={'(N0)'}, M(2,0)=3, A(3,0)={'(W0)'}, M(3,0)=0, A(5,0)={'(S0)'}, M(5,0)=0
 
 -----------PAYNT-----------               
@@ -262,14 +262,14 @@ FSC = A(0,0)={'(W0)'}, A(0,1)={'(E0)'}, A(0,2)={'(N0)'}, A(0,3)={'(S0)'}, M(0,0)
 Value = 1.9959291648344961 | Time elapsed = 1.9s | FSC size = 20
 FSC = A(0,0)={'(W0)'}, A(0,1)={'(E0)'}, A(0,2)={'(N0)'}, A(0,3)={'(S0)'}, M(0,0)=3, M(0,1)=1, M(0,2)=2, M(0,3)=0, A(1,0)={'(E0)'}, M(1,0)=1, A(2,0)={'(N0)'}, M(2,0)=2, A(3,0)={'(W0)'}, M(3,0)=0, A(5,0)={'(S0)'}, M(5,0)=0
 
-2023-04-26 01:48:10,041 - synthesizer_ar_storm.py - Main family synthesis done
-2023-04-26 01:48:10,041 - synthesizer_ar_storm.py - Subfamilies buffer contains: 4 families
+2023-04-27 01:46:22,064 - synthesizer_ar_storm.py - Main family synthesis done
+2023-04-27 01:46:22,064 - synthesizer_ar_storm.py - Subfamilies buffer contains: 4 families
 -----------PAYNT-----------               
-Value = 2.007357733062532 | Time elapsed = 7.2s | FSC size = 20
+Value = 2.007357733062532 | Time elapsed = 7.1s | FSC size = 20
 FSC = A(0,0)={'(W0)'}, A(0,1)={'(E0)'}, A(0,2)={'(S0)'}, A(0,3)={'(N0)'}, M(0,0)=2, M(0,1)=1, M(0,2)=0, M(0,3)=3, A(1,0)={'(E0)'}, M(1,0)=1, A(2,0)={'(N0)'}, M(2,0)=3, A(3,0)={'(W0)'}, M(3,0)=0, A(5,0)={'(W0)'}, M(5,0)=2
 
 -----------PAYNT-----------               
-Value = 2.0176603051193345 | Time elapsed = 7.2s | FSC size = 20
+Value = 2.0176603051193345 | Time elapsed = 7.1s | FSC size = 20
 FSC = A(0,0)={'(W0)'}, A(0,1)={'(E0)'}, A(0,2)={'(S0)'}, A(0,3)={'(N0)'}, M(0,0)=2, M(0,1)=1, M(0,2)=0, M(0,3)=3, A(1,0)={'(E0)'}, M(1,0)=1, A(2,0)={'(N0)'}, M(2,0)=3, A(3,0)={'(W0)'}, M(3,0)=0, A(5,0)={'(W0)'}, M(5,0)=0
 
 --------------------
@@ -277,7 +277,7 @@ Synthesis summary
 
 optimality objective: R[exp]{"reward"}max=? [F "discount_sink"] 
 
-method: AR, synthesis time: 34.7 s
+method: AR, synthesis time: 34.46 s
 number of holes: 16, family size: 4294967296, super quotient: 187 states / 2962 actions
 explored: 100 %
 AR stats: avg MDP size: 187, iterations: 20695
@@ -285,16 +285,16 @@ AR stats: avg MDP size: 187, iterations: 20695
 optimal: 2.01766
 --------------------
 
-2023-04-26 01:48:37,875 - synthesizer_pomdp.py - Added memory nodes for observation based on Storm data
+2023-04-27 01:46:49,731 - synthesizer_pomdp.py - Added memory nodes for observation based on Storm data
 {0: 5, 1: 2, 2: 2, 3: 2, 4: 2, 5: 2, 6: 1}
-2023-04-26 01:48:37,875 - quotient_pomdp.py - Unfolding POMDP using the following memory allocation vector: [5, 2, 2, 2, 2, 2, 1] ...
-2023-04-26 01:48:37,876 - quotient_pomdp.py - Constructed quotient MDP having 265 states and 5245 actions.
-2023-04-26 01:48:38,218 - storm_pomdp_control.py - Main family based on data from Storm: reduced design space from 327680000000000000 to 5000000000000
+2023-04-27 01:46:49,731 - quotient_pomdp.py - Unfolding POMDP using the following memory allocation vector: [5, 2, 2, 2, 2, 2, 1] ...
+2023-04-27 01:46:49,731 - quotient_pomdp.py - Constructed quotient MDP having 265 states and 5245 actions.
+2023-04-27 01:46:50,069 - storm_pomdp_control.py - Main family based on data from Storm: reduced design space from 327680000000000000 to 5000000000000
 {0: [1, 3, 2, 0], 1: [2], 2: [0], 3: [3], 4: [0], 5: [1]} 
 
 {0: [1, 3, 2, 0], 1: [2], 2: [0], 3: [3], 4: [0], 5: [1]}
-2023-04-26 01:48:38,219 - synthesizer.py - Synthesis initiated.
+2023-04-27 01:46:50,069 - synthesizer.py - Synthesis initiated.
 -----------PAYNT-----------               
-Value = 2.0310221423271466 | Time elapsed = 38.0s | FSC size = 32
+Value = 2.0310221423271466 | Time elapsed = 37.7s | FSC size = 32
 FSC = A(0,0)={'(W0)'}, A(0,1)={'(W0)'}, A(0,2)={'(E0)'}, A(0,3)={'(N0)'}, A(0,4)={'(S0)'}, M(0,0)=4, M(0,1)=0, M(0,2)=2, M(0,3)=3, M(0,4)=0, A(1,0)={'(E0)'}, A(1,1)={'(E0)'}, M(1,0)=2, M(1,1)=2, A(2,0)={'(N0)'}, A(2,1)={'(N0)'}, M(2,0)=3, M(2,1)=3, A(3,0)={'(W0)'}, A(3,1)={'(W0)'}, M(3,0)=1, M(3,1)=1, M(4,0)=1, M(4,1)=0, A(5,0)={'(S0)'}, A(5,1)={'(S0)'}, M(5,0)=4, M(5,1)=1
 

@@ -1,18 +1,18 @@
-2023-04-26 16:28:37,301 - cli.py - This is Paynt version 0.1.0.
-2023-04-26 16:28:37,304 - sketch.py - loading sketch from /mnt/d/src/PP/synthesis-CAV/experiments/../models/pomdp/storm-integration/query-s3/sketch.templ ...
-2023-04-26 16:28:37,372 - prism_parser.py - loading properties from /mnt/d/src/PP/synthesis-CAV/experiments/../models/pomdp/storm-integration/query-s3/sketch.props ...
-2023-04-26 16:28:37,386 - prism_parser.py - found the following specification: constraints: none, optimality objective: R[exp]{"reward"}max=? [F "discount_sink"] 
-2023-04-26 16:28:37,395 - sketch.py - constructed explicit quotient having 108 states and 320 actions
-2023-04-26 16:28:37,396 - sketch.py - found the following specification constraints: none, optimality objective: R[exp]{"reward"}max=? [F "discount_sink"] 
-2023-04-26 16:28:37,402 - quotient_pomdp.py - Constructed POMDP having 6 observations.
-2023-04-26 16:28:37,407 - quotient_pomdp.py - Unfolding POMDP using the following memory allocation vector: [1, 1, 1, 1, 1, 1] ...
-2023-04-26 16:28:37,409 - quotient_pomdp.py - Constructed quotient MDP having 108 states and 320 actions.
-2023-04-26 16:28:37,413 - synthesizer_pomdp.py - Storm pomdp option enabled
-2023-04-26 16:28:37,413 - synthesizer_pomdp.py - Storm settings: iterative - (None, None, None), get_storm_result - None, storm_options - cutoff, prune_storm - False, unfold_strategy - (True, False), use_storm_cutoffs - False
-2023-04-26 16:28:37,421 - storm_pomdp_control.py - starting Storm POMDP analysis
+2023-04-27 10:16:47,661 - cli.py - This is Paynt version 0.1.0.
+2023-04-27 10:16:47,663 - sketch.py - loading sketch from /mnt/d/src/PP/synthesis-CAV/experiments/../models/pomdp/storm-integration/query-s3/sketch.templ ...
+2023-04-27 10:16:47,728 - prism_parser.py - loading properties from /mnt/d/src/PP/synthesis-CAV/experiments/../models/pomdp/storm-integration/query-s3/sketch.props ...
+2023-04-27 10:16:47,742 - prism_parser.py - found the following specification: constraints: none, optimality objective: R[exp]{"reward"}max=? [F "discount_sink"] 
+2023-04-27 10:16:47,751 - sketch.py - constructed explicit quotient having 108 states and 320 actions
+2023-04-27 10:16:47,751 - sketch.py - found the following specification constraints: none, optimality objective: R[exp]{"reward"}max=? [F "discount_sink"] 
+2023-04-27 10:16:47,757 - quotient_pomdp.py - Constructed POMDP having 6 observations.
+2023-04-27 10:16:47,761 - quotient_pomdp.py - Unfolding POMDP using the following memory allocation vector: [1, 1, 1, 1, 1, 1] ...
+2023-04-27 10:16:47,763 - quotient_pomdp.py - Constructed quotient MDP having 108 states and 320 actions.
+2023-04-27 10:16:47,767 - synthesizer_pomdp.py - Storm pomdp option enabled
+2023-04-27 10:16:47,767 - synthesizer_pomdp.py - Storm settings: iterative - (None, None, None), get_storm_result - None, storm_options - cutoff, prune_storm - False, unfold_strategy - (True, False), use_storm_cutoffs - False
+2023-04-27 10:16:47,774 - storm_pomdp_control.py - starting Storm POMDP analysis
 Finished exploring Underapproximation MDP.
  Start analysis...
-2023-04-26 16:28:39,338 - storm_pomdp_control.py - Storm POMDP analysis completed
+2023-04-27 10:16:49,657 - storm_pomdp_control.py - Storm POMDP analysis completed
 {0: [0, 1, 2], 1: [0, 1, 2], 2: [0, 1, 2], 3: [0], 4: [0, 1, 2], 5: [0]}
 {0: [0, 1, 2], 1: [0, 1, 2], 2: [0, 1, 2], 3: [0], 4: [0, 1, 2], 5: [0]}
 {0: [0, 1, 2], 1: [0, 1, 2], 2: [0, 1, 2], 3: [0], 4: [0, 1, 2], 5: [0]}
@@ -2663,11 +2663,11 @@ FSC (dot) = digraph model {
 }
 
 
-2023-04-26 16:28:39,349 - storm_pomdp_control.py - Main family based on data from Storm: reduced design space from 81 to 27
+2023-04-27 10:16:49,669 - storm_pomdp_control.py - Main family based on data from Storm: reduced design space from 81 to 27
 {0: [1, 2, 0], 1: [0, 1, 2], 2: [1, 2, 0], 3: [0], 4: [0, 1, 2], 5: [0]} 
 
 {0: [1, 2, 0], 1: [0, 1, 2], 2: [1, 2, 0], 3: [0], 4: [0]}
-2023-04-26 16:28:39,349 - synthesizer.py - Synthesis initiated.
+2023-04-27 10:16:49,669 - synthesizer.py - Synthesis initiated.
 -----------PAYNT-----------               
 Value = 334.39813120972815 | Time elapsed = 0.1s | FSC size = 12
 FSC = A(0,0)={'(Query-2)'}, A(1,0)={'(Query-2)'}, A(2,0)={'(Query-2)'}, A(4,0)={'(Query-0)'}
@@ -2692,14 +2692,14 @@ FSC = A(0,0)={'(Query-1)'}, A(1,0)={'(Query-2)'}, A(2,0)={'(Query-0)'}, A(4,0)={
 Value = 393.5543332568159 | Time elapsed = 0.3s | FSC size = 12
 FSC = A(0,0)={'(Query-1)'}, A(1,0)={'(Query-0)'}, A(2,0)={'(Query-2)'}, A(4,0)={'(Query-0)'}
 
-2023-04-26 16:28:39,676 - synthesizer_ar_storm.py - Main family synthesis done
-2023-04-26 16:28:39,676 - synthesizer_ar_storm.py - Subfamilies buffer contains: 1 families
+2023-04-27 10:16:49,989 - synthesizer_ar_storm.py - Main family synthesis done
+2023-04-27 10:16:49,989 - synthesizer_ar_storm.py - Subfamilies buffer contains: 1 families
 --------------------
 Synthesis summary
 
 optimality objective: R[exp]{"reward"}max=? [F "discount_sink"] 
 
-method: AR, synthesis time: 0.73 s
+method: AR, synthesis time: 0.7 s
 number of holes: 4, family size: 81, super quotient: 108 states / 320 actions
 explored: 100 %
 AR stats: avg MDP size: 107, iterations: 88
@@ -2707,280 +2707,280 @@ AR stats: avg MDP size: 107, iterations: 88
 optimal: 393.554333
 --------------------
 
-2023-04-26 16:28:40,090 - synthesizer_pomdp.py - Added memory nodes for observation based on Storm data
+2023-04-27 10:16:50,380 - synthesizer_pomdp.py - Added memory nodes for observation based on Storm data
 {0: 3, 1: 3, 2: 3, 3: 1, 4: 1, 5: 1}
-2023-04-26 16:28:40,090 - quotient_pomdp.py - Unfolding POMDP using the following memory allocation vector: [3, 3, 3, 1, 1, 1] ...
-2023-04-26 16:28:40,092 - quotient_pomdp.py - Constructed quotient MDP having 266 states and 2378 actions.
-2023-04-26 16:28:40,165 - storm_pomdp_control.py - Main family based on data from Storm: reduced design space from 3486784401 to 1162261467
+2023-04-27 10:16:50,380 - quotient_pomdp.py - Unfolding POMDP using the following memory allocation vector: [3, 3, 3, 1, 1, 1] ...
+2023-04-27 10:16:50,382 - quotient_pomdp.py - Constructed quotient MDP having 266 states and 2378 actions.
+2023-04-27 10:16:50,450 - storm_pomdp_control.py - Main family based on data from Storm: reduced design space from 3486784401 to 1162261467
 {0: [1, 2, 0], 1: [0, 1, 2], 2: [1, 2, 0], 3: [0], 4: [0, 1, 2], 5: [0]} 
 
 {0: [1, 2, 0], 1: [0, 1, 2], 2: [1, 2, 0], 3: [0], 4: [0]}
-2023-04-26 16:28:40,165 - synthesizer.py - Synthesis initiated.
+2023-04-27 10:16:50,450 - synthesizer.py - Synthesis initiated.
 -----------PAYNT-----------               
-Value = 413.01214438121855 | Time elapsed = 1.7s | FSC size = 24
+Value = 413.01214438121855 | Time elapsed = 1.6s | FSC size = 24
 FSC = A(0,0)={'(Query-2)'}, A(0,1)={'(Query-2)'}, A(0,2)={'(Query-1)'}, M(0,0)=2, M(0,1)=0, M(0,2)=0, A(1,0)={'(Query-2)'}, A(1,1)={'(Query-2)'}, A(1,2)={'(Query-2)'}, M(1,0)=2, M(1,1)=0, M(1,2)=2, A(2,0)={'(Query-2)'}, A(2,1)={'(Query-2)'}, A(2,2)={'(Query-2)'}, M(2,0)=2, M(2,1)=0, M(2,2)=2, A(4,0)={'(Query-0)'}, M(4,0)=2
 
 -----------PAYNT-----------               
-Value = 422.59182329042056 | Time elapsed = 56.4s | FSC size = 24
+Value = 422.59182329042056 | Time elapsed = 54.2s | FSC size = 24
 FSC = A(0,0)={'(Query-2)'}, A(0,1)={'(Query-1)'}, A(0,2)={'(Query-0)'}, M(0,0)=0, M(0,1)=2, M(0,2)=1, A(1,0)={'(Query-2)'}, A(1,1)={'(Query-2)'}, A(1,2)={'(Query-2)'}, M(1,0)=2, M(1,1)=2, M(1,2)=2, A(2,0)={'(Query-2)'}, A(2,1)={'(Query-2)'}, A(2,2)={'(Query-2)'}, M(2,0)=0, M(2,1)=2, M(2,2)=2, A(4,0)={'(Query-0)'}, M(4,0)=1
 
 -----------PAYNT-----------               
-Value = 422.8843724512113 | Time elapsed = 56.5s | FSC size = 24
+Value = 422.8843724512113 | Time elapsed = 54.2s | FSC size = 24
 FSC = A(0,0)={'(Query-2)'}, A(0,1)={'(Query-1)'}, A(0,2)={'(Query-0)'}, M(0,0)=2, M(0,1)=2, M(0,2)=1, A(1,0)={'(Query-2)'}, A(1,1)={'(Query-2)'}, A(1,2)={'(Query-2)'}, M(1,0)=2, M(1,1)=2, M(1,2)=2, A(2,0)={'(Query-2)'}, A(2,1)={'(Query-2)'}, A(2,2)={'(Query-2)'}, M(2,0)=2, M(2,1)=2, M(2,2)=2, A(4,0)={'(Query-0)'}, M(4,0)=0
 
 -----------PAYNT-----------               
-Value = 423.0222298092899 | Time elapsed = 56.5s | FSC size = 24
+Value = 423.0222298092899 | Time elapsed = 54.3s | FSC size = 24
 FSC = A(0,0)={'(Query-2)'}, A(0,1)={'(Query-1)'}, A(0,2)={'(Query-0)'}, M(0,0)=1, M(0,1)=2, M(0,2)=1, A(1,0)={'(Query-2)'}, A(1,1)={'(Query-2)'}, A(1,2)={'(Query-2)'}, M(1,0)=2, M(1,1)=2, M(1,2)=2, A(2,0)={'(Query-2)'}, A(2,1)={'(Query-2)'}, A(2,2)={'(Query-2)'}, M(2,0)=2, M(2,1)=2, M(2,2)=2, A(4,0)={'(Query-0)'}, M(4,0)=0
 
 -----------PAYNT-----------               
-Value = 423.0903703412313 | Time elapsed = 56.6s | FSC size = 24
+Value = 423.0903703412313 | Time elapsed = 54.3s | FSC size = 24
 FSC = A(0,0)={'(Query-2)'}, A(0,1)={'(Query-1)'}, A(0,2)={'(Query-0)'}, M(0,0)=1, M(0,1)=2, M(0,2)=1, A(1,0)={'(Query-2)'}, A(1,1)={'(Query-2)'}, A(1,2)={'(Query-2)'}, M(1,0)=2, M(1,1)=2, M(1,2)=2, A(2,0)={'(Query-2)'}, A(2,1)={'(Query-2)'}, A(2,2)={'(Query-2)'}, M(2,0)=1, M(2,1)=2, M(2,2)=2, A(4,0)={'(Query-0)'}, M(4,0)=0
 
 -----------PAYNT-----------               
-Value = 426.32735816280683 | Time elapsed = 56.8s | FSC size = 24
+Value = 426.32735816280683 | Time elapsed = 54.5s | FSC size = 24
 FSC = A(0,0)={'(Query-2)'}, A(0,1)={'(Query-1)'}, A(0,2)={'(Query-0)'}, M(0,0)=2, M(0,1)=0, M(0,2)=1, A(1,0)={'(Query-2)'}, A(1,1)={'(Query-2)'}, A(1,2)={'(Query-2)'}, M(1,0)=2, M(1,1)=2, M(1,2)=2, A(2,0)={'(Query-2)'}, A(2,1)={'(Query-2)'}, A(2,2)={'(Query-2)'}, M(2,0)=2, M(2,1)=2, M(2,2)=2, A(4,0)={'(Query-0)'}, M(4,0)=1
 
 -----------PAYNT-----------               
-Value = 426.49858589221685 | Time elapsed = 58.9s | FSC size = 24
+Value = 426.49858589221685 | Time elapsed = 56.6s | FSC size = 24
 FSC = A(0,0)={'(Query-2)'}, A(0,1)={'(Query-1)'}, A(0,2)={'(Query-0)'}, M(0,0)=1, M(0,1)=2, M(0,2)=0, A(1,0)={'(Query-2)'}, A(1,1)={'(Query-2)'}, A(1,2)={'(Query-2)'}, M(1,0)=2, M(1,1)=1, M(1,2)=1, A(2,0)={'(Query-2)'}, A(2,1)={'(Query-2)'}, A(2,2)={'(Query-2)'}, M(2,0)=1, M(2,1)=2, M(2,2)=2, A(4,0)={'(Query-0)'}, M(4,0)=0
 
 -----------PAYNT-----------               
-Value = 427.5078955914744 | Time elapsed = 59.7s | FSC size = 24
+Value = 427.5078955914744 | Time elapsed = 57.3s | FSC size = 24
 FSC = A(0,0)={'(Query-2)'}, A(0,1)={'(Query-1)'}, A(0,2)={'(Query-0)'}, M(0,0)=2, M(0,1)=0, M(0,2)=1, A(1,0)={'(Query-2)'}, A(1,1)={'(Query-2)'}, A(1,2)={'(Query-2)'}, M(1,0)=1, M(1,1)=2, M(1,2)=2, A(2,0)={'(Query-2)'}, A(2,1)={'(Query-2)'}, A(2,2)={'(Query-2)'}, M(2,0)=2, M(2,1)=2, M(2,2)=2, A(4,0)={'(Query-0)'}, M(4,0)=2
 
 -----------PAYNT-----------               
-Value = 428.38444702133154 | Time elapsed = 59.7s | FSC size = 24
+Value = 428.38444702133154 | Time elapsed = 57.3s | FSC size = 24
 FSC = A(0,0)={'(Query-2)'}, A(0,1)={'(Query-1)'}, A(0,2)={'(Query-0)'}, M(0,0)=2, M(0,1)=0, M(0,2)=1, A(1,0)={'(Query-2)'}, A(1,1)={'(Query-2)'}, A(1,2)={'(Query-2)'}, M(1,0)=1, M(1,1)=2, M(1,2)=2, A(2,0)={'(Query-2)'}, A(2,1)={'(Query-2)'}, A(2,2)={'(Query-2)'}, M(2,0)=2, M(2,1)=2, M(2,2)=2, A(4,0)={'(Query-0)'}, M(4,0)=1
 
 -----------PAYNT-----------               
-Value = 428.41925662654404 | Time elapsed = 64.6s | FSC size = 24
+Value = 428.41925662654404 | Time elapsed = 62.1s | FSC size = 24
 FSC = A(0,0)={'(Query-2)'}, A(0,1)={'(Query-1)'}, A(0,2)={'(Query-0)'}, M(0,0)=1, M(0,1)=2, M(0,2)=1, A(1,0)={'(Query-2)'}, A(1,1)={'(Query-2)'}, A(1,2)={'(Query-2)'}, M(1,0)=2, M(1,1)=2, M(1,2)=1, A(2,0)={'(Query-2)'}, A(2,1)={'(Query-2)'}, A(2,2)={'(Query-2)'}, M(2,0)=2, M(2,1)=1, M(2,2)=2, A(4,0)={'(Query-0)'}, M(4,0)=0
 
 -----------PAYNT-----------               
-Value = 428.49564717772904 | Time elapsed = 64.7s | FSC size = 24
+Value = 428.49564717772904 | Time elapsed = 62.2s | FSC size = 24
 FSC = A(0,0)={'(Query-2)'}, A(0,1)={'(Query-1)'}, A(0,2)={'(Query-0)'}, M(0,0)=1, M(0,1)=2, M(0,2)=1, A(1,0)={'(Query-2)'}, A(1,1)={'(Query-2)'}, A(1,2)={'(Query-2)'}, M(1,0)=2, M(1,1)=2, M(1,2)=1, A(2,0)={'(Query-2)'}, A(2,1)={'(Query-2)'}, A(2,2)={'(Query-2)'}, M(2,0)=1, M(2,1)=1, M(2,2)=2, A(4,0)={'(Query-0)'}, M(4,0)=0
 
 -----------PAYNT-----------               
-Value = 428.60113155399983 | Time elapsed = 65.0s | FSC size = 24
+Value = 428.60113155399983 | Time elapsed = 62.5s | FSC size = 24
 FSC = A(0,0)={'(Query-2)'}, A(0,1)={'(Query-1)'}, A(0,2)={'(Query-0)'}, M(0,0)=1, M(0,1)=2, M(0,2)=0, A(1,0)={'(Query-2)'}, A(1,1)={'(Query-2)'}, A(1,2)={'(Query-2)'}, M(1,0)=2, M(1,1)=2, M(1,2)=1, A(2,0)={'(Query-2)'}, A(2,1)={'(Query-2)'}, A(2,2)={'(Query-2)'}, M(2,0)=1, M(2,1)=1, M(2,2)=2, A(4,0)={'(Query-0)'}, M(4,0)=0
 
 -----------PAYNT-----------               
-Value = 430.11797183311546 | Time elapsed = 65.7s | FSC size = 24
+Value = 430.11797183311546 | Time elapsed = 63.2s | FSC size = 24
 FSC = A(0,0)={'(Query-2)'}, A(0,1)={'(Query-1)'}, A(0,2)={'(Query-0)'}, M(0,0)=1, M(0,1)=2, M(0,2)=0, A(1,0)={'(Query-2)'}, A(1,1)={'(Query-2)'}, A(1,2)={'(Query-2)'}, M(1,0)=2, M(1,1)=1, M(1,2)=1, A(2,0)={'(Query-2)'}, A(2,1)={'(Query-2)'}, A(2,2)={'(Query-2)'}, M(2,0)=1, M(2,1)=1, M(2,2)=2, A(4,0)={'(Query-0)'}, M(4,0)=1
 
 -----------PAYNT-----------               
-Value = 430.44192711494543 | Time elapsed = 65.8s | FSC size = 24
+Value = 430.44192711494543 | Time elapsed = 63.2s | FSC size = 24
 FSC = A(0,0)={'(Query-2)'}, A(0,1)={'(Query-1)'}, A(0,2)={'(Query-0)'}, M(0,0)=1, M(0,1)=2, M(0,2)=0, A(1,0)={'(Query-2)'}, A(1,1)={'(Query-2)'}, A(1,2)={'(Query-2)'}, M(1,0)=2, M(1,1)=1, M(1,2)=1, A(2,0)={'(Query-2)'}, A(2,1)={'(Query-2)'}, A(2,2)={'(Query-2)'}, M(2,0)=1, M(2,1)=1, M(2,2)=2, A(4,0)={'(Query-0)'}, M(4,0)=0
 
 -----------PAYNT-----------               
-Value = 430.44501509143464 | Time elapsed = 66.6s | FSC size = 24
+Value = 430.44501509143464 | Time elapsed = 64.1s | FSC size = 24
 FSC = A(0,0)={'(Query-2)'}, A(0,1)={'(Query-1)'}, A(0,2)={'(Query-0)'}, M(0,0)=2, M(0,1)=0, M(0,2)=1, A(1,0)={'(Query-2)'}, A(1,1)={'(Query-2)'}, A(1,2)={'(Query-2)'}, M(1,0)=1, M(1,1)=2, M(1,2)=2, A(2,0)={'(Query-2)'}, A(2,1)={'(Query-2)'}, A(2,2)={'(Query-2)'}, M(2,0)=2, M(2,1)=1, M(2,2)=2, A(4,0)={'(Query-0)'}, M(4,0)=1
 
 -----------PAYNT-----------               
-Value = 430.746520715347 | Time elapsed = 165.9s | FSC size = 24
+Value = 430.746520715347 | Time elapsed = 160.6s | FSC size = 24
 FSC = A(0,0)={'(Query-2)'}, A(0,1)={'(Query-0)'}, A(0,2)={'(Query-2)'}, M(0,0)=0, M(0,1)=2, M(0,2)=1, A(1,0)={'(Query-2)'}, A(1,1)={'(Query-2)'}, A(1,2)={'(Query-2)'}, M(1,0)=2, M(1,1)=2, M(1,2)=2, A(2,0)={'(Query-2)'}, A(2,1)={'(Query-2)'}, A(2,2)={'(Query-1)'}, M(2,0)=0, M(2,1)=2, M(2,2)=1, A(4,0)={'(Query-0)'}, M(4,0)=2
 
 -----------PAYNT-----------               
-Value = 430.9399805153117 | Time elapsed = 166.0s | FSC size = 24
+Value = 430.9399805153117 | Time elapsed = 160.6s | FSC size = 24
 FSC = A(0,0)={'(Query-2)'}, A(0,1)={'(Query-0)'}, A(0,2)={'(Query-2)'}, M(0,0)=2, M(0,1)=2, M(0,2)=1, A(1,0)={'(Query-2)'}, A(1,1)={'(Query-2)'}, A(1,2)={'(Query-2)'}, M(1,0)=2, M(1,1)=2, M(1,2)=2, A(2,0)={'(Query-2)'}, A(2,1)={'(Query-2)'}, A(2,2)={'(Query-1)'}, M(2,0)=2, M(2,1)=2, M(2,2)=1, A(4,0)={'(Query-0)'}, M(4,0)=0
 
 -----------PAYNT-----------               
-Value = 430.99556864675935 | Time elapsed = 166.1s | FSC size = 24
+Value = 430.99556864675935 | Time elapsed = 160.7s | FSC size = 24
 FSC = A(0,0)={'(Query-2)'}, A(0,1)={'(Query-0)'}, A(0,2)={'(Query-2)'}, M(0,0)=2, M(0,1)=2, M(0,2)=1, A(1,0)={'(Query-2)'}, A(1,1)={'(Query-2)'}, A(1,2)={'(Query-2)'}, M(1,0)=2, M(1,1)=2, M(1,2)=2, A(2,0)={'(Query-2)'}, A(2,1)={'(Query-2)'}, A(2,2)={'(Query-1)'}, M(2,0)=1, M(2,1)=2, M(2,2)=1, A(4,0)={'(Query-0)'}, M(4,0)=0
 
 -----------PAYNT-----------               
-Value = 431.1101465972807 | Time elapsed = 167.1s | FSC size = 24
+Value = 431.1101465972807 | Time elapsed = 161.7s | FSC size = 24
 FSC = A(0,0)={'(Query-2)'}, A(0,1)={'(Query-0)'}, A(0,2)={'(Query-2)'}, M(0,0)=2, M(0,1)=2, M(0,2)=1, A(1,0)={'(Query-2)'}, A(1,1)={'(Query-2)'}, A(1,2)={'(Query-2)'}, M(1,0)=1, M(1,1)=2, M(1,2)=2, A(2,0)={'(Query-2)'}, A(2,1)={'(Query-2)'}, A(2,2)={'(Query-1)'}, M(2,0)=2, M(2,1)=2, M(2,2)=1, A(4,0)={'(Query-0)'}, M(4,0)=0
 
 -----------PAYNT-----------               
-Value = 431.1657347287283 | Time elapsed = 167.2s | FSC size = 24
+Value = 431.1657347287283 | Time elapsed = 161.8s | FSC size = 24
 FSC = A(0,0)={'(Query-2)'}, A(0,1)={'(Query-0)'}, A(0,2)={'(Query-2)'}, M(0,0)=2, M(0,1)=2, M(0,2)=1, A(1,0)={'(Query-2)'}, A(1,1)={'(Query-2)'}, A(1,2)={'(Query-2)'}, M(1,0)=1, M(1,1)=2, M(1,2)=2, A(2,0)={'(Query-2)'}, A(2,1)={'(Query-2)'}, A(2,2)={'(Query-1)'}, M(2,0)=1, M(2,1)=2, M(2,2)=1, A(4,0)={'(Query-0)'}, M(4,0)=0
 
 -----------PAYNT-----------               
-Value = 432.9700554680164 | Time elapsed = 167.4s | FSC size = 24
+Value = 432.9700554680164 | Time elapsed = 162.0s | FSC size = 24
 FSC = A(0,0)={'(Query-2)'}, A(0,1)={'(Query-0)'}, A(0,2)={'(Query-2)'}, M(0,0)=2, M(0,1)=0, M(0,2)=1, A(1,0)={'(Query-2)'}, A(1,1)={'(Query-2)'}, A(1,2)={'(Query-2)'}, M(1,0)=1, M(1,1)=2, M(1,2)=2, A(2,0)={'(Query-2)'}, A(2,1)={'(Query-2)'}, A(2,2)={'(Query-1)'}, M(2,0)=2, M(2,1)=2, M(2,2)=1, A(4,0)={'(Query-0)'}, M(4,0)=2
 
 -----------PAYNT-----------               
-Value = 433.20596620109654 | Time elapsed = 167.5s | FSC size = 24
+Value = 433.20596620109654 | Time elapsed = 162.0s | FSC size = 24
 FSC = A(0,0)={'(Query-2)'}, A(0,1)={'(Query-0)'}, A(0,2)={'(Query-2)'}, M(0,0)=2, M(0,1)=0, M(0,2)=1, A(1,0)={'(Query-2)'}, A(1,1)={'(Query-2)'}, A(1,2)={'(Query-2)'}, M(1,0)=1, M(1,1)=2, M(1,2)=2, A(2,0)={'(Query-2)'}, A(2,1)={'(Query-2)'}, A(2,2)={'(Query-1)'}, M(2,0)=2, M(2,1)=2, M(2,2)=1, A(4,0)={'(Query-0)'}, M(4,0)=0
 
 -----------PAYNT-----------               
-Value = 433.2105412843439 | Time elapsed = 167.5s | FSC size = 24
+Value = 433.2105412843439 | Time elapsed = 162.1s | FSC size = 24
 FSC = A(0,0)={'(Query-2)'}, A(0,1)={'(Query-0)'}, A(0,2)={'(Query-2)'}, M(0,0)=1, M(0,1)=0, M(0,2)=1, A(1,0)={'(Query-2)'}, A(1,1)={'(Query-2)'}, A(1,2)={'(Query-2)'}, M(1,0)=1, M(1,1)=2, M(1,2)=2, A(2,0)={'(Query-2)'}, A(2,1)={'(Query-2)'}, A(2,2)={'(Query-1)'}, M(2,0)=2, M(2,1)=2, M(2,2)=1, A(4,0)={'(Query-0)'}, M(4,0)=2
 
 -----------PAYNT-----------               
-Value = 433.37661564683634 | Time elapsed = 167.6s | FSC size = 24
+Value = 433.37661564683634 | Time elapsed = 162.1s | FSC size = 24
 FSC = A(0,0)={'(Query-2)'}, A(0,1)={'(Query-0)'}, A(0,2)={'(Query-2)'}, M(0,0)=1, M(0,1)=0, M(0,2)=1, A(1,0)={'(Query-2)'}, A(1,1)={'(Query-2)'}, A(1,2)={'(Query-2)'}, M(1,0)=1, M(1,1)=2, M(1,2)=2, A(2,0)={'(Query-2)'}, A(2,1)={'(Query-2)'}, A(2,2)={'(Query-1)'}, M(2,0)=2, M(2,1)=2, M(2,2)=1, A(4,0)={'(Query-0)'}, M(4,0)=0
 
 -----------PAYNT-----------               
-Value = 434.65703307198424 | Time elapsed = 167.7s | FSC size = 24
+Value = 434.65703307198424 | Time elapsed = 162.2s | FSC size = 24
 FSC = A(0,0)={'(Query-2)'}, A(0,1)={'(Query-0)'}, A(0,2)={'(Query-2)'}, M(0,0)=2, M(0,1)=0, M(0,2)=1, A(1,0)={'(Query-2)'}, A(1,1)={'(Query-2)'}, A(1,2)={'(Query-2)'}, M(1,0)=1, M(1,1)=2, M(1,2)=2, A(2,0)={'(Query-2)'}, A(2,1)={'(Query-2)'}, A(2,2)={'(Query-1)'}, M(2,0)=1, M(2,1)=2, M(2,2)=1, A(4,0)={'(Query-0)'}, M(4,0)=2
 
 -----------PAYNT-----------               
-Value = 434.9079440266516 | Time elapsed = 167.7s | FSC size = 24
+Value = 434.9079440266516 | Time elapsed = 162.3s | FSC size = 24
 FSC = A(0,0)={'(Query-2)'}, A(0,1)={'(Query-0)'}, A(0,2)={'(Query-2)'}, M(0,0)=2, M(0,1)=0, M(0,2)=1, A(1,0)={'(Query-2)'}, A(1,1)={'(Query-2)'}, A(1,2)={'(Query-2)'}, M(1,0)=1, M(1,1)=2, M(1,2)=2, A(2,0)={'(Query-2)'}, A(2,1)={'(Query-2)'}, A(2,2)={'(Query-1)'}, M(2,0)=1, M(2,1)=2, M(2,2)=1, A(4,0)={'(Query-0)'}, M(4,0)=0
 
 -----------PAYNT-----------               
-Value = 435.1017961183963 | Time elapsed = 167.8s | FSC size = 24
+Value = 435.1017961183963 | Time elapsed = 162.3s | FSC size = 24
 FSC = A(0,0)={'(Query-2)'}, A(0,1)={'(Query-0)'}, A(0,2)={'(Query-2)'}, M(0,0)=1, M(0,1)=0, M(0,2)=1, A(1,0)={'(Query-2)'}, A(1,1)={'(Query-2)'}, A(1,2)={'(Query-2)'}, M(1,0)=1, M(1,1)=2, M(1,2)=2, A(2,0)={'(Query-2)'}, A(2,1)={'(Query-2)'}, A(2,2)={'(Query-1)'}, M(2,0)=1, M(2,1)=2, M(2,2)=1, A(4,0)={'(Query-0)'}, M(4,0)=2
 
 -----------PAYNT-----------               
-Value = 435.29137743784753 | Time elapsed = 167.8s | FSC size = 24
+Value = 435.29137743784753 | Time elapsed = 162.4s | FSC size = 24
 FSC = A(0,0)={'(Query-2)'}, A(0,1)={'(Query-0)'}, A(0,2)={'(Query-2)'}, M(0,0)=1, M(0,1)=0, M(0,2)=1, A(1,0)={'(Query-2)'}, A(1,1)={'(Query-2)'}, A(1,2)={'(Query-2)'}, M(1,0)=1, M(1,1)=2, M(1,2)=2, A(2,0)={'(Query-2)'}, A(2,1)={'(Query-2)'}, A(2,2)={'(Query-1)'}, M(2,0)=1, M(2,1)=2, M(2,2)=1, A(4,0)={'(Query-0)'}, M(4,0)=0
 
 -----------PAYNT-----------               
-Value = 436.51270565194994 | Time elapsed = 170.9s | FSC size = 24
+Value = 436.51270565194994 | Time elapsed = 165.4s | FSC size = 24
 FSC = A(0,0)={'(Query-2)'}, A(0,1)={'(Query-0)'}, A(0,2)={'(Query-2)'}, M(0,0)=0, M(0,1)=2, M(0,2)=1, A(1,0)={'(Query-2)'}, A(1,1)={'(Query-2)'}, A(1,2)={'(Query-2)'}, M(1,0)=2, M(1,1)=2, M(1,2)=1, A(2,0)={'(Query-2)'}, A(2,1)={'(Query-2)'}, A(2,2)={'(Query-1)'}, M(2,0)=0, M(2,1)=2, M(2,2)=1, A(4,0)={'(Query-0)'}, M(4,0)=2
 
 -----------PAYNT-----------               
-Value = 436.55642253615315 | Time elapsed = 171.1s | FSC size = 24
+Value = 436.55642253615315 | Time elapsed = 165.5s | FSC size = 24
 FSC = A(0,0)={'(Query-2)'}, A(0,1)={'(Query-0)'}, A(0,2)={'(Query-2)'}, M(0,0)=2, M(0,1)=2, M(0,2)=1, A(1,0)={'(Query-2)'}, A(1,1)={'(Query-2)'}, A(1,2)={'(Query-2)'}, M(1,0)=2, M(1,1)=2, M(1,2)=1, A(2,0)={'(Query-2)'}, A(2,1)={'(Query-2)'}, A(2,2)={'(Query-1)'}, M(2,0)=1, M(2,1)=2, M(2,2)=1, A(4,0)={'(Query-0)'}, M(4,0)=0
 
 -----------PAYNT-----------               
-Value = 436.6988270724914 | Time elapsed = 171.4s | FSC size = 24
+Value = 436.6988270724914 | Time elapsed = 165.9s | FSC size = 24
 FSC = A(0,0)={'(Query-2)'}, A(0,1)={'(Query-0)'}, A(0,2)={'(Query-2)'}, M(0,0)=2, M(0,1)=2, M(0,2)=1, A(1,0)={'(Query-2)'}, A(1,1)={'(Query-2)'}, A(1,2)={'(Query-2)'}, M(1,0)=1, M(1,1)=2, M(1,2)=1, A(2,0)={'(Query-2)'}, A(2,1)={'(Query-2)'}, A(2,2)={'(Query-1)'}, M(2,0)=2, M(2,1)=2, M(2,2)=1, A(4,0)={'(Query-0)'}, M(4,0)=0
 
 -----------PAYNT-----------               
-Value = 436.7623070472281 | Time elapsed = 171.5s | FSC size = 24
+Value = 436.7623070472281 | Time elapsed = 165.9s | FSC size = 24
 FSC = A(0,0)={'(Query-2)'}, A(0,1)={'(Query-0)'}, A(0,2)={'(Query-2)'}, M(0,0)=2, M(0,1)=2, M(0,2)=1, A(1,0)={'(Query-2)'}, A(1,1)={'(Query-2)'}, A(1,2)={'(Query-2)'}, M(1,0)=1, M(1,1)=2, M(1,2)=1, A(2,0)={'(Query-2)'}, A(2,1)={'(Query-2)'}, A(2,2)={'(Query-1)'}, M(2,0)=1, M(2,1)=2, M(2,2)=1, A(4,0)={'(Query-0)'}, M(4,0)=0
 
 -----------PAYNT-----------               
-Value = 437.1635726158346 | Time elapsed = 179.6s | FSC size = 24
+Value = 437.1635726158346 | Time elapsed = 174.3s | FSC size = 24
 FSC = A(0,0)={'(Query-1)'}, A(0,1)={'(Query-0)'}, A(0,2)={'(Query-2)'}, M(0,0)=2, M(0,1)=0, M(0,2)=1, A(1,0)={'(Query-2)'}, A(1,1)={'(Query-2)'}, A(1,2)={'(Query-2)'}, M(1,0)=1, M(1,1)=2, M(1,2)=2, A(2,0)={'(Query-2)'}, A(2,1)={'(Query-2)'}, A(2,2)={'(Query-1)'}, M(2,0)=2, M(2,1)=2, M(2,2)=1, A(4,0)={'(Query-0)'}, M(4,0)=2
 
 -----------PAYNT-----------               
-Value = 437.3376273558783 | Time elapsed = 179.6s | FSC size = 24
+Value = 437.3376273558783 | Time elapsed = 174.3s | FSC size = 24
 FSC = A(0,0)={'(Query-1)'}, A(0,1)={'(Query-0)'}, A(0,2)={'(Query-2)'}, M(0,0)=2, M(0,1)=0, M(0,2)=1, A(1,0)={'(Query-2)'}, A(1,1)={'(Query-2)'}, A(1,2)={'(Query-2)'}, M(1,0)=1, M(1,1)=2, M(1,2)=2, A(2,0)={'(Query-2)'}, A(2,1)={'(Query-2)'}, A(2,2)={'(Query-1)'}, M(2,0)=2, M(2,1)=2, M(2,2)=1, A(4,0)={'(Query-0)'}, M(4,0)=0
 
 -----------PAYNT-----------               
-Value = 439.5070554424066 | Time elapsed = 179.8s | FSC size = 24
+Value = 439.5070554424066 | Time elapsed = 174.4s | FSC size = 24
 FSC = A(0,0)={'(Query-1)'}, A(0,1)={'(Query-0)'}, A(0,2)={'(Query-2)'}, M(0,0)=2, M(0,1)=0, M(0,2)=1, A(1,0)={'(Query-2)'}, A(1,1)={'(Query-2)'}, A(1,2)={'(Query-2)'}, M(1,0)=1, M(1,1)=2, M(1,2)=2, A(2,0)={'(Query-2)'}, A(2,1)={'(Query-2)'}, A(2,2)={'(Query-1)'}, M(2,0)=1, M(2,1)=2, M(2,2)=1, A(4,0)={'(Query-0)'}, M(4,0)=2
 
 -----------PAYNT-----------               
-Value = 439.7269363374922 | Time elapsed = 179.8s | FSC size = 24
+Value = 439.7269363374922 | Time elapsed = 174.4s | FSC size = 24
 FSC = A(0,0)={'(Query-1)'}, A(0,1)={'(Query-0)'}, A(0,2)={'(Query-2)'}, M(0,0)=2, M(0,1)=0, M(0,2)=1, A(1,0)={'(Query-2)'}, A(1,1)={'(Query-2)'}, A(1,2)={'(Query-2)'}, M(1,0)=1, M(1,1)=2, M(1,2)=2, A(2,0)={'(Query-2)'}, A(2,1)={'(Query-2)'}, A(2,2)={'(Query-1)'}, M(2,0)=1, M(2,1)=2, M(2,2)=1, A(4,0)={'(Query-0)'}, M(4,0)=0
 
 -----------PAYNT-----------               
-Value = 439.7393117988771 | Time elapsed = 191.5s | FSC size = 24
+Value = 439.7393117988771 | Time elapsed = 185.9s | FSC size = 24
 FSC = A(0,0)={'(Query-1)'}, A(0,1)={'(Query-0)'}, A(0,2)={'(Query-2)'}, M(0,0)=2, M(0,1)=0, M(0,2)=1, A(1,0)={'(Query-2)'}, A(1,1)={'(Query-2)'}, A(1,2)={'(Query-2)'}, M(1,0)=1, M(1,1)=2, M(1,2)=1, A(2,0)={'(Query-2)'}, A(2,1)={'(Query-2)'}, A(2,2)={'(Query-1)'}, M(2,0)=1, M(2,1)=2, M(2,2)=1, A(4,0)={'(Query-0)'}, M(4,0)=2
 
 -----------PAYNT-----------               
-Value = 443.14503672559385 | Time elapsed = 286.5s | FSC size = 24
+Value = 443.14503672559385 | Time elapsed = 280.8s | FSC size = 24
 FSC = A(0,0)={'(Query-2)'}, A(0,1)={'(Query-2)'}, A(0,2)={'(Query-1)'}, M(0,0)=2, M(0,1)=2, M(0,2)=1, A(1,0)={'(Query-2)'}, A(1,1)={'(Query-2)'}, A(1,2)={'(Query-2)'}, M(1,0)=2, M(1,1)=2, M(1,2)=2, A(2,0)={'(Query-2)'}, A(2,1)={'(Query-2)'}, A(2,2)={'(Query-1)'}, M(2,0)=2, M(2,1)=2, M(2,2)=0, A(4,0)={'(Query-0)'}, M(4,0)=2
 
 -----------PAYNT-----------               
-Value = 443.35479830883304 | Time elapsed = 286.5s | FSC size = 24
+Value = 443.35479830883304 | Time elapsed = 280.9s | FSC size = 24
 FSC = A(0,0)={'(Query-2)'}, A(0,1)={'(Query-2)'}, A(0,2)={'(Query-1)'}, M(0,0)=2, M(0,1)=2, M(0,2)=1, A(1,0)={'(Query-2)'}, A(1,1)={'(Query-2)'}, A(1,2)={'(Query-2)'}, M(1,0)=2, M(1,1)=2, M(1,2)=2, A(2,0)={'(Query-2)'}, A(2,1)={'(Query-2)'}, A(2,2)={'(Query-1)'}, M(2,0)=2, M(2,1)=2, M(2,2)=0, A(4,0)={'(Query-0)'}, M(4,0)=0
 
 -----------PAYNT-----------               
-Value = 447.0831538324915 | Time elapsed = 298.5s | FSC size = 24
+Value = 447.0831538324915 | Time elapsed = 293.3s | FSC size = 24
 FSC = A(0,0)={'(Query-2)'}, A(0,1)={'(Query-0)'}, A(0,2)={'(Query-1)'}, M(0,0)=0, M(0,1)=2, M(0,2)=1, A(1,0)={'(Query-2)'}, A(1,1)={'(Query-2)'}, A(1,2)={'(Query-2)'}, M(1,0)=2, M(1,1)=2, M(1,2)=2, A(2,0)={'(Query-2)'}, A(2,1)={'(Query-2)'}, A(2,2)={'(Query-1)'}, M(2,0)=0, M(2,1)=2, M(2,2)=1, A(4,0)={'(Query-0)'}, M(4,0)=2
 
 -----------PAYNT-----------               
-Value = 448.03117727580036 | Time elapsed = 298.6s | FSC size = 24
+Value = 448.03117727580036 | Time elapsed = 293.4s | FSC size = 24
 FSC = A(0,0)={'(Query-2)'}, A(0,1)={'(Query-0)'}, A(0,2)={'(Query-1)'}, M(0,0)=2, M(0,1)=2, M(0,2)=1, A(1,0)={'(Query-2)'}, A(1,1)={'(Query-2)'}, A(1,2)={'(Query-2)'}, M(1,0)=2, M(1,1)=2, M(1,2)=2, A(2,0)={'(Query-2)'}, A(2,1)={'(Query-2)'}, A(2,2)={'(Query-1)'}, M(2,0)=2, M(2,1)=2, M(2,2)=1, A(4,0)={'(Query-0)'}, M(4,0)=0
 
 -----------PAYNT-----------               
-Value = 461.2682115461449 | Time elapsed = 299.0s | FSC size = 24
+Value = 461.2682115461449 | Time elapsed = 293.7s | FSC size = 24
 FSC = A(0,0)={'(Query-2)'}, A(0,1)={'(Query-0)'}, A(0,2)={'(Query-1)'}, M(0,0)=2, M(0,1)=0, M(0,2)=1, A(1,0)={'(Query-2)'}, A(1,1)={'(Query-2)'}, A(1,2)={'(Query-2)'}, M(1,0)=2, M(1,1)=2, M(1,2)=2, A(2,0)={'(Query-2)'}, A(2,1)={'(Query-2)'}, A(2,2)={'(Query-1)'}, M(2,0)=2, M(2,1)=2, M(2,2)=1, A(4,0)={'(Query-0)'}, M(4,0)=2
 
 -----------PAYNT-----------               
-Value = 461.71887602076646 | Time elapsed = 299.0s | FSC size = 24
+Value = 461.71887602076646 | Time elapsed = 293.8s | FSC size = 24
 FSC = A(0,0)={'(Query-2)'}, A(0,1)={'(Query-0)'}, A(0,2)={'(Query-1)'}, M(0,0)=2, M(0,1)=0, M(0,2)=1, A(1,0)={'(Query-2)'}, A(1,1)={'(Query-2)'}, A(1,2)={'(Query-2)'}, M(1,0)=2, M(1,1)=2, M(1,2)=2, A(2,0)={'(Query-2)'}, A(2,1)={'(Query-2)'}, A(2,2)={'(Query-1)'}, M(2,0)=2, M(2,1)=2, M(2,2)=1, A(4,0)={'(Query-0)'}, M(4,0)=0
 
 -----------PAYNT-----------               
-Value = 462.56224463256905 | Time elapsed = 299.5s | FSC size = 24
+Value = 462.56224463256905 | Time elapsed = 294.3s | FSC size = 24
 FSC = A(0,0)={'(Query-2)'}, A(0,1)={'(Query-0)'}, A(0,2)={'(Query-1)'}, M(0,0)=2, M(0,1)=0, M(0,2)=1, A(1,0)={'(Query-2)'}, A(1,1)={'(Query-2)'}, A(1,2)={'(Query-2)'}, M(1,0)=1, M(1,1)=2, M(1,2)=2, A(2,0)={'(Query-2)'}, A(2,1)={'(Query-2)'}, A(2,2)={'(Query-1)'}, M(2,0)=2, M(2,1)=2, M(2,2)=1, A(4,0)={'(Query-0)'}, M(4,0)=2
 
 -----------PAYNT-----------               
-Value = 463.0048120293999 | Time elapsed = 299.6s | FSC size = 24
+Value = 463.0048120293999 | Time elapsed = 294.4s | FSC size = 24
 FSC = A(0,0)={'(Query-2)'}, A(0,1)={'(Query-0)'}, A(0,2)={'(Query-1)'}, M(0,0)=2, M(0,1)=0, M(0,2)=1, A(1,0)={'(Query-2)'}, A(1,1)={'(Query-2)'}, A(1,2)={'(Query-2)'}, M(1,0)=1, M(1,1)=2, M(1,2)=2, A(2,0)={'(Query-2)'}, A(2,1)={'(Query-2)'}, A(2,2)={'(Query-1)'}, M(2,0)=2, M(2,1)=2, M(2,2)=1, A(4,0)={'(Query-0)'}, M(4,0)=0
 
 -----------PAYNT-----------               
-Value = 463.341771708883 | Time elapsed = 398.5s | FSC size = 24
+Value = 463.341771708883 | Time elapsed = 392.0s | FSC size = 24
 FSC = A(0,0)={'(Query-2)'}, A(0,1)={'(Query-1)'}, A(0,2)={'(Query-0)'}, M(0,0)=2, M(0,1)=0, M(0,2)=1, A(1,0)={'(Query-2)'}, A(1,1)={'(Query-2)'}, A(1,2)={'(Query-2)'}, M(1,0)=1, M(1,1)=2, M(1,2)=2, A(2,0)={'(Query-2)'}, A(2,1)={'(Query-1)'}, A(2,2)={'(Query-1)'}, M(2,0)=2, M(2,1)=0, M(2,2)=0, A(4,0)={'(Query-0)'}, M(4,0)=1
 
 -----------PAYNT-----------               
-Value = 471.1461013905245 | Time elapsed = 520.7s | FSC size = 24
+Value = 471.1461013905245 | Time elapsed = 512.0s | FSC size = 24
 FSC = A(0,0)={'(Query-2)'}, A(0,1)={'(Query-1)'}, A(0,2)={'(Query-0)'}, M(0,0)=2, M(0,1)=0, M(0,2)=1, A(1,0)={'(Query-2)'}, A(1,1)={'(Query-2)'}, A(1,2)={'(Query-2)'}, M(1,0)=2, M(1,1)=2, M(1,2)=2, A(2,0)={'(Query-2)'}, A(2,1)={'(Query-1)'}, A(2,2)={'(Query-0)'}, M(2,0)=2, M(2,1)=0, M(2,2)=1, A(4,0)={'(Query-0)'}, M(4,0)=2
 
 -----------PAYNT-----------               
-Value = 472.3893772756397 | Time elapsed = 520.7s | FSC size = 24
+Value = 472.3893772756397 | Time elapsed = 512.0s | FSC size = 24
 FSC = A(0,0)={'(Query-2)'}, A(0,1)={'(Query-1)'}, A(0,2)={'(Query-0)'}, M(0,0)=2, M(0,1)=0, M(0,2)=1, A(1,0)={'(Query-2)'}, A(1,1)={'(Query-2)'}, A(1,2)={'(Query-2)'}, M(1,0)=2, M(1,1)=2, M(1,2)=2, A(2,0)={'(Query-2)'}, A(2,1)={'(Query-1)'}, A(2,2)={'(Query-0)'}, M(2,0)=2, M(2,1)=0, M(2,2)=1, A(4,0)={'(Query-0)'}, M(4,0)=1
 
 -----------PAYNT-----------               
-Value = 476.8237581883732 | Time elapsed = 521.8s | FSC size = 24
+Value = 476.8237581883732 | Time elapsed = 513.0s | FSC size = 24
 FSC = A(0,0)={'(Query-2)'}, A(0,1)={'(Query-1)'}, A(0,2)={'(Query-0)'}, M(0,0)=2, M(0,1)=0, M(0,2)=1, A(1,0)={'(Query-2)'}, A(1,1)={'(Query-2)'}, A(1,2)={'(Query-2)'}, M(1,0)=1, M(1,1)=2, M(1,2)=2, A(2,0)={'(Query-2)'}, A(2,1)={'(Query-1)'}, A(2,2)={'(Query-0)'}, M(2,0)=2, M(2,1)=0, M(2,2)=1, A(4,0)={'(Query-0)'}, M(4,0)=2
 
 -----------PAYNT-----------               
-Value = 478.16357741925464 | Time elapsed = 521.8s | FSC size = 24
+Value = 478.16357741925464 | Time elapsed = 513.1s | FSC size = 24
 FSC = A(0,0)={'(Query-2)'}, A(0,1)={'(Query-1)'}, A(0,2)={'(Query-0)'}, M(0,0)=2, M(0,1)=0, M(0,2)=1, A(1,0)={'(Query-2)'}, A(1,1)={'(Query-2)'}, A(1,2)={'(Query-2)'}, M(1,0)=1, M(1,1)=2, M(1,2)=2, A(2,0)={'(Query-2)'}, A(2,1)={'(Query-1)'}, A(2,2)={'(Query-0)'}, M(2,0)=2, M(2,1)=0, M(2,2)=1, A(4,0)={'(Query-0)'}, M(4,0)=1
 
 -----------PAYNT-----------               
-Value = 478.2724341054378 | Time elapsed = 526.9s | FSC size = 24
+Value = 478.2724341054378 | Time elapsed = 518.1s | FSC size = 24
 FSC = A(0,0)={'(Query-2)'}, A(0,1)={'(Query-1)'}, A(0,2)={'(Query-0)'}, M(0,0)=1, M(0,1)=2, M(0,2)=0, A(1,0)={'(Query-2)'}, A(1,1)={'(Query-2)'}, A(1,2)={'(Query-2)'}, M(1,0)=2, M(1,1)=1, M(1,2)=1, A(2,0)={'(Query-2)'}, A(2,1)={'(Query-1)'}, A(2,2)={'(Query-0)'}, M(2,0)=1, M(2,1)=2, M(2,2)=0, A(4,0)={'(Query-0)'}, M(4,0)=0
 
 -----------PAYNT-----------               
-Value = 486.09188171390934 | Time elapsed = 838.5s | FSC size = 24
+Value = 486.09188171390934 | Time elapsed = 821.4s | FSC size = 24
 FSC = A(0,0)={'(Query-2)'}, A(0,1)={'(Query-1)'}, A(0,2)={'(Query-2)'}, M(0,0)=0, M(0,1)=2, M(0,2)=1, A(1,0)={'(Query-2)'}, A(1,1)={'(Query-2)'}, A(1,2)={'(Query-1)'}, M(1,0)=0, M(1,1)=1, M(1,2)=2, A(2,0)={'(Query-2)'}, A(2,1)={'(Query-1)'}, A(2,2)={'(Query-2)'}, M(2,0)=0, M(2,1)=2, M(2,2)=1, A(4,0)={'(Query-0)'}, M(4,0)=2
 
 -----------PAYNT-----------               
-Value = 488.38792857654823 | Time elapsed = 841.7s | FSC size = 24
+Value = 488.38792857654823 | Time elapsed = 824.4s | FSC size = 24
 FSC = A(0,0)={'(Query-0)'}, A(0,1)={'(Query-1)'}, A(0,2)={'(Query-2)'}, M(0,0)=2, M(0,1)=2, M(0,2)=0, A(1,0)={'(Query-2)'}, A(1,1)={'(Query-2)'}, A(1,2)={'(Query-1)'}, M(1,0)=1, M(1,1)=1, M(1,2)=2, A(2,0)={'(Query-2)'}, A(2,1)={'(Query-1)'}, A(2,2)={'(Query-2)'}, M(2,0)=1, M(2,1)=2, M(2,2)=1, A(4,0)={'(Query-0)'}, M(4,0)=2
 
 -----------PAYNT-----------               
-Value = 489.05108671162674 | Time elapsed = 841.7s | FSC size = 24
+Value = 489.05108671162674 | Time elapsed = 824.5s | FSC size = 24
 FSC = A(0,0)={'(Query-0)'}, A(0,1)={'(Query-1)'}, A(0,2)={'(Query-2)'}, M(0,0)=2, M(0,1)=2, M(0,2)=0, A(1,0)={'(Query-2)'}, A(1,1)={'(Query-2)'}, A(1,2)={'(Query-1)'}, M(1,0)=1, M(1,1)=1, M(1,2)=2, A(2,0)={'(Query-2)'}, A(2,1)={'(Query-1)'}, A(2,2)={'(Query-2)'}, M(2,0)=1, M(2,1)=2, M(2,2)=1, A(4,0)={'(Query-0)'}, M(4,0)=1
 
 -----------PAYNT-----------               
-Value = 491.587389877396 | Time elapsed = 841.8s | FSC size = 24
+Value = 491.587389877396 | Time elapsed = 824.5s | FSC size = 24
 FSC = A(0,0)={'(Query-0)'}, A(0,1)={'(Query-1)'}, A(0,2)={'(Query-2)'}, M(0,0)=1, M(0,1)=2, M(0,2)=0, A(1,0)={'(Query-2)'}, A(1,1)={'(Query-2)'}, A(1,2)={'(Query-1)'}, M(1,0)=1, M(1,1)=1, M(1,2)=2, A(2,0)={'(Query-2)'}, A(2,1)={'(Query-1)'}, A(2,2)={'(Query-2)'}, M(2,0)=1, M(2,1)=2, M(2,2)=1, A(4,0)={'(Query-0)'}, M(4,0)=2
 
 -----------PAYNT-----------               
-Value = 491.94153071215464 | Time elapsed = 841.8s | FSC size = 24
+Value = 491.94153071215464 | Time elapsed = 824.5s | FSC size = 24
 FSC = A(0,0)={'(Query-0)'}, A(0,1)={'(Query-1)'}, A(0,2)={'(Query-2)'}, M(0,0)=1, M(0,1)=2, M(0,2)=0, A(1,0)={'(Query-2)'}, A(1,1)={'(Query-2)'}, A(1,2)={'(Query-1)'}, M(1,0)=1, M(1,1)=1, M(1,2)=2, A(2,0)={'(Query-2)'}, A(2,1)={'(Query-1)'}, A(2,2)={'(Query-2)'}, M(2,0)=1, M(2,1)=2, M(2,2)=1, A(4,0)={'(Query-0)'}, M(4,0)=1
 
 -----------PAYNT-----------               
-Value = 491.9515306243092 | Time elapsed = 842.0s | FSC size = 24
+Value = 491.9515306243092 | Time elapsed = 824.7s | FSC size = 24
 FSC = A(0,0)={'(Query-0)'}, A(0,1)={'(Query-1)'}, A(0,2)={'(Query-2)'}, M(0,0)=1, M(0,1)=2, M(0,2)=0, A(1,0)={'(Query-2)'}, A(1,1)={'(Query-2)'}, A(1,2)={'(Query-1)'}, M(1,0)=0, M(1,1)=1, M(1,2)=2, A(2,0)={'(Query-2)'}, A(2,1)={'(Query-1)'}, A(2,2)={'(Query-2)'}, M(2,0)=1, M(2,1)=2, M(2,2)=1, A(4,0)={'(Query-0)'}, M(4,0)=1
 
 -----------PAYNT-----------               
-Value = 492.2348610098033 | Time elapsed = 842.2s | FSC size = 24
+Value = 492.2348610098033 | Time elapsed = 825.0s | FSC size = 24
 FSC = A(0,0)={'(Query-0)'}, A(0,1)={'(Query-1)'}, A(0,2)={'(Query-2)'}, M(0,0)=1, M(0,1)=2, M(0,2)=0, A(1,0)={'(Query-2)'}, A(1,1)={'(Query-2)'}, A(1,2)={'(Query-1)'}, M(1,0)=1, M(1,1)=0, M(1,2)=2, A(2,0)={'(Query-2)'}, A(2,1)={'(Query-1)'}, A(2,2)={'(Query-2)'}, M(2,0)=1, M(2,1)=2, M(2,2)=1, A(4,0)={'(Query-0)'}, M(4,0)=1
 
 -----------PAYNT-----------               
-Value = 492.4020499518558 | Time elapsed = 845.6s | FSC size = 24
+Value = 492.4020499518558 | Time elapsed = 828.2s | FSC size = 24
 FSC = A(0,0)={'(Query-1)'}, A(0,1)={'(Query-0)'}, A(0,2)={'(Query-2)'}, M(0,0)=2, M(0,1)=0, M(0,2)=1, A(1,0)={'(Query-2)'}, A(1,1)={'(Query-2)'}, A(1,2)={'(Query-1)'}, M(1,0)=1, M(1,1)=1, M(1,2)=2, A(2,0)={'(Query-2)'}, A(2,1)={'(Query-1)'}, A(2,2)={'(Query-2)'}, M(2,0)=1, M(2,1)=2, M(2,2)=1, A(4,0)={'(Query-0)'}, M(4,0)=0
 
 -----------PAYNT-----------               
-Value = 496.13318728456414 | Time elapsed = 852.7s | FSC size = 24
+Value = 496.13318728456414 | Time elapsed = 835.0s | FSC size = 24
 FSC = A(0,0)={'(Query-2)'}, A(0,1)={'(Query-1)'}, A(0,2)={'(Query-0)'}, M(0,0)=1, M(0,1)=2, M(0,2)=0, A(1,0)={'(Query-2)'}, A(1,1)={'(Query-2)'}, A(1,2)={'(Query-1)'}, M(1,0)=2, M(1,1)=1, M(1,2)=2, A(2,0)={'(Query-2)'}, A(2,1)={'(Query-1)'}, A(2,2)={'(Query-2)'}, M(2,0)=1, M(2,1)=2, M(2,2)=1, A(4,0)={'(Query-0)'}, M(4,0)=2
 
 -----------PAYNT-----------               
-Value = 496.94081706149865 | Time elapsed = 852.7s | FSC size = 24
+Value = 496.94081706149865 | Time elapsed = 835.0s | FSC size = 24
 FSC = A(0,0)={'(Query-2)'}, A(0,1)={'(Query-1)'}, A(0,2)={'(Query-0)'}, M(0,0)=1, M(0,1)=2, M(0,2)=0, A(1,0)={'(Query-2)'}, A(1,1)={'(Query-2)'}, A(1,2)={'(Query-1)'}, M(1,0)=2, M(1,1)=1, M(1,2)=2, A(2,0)={'(Query-2)'}, A(2,1)={'(Query-1)'}, A(2,2)={'(Query-2)'}, M(2,0)=1, M(2,1)=2, M(2,2)=1, A(4,0)={'(Query-0)'}, M(4,0)=1
 
 -----------PAYNT-----------               
-Value = 500.62109155504146 | Time elapsed = 853.4s | FSC size = 24
+Value = 500.62109155504146 | Time elapsed = 835.7s | FSC size = 24
 FSC = A(0,0)={'(Query-2)'}, A(0,1)={'(Query-1)'}, A(0,2)={'(Query-0)'}, M(0,0)=1, M(0,1)=2, M(0,2)=0, A(1,0)={'(Query-2)'}, A(1,1)={'(Query-2)'}, A(1,2)={'(Query-1)'}, M(1,0)=1, M(1,1)=1, M(1,2)=2, A(2,0)={'(Query-2)'}, A(2,1)={'(Query-1)'}, A(2,2)={'(Query-2)'}, M(2,0)=1, M(2,1)=2, M(2,2)=1, A(4,0)={'(Query-0)'}, M(4,0)=2
 
 -----------PAYNT-----------               
-Value = 501.3620841876003 | Time elapsed = 853.4s | FSC size = 24
+Value = 501.3620841876003 | Time elapsed = 835.7s | FSC size = 24
 FSC = A(0,0)={'(Query-2)'}, A(0,1)={'(Query-1)'}, A(0,2)={'(Query-0)'}, M(0,0)=1, M(0,1)=2, M(0,2)=0, A(1,0)={'(Query-2)'}, A(1,1)={'(Query-2)'}, A(1,2)={'(Query-1)'}, M(1,0)=1, M(1,1)=1, M(1,2)=2, A(2,0)={'(Query-2)'}, A(2,1)={'(Query-1)'}, A(2,2)={'(Query-2)'}, M(2,0)=1, M(2,1)=2, M(2,2)=1, A(4,0)={'(Query-0)'}, M(4,0)=1
 
 -----------PAYNT-----------               
-Value = 501.6589076393728 | Time elapsed = 853.4s | FSC size = 24
+Value = 501.6589076393728 | Time elapsed = 835.8s | FSC size = 24
 FSC = A(0,0)={'(Query-2)'}, A(0,1)={'(Query-1)'}, A(0,2)={'(Query-0)'}, M(0,0)=1, M(0,1)=2, M(0,2)=0, A(1,0)={'(Query-2)'}, A(1,1)={'(Query-2)'}, A(1,2)={'(Query-1)'}, M(1,0)=1, M(1,1)=1, M(1,2)=2, A(2,0)={'(Query-2)'}, A(2,1)={'(Query-1)'}, A(2,2)={'(Query-2)'}, M(2,0)=1, M(2,1)=2, M(2,2)=1, A(4,0)={'(Query-0)'}, M(4,0)=0
 
 -----------PAYNT-----------               
-Value = 507.2745662402106 | Time elapsed = 883.8s | FSC size = 24
+Value = 507.2745662402106 | Time elapsed = 865.6s | FSC size = 24
 FSC = A(0,0)={'(Query-2)'}, A(0,1)={'(Query-1)'}, A(0,2)={'(Query-0)'}, M(0,0)=1, M(0,1)=2, M(0,2)=0, A(1,0)={'(Query-2)'}, A(1,1)={'(Query-2)'}, A(1,2)={'(Query-1)'}, M(1,0)=1, M(1,1)=1, M(1,2)=2, A(2,0)={'(Query-2)'}, A(2,1)={'(Query-1)'}, A(2,2)={'(Query-0)'}, M(2,0)=1, M(2,1)=2, M(2,2)=0, A(4,0)={'(Query-0)'}, M(4,0)=2
 
 -----------PAYNT-----------               
-Value = 508.08710067634763 | Time elapsed = 883.9s | FSC size = 24
+Value = 508.08710067634763 | Time elapsed = 865.6s | FSC size = 24
 FSC = A(0,0)={'(Query-2)'}, A(0,1)={'(Query-1)'}, A(0,2)={'(Query-0)'}, M(0,0)=1, M(0,1)=2, M(0,2)=0, A(1,0)={'(Query-2)'}, A(1,1)={'(Query-2)'}, A(1,2)={'(Query-1)'}, M(1,0)=1, M(1,1)=1, M(1,2)=2, A(2,0)={'(Query-2)'}, A(2,1)={'(Query-1)'}, A(2,2)={'(Query-0)'}, M(2,0)=1, M(2,1)=2, M(2,2)=0, A(4,0)={'(Query-0)'}, M(4,0)=1
 
 -----------PAYNT-----------               
-Value = 508.74215144763224 | Time elapsed = 883.9s | FSC size = 24
+Value = 508.74215144763224 | Time elapsed = 865.6s | FSC size = 24
 FSC = A(0,0)={'(Query-2)'}, A(0,1)={'(Query-1)'}, A(0,2)={'(Query-0)'}, M(0,0)=1, M(0,1)=2, M(0,2)=0, A(1,0)={'(Query-2)'}, A(1,1)={'(Query-2)'}, A(1,2)={'(Query-1)'}, M(1,0)=1, M(1,1)=1, M(1,2)=2, A(2,0)={'(Query-2)'}, A(2,1)={'(Query-1)'}, A(2,2)={'(Query-0)'}, M(2,0)=1, M(2,1)=2, M(2,2)=0, A(4,0)={'(Query-0)'}, M(4,0)=0
 

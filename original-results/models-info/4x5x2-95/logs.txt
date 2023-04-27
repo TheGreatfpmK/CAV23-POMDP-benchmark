@@ -1,18 +1,18 @@
-2023-04-26 00:29:55,646 - cli.py - This is Paynt version 0.1.0.
-2023-04-26 00:29:55,649 - sketch.py - loading sketch from /mnt/d/src/PP/synthesis-CAV/experiments/../models/pomdp/storm-integration/4x5x2-95/sketch.templ ...
-2023-04-26 00:29:55,720 - prism_parser.py - loading properties from /mnt/d/src/PP/synthesis-CAV/experiments/../models/pomdp/storm-integration/4x5x2-95/sketch.props ...
-2023-04-26 00:29:55,738 - prism_parser.py - found the following specification: constraints: none, optimality objective: R[exp]{"reward"}max=? [F "discount_sink"] 
-2023-04-26 00:29:55,748 - sketch.py - constructed explicit quotient having 79 states and 310 actions
-2023-04-26 00:29:55,748 - sketch.py - found the following specification constraints: none, optimality objective: R[exp]{"reward"}max=? [F "discount_sink"] 
-2023-04-26 00:29:55,757 - quotient_pomdp.py - Constructed POMDP having 7 observations.
-2023-04-26 00:29:55,762 - quotient_pomdp.py - Unfolding POMDP using the following memory allocation vector: [1, 1, 1, 1, 1, 1, 1] ...
-2023-04-26 00:29:55,764 - quotient_pomdp.py - Constructed quotient MDP having 79 states and 310 actions.
-2023-04-26 00:29:55,769 - synthesizer_pomdp.py - Storm pomdp option enabled
-2023-04-26 00:29:55,769 - synthesizer_pomdp.py - Storm settings: iterative - (None, None, None), get_storm_result - 0, storm_options - overapp, prune_storm - False, unfold_strategy - (True, False), use_storm_cutoffs - False
-2023-04-26 00:29:55,778 - storm_pomdp_control.py - starting Storm POMDP analysis
-2023-04-26 00:29:55,845 - storm_pomdp_control.py - Storm POMDP analysis completed
+2023-04-27 00:27:47,567 - cli.py - This is Paynt version 0.1.0.
+2023-04-27 00:27:47,569 - sketch.py - loading sketch from /mnt/d/src/PP/synthesis-CAV/experiments/../models/pomdp/storm-integration/4x5x2-95/sketch.templ ...
+2023-04-27 00:27:47,641 - prism_parser.py - loading properties from /mnt/d/src/PP/synthesis-CAV/experiments/../models/pomdp/storm-integration/4x5x2-95/sketch.props ...
+2023-04-27 00:27:47,659 - prism_parser.py - found the following specification: constraints: none, optimality objective: R[exp]{"reward"}max=? [F "discount_sink"] 
+2023-04-27 00:27:47,668 - sketch.py - constructed explicit quotient having 79 states and 310 actions
+2023-04-27 00:27:47,668 - sketch.py - found the following specification constraints: none, optimality objective: R[exp]{"reward"}max=? [F "discount_sink"] 
+2023-04-27 00:27:47,675 - quotient_pomdp.py - Constructed POMDP having 7 observations.
+2023-04-27 00:27:47,680 - quotient_pomdp.py - Unfolding POMDP using the following memory allocation vector: [1, 1, 1, 1, 1, 1, 1] ...
+2023-04-27 00:27:47,682 - quotient_pomdp.py - Constructed quotient MDP having 79 states and 310 actions.
+2023-04-27 00:27:47,685 - synthesizer_pomdp.py - Storm pomdp option enabled
+2023-04-27 00:27:47,686 - synthesizer_pomdp.py - Storm settings: iterative - (None, None, None), get_storm_result - 0, storm_options - overapp, prune_storm - False, unfold_strategy - (True, False), use_storm_cutoffs - False
+2023-04-27 00:27:47,694 - storm_pomdp_control.py - starting Storm POMDP analysis
+2023-04-27 00:27:47,753 - storm_pomdp_control.py - Storm POMDP analysis completed
 -----------Storm-----------                 
-Value = -inf | Time elapsed = 0.0s | FSC size = 583
+Value = -inf | Time elapsed = 0.1s | FSC size = 583
 
 .....
 3.2555963041631704

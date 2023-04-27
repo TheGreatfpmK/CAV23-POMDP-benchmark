@@ -1,23 +1,23 @@
-2023-04-26 16:11:57,161 - cli.py - This is Paynt version 0.1.0.
-2023-04-26 16:11:57,163 - sketch.py - loading sketch from /mnt/d/src/PP/synthesis-CAV/experiments/../models/pomdp/storm-integration/lanes-100-combined-new/sketch.templ ...
-2023-04-26 16:11:57,273 - prism_parser.py - PRISM model type: PrismModelType.POMDP
-2023-04-26 16:11:57,273 - prism_parser.py - loading properties from /mnt/d/src/PP/synthesis-CAV/experiments/../models/pomdp/storm-integration/lanes-100-combined-new/sketch.props ...
-2023-04-26 16:11:57,289 - prism_parser.py - found the following specification: constraints: none, optimality objective: R[exp]{"steps"}min=? [F (z = 5)] 
-2023-04-26 16:11:57,424 - sketch.py - converting state rewards 'steps' to state-action rewards
-2023-04-26 16:11:57,426 - sketch.py - constructed explicit quotient having 2741 states and 5285 actions
-2023-04-26 16:11:57,427 - sketch.py - found the following specification constraints: none, optimality objective: R[exp]{"steps"}min=? [F (z = 5)] 
-2023-04-26 16:11:57,435 - quotient_pomdp.py - Constructed POMDP having 11 observations.
-2023-04-26 16:11:57,494 - quotient_pomdp.py - Unfolding POMDP using the following memory allocation vector: [1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1] ...
-2023-04-26 16:11:57,497 - quotient_pomdp.py - Constructed quotient MDP having 2741 states and 5285 actions.
-2023-04-26 16:11:57,759 - synthesizer_pomdp.py - Storm pomdp option enabled
-2023-04-26 16:11:57,759 - synthesizer_pomdp.py - Storm settings: iterative - (None, None, None), get_storm_result - None, storm_options - cutoff, prune_storm - False, unfold_strategy - (True, False), use_storm_cutoffs - False
-2023-04-26 16:11:57,763 - storm_pomdp_control.py - starting Storm POMDP analysis
+2023-04-27 10:00:07,430 - cli.py - This is Paynt version 0.1.0.
+2023-04-27 10:00:07,434 - sketch.py - loading sketch from /mnt/d/src/PP/synthesis-CAV/experiments/../models/pomdp/storm-integration/lanes-100-combined-new/sketch.templ ...
+2023-04-27 10:00:07,533 - prism_parser.py - PRISM model type: PrismModelType.POMDP
+2023-04-27 10:00:07,534 - prism_parser.py - loading properties from /mnt/d/src/PP/synthesis-CAV/experiments/../models/pomdp/storm-integration/lanes-100-combined-new/sketch.props ...
+2023-04-27 10:00:07,552 - prism_parser.py - found the following specification: constraints: none, optimality objective: R[exp]{"steps"}min=? [F (z = 5)] 
+2023-04-27 10:00:07,684 - sketch.py - converting state rewards 'steps' to state-action rewards
+2023-04-27 10:00:07,686 - sketch.py - constructed explicit quotient having 2741 states and 5285 actions
+2023-04-27 10:00:07,686 - sketch.py - found the following specification constraints: none, optimality objective: R[exp]{"steps"}min=? [F (z = 5)] 
+2023-04-27 10:00:07,695 - quotient_pomdp.py - Constructed POMDP having 11 observations.
+2023-04-27 10:00:07,754 - quotient_pomdp.py - Unfolding POMDP using the following memory allocation vector: [1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1] ...
+2023-04-27 10:00:07,757 - quotient_pomdp.py - Constructed quotient MDP having 2741 states and 5285 actions.
+2023-04-27 10:00:08,000 - synthesizer_pomdp.py - Storm pomdp option enabled
+2023-04-27 10:00:08,000 - synthesizer_pomdp.py - Storm settings: iterative - (None, None, None), get_storm_result - None, storm_options - cutoff, prune_storm - False, unfold_strategy - (True, False), use_storm_cutoffs - False
+2023-04-27 10:00:08,005 - storm_pomdp_control.py - starting Storm POMDP analysis
 Finished exploring Underapproximation MDP.
  Start analysis...
-2023-04-26 16:12:04,733 - storm_pomdp_control.py - Storm POMDP analysis completed
+2023-04-27 10:00:14,733 - storm_pomdp_control.py - Storm POMDP analysis completed
 {0: [0, 1], 1: [0, 1], 2: [0], 3: [0, 1], 4: [0], 5: [0, 1, 2], 6: [0, 1], 7: [0, 1], 8: [0], 9: [0], 10: [0]}
 -----------Storm-----------               
-Value = 21286.625467911 | Time elapsed = 7.0s | FSC size = 8100
+Value = 21286.625467911 | Time elapsed = 6.7s | FSC size = 8100
 FSC (dot) = digraph model {
 	0 [ label = "0: {__extra, target}" ];
 	1 [ label = "1: {[blue=0	& fast=0	& goal=0	& imgoal=0	& in=1	& mid=0	& o0=0	& ooin=0	& sink=0	& slow=0	& yell=0]
@@ -16171,11 +16171,11 @@ cutoff, sched_1}" ];
 }
 
 
-2023-04-26 16:12:04,789 - storm_pomdp_control.py - Main family based on data from Storm: reduced design space from 144 to 24
+2023-04-27 10:00:14,790 - storm_pomdp_control.py - Main family based on data from Storm: reduced design space from 144 to 24
 {0: [0, 1], 1: [0, 1], 2: [0], 3: [0, 1], 4: [0], 5: [2, 0, 1], 6: [0, 1], 7: [1, 0], 8: [0], 9: [0], 10: [0]} 
 
 {0: [0, 1], 1: [0, 1], 2: [0], 3: [0, 1], 4: [0], 5: [2, 0, 1], 6: [0], 7: [1], 8: [0], 10: [0]}
-2023-04-26 16:12:04,790 - synthesizer.py - Synthesis initiated.
+2023-04-27 10:00:14,790 - synthesizer.py - Synthesis initiated.
 -----------PAYNT-----------               
 Value = 11009.348575033993 | Time elapsed = 0.3s | FSC size = 22
 FSC = A([fast=1],0)={'J'}, A([mid=1],0)={'F'}, A([slow=1],0)={'B'}, A([blue=1 & imgoal=1],0)={'B'}, A([o0=1],0)={'l'}, A([imgoal=1 & yell=1],0)={'B'}
@@ -16184,14 +16184,14 @@ FSC = A([fast=1],0)={'J'}, A([mid=1],0)={'F'}, A([slow=1],0)={'B'}, A([blue=1 & 
 Value = 10241.939782842126 | Time elapsed = 0.5s | FSC size = 22
 FSC = A([fast=1],0)={'J'}, A([mid=1],0)={'F'}, A([slow=1],0)={'A'}, A([blue=1 & imgoal=1],0)={'B'}, A([o0=1],0)={'l'}, A([imgoal=1 & yell=1],0)={'B'}
 
-2023-04-26 16:12:05,615 - synthesizer_ar_storm.py - Main family synthesis done
-2023-04-26 16:12:05,615 - synthesizer_ar_storm.py - Subfamilies buffer contains: 2 families
+2023-04-27 10:00:15,560 - synthesizer_ar_storm.py - Main family synthesis done
+2023-04-27 10:00:15,561 - synthesizer_ar_storm.py - Subfamilies buffer contains: 2 families
 --------------------
 Synthesis summary
 
 optimality objective: R[exp]{"steps"}min=? [F (z = 5)] 
 
-method: AR, synthesis time: 2.0 s
+method: AR, synthesis time: 1.88 s
 number of holes: 6, family size: 144, super quotient: 2741 states / 5285 actions
 explored: 100 %
 AR stats: avg MDP size: 2682, iterations: 44
@@ -16199,27 +16199,27 @@ AR stats: avg MDP size: 2682, iterations: 44
 optimal: 10241.939783
 --------------------
 
-2023-04-26 16:12:07,017 - synthesizer_pomdp.py - Increase memory in all imperfect observation
+2023-04-27 10:00:16,885 - synthesizer_pomdp.py - Increase memory in all imperfect observation
 {0: 2, 1: 2, 2: 2, 3: 2, 4: 2, 5: 2, 6: 2, 7: 2, 8: 2, 9: 2, 10: 1}
-2023-04-26 16:12:07,017 - quotient_pomdp.py - Unfolding POMDP using the following memory allocation vector: [2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 1] ...
-2023-04-26 16:12:07,019 - quotient_pomdp.py - Constructed quotient MDP having 5481 states and 21138 actions.
+2023-04-27 10:00:16,885 - quotient_pomdp.py - Unfolding POMDP using the following memory allocation vector: [2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 1] ...
+2023-04-27 10:00:16,887 - quotient_pomdp.py - Constructed quotient MDP having 5481 states and 21138 actions.
 {0: [0, 1], 1: [0, 1], 2: [0], 3: [0, 1], 4: [0], 5: [2, 0, 1], 6: [0, 1], 7: [1, 0], 8: [0], 9: [0], 10: [0]} 
 
 {0: [0, 1], 1: [0, 1], 2: [0], 3: [0, 1], 4: [0], 5: [2, 0, 1], 6: [0, 1], 7: [1, 0], 8: [0], 9: [0], 10: [0]}
-2023-04-26 16:12:11,975 - synthesizer.py - Synthesis initiated.
+2023-04-27 10:00:21,462 - synthesizer.py - Synthesis initiated.
 -----------PAYNT-----------               
-Value = 9019.145779314704 | Time elapsed = 9.0s | FSC size = 42
+Value = 9019.145779314704 | Time elapsed = 8.4s | FSC size = 42
 FSC = A([fast=1],0)={'J'}, A([fast=1],1)={'J'}, M([fast=1],0)=0, M([fast=1],1)=0, A([mid=1],0)={'F'}, A([mid=1],1)={'F'}, M([mid=1],0)=0, M([mid=1],1)=1, M([],0)=0, M([],1)=0, A([slow=1],0)={'B'}, A([slow=1],1)={'B'}, M([slow=1],0)=0, M([slow=1],1)=0, M([in=1],0)=0, M([in=1],1)=0, A([blue=1 & imgoal=1],0)={'C'}, A([blue=1 & imgoal=1],1)={'B'}, M([blue=1 & imgoal=1],0)=1, M([blue=1 & imgoal=1],1)=1, A([o0=1],0)={'r'}, A([o0=1],1)={'r'}, M([o0=1],0)=0, M([o0=1],1)=0, A([imgoal=1 & yell=1],0)={'A'}, A([imgoal=1 & yell=1],1)={'B'}, M([imgoal=1 & yell=1],0)=0, M([imgoal=1 & yell=1],1)=1, M([imgoal=1],0)=0, M([imgoal=1],1)=0, M([goal=1 & imgoal=1],0)=0, M([goal=1 & imgoal=1],1)=0, M([ooin=1],0)=0
 
 -----------PAYNT-----------               
-Value = 8325.140009978475 | Time elapsed = 81.7s | FSC size = 42
+Value = 8325.140009978475 | Time elapsed = 77.9s | FSC size = 42
 FSC = A([fast=1],0)={'J'}, A([fast=1],1)={'J'}, M([fast=1],0)=0, M([fast=1],1)=0, A([mid=1],0)={'F'}, A([mid=1],1)={'F'}, M([mid=1],0)=0, M([mid=1],1)=0, M([],0)=1, M([],1)=0, A([slow=1],0)={'A'}, A([slow=1],1)={'B'}, M([slow=1],0)=0, M([slow=1],1)=0, M([in=1],0)=1, M([in=1],1)=1, A([blue=1 & imgoal=1],0)={'C'}, A([blue=1 & imgoal=1],1)={'B'}, M([blue=1 & imgoal=1],0)=1, M([blue=1 & imgoal=1],1)=1, A([o0=1],0)={'r'}, A([o0=1],1)={'r'}, M([o0=1],0)=0, M([o0=1],1)=0, A([imgoal=1 & yell=1],0)={'A'}, A([imgoal=1 & yell=1],1)={'B'}, M([imgoal=1 & yell=1],0)=0, M([imgoal=1 & yell=1],1)=1, M([imgoal=1],0)=0, M([imgoal=1],1)=0, M([goal=1 & imgoal=1],0)=0, M([goal=1 & imgoal=1],1)=0, M([ooin=1],0)=0
 
 -----------PAYNT-----------               
-Value = 8260.196568540421 | Time elapsed = 85.6s | FSC size = 42
+Value = 8260.196568540421 | Time elapsed = 81.8s | FSC size = 42
 FSC = A([fast=1],0)={'J'}, A([fast=1],1)={'J'}, M([fast=1],0)=0, M([fast=1],1)=1, A([mid=1],0)={'F'}, A([mid=1],1)={'F'}, M([mid=1],0)=0, M([mid=1],1)=0, M([],0)=1, M([],1)=1, A([slow=1],0)={'A'}, A([slow=1],1)={'B'}, M([slow=1],0)=0, M([slow=1],1)=1, M([in=1],0)=1, M([in=1],1)=0, A([blue=1 & imgoal=1],0)={'C'}, A([blue=1 & imgoal=1],1)={'B'}, M([blue=1 & imgoal=1],0)=1, M([blue=1 & imgoal=1],1)=1, A([o0=1],0)={'r'}, A([o0=1],1)={'r'}, M([o0=1],0)=0, M([o0=1],1)=0, A([imgoal=1 & yell=1],0)={'A'}, A([imgoal=1 & yell=1],1)={'B'}, M([imgoal=1 & yell=1],0)=0, M([imgoal=1 & yell=1],1)=1, M([imgoal=1],0)=0, M([imgoal=1],1)=0, M([goal=1 & imgoal=1],0)=0, M([goal=1 & imgoal=1],1)=0, M([ooin=1],0)=0
 
 -----------PAYNT-----------               
-Value = 8223.353067292326 | Time elapsed = 118.9s | FSC size = 42
+Value = 8223.353067292326 | Time elapsed = 114.4s | FSC size = 42
 FSC = A([fast=1],0)={'I'}, A([fast=1],1)={'J'}, M([fast=1],0)=0, M([fast=1],1)=0, A([mid=1],0)={'F'}, A([mid=1],1)={'E'}, M([mid=1],0)=1, M([mid=1],1)=0, M([],0)=1, M([],1)=1, A([slow=1],0)={'A'}, A([slow=1],1)={'B'}, M([slow=1],0)=0, M([slow=1],1)=0, M([in=1],0)=1, M([in=1],1)=0, A([blue=1 & imgoal=1],0)={'C'}, A([blue=1 & imgoal=1],1)={'B'}, M([blue=1 & imgoal=1],0)=1, M([blue=1 & imgoal=1],1)=1, A([o0=1],0)={'r'}, A([o0=1],1)={'r'}, M([o0=1],0)=0, M([o0=1],1)=0, A([imgoal=1 & yell=1],0)={'A'}, A([imgoal=1 & yell=1],1)={'B'}, M([imgoal=1 & yell=1],0)=0, M([imgoal=1 & yell=1],1)=1, M([imgoal=1],0)=0, M([imgoal=1],1)=0, M([goal=1 & imgoal=1],0)=0, M([goal=1 & imgoal=1],1)=0, M([ooin=1],0)=0
 

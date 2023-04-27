@@ -1,43 +1,43 @@
-2023-04-26 00:57:59,947 - cli.py - This is Paynt version 0.1.0.
-2023-04-26 00:57:59,950 - sketch.py - loading sketch from /mnt/d/src/PP/synthesis-CAV/experiments/../models/pomdp/storm-integration/milos-aaai97/sketch.templ ...
-2023-04-26 00:58:00,030 - prism_parser.py - loading properties from /mnt/d/src/PP/synthesis-CAV/experiments/../models/pomdp/storm-integration/milos-aaai97/sketch.props ...
-2023-04-26 00:58:00,047 - prism_parser.py - found the following specification: constraints: none, optimality objective: R[exp]{"reward"}max=? [F "discount_sink"] 
-2023-04-26 00:58:00,057 - sketch.py - constructed explicit quotient having 165 states and 980 actions
-2023-04-26 00:58:00,057 - sketch.py - found the following specification constraints: none, optimality objective: R[exp]{"reward"}max=? [F "discount_sink"] 
-2023-04-26 00:58:00,065 - quotient_pomdp.py - Constructed POMDP having 11 observations.
-2023-04-26 00:58:00,071 - quotient_pomdp.py - Unfolding POMDP using the following memory allocation vector: [1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1] ...
-2023-04-26 00:58:00,073 - quotient_pomdp.py - Constructed quotient MDP having 165 states and 980 actions.
-2023-04-26 00:58:00,088 - synthesizer_pomdp.py - Storm pomdp option enabled
-2023-04-26 00:58:00,088 - synthesizer_pomdp.py - Storm settings: iterative - (None, None, None), get_storm_result - 10, storm_options - 5mil, prune_storm - False, unfold_strategy - (True, False), use_storm_cutoffs - False
-2023-04-26 00:58:00,088 - synthesizer_pomdp.py - Synthesizing optimal k=1 controller ...
-2023-04-26 00:58:00,089 - quotient_pomdp.py - Unfolding POMDP using the following memory allocation vector: [1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1] ...
-2023-04-26 00:58:00,089 - quotient_pomdp.py - Constructed quotient MDP having 165 states and 980 actions.
+2023-04-27 00:56:08,153 - cli.py - This is Paynt version 0.1.0.
+2023-04-27 00:56:08,156 - sketch.py - loading sketch from /mnt/d/src/PP/synthesis-CAV/experiments/../models/pomdp/storm-integration/milos-aaai97/sketch.templ ...
+2023-04-27 00:56:08,227 - prism_parser.py - loading properties from /mnt/d/src/PP/synthesis-CAV/experiments/../models/pomdp/storm-integration/milos-aaai97/sketch.props ...
+2023-04-27 00:56:08,242 - prism_parser.py - found the following specification: constraints: none, optimality objective: R[exp]{"reward"}max=? [F "discount_sink"] 
+2023-04-27 00:56:08,252 - sketch.py - constructed explicit quotient having 165 states and 980 actions
+2023-04-27 00:56:08,252 - sketch.py - found the following specification constraints: none, optimality objective: R[exp]{"reward"}max=? [F "discount_sink"] 
+2023-04-27 00:56:08,260 - quotient_pomdp.py - Constructed POMDP having 11 observations.
+2023-04-27 00:56:08,265 - quotient_pomdp.py - Unfolding POMDP using the following memory allocation vector: [1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1] ...
+2023-04-27 00:56:08,267 - quotient_pomdp.py - Constructed quotient MDP having 165 states and 980 actions.
+2023-04-27 00:56:08,278 - synthesizer_pomdp.py - Storm pomdp option enabled
+2023-04-27 00:56:08,278 - synthesizer_pomdp.py - Storm settings: iterative - (None, None, None), get_storm_result - 10, storm_options - 5mil, prune_storm - False, unfold_strategy - (True, False), use_storm_cutoffs - False
+2023-04-27 00:56:08,278 - synthesizer_pomdp.py - Synthesizing optimal k=1 controller ...
+2023-04-27 00:56:08,278 - quotient_pomdp.py - Unfolding POMDP using the following memory allocation vector: [1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1] ...
+2023-04-27 00:56:08,279 - quotient_pomdp.py - Constructed quotient MDP having 165 states and 980 actions.
 {} 
 
 {}
-2023-04-26 00:58:00,101 - synthesizer.py - Synthesis initiated.
+2023-04-27 00:56:08,286 - synthesizer.py - Synthesis initiated.
 -----------PAYNT-----------               
-Value = 19.993230396091253 | Time elapsed = 0.0s | FSC size = 22
+Value = 19.993230396091253 | Time elapsed = 0.1s | FSC size = 22
 FSC = A(0,0)={'(a3)'}, A(1,0)={'(a4)'}, A(2,0)={'(a4)'}, A(3,0)={'(a4)'}, A(4,0)={'(a4)'}, A(5,0)={'(a0)'}, A(6,0)={'(a0)'}, A(7,0)={'(a0)'}, A(9,0)={'(a4)'}
 
 -----------PAYNT-----------               
-Value = 20.02868467753646 | Time elapsed = 0.0s | FSC size = 22
+Value = 20.02868467753646 | Time elapsed = 0.1s | FSC size = 22
 FSC = A(0,0)={'(a3)'}, A(1,0)={'(a4)'}, A(2,0)={'(a3)'}, A(3,0)={'(a4)'}, A(4,0)={'(a4)'}, A(5,0)={'(a0)'}, A(6,0)={'(a0)'}, A(7,0)={'(a0)'}, A(9,0)={'(a4)'}
 
 -----------PAYNT-----------               
-Value = 20.249478105032864 | Time elapsed = 0.0s | FSC size = 22
+Value = 20.249478105032864 | Time elapsed = 0.1s | FSC size = 22
 FSC = A(0,0)={'(a3)'}, A(1,0)={'(a4)'}, A(2,0)={'(a5)'}, A(3,0)={'(a4)'}, A(4,0)={'(a4)'}, A(5,0)={'(a3)'}, A(6,0)={'(a4)'}, A(7,0)={'(a4)'}, A(9,0)={'(a4)'}
 
 -----------PAYNT-----------               
-Value = 20.2569876398692 | Time elapsed = 0.0s | FSC size = 22
+Value = 20.2569876398692 | Time elapsed = 0.1s | FSC size = 22
 FSC = A(0,0)={'(a3)'}, A(1,0)={'(a4)'}, A(2,0)={'(a5)'}, A(3,0)={'(a4)'}, A(4,0)={'(a4)'}, A(5,0)={'(a3)'}, A(6,0)={'(a4)'}, A(7,0)={'(a5)'}, A(9,0)={'(a4)'}
 
 -----------PAYNT-----------               
-Value = 20.29158981118269 | Time elapsed = 0.0s | FSC size = 22
+Value = 20.29158981118269 | Time elapsed = 0.1s | FSC size = 22
 FSC = A(0,0)={'(a3)'}, A(1,0)={'(a5)'}, A(2,0)={'(a5)'}, A(3,0)={'(a4)'}, A(4,0)={'(a4)'}, A(5,0)={'(a3)'}, A(6,0)={'(a4)'}, A(7,0)={'(a4)'}, A(9,0)={'(a4)'}
 
 -----------PAYNT-----------               
-Value = 20.297295908151337 | Time elapsed = 0.0s | FSC size = 22
+Value = 20.297295908151337 | Time elapsed = 0.1s | FSC size = 22
 FSC = A(0,0)={'(a3)'}, A(1,0)={'(a5)'}, A(2,0)={'(a5)'}, A(3,0)={'(a4)'}, A(4,0)={'(a4)'}, A(5,0)={'(a3)'}, A(6,0)={'(a4)'}, A(7,0)={'(a5)'}, A(9,0)={'(a4)'}
 
 -----------PAYNT-----------               
@@ -101,7 +101,7 @@ Value = 27.61915841923631 | Time elapsed = 0.5s | FSC size = 22
 FSC = A(0,0)={'(a4)'}, A(1,0)={'(a1)'}, A(2,0)={'(a3)'}, A(3,0)={'(a0)'}, A(4,0)={'(a3)'}, A(5,0)={'(a0)'}, A(6,0)={'(a0)'}, A(7,0)={'(a0)'}, A(9,0)={'(a3)'}
 
 -----------PAYNT-----------               
-Value = 29.45856489035425 | Time elapsed = 0.8s | FSC size = 22
+Value = 29.45856489035425 | Time elapsed = 0.9s | FSC size = 22
 FSC = A(0,0)={'(a4)'}, A(1,0)={'(a1)'}, A(2,0)={'(a1)'}, A(3,0)={'(a0)'}, A(4,0)={'(a3)'}, A(5,0)={'(a3)'}, A(6,0)={'(a3)'}, A(7,0)={'(a0)'}, A(9,0)={'(a3)'}
 
 --------------------
@@ -109,7 +109,7 @@ Synthesis summary
 
 optimality objective: R[exp]{"reward"}max=? [F "discount_sink"] 
 
-method: AR, synthesis time: 3.24 s
+method: AR, synthesis time: 3.55 s
 number of holes: 9, family size: 10077696, super quotient: 165 states / 980 actions
 explored: 100 %
 AR stats: avg MDP size: 132, iterations: 5569
@@ -117,40 +117,40 @@ AR stats: avg MDP size: 132, iterations: 5569
 optimal: 29.458565
 --------------------
 
-2023-04-26 00:58:03,379 - synthesizer_pomdp.py - Synthesizing optimal k=2 controller ...
-2023-04-26 00:58:03,379 - quotient_pomdp.py - Unfolding POMDP using the following memory allocation vector: [2, 2, 2, 2, 2, 2, 2, 2, 1, 2, 1] ...
-2023-04-26 00:58:03,379 - quotient_pomdp.py - Constructed quotient MDP having 328 states and 3915 actions.
+2023-04-27 00:56:11,838 - synthesizer_pomdp.py - Synthesizing optimal k=2 controller ...
+2023-04-27 00:56:11,838 - quotient_pomdp.py - Unfolding POMDP using the following memory allocation vector: [2, 2, 2, 2, 2, 2, 2, 2, 1, 2, 1] ...
+2023-04-27 00:56:11,839 - quotient_pomdp.py - Constructed quotient MDP having 328 states and 3915 actions.
 {} 
 
 {}
-2023-04-26 00:58:03,542 - synthesizer.py - Synthesis initiated.
+2023-04-27 00:56:12,017 - synthesizer.py - Synthesis initiated.
 -----------PAYNT-----------               
-Value = 31.562357639160666 | Time elapsed = 3.4s | FSC size = 40
+Value = 31.562357639160666 | Time elapsed = 3.8s | FSC size = 40
 FSC = A(0,0)={'(a3)'}, A(0,1)={'(a2)'}, M(0,0)=1, M(0,1)=0, A(1,0)={'(a0)'}, A(1,1)={'(a0)'}, M(1,0)=0, M(1,1)=0, A(2,0)={'(a0)'}, A(2,1)={'(a0)'}, M(2,0)=0, M(2,1)=0, A(3,0)={'(a0)'}, A(3,1)={'(a0)'}, M(3,0)=0, M(3,1)=0, A(4,0)={'(a0)'}, A(4,1)={'(a0)'}, M(4,0)=0, M(4,1)=0, A(5,0)={'(a0)'}, A(5,1)={'(a0)'}, M(5,0)=0, M(5,1)=0, A(6,0)={'(a0)'}, A(6,1)={'(a0)'}, M(6,0)=0, M(6,1)=0, A(7,0)={'(a0)'}, A(7,1)={'(a0)'}, M(7,0)=0, M(7,1)=0, M(8,0)=1, A(9,0)={'(a3)'}, A(9,1)={'(a3)'}, M(9,0)=1, M(9,1)=0
 
-2023-04-26 00:58:10,155 - synthesizer_ar_storm.py - Pausing synthesis
-2023-04-26 00:58:10,155 - synthesizer_ar_storm.py - Terminating controller synthesis
+2023-04-27 00:56:18,344 - synthesizer_ar_storm.py - Pausing synthesis
+2023-04-27 00:56:18,344 - synthesizer_ar_storm.py - Terminating controller synthesis
 --------------------
 Synthesis summary
 
 optimality objective: R[exp]{"reward"}max=? [F "discount_sink"] 
 
-method: AR, synthesis time: 6.61 s
+method: AR, synthesis time: 6.33 s
 number of holes: 37, family size: 53246666561770487808, super quotient: 328 states / 3915 actions
 explored: 3 %
-AR stats: avg MDP size: 86, iterations: 3188
+AR stats: avg MDP size: 86, iterations: 3055
 
 optimal: 31.562358
 --------------------
 
-2023-04-26 00:58:10,161 - storm_pomdp_control.py - starting Storm POMDP analysis
+2023-04-27 00:56:18,351 - storm_pomdp_control.py - starting Storm POMDP analysis
 Finished exploring Underapproximation MDP.
  Start analysis...
-2023-04-26 00:58:51,434 - storm_pomdp_control.py - Storm POMDP analysis completed
+2023-04-27 00:57:00,046 - storm_pomdp_control.py - Storm POMDP analysis completed
 {0: [0, 1, 2, 3, 4, 5], 1: [0, 1, 2, 3, 4, 5], 2: [0, 1, 2, 3, 4, 5], 3: [0, 1, 2, 3, 4, 5], 4: [0, 1, 2, 3, 4, 5], 5: [0, 1, 2, 3, 4, 5], 6: [0, 1, 2, 3, 4, 5], 7: [0, 1, 2, 3, 4, 5], 8: [0], 9: [0, 2, 3, 4, 5], 10: [0]}
 {0: [0, 1, 2, 3, 4, 5], 1: [0, 1, 2, 3, 4, 5], 2: [0, 1, 2, 3, 4, 5], 3: [0, 1, 2, 3, 4, 5], 4: [0, 1, 2, 3, 4, 5], 5: [0, 1, 2, 3, 4, 5], 6: [0, 1, 2, 3, 4, 5], 7: [0, 1, 2, 3, 4, 5], 8: [0], 9: [0, 2, 3, 4, 5], 10: [0]}
 -----------Storm-----------                 
-Value = 40.641218246276274 | Time elapsed = 41.2s | FSC size = 524
+Value = 40.641218246276274 | Time elapsed = 41.7s | FSC size = 524
 FSC (dot) = digraph model {
 	0 [ label = "0: {__extra, target}" ];
 	1 [ label = "1: {init, obs_8}" ];

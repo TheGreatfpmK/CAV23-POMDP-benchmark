@@ -1,21 +1,21 @@
-2023-04-26 08:10:22,540 - cli.py - This is Paynt version 0.1.0.
-2023-04-26 08:10:22,543 - sketch.py - loading sketch from /mnt/d/src/PP/synthesis-CAV/experiments/../models/pomdp/storm-integration/refuel-06/sketch.templ ...
-2023-04-26 08:10:22,622 - prism_parser.py - PRISM model type: PrismModelType.POMDP
-2023-04-26 08:10:22,622 - prism_parser.py - loading properties from /mnt/d/src/PP/synthesis-CAV/experiments/../models/pomdp/storm-integration/refuel-06/sketch.props ...
-2023-04-26 08:10:22,638 - prism_parser.py - found the following specification: constraints: none, optimality objective: Pmax=? ["notbad" U "goal"] 
-2023-04-26 08:10:22,693 - sketch.py - constructed explicit quotient having 208 states and 565 actions
-2023-04-26 08:10:22,693 - property.py - converting until formula to eventually...
-2023-04-26 08:10:22,693 - sketch.py - found the following specification constraints: none, optimality objective: Pmax=? [F "goal"] 
-2023-04-26 08:10:22,715 - quotient_pomdp.py - Constructed POMDP having 50 observations.
-2023-04-26 08:10:22,723 - quotient_pomdp.py - Unfolding POMDP using the following memory allocation vector: [1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1] ...
-2023-04-26 08:10:22,725 - quotient_pomdp.py - Constructed quotient MDP having 208 states and 565 actions.
-2023-04-26 08:10:22,729 - synthesizer_pomdp.py - Storm pomdp option enabled
-2023-04-26 08:10:22,729 - synthesizer_pomdp.py - Storm settings: iterative - (900, 60, 10), get_storm_result - None, storm_options - cutoff, prune_storm - False, unfold_strategy - (True, False), use_storm_cutoffs - False
+2023-04-27 08:16:50,596 - cli.py - This is Paynt version 0.1.0.
+2023-04-27 08:16:50,598 - sketch.py - loading sketch from /mnt/d/src/PP/synthesis-CAV/experiments/../models/pomdp/storm-integration/refuel-06/sketch.templ ...
+2023-04-27 08:16:50,688 - prism_parser.py - PRISM model type: PrismModelType.POMDP
+2023-04-27 08:16:50,688 - prism_parser.py - loading properties from /mnt/d/src/PP/synthesis-CAV/experiments/../models/pomdp/storm-integration/refuel-06/sketch.props ...
+2023-04-27 08:16:50,705 - prism_parser.py - found the following specification: constraints: none, optimality objective: Pmax=? ["notbad" U "goal"] 
+2023-04-27 08:16:50,759 - sketch.py - constructed explicit quotient having 208 states and 565 actions
+2023-04-27 08:16:50,759 - property.py - converting until formula to eventually...
+2023-04-27 08:16:50,759 - sketch.py - found the following specification constraints: none, optimality objective: Pmax=? [F "goal"] 
+2023-04-27 08:16:50,765 - quotient_pomdp.py - Constructed POMDP having 50 observations.
+2023-04-27 08:16:50,770 - quotient_pomdp.py - Unfolding POMDP using the following memory allocation vector: [1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1] ...
+2023-04-27 08:16:50,772 - quotient_pomdp.py - Constructed quotient MDP having 208 states and 565 actions.
+2023-04-27 08:16:50,776 - synthesizer_pomdp.py - Storm pomdp option enabled
+2023-04-27 08:16:50,776 - synthesizer_pomdp.py - Storm settings: iterative - (900, 60, 10), get_storm_result - None, storm_options - cutoff, prune_storm - False, unfold_strategy - (True, False), use_storm_cutoffs - False
 {} 
 
 {}
-2023-04-26 08:10:22,734 - synthesizer.py - Synthesis initiated.
-2023-04-26 08:10:22,734 - synthesizer_pomdp.py - Timeout for PAYNT started
+2023-04-27 08:16:50,780 - synthesizer.py - Synthesis initiated.
+2023-04-27 08:16:50,780 - synthesizer_pomdp.py - Timeout for PAYNT started
 -----------PAYNT-----------                     
 Value = 0.0 | Time elapsed = 0.0s | FSC size = 100
 
@@ -26,17 +26,17 @@ Value = 0.023345689581199237 | Time elapsed = 0.0s | FSC size = 100
 Value = 0.20325742416121426 | Time elapsed = 0.1s | FSC size = 100
 
 -----------PAYNT-----------                     
-Value = 0.26786400451767856 | Time elapsed = 0.5s | FSC size = 100
+Value = 0.26786400451767856 | Time elapsed = 0.6s | FSC size = 100
 
 -----------PAYNT-----------                     
-Value = 0.35002591509999986 | Time elapsed = 0.6s | FSC size = 100
+Value = 0.35002591509999986 | Time elapsed = 0.7s | FSC size = 100
 
 --------------------
 Synthesis summary
 
 optimality objective: Pmax=? [F "goal"] 
 
-method: AR, synthesis time: 1.0 s
+method: AR, synthesis time: 0.92 s
 number of holes: 26, family size: 1410554953728, super quotient: 208 states / 565 actions
 explored: 100 %
 AR stats: avg MDP size: 170, iterations: 2487
@@ -44,22 +44,22 @@ AR stats: avg MDP size: 170, iterations: 2487
 optimal: 0.350026
 --------------------
 
-2023-04-26 08:10:23,751 - synthesizer_pomdp.py - Increase memory in all imperfect observation
+2023-04-27 08:16:51,696 - synthesizer_pomdp.py - Increase memory in all imperfect observation
 {0: 2, 1: 2, 2: 1, 3: 2, 4: 2, 5: 1, 6: 2, 7: 2, 8: 2, 9: 2, 10: 2, 11: 2, 12: 2, 13: 2, 14: 2, 15: 2, 16: 2, 17: 2, 18: 2, 19: 1, 20: 2, 21: 2, 22: 2, 23: 2, 24: 2, 25: 2, 26: 2, 27: 1, 28: 1, 29: 1, 30: 1, 31: 2, 32: 1, 33: 1, 34: 1, 35: 2, 36: 1, 37: 1, 38: 1, 39: 1, 40: 2, 41: 1, 42: 1, 43: 1, 44: 2, 45: 1, 46: 1, 47: 1, 48: 1, 49: 1}
-2023-04-26 08:10:23,752 - quotient_pomdp.py - Unfolding POMDP using the following memory allocation vector: [2, 2, 1, 2, 2, 1, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 1, 2, 2, 2, 2, 2, 2, 2, 1, 1, 1, 1, 2, 1, 1, 1, 2, 1, 1, 1, 1, 2, 1, 1, 1, 2, 1, 1, 1, 1, 1] ...
-2023-04-26 08:10:23,752 - quotient_pomdp.py - Constructed quotient MDP having 394 states and 2183 actions.
+2023-04-27 08:16:51,696 - quotient_pomdp.py - Unfolding POMDP using the following memory allocation vector: [2, 2, 1, 2, 2, 1, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 1, 2, 2, 2, 2, 2, 2, 2, 1, 1, 1, 1, 2, 1, 1, 1, 2, 1, 1, 1, 1, 2, 1, 1, 1, 2, 1, 1, 1, 1, 1] ...
+2023-04-27 08:16:51,696 - quotient_pomdp.py - Constructed quotient MDP having 394 states and 2183 actions.
 {} 
 
 {}
-2023-04-26 08:10:23,803 - synthesizer.py - Synthesis initiated.
-2023-04-26 08:11:22,831 - synthesizer_ar_storm.py - Pausing synthesis
-2023-04-26 08:11:22,930 - storm_pomdp_control.py - Interactive Storm started
-2023-04-26 08:11:22,931 - storm_pomdp_control.py - starting Storm POMDP analysis
-2023-04-26 08:11:33,942 - storm_pomdp_control.py - Pausing Storm
+2023-04-27 08:16:51,747 - synthesizer.py - Synthesis initiated.
+2023-04-27 08:17:50,876 - synthesizer_ar_storm.py - Pausing synthesis
+2023-04-27 08:17:50,975 - storm_pomdp_control.py - Interactive Storm started
+2023-04-27 08:17:50,976 - storm_pomdp_control.py - starting Storm POMDP analysis
+2023-04-27 08:18:01,987 - storm_pomdp_control.py - Pausing Storm
 Finished exploring Underapproximation MDP.
  Start analysis...
 -----------Storm-----------               
-Value = 0.67219 | Time elapsed = 83.1s | FSC size = 84
+Value = 0.67219 | Time elapsed = 83.2s | FSC size = 84
 
 
 ------------------------------------
@@ -74,31 +74,31 @@ controller size: 84
 
 ------------------------------------
 
-2023-04-26 08:11:45,964 - synthesizer_pomdp.py - Timeout for PAYNT started
-2023-04-26 08:11:46,856 - synthesizer_ar_storm.py - Resuming synthesis
-2023-04-26 08:11:46,856 - synthesizer_ar_storm.py - Applying family split according to Storm results
-2023-04-26 08:11:46,856 - storm_pomdp_control.py - Main family based on data from Storm: reduced design space from 31860109519220150328471728740863597084672 to 295147905179352825856
-2023-04-26 08:11:46,858 - storm_pomdp_control.py - Main family based on data from Storm: reduced design space from 7965027379805037582117932185215899271168 to 147573952589676412928
-2023-04-26 08:11:46,859 - storm_pomdp_control.py - Main family based on data from Storm: reduced design space from 1991256844951259395529483046303974817792 to 73786976294838206464
-2023-04-26 08:11:46,860 - storm_pomdp_control.py - Main family based on data from Storm: reduced design space from 497814211237814848882370761575993704448 to 36893488147419103232
-2023-04-26 08:11:46,875 - storm_pomdp_control.py - Main family based on data from Storm: reduced design space from 248907105618907424441185380787996852224 to 36893488147419103232
-2023-04-26 08:11:46,876 - synthesizer_ar_storm.py - State after Storm splitting: Main families - 5, Subfamilies - 135
+2023-04-27 08:18:14,007 - synthesizer_pomdp.py - Timeout for PAYNT started
+2023-04-27 08:18:14,902 - synthesizer_ar_storm.py - Resuming synthesis
+2023-04-27 08:18:14,902 - synthesizer_ar_storm.py - Applying family split according to Storm results
+2023-04-27 08:18:14,902 - storm_pomdp_control.py - Main family based on data from Storm: reduced design space from 31860109519220150328471728740863597084672 to 295147905179352825856
+2023-04-27 08:18:14,905 - storm_pomdp_control.py - Main family based on data from Storm: reduced design space from 7965027379805037582117932185215899271168 to 147573952589676412928
+2023-04-27 08:18:14,906 - storm_pomdp_control.py - Main family based on data from Storm: reduced design space from 1991256844951259395529483046303974817792 to 73786976294838206464
+2023-04-27 08:18:14,907 - storm_pomdp_control.py - Main family based on data from Storm: reduced design space from 497814211237814848882370761575993704448 to 36893488147419103232
+2023-04-27 08:18:14,908 - storm_pomdp_control.py - Main family based on data from Storm: reduced design space from 248907105618907424441185380787996852224 to 36893488147419103232
+2023-04-27 08:18:14,909 - synthesizer_ar_storm.py - State after Storm splitting: Main families - 5, Subfamilies - 132
 -----------PAYNT-----------                     
 Value = 0.3697646924932315 | Time elapsed = 84.1s | FSC size = 156
 
 -----------PAYNT-----------                     
-Value = 0.6686866447340153 | Time elapsed = 84.1s | FSC size = 156
+Value = 0.6686866447340153 | Time elapsed = 84.2s | FSC size = 156
 
-2023-04-26 08:11:47,063 - synthesizer_ar_storm.py - Main family synthesis done
-2023-04-26 08:11:47,063 - synthesizer_ar_storm.py - Subfamilies buffer contains: 135 families
-2023-04-26 08:12:46,031 - synthesizer_ar_storm.py - Pausing synthesis
-2023-04-26 08:12:46,129 - storm_pomdp_control.py - Interactive Storm resumed
-2023-04-26 08:12:46,129 - storm_pomdp_control.py - Updating FSC values in Storm
-2023-04-26 08:12:57,141 - storm_pomdp_control.py - Pausing Storm
+2023-04-27 08:18:15,106 - synthesizer_ar_storm.py - Main family synthesis done
+2023-04-27 08:18:15,106 - synthesizer_ar_storm.py - Subfamilies buffer contains: 132 families
+2023-04-27 08:19:14,074 - synthesizer_ar_storm.py - Pausing synthesis
+2023-04-27 08:19:14,172 - storm_pomdp_control.py - Interactive Storm resumed
+2023-04-27 08:19:14,173 - storm_pomdp_control.py - Updating FSC values in Storm
+2023-04-27 08:19:25,184 - storm_pomdp_control.py - Pausing Storm
 Finished exploring Underapproximation MDP.
  Start analysis...
 -----------Storm-----------               
-Value = 0.67219 | Time elapsed = 235.4s | FSC size = 84
+Value = 0.67219 | Time elapsed = 176.4s | FSC size = 84
 
 
 ------------------------------------
@@ -113,18 +113,18 @@ controller size: 84
 
 ------------------------------------
 
-2023-04-26 08:13:19,165 - synthesizer_pomdp.py - Timeout for PAYNT started
-2023-04-26 08:13:20,066 - synthesizer_ar_storm.py - Resuming synthesis
-2023-04-26 08:13:20,067 - synthesizer_ar_storm.py - Applying family split according to Storm results
-2023-04-26 08:13:20,069 - synthesizer_ar_storm.py - State after Storm splitting: Main families - 0, Subfamilies - 74
-2023-04-26 08:14:19,232 - synthesizer_ar_storm.py - Pausing synthesis
-2023-04-26 08:14:19,330 - storm_pomdp_control.py - Interactive Storm resumed
-2023-04-26 08:14:19,330 - storm_pomdp_control.py - Updating FSC values in Storm
-2023-04-26 08:14:30,342 - storm_pomdp_control.py - Pausing Storm
+2023-04-27 08:19:47,208 - synthesizer_pomdp.py - Timeout for PAYNT started
+2023-04-27 08:19:48,111 - synthesizer_ar_storm.py - Resuming synthesis
+2023-04-27 08:19:48,111 - synthesizer_ar_storm.py - Applying family split according to Storm results
+2023-04-27 08:19:48,113 - synthesizer_ar_storm.py - State after Storm splitting: Main families - 0, Subfamilies - 67
+2023-04-27 08:20:47,276 - synthesizer_ar_storm.py - Pausing synthesis
+2023-04-27 08:20:47,374 - storm_pomdp_control.py - Interactive Storm resumed
+2023-04-27 08:20:47,374 - storm_pomdp_control.py - Updating FSC values in Storm
+2023-04-27 08:20:58,385 - storm_pomdp_control.py - Pausing Storm
 Finished exploring Underapproximation MDP.
  Start analysis...
 -----------Storm-----------               
-Value = 0.67219 | Time elapsed = 393.8s | FSC size = 84
+Value = 0.67219 | Time elapsed = 275.6s | FSC size = 84
 
 
 ------------------------------------
@@ -139,18 +139,18 @@ controller size: 84
 
 ------------------------------------
 
-2023-04-26 08:14:58,370 - synthesizer_pomdp.py - Timeout for PAYNT started
-2023-04-26 08:14:59,274 - synthesizer_ar_storm.py - Resuming synthesis
-2023-04-26 08:14:59,275 - synthesizer_ar_storm.py - Applying family split according to Storm results
-2023-04-26 08:14:59,277 - synthesizer_ar_storm.py - State after Storm splitting: Main families - 0, Subfamilies - 72
-2023-04-26 08:15:58,438 - synthesizer_ar_storm.py - Pausing synthesis
-2023-04-26 08:15:58,536 - storm_pomdp_control.py - Interactive Storm resumed
-2023-04-26 08:15:58,536 - storm_pomdp_control.py - Updating FSC values in Storm
-2023-04-26 08:16:09,547 - storm_pomdp_control.py - Pausing Storm
+2023-04-27 08:21:26,416 - synthesizer_pomdp.py - Timeout for PAYNT started
+2023-04-27 08:21:27,318 - synthesizer_ar_storm.py - Resuming synthesis
+2023-04-27 08:21:27,318 - synthesizer_ar_storm.py - Applying family split according to Storm results
+2023-04-27 08:21:27,320 - synthesizer_ar_storm.py - State after Storm splitting: Main families - 0, Subfamilies - 65
+2023-04-27 08:22:26,484 - synthesizer_ar_storm.py - Pausing synthesis
+2023-04-27 08:22:26,582 - storm_pomdp_control.py - Interactive Storm resumed
+2023-04-27 08:22:26,582 - storm_pomdp_control.py - Updating FSC values in Storm
+2023-04-27 08:22:37,593 - storm_pomdp_control.py - Pausing Storm
 Finished exploring Underapproximation MDP.
  Start analysis...
 -----------Storm-----------               
-Value = 0.67219 | Time elapsed = 556.1s | FSC size = 84
+Value = 0.67219 | Time elapsed = 378.8s | FSC size = 84
 
 
 ------------------------------------
@@ -165,18 +165,18 @@ controller size: 84
 
 ------------------------------------
 
-2023-04-26 08:16:41,581 - synthesizer_pomdp.py - Timeout for PAYNT started
-2023-04-26 08:16:42,484 - synthesizer_ar_storm.py - Resuming synthesis
-2023-04-26 08:16:42,484 - synthesizer_ar_storm.py - Applying family split according to Storm results
-2023-04-26 08:16:42,486 - synthesizer_ar_storm.py - State after Storm splitting: Main families - 0, Subfamilies - 70
-2023-04-26 08:17:41,650 - synthesizer_ar_storm.py - Pausing synthesis
-2023-04-26 08:17:41,747 - storm_pomdp_control.py - Interactive Storm resumed
-2023-04-26 08:17:41,747 - storm_pomdp_control.py - Updating FSC values in Storm
-2023-04-26 08:17:52,758 - storm_pomdp_control.py - Pausing Storm
+2023-04-27 08:23:09,602 - synthesizer_pomdp.py - Timeout for PAYNT started
+2023-04-27 08:23:10,530 - synthesizer_ar_storm.py - Resuming synthesis
+2023-04-27 08:23:10,531 - synthesizer_ar_storm.py - Applying family split according to Storm results
+2023-04-27 08:23:10,533 - synthesizer_ar_storm.py - State after Storm splitting: Main families - 0, Subfamilies - 72
+2023-04-27 08:24:09,670 - synthesizer_ar_storm.py - Pausing synthesis
+2023-04-27 08:24:09,767 - storm_pomdp_control.py - Interactive Storm resumed
+2023-04-27 08:24:09,767 - storm_pomdp_control.py - Updating FSC values in Storm
+2023-04-27 08:24:20,779 - storm_pomdp_control.py - Pausing Storm
 Finished exploring Underapproximation MDP.
  Start analysis...
 -----------Storm-----------               
-Value = 0.67219 | Time elapsed = 724.5s | FSC size = 84
+Value = 0.67219 | Time elapsed = 486.0s | FSC size = 84
 
 
 ------------------------------------
@@ -191,18 +191,18 @@ controller size: 84
 
 ------------------------------------
 
-2023-04-26 08:18:30,798 - synthesizer_pomdp.py - Timeout for PAYNT started
-2023-04-26 08:18:31,703 - synthesizer_ar_storm.py - Resuming synthesis
-2023-04-26 08:18:31,703 - synthesizer_ar_storm.py - Applying family split according to Storm results
-2023-04-26 08:18:31,705 - synthesizer_ar_storm.py - State after Storm splitting: Main families - 0, Subfamilies - 68
-2023-04-26 08:19:30,866 - synthesizer_ar_storm.py - Pausing synthesis
-2023-04-26 08:19:30,964 - storm_pomdp_control.py - Interactive Storm resumed
-2023-04-26 08:19:30,964 - storm_pomdp_control.py - Updating FSC values in Storm
-2023-04-26 08:19:41,975 - storm_pomdp_control.py - Pausing Storm
+2023-04-27 08:24:56,817 - synthesizer_pomdp.py - Timeout for PAYNT started
+2023-04-27 08:24:57,721 - synthesizer_ar_storm.py - Resuming synthesis
+2023-04-27 08:24:57,721 - synthesizer_ar_storm.py - Applying family split according to Storm results
+2023-04-27 08:24:57,724 - synthesizer_ar_storm.py - State after Storm splitting: Main families - 0, Subfamilies - 69
+2023-04-27 08:25:56,885 - synthesizer_ar_storm.py - Pausing synthesis
+2023-04-27 08:25:56,983 - storm_pomdp_control.py - Interactive Storm resumed
+2023-04-27 08:25:56,983 - storm_pomdp_control.py - Updating FSC values in Storm
+2023-04-27 08:26:07,994 - storm_pomdp_control.py - Pausing Storm
 Finished exploring Underapproximation MDP.
  Start analysis...
 -----------Storm-----------               
-Value = 0.67219 | Time elapsed = 896.8s | FSC size = 84
+Value = 0.67219 | Time elapsed = 597.3s | FSC size = 84
 
 
 ------------------------------------
@@ -217,18 +217,18 @@ controller size: 84
 
 ------------------------------------
 
-2023-04-26 08:20:24,019 - synthesizer_pomdp.py - Timeout for PAYNT started
-2023-04-26 08:20:24,923 - synthesizer_ar_storm.py - Resuming synthesis
-2023-04-26 08:20:24,923 - synthesizer_ar_storm.py - Applying family split according to Storm results
-2023-04-26 08:20:24,930 - synthesizer_ar_storm.py - State after Storm splitting: Main families - 0, Subfamilies - 70
-2023-04-26 08:21:24,087 - synthesizer_ar_storm.py - Pausing synthesis
-2023-04-26 08:21:24,185 - storm_pomdp_control.py - Interactive Storm resumed
-2023-04-26 08:21:24,185 - storm_pomdp_control.py - Updating FSC values in Storm
-2023-04-26 08:21:35,197 - storm_pomdp_control.py - Pausing Storm
+2023-04-27 08:26:48,037 - synthesizer_pomdp.py - Timeout for PAYNT started
+2023-04-27 08:26:48,941 - synthesizer_ar_storm.py - Resuming synthesis
+2023-04-27 08:26:48,941 - synthesizer_ar_storm.py - Applying family split according to Storm results
+2023-04-27 08:26:48,945 - synthesizer_ar_storm.py - State after Storm splitting: Main families - 0, Subfamilies - 74
+2023-04-27 08:27:48,105 - synthesizer_ar_storm.py - Pausing synthesis
+2023-04-27 08:27:48,202 - storm_pomdp_control.py - Interactive Storm resumed
+2023-04-27 08:27:48,203 - storm_pomdp_control.py - Updating FSC values in Storm
+2023-04-27 08:27:59,214 - storm_pomdp_control.py - Pausing Storm
 Finished exploring Underapproximation MDP.
  Start analysis...
 -----------Storm-----------               
-Value = 0.67219 | Time elapsed = 1073.2s | FSC size = 84
+Value = 0.67219 | Time elapsed = 712.5s | FSC size = 84
 
 
 ------------------------------------
@@ -243,18 +243,18 @@ controller size: 84
 
 ------------------------------------
 
-2023-04-26 08:22:21,245 - synthesizer_pomdp.py - Timeout for PAYNT started
-2023-04-26 08:22:22,149 - synthesizer_ar_storm.py - Resuming synthesis
-2023-04-26 08:22:22,149 - synthesizer_ar_storm.py - Applying family split according to Storm results
-2023-04-26 08:22:22,151 - synthesizer_ar_storm.py - State after Storm splitting: Main families - 0, Subfamilies - 62
-2023-04-26 08:23:21,327 - synthesizer_ar_storm.py - Pausing synthesis
-2023-04-26 08:23:21,425 - storm_pomdp_control.py - Interactive Storm resumed
-2023-04-26 08:23:21,425 - storm_pomdp_control.py - Updating FSC values in Storm
-2023-04-26 08:23:32,436 - storm_pomdp_control.py - Pausing Storm
+2023-04-27 08:28:43,261 - synthesizer_pomdp.py - Timeout for PAYNT started
+2023-04-27 08:28:44,165 - synthesizer_ar_storm.py - Resuming synthesis
+2023-04-27 08:28:44,165 - synthesizer_ar_storm.py - Applying family split according to Storm results
+2023-04-27 08:28:44,167 - synthesizer_ar_storm.py - State after Storm splitting: Main families - 0, Subfamilies - 68
+2023-04-27 08:29:43,329 - synthesizer_ar_storm.py - Pausing synthesis
+2023-04-27 08:29:43,426 - storm_pomdp_control.py - Interactive Storm resumed
+2023-04-27 08:29:43,427 - storm_pomdp_control.py - Updating FSC values in Storm
+2023-04-27 08:29:54,438 - storm_pomdp_control.py - Pausing Storm
 Finished exploring Underapproximation MDP.
  Start analysis...
 -----------Storm-----------               
-Value = 0.67219 | Time elapsed = 1253.6s | FSC size = 84
+Value = 0.67219 | Time elapsed = 831.7s | FSC size = 84
 
 
 ------------------------------------
@@ -269,18 +269,18 @@ controller size: 84
 
 ------------------------------------
 
-2023-04-26 08:24:22,489 - synthesizer_pomdp.py - Timeout for PAYNT started
-2023-04-26 08:24:23,393 - synthesizer_ar_storm.py - Resuming synthesis
-2023-04-26 08:24:23,393 - synthesizer_ar_storm.py - Applying family split according to Storm results
-2023-04-26 08:24:23,396 - synthesizer_ar_storm.py - State after Storm splitting: Main families - 0, Subfamilies - 68
-2023-04-26 08:25:22,553 - synthesizer_ar_storm.py - Pausing synthesis
-2023-04-26 08:25:22,650 - storm_pomdp_control.py - Interactive Storm resumed
-2023-04-26 08:25:22,650 - storm_pomdp_control.py - Updating FSC values in Storm
-2023-04-26 08:25:33,661 - storm_pomdp_control.py - Pausing Storm
+2023-04-27 08:30:42,489 - synthesizer_pomdp.py - Timeout for PAYNT started
+2023-04-27 08:30:43,392 - synthesizer_ar_storm.py - Resuming synthesis
+2023-04-27 08:30:43,392 - synthesizer_ar_storm.py - Applying family split according to Storm results
+2023-04-27 08:30:43,394 - synthesizer_ar_storm.py - State after Storm splitting: Main families - 0, Subfamilies - 69
+2023-04-27 08:31:42,558 - synthesizer_ar_storm.py - Pausing synthesis
+2023-04-27 08:31:42,655 - storm_pomdp_control.py - Interactive Storm resumed
+2023-04-27 08:31:42,655 - storm_pomdp_control.py - Updating FSC values in Storm
+2023-04-27 08:31:53,666 - storm_pomdp_control.py - Pausing Storm
 Finished exploring Underapproximation MDP.
  Start analysis...
 -----------Storm-----------               
-Value = 0.67219 | Time elapsed = 1437.9s | FSC size = 84
+Value = 0.67219 | Time elapsed = 954.9s | FSC size = 84
 
 
 ------------------------------------
@@ -295,21 +295,21 @@ controller size: 84
 
 ------------------------------------
 
-2023-04-26 08:26:28,623 - synthesizer_ar_storm.py - Terminating controller synthesis
+2023-04-27 08:32:46,627 - synthesizer_ar_storm.py - Terminating controller synthesis
 --------------------
 Synthesis summary
 
 optimality objective: Pmax=? [F "goal"] 
 
-method: AR, synthesis time: 1005.59 s
+method: AR, synthesis time: 532.41 s
 number of holes: 108, family size: 63720219038440300656943457481727194169344, super quotient: 394 states / 2183 actions
 explored: 8 %
-AR stats: avg MDP size: 352, iterations: 323152
+AR stats: avg MDP size: 352, iterations: 317101
 
 optimal: 0.668687
 --------------------
 
-2023-04-26 08:26:28,626 - storm_pomdp_control.py - Storm POMDP analysis completed
+2023-04-27 08:32:46,631 - storm_pomdp_control.py - Storm POMDP analysis completed
 
 ------------------------------------
 

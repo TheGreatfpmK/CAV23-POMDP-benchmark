@@ -1,24 +1,24 @@
-2023-04-26 00:46:59,706 - cli.py - This is Paynt version 0.1.0.
-2023-04-26 00:46:59,709 - sketch.py - loading sketch from /mnt/d/src/PP/synthesis-CAV/experiments/../models/pomdp/storm-integration/query-s3/sketch.templ ...
-2023-04-26 00:46:59,776 - prism_parser.py - loading properties from /mnt/d/src/PP/synthesis-CAV/experiments/../models/pomdp/storm-integration/query-s3/sketch.props ...
-2023-04-26 00:46:59,790 - prism_parser.py - found the following specification: constraints: none, optimality objective: R[exp]{"reward"}max=? [F "discount_sink"] 
-2023-04-26 00:46:59,798 - sketch.py - constructed explicit quotient having 108 states and 320 actions
-2023-04-26 00:46:59,798 - sketch.py - found the following specification constraints: none, optimality objective: R[exp]{"reward"}max=? [F "discount_sink"] 
-2023-04-26 00:46:59,805 - quotient_pomdp.py - Constructed POMDP having 6 observations.
-2023-04-26 00:46:59,809 - quotient_pomdp.py - Unfolding POMDP using the following memory allocation vector: [1, 1, 1, 1, 1, 1] ...
-2023-04-26 00:46:59,812 - quotient_pomdp.py - Constructed quotient MDP having 108 states and 320 actions.
-2023-04-26 00:46:59,815 - synthesizer_pomdp.py - Storm pomdp option enabled
-2023-04-26 00:46:59,815 - synthesizer_pomdp.py - Storm settings: iterative - (None, None, None), get_storm_result - 0, storm_options - 5mil, prune_storm - False, unfold_strategy - (True, False), use_storm_cutoffs - False
-2023-04-26 00:46:59,823 - storm_pomdp_control.py - starting Storm POMDP analysis
-### 4516798 beliefs in underapproximation MDP ##### 4014929 beliefs queued
+2023-04-27 00:44:55,537 - cli.py - This is Paynt version 0.1.0.
+2023-04-27 00:44:55,539 - sketch.py - loading sketch from /mnt/d/src/PP/synthesis-CAV/experiments/../models/pomdp/storm-integration/query-s3/sketch.templ ...
+2023-04-27 00:44:55,618 - prism_parser.py - loading properties from /mnt/d/src/PP/synthesis-CAV/experiments/../models/pomdp/storm-integration/query-s3/sketch.props ...
+2023-04-27 00:44:55,633 - prism_parser.py - found the following specification: constraints: none, optimality objective: R[exp]{"reward"}max=? [F "discount_sink"] 
+2023-04-27 00:44:55,642 - sketch.py - constructed explicit quotient having 108 states and 320 actions
+2023-04-27 00:44:55,643 - sketch.py - found the following specification constraints: none, optimality objective: R[exp]{"reward"}max=? [F "discount_sink"] 
+2023-04-27 00:44:55,650 - quotient_pomdp.py - Constructed POMDP having 6 observations.
+2023-04-27 00:44:55,654 - quotient_pomdp.py - Unfolding POMDP using the following memory allocation vector: [1, 1, 1, 1, 1, 1] ...
+2023-04-27 00:44:55,656 - quotient_pomdp.py - Constructed quotient MDP having 108 states and 320 actions.
+2023-04-27 00:44:55,660 - synthesizer_pomdp.py - Storm pomdp option enabled
+2023-04-27 00:44:55,660 - synthesizer_pomdp.py - Storm settings: iterative - (None, None, None), get_storm_result - 0, storm_options - 5mil, prune_storm - False, unfold_strategy - (True, False), use_storm_cutoffs - False
+2023-04-27 00:44:55,668 - storm_pomdp_control.py - starting Storm POMDP analysis
+### 4460764 beliefs in underapproximation MDP ##### 3965121 beliefs queued
 Finished exploring Underapproximation MDP.
  Start analysis...
-2023-04-26 00:48:30,421 - storm_pomdp_control.py - Storm POMDP analysis completed
+2023-04-27 00:46:26,718 - storm_pomdp_control.py - Storm POMDP analysis completed
 {0: [0, 1, 2], 1: [0, 1, 2], 2: [0, 1, 2], 3: [0], 4: [0, 1, 2], 5: [0]}
 {0: [0, 1, 2], 1: [0, 1, 2], 2: [0, 1, 2], 3: [0], 4: [0, 1, 2], 5: [0]}
 {0: [0, 1, 2], 1: [0, 1, 2], 2: [0, 1, 2], 3: [0], 4: [0, 1, 2], 5: [0]}
 -----------Storm-----------                 
-Value = 419.5925992945379 | Time elapsed = 90.5s | FSC size = 7784
+Value = 419.5925992945379 | Time elapsed = 91.0s | FSC size = 7784
 FSC (dot) = digraph model {
 	0 [ label = "0: {__extra, target}" ];
 	1 [ label = "1: {init, obs_3}" ];

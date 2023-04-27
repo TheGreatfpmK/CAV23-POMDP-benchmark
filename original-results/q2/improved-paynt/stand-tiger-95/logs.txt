@@ -1,18 +1,18 @@
-2023-04-26 02:18:02,494 - cli.py - This is Paynt version 0.1.0.
-2023-04-26 02:18:02,497 - sketch.py - loading sketch from /mnt/d/src/PP/synthesis-CAV/experiments/../models/pomdp/storm-integration/stand-tiger-95/sketch.templ ...
-2023-04-26 02:18:02,548 - prism_parser.py - loading properties from /mnt/d/src/PP/synthesis-CAV/experiments/../models/pomdp/storm-integration/stand-tiger-95/sketch.props ...
-2023-04-26 02:18:02,563 - prism_parser.py - found the following specification: constraints: none, optimality objective: R[exp]{"reward"}max=? [F "discount_sink"] 
-2023-04-26 02:18:02,571 - sketch.py - constructed explicit quotient having 14 states and 50 actions
-2023-04-26 02:18:02,571 - sketch.py - found the following specification constraints: none, optimality objective: R[exp]{"reward"}max=? [F "discount_sink"] 
-2023-04-26 02:18:02,578 - quotient_pomdp.py - Constructed POMDP having 7 observations.
-2023-04-26 02:18:02,582 - quotient_pomdp.py - Unfolding POMDP using the following memory allocation vector: [1, 1, 1, 1, 1, 1, 1] ...
-2023-04-26 02:18:02,584 - quotient_pomdp.py - Constructed quotient MDP having 14 states and 50 actions.
-2023-04-26 02:18:02,586 - synthesizer_pomdp.py - Storm pomdp option enabled
-2023-04-26 02:18:02,586 - synthesizer_pomdp.py - Storm settings: iterative - (None, None, None), get_storm_result - None, storm_options - cutoff, prune_storm - False, unfold_strategy - (True, False), use_storm_cutoffs - False
-2023-04-26 02:18:02,594 - storm_pomdp_control.py - starting Storm POMDP analysis
+2023-04-27 02:16:14,824 - cli.py - This is Paynt version 0.1.0.
+2023-04-27 02:16:14,826 - sketch.py - loading sketch from /mnt/d/src/PP/synthesis-CAV/experiments/../models/pomdp/storm-integration/stand-tiger-95/sketch.templ ...
+2023-04-27 02:16:14,875 - prism_parser.py - loading properties from /mnt/d/src/PP/synthesis-CAV/experiments/../models/pomdp/storm-integration/stand-tiger-95/sketch.props ...
+2023-04-27 02:16:14,889 - prism_parser.py - found the following specification: constraints: none, optimality objective: R[exp]{"reward"}max=? [F "discount_sink"] 
+2023-04-27 02:16:14,898 - sketch.py - constructed explicit quotient having 14 states and 50 actions
+2023-04-27 02:16:14,898 - sketch.py - found the following specification constraints: none, optimality objective: R[exp]{"reward"}max=? [F "discount_sink"] 
+2023-04-27 02:16:14,904 - quotient_pomdp.py - Constructed POMDP having 7 observations.
+2023-04-27 02:16:14,908 - quotient_pomdp.py - Unfolding POMDP using the following memory allocation vector: [1, 1, 1, 1, 1, 1, 1] ...
+2023-04-27 02:16:14,910 - quotient_pomdp.py - Constructed quotient MDP having 14 states and 50 actions.
+2023-04-27 02:16:14,912 - synthesizer_pomdp.py - Storm pomdp option enabled
+2023-04-27 02:16:14,912 - synthesizer_pomdp.py - Storm settings: iterative - (None, None, None), get_storm_result - None, storm_options - cutoff, prune_storm - False, unfold_strategy - (True, False), use_storm_cutoffs - False
+2023-04-27 02:16:14,919 - storm_pomdp_control.py - starting Storm POMDP analysis
 Finished exploring Underapproximation MDP.
  Start analysis...
-2023-04-26 02:18:02,645 - storm_pomdp_control.py - Storm POMDP analysis completed
+2023-04-27 02:16:14,968 - storm_pomdp_control.py - Storm POMDP analysis completed
 -----------Storm-----------               
 Value = 50.377513618555255 | Time elapsed = 0.0s | FSC size = 58
 FSC (dot) = digraph model {
@@ -107,11 +107,11 @@ FSC (dot) = digraph model {
 }
 
 
-2023-04-26 02:18:02,649 - storm_pomdp_control.py - Main family based on data from Storm: reduced design space from 1024 to 16
+2023-04-27 02:16:14,972 - storm_pomdp_control.py - Main family based on data from Storm: reduced design space from 1024 to 16
 {0: [0, 3], 1: [0, 3], 2: [1, 2], 3: [1, 2], 4: [0], 5: [0]} 
 
 {0: [0, 3], 1: [0, 3], 2: [1, 2], 3: [1, 2], 4: [0], 5: [0]}
-2023-04-26 02:18:02,650 - synthesizer.py - Synthesis initiated.
+2023-04-27 02:16:14,972 - synthesizer.py - Synthesis initiated.
 -----------PAYNT-----------               
 Value = -218.28866621306167 | Time elapsed = 0.0s | FSC size = 14
 FSC = A(0,0)={'(listen)'}, A(1,0)={'(stand-up)'}, A(2,0)={'(open-right)'}, A(3,0)={'(open-right)'}, A(5,0)={'(listen)'}
@@ -132,8 +132,8 @@ FSC = A(0,0)={'(listen)'}, A(1,0)={'(listen)'}, A(2,0)={'(open-right)'}, A(3,0)=
 Value = -35.6422415907102 | Time elapsed = 0.0s | FSC size = 14
 FSC = A(0,0)={'(listen)'}, A(1,0)={'(listen)'}, A(2,0)={'(open-right)'}, A(3,0)={'(open-left)'}, A(5,0)={'(listen)'}
 
-2023-04-26 02:18:02,656 - synthesizer_ar_storm.py - Main family synthesis done
-2023-04-26 02:18:02,657 - synthesizer_ar_storm.py - Subfamilies buffer contains: 5 families
+2023-04-27 02:16:14,979 - synthesizer_ar_storm.py - Main family synthesis done
+2023-04-27 02:16:14,979 - synthesizer_ar_storm.py - Subfamilies buffer contains: 5 families
 -----------PAYNT-----------               
 Value = -34.4227256902344 | Time elapsed = 0.0s | FSC size = 14
 FSC = A(0,0)={'(listen)'}, A(1,0)={'(listen)'}, A(2,0)={'(open-right)'}, A(3,0)={'(listen)'}, A(5,0)={'(listen)'}
@@ -159,27 +159,27 @@ AR stats: avg MDP size: 13, iterations: 204
 optimal: 0.0
 --------------------
 
-2023-04-26 02:18:02,678 - synthesizer_pomdp.py - Added memory nodes for observation based on Storm data
+2023-04-27 02:16:14,999 - synthesizer_pomdp.py - Added memory nodes for observation based on Storm data
 {0: 2, 1: 2, 2: 2, 3: 2, 4: 1, 5: 1, 6: 1}
-2023-04-26 02:18:02,678 - quotient_pomdp.py - Unfolding POMDP using the following memory allocation vector: [2, 2, 2, 2, 1, 1, 1] ...
-2023-04-26 02:18:02,678 - quotient_pomdp.py - Constructed quotient MDP having 22 states and 162 actions.
-2023-04-26 02:18:02,678 - storm_pomdp_control.py - Main family based on data from Storm: reduced design space from 134217728 to 131072
+2023-04-27 02:16:14,999 - quotient_pomdp.py - Unfolding POMDP using the following memory allocation vector: [2, 2, 2, 2, 1, 1, 1] ...
+2023-04-27 02:16:14,999 - quotient_pomdp.py - Constructed quotient MDP having 22 states and 162 actions.
+2023-04-27 02:16:15,000 - storm_pomdp_control.py - Main family based on data from Storm: reduced design space from 134217728 to 131072
 {0: [0, 3], 1: [0, 3], 2: [1, 2], 3: [1, 2], 4: [0], 5: [0]} 
 
 {0: [0, 3], 1: [0, 3], 2: [1, 2], 3: [1, 2], 4: [0], 5: [0]}
-2023-04-26 02:18:02,679 - synthesizer.py - Synthesis initiated.
+2023-04-27 02:16:15,000 - synthesizer.py - Synthesis initiated.
 -----------PAYNT-----------               
 Value = 0.780116504766287 | Time elapsed = 0.1s | FSC size = 22
 FSC = A(0,0)={'(listen)'}, A(0,1)={'(stand-up)'}, M(0,0)=1, M(0,1)=0, A(1,0)={'(listen)'}, A(1,1)={'(stand-up)'}, M(1,0)=1, M(1,1)=1, A(2,0)={'(open-right)'}, A(2,1)={'(open-left)'}, M(2,0)=0, M(2,1)=0, A(3,0)={'(open-right)'}, A(3,1)={'(open-left)'}, M(3,0)=0, M(3,1)=0, A(5,0)={'(listen)'}, M(5,0)=1
 
-2023-04-26 02:18:02,934 - synthesizer_ar_storm.py - Main family synthesis done
-2023-04-26 02:18:02,934 - synthesizer_ar_storm.py - Subfamilies buffer contains: 9 families
+2023-04-27 02:16:15,248 - synthesizer_ar_storm.py - Main family synthesis done
+2023-04-27 02:16:15,248 - synthesizer_ar_storm.py - Subfamilies buffer contains: 9 families
 -----------PAYNT-----------               
-Value = 2.591462627183717 | Time elapsed = 2.3s | FSC size = 22
+Value = 2.591462627183717 | Time elapsed = 2.2s | FSC size = 22
 FSC = A(0,0)={'(stand-up)'}, A(0,1)={'(listen)'}, M(0,0)=0, M(0,1)=0, A(1,0)={'(stand-up)'}, A(1,1)={'(stand-up)'}, M(1,0)=1, M(1,1)=1, A(2,0)={'(open-right)'}, A(2,1)={'(listen)'}, M(2,0)=1, M(2,1)=1, A(3,0)={'(open-right)'}, A(3,1)={'(listen)'}, M(3,0)=1, M(3,1)=1, A(5,0)={'(listen)'}, M(5,0)=1
 
 -----------PAYNT-----------               
-Value = 2.9875565067677643 | Time elapsed = 2.3s | FSC size = 22
+Value = 2.9875565067677643 | Time elapsed = 2.2s | FSC size = 22
 FSC = A(0,0)={'(stand-up)'}, A(0,1)={'(listen)'}, M(0,0)=0, M(0,1)=0, A(1,0)={'(listen)'}, A(1,1)={'(stand-up)'}, M(1,0)=1, M(1,1)=1, A(2,0)={'(open-right)'}, A(2,1)={'(listen)'}, M(2,0)=1, M(2,1)=1, A(3,0)={'(open-right)'}, A(3,1)={'(listen)'}, M(3,0)=1, M(3,1)=1, A(5,0)={'(listen)'}, M(5,0)=1
 
 --------------------
@@ -187,7 +187,7 @@ Synthesis summary
 
 optimality objective: R[exp]{"reward"}max=? [F "discount_sink"] 
 
-method: AR, synthesis time: 19.71 s
+method: AR, synthesis time: 19.88 s
 number of holes: 18, family size: 134217728, super quotient: 22 states / 162 actions
 explored: 100 %
 AR stats: avg MDP size: 22, iterations: 82839
@@ -195,70 +195,70 @@ AR stats: avg MDP size: 22, iterations: 82839
 optimal: 2.987557
 --------------------
 
-2023-04-26 02:18:22,392 - synthesizer_pomdp.py - Added memory nodes for observation based on Storm data
+2023-04-27 02:16:34,880 - synthesizer_pomdp.py - Added memory nodes for observation based on Storm data
 {0: 3, 1: 3, 2: 3, 3: 3, 4: 2, 5: 2, 6: 1}
-2023-04-26 02:18:22,392 - quotient_pomdp.py - Unfolding POMDP using the following memory allocation vector: [3, 3, 3, 3, 2, 2, 1] ...
-2023-04-26 02:18:22,392 - quotient_pomdp.py - Constructed quotient MDP having 35 states and 389 actions.
-2023-04-26 02:18:22,394 - storm_pomdp_control.py - Main family based on data from Storm: reduced design space from 5135673858195456 to 78364164096
+2023-04-27 02:16:34,880 - quotient_pomdp.py - Unfolding POMDP using the following memory allocation vector: [3, 3, 3, 3, 2, 2, 1] ...
+2023-04-27 02:16:34,881 - quotient_pomdp.py - Constructed quotient MDP having 35 states and 389 actions.
+2023-04-27 02:16:34,883 - storm_pomdp_control.py - Main family based on data from Storm: reduced design space from 5135673858195456 to 78364164096
 {0: [0, 3], 1: [0, 3], 2: [1, 2], 3: [1, 2], 4: [0], 5: [0]} 
 
 {0: [0, 3], 1: [0, 3], 2: [1, 2], 3: [1, 2], 4: [0], 5: [0]}
-2023-04-26 02:18:22,394 - synthesizer.py - Synthesis initiated.
+2023-04-27 02:16:34,883 - synthesizer.py - Synthesis initiated.
 -----------PAYNT-----------               
-Value = 4.146865796637865 | Time elapsed = 20.5s | FSC size = 34
+Value = 4.146865796637865 | Time elapsed = 20.7s | FSC size = 34
 FSC = A(0,0)={'(stand-up)'}, A(0,1)={'(listen)'}, A(0,2)={'(listen)'}, M(0,0)=0, M(0,1)=2, M(0,2)=2, A(1,0)={'(listen)'}, A(1,1)={'(stand-up)'}, A(1,2)={'(listen)'}, M(1,0)=1, M(1,1)=2, M(1,2)=0, A(2,0)={'(open-right)'}, A(2,1)={'(open-right)'}, A(2,2)={'(open-left)'}, M(2,0)=2, M(2,1)=0, M(2,2)=2, A(3,0)={'(open-right)'}, A(3,1)={'(open-left)'}, A(3,2)={'(open-left)'}, M(3,0)=2, M(3,1)=0, M(3,2)=2, M(4,0)=1, M(4,1)=0, A(5,0)={'(listen)'}, A(5,1)={'(listen)'}, M(5,0)=2, M(5,1)=0
 
 -----------PAYNT-----------               
-Value = 4.828492931141717 | Time elapsed = 20.6s | FSC size = 34
+Value = 4.828492931141717 | Time elapsed = 20.8s | FSC size = 34
 FSC = A(0,0)={'(stand-up)'}, A(0,1)={'(listen)'}, A(0,2)={'(listen)'}, M(0,0)=0, M(0,1)=0, M(0,2)=2, A(1,0)={'(listen)'}, A(1,1)={'(stand-up)'}, A(1,2)={'(listen)'}, M(1,0)=1, M(1,1)=2, M(1,2)=0, A(2,0)={'(open-right)'}, A(2,1)={'(open-right)'}, A(2,2)={'(open-left)'}, M(2,0)=2, M(2,1)=0, M(2,2)=2, A(3,0)={'(open-right)'}, A(3,1)={'(open-left)'}, A(3,2)={'(open-left)'}, M(3,0)=2, M(3,1)=0, M(3,2)=2, M(4,0)=0, M(4,1)=0, A(5,0)={'(listen)'}, A(5,1)={'(listen)'}, M(5,0)=2, M(5,1)=2
 
 -----------PAYNT-----------               
-Value = 8.52810214571101 | Time elapsed = 20.6s | FSC size = 34
+Value = 8.52810214571101 | Time elapsed = 20.8s | FSC size = 34
 FSC = A(0,0)={'(stand-up)'}, A(0,1)={'(listen)'}, A(0,2)={'(listen)'}, M(0,0)=0, M(0,1)=0, M(0,2)=2, A(1,0)={'(listen)'}, A(1,1)={'(stand-up)'}, A(1,2)={'(listen)'}, M(1,0)=1, M(1,1)=2, M(1,2)=0, A(2,0)={'(open-right)'}, A(2,1)={'(open-right)'}, A(2,2)={'(open-left)'}, M(2,0)=2, M(2,1)=2, M(2,2)=2, A(3,0)={'(open-right)'}, A(3,1)={'(open-right)'}, A(3,2)={'(open-left)'}, M(3,0)=2, M(3,1)=2, M(3,2)=2, M(4,0)=1, M(4,1)=0, A(5,0)={'(listen)'}, A(5,1)={'(listen)'}, M(5,0)=2, M(5,1)=1
 
 -----------PAYNT-----------               
-Value = 8.881903135931564 | Time elapsed = 20.6s | FSC size = 34
+Value = 8.881903135931564 | Time elapsed = 20.8s | FSC size = 34
 FSC = A(0,0)={'(stand-up)'}, A(0,1)={'(listen)'}, A(0,2)={'(listen)'}, M(0,0)=0, M(0,1)=0, M(0,2)=2, A(1,0)={'(listen)'}, A(1,1)={'(stand-up)'}, A(1,2)={'(listen)'}, M(1,0)=1, M(1,1)=2, M(1,2)=1, A(2,0)={'(open-right)'}, A(2,1)={'(open-right)'}, A(2,2)={'(open-left)'}, M(2,0)=2, M(2,1)=0, M(2,2)=2, A(3,0)={'(open-right)'}, A(3,1)={'(open-left)'}, A(3,2)={'(open-left)'}, M(3,0)=2, M(3,1)=0, M(3,2)=2, M(4,0)=0, M(4,1)=0, A(5,0)={'(listen)'}, A(5,1)={'(listen)'}, M(5,0)=2, M(5,1)=2
 
 -----------PAYNT-----------               
-Value = 11.898027020045614 | Time elapsed = 20.6s | FSC size = 34
+Value = 11.898027020045614 | Time elapsed = 20.8s | FSC size = 34
 FSC = A(0,0)={'(stand-up)'}, A(0,1)={'(listen)'}, A(0,2)={'(listen)'}, M(0,0)=0, M(0,1)=0, M(0,2)=2, A(1,0)={'(listen)'}, A(1,1)={'(stand-up)'}, A(1,2)={'(listen)'}, M(1,0)=1, M(1,1)=2, M(1,2)=1, A(2,0)={'(open-right)'}, A(2,1)={'(open-right)'}, A(2,2)={'(open-left)'}, M(2,0)=2, M(2,1)=2, M(2,2)=2, A(3,0)={'(open-right)'}, A(3,1)={'(open-right)'}, A(3,2)={'(open-left)'}, M(3,0)=2, M(3,1)=2, M(3,2)=2, M(4,0)=1, M(4,1)=0, A(5,0)={'(listen)'}, A(5,1)={'(listen)'}, M(5,0)=2, M(5,1)=1
 
 -----------PAYNT-----------               
-Value = 11.903524374533806 | Time elapsed = 20.6s | FSC size = 34
+Value = 11.903524374533806 | Time elapsed = 20.8s | FSC size = 34
 FSC = A(0,0)={'(stand-up)'}, A(0,1)={'(listen)'}, A(0,2)={'(listen)'}, M(0,0)=0, M(0,1)=0, M(0,2)=2, A(1,0)={'(listen)'}, A(1,1)={'(stand-up)'}, A(1,2)={'(listen)'}, M(1,0)=1, M(1,1)=2, M(1,2)=1, A(2,0)={'(open-right)'}, A(2,1)={'(open-right)'}, A(2,2)={'(open-left)'}, M(2,0)=2, M(2,1)=2, M(2,2)=2, A(3,0)={'(open-right)'}, A(3,1)={'(open-left)'}, A(3,2)={'(open-left)'}, M(3,0)=2, M(3,1)=2, M(3,2)=2, M(4,0)=1, M(4,1)=0, A(5,0)={'(listen)'}, A(5,1)={'(listen)'}, M(5,0)=2, M(5,1)=1
 
 -----------PAYNT-----------               
-Value = 21.170877964295155 | Time elapsed = 21.5s | FSC size = 34
+Value = 21.170877964295155 | Time elapsed = 21.7s | FSC size = 34
 FSC = A(0,0)={'(listen)'}, A(0,1)={'(listen)'}, A(0,2)={'(stand-up)'}, M(0,0)=2, M(0,1)=2, M(0,2)=0, A(1,0)={'(listen)'}, A(1,1)={'(stand-up)'}, A(1,2)={'(listen)'}, M(1,0)=1, M(1,1)=2, M(1,2)=0, A(2,0)={'(open-right)'}, A(2,1)={'(open-right)'}, A(2,2)={'(open-left)'}, M(2,0)=0, M(2,1)=0, M(2,2)=0, A(3,0)={'(open-right)'}, A(3,1)={'(open-left)'}, A(3,2)={'(open-left)'}, M(3,0)=0, M(3,1)=0, M(3,2)=0, M(4,0)=0, M(4,1)=0, A(5,0)={'(listen)'}, A(5,1)={'(listen)'}, M(5,0)=2, M(5,1)=2
 
 -----------PAYNT-----------               
-Value = 22.687880247832844 | Time elapsed = 21.5s | FSC size = 34
+Value = 22.687880247832844 | Time elapsed = 21.7s | FSC size = 34
 FSC = A(0,0)={'(listen)'}, A(0,1)={'(listen)'}, A(0,2)={'(stand-up)'}, M(0,0)=2, M(0,1)=2, M(0,2)=0, A(1,0)={'(listen)'}, A(1,1)={'(stand-up)'}, A(1,2)={'(listen)'}, M(1,0)=1, M(1,1)=2, M(1,2)=0, A(2,0)={'(open-right)'}, A(2,1)={'(open-right)'}, A(2,2)={'(open-left)'}, M(2,0)=0, M(2,1)=0, M(2,2)=0, A(3,0)={'(open-right)'}, A(3,1)={'(open-right)'}, A(3,2)={'(open-left)'}, M(3,0)=0, M(3,1)=0, M(3,2)=0, M(4,0)=1, M(4,1)=0, A(5,0)={'(listen)'}, A(5,1)={'(listen)'}, M(5,0)=2, M(5,1)=1
 
 -----------PAYNT-----------               
-Value = 22.721336798407137 | Time elapsed = 21.5s | FSC size = 34
+Value = 22.721336798407137 | Time elapsed = 21.7s | FSC size = 34
 FSC = A(0,0)={'(listen)'}, A(0,1)={'(listen)'}, A(0,2)={'(stand-up)'}, M(0,0)=2, M(0,1)=2, M(0,2)=0, A(1,0)={'(listen)'}, A(1,1)={'(stand-up)'}, A(1,2)={'(listen)'}, M(1,0)=1, M(1,1)=2, M(1,2)=0, A(2,0)={'(open-right)'}, A(2,1)={'(open-right)'}, A(2,2)={'(open-left)'}, M(2,0)=0, M(2,1)=0, M(2,2)=0, A(3,0)={'(open-right)'}, A(3,1)={'(open-left)'}, A(3,2)={'(open-left)'}, M(3,0)=0, M(3,1)=0, M(3,2)=0, M(4,0)=1, M(4,1)=0, A(5,0)={'(listen)'}, A(5,1)={'(listen)'}, M(5,0)=2, M(5,1)=1
 
 -----------PAYNT-----------               
-Value = 24.54716506154812 | Time elapsed = 21.5s | FSC size = 34
+Value = 24.54716506154812 | Time elapsed = 21.7s | FSC size = 34
 FSC = A(0,0)={'(listen)'}, A(0,1)={'(listen)'}, A(0,2)={'(stand-up)'}, M(0,0)=2, M(0,1)=2, M(0,2)=0, A(1,0)={'(listen)'}, A(1,1)={'(stand-up)'}, A(1,2)={'(listen)'}, M(1,0)=1, M(1,1)=2, M(1,2)=0, A(2,0)={'(open-right)'}, A(2,1)={'(open-right)'}, A(2,2)={'(open-left)'}, M(2,0)=0, M(2,1)=0, M(2,2)=0, A(3,0)={'(open-right)'}, A(3,1)={'(open-left)'}, A(3,2)={'(open-left)'}, M(3,0)=0, M(3,1)=0, M(3,2)=0, M(4,0)=1, M(4,1)=0, A(5,0)={'(listen)'}, A(5,1)={'(listen)'}, M(5,0)=2, M(5,1)=0
 
 -----------PAYNT-----------               
-Value = 26.746938585961985 | Time elapsed = 21.5s | FSC size = 34
+Value = 26.746938585961985 | Time elapsed = 21.7s | FSC size = 34
 FSC = A(0,0)={'(listen)'}, A(0,1)={'(listen)'}, A(0,2)={'(stand-up)'}, M(0,0)=2, M(0,1)=2, M(0,2)=0, A(1,0)={'(listen)'}, A(1,1)={'(stand-up)'}, A(1,2)={'(listen)'}, M(1,0)=1, M(1,1)=2, M(1,2)=1, A(2,0)={'(open-right)'}, A(2,1)={'(open-right)'}, A(2,2)={'(open-left)'}, M(2,0)=0, M(2,1)=0, M(2,2)=0, A(3,0)={'(open-right)'}, A(3,1)={'(open-left)'}, A(3,2)={'(open-left)'}, M(3,0)=0, M(3,1)=0, M(3,2)=0, M(4,0)=0, M(4,1)=0, A(5,0)={'(listen)'}, A(5,1)={'(listen)'}, M(5,0)=2, M(5,1)=2
 
 -----------PAYNT-----------               
-Value = 26.78095388694398 | Time elapsed = 21.5s | FSC size = 34
+Value = 26.78095388694398 | Time elapsed = 21.7s | FSC size = 34
 FSC = A(0,0)={'(listen)'}, A(0,1)={'(listen)'}, A(0,2)={'(stand-up)'}, M(0,0)=2, M(0,1)=2, M(0,2)=0, A(1,0)={'(listen)'}, A(1,1)={'(stand-up)'}, A(1,2)={'(listen)'}, M(1,0)=1, M(1,1)=2, M(1,2)=1, A(2,0)={'(open-right)'}, A(2,1)={'(open-right)'}, A(2,2)={'(open-left)'}, M(2,0)=0, M(2,1)=0, M(2,2)=0, A(3,0)={'(open-right)'}, A(3,1)={'(open-left)'}, A(3,2)={'(open-left)'}, M(3,0)=0, M(3,1)=0, M(3,2)=0, M(4,0)=1, M(4,1)=0, A(5,0)={'(listen)'}, A(5,1)={'(listen)'}, M(5,0)=2, M(5,1)=1
 
 -----------PAYNT-----------               
-Value = 28.69178528963161 | Time elapsed = 21.5s | FSC size = 34
+Value = 28.69178528963161 | Time elapsed = 21.7s | FSC size = 34
 FSC = A(0,0)={'(listen)'}, A(0,1)={'(listen)'}, A(0,2)={'(stand-up)'}, M(0,0)=2, M(0,1)=2, M(0,2)=0, A(1,0)={'(listen)'}, A(1,1)={'(stand-up)'}, A(1,2)={'(listen)'}, M(1,0)=1, M(1,1)=2, M(1,2)=1, A(2,0)={'(open-right)'}, A(2,1)={'(open-right)'}, A(2,2)={'(open-left)'}, M(2,0)=0, M(2,1)=0, M(2,2)=0, A(3,0)={'(open-right)'}, A(3,1)={'(open-left)'}, A(3,2)={'(open-left)'}, M(3,0)=0, M(3,1)=0, M(3,2)=0, M(4,0)=1, M(4,1)=0, A(5,0)={'(listen)'}, A(5,1)={'(listen)'}, M(5,0)=2, M(5,1)=0
 
 -----------PAYNT-----------               
-Value = 28.73110604018403 | Time elapsed = 22.8s | FSC size = 34
+Value = 28.73110604018403 | Time elapsed = 23.0s | FSC size = 34
 FSC = A(0,0)={'(listen)'}, A(0,1)={'(listen)'}, A(0,2)={'(stand-up)'}, M(0,0)=2, M(0,1)=2, M(0,2)=1, A(1,0)={'(listen)'}, A(1,1)={'(stand-up)'}, A(1,2)={'(listen)'}, M(1,0)=1, M(1,1)=2, M(1,2)=1, A(2,0)={'(open-right)'}, A(2,1)={'(open-right)'}, A(2,2)={'(open-left)'}, M(2,0)=0, M(2,1)=0, M(2,2)=0, A(3,0)={'(open-left)'}, A(3,1)={'(open-right)'}, A(3,2)={'(open-left)'}, M(3,0)=0, M(3,1)=0, M(3,2)=0, M(4,0)=1, M(4,1)=0, A(5,0)={'(listen)'}, A(5,1)={'(listen)'}, M(5,0)=2, M(5,1)=0
 
-2023-04-26 02:19:52,513 - synthesizer_ar_storm.py - Main family synthesis done
-2023-04-26 02:19:52,513 - synthesizer_ar_storm.py - Subfamilies buffer contains: 14 families
+2023-04-27 02:18:06,384 - synthesizer_ar_storm.py - Main family synthesis done
+2023-04-27 02:18:06,384 - synthesizer_ar_storm.py - Subfamilies buffer contains: 14 families

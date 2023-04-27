@@ -1,24 +1,24 @@
-2023-04-26 01:53:01,908 - cli.py - This is Paynt version 0.1.0.
-2023-04-26 01:53:01,910 - sketch.py - loading sketch from /mnt/d/src/PP/synthesis-CAV/experiments/../models/pomdp/storm-integration/milos-aaai97/sketch.templ ...
-2023-04-26 01:53:01,970 - prism_parser.py - loading properties from /mnt/d/src/PP/synthesis-CAV/experiments/../models/pomdp/storm-integration/milos-aaai97/sketch.props ...
-2023-04-26 01:53:01,983 - prism_parser.py - found the following specification: constraints: none, optimality objective: R[exp]{"reward"}max=? [F "discount_sink"] 
-2023-04-26 01:53:01,991 - sketch.py - constructed explicit quotient having 165 states and 980 actions
-2023-04-26 01:53:01,992 - sketch.py - found the following specification constraints: none, optimality objective: R[exp]{"reward"}max=? [F "discount_sink"] 
-2023-04-26 01:53:01,998 - quotient_pomdp.py - Constructed POMDP having 11 observations.
-2023-04-26 01:53:02,003 - quotient_pomdp.py - Unfolding POMDP using the following memory allocation vector: [1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1] ...
-2023-04-26 01:53:02,005 - quotient_pomdp.py - Constructed quotient MDP having 165 states and 980 actions.
-2023-04-26 01:53:02,014 - synthesizer_pomdp.py - Storm pomdp option enabled
-2023-04-26 01:53:02,014 - synthesizer_pomdp.py - Storm settings: iterative - (None, None, None), get_storm_result - None, storm_options - cutoff, prune_storm - False, unfold_strategy - (True, False), use_storm_cutoffs - False
-2023-04-26 01:53:02,022 - storm_pomdp_control.py - starting Storm POMDP analysis
+2023-04-27 01:51:14,061 - cli.py - This is Paynt version 0.1.0.
+2023-04-27 01:51:14,063 - sketch.py - loading sketch from /mnt/d/src/PP/synthesis-CAV/experiments/../models/pomdp/storm-integration/milos-aaai97/sketch.templ ...
+2023-04-27 01:51:14,113 - prism_parser.py - loading properties from /mnt/d/src/PP/synthesis-CAV/experiments/../models/pomdp/storm-integration/milos-aaai97/sketch.props ...
+2023-04-27 01:51:14,124 - prism_parser.py - found the following specification: constraints: none, optimality objective: R[exp]{"reward"}max=? [F "discount_sink"] 
+2023-04-27 01:51:14,131 - sketch.py - constructed explicit quotient having 165 states and 980 actions
+2023-04-27 01:51:14,131 - sketch.py - found the following specification constraints: none, optimality objective: R[exp]{"reward"}max=? [F "discount_sink"] 
+2023-04-27 01:51:14,136 - quotient_pomdp.py - Constructed POMDP having 11 observations.
+2023-04-27 01:51:14,140 - quotient_pomdp.py - Unfolding POMDP using the following memory allocation vector: [1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1] ...
+2023-04-27 01:51:14,141 - quotient_pomdp.py - Constructed quotient MDP having 165 states and 980 actions.
+2023-04-27 01:51:14,151 - synthesizer_pomdp.py - Storm pomdp option enabled
+2023-04-27 01:51:14,151 - synthesizer_pomdp.py - Storm settings: iterative - (None, None, None), get_storm_result - None, storm_options - cutoff, prune_storm - False, unfold_strategy - (True, False), use_storm_cutoffs - False
+2023-04-27 01:51:14,158 - storm_pomdp_control.py - starting Storm POMDP analysis
 Finished exploring Underapproximation MDP.
  Start analysis...
-2023-04-26 01:53:02,689 - storm_pomdp_control.py - Storm POMDP analysis completed
+2023-04-27 01:51:14,843 - storm_pomdp_control.py - Storm POMDP analysis completed
 {0: [0, 1, 2, 3, 4, 5], 1: [0, 1, 2, 3, 4, 5], 2: [0, 1, 2, 3, 4, 5], 3: [0, 1, 2, 3, 4, 5], 4: [0, 1, 2, 3, 4, 5], 5: [0, 1, 2, 3, 4, 5], 6: [0, 1, 2, 3, 4, 5], 7: [0, 1, 2, 3, 4, 5], 8: [0], 9: [0, 2, 3, 4, 5], 10: [0]}
 {0: [0, 1, 2, 3, 4, 5], 1: [0, 1, 2, 3, 4, 5], 2: [0, 1, 2, 3, 4, 5], 3: [0, 1, 2, 3, 4, 5], 4: [0, 1, 2, 3, 4, 5], 5: [0, 1, 2, 3, 4, 5], 6: [0, 1, 2, 3, 4, 5], 7: [0, 1, 2, 3, 4, 5], 8: [0], 9: [0, 2, 3, 4, 5], 10: [0]}
 {0: [0, 1, 2, 3], 1: [0, 1, 2, 3], 2: [0, 1, 2, 3], 3: [0, 1, 2, 3], 4: [0, 1, 2, 3], 5: [0, 1, 2, 3], 6: [0, 1, 2, 3], 7: [0, 1, 2, 3], 8: [0], 9: [0, 3], 10: [0]}
 {0: [0, 1, 2, 3, 4, 5], 1: [0, 1, 2, 3, 4, 5], 2: [0, 1, 2, 3, 4, 5], 3: [0, 1, 2, 3, 4, 5], 4: [0, 1, 2, 3, 4, 5], 5: [0, 1, 2, 3, 4, 5], 6: [0, 1, 2, 3, 4, 5], 7: [0, 1, 2, 3, 4, 5], 8: [0], 9: [0, 2, 3], 10: [0]}
 -----------Storm-----------               
-Value = 37.15222472243275 | Time elapsed = 0.6s | FSC size = 676
+Value = 37.15222472243275 | Time elapsed = 0.7s | FSC size = 676
 FSC (dot) = digraph model {
 	0 [ label = "0: {__extra, target}" ];
 	1 [ label = "1: {init, obs_8}" ];
@@ -169,11 +169,11 @@ FSC (dot) = digraph model {
 }
 
 
-2023-04-26 01:53:02,700 - storm_pomdp_control.py - Main family based on data from Storm: reduced design space from 10077696 to 10
+2023-04-27 01:51:14,853 - storm_pomdp_control.py - Main family based on data from Storm: reduced design space from 10077696 to 10
 {0: [4, 1, 2, 3, 0, 5], 1: [4, 0, 1, 2, 3, 5], 2: [3, 0, 1, 2, 4, 5], 3: [0, 1, 2, 3, 4, 5], 4: [3, 0, 1, 2, 4, 5], 5: [0, 1, 2, 3, 4, 5], 6: [0, 1, 2, 3, 4, 5], 7: [0, 1, 2, 3, 4, 5], 8: [0], 9: [3, 0, 2, 4, 5], 10: [0]} 
 
 {0: [4, 1, 2, 3, 0], 1: [4, 0], 2: [3], 3: [0], 4: [3], 8: [0], 9: [3]}
-2023-04-26 01:53:02,700 - synthesizer.py - Synthesis initiated.
+2023-04-27 01:51:14,853 - synthesizer.py - Synthesis initiated.
 -----------PAYNT-----------               
 Value = 17.13915438508933 | Time elapsed = 0.0s | FSC size = 22
 FSC = A(0,0)={'(a3)'}, A(1,0)={'(a0)'}, A(2,0)={'(a3)'}, A(3,0)={'(a0)'}, A(4,0)={'(a3)'}, A(5,0)={'(a0)'}, A(6,0)={'(a0)'}, A(7,0)={'(a0)'}, A(9,0)={'(a3)'}
@@ -182,8 +182,8 @@ FSC = A(0,0)={'(a3)'}, A(1,0)={'(a0)'}, A(2,0)={'(a3)'}, A(3,0)={'(a0)'}, A(4,0)
 Value = 21.48094184757177 | Time elapsed = 0.0s | FSC size = 22
 FSC = A(0,0)={'(a4)'}, A(1,0)={'(a4)'}, A(2,0)={'(a3)'}, A(3,0)={'(a0)'}, A(4,0)={'(a3)'}, A(5,0)={'(a0)'}, A(6,0)={'(a0)'}, A(7,0)={'(a0)'}, A(9,0)={'(a3)'}
 
-2023-04-26 01:53:02,706 - synthesizer_ar_storm.py - Main family synthesis done
-2023-04-26 01:53:02,706 - synthesizer_ar_storm.py - Subfamilies buffer contains: 6 families
+2023-04-27 01:51:14,859 - synthesizer_ar_storm.py - Main family synthesis done
+2023-04-27 01:51:14,859 - synthesizer_ar_storm.py - Subfamilies buffer contains: 6 families
 -----------PAYNT-----------               
 Value = 21.99931084936651 | Time elapsed = 0.0s | FSC size = 22
 FSC = A(0,0)={'(a4)'}, A(1,0)={'(a4)'}, A(2,0)={'(a3)'}, A(3,0)={'(a0)'}, A(4,0)={'(a3)'}, A(5,0)={'(a3)'}, A(6,0)={'(a2)'}, A(7,0)={'(a3)'}, A(9,0)={'(a5)'}
@@ -273,15 +273,15 @@ AR stats: avg MDP size: 154, iterations: 1160
 optimal: 29.458565
 --------------------
 
-2023-04-26 01:53:03,477 - synthesizer_pomdp.py - Added memory nodes for observation based on Storm data
+2023-04-27 01:51:15,625 - synthesizer_pomdp.py - Added memory nodes for observation based on Storm data
 {0: 5, 1: 2, 2: 1, 3: 1, 4: 1, 5: 1, 6: 1, 7: 1, 8: 1, 9: 1, 10: 1}
-2023-04-26 01:53:03,477 - quotient_pomdp.py - Unfolding POMDP using the following memory allocation vector: [5, 2, 1, 1, 1, 1, 1, 1, 1, 1, 1] ...
-2023-04-26 01:53:03,477 - quotient_pomdp.py - Constructed quotient MDP having 265 states and 7892 actions.
-2023-04-26 01:53:04,183 - storm_pomdp_control.py - Main family based on data from Storm: reduced design space from 478296900000000000000 to 76293945312500
+2023-04-27 01:51:15,626 - quotient_pomdp.py - Unfolding POMDP using the following memory allocation vector: [5, 2, 1, 1, 1, 1, 1, 1, 1, 1, 1] ...
+2023-04-27 01:51:15,626 - quotient_pomdp.py - Constructed quotient MDP having 265 states and 7892 actions.
+2023-04-27 01:51:16,316 - storm_pomdp_control.py - Main family based on data from Storm: reduced design space from 478296900000000000000 to 76293945312500
 {0: [4, 1, 2, 3, 0, 5], 1: [4, 0, 1, 2, 3, 5], 2: [3, 0, 1, 2, 4, 5], 3: [0, 1, 2, 3, 4, 5], 4: [3, 0, 1, 2, 4, 5], 5: [0, 1, 2, 3, 4, 5], 6: [0, 1, 2, 3, 4, 5], 7: [0, 1, 2, 3, 4, 5], 8: [0], 9: [3, 0, 2, 4, 5], 10: [0]} 
 
 {0: [4, 1, 2, 3, 0], 1: [4, 0], 2: [3], 3: [0], 4: [3], 8: [0], 9: [3]}
-2023-04-26 01:53:04,183 - synthesizer.py - Synthesis initiated.
+2023-04-27 01:51:16,317 - synthesizer.py - Synthesis initiated.
 -----------PAYNT-----------               
 Value = 31.562357639160666 | Time elapsed = 2.5s | FSC size = 32
 FSC = A(0,0)={'(a3)'}, A(0,1)={'(a3)'}, A(0,2)={'(a3)'}, A(0,3)={'(a3)'}, A(0,4)={'(a2)'}, M(0,0)=4, M(0,1)=4, M(0,2)=0, M(0,3)=0, M(0,4)=1, A(1,0)={'(a0)'}, A(1,1)={'(a0)'}, M(1,0)=0, M(1,1)=0, A(2,0)={'(a3)'}, M(2,0)=0, A(3,0)={'(a0)'}, M(3,0)=0, A(4,0)={'(a3)'}, M(4,0)=0, A(5,0)={'(a0)'}, M(5,0)=0, A(6,0)={'(a0)'}, M(6,0)=0, A(7,0)={'(a0)'}, M(7,0)=0, A(9,0)={'(a3)'}, M(9,0)=0
@@ -295,22 +295,22 @@ Value = 35.40540305636788 | Time elapsed = 21.6s | FSC size = 32
 FSC = A(0,0)={'(a3)'}, A(0,1)={'(a3)'}, A(0,2)={'(a3)'}, A(0,3)={'(a2)'}, A(0,4)={'(a1)'}, M(0,0)=4, M(0,1)=4, M(0,2)=4, M(0,3)=0, M(0,4)=3, A(1,0)={'(a0)'}, A(1,1)={'(a0)'}, M(1,0)=0, M(1,1)=0, A(2,0)={'(a3)'}, M(2,0)=0, A(3,0)={'(a0)'}, M(3,0)=0, A(4,0)={'(a3)'}, M(4,0)=0, A(5,0)={'(a0)'}, M(5,0)=0, A(6,0)={'(a0)'}, M(6,0)=0, A(7,0)={'(a0)'}, M(7,0)=0, A(9,0)={'(a3)'}, M(9,0)=0
 
 -----------PAYNT-----------               
-Value = 36.09961357775599 | Time elapsed = 105.5s | FSC size = 32
+Value = 36.09961357775599 | Time elapsed = 105.8s | FSC size = 32
 FSC = A(0,0)={'(a3)'}, A(0,1)={'(a3)'}, A(0,2)={'(a2)'}, A(0,3)={'(a1)'}, A(0,4)={'(a1)'}, M(0,0)=3, M(0,1)=3, M(0,2)=0, M(0,3)=4, M(0,4)=2, A(1,0)={'(a0)'}, A(1,1)={'(a0)'}, M(1,0)=0, M(1,1)=0, A(2,0)={'(a3)'}, M(2,0)=0, A(3,0)={'(a0)'}, M(3,0)=0, A(4,0)={'(a3)'}, M(4,0)=0, A(5,0)={'(a0)'}, M(5,0)=0, A(6,0)={'(a0)'}, M(6,0)=0, A(7,0)={'(a0)'}, M(7,0)=0, A(9,0)={'(a3)'}, M(9,0)=0
 
 -----------PAYNT-----------               
-Value = 37.966713208324585 | Time elapsed = 105.6s | FSC size = 32
+Value = 37.966713208324585 | Time elapsed = 105.9s | FSC size = 32
 FSC = A(0,0)={'(a3)'}, A(0,1)={'(a3)'}, A(0,2)={'(a2)'}, A(0,3)={'(a1)'}, A(0,4)={'(a1)'}, M(0,0)=3, M(0,1)=2, M(0,2)=1, M(0,3)=4, M(0,4)=2, A(1,0)={'(a0)'}, A(1,1)={'(a0)'}, M(1,0)=0, M(1,1)=0, A(2,0)={'(a3)'}, M(2,0)=0, A(3,0)={'(a0)'}, M(3,0)=0, A(4,0)={'(a3)'}, M(4,0)=0, A(5,0)={'(a0)'}, M(5,0)=0, A(6,0)={'(a0)'}, M(6,0)=0, A(7,0)={'(a0)'}, M(7,0)=0, A(9,0)={'(a3)'}, M(9,0)=0
 
 -----------PAYNT-----------               
-Value = 38.89279353220547 | Time elapsed = 113.7s | FSC size = 32
+Value = 38.89279353220547 | Time elapsed = 114.0s | FSC size = 32
 FSC = A(0,0)={'(a3)'}, A(0,1)={'(a3)'}, A(0,2)={'(a2)'}, A(0,3)={'(a1)'}, A(0,4)={'(a4)'}, M(0,0)=4, M(0,1)=2, M(0,2)=1, M(0,3)=3, M(0,4)=1, A(1,0)={'(a4)'}, A(1,1)={'(a4)'}, M(1,0)=0, M(1,1)=4, A(2,0)={'(a3)'}, M(2,0)=3, A(3,0)={'(a0)'}, M(3,0)=2, A(4,0)={'(a3)'}, M(4,0)=4, A(5,0)={'(a0)'}, M(5,0)=0, A(6,0)={'(a0)'}, M(6,0)=0, A(7,0)={'(a0)'}, M(7,0)=0, A(9,0)={'(a3)'}, M(9,0)=4
 
 -----------PAYNT-----------               
-Value = 39.017650998589296 | Time elapsed = 113.8s | FSC size = 32
+Value = 39.017650998589296 | Time elapsed = 114.1s | FSC size = 32
 FSC = A(0,0)={'(a3)'}, A(0,1)={'(a3)'}, A(0,2)={'(a2)'}, A(0,3)={'(a1)'}, A(0,4)={'(a4)'}, M(0,0)=4, M(0,1)=2, M(0,2)=1, M(0,3)=3, M(0,4)=0, A(1,0)={'(a4)'}, A(1,1)={'(a0)'}, M(1,0)=1, M(1,1)=2, A(2,0)={'(a3)'}, M(2,0)=3, A(3,0)={'(a0)'}, M(3,0)=2, A(4,0)={'(a3)'}, M(4,0)=4, A(5,0)={'(a0)'}, M(5,0)=0, A(6,0)={'(a0)'}, M(6,0)=0, A(7,0)={'(a0)'}, M(7,0)=0, A(9,0)={'(a3)'}, M(9,0)=4
 
 -----------PAYNT-----------               
-Value = 39.287733162611424 | Time elapsed = 214.4s | FSC size = 32
+Value = 39.287733162611424 | Time elapsed = 215.0s | FSC size = 32
 FSC = A(0,0)={'(a3)'}, A(0,1)={'(a3)'}, A(0,2)={'(a1)'}, A(0,3)={'(a1)'}, A(0,4)={'(a4)'}, M(0,0)=4, M(0,1)=4, M(0,2)=0, M(0,3)=2, M(0,4)=0, A(1,0)={'(a4)'}, A(1,1)={'(a0)'}, M(1,0)=1, M(1,1)=3, A(2,0)={'(a3)'}, M(2,0)=3, A(3,0)={'(a0)'}, M(3,0)=4, A(4,0)={'(a3)'}, M(4,0)=4, A(5,0)={'(a0)'}, M(5,0)=0, A(6,0)={'(a0)'}, M(6,0)=0, A(7,0)={'(a0)'}, M(7,0)=0, A(9,0)={'(a3)'}, M(9,0)=4
 
