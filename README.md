@@ -70,6 +70,14 @@ In the artifact we consider tools Storm and PAYNT, both are open source tools:
 
 The links contain installation process for both of the tools, if you want to run them outside of this artifact. PAYNT requires correct version of Storm and StormPy to work and provides installation guide for all of them. The used version of PAYNT is able to run Storm and contains the proposed SAYNT algorithm as well.
 
+## Using the tools
+
+### PAYNT
+
+### Storm
+
+### SAYNT
+
 ## Models
 
 The POMDPs considered in our experiments are located in `PAYNT_ROOT/models/pomdp/storm-integration`. We consider models from various sources:
