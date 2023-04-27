@@ -83,29 +83,49 @@ def get_q1_table():
 
 
                 split1 = im_short_s_log.split("-----------PAYNT-----------")
-                split2 = split1[-1].split()
-                p_val = round(float(split2[2]),2)
-                p_time = split2[7]
+                if len(split1) == 1:
+                    p_val = "TO/MO"
+                    p_time = ""
+                else:
+                    split2 = split1[-1].split()
+                    p_val = round(float(split2[2]),2)
+                    p_time = split2[7]
 
                 split1 = short_s_log.split("-----------Storm-----------")
-                split2 = split1[-1].split()
-                short_s_val = round(float(split2[2]),2)
-                short_s_time = split2[7]
+                if len(split1) == 1:
+                    short_s_val = "TO/MO"
+                    short_s_time = ""
+                else:
+                    split2 = split1[-1].split()
+                    short_s_val = round(float(split2[2]),2)
+                    short_s_time = split2[7]
 
                 split1 = long_s_log.split("-----------Storm-----------")
-                split2 = split1[-1].split()
-                long_s_val = round(float(split2[2]),2)
-                long_s_time = split2[7]
+                if len(split1) == 1:
+                    long_s_val = "TO/MO"
+                    long_s_time = ""
+                else:
+                    split2 = split1[-1].split()
+                    long_s_val = round(float(split2[2]),2)
+                    long_s_time = split2[7]
 
                 split1 = im_short_s_log.split("-----------Storm-----------")
-                split2 = split1[-1].split()
-                im_short_s_val = round(float(split2[2]),2)
-                im_short_s_time = split2[7]
+                if len(split1) == 1:
+                    im_short_s_val = "TO/MO"
+                    im_short_s_time = ""
+                else:
+                    split2 = split1[-1].split()
+                    im_short_s_val = round(float(split2[2]),2)
+                    im_short_s_time = split2[7]
 
                 split1 = im_long_s_log.split("-----------Storm-----------")
-                split2 = split1[-1].split()
-                im_long_s_val = round(float(split2[2]),2)
-                im_long_s_time = split2[7]
+                if len(split1) == 1:
+                    im_long_s_val = "TO/MO"
+                    im_long_s_time = ""
+                else:
+                    split2 = split1[-1].split()
+                    im_long_s_val = round(float(split2[2]),2)
+                    im_long_s_time = split2[7]
 
                 print(f'{model_name} & {p_val} & {short_s_val} & {im_short_s_val} & {long_s_val} & {im_long_s_val} \\\\', file=text_file)
                 print(f' & {p_time} & {short_s_time} & {im_short_s_time} & {long_s_time} & {im_long_s_time} \\\\', file=text_file)

@@ -36,7 +36,7 @@ The benchmark script comes with a variety of options, details for the individual
 - `-e` allows export of the FSCs found by SAYNT to disk, *This option requires multiple GB of disk space and may significantly slow down the benchmarks!*
 
 The script automatically runs all the experiments and creates PDFs containing tables/graphs. 
-All the PDFs (and the source .tex files) will be located in `experiments/results` folder. 
+All the PDFs (and the source .tex files) will be located in `experiments/results/output` folder. 
 If you used the `-e` flag you can find the exported FSCs alongside the log files.
 
 The logs, from which the tables are created, are saved into corresponding folders. E.g., experiments to obtain information about models (table 2 of our paper) will store the logs to the folder `models-info`.
