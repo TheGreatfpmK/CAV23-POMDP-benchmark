@@ -55,6 +55,8 @@ If you feel like your PC needs more computation time to achieve comparable resul
 
 The folder `experiments/original-results` contains our log files. The subfolders `models-info`, `q1`, `q2`, `q3`, `appendix` contain the log files generated from the tools. The subfolder `results` contains the PDFs generated from these logs.
 
+The original results were obtained on PC equipped with i5-12600k @4.9GHz and 64GB of RAM. As we showcased in our paper the belief exploration can use up a lot of memory, so much in fact that it becomes a limiting factor in a number of our experiments.
+
 ## Tools
 
 In the artifact we consider tools Storm and PAYNT, both are open source tools:
