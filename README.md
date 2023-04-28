@@ -102,6 +102,7 @@ python3 paynt.py --project path/to/model/folder --fsc-synthesis
 
 This assumes the model folder contains both the model description and a specification. Each time an improving FSC is found, we output it's value, size and the time it took to find it. You can use `--export-fsc-paynt "filepath"` to store the best found FSC to specified file. For more information about the settings of PAYNT visit https://github.com/randriu/synthesis.
 
+
 ### Storm
 
 With the integration we propose in this paper we allow to run Storm from PAYNT. This usage doesn't provide all the possible Storm settings, but it is enough for the purposes of synthetising good FSCs for POMDPs. To use Storm through PAYNT use:
@@ -114,7 +115,8 @@ You can adjust the main setting of Storm with `--storm-options` (for example `--
 
 #### Storm as a standalone tool
 
-If you want to run Storm as a standalone tool visit: https://www.stormchecker.org/getting-started.html. To use Storm for POMDP analysis you need to build the `storm-pomdp` executable.
+If you want to run Storm as a standalone tool visit https://www.stormchecker.org/getting-started.html. To use Storm for POMDP analysis you need to build the `storm-pomdp` executable.
+
 
 ### SAYNT
 
@@ -124,7 +126,15 @@ SAYNT algorithm we propose in this work uses the implementation of PAYNT and Sto
 python3 paynt.py --project path/to/model/folder --fsc-synthesis --storm-pomdp --iterative-storm 'timeout' 'paynt_timeout' 'storm_timeout'
 ```
 
-The default setting, we used for the majority of the experiments (see the paper for more details), is `--iterative-storm 900 60 10`. This means that the overall timeout is 15 minutes (900s) and in each iteration of SAYNT, we will run the inductive search for 60 seconds and belief exploration for 10 seconds. You can change these timeouts to observe the impact of the particular parts of the synthesis process. SAYNT also introduces some additional settings we do not consider in this paper. For more information visit https://github.com/randriu/synthesis.
+The default settings we used for the majority of the experiments (see the paper for more details) is `--iterative-storm 900 60 10`. This means that the overall timeout is 15 minutes (900s) and in, each iteration of SAYNT, we will run the inductive search for 60 seconds and belief exploration for 10 seconds. You can change these timeouts to observe the impact of the particular parts of the synthesis process. SAYNT also introduces some additional settings we do not consider in this paper. For more information visit https://github.com/randriu/synthesis.
+
+### Parts of the source code relevant to the paper
+
+The following are selected parts of the source code relevant to the algorithms discussed in the paper:
+- `paynt/synthesizer/synthesizer_pomdp.py`: contains the main loop of the inductive synthesis of FSCs (method `strategy_iterative`) as well as the integrated SAYNT algorithm (method `iterative_storm_loop`)
+- `paynt/quotient/storm_pomdp_control.py`: used to communicate with Storm (i.e. the belief exploration), necessary for the integrated SAYNT mehod; additionally, it contains methods for extracting the FSCs
+`storm/src/storm-pomdp/modelchecker/BeliefExplorationPomdpModelChecker.cpp`: this module contains methods that steer the exploration of the belief space and allow to extract FSC from the belief MDP; additionally, it contains the interactive belief explorer required for the integrated SAYNT algorithm
+`storm/src/storm-pomdp/builder/BeliefMdpExplorer.cpp`: this module is responsible for the construction of the belief MDP
 
 
 ## Models
