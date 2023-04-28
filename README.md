@@ -29,12 +29,12 @@ docker run -v `pwd`/output:/synthesis/paynt/experiments/output --rm -it randriu/
 
 `--rm` creates a disposable container that will be deleted upon exit. `-v` will mount the folder `output` in your current directory to the corresponding folder within the container where the experiment results will be stored. This will allow you to view the generated pdfs and inspect logs even after the container is not running. Executing the command above will place you in `/synthesis/paynt` folder, from which exeriments can be run using
 ```
-./experiments/benchmarks.sh 
+./experiments/benchmark.sh 
 ```
 
 The evaluating script has additional options (described below) that allow you to reproduce subsets of results presented in the paper. As a quick start, try option `-1` to reproduce Table 2, it should take about 5 minutes:
 ```
-./experiments/benchmarks.sh -1
+./experiments/benchmark.sh -1
 ```
 The output is created in `/synthesis/paynt/experiments/output`, which is mounted to `$PWD/output` on the host device. In particular, file `results/table2/table2-models-info.pdf` will contain the reproduced Table 2.
 
@@ -148,7 +148,7 @@ cp -r DIR_POMDP_BENCHMARKS/* PAYNT_ROOT/experiments/
 
 Run the experiments using
 ```
-./experiments/benchmarks.sh 
+./experiments/benchmark.sh 
 ```
 
 See above for more options.
