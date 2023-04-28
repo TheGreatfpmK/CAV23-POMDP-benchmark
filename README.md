@@ -115,7 +115,7 @@ PAYNT is a tool written Python3. To run PAYNT for the FSC synthesis for POMDPs u
 python3 paynt.py --project path/to/model/folder --fsc-synthesis
 ```
 
-This assumes the model folder contains both the model description and a specification. Each time FSC is time we output it's value, size and the time it took to find it. You can use `--export-fsc-paynt "filepath"` to store the best found FSC to specified file. For more information about the settings of PAYNT visit https://github.com/randriu/synthesis.
+This assumes the model folder contains both the model description and a specification. Each time an improving FSC is found, we output it's value, size and the time it took to find it. You can use `--export-fsc-paynt "filepath"` to store the best found FSC to specified file. For more information about the settings of PAYNT visit https://github.com/randriu/synthesis.
 
 ### Storm
 
