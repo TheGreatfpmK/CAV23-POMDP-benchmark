@@ -15,7 +15,7 @@ The first part of this readme describes how to use the artifact to reproduce res
 
 ---
 
-## Reproducing the Experiments
+## Reproducing the experiments
 
 ### Using the Docker and quick start
 
@@ -69,10 +69,10 @@ Given the nature of the experiments, their outcome heavily depends on the timing
 The original log files that were used when preparing the submission can be found in `experiments/original-results`.
 
 
+---
 
 
-
-## Using the Tools Outisde the Scope of the Artifact
+## Using the tools outisde the scope of the artifact
 
 In the paper we consider tools Storm and PAYNT, both are open source tools:
 
@@ -135,14 +135,15 @@ The POMDPs considered in our experiments are located in `PAYNT_ROOT/models/pomdp
 To learn more about the PRISM format for creating stochastic models and their specifications visit: https://www.prismmodelchecker.org/manual/ThePRISMLanguage/Introduction
 
 
-## Running the benchmarks
+### The evaluation scripts
 
-### Requirements
+The evaluation scripts are available at https://github.com/TheGreatfpmK/CAV23-POMDP-benchmark.
+
+Requirements:
 - Python3.8 or higher
 - pdflatex (`sudo apt-get install texlive-pictures`) - we use this to generate the PDFs for convenience, if you want to use different way we also provide the .tex source files so you can convert the tables/graphs yourself
 
-### Setup
-Place all of the files of this repository to folder called `experiments` in the root folder of PAYNT, i.e.,
+Place all of the files of the repository to folder called `experiments` in the root folder of PAYNT, i.e.,
 ```
 cp -r DIR_POMDP_BENCHMARKS/* PAYNT_ROOT/experiments/
 ```
