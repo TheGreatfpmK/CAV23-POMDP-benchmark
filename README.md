@@ -42,7 +42,7 @@ Running the benchmark script `./experiments/benchmark.sh` without additional fla
 - `-1` to reproduce Table 2 (models-info, 5 minutes)
 - `-2` to reproduce Table 3(a) (q1, 30-40 minutes)
 - `-3` to reproduce Table 3(b) (q2, 70-90 minutes)
-- `-4` to reproduce Figure 4 and Table 4 (q3, 8-10 hours)
+- `-4` to reproduce Figure 4 (without memory usage subplot) and Table 4 (q3, 8-10 hours)
 - `-x` to reproduce Table 5 from the appendix (appendix, 12-16 hours)
 - `-a` to reproduce ALL the tables and figures (22-28 hours)
 
