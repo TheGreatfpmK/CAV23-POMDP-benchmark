@@ -9,7 +9,7 @@ Contents of the artifact:
 - LICENSE: the license file
 - README.md: this readme
 
-This artifact is hosted on Zenodo: https://doi.org/10.5281/zenodo.7874514.
+This artifact is hosted on Zenodo: https://doi.org/10.5281/zenodo.7874584.
 
 The first part of this readme describes how to use the artifact to reproduce results presented in the paper. The latter part presents the tools, their installation and their usage, the benchmarks and their evaluation outside the scope of this artifact.
 
