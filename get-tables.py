@@ -414,6 +414,15 @@ def get_memory_table():
 
     models = [ f.path for f in os.scandir(saynt_path) if f.is_dir() ]
 
+    lanes_string = ""
+    hallway_string = ""
+    network_string = ""
+    query_string = ""
+    refuel06_string = ""
+    drone82_string = ""
+    refuel20_string = ""
+    others_string = ""
+
     with open(result_folder.decode("utf-8") + "/" + "source-table4-FSC-size.tex", "w") as text_file:    
         print("\\begin{table}", file=text_file)
         print("\\begin{tabular}{|c|c|c|}", file=text_file)
@@ -448,8 +457,30 @@ def get_memory_table():
                     paynt_val = round(float(split2[2]),2)
                     paynt_size = split2[12]
 
-                print(f'{model_name} & {s_val}/{s_size} & {paynt_val}/{paynt_size} \\\\', file=text_file)
-                print("\\hline", file=text_file)
+                if model_name == "lanes-100-combined-new":
+                    lanes_string += f'{model_name} & {s_val}/{s_size} & {paynt_val}/{paynt_size} \\\\ \n'
+                    lanes_string += "\\hline"
+                elif model_name == "hallway":
+                    hallway_string += f'{model_name} & {s_val}/{s_size} & {paynt_val}/{paynt_size} \\\\ \n'
+                    hallway_string += "\\hline"
+                elif model_name == "network-3-8-20":
+                    network_string += f'{model_name} & {s_val}/{s_size} & {paynt_val}/{paynt_size} \\\\ \n'
+                    network_string += "\\hline"
+                elif model_name == "query-s3":
+                    query_string += f'{model_name} & {s_val}/{s_size} & {paynt_val}/{paynt_size} \\\\ \n'
+                    query_string += "\\hline"
+                elif model_name == "refuel-06":
+                    refuel06_string += f'{model_name} & {s_val}/{s_size} & {paynt_val}/{paynt_size} \\\\ \n'
+                    refuel06_string += "\\hline"
+                elif model_name == "drone-8-2":
+                    drone82_string += f'{model_name} & {s_val}/{s_size} & {paynt_val}/{paynt_size} \\\\ \n'
+                    drone82_string += "\\hline"
+                elif model_name == "refuel-20":
+                    refuel20_string += f'{model_name} & {s_val}/{s_size} & {paynt_val}/{paynt_size} \\\\ \n'
+                    refuel20_string += "\\hline"
+                else:
+                    others_string += f'{model_name} & {s_val}/{s_size} & {paynt_val}/{paynt_size} \\\\ \n'
+                    others_string += "\\hline"
 
                 saynt_file.close()
 
@@ -457,6 +488,14 @@ def get_memory_table():
                 print(f"ERROR WHILE CREATING TABLES!!! Couldn't process logs for model {model_name} for table4-FSC-size!")
                 continue
 
+        print(lanes_string, file=text_file)
+        print(hallway_string, file=text_file)
+        print(network_string, file=text_file)
+        print(query_string, file=text_file)
+        print(refuel06_string, file=text_file)
+        print(drone82_string, file=text_file)
+        print(refuel20_string, file=text_file)
+        print(others_string, file=text_file)
 
         print("\\end{tabular}", file=text_file)
         print("\\end{table}\n", file=text_file)
