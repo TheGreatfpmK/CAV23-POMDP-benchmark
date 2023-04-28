@@ -11,7 +11,7 @@ Contents of the artifact:
 
 This artifact is hosted on Zenodo: https://doi.org/10.5281/zenodo.7874514.
 
-The first part of this readme describes how to use the artifact to reproduce results presented in the paper. The latter part presents the tools, their installation and their usage outside the scope of this artifact.  The final part of this readme briefly describes the discussed benchmarks and documents their automatic evaluation outside of the Docker environment.
+The first part of this readme describes how to use the artifact to reproduce results presented in the paper. The latter part presents the tools, their installation and their usage, the benchmarks and their evaluation outside the scope of this artifact.
 
 ---
 
