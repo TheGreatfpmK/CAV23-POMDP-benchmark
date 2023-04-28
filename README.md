@@ -6,7 +6,7 @@ As a reference, we provide our logs in the `original-results`, in case something
 
 ---
 
-## Using the Docker
+## Using the Docker and quick start
 Load the image `paynt.tar` into your Docker environment using:
 ```
 docker load -i paynt.tar
@@ -26,7 +26,7 @@ The evaluating script has additional options (described below) that allow you to
 ```
 ./experiments/benchmarks.sh -1
 ```
-The output is created in `/synthesis/paynt/experiments/output`, which is mounted to `$PWD/output` on the host device. In particular, file `results/table2/table2-models-info.pdf` contains .pdf with reproduced Table 2.
+The output is created in `/synthesis/paynt/experiments/output`, which is mounted to `$PWD/output` on the host device. In particular, file `results/table2/table2-models-info.pdf` will contain the reproduced Table 2.
 
 You can exit the container via `exit` or `^D`. Upon finishing your review, you can remove the image from the Docker environment using:
 ```
@@ -36,78 +36,29 @@ docker rmi randriu/paynt
 The Dockerfile used to create the image can be found in /synthesis/paynt/Dockerfile or at [PAYNT GitHub](https://github.com/randriu/synthesis).
 
 
+### Reproducing the experiments
 
-## Running the benchmarks
+Running the benchmark script `./experiments/benchmark.sh` without additional flags will evaluate experiments from the main part of the paper (without appendix), which will take 10-12 hours. The following options allow you to reproduce subsets of experiments. In the parentheses, we provide the name of the sub-experiment as well as its time estimate.
+- `-1` to reproduce Table 2 (models-info, 5 minutes)
+- `-2` to reproduce Table 3(a) (q1, 30-40 minutes)
+- `-3` to reproduce Table 3(b) (q2, 70-90 minutes)
+- `-4` to reproduce Figure 4 (without memory usage subplot) and Table 4 (q3, 8-10 hours)
+- `-x` to reproduce Table 5 from the appendix (appendix, 12-16 hours)
+- `-a` to reproduce ALL the tables and figures (22-28 hours)
 
-### Requirements
-- Python3.8 or higher
-- pdflatex (`sudo apt-get install texlive-pictures`) - we use this to generate the PDFs for the convinience, if you want to use different way we also provide the .tex source files so you can convert the tables/graphs yourself
+The script creates log files in `experiments/results/output` in sub-folders corresponding to the name of the experiment. Upon finishing the evaluation, the script automatically produces in `experiments/results/output/results` the pdf files containing tables and figures. When executing the script repeatedly, it detects whether the log files already exist, so you can run the experiments in any order and *can abort long ones without loss of progress*. To re-run the experiments, simply delete the corresponding log files or use option `-o` to force the overwrite.
 
-### Setup
-Place all of the files of this repository to folder called `experiments` in the root folder of PAYNT, i.e.,
-```
-cp -r DIR_POMDP_BENCHMARKS/* PAYNT_ROOT/experiments/
-```
+The log files for PAYNT contain description of the produced (compact) FSCs. Since FSCs for Storm and SAYNT are significantly larger, we export them alongside log files only if option `-e` is specified. *NOTE: this option requires multiple GB of disk space and may significantly slow down the evaluation!*
 
-### The benchmark script
-Then run the benchmarks using:
+In case the script encounters an error, it generates an error message and proceeds with the evaluation. As a result, the generated tables might be missing rows. You can check the log files to see which experiments failed, remove the corresponding log files and re-run the script if you wish so.
 
-```
-./PAYNT_ROOT/experiments/benchmark.sh
-```
+Given the nature of the experiments, their outcome heavily depends on the timing, so the produced tables and figures will be different, although the underlying qualitative comparison of the approaches should be preserved. The original results were obtained on a PC equipped with i5-12600k @4.9GHz and 64GB of RAM. The experiments can be run on a much more modestly equiped PCs/laptops, although it might happen that some experiments will timeout or run out of memory: you will see TO/MO in the corresponding table cell. If you feel like your PC needs more computation time to achieve comparable results to what we present in our paper, you can increase the `timeout_multiplier` variable at the top of the `experiments/experiments.py` file.
 
-The benchmark script comes with a variety of options, details for the individual experiments is given below. 
-- `-a` use this flag to run experiments both from the paper and the appendix (without this flag only the main experiments run)
-- `-x` use this flag to only run experiments from the appendix
-- `-1` run only model information experiment (Table 2)
-- `-2` run only Q1 experiments (Table3 (a))
-- `-3` run only Q2 experiments (Table3 (b))
-- `-4` run only Q3 experiments (Figure 4 + Table 4)
-- `-o` with this flag overwriting of already existing logs is allowed (good if you want to rerun all the experiments), overwriting is turned off by default so if you only want to run experiments for certain values remove the logs associated with the values and rerun this script without -o flag
-- `-e` allows export of the FSCs found by SAYNT to disk, *This option requires multiple GB of disk space and may significantly slow down the benchmarks!*
+The original log files that were used when preparing the submission can be found in `experiments/original-results`.
 
-The script automatically runs all the experiments and creates PDFs containing tables/graphs. 
-All the PDFs (and the source .tex files) will be located in `experiments/results/output` folder. 
-If you used the `-e` flag you can find the exported FSCs alongside the log files.
 
-The logs, from which the tables are created, are saved into corresponding folders. E.g., experiments to obtain information about models (table 2 of our paper) will store the logs to the folder `models-info`.
 
-The script is pretty fail-safe meaning that it will finish and generate all the output even if some experiment fails (it will notify you with ERROR message on stdout). So if some of the generated tables are missing rows, check the output of the benchmark script to see what experiments failed, remove their log files and rerun the script if you want to.
 
-If you feel like your PC needs more computation time to achieve comparable results to what we present in our paper you can adjust the `timeout_multiplier` variable on top of the `experiments/experiments.py` file.
-
-### Expected runtime
-- the main experiments take 9-12 hours to run
-    - model information experiment (flag `-1`) takes 5 minutes
-    - Q1 experiment (flag `-2`) takes 30-40 minutes
-    - Q2 experiment (flag `-3`) takes 70-90 minutes
-    - Q3 experiment (flag `-4`) takes 8-10 hours
-- the appendix experiments on their own take 12-16 hours to run
-
-The folder `experiments/original-results` contains our log files. The subfolders `models-info`, `q1`, `q2`, `q3`, `appendix` contain the log files generated from the tools. The subfolder `results` contains the PDFs generated from these logs.
-
-The original results were obtained on PC equipped with i5-12600k @4.9GHz and 64GB of RAM. As we showcased in our paper the belief exploration can use up a lot of memory, so much in fact that it becomes a limiting factor in a number of our experiments. This means that reproducing our results on a weaker HW, especially with a smaller RAM, may be problematic. We therefore suggest to focus on the nature of the experiments e.g. in Q3: Can SAYNT, combining the inductive synthesis and belief-space exploration, steadily outperform the standalone tools.
-
-## Details on the experiments
-We provide a quick overview of the experiments here:
-
-#### Table 2 - models-info
-This experiment provides the information about all of the considered models like their number of states/actions/observation and computed over-approximation using Storm
-
-#### Table 3 - Q1
-Experiment showing the potential improvements we can achieve by using FSCs generated by inductive synthesis in Storm
-
-#### Table 3 - Q2
-Experiment showing the improvements of PAYNT when we use policies computed by Storm to steer the inductive synthesis
-
-#### Table 4 - size of FSCs (part of Q3 experiments)
-We show the difference in value/size of the FSCs produced by SAYNT
-
-#### Figure 4 - Q3
-In this experiment we compare SAYNT/PAYNT/Storm on how they find FSCs over time. The results of this experiment are presented as a series of graphs each one for each model.
-
-#### Appendix
-In the appendix we provide more values we achieved when comparing SAYNT/PAYNT/Storm. The table in appendix provides information about the best quality FSC, when it was found and it's size within a 15 minute time limit.
 
 ## Tools
 
@@ -173,4 +124,23 @@ The POMDPs considered in our experiments are located in `PAYNT_ROOT/models/pomdp
 
 To learn more about the PRISM format for creating stochastic models and their specifications visit: https://www.prismmodelchecker.org/manual/ThePRISMLanguage/Introduction
 
+
+## Running the benchmarks
+
+### Requirements
+- Python3.8 or higher
+- pdflatex (`sudo apt-get install texlive-pictures`) - we use this to generate the PDFs for convenience, if you want to use different way we also provide the .tex source files so you can convert the tables/graphs yourself
+
+### Setup
+Place all of the files of this repository to folder called `experiments` in the root folder of PAYNT, i.e.,
+```
+cp -r DIR_POMDP_BENCHMARKS/* PAYNT_ROOT/experiments/
+```
+
+Run the experiments using
+```
+./experiments/benchmarks.sh 
+```
+
+See above for more options.
 
