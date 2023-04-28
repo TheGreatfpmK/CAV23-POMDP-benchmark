@@ -3,13 +3,13 @@
 This artifact supplements CAV'23 paper *Search and Explore: Symbiotic Policy Synthesis in POMDPs*.
 
 Contents of the artifact:
-- paynt.tar: the Docker image containing the tools and benchmarks discussed in the paper, as well as scripts for their automatized evaluation
+- paynt.tar: the Docker image containing the tools and benchmarks discussed in the paper, as well as scripts for their automated evaluation
 - paper-submission.pdf: the initial version of the paper submitted to CAV'23
-- paper-final.pdf: the revised version of the paper
+- paper-final.pdf: the final version of the paper with the revised experimental results
 - LICENSE: the license file
 - README.md: this readme
 
-The first part of this readme describes how to use the artifact to reproduce results presented in the paper. The latter part presents the tools, their installation and their usage, the benchmarks and their evaluation outside the scope of this artifact.
+The first part of this readme describes how to use the artifact to replicate results presented in the paper. The latter part presents the tools, their installation and their usage, the benchmarks and their evaluation outside the scope of this artifact.
 
 ---
 
@@ -32,11 +32,11 @@ docker run -v `pwd`/output:/synthesis/paynt/experiments/output --rm -it randriu/
 ./experiments/benchmark.sh 
 ```
 
-The evaluating script has additional options (described below) that allow you to reproduce subsets of results presented in the paper. As a quick start, try option `-1` to reproduce Table 2, it should take about 5 minutes:
+The evaluating script has additional options (described below) that allow you to replicate subsets of results presented in the paper. As a quick start, try option `-1` to replicate Table 2, it should take about 5 minutes:
 ```
 ./experiments/benchmark.sh -1
 ```
-The output is created in `/synthesis/paynt/experiments/output`, which is mounted to `$PWD/output` on the host device. In particular, file `results/table2/table2-models-info.pdf` will contain the reproduced Table 2.
+The output is created in `/synthesis/paynt/experiments/output`, which is mounted to `$PWD/output` on the host device. In particular, file `results/table2/table2-models-info.pdf` will contain the replicated Table 2.
 
 You can exit the container via `exit` or `^D`. Upon finishing your review, you can remove the image from the Docker environment using:
 ```
@@ -46,15 +46,20 @@ docker rmi randriu/paynt
 The Dockerfile used to create the image can be found in /synthesis/paynt/Dockerfile or at [PAYNT GitHub](https://github.com/randriu/synthesis).
 
 
-### Evaluating script options
+### What can be replicated
 
-Running the benchmark script `./experiments/benchmark.sh` without additional flags will evaluate experiments from the main part of the paper (without appendix), which will take 10-12 hours. The following options allow you to reproduce subsets of experiments. In the parentheses, we provide the name of the sub-experiment as well as its time estimate.
-- `-1` to reproduce Table 2 (models-info, 5 minutes)
-- `-2` to reproduce Table 3(a) (q1, 30-40 minutes)
-- `-3` to reproduce Table 3(b) (q2, 70-90 minutes)
-- `-4` to reproduce Figure 4 (without memory usage subplot) and Table 4 (q3, 8-10 hours)
-- `-x` to reproduce Table 5 from the appendix (appendix, 12-16 hours)
-- `-a` to reproduce ALL the tables and figures (22-28 hours)
+The evaluating script `./experiments/benchmark.sh` allows to replicate all the experiments presented in the paper, namely, Tables 2-5 and Figure 4. The only exception is the memory usage sub-plot (bottom right sub-plot of Figure 4) which was not created automatically. Nevertheless, you are invited to monitor the memory usage during Q3 experiments. Furthermore, if you are using less then 64GB of RAM, you will likely notice that for more demanding benchmarks Storm runs out of memory: the corresponding table cell will contain TO/MO.
+
+
+### Executing the evaluating script
+
+Running the benchmark script `./experiments/benchmark.sh` without additional flags will evaluate experiments from the main part of the paper (without appendix), which will take 10-12 hours. The following options allow you to replicate subsets of experiments. In the parentheses, we provide the name of the sub-experiment as well as its time estimate.
+- `-1` to replicate Table 2 (models-info, 5 minutes)
+- `-2` to replicate Table 3(a) (q1, 30-40 minutes)
+- `-3` to replicate Table 3(b) (q2, 70-90 minutes)
+- `-4` to replicate Figure 4 (without memory usage sub-plot) and Table 4 (q3, 8-10 hours)
+- `-x` to replicate Table 5 from the appendix (appendix, 12-16 hours)
+- `-a` to replicate ALL the tables and figures (22-28 hours)
 
 The script creates log files in `experiments/results/output` in sub-folders corresponding to the name of the experiment. Upon finishing the evaluation, the script automatically produces in `experiments/results/output/results` the pdf files containing tables and figures. When executing the script repeatedly, it detects whether the log files already exist, so you can run the experiments in any order and *can abort long ones without loss of progress*. To re-run the experiments, simply delete the corresponding log files or use option `-o` to force the overwrite.
 
@@ -62,7 +67,7 @@ The log files for PAYNT contain description of the produced (compact) FSCs. Sinc
 
 In case the script encounters an error, it generates an error message and proceeds with the evaluation. As a result, the generated tables might be missing rows. You can check the log files to see which experiments failed, remove the corresponding log files and re-run the script if you wish so.
 
-Given the nature of the experiments, their outcome heavily depends on the timing, so the produced tables and figures will be different, although the underlying qualitative comparison of the approaches should be preserved. The original results were obtained on a PC equipped with i5-12600k @4.9GHz and 64GB of RAM. The experiments can be run on a much more modestly equiped PCs/laptops, although it might happen that some experiments will timeout or run out of memory: you will see TO/MO in the corresponding table cell. If you feel like your PC needs more computation time to achieve comparable results to what we present in our paper, you can increase the `timeout_multiplier` variable at the top of the `experiments/experiments.py` file.
+Given the nature of the experiments, their outcome heavily depends on the timing, so the produced tables and figures will be different, although the underlying qualitative comparison of the approaches should be preserved. The original results were obtained on a PC equipped with i5-12600k @4.9GHz and 64GB of RAM. The experiments can be run on much more modestly equiped PCs/laptops, although it might happen that some experiments will timeout or run out of memory: you will see TO/MO in the corresponding table cell. If you feel like your PC needs more computation time to achieve comparable results to what we present in our paper, you can increase the `timeout_multiplier` variable at the top of the `experiments/experiments.py` file.
 
 The original log files that were used when preparing the submission can be found in `experiments/original-results`.
 
