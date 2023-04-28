@@ -1,16 +1,16 @@
-2023-04-25 06:55:09,883 - cli.py - This is Paynt version 0.1.0.
-2023-04-25 06:55:09,886 - sketch.py - loading sketch from /mnt/d/src/PP/synthesis-CAV/experiments/../models/pomdp/storm-integration/stand-tiger-95/sketch.templ ...
-2023-04-25 06:55:09,942 - prism_parser.py - loading properties from /mnt/d/src/PP/synthesis-CAV/experiments/../models/pomdp/storm-integration/stand-tiger-95/sketch.props ...
-2023-04-25 06:55:09,961 - prism_parser.py - found the following specification: constraints: none, optimality objective: R[exp]{"reward"}max=? [F "discount_sink"] 
-2023-04-25 06:55:09,969 - sketch.py - constructed explicit quotient having 14 states and 50 actions
-2023-04-25 06:55:09,969 - sketch.py - found the following specification constraints: none, optimality objective: R[exp]{"reward"}max=? [F "discount_sink"] 
-2023-04-25 06:55:09,976 - quotient_pomdp.py - Constructed POMDP having 7 observations.
-2023-04-25 06:55:09,980 - quotient_pomdp.py - Unfolding POMDP using the following memory allocation vector: [1, 1, 1, 1, 1, 1, 1] ...
-2023-04-25 06:55:09,982 - quotient_pomdp.py - Constructed quotient MDP having 14 states and 50 actions.
-2023-04-25 06:55:09,985 - synthesizer_pomdp.py - Synthesizing optimal k=1 controller ...
-2023-04-25 06:55:09,985 - quotient_pomdp.py - Unfolding POMDP using the following memory allocation vector: [1, 1, 1, 1, 1, 1, 1] ...
-2023-04-25 06:55:09,985 - quotient_pomdp.py - Constructed quotient MDP having 14 states and 50 actions.
-2023-04-25 06:55:09,985 - synthesizer.py - Synthesis initiated.
+2023-04-28 03:23:15,772 - cli.py - This is Paynt version 0.1.0.
+2023-04-28 03:23:15,778 - sketch.py - loading sketch from /mnt/d/src/PP/synthesis-CAV/experiments/../models/pomdp/storm-integration/stand-tiger-95/sketch.templ ...
+2023-04-28 03:23:15,820 - prism_parser.py - loading properties from /mnt/d/src/PP/synthesis-CAV/experiments/../models/pomdp/storm-integration/stand-tiger-95/sketch.props ...
+2023-04-28 03:23:15,835 - prism_parser.py - found the following specification: constraints: none, optimality objective: R[exp]{"reward"}max=? [F "discount_sink"] 
+2023-04-28 03:23:15,841 - sketch.py - constructed explicit quotient having 14 states and 50 actions
+2023-04-28 03:23:15,841 - sketch.py - found the following specification constraints: none, optimality objective: R[exp]{"reward"}max=? [F "discount_sink"] 
+2023-04-28 03:23:15,845 - quotient_pomdp.py - Constructed POMDP having 7 observations.
+2023-04-28 03:23:15,847 - quotient_pomdp.py - Unfolding POMDP using the following memory allocation vector: [1, 1, 1, 1, 1, 1, 1] ...
+2023-04-28 03:23:15,848 - quotient_pomdp.py - Constructed quotient MDP having 14 states and 50 actions.
+2023-04-28 03:23:15,850 - synthesizer_pomdp.py - Synthesizing optimal k=1 controller ...
+2023-04-28 03:23:15,850 - quotient_pomdp.py - Unfolding POMDP using the following memory allocation vector: [1, 1, 1, 1, 1, 1, 1] ...
+2023-04-28 03:23:15,850 - quotient_pomdp.py - Constructed quotient MDP having 14 states and 50 actions.
+2023-04-28 03:23:15,850 - synthesizer.py - Synthesis initiated.
 -----------PAYNT-----------               
 Value = -231.39443361971308 | Time elapsed = 0.0s | FSC size = 14
 FSC = A(0,0)={'(stand-up)'}, A(1,0)={'(open-left)'}, A(2,0)={'(open-right)'}, A(3,0)={'(open-right)'}, A(5,0)={'(open-left)'}
@@ -72,7 +72,7 @@ Synthesis summary
 
 optimality objective: R[exp]{"reward"}max=? [F "discount_sink"] 
 
-method: AR, synthesis time: 0.03 s
+method: AR, synthesis time: 0.05 s
 number of holes: 5, family size: 1024, super quotient: 14 states / 50 actions
 explored: 100 %
 AR stats: avg MDP size: 13, iterations: 209
@@ -80,20 +80,20 @@ AR stats: avg MDP size: 13, iterations: 209
 optimal: 0.0
 --------------------
 
-2023-04-25 06:55:10,053 - synthesizer_pomdp.py - Synthesizing optimal k=2 controller ...
-2023-04-25 06:55:10,054 - quotient_pomdp.py - Unfolding POMDP using the following memory allocation vector: [2, 2, 2, 2, 1, 2, 1] ...
-2023-04-25 06:55:10,054 - quotient_pomdp.py - Constructed quotient MDP having 26 states and 195 actions.
-2023-04-25 06:55:10,054 - synthesizer.py - Synthesis initiated.
+2023-04-28 03:23:15,900 - synthesizer_pomdp.py - Synthesizing optimal k=2 controller ...
+2023-04-28 03:23:15,900 - quotient_pomdp.py - Unfolding POMDP using the following memory allocation vector: [2, 2, 2, 2, 1, 2, 1] ...
+2023-04-28 03:23:15,900 - quotient_pomdp.py - Constructed quotient MDP having 26 states and 195 actions.
+2023-04-28 03:23:15,901 - synthesizer.py - Synthesis initiated.
 -----------PAYNT-----------               
-Value = 0.780116504766287 | Time elapsed = 12.4s | FSC size = 24
+Value = 0.780116504766287 | Time elapsed = 11.5s | FSC size = 24
 FSC = A(0,0)={'(listen)'}, A(0,1)={'(stand-up)'}, M(0,0)=1, M(0,1)=0, A(1,0)={'(listen)'}, A(1,1)={'(stand-up)'}, M(1,0)=1, M(1,1)=1, A(2,0)={'(open-right)'}, A(2,1)={'(open-left)'}, M(2,0)=0, M(2,1)=0, A(3,0)={'(open-right)'}, A(3,1)={'(open-left)'}, M(3,0)=0, M(3,1)=0, M(4,0)=1, A(5,0)={'(stand-up)'}, A(5,1)={'(listen)'}, M(5,0)=1, M(5,1)=1
 
 -----------PAYNT-----------               
-Value = 2.591462627183717 | Time elapsed = 15.3s | FSC size = 24
+Value = 2.591462627183717 | Time elapsed = 14.1s | FSC size = 24
 FSC = A(0,0)={'(stand-up)'}, A(0,1)={'(listen)'}, M(0,0)=0, M(0,1)=0, A(1,0)={'(stand-up)'}, A(1,1)={'(stand-up)'}, M(1,0)=1, M(1,1)=1, A(2,0)={'(open-right)'}, A(2,1)={'(listen)'}, M(2,0)=1, M(2,1)=1, A(3,0)={'(open-right)'}, A(3,1)={'(listen)'}, M(3,0)=1, M(3,1)=1, M(4,0)=1, A(5,0)={'(stand-up)'}, A(5,1)={'(listen)'}, M(5,0)=1, M(5,1)=1
 
 -----------PAYNT-----------               
-Value = 2.9875565067677643 | Time elapsed = 15.3s | FSC size = 24
+Value = 2.9875565067677643 | Time elapsed = 14.1s | FSC size = 24
 FSC = A(0,0)={'(stand-up)'}, A(0,1)={'(listen)'}, M(0,0)=0, M(0,1)=0, A(1,0)={'(listen)'}, A(1,1)={'(stand-up)'}, M(1,0)=1, M(1,1)=1, A(2,0)={'(open-right)'}, A(2,1)={'(listen)'}, M(2,0)=1, M(2,1)=1, A(3,0)={'(open-right)'}, A(3,1)={'(listen)'}, M(3,0)=1, M(3,1)=1, M(4,0)=1, A(5,0)={'(stand-up)'}, A(5,1)={'(listen)'}, M(5,0)=1, M(5,1)=1
 
 --------------------
@@ -101,7 +101,7 @@ Synthesis summary
 
 optimality objective: R[exp]{"reward"}max=? [F "discount_sink"] 
 
-method: AR, synthesis time: 192.35 s
+method: AR, synthesis time: 177.32 s
 number of holes: 21, family size: 2147483648, super quotient: 26 states / 195 actions
 explored: 100 %
 AR stats: avg MDP size: 26, iterations: 733130
@@ -109,7 +109,15 @@ AR stats: avg MDP size: 26, iterations: 733130
 optimal: 2.987557
 --------------------
 
-2023-04-25 06:58:22,404 - synthesizer_pomdp.py - Synthesizing optimal k=3 controller ...
-2023-04-25 06:58:22,404 - quotient_pomdp.py - Unfolding POMDP using the following memory allocation vector: [3, 3, 3, 3, 1, 3, 1] ...
-2023-04-25 06:58:22,404 - quotient_pomdp.py - Constructed quotient MDP having 38 states and 436 actions.
-2023-04-25 06:58:22,407 - synthesizer.py - Synthesis initiated.
+2023-04-28 03:26:13,222 - synthesizer_pomdp.py - Synthesizing optimal k=3 controller ...
+2023-04-28 03:26:13,222 - quotient_pomdp.py - Unfolding POMDP using the following memory allocation vector: [3, 3, 3, 3, 1, 3, 1] ...
+2023-04-28 03:26:13,222 - quotient_pomdp.py - Constructed quotient MDP having 38 states and 436 actions.
+2023-04-28 03:26:13,224 - synthesizer.py - Synthesis initiated.
+-----------PAYNT-----------               
+Value = 6.042614991875666 | Time elapsed = 514.7s | FSC size = 34
+FSC = A(0,0)={'(stand-up)'}, A(0,1)={'(open-left)'}, A(0,2)={'(listen)'}, M(0,0)=1, M(0,1)=2, M(0,2)=0, A(1,0)={'(listen)'}, A(1,1)={'(stand-up)'}, A(1,2)={'(listen)'}, M(1,0)=1, M(1,1)=2, M(1,2)=0, A(2,0)={'(open-right)'}, A(2,1)={'(open-right)'}, A(2,2)={'(open-left)'}, M(2,0)=0, M(2,1)=2, M(2,2)=2, A(3,0)={'(listen)'}, A(3,1)={'(open-right)'}, A(3,2)={'(open-left)'}, M(3,0)=0, M(3,1)=2, M(3,2)=2, M(4,0)=0, A(5,0)={'(stand-up)'}, A(5,1)={'(stand-up)'}, A(5,2)={'(stand-up)'}, M(5,0)=2, M(5,1)=2, M(5,2)=2
+
+-----------PAYNT-----------               
+Value = 7.931451204944242 | Time elapsed = 547.1s | FSC size = 34
+FSC = A(0,0)={'(stand-up)'}, A(0,1)={'(listen)'}, A(0,2)={'(listen)'}, M(0,0)=1, M(0,1)=2, M(0,2)=0, A(1,0)={'(listen)'}, A(1,1)={'(listen)'}, A(1,2)={'(stand-up)'}, M(1,0)=2, M(1,1)=2, M(1,2)=2, A(2,0)={'(open-right)'}, A(2,1)={'(open-right)'}, A(2,2)={'(open-left)'}, M(2,0)=0, M(2,1)=1, M(2,2)=1, A(3,0)={'(listen)'}, A(3,1)={'(open-right)'}, A(3,2)={'(open-left)'}, M(3,0)=0, M(3,1)=1, M(3,2)=1, M(4,0)=0, A(5,0)={'(stand-up)'}, A(5,1)={'(stand-up)'}, A(5,2)={'(stand-up)'}, M(5,0)=2, M(5,1)=2, M(5,2)=2
+

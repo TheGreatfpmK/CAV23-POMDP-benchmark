@@ -1,25 +1,25 @@
-2023-04-25 08:16:32,452 - cli.py - This is Paynt version 0.1.0.
-2023-04-25 08:16:32,454 - sketch.py - loading sketch from /mnt/d/src/PP/synthesis-CAV/experiments/../models/pomdp/storm-integration/query-s3/sketch.templ ...
-2023-04-25 08:16:32,520 - prism_parser.py - loading properties from /mnt/d/src/PP/synthesis-CAV/experiments/../models/pomdp/storm-integration/query-s3/sketch.props ...
-2023-04-25 08:16:32,535 - prism_parser.py - found the following specification: constraints: none, optimality objective: R[exp]{"reward"}max=? [F "discount_sink"] 
-2023-04-25 08:16:32,544 - sketch.py - constructed explicit quotient having 108 states and 320 actions
-2023-04-25 08:16:32,544 - sketch.py - found the following specification constraints: none, optimality objective: R[exp]{"reward"}max=? [F "discount_sink"] 
-2023-04-25 08:16:32,551 - quotient_pomdp.py - Constructed POMDP having 6 observations.
-2023-04-25 08:16:32,555 - quotient_pomdp.py - Unfolding POMDP using the following memory allocation vector: [1, 1, 1, 1, 1, 1] ...
-2023-04-25 08:16:32,557 - quotient_pomdp.py - Constructed quotient MDP having 108 states and 320 actions.
-2023-04-25 08:16:32,560 - synthesizer_pomdp.py - Storm pomdp option enabled
-2023-04-25 08:16:32,561 - synthesizer_pomdp.py - Storm settings: iterative - (None, None, None), get_storm_result - 0, storm_options - 10mil, prune_storm - False, unfold_strategy - (True, False), use_storm_cutoffs - False
-2023-04-25 08:16:32,568 - storm_pomdp_control.py - starting Storm POMDP analysis
-### 4287361 beliefs in underapproximation MDP ##### 3810985 beliefs queued
-### 8573332 beliefs in underapproximation MDP ##### 7620737 beliefs queued
+2023-04-28 04:50:08,950 - cli.py - This is Paynt version 0.1.0.
+2023-04-28 04:50:08,957 - sketch.py - loading sketch from /mnt/d/src/PP/synthesis-CAV/experiments/../models/pomdp/storm-integration/query-s3/sketch.templ ...
+2023-04-28 04:50:09,032 - prism_parser.py - loading properties from /mnt/d/src/PP/synthesis-CAV/experiments/../models/pomdp/storm-integration/query-s3/sketch.props ...
+2023-04-28 04:50:09,049 - prism_parser.py - found the following specification: constraints: none, optimality objective: R[exp]{"reward"}max=? [F "discount_sink"] 
+2023-04-28 04:50:09,058 - sketch.py - constructed explicit quotient having 108 states and 320 actions
+2023-04-28 04:50:09,058 - sketch.py - found the following specification constraints: none, optimality objective: R[exp]{"reward"}max=? [F "discount_sink"] 
+2023-04-28 04:50:09,065 - quotient_pomdp.py - Constructed POMDP having 6 observations.
+2023-04-28 04:50:09,069 - quotient_pomdp.py - Unfolding POMDP using the following memory allocation vector: [1, 1, 1, 1, 1, 1] ...
+2023-04-28 04:50:09,071 - quotient_pomdp.py - Constructed quotient MDP having 108 states and 320 actions.
+2023-04-28 04:50:09,075 - synthesizer_pomdp.py - Storm pomdp option enabled
+2023-04-28 04:50:09,075 - synthesizer_pomdp.py - Storm settings: iterative - (None, None, None), get_storm_result - 0, storm_options - 10mil, prune_storm - False, unfold_strategy - (True, False), use_storm_cutoffs - False
+2023-04-28 04:50:09,082 - storm_pomdp_control.py - starting Storm POMDP analysis
+### 4466785 beliefs in underapproximation MDP ##### 3970473 beliefs queued
+### 8838445 beliefs in underapproximation MDP ##### 7856393 beliefs queued
 Finished exploring Underapproximation MDP.
  Start analysis...
-2023-04-25 08:19:44,067 - storm_pomdp_control.py - Storm POMDP analysis completed
+2023-04-28 04:53:13,189 - storm_pomdp_control.py - Storm POMDP analysis completed
 {0: [0, 1, 2], 1: [0, 1, 2], 2: [0, 1, 2], 3: [0], 4: [0, 1, 2], 5: [0]}
 {0: [0, 1, 2], 1: [0, 1, 2], 2: [0, 1, 2], 3: [0], 4: [0, 1, 2], 5: [0]}
 {0: [0, 1, 2], 1: [0, 1, 2], 2: [0, 1, 2], 3: [0], 4: [0, 1, 2], 5: [0]}
 -----------Storm-----------                 
-Value = 420.105521901595 | Time elapsed = 191.4s | FSC size = 12887
+Value = 420.105521901595 | Time elapsed = 184.1s | FSC size = 12887
 FSC (dot) = digraph model {
 	0 [ label = "0: {__extra, target}" ];
 	1 [ label = "1: {init, obs_3}" ];

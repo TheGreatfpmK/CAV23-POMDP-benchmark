@@ -1,17 +1,19 @@
-2023-04-25 09:16:14,727 - cli.py - This is Paynt version 0.1.0.
-2023-04-25 09:16:14,730 - sketch.py - loading sketch from /mnt/d/src/PP/synthesis-CAV/experiments/../models/pomdp/storm-integration/lanes-100-combined-new/sketch.templ ...
-2023-04-25 09:16:14,837 - prism_parser.py - PRISM model type: PrismModelType.POMDP
-2023-04-25 09:16:14,837 - prism_parser.py - loading properties from /mnt/d/src/PP/synthesis-CAV/experiments/../models/pomdp/storm-integration/lanes-100-combined-new/sketch.props ...
-2023-04-25 09:16:14,857 - prism_parser.py - found the following specification: constraints: none, optimality objective: R[exp]{"steps"}min=? [F (z = 5)] 
-2023-04-25 09:16:15,011 - sketch.py - converting state rewards 'steps' to state-action rewards
-2023-04-25 09:16:15,014 - sketch.py - constructed explicit quotient having 2741 states and 5285 actions
-2023-04-25 09:16:15,014 - sketch.py - found the following specification constraints: none, optimality objective: R[exp]{"steps"}min=? [F (z = 5)] 
-2023-04-25 09:16:15,022 - quotient_pomdp.py - Constructed POMDP having 11 observations.
-2023-04-25 09:16:15,098 - quotient_pomdp.py - Unfolding POMDP using the following memory allocation vector: [1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1] ...
-2023-04-25 09:16:15,101 - quotient_pomdp.py - Constructed quotient MDP having 2741 states and 5285 actions.
-2023-04-25 09:16:15,413 - synthesizer_pomdp.py - Storm pomdp option enabled
-2023-04-25 09:16:15,413 - synthesizer_pomdp.py - Storm settings: iterative - (None, None, None), get_storm_result - 0, storm_options - 20mil, prune_storm - False, unfold_strategy - (True, False), use_storm_cutoffs - False
-2023-04-25 09:16:15,418 - storm_pomdp_control.py - starting Storm POMDP analysis
-### 6355897 beliefs in underapproximation MDP ##### 3112510 beliefs queued
-### 12571280 beliefs in underapproximation MDP ##### 6158915 beliefs queued
-### 18936813 beliefs in underapproximation MDP ##### 9275695 beliefs queued
+2023-04-28 05:37:07,546 - cli.py - This is Paynt version 0.1.0.
+2023-04-28 05:37:07,555 - sketch.py - loading sketch from /mnt/d/src/PP/synthesis-CAV/experiments/../models/pomdp/storm-integration/lanes-100-combined-new/sketch.templ ...
+2023-04-28 05:37:07,669 - prism_parser.py - PRISM model type: PrismModelType.POMDP
+2023-04-28 05:37:07,669 - prism_parser.py - loading properties from /mnt/d/src/PP/synthesis-CAV/experiments/../models/pomdp/storm-integration/lanes-100-combined-new/sketch.props ...
+2023-04-28 05:37:07,692 - prism_parser.py - found the following specification: constraints: none, optimality objective: R[exp]{"steps"}min=? [F (z = 5)] 
+2023-04-28 05:37:07,833 - sketch.py - converting state rewards 'steps' to state-action rewards
+2023-04-28 05:37:07,835 - sketch.py - constructed explicit quotient having 2741 states and 5285 actions
+2023-04-28 05:37:07,835 - sketch.py - found the following specification constraints: none, optimality objective: R[exp]{"steps"}min=? [F (z = 5)] 
+2023-04-28 05:37:07,845 - quotient_pomdp.py - Constructed POMDP having 11 observations.
+2023-04-28 05:37:07,908 - quotient_pomdp.py - Unfolding POMDP using the following memory allocation vector: [1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1] ...
+2023-04-28 05:37:07,911 - quotient_pomdp.py - Constructed quotient MDP having 2741 states and 5285 actions.
+2023-04-28 05:37:08,167 - synthesizer_pomdp.py - Storm pomdp option enabled
+2023-04-28 05:37:08,167 - synthesizer_pomdp.py - Storm settings: iterative - (None, None, None), get_storm_result - 0, storm_options - 20mil, prune_storm - False, unfold_strategy - (True, False), use_storm_cutoffs - False
+2023-04-28 05:37:08,172 - storm_pomdp_control.py - starting Storm POMDP analysis
+### 6803898 beliefs in underapproximation MDP ##### 3318166 beliefs queued
+### 12795781 beliefs in underapproximation MDP ##### 6261435 beliefs queued
+### 13855327 beliefs in underapproximation MDP ##### 6769683 beliefs queued
+### 14525988 beliefs in underapproximation MDP ##### 7095506 beliefs queued
+### 15103330 beliefs in underapproximation MDP ##### 7377138 beliefs queued

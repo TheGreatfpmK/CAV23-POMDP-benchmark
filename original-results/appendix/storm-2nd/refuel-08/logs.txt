@@ -1,23 +1,23 @@
-2023-04-25 07:20:20,805 - cli.py - This is Paynt version 0.1.0.
-2023-04-25 07:20:20,808 - sketch.py - loading sketch from /mnt/d/src/PP/synthesis-CAV/experiments/../models/pomdp/storm-integration/refuel-08/sketch.templ ...
-2023-04-25 07:20:20,884 - prism_parser.py - PRISM model type: PrismModelType.POMDP
-2023-04-25 07:20:20,884 - prism_parser.py - loading properties from /mnt/d/src/PP/synthesis-CAV/experiments/../models/pomdp/storm-integration/refuel-08/sketch.props ...
-2023-04-25 07:20:20,898 - prism_parser.py - found the following specification: constraints: none, optimality objective: Pmax=? ["notbad" U "goal"] 
-2023-04-25 07:20:20,948 - sketch.py - constructed explicit quotient having 470 states and 1431 actions
-2023-04-25 07:20:20,948 - property.py - converting until formula to eventually...
-2023-04-25 07:20:20,948 - sketch.py - found the following specification constraints: none, optimality objective: Pmax=? [F "goal"] 
-2023-04-25 07:20:20,954 - quotient_pomdp.py - Constructed POMDP having 66 observations.
-2023-04-25 07:20:20,961 - quotient_pomdp.py - Unfolding POMDP using the following memory allocation vector: [1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1] ...
-2023-04-25 07:20:20,962 - quotient_pomdp.py - Constructed quotient MDP having 470 states and 1431 actions.
-2023-04-25 07:20:20,981 - synthesizer_pomdp.py - Storm pomdp option enabled
-2023-04-25 07:20:20,981 - synthesizer_pomdp.py - Storm settings: iterative - (None, None, None), get_storm_result - 0, storm_options - 2mil, prune_storm - False, unfold_strategy - (True, False), use_storm_cutoffs - False
-2023-04-25 07:20:20,985 - storm_pomdp_control.py - starting Storm POMDP analysis
+2023-04-28 03:48:50,556 - cli.py - This is Paynt version 0.1.0.
+2023-04-28 03:48:50,562 - sketch.py - loading sketch from /mnt/d/src/PP/synthesis-CAV/experiments/../models/pomdp/storm-integration/refuel-08/sketch.templ ...
+2023-04-28 03:48:50,636 - prism_parser.py - PRISM model type: PrismModelType.POMDP
+2023-04-28 03:48:50,636 - prism_parser.py - loading properties from /mnt/d/src/PP/synthesis-CAV/experiments/../models/pomdp/storm-integration/refuel-08/sketch.props ...
+2023-04-28 03:48:50,653 - prism_parser.py - found the following specification: constraints: none, optimality objective: Pmax=? ["notbad" U "goal"] 
+2023-04-28 03:48:50,699 - sketch.py - constructed explicit quotient having 470 states and 1431 actions
+2023-04-28 03:48:50,700 - property.py - converting until formula to eventually...
+2023-04-28 03:48:50,700 - sketch.py - found the following specification constraints: none, optimality objective: Pmax=? [F "goal"] 
+2023-04-28 03:48:50,704 - quotient_pomdp.py - Constructed POMDP having 66 observations.
+2023-04-28 03:48:50,711 - quotient_pomdp.py - Unfolding POMDP using the following memory allocation vector: [1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1] ...
+2023-04-28 03:48:50,712 - quotient_pomdp.py - Constructed quotient MDP having 470 states and 1431 actions.
+2023-04-28 03:48:50,732 - synthesizer_pomdp.py - Storm pomdp option enabled
+2023-04-28 03:48:50,732 - synthesizer_pomdp.py - Storm settings: iterative - (None, None, None), get_storm_result - 0, storm_options - 2mil, prune_storm - False, unfold_strategy - (True, False), use_storm_cutoffs - False
+2023-04-28 03:48:50,735 - storm_pomdp_control.py - starting Storm POMDP analysis
 Finished exploring Underapproximation MDP.
  Start analysis...
-2023-04-25 07:20:41,182 - storm_pomdp_control.py - Storm POMDP analysis completed
+2023-04-28 03:49:09,303 - storm_pomdp_control.py - Storm POMDP analysis completed
 {0: [0], 1: [0], 2: [0, 1, 2, 3], 3: [0, 1, 2, 3], 4: [0, 1, 2], 5: [0, 1, 2, 3], 6: [0], 7: [0, 1, 2, 3], 8: [0, 1, 2], 9: [0, 1, 2], 10: [0, 1, 2], 11: [0, 1, 2], 12: [0, 1], 13: [0], 14: [0, 1, 2], 15: [0, 1, 2, 3], 16: [0, 1, 2], 17: [0, 1, 2], 18: [0], 19: [1, 2], 20: [0], 21: [0], 22: [0, 1], 23: [0, 1], 24: [0, 1, 2], 25: [0, 2], 26: [0], 27: [0, 1, 2], 28: [0, 1, 2], 29: [0], 30: [0], 31: [1, 2], 32: [0], 33: [0], 34: [0], 35: [0], 36: [0], 37: [0], 38: [0], 39: [0], 40: [0], 41: [0], 42: [0], 43: [0, 1, 2], 44: [0], 45: [0], 46: [0, 2], 47: [0], 48: [0, 1], 49: [0], 50: [0, 1], 51: [0], 52: [0], 53: [0], 54: [0, 1, 2], 55: [0, 1], 56: [0], 57: [0], 58: [0], 59: [0], 60: [0], 61: [0, 1], 62: [0], 63: [0, 1, 2], 64: [0, 1], 65: [0, 1]}
 -----------Storm-----------                 
-Value = 0.439721485067457 | Time elapsed = 20.1s | FSC size = 534
+Value = 0.439721485067457 | Time elapsed = 18.6s | FSC size = 534
 FSC (dot) = digraph model {
 	0 [ label = "0: {__extra}" ];
 	1 [ label = "1: {__extra, target}" ];

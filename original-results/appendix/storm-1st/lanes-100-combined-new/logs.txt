@@ -1,23 +1,23 @@
-2023-04-25 07:12:38,033 - cli.py - This is Paynt version 0.1.0.
-2023-04-25 07:12:38,034 - sketch.py - loading sketch from /mnt/d/src/PP/synthesis-CAV/experiments/../models/pomdp/storm-integration/lanes-100-combined-new/sketch.templ ...
-2023-04-25 07:12:38,111 - prism_parser.py - PRISM model type: PrismModelType.POMDP
-2023-04-25 07:12:38,111 - prism_parser.py - loading properties from /mnt/d/src/PP/synthesis-CAV/experiments/../models/pomdp/storm-integration/lanes-100-combined-new/sketch.props ...
-2023-04-25 07:12:38,126 - prism_parser.py - found the following specification: constraints: none, optimality objective: R[exp]{"steps"}min=? [F (z = 5)] 
-2023-04-25 07:12:38,183 - sketch.py - converting state rewards 'steps' to state-action rewards
-2023-04-25 07:12:38,186 - sketch.py - constructed explicit quotient having 2741 states and 5285 actions
-2023-04-25 07:12:38,186 - sketch.py - found the following specification constraints: none, optimality objective: R[exp]{"steps"}min=? [F (z = 5)] 
-2023-04-25 07:12:38,192 - quotient_pomdp.py - Constructed POMDP having 11 observations.
-2023-04-25 07:12:38,251 - quotient_pomdp.py - Unfolding POMDP using the following memory allocation vector: [1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1] ...
-2023-04-25 07:12:38,253 - quotient_pomdp.py - Constructed quotient MDP having 2741 states and 5285 actions.
-2023-04-25 07:12:38,511 - synthesizer_pomdp.py - Storm pomdp option enabled
-2023-04-25 07:12:38,511 - synthesizer_pomdp.py - Storm settings: iterative - (None, None, None), get_storm_result - 0, storm_options - cutoff, prune_storm - False, unfold_strategy - (True, False), use_storm_cutoffs - False
-2023-04-25 07:12:38,516 - storm_pomdp_control.py - starting Storm POMDP analysis
+2023-04-28 03:40:52,179 - cli.py - This is Paynt version 0.1.0.
+2023-04-28 03:40:52,184 - sketch.py - loading sketch from /mnt/d/src/PP/synthesis-CAV/experiments/../models/pomdp/storm-integration/lanes-100-combined-new/sketch.templ ...
+2023-04-28 03:40:52,248 - prism_parser.py - PRISM model type: PrismModelType.POMDP
+2023-04-28 03:40:52,248 - prism_parser.py - loading properties from /mnt/d/src/PP/synthesis-CAV/experiments/../models/pomdp/storm-integration/lanes-100-combined-new/sketch.props ...
+2023-04-28 03:40:52,260 - prism_parser.py - found the following specification: constraints: none, optimality objective: R[exp]{"steps"}min=? [F (z = 5)] 
+2023-04-28 03:40:52,306 - sketch.py - converting state rewards 'steps' to state-action rewards
+2023-04-28 03:40:52,308 - sketch.py - constructed explicit quotient having 2741 states and 5285 actions
+2023-04-28 03:40:52,308 - sketch.py - found the following specification constraints: none, optimality objective: R[exp]{"steps"}min=? [F (z = 5)] 
+2023-04-28 03:40:52,313 - quotient_pomdp.py - Constructed POMDP having 11 observations.
+2023-04-28 03:40:52,371 - quotient_pomdp.py - Unfolding POMDP using the following memory allocation vector: [1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1] ...
+2023-04-28 03:40:52,372 - quotient_pomdp.py - Constructed quotient MDP having 2741 states and 5285 actions.
+2023-04-28 03:40:52,608 - synthesizer_pomdp.py - Storm pomdp option enabled
+2023-04-28 03:40:52,608 - synthesizer_pomdp.py - Storm settings: iterative - (None, None, None), get_storm_result - 0, storm_options - cutoff, prune_storm - False, unfold_strategy - (True, False), use_storm_cutoffs - False
+2023-04-28 03:40:52,612 - storm_pomdp_control.py - starting Storm POMDP analysis
 Finished exploring Underapproximation MDP.
  Start analysis...
-2023-04-25 07:12:45,223 - storm_pomdp_control.py - Storm POMDP analysis completed
+2023-04-28 03:40:59,063 - storm_pomdp_control.py - Storm POMDP analysis completed
 {0: [0, 1], 1: [0, 1], 2: [0], 3: [0, 1], 4: [0], 5: [0, 1, 2], 6: [0, 1], 7: [0, 1], 8: [0], 9: [0], 10: [0]}
 -----------Storm-----------                 
-Value = 21286.625467911 | Time elapsed = 6.7s | FSC size = 8100
+Value = 21286.625467911 | Time elapsed = 6.5s | FSC size = 8100
 FSC (dot) = digraph model {
 	0 [ label = "0: {__extra, target}" ];
 	1 [ label = "1: {[blue=0	& fast=0	& goal=0	& imgoal=0	& in=1	& mid=0	& o0=0	& ooin=0	& sink=0	& slow=0	& yell=0]

@@ -1,24 +1,16 @@
-2023-04-25 09:57:45,031 - cli.py - This is Paynt version 0.1.0.
-2023-04-25 09:57:45,034 - sketch.py - loading sketch from /mnt/d/src/PP/synthesis-CAV/experiments/../models/pomdp/storm-integration/refuel-20/sketch.templ ...
-2023-04-25 09:57:45,126 - prism_parser.py - PRISM model type: PrismModelType.POMDP
-2023-04-25 09:57:45,126 - prism_parser.py - loading properties from /mnt/d/src/PP/synthesis-CAV/experiments/../models/pomdp/storm-integration/refuel-20/sketch.props ...
-2023-04-25 09:57:45,144 - prism_parser.py - found the following specification: constraints: none, optimality objective: Pmax=? ["notbad" U "goal"] 
-2023-04-25 09:57:45,244 - sketch.py - constructed explicit quotient having 6834 states and 24763 actions
-2023-04-25 09:57:45,244 - property.py - converting until formula to eventually...
-2023-04-25 09:57:45,244 - sketch.py - found the following specification constraints: none, optimality objective: Pmax=? [F "goal"] 
-2023-04-25 09:57:45,260 - quotient_pomdp.py - Constructed POMDP having 174 observations.
-2023-04-25 09:57:45,830 - quotient_pomdp.py - Unfolding POMDP using the following memory allocation vector: [1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1] ...
-2023-04-25 09:57:45,833 - quotient_pomdp.py - Constructed quotient MDP having 6834 states and 24763 actions.
-2023-04-25 09:57:51,519 - synthesizer_pomdp.py - Storm pomdp option enabled
-2023-04-25 09:57:51,519 - synthesizer_pomdp.py - Storm settings: iterative - (None, None, None), get_storm_result - 0, storm_options - 20mil, prune_storm - False, unfold_strategy - (True, False), use_storm_cutoffs - False
-2023-04-25 09:57:51,718 - storm_pomdp_control.py - starting Storm POMDP analysis
-### 5630414 beliefs in underapproximation MDP ##### 4087522 beliefs queued
-### 11001179 beliefs in underapproximation MDP ##### 7993248 beliefs queued
-### 15664883 beliefs in underapproximation MDP ##### 11409936 beliefs queued
-### 19366288 beliefs in underapproximation MDP ##### 14107842 beliefs queued
-### 20000001 beliefs in underapproximation MDP ##### 8363103 beliefs queued
-### 20000001 beliefs in underapproximation MDP ##### 5968118 beliefs queued
-### 20000001 beliefs in underapproximation MDP ##### 4227642 beliefs queued
-### 20000001 beliefs in underapproximation MDP ##### 2556440 beliefs queued
-### 20000001 beliefs in underapproximation MDP ##### 1057484 beliefs queued
-### 20000001 beliefs in underapproximation MDP ##### 299129 beliefs queued
+2023-04-28 06:30:45,903 - cli.py - This is Paynt version 0.1.0.
+2023-04-28 06:30:45,906 - sketch.py - loading sketch from /mnt/d/src/PP/synthesis-CAV/experiments/../models/pomdp/storm-integration/refuel-20/sketch.templ ...
+2023-04-28 06:30:45,994 - prism_parser.py - PRISM model type: PrismModelType.POMDP
+2023-04-28 06:30:45,994 - prism_parser.py - loading properties from /mnt/d/src/PP/synthesis-CAV/experiments/../models/pomdp/storm-integration/refuel-20/sketch.props ...
+2023-04-28 06:30:46,014 - prism_parser.py - found the following specification: constraints: none, optimality objective: Pmax=? ["notbad" U "goal"] 
+2023-04-28 06:30:46,163 - sketch.py - constructed explicit quotient having 6834 states and 24763 actions
+2023-04-28 06:30:46,164 - property.py - converting until formula to eventually...
+2023-04-28 06:30:46,164 - sketch.py - found the following specification constraints: none, optimality objective: Pmax=? [F "goal"] 
+2023-04-28 06:30:46,177 - quotient_pomdp.py - Constructed POMDP having 174 observations.
+2023-04-28 06:30:46,737 - quotient_pomdp.py - Unfolding POMDP using the following memory allocation vector: [1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1] ...
+2023-04-28 06:30:46,741 - quotient_pomdp.py - Constructed quotient MDP having 6834 states and 24763 actions.
+2023-04-28 06:30:52,675 - synthesizer_pomdp.py - Storm pomdp option enabled
+2023-04-28 06:30:52,675 - synthesizer_pomdp.py - Storm settings: iterative - (None, None, None), get_storm_result - 0, storm_options - 20mil, prune_storm - False, unfold_strategy - (True, False), use_storm_cutoffs - False
+2023-04-28 06:30:52,679 - storm_pomdp_control.py - starting Storm POMDP analysis
+### 5836142 beliefs in underapproximation MDP ##### 4236676 beliefs queued
+### 11324958 beliefs in underapproximation MDP ##### 8233364 beliefs queued

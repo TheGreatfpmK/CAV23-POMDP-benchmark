@@ -320,7 +320,7 @@ if __name__ == '__main__':
         timeout = 1200
         special = {"4x3-95": f"--storm-pomdp --iterative-storm {int(900*timeout_multiplier)} {int(60*timeout_multiplier)} {int(10*timeout_multiplier)} --posterior-aware", "milos-aaai97": f"--storm-pomdp --iterative-storm {int(900*timeout_multiplier)} {int(90*timeout_multiplier)} {int(10*timeout_multiplier)}",
                    "query-s3": f"--storm-pomdp --iterative-storm {int(900*timeout_multiplier)} {int(90*timeout_multiplier)} {int(10*timeout_multiplier)}", "drone-4-1": f"--storm-pomdp --iterative-storm {int(900*timeout_multiplier)} {int(60*timeout_multiplier)} {int(10*timeout_multiplier)} --posterior-aware",
-                   "refuel-20": f"--storm-pomdp --iterative-storm {int(900*timeout_multiplier)} {int(60*timeout_multiplier)} {int(5*timeout_multiplier)}"}
+                   "refuel-20": f"--storm-pomdp --iterative-storm {int(900*timeout_multiplier)} {int(60*timeout_multiplier)} {int(5*timeout_multiplier)}", "network": f"--storm-pomdp --iterative-storm {int(900*timeout_multiplier)} {int(60*timeout_multiplier)} {int(10*timeout_multiplier)} --posterior-aware"}
         run_experiment(options, logs_string, experiment_models, timeout, special)
 
     else:
