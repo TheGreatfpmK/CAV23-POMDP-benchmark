@@ -139,7 +139,8 @@ SAYNT algorithm we propose in this work uses the implementation of PAYNT and Sto
 python3 paynt.py --project path/to/model/folder --fsc-synthesis --storm-pomdp --iterative-storm 'timeout' 'paynt_timeout' 'storm_timeout'
 ```
 
-The default values proposed in our paper for 15minute timeout (900s) is `--iterative-storm 900 60 10` this means in each iteration of SAYNT we will run the inductive search for 60 seconds and belief exploration for 10 seconds. If you want to observe how the result depends on each part you can try changing the paynt and storm timeouts. SAYNT also introduces some new settings we don't consider in this paper. For more information visit https://github.com/randriu/synthesis.
+The default setting, we used for the majority of the experiments (see the paper for more details), is `--iterative-storm 900 60 10`. This means that the overall timeout is 15 minutes (900s) and in each iteration of SAYNT, we will run the inductive search for 60 seconds and belief exploration for 10 seconds. You can change these timeouts to observe the impact of the particular parts of the synthesis process. SAYNT also introduces some additional settings we do not consider in this paper. For more information visit https://github.com/randriu/synthesis.
+
 
 ## Models
 
