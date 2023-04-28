@@ -6,6 +6,37 @@ As a reference, we provide our logs in the `original-results`, in case something
 
 ---
 
+## Using the Docker
+Load the image `paynt.tar` into your Docker environment using:
+```
+docker load -i paynt.tar
+```
+
+If you get a permission error, make sure to precede docker commands with `sudo` to acquire root privileges. Upon loading the image, you can run the container with:
+```
+docker run -v `pwd`/output:/synthesis/paynt/experiments/output --rm -it randriu/paynt
+```
+
+`--rm` creates a disposable container that will be deleted upon exit. `-v` will mount the folder `output` in your current directory to the corresponding folder within the container where the experiment results will be stored. This will allow you to view the generated pdfs and inspect logs even after the container is not running. Executing the command above will place you in `/synthesis/paynt` folder, from which exeriments can be run using
+```
+./experiments/benchmarks.sh 
+```
+
+The evaluating script has additional options (described below) that allow you to reproduce subsets of results presented in the paper. As a quick start, try option `-1` to reproduce Table 2, it should take about 5 minutes:
+```
+./experiments/benchmarks.sh -1
+```
+The output is created in `/synthesis/paynt/experiments/output`, which is mounted to `$PWD/output` on the host device. In particular, file `results/table2/table2-models-info.pdf` contains .pdf with reproduced Table 2.
+
+You can exit the container via `exit` or `^D`. Upon finishing your review, you can remove the image from the Docker environment using:
+```
+docker rmi randriu/paynt
+```
+
+The Dockerfile used to create the image can be found in /synthesis/paynt/Dockerfile or at [PAYNT GitHub](https://github.com/randriu/synthesis).
+
+
+
 ## Running the benchmarks
 
 ### Requirements
@@ -28,10 +59,10 @@ Then run the benchmarks using:
 The benchmark script comes with a variety of options, details for the individual experiments is given below. 
 - `-a` use this flag to run experiments both from the paper and the appendix (without this flag only the main experiments run)
 - `-x` use this flag to only run experiments from the appendix
-- `-1` run only model information experiment (table2)
-- `-2` run only Q1 experiments (table3(a))
-- `-3` run only Q2 experiments (table3(b))
-- `-4` run only Q3 experiments (figure4 + table4)
+- `-1` run only model information experiment (Table 2)
+- `-2` run only Q1 experiments (Table3 (a))
+- `-3` run only Q2 experiments (Table3 (b))
+- `-4` run only Q3 experiments (Figure 4 + Table 4)
 - `-o` with this flag overwriting of already existing logs is allowed (good if you want to rerun all the experiments), overwriting is turned off by default so if you only want to run experiments for certain values remove the logs associated with the values and rerun this script without -o flag
 - `-e` allows export of the FSCs found by SAYNT to disk, *This option requires multiple GB of disk space and may significantly slow down the benchmarks!*
 
