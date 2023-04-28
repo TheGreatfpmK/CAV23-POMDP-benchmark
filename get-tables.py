@@ -51,6 +51,7 @@ def get_models_info_table():
         text_file.close()
 
 
+
 def get_q1_table():
     short_s_path = os.fsencode(dir_path + '/output/q1/short-storm')
     long_s_path = os.fsencode(dir_path + '/output/q1/long-storm')
@@ -58,6 +59,16 @@ def get_q1_table():
     im_long_s_path = os.fsencode(dir_path + '/output/q1/improved-long-storm')
 
     models = [ f.path for f in os.scandir(short_s_path) if f.is_dir() ]
+
+    drone42_string = ""
+    network_string = ""
+    drone82_string = ""
+    fourx3_string = ""
+    query_string = ""
+    milos_string = ""
+    hallway_string = ""
+    rocks_string = ""
+    others_string = ""
 
     with open(result_folder.decode("utf-8") + "/" + "source-table3-q1.tex", "w") as text_file:    
         print("\\begin{table}", file=text_file)
@@ -127,9 +138,42 @@ def get_q1_table():
                     im_long_s_val = round(float(split2[2]),2)
                     im_long_s_time = split2[7]
 
-                print(f'{model_name} & {p_val} & {short_s_val} & {im_short_s_val} & {long_s_val} & {im_long_s_val} \\\\', file=text_file)
-                print(f' & {p_time} & {short_s_time} & {im_short_s_time} & {long_s_time} & {im_long_s_time} \\\\', file=text_file)
-                print("\\hline", file=text_file)
+                if model_name == "drone-4-2":
+                    drone42_string += f'{model_name} & {p_val} & {short_s_val} & {im_short_s_val} & {long_s_val} & {im_long_s_val} \\\\ \n'
+                    drone42_string += f' & {p_time} & {short_s_time} & {im_short_s_time} & {long_s_time} & {im_long_s_time} \\\\ \n'
+                    drone42_string += "\\hline"
+                elif model_name == "network":
+                    network_string += f'{model_name} & {p_val} & {short_s_val} & {im_short_s_val} & {long_s_val} & {im_long_s_val} \\\\ \n'
+                    network_string += f' & {p_time} & {short_s_time} & {im_short_s_time} & {long_s_time} & {im_long_s_time} \\\\ \n'
+                    network_string += "\\hline"
+                elif model_name == "drone-8-2":
+                    drone82_string += f'{model_name} & {p_val} & {short_s_val} & {im_short_s_val} & {long_s_val} & {im_long_s_val} \\\\ \n'
+                    drone82_string += f' & {p_time} & {short_s_time} & {im_short_s_time} & {long_s_time} & {im_long_s_time} \\\\ \n'
+                    drone82_string += "\\hline"
+                elif model_name == "4x3-95":
+                    fourx3_string += f'{model_name} & {p_val} & {short_s_val} & {im_short_s_val} & {long_s_val} & {im_long_s_val} \\\\ \n'
+                    fourx3_string += f' & {p_time} & {short_s_time} & {im_short_s_time} & {long_s_time} & {im_long_s_time} \\\\ \n'
+                    fourx3_string += "\\hline"
+                elif model_name == "query-s3":
+                    query_string += f'{model_name} & {p_val} & {short_s_val} & {im_short_s_val} & {long_s_val} & {im_long_s_val} \\\\ \n'
+                    query_string += f' & {p_time} & {short_s_time} & {im_short_s_time} & {long_s_time} & {im_long_s_time} \\\\ \n'
+                    query_string += "\\hline"
+                elif model_name == "milos-aaai97":
+                    milos_string += f'{model_name} & {p_val} & {short_s_val} & {im_short_s_val} & {long_s_val} & {im_long_s_val} \\\\ \n'
+                    milos_string += f' & {p_time} & {short_s_time} & {im_short_s_time} & {long_s_time} & {im_long_s_time} \\\\ \n'
+                    milos_string += "\\hline"
+                elif model_name == "hallway":
+                    hallway_string += f'{model_name} & {p_val} & {short_s_val} & {im_short_s_val} & {long_s_val} & {im_long_s_val} \\\\ \n'
+                    hallway_string += f' & {p_time} & {short_s_time} & {im_short_s_time} & {long_s_time} & {im_long_s_time} \\\\ \n'
+                    hallway_string += "\\hline"
+                elif model_name == "rocks-12":
+                    rocks_string += f'{model_name} & {p_val} & {short_s_val} & {im_short_s_val} & {long_s_val} & {im_long_s_val} \\\\ \n'
+                    rocks_string += f' & {p_time} & {short_s_time} & {im_short_s_time} & {long_s_time} & {im_long_s_time} \\\\ \n'
+                    rocks_string += "\\hline"
+                else:
+                    others_string += f'{model_name} & {p_val} & {short_s_val} & {im_short_s_val} & {long_s_val} & {im_long_s_val} \\\\ \n'
+                    others_string += f' & {p_time} & {short_s_time} & {im_short_s_time} & {long_s_time} & {im_long_s_time} \\\\ \n'
+                    others_string += "\\hline"
 
                 short_s_file.close()
                 long_s_file.close()
@@ -140,6 +184,15 @@ def get_q1_table():
                 print(f"ERROR WHILE CREATING TABLES!!! Couldn't process logs for model {model_name} for table3-q1!")
                 continue
 
+        print(drone42_string, file=text_file)
+        print(network_string, file=text_file)
+        print(drone82_string, file=text_file)
+        print(fourx3_string, file=text_file)
+        print(query_string, file=text_file)
+        print(milos_string, file=text_file)
+        print(hallway_string, file=text_file)
+        print(rocks_string, file=text_file)
+        print(others_string, file=text_file)
 
         print("\\end{tabular}", file=text_file)
         print("\\end{table}\n", file=text_file)
@@ -151,6 +204,16 @@ def get_q2_table():
     im_paynt_path = os.fsencode(dir_path + '/output/q2/improved-paynt')
 
     models = [ f.path for f in os.scandir(paynt_path) if f.is_dir() ]
+
+    fourx5x2_string = ""
+    refuel20_string = ""
+    tiger95_string = ""
+    fourx3_string = ""
+    refuel06_string = ""
+    milos_string = ""
+    network_string = ""
+    rocks_string = ""
+    others_string = ""
 
     with open(result_folder.decode("utf-8") + "/" + "source-table3-q2.tex", "w") as text_file:    
         print("\\begin{table}", file=text_file)
@@ -195,9 +258,42 @@ def get_q2_table():
                     im_paynt_val = round(float(split2[2]),2)
                     im_paynt_time = split2[7]
 
-                print(f'{model_name} & {s_val} & {paynt_val} & {im_paynt_val} \\\\', file=text_file)
-                print(f' & {s_time} & {paynt_time} & {im_paynt_time} \\\\', file=text_file)
-                print("\\hline", file=text_file)
+                if model_name == "4x5x2-95":
+                    fourx5x2_string += f'{model_name} & {s_val} & {paynt_val} & {im_paynt_val} \\\\ \n'
+                    fourx5x2_string += f' & {s_time} & {paynt_time} & {im_paynt_time} \\\\ \n'
+                    fourx5x2_string += "\\hline"
+                elif model_name == "refuel-20":
+                    refuel20_string += f'{model_name} & {s_val} & {paynt_val} & {im_paynt_val} \\\\ \n'
+                    refuel20_string += f' & {s_time} & {paynt_time} & {im_paynt_time} \\\\ \n'
+                    refuel20_string += "\\hline"
+                elif model_name == "stand-tiger-95":
+                    tiger95_string += f'{model_name} & {s_val} & {paynt_val} & {im_paynt_val} \\\\ \n'
+                    tiger95_string += f' & {s_time} & {paynt_time} & {im_paynt_time} \\\\ \n'
+                    tiger95_string += "\\hline"
+                elif model_name == "4x3-95":
+                    fourx3_string += f'{model_name} & {s_val} & {paynt_val} & {im_paynt_val} \\\\ \n'
+                    fourx3_string += f' & {s_time} & {paynt_time} & {im_paynt_time} \\\\ \n'
+                    fourx3_string += "\\hline"
+                elif model_name == "refuel-06":
+                    refuel06_string += f'{model_name} & {s_val} & {paynt_val} & {im_paynt_val} \\\\ \n'
+                    refuel06_string += f' & {s_time} & {paynt_time} & {im_paynt_time} \\\\ \n'
+                    refuel06_string += "\\hline"
+                elif model_name == "milos-aaai97":
+                    milos_string += f'{model_name} & {s_val} & {paynt_val} & {im_paynt_val} \\\\ \n'
+                    milos_string += f' & {s_time} & {paynt_time} & {im_paynt_time} \\\\ \n'
+                    milos_string += "\\hline"
+                elif model_name == "network-3-8-20":
+                    network_string += f'{model_name} & {s_val} & {paynt_val} & {im_paynt_val} \\\\ \n'
+                    network_string += f' & {s_time} & {paynt_time} & {im_paynt_time} \\\\ \n'
+                    network_string += "\\hline"
+                elif model_name == "rocks-12":
+                    rocks_string += f'{model_name} & {s_val} & {paynt_val} & {im_paynt_val} \\\\ \n'
+                    rocks_string += f' & {s_time} & {paynt_time} & {im_paynt_time} \\\\ \n'
+                    rocks_string += "\\hline"
+                else:
+                    others_string += f'{model_name} & {s_val} & {paynt_val} & {im_paynt_val} \\\\ \n'
+                    others_string += f' & {s_time} & {paynt_time} & {im_paynt_time} \\\\ \n'
+                    others_string += "\\hline"
 
                 paynt_file.close()
                 im_paynt_file.close()
@@ -206,6 +302,15 @@ def get_q2_table():
                 print(f"ERROR WHILE CREATING TABLES!!! Couldn't process logs for model {model_name} for table3-q2!")
                 continue
 
+        print(fourx5x2_string, file=text_file)
+        print(refuel20_string, file=text_file)
+        print(tiger95_string, file=text_file)
+        print(fourx3_string, file=text_file)
+        print(refuel06_string, file=text_file)
+        print(milos_string, file=text_file)
+        print(network_string, file=text_file)
+        print(rocks_string, file=text_file)
+        print(others_string, file=text_file)
 
         print("\\end{tabular}", file=text_file)
         print("\\end{table}\n", file=text_file)
