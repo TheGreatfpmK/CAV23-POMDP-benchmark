@@ -1,12 +1,24 @@
 # Search and Explore: Symbiotic Policy Synthesis in POMDPs 
 
-This repository contains the benchmarks for the CAV'23 paper *Search and Explore: Symbiotic Policy Synthesis in POMDPs.*
-This readme contains a description how to run these benchmarks to recreate the results from the paper. 
-As a reference, we provide our logs in the `original-results`, in case something goes wrong.
+This artifact supplements CAV'23 paper *Search and Explore: Symbiotic Policy Synthesis in POMDPs*.
+
+Contents of the artifact:
+- paynt.tar: the Docker image containing the tools and benchmarks discussed in the paper, as well as scripts for their automatized evaluation
+- paper-submission.pdf: the initial version of the paper submitted to CAV'23
+- paper-final.pdf: the revised version of the paper
+- LICENSE: the license file
+- README.md: this readme
+
+This artifact is hosted on Zenodo: https://doi.org/10.5281/zenodo.7874514.
+
+The first part of this readme describes how to use the artifact to reproduce results presented in the paper. The latter part presents the tools, their installation and their usage outside the scope of this artifact.
 
 ---
 
-## Using the Docker and quick start
+## Reproducing the Experiments
+
+### Using the Docker and quick start
+
 Load the image `paynt.tar` into your Docker environment using:
 ```
 docker load -i paynt.tar
@@ -36,7 +48,7 @@ docker rmi randriu/paynt
 The Dockerfile used to create the image can be found in /synthesis/paynt/Dockerfile or at [PAYNT GitHub](https://github.com/randriu/synthesis).
 
 
-### Reproducing the experiments
+### Evaluating script options
 
 Running the benchmark script `./experiments/benchmark.sh` without additional flags will evaluate experiments from the main part of the paper (without appendix), which will take 10-12 hours. The following options allow you to reproduce subsets of experiments. In the parentheses, we provide the name of the sub-experiment as well as its time estimate.
 - `-1` to reproduce Table 2 (models-info, 5 minutes)
@@ -60,22 +72,20 @@ The original log files that were used when preparing the submission can be found
 
 
 
-## Tools
+## Using the Tools Outisde the Scope of the Artifact
 
-In the artifact we consider tools Storm and PAYNT, both are open source tools:
+In the paper we consider tools Storm and PAYNT, both are open source tools:
 
 - Storm
     - source: https://github.com/moves-rwth/storm
     - documentation: https://www.stormchecker.org/
-    - Used version: *make realese on github*
+    - used version: *make realese on github*
     - StormPy (Storm Python API): https://moves-rwth.github.io/stormpy/
 - PAYNT
     - source: https://github.com/randriu/synthesis
-    - Used version: *make realese on github*
+    - used version: *make realese on github*
 
 The links contain installation process for both of the tools, if you want to run them outside of this artifact. PAYNT requires correct version of Storm and StormPy to work and provides installation guide for all of them. The used version of PAYNT is able to run Storm and contains the proposed SAYNT algorithm as well.
-
-## Using the tools
 
 We provide a small overview of how to use the tools outside of the benchmark script. For full information please visit the linked documentation.
 
