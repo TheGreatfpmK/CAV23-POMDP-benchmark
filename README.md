@@ -132,7 +132,7 @@ The default settings we used for the majority of the experiments (see the paper 
 
 The following are selected parts of the source code relevant to the algorithms discussed in the paper:
 - `paynt/synthesizer/synthesizer_pomdp.py`: contains the main loop of the inductive synthesis of FSCs (method `strategy_iterative`) as well as the integrated SAYNT algorithm (method `iterative_storm_loop`)
-- `paynt/quotient/storm_pomdp_control.py`: used to communicate with Storm (i.e. the belief exploration), necessary for the integrated SAYNT mehod; additionally, it contains methods for extracting the FSCs
+- `paynt/quotient/storm_pomdp_control.py`: implements communication with Storm (i.e. the belief exploration) via Python bindings, necessary for the integrated SAYNT mehod; additionally, it contains methods for extracting the FSCs
 `storm/src/storm-pomdp/modelchecker/BeliefExplorationPomdpModelChecker.cpp`: this module contains methods that steer the exploration of the belief space and allow to extract FSC from the belief MDP; additionally, it contains the interactive belief explorer required for the integrated SAYNT algorithm
 `storm/src/storm-pomdp/builder/BeliefMdpExplorer.cpp`: this module is responsible for the construction of the belief MDP
 
