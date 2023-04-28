@@ -77,7 +77,7 @@ The original log files that were used when preparing the submission can be found
 
 ## Using the tools outside the scope of the artifact
 
-In the paper we consider tools Storm and PAYNT, both are open source tools. Note that PAYNT is built on top of Storm: upon installing PAYNT, you will be able to execute Storm/PAYNT/SAYNT algorithms discussed in the paper. The links document the installation process for both of the tools.
+In the paper we consider tools Storm and PAYNT, both are open source tools. Note that PAYNT is built on top of Storm: upon installing PAYNT, you will be able to execute Storm/PAYNT/SAYNT algorithms discussed in the paper. The links below document the installation process for both of the tools.
 
 - Storm
     - source: https://github.com/moves-rwth/storm
@@ -89,32 +89,32 @@ In the paper we consider tools Storm and PAYNT, both are open source tools. Note
     - used Storm version: https://github.com/randriu/storm/releases/tag/1.6.4-cav23
     - used StormPy version: https://github.com/randriu/stormpy/releases/tag/1.6.4-cav23
 
-We provide a small overview of how to use the tools outside of the benchmark script. For full information please visit the linked documentation.
+We provide a small overview of how to use the tools outside of the benchmark script. For full information, please visit the linked documentation.
 
 ### PAYNT
 
-PAYNT is a tool written Python3. To run PAYNT for the FSC synthesis for POMDPs use:
+PAYNT is a tool written in Python3. To run PAYNT for the FSC synthesis for a POMDP, use:
 
 ```
 python3 paynt.py --project path/to/model/folder --fsc-synthesis
 ```
 
-This assumes the model folder contains both the model description and a specification. Each time an improving FSC is found, we output it's value, size and the time it took to find it. You can use `--export-fsc-paynt "filepath"` to store the best found FSC to specified file. For more information about the settings of PAYNT visit https://github.com/randriu/synthesis.
+This assumes the model folder contains both the model description and a specification. Each time an improving FSC is found, we output it's value, size and the time it took to find it. You can use `--export-fsc-paynt "filepath"` to store the best found FSC to a specified file. For more information about the settings of PAYNT, visit https://github.com/randriu/synthesis.
 
 
 ### Storm
 
-With the integration we propose in this paper we allow to run Storm from PAYNT. This usage doesn't provide all the possible Storm settings, but it is enough for the purposes of synthetising good FSCs for POMDPs. To use Storm through PAYNT use:
+With the integration proposed in this paper we allow to run Storm from PAYNT. This usage doesn't provide all the possible Storm settings, but it is enough for the purposes of synthetising good FSCs for POMDPs. To use Storm through PAYNT, use:
 
 ```
 python3 paynt.py --project path/to/model/folder --fsc-synthesis --storm-pomdp --get-storm-result 0
 ```
 
-You can adjust the main setting of Storm with `--storm-options` (for example `--storm-options 2mil` to explore 2 million states and apply cut-offs, `--storm-options 10mil` to explore 10 million states and apply cut-offs, `--storm-options clip4` to allow clipping with grid resolution 4).
+You can adjust the main settings of Storm with `--storm-options` (for example `--storm-options 2mil` to explore 2 million states and apply cut-offs, `--storm-options 10mil` to explore 10 million states and apply cut-offs, `--storm-options clip4` to allow clipping with grid resolution 4).
 
 #### Storm as a standalone tool
 
-If you want to run Storm as a standalone tool visit https://www.stormchecker.org/getting-started.html. To use Storm for POMDP analysis you need to build the `storm-pomdp` executable.
+If you want to run Storm as a standalone tool, visit https://www.stormchecker.org/getting-started.html. To use Storm for POMDP analysis you need to build the `storm-pomdp` executable.
 
 
 ### SAYNT
