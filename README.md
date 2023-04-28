@@ -11,7 +11,7 @@ Contents of the artifact:
 
 This artifact is hosted on Zenodo: https://doi.org/10.5281/zenodo.7874514.
 
-The first part of this readme describes how to use the artifact to reproduce results presented in the paper. The latter part presents the tools, their installation and their usage outside the scope of this artifact.
+The first part of this readme describes how to use the artifact to reproduce results presented in the paper. The latter part presents the tools, their installation and their usage outside the scope of this artifact.  The final part of this readme briefly describes the discussed benchmarks and documents their automatic evaluation outside of the Docker environment.
 
 ---
 
@@ -74,18 +74,18 @@ The original log files that were used when preparing the submission can be found
 
 ## Using the tools outisde the scope of the artifact
 
-In the paper we consider tools Storm and PAYNT, both are open source tools:
+In the paper we consider tools Storm and PAYNT, both are open source tools. Note that PAYNT is built on top of Storm: upon installing PAYNT, you will be able to execute Storm/PAYNT/SAYNT algorithms discussed in the paper. The links document the installation process for both of the tools.
 
 - Storm
     - source: https://github.com/moves-rwth/storm
     - documentation: https://www.stormchecker.org/
-    - used version: *make realese on github*
     - StormPy (Storm Python API): https://moves-rwth.github.io/stormpy/
 - PAYNT
     - source: https://github.com/randriu/synthesis
-    - used version: *make realese on github*
+    - used version: https://github.com/randriu/synthesis/releases/tag/v0.1.2
+    - used Storm version: https://github.com/randriu/storm/releases/tag/1.6.4-cav23
+    - used StormPy version: https://github.com/randriu/stormpy/releases/tag/1.6.4-cav23
 
-The links contain installation process for both of the tools, if you want to run them outside of this artifact. PAYNT requires correct version of Storm and StormPy to work and provides installation guide for all of them. The used version of PAYNT is able to run Storm and contains the proposed SAYNT algorithm as well.
 
 We provide a small overview of how to use the tools outside of the benchmark script. For full information please visit the linked documentation.
 
